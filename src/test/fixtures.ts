@@ -4,8 +4,8 @@ export const testCatalog: Catalog = {
   schema_version: '1.0.0', catalog_version: 'test-fixture',
   documents: [{ document_id: 'doc-a', title: 'Tài liệu fixture kiểm thử', relative_path: 'test-only.pdf', page_count: 20, sha256: 'a'.repeat(64) }],
   topics: [
-    { id: 'p1-topic', label: 'Chủ đề fixture Phase 1', phase: 1, track: null, day: 'p1-d01', document_ids: ['doc-a'], question_count: 20 },
-    ...([1, 2, 3, 4] as const).map(track => ({ id: `p2-t${track}-topic`, label: `Chủ đề fixture Track ${track}`, phase: 2 as const, track, day: `p2-t${track}-d01`, document_ids: ['doc-a'], question_count: 4 })),
+    { id: 'p1-topic', label: 'Chủ đề fixture Phase 1', phase: 1, track: null, day: 'p1-d01', document_ids: ['doc-a'], question_count: 36 },
+    ...([1, 2, 3, 4] as const).map(track => ({ id: `p2-t${track}-topic`, label: `Chủ đề fixture Track ${track}`, phase: 2 as const, track, day: `p2-t${track}-d01`, document_ids: ['doc-a'], question_count: 6 })),
   ],
 };
 
@@ -32,10 +32,10 @@ export function makeQuestion(input: { id: string; phase?: 1 | 2; track?: 1 | 2 |
 
 export function makeExamBank(): QuestionBank {
   const questions: Question[] = [];
-  for (let i = 0; i < 18; i++) questions.push(makeQuestion({ id: `p1-o-${String(i).padStart(2, '0')}`, phase: 1, format: 'single_choice' }));
+  for (let i = 0; i < 34; i++) questions.push(makeQuestion({ id: `p1-o-${String(i).padStart(2, '0')}`, phase: 1, format: 'single_choice' }));
   for (let i = 0; i < 2; i++) questions.push(makeQuestion({ id: `p1-r-${i}`, phase: 1, format: 'rubric' }));
   for (const track of [1, 2, 3, 4] as const) {
-    for (let i = 0; i < 3; i++) questions.push(makeQuestion({ id: `t${track}-o-${i}`, phase: 2, track, format: 'single_choice' }));
+    for (let i = 0; i < 5; i++) questions.push(makeQuestion({ id: `t${track}-o-${i}`, phase: 2, track, format: 'single_choice' }));
     questions.push(makeQuestion({ id: `t${track}-r`, phase: 2, track, format: 'rubric' }));
   }
   return { schema_version: '1.0.0', bank_version: 'fixture-only-1', questions };

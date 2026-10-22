@@ -4,7 +4,7 @@ import { validateBank } from './validation';
 
 describe('question bank validation', () => {
   it('accepts a schema-valid release whose questions have independent current reviews', () => {
-    expect(validateBank(makeExamBank(), testCatalog).questions).toHaveLength(36);
+    expect(validateBank(makeExamBank(), testCatalog).questions).toHaveLength(60);
   });
   it('rejects duplicate question IDs and duplicate option IDs', () => {
     const duplicate = makeExamBank(); duplicate.questions.push(structuredClone(duplicate.questions[0]));

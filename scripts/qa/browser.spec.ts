@@ -85,8 +85,11 @@ test('exam exact quotas, deadline autosubmit, reload and single result', async (
   await page.getByRole('button', { name: 'Bắt đầu thi thử' }).click();
   await expect(page.locator('.question-card h1')).toBeVisible();
   const a = (await rows(page))[0];
-  expect(a.questions).toHaveLength(36);
-  expect(new Set(a.questions.map((i: any) => i.question.id)).size).toBe(36);
+  expect(a.questions).toHaveLength(60);
+  expect(new Set(a.questions.map((i: any) => i.question.id)).size).toBe(60);
+  expect(a.questions.filter((i: any) => i.question.phase === 1)).toHaveLength(36);
+  expect(a.questions.filter((i: any) => i.question.phase === 2)).toHaveLength(24);
+  for (const track of [1, 2, 3, 4]) expect(a.questions.filter((i: any) => i.question.track === track)).toHaveLength(6);
   expect(a.deadlineAt - a.startedAt).toBe(5400000);
   const points = (fn: (i: any) => boolean) => a.questions.filter(fn).reduce((s: number, i: any) => s + i.points, 0);
   expect(points(i => i.question.phase === 1)).toBe(6000);
@@ -145,6 +148,8 @@ test('custom track weights and objective scoring follow stable option IDs', asyn
   await expect(page.locator('.question-card h1')).toBeVisible();
   const a = (await rows(page))[0];
   for (const track of [1, 2, 3, 4]) expect(a.questions.filter((i: any) => i.question.track === track).reduce((sum: number, i: any) => sum + i.points, 0)).toBe(track * 400);
+  expect(a.questions).toHaveLength(60);
+  expect(a.questions.every((i: any) => Number.isInteger(i.points) && i.points > 0)).toBe(true);
   for (const [index, item] of a.questions.entries()) {
     const q = item.question; if (q.answer_format === 'rubric') continue;
     await page.getByRole('button', { name: `Đi đến câu ${index + 1}`, exact: true }).click();

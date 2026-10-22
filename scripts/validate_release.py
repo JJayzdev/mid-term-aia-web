@@ -93,9 +93,9 @@ def validate(bank_path, catalog_path, verify_sources=False):
             per_doc[doc['document_id']] += 1
         kind = 'rubric' if q['answer_format'] == 'rubric' else 'objective'
         counts[(q['phase'], q['track'], kind)] += 1
-    required = {(1, None, 'objective'): 18, (1, None, 'rubric'): 2}
+    required = {(1, None, 'objective'): 34, (1, None, 'rubric'): 2}
     for track in (1, 2, 3, 4):
-        required[(2, track, 'objective')] = 3
+        required[(2, track, 'objective')] = 5
         required[(2, track, 'rubric')] = 1
     for bucket, count in required.items():
         if counts[bucket] < count:

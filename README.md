@@ -7,7 +7,8 @@
 ## Chức năng
 
 - Ôn theo ngày học, Phase, Track, chủ đề, độ khó; luyện tổng hợp, câu sai/bỏ trống và câu đã lưu.
-- Thi thử 90 phút, 36 câu, 100 điểm: Phase 1 = 60 điểm; Phase 2 = 40 điểm; tự luận = 10 điểm. Bốn Track mặc định bằng nhau, có thể chỉnh trọng số với bước 0,25%.
+- Thi thử 90 phút, **60 câu**, 100 điểm: Phase 1 = **36 câu / 60 điểm**; Phase 2 = **24 câu / 40 điểm** (6 câu mỗi Track). Có 54 câu khách quan và 6 câu tự luận; tự luận = 10 điểm. Bốn Track mặc định bằng nhau, có thể chỉnh trọng số điểm với bước 0,25%.
+- Điểm được phân bổ theo nhóm để giữ đúng tỷ lệ; các câu trong một nhóm có thể lệch tối đa 0,01 điểm. Điểm từng câu hiển thị khi làm bài. Thay đổi cấu hình không làm đổi đề hoặc điểm trong lịch sử đã lưu.
 - Đáp án khách quan chấm tự động; chọn nhiều dùng exact-set, không trừ điểm. Tự luận không trống chờ người học tự đánh giá từng tiêu chí 0 / 0,5 / 1; làm tròn half-up một lần ở cuối mỗi câu đến 0,01 điểm.
 - Tự lưu câu trả lời, giữ đề và thứ tự lựa chọn khi tải lại, tự nộp khi hết hạn. Tab mới tiếp quản quyền sửa; tab cũ chỉ xem.
 - Lịch sử giữ bản sao nội dung câu hỏi tại lúc làm bài, có điểm theo Phase/Track/chủ đề. Xuất/nhập sao lưu JSON; câu hỏi nhập ngoài chỉ vào vùng chờ duyệt.

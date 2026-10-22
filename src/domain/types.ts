@@ -38,4 +38,4 @@ export type GradeSummary = {
   wrongIds: string[]; pendingIds: string[];
 };
 export type ExamWeights = [number, number, number, number];
-export type BucketNeed = { phase: Phase; track: 1 | 2 | 3 | 4 | null; format: 'objective' | 'rubric'; count: number; pointsEach: number };
+export type BucketNeed = { phase: Phase; track: 1 | 2 | 3 | 4 | null; format: 'objective' | 'rubric'; count: number; slotPoints: number[] };

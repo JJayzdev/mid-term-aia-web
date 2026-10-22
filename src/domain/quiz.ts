@@ -73,20 +73,27 @@ export function validateTrackWeights(weights: ExamWeights): void {
   if (weights.length !== 4 || weights.some(w => !Number.isFinite(w) || w <= 0) || !decimalSumEquals(weights, 100)) {
     throw new DomainError('Bốn trọng số Track phải là số dương và có tổng đúng 100%.', 'weights_sum');
   }
-  if (weights.some(w => !decimalProductIsInteger(w, 12) || !decimalProductIsInteger(w, 4))) throw new DomainError('Trọng số hiện tại không thể chia chính xác vào các slot điểm 0,01. Hãy dùng bước 0,25%.', 'weights_precision');
+  if (weights.some(w => !decimalProductIsInteger(w, 4) || !decimalProductIsInteger(w, 36))) throw new DomainError('Trọng số Track cần theo bước 0,25%.', 'weights_precision');
+}
+
+function distributeCentipoints(total: number, count: number): number[] {
+  if (!Number.isSafeInteger(total) || !Number.isSafeInteger(count) || count < 1 || total < count) throw new DomainError('Không thể chia điểm chính xác cho số slot đã chọn.', 'weights_precision');
+  const base = Math.floor(total / count);
+  const remainder = total - base * count;
+  return Array.from({ length: count }, (_, index) => base + (index < remainder ? 1 : 0));
 }
 
 export function examNeeds(weights: ExamWeights = [25, 25, 25, 25]): BucketNeed[] {
   validateTrackWeights(weights);
   const needs: BucketNeed[] = [
-    { phase: 1, track: null, format: 'objective', count: 18, pointsEach: 300 },
-    { phase: 1, track: null, format: 'rubric', count: 2, pointsEach: 300 },
+    { phase: 1, track: null, format: 'objective', count: 34, slotPoints: distributeCentipoints(5400, 34) },
+    { phase: 1, track: null, format: 'rubric', count: 2, slotPoints: distributeCentipoints(600, 2) },
   ];
   weights.forEach((w, index) => {
-    needs.push({ phase: 2, track: (index + 1) as 1 | 2 | 3 | 4, format: 'objective', count: 3, pointsEach: 12 * w });
-    needs.push({ phase: 2, track: (index + 1) as 1 | 2 | 3 | 4, format: 'rubric', count: 1, pointsEach: 4 * w });
+    needs.push({ phase: 2, track: (index + 1) as 1 | 2 | 3 | 4, format: 'objective', count: 5, slotPoints: distributeCentipoints(36 * w, 5) });
+    needs.push({ phase: 2, track: (index + 1) as 1 | 2 | 3 | 4, format: 'rubric', count: 1, slotPoints: distributeCentipoints(4 * w, 1) });
   });
-  const total = needs.reduce((sum, item) => sum + item.count * item.pointsEach, 0);
+  const total = needs.reduce((sum, item) => sum + item.slotPoints.reduce((bucketSum, points) => bucketSum + points, 0), 0);
   if (total !== 10000) throw new DomainError('Cấu hình điểm thi không cộng chính xác thành 100 điểm.', 'weights_total');
   return needs;
 }
@@ -109,8 +116,10 @@ export function selectExam(questions: Question[], catalog: Catalog, weights: Exa
   const result: AttemptQuestion[] = [];
   for (const need of needs) {
     const bucket = pool.filter(q => q.phase === need.phase && q.track === need.track && formatClass(q) === need.format).sort((a, b) => a.id.localeCompare(b.id));
-    for (const question of shuffled(bucket, random).slice(0, need.count)) result.push(makeItem(question, need.pointsEach, random));
+    const chosen = shuffled(bucket, random).slice(0, need.count).sort((a, b) => a.id.localeCompare(b.id));
+    if (need.slotPoints.length !== chosen.length) throw new DomainError('Số slot điểm không khớp với blueprint.', 'exam_invariant');
+    chosen.forEach((question, index) => result.push(makeItem(question, need.slotPoints[index], random)));
   }
-  if (new Set(result.map(i => i.question.id)).size !== 36 || result.reduce((sum, i) => sum + i.points, 0) !== 10000) throw new DomainError('Đề thi không đạt invariant số câu/điểm.', 'exam_invariant');
+  if (new Set(result.map(i => i.question.id)).size !== 60 || result.reduce((sum, i) => sum + i.points, 0) !== 10000) throw new DomainError('Đề thi không đạt invariant số câu/điểm.', 'exam_invariant');
   return { seed, label: 'Thi thử 90 phút', items: shuffled(result, random) };
 }

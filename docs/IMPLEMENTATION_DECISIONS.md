@@ -15,3 +15,11 @@ Ngày 2026-10-22. Người dùng đã chỉ dẫn: “đấy là tất cả data
 ## Phân công đang chạy
 
 A1: pipeline ingestion/cache/manifest/catalog, câu nháp theo batch. A2: toàn bộ ứng dụng/test/package configuration. Reviewer: audit độc lập nguồn/câu hỏi và code/QA sau khi artifact sẵn sàng. Root: hợp đồng, tích hợp, validation/release, deployment configuration và xác minh cuối. Không hai agent sửa cùng file. Tài liệu Discovery giữ để truy vết; văn bản này là quyết định mới hơn.
+
+## Điều chỉnh sau bản v1 — 2026-10-22
+
+Người dùng yêu cầu đề khoảng 60 câu, tiếp tục Phase 1 60% / Phase 2 40%. Chốt đúng 60 câu: Phase 1 có 34 khách quan + 2 rubric; Phase 2 mỗi Track có 5 khách quan + 1 rubric. Như vậy tỷ lệ đúng cả theo số câu (36/24) lẫn điểm (60/40), giữ 90 phút và 10 điểm rubric như yêu cầu ban đầu.
+
+Mỗi bucket có tổng điểm nguyên theo đơn vị 0,01; chia quotient/remainder cho các slot, chênh tối đa 1 đơn vị trong bucket. Phase 1 khách quan 5.400 đơn vị trên 34 câu, rubric 600 trên 2; mỗi Track khách quan 36×w, rubric 4×w khi w là phần trăm trong Phase 2. Trọng số là bội dương 0,25%, tổng đúng 100%. Lưu điểm theo snapshot nên đề cũ không bị tính lại theo blueprint mới.
+
+Người dùng xác nhận tối thiểu 20 câu mỗi file PDF: 63 file, tối thiểu 1.260 câu. Từ 204 câu hiện tại cần bổ sung 1.056 câu, review độc lập theo batch. Câu hỏi phải hỏi trực tiếp về kiến thức hoặc tình huống trong PDF; không dẫn kiểu “trong slide”, “theo tài liệu”. Tham chiếu file/trang nằm riêng trong metadata nguồn.

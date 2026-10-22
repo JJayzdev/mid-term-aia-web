@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
-import { makeQuestion } from '../test/fixtures';
+import { makeExamBank, makeQuestion } from '../test/fixtures';
 import { DomainError } from '../domain/errors';
 import { claimAttempt, createAttempt, createBackup, DB_NAME, getAttempt, gradeRubric, listAttempts, openDatabase, resetDatabaseForTests, restoreBackup, saveAnswer, stageImport, submitAttempt, validateBackup } from './database';
 import type { AttemptQuestion } from '../domain/types';
@@ -136,5 +136,59 @@ describe('personal backup boundary', () => {
     const backup = await createBackup();
     await restoreBackup(backup);
     expect((await getAttempt('backup'))?.status).toBe('graded'); expect(backup.attempts).toHaveLength(1);
+  });
+});
+
+describe('legacy exam snapshot compatibility', () => {
+  it('keeps the original 36-question points, answers, and grade when resumed and restored', async () => {
+    const source = makeExamBank().questions;
+    const selected = [
+      ...source.filter(q => q.phase === 1 && q.answer_format !== 'rubric').sort((a, b) => a.id.localeCompare(b.id)).slice(0, 18),
+      ...source.filter(q => q.phase === 1 && q.answer_format === 'rubric'),
+      ...([1, 2, 3, 4] as const).flatMap(track => [
+        ...source.filter(q => q.phase === 2 && q.track === track && q.answer_format !== 'rubric').sort((a, b) => a.id.localeCompare(b.id)).slice(0, 3),
+        ...source.filter(q => q.phase === 2 && q.track === track && q.answer_format === 'rubric'),
+      ]),
+    ];
+    const questions: AttemptQuestion[] = selected.map(question => ({
+      question,
+      points: question.phase === 1 ? 300 : question.answer_format === 'rubric' ? 100 : 300,
+      optionOrder: question.options?.map(option => option.id) ?? [],
+    }));
+    expect(questions).toHaveLength(36);
+    expect(questions.reduce((sum, item) => sum + item.points, 0)).toBe(10000);
+
+    let attempt = await createAttempt({ id: 'legacy-36-exam', mode: 'exam', label: 'Thi thử 90 phút · bản cũ', seed: 'legacy-seed', bankVersion: 'legacy-bank-v1', questions, writerToken: 'legacy-tab', now: 1000 });
+    for (let index = 0; index < questions.length; index++) {
+      const item = questions[index];
+      const answer = item.question.answer_format === 'rubric' ? `Bài tự luận ${item.question.id}` : item.question.correct_answer;
+      attempt = await saveAnswer(attempt.id, item.question.id, answer, attempt.revision, 1100 + index, 'legacy-tab');
+    }
+    attempt = await submitAttempt(attempt.id, attempt.revision, 1200, false, 'legacy-tab');
+    expect(attempt.status).toBe('submitted_pending_grading');
+    expect(attempt.score).toMatchObject({ objectivePoints: 9000, pendingPoints: 1000, maxPoints: 10000 });
+
+    const resumed = await claimAttempt(attempt.id, 'resume-tab');
+    expect(resumed.questions).toEqual(questions);
+    expect(resumed.answers).toEqual(attempt.answers);
+    expect(resumed.score).toEqual(attempt.score);
+    attempt = resumed;
+    for (const item of questions.filter(part => part.question.answer_format === 'rubric')) {
+      const marks = Object.fromEntries((item.question.rubric ?? []).map(criterion => [criterion.id, 1]));
+      attempt = await gradeRubric(attempt.id, item.question.id, marks, attempt.revision, 'resume-tab');
+    }
+    expect(attempt.status).toBe('graded');
+    expect(attempt.score).toMatchObject({ objectivePoints: 9000, rubricPoints: 1000, totalPoints: 10000, maxPoints: 10000 });
+
+    const backup = await createBackup();
+    resetDatabaseForTests();
+    await new Promise<void>((resolve, reject) => { const req = indexedDB.deleteDatabase(DB_NAME); req.onsuccess = () => resolve(); req.onerror = () => reject(req.error); req.onblocked = () => reject(new Error('delete blocked')); });
+    await restoreBackup(backup);
+    const restored = await getAttempt('legacy-36-exam');
+    expect(restored?.questions).toEqual(questions);
+    expect(restored?.questions.map(item => item.points)).toEqual(questions.map(item => item.points));
+    expect(restored?.answers).toEqual(attempt.answers);
+    expect(restored?.score).toEqual(attempt.score);
+    expect(restored?.status).toBe('graded');
   });
 });
