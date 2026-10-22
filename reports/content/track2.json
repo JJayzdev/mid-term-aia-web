@@ -1,0 +1,516 @@
+{
+  "batch_file": "data/questions/drafts/track2.json",
+  "reviewer_id": "reviewer",
+  "reviewed_at": "2026-10-22T07:05:35.198983+00:00",
+  "results": [
+    {
+      "id": "p2-t2-d01-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d01",
+          "pdf_page": 11
+        }
+      ],
+      "notes": [
+        "p11: AIaaS fastest/noinfra,paypertoken,a đúng; physical/IaaS cầnops. Đã xem trang gốc và đối chiếu explanation/options."
+      ]
+    },
+    {
+      "id": "p2-t2-d01-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d01",
+          "pdf_page": 12
+        }
+      ],
+      "notes": [
+        "p12: Team security/encryption/IAMleastprivilege,a/c đúng; hardware/hypervisor thuộcprovider. Đã xem trang gốc và đối chiếu explanation/options."
+      ]
+    },
+    {
+      "id": "p2-t2-d01-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d01",
+          "pdf_page": 11
+        }
+      ],
+      "notes": [
+        "p11: Hybrid trainingIaaS/servingPaaS/prototypeAIaaS ghi chú cuối,true đúng. Đã xem trang gốc và đối chiếu explanation/options."
+      ]
+    },
+    {
+      "id": "p2-t2-d02-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d02",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "p9: Bronze insert-only, lưu cả3+whitespace,b đúng;trim/dedup/update trái cam kết. Đã xem trang gốc và đối chiếu explanation/options."
+      ]
+    },
+    {
+      "id": "p2-t2-d02-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d02",
+          "pdf_page": 13
+        }
+      ],
+      "notes": [
+        "p13: RAG pinnedembedding,feature pointintime,a/d đúng; overwrite/singleGold trái bảng. Đã xem trang gốc và đối chiếu explanation/options."
+      ]
+    },
+    {
+      "id": "p2-t2-d02-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d02",
+          "pdf_page": 13
+        }
+      ],
+      "notes": [
+        "p13: Mixed embedding coordinate systems nhiễu,a đúng;topk/dimension-only không bảo đảmversion. Đã xem trang gốc và đối chiếu explanation/options."
+      ]
+    },
+    {
+      "id": "p2-t2-d03-q01",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d03",
+          "pdf_page": 11
+        }
+      ],
+      "notes": [
+        "p11: DynamicDecision đúng nguồn nhưng trùng đáng kể p1-d03-q01; yêu cầu đổi ứng dụngkhác. Đã xem trang gốc và đối chiếu explanation/options.",
+        "Retestrev2: đổi thành lowAgenticFit1–2/5→simpleworkflow/chatbot, khớp lưu ýp11 đãxem; distractor tăngagent/loop/memory khôngthay fit; khôngcòntrùngP1."
+      ]
+    },
+    {
+      "id": "p2-t2-d03-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d03",
+          "pdf_page": 13
+        }
+      ],
+      "notes": [
+        "p13: One-step vàdeterministic/costerror cao anti-pattern,b/d đúng;adaptive/longhorizon ủng hộagent. Đã xem trang gốc và đối chiếu explanation/options."
+      ]
+    },
+    {
+      "id": "p2-t2-d03-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d03",
+          "pdf_page": 13
+        }
+      ],
+      "notes": [
+        "p13: Benchmark rule/workflow/chatbot beforeagent ghi rõ,true đúng. Đã xem trang gốc và đối chiếu explanation/options."
+      ]
+    },
+    {
+      "id": "p2-t2-d04-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d04",
+          "pdf_page": 13
+        }
+      ],
+      "notes": [
+        "p13: FAISS C++Pythonlibrary notserver,a đúng;DB/embeddingmodel/LLMonly sai loại. Đã xem trang gốc và đối chiếu explanation/options."
+      ]
+    },
+    {
+      "id": "p2-t2-d04-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d04",
+          "pdf_page": 16
+        }
+      ],
+      "notes": [
+        "p16: DiskANN SSDgraph/IVFcluster,a/d đúng;HNSWram vàIVFretrainingdrift bácbỏb/c. Đã xem trang gốc và đối chiếu explanation/options."
+      ]
+    },
+    {
+      "id": "p2-t2-d04-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d04",
+          "pdf_page": 16
+        }
+      ],
+      "notes": [
+        "p16: >100M cost-sensitiveDiskANN,d đúng; scenario chỉ đángbenchmark không claimbestabsolute. Đã xem trang gốc và đối chiếu explanation/options."
+      ]
+    },
+    {
+      "id": "p2-t2-d05-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d05",
+          "pdf_page": 6
+        }
+      ],
+      "notes": [
+        "p6: Goodput request/s meetsTTFT/TPOT,a đúng; saturation/queue/batch khôngSLOservice. Đã xem trang gốc và đối chiếu explanation/options."
+      ]
+    },
+    {
+      "id": "p2-t2-d05-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d05",
+          "pdf_page": 12
+        }
+      ],
+      "notes": [
+        "p12: Draftcandidates targetverify,continuousadmitperstep,a/b đúng;static/continuous đảo sai. Đã xem trang gốc và đối chiếu explanation/options."
+      ]
+    },
+    {
+      "id": "p2-t2-d05-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d05",
+          "pdf_page": 6
+        }
+      ],
+      "notes": [
+        "p6: TTFTtofirsttoken vsTPOTintertoken,false đúng. Đã xem trang gốc và đối chiếu explanation/options."
+      ]
+    },
+    {
+      "id": "p2-t2-d06-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d06",
+          "pdf_page": 7
+        }
+      ],
+      "notes": [
+        "p7: Tracking logparamsmetricsartifacts,a đúng;Registrylifecycle/Modelsformat/Projectsrepro khác. Đã xem trang gốc và đối chiếu explanation/options."
+      ]
+    },
+    {
+      "id": "p2-t2-d06-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d06",
+          "pdf_page": 13
+        }
+      ],
+      "notes": [
+        "p13: Metrics khôngdata version soA/B vônghĩa,true đúng. Đã xem trang gốc và đối chiếu explanation/options."
+      ]
+    },
+    {
+      "id": "p2-t2-d06-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d06",
+          "pdf_page": 13
+        },
+        {
+          "document_id": "p2-t2-d06",
+          "pdf_page": 7
+        }
+      ],
+      "notes": [
+        "p13/7: Run linkeddata version+snapshot/history resolvesoverwrite. Rubric c1linkedversion/c2replayversion,partial rõ,sum1; không bịa hiệu quả92/88 nguồn cóvídụ. Đã xem trang gốc và đối chiếu explanation/options."
+      ]
+    },
+    {
+      "id": "p2-t2-d07-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d07",
+          "pdf_page": 12
+        }
+      ],
+      "notes": [
+        "p12: Contextbundle córetrieval/tool schema,a/c đúng;onlysystem/guardrailunversioned trái nguyên tắc. Đã xem trang gốc và đối chiếu explanation/options."
+      ]
+    },
+    {
+      "id": "p2-t2-d07-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d07",
+          "pdf_page": 15
+        }
+      ],
+      "notes": [
+        "p15: Immutableversion movablelabel rollbackpointer,d đúng;overwrite/rebuild/deletehistory khôngtheo model. Đã xem trang gốc và đối chiếu explanation/options."
+      ]
+    },
+    {
+      "id": "p2-t2-d07-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d07",
+          "pdf_page": 15
+        }
+      ],
+      "notes": [
+        "p15: Newimmutableversion+stagingproductionlabels,true đúng. Đã xem trang gốc và đối chiếu explanation/options."
+      ]
+    },
+    {
+      "id": "p2-t2-d08-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d08",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "p9: RPO lượngdata mất,a đúng;RTOdowntime khác. Đã xem trang gốc và đối chiếu explanation/options."
+      ]
+    },
+    {
+      "id": "p2-t2-d08-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d08",
+          "pdf_page": 16
+        }
+      ],
+      "notes": [
+        "p16: Activepassive >5min/GPUbudget,a/c đúng;near0fullpool làactiveactive. Đã xem trang gốc và đối chiếu explanation/options."
+      ]
+    },
+    {
+      "id": "p2-t2-d08-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d08",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "p9: DifferentRTOdowntime/RPOloss+componentcost. Rubric hai khái niệm vàcomponentcost rõ,sum1. Đã xem trang gốc và đối chiếu explanation/options."
+      ]
+    },
+    {
+      "id": "p2-t2-d10-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d10",
+          "pdf_page": 14
+        }
+      ],
+      "notes": [
+        "p14: MCP headers routing/quotaL7noparsebody,a đúng; không bypassauthz hoặc semanticallyverifyresult. Đã xem trang gốc và đối chiếu explanation/options."
+      ]
+    },
+    {
+      "id": "p2-t2-d10-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d10",
+          "pdf_page": 15
+        }
+      ],
+      "notes": [
+        "p15: Toolquota+percallauthz,b/d đúng;sessiontrust/clientcatalog trái gateway. Đã xem trang gốc và đối chiếu explanation/options."
+      ]
+    },
+    {
+      "id": "p2-t2-d10-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d10",
+          "pdf_page": 15
+        }
+      ],
+      "notes": [
+        "p15: Stateless identityperrequest,authzpercall,true đúng; scope thiết kế tài liệu. Đã xem trang gốc và đối chiếu explanation/options."
+      ]
+    },
+    {
+      "id": "p2-t2-d11-q01",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d11",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "p9: Inference$/1Mtoken normalize,c đúng;revision2 dcost/requestwithoutlength/workload adjacentnormalizationerror acceptable. Đã xem trang gốc và đối chiếu explanation/options."
+      ]
+    },
+    {
+      "id": "p2-t2-d11-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d11",
+          "pdf_page": 16
+        }
+      ],
+      "notes": [
+        "p16: Spot saveS3GCS andtestresume,c/d đúng;RAMonly/waitfailure trái bestpractice. Đã xem trang gốc và đối chiếu explanation/options."
+      ]
+    },
+    {
+      "id": "p2-t2-d11-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d11",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "p9: Training$/job explicit,true đúng; không kiểm chứng giácloud ngoài slide. Đã xem trang gốc và đối chiếu explanation/options."
+      ]
+    },
+    {
+      "id": "p2-t2-d12-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d12",
+          "pdf_page": 6
+        }
+      ],
+      "notes": [
+        "p6: Freshness lastupdate/SLA,d đúng;schema/lineage/volume khác. Đã xem trang gốc và đối chiếu explanation/options."
+      ]
+    },
+    {
+      "id": "p2-t2-d12-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d12",
+          "pdf_page": 13
+        }
+      ],
+      "notes": [
+        "p13: Rulesknowncontracts/anomalyunexpectedpatterns,a/d đúng;b/c đảo hay tuyệtđối sai. Đã xem trang gốc và đối chiếu explanation/options."
+      ]
+    },
+    {
+      "id": "p2-t2-d12-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d12",
+          "pdf_page": 6
+        }
+      ],
+      "notes": [
+        "p6: Lineage origins/downstream,true đúng. Đã xem trang gốc và đối chiếu explanation/options."
+      ]
+    },
+    {
+      "id": "p2-t2-d13-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d13",
+          "pdf_page": 10
+        }
+      ],
+      "notes": [
+        "p10: Audit tokencost/modelversion,a/c đúng;uptime/useronly khôngtrace request. Đã xem trang gốc và đối chiếu explanation/options."
+      ]
+    },
+    {
+      "id": "p2-t2-d13-q02",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d13",
+          "pdf_page": 11
+        }
+      ],
+      "notes": [
+        "p11: Consumersexpectedinterface,d đúng;revision2 providerdriven/snapshotassumption sai adjacentconcept. Đã xem trang gốc và đối chiếu explanation/options."
+      ]
+    },
+    {
+      "id": "p2-t2-d13-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d13",
+          "pdf_page": 11
+        }
+      ],
+      "notes": [
+        "p11: Faultinjectlatency/killpods/corruptdata checksdegradation,b đúng;happyonly/mocksuccess/compile khôngfailuretest. Đã xem trang gốc và đối chiếu explanation/options."
+      ]
+    }
+  ]
+}

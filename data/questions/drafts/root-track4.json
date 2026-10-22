@@ -1,0 +1,2029 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "track4-draft-001",
+  "questions": [
+    {
+      "id": "p2-t4-d01-q01",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "hard",
+      "cognitive_level": "apply",
+      "question": "Với softmax + cross-entropy, p=(0,659; 0,242; 0,099) và nhãn one-hot y=(1; 0; 0), gradient theo logits là gì?",
+      "correct_answer": "c",
+      "explanation": "Slide cho công thức gradient theo logits là p − y. Trừ theo từng thành phần cho kết quả (-0,341; 0,242; 0,099).",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 56,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "options": [
+        {
+          "id": "a",
+          "text": "(0,659; 0; 0)"
+        },
+        {
+          "id": "b",
+          "text": "(1; 0; 0)"
+        },
+        {
+          "id": "c",
+          "text": "(-0,341; 0,242; 0,099)"
+        },
+        {
+          "id": "d",
+          "text": "(0,341; -0,242; -0,099)"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d01-q02",
+      "revision": 2,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Tại sao tăng learning rate quá lớn có thể làm loss tăng dù cập nhật đi ngược gradient?",
+      "correct_answer": "b",
+      "explanation": "Gradient cho hướng giảm cục bộ, còn learning rate quyết định độ dài bước. Slide lưu ý gradient không cho biết bước dài bao nhiêu là an toàn.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 66,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "options": [
+        {
+          "id": "a",
+          "text": "Loss phải giảm ở mỗi bước dù learning rate lớn; dao động chỉ có thể do thiếu tham số."
+        },
+        {
+          "id": "b",
+          "text": "Gradient mô tả độ dốc cục bộ; bước quá dài có thể vượt vùng mà hướng đó còn phù hợp."
+        },
+        {
+          "id": "c",
+          "text": "Gradient ở một điểm bảo đảm giảm loss với mọi độ dài bước; loss tăng chỉ có thể do nhãn sai."
+        },
+        {
+          "id": "d",
+          "text": "Learning rate chỉ đổi hướng gradient, không đổi độ dài bước cập nhật."
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d01-q03",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "easy",
+      "cognitive_level": "understand",
+      "question": "Theo slide, kỹ thuật nào phù hợp để xử lý gradient bùng nổ?",
+      "correct_answer": "a",
+      "explanation": "Slide phân biệt gradient biến mất và bùng nổ; gradient clipping được nêu cho trường hợp bùng nổ.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 45,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cắt gradient (gradient clipping)."
+        },
+        {
+          "id": "b",
+          "text": "Thay mọi skip connection bằng lớp sigmoid."
+        },
+        {
+          "id": "c",
+          "text": "Chỉ tăng số lớp sigmoid để nhân thêm các đạo hàm nhỏ."
+        },
+        {
+          "id": "d",
+          "text": "Chỉ giảm độ rộng hidden layer mà không kiểm soát chuẩn gradient."
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d01-q04",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Theo phần tổng kết, AdamW tách weight decay khỏi gradient thay vì gộp L2 trực tiếp vào gradient như Adam(weight_decay) trong ví dụ PyTorch.",
+      "correct_answer": true,
+      "explanation": "Đây là điểm khác biệt được ghi trong tổng kết Chương 4 của tài liệu.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 81,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review"
+    },
+    {
+      "id": "p2-t4-d02-q01",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d02",
+      "topic": "p2-t4-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong residual learning, nếu ánh xạ mong muốn là H(x), nhánh residual F(x) được định nghĩa thế nào?",
+      "correct_answer": "b",
+      "explanation": "Khối residual học phần dư H(x)−x, rồi cộng đường tắt x để tạo F(x)+x.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d02",
+          "sha256": "58895651f776ef9fb62c9010d0c0c7b338849ea96e4a5dcbbe46b7afb77110b7",
+          "pdf_page": 15,
+          "title": "Kiến Trúc Mạng Cho Thị Giác Máy Tính",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "options": [
+        {
+          "id": "a",
+          "text": "F(x)=H(x)²"
+        },
+        {
+          "id": "b",
+          "text": "F(x)=H(x)−x"
+        },
+        {
+          "id": "c",
+          "text": "F(x)=H(x)+x"
+        },
+        {
+          "id": "d",
+          "text": "F(x)=x/H(x)"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d02-q02",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d02",
+      "topic": "p2-t4-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Giữ nguyên chiều embedding d, khi số token n tăng gấp đôi thì chi phí self-attention O(n²d) tăng khoảng bao nhiêu?",
+      "correct_answer": "a",
+      "explanation": "Thay n bởi 2n: (2n)²d=4n²d. Đây là chi phí theo số token, không phải khẳng định mọi thời gian chạy đo được đều đúng gấp bốn.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d02",
+          "sha256": "58895651f776ef9fb62c9010d0c0c7b338849ea96e4a5dcbbe46b7afb77110b7",
+          "pdf_page": 36,
+          "title": "Kiến Trúc Mạng Cho Thị Giác Máy Tính",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "options": [
+        {
+          "id": "a",
+          "text": "4 lần"
+        },
+        {
+          "id": "b",
+          "text": "2 lần"
+        },
+        {
+          "id": "c",
+          "text": "8 lần"
+        },
+        {
+          "id": "d",
+          "text": "Không đổi"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d02-q03",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d02",
+      "topic": "p2-t4-d02",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Chọn các mô tả đúng về multi-head attention trong slide.",
+      "correct_answer": [
+        "d",
+        "a"
+      ],
+      "explanation": "Slide mô tả h phép attention song song, từng head có các phép chiếu riêng; các kết quả được concatenate rồi chiếu đầu ra.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d02",
+          "sha256": "58895651f776ef9fb62c9010d0c0c7b338849ea96e4a5dcbbe46b7afb77110b7",
+          "pdf_page": 32,
+          "title": "Kiến Trúc Mạng Cho Thị Giác Máy Tính",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "options": [
+        {
+          "id": "a",
+          "text": "Kết quả các head được ghép lại rồi chiếu thêm một lần."
+        },
+        {
+          "id": "b",
+          "text": "Mọi head bắt buộc dùng chung cùng một Q, K, V."
+        },
+        {
+          "id": "c",
+          "text": "Các head chạy nối tiếp và mỗi head chỉ nhận đầu ra của head trước."
+        },
+        {
+          "id": "d",
+          "text": "Mỗi head có bộ chiếu Q, K, V riêng."
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d02-q04",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d02",
+      "topic": "p2-t4-d02",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Mạng thường 56 lớp có sai số huấn luyện cao hơn mạng 20 lớp; chỉ dấu đó đủ để kết luận nguyên nhân là overfitting.",
+      "correct_answer": false,
+      "explanation": "Slide gọi đây là degradation và nhấn mạnh sai số ngay trên tập huấn luyện đã cao hơn, nên không thể giải thích đơn thuần là overfitting.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d02",
+          "sha256": "58895651f776ef9fb62c9010d0c0c7b338849ea96e4a5dcbbe46b7afb77110b7",
+          "pdf_page": 15,
+          "title": "Kiến Trúc Mạng Cho Thị Giác Máy Tính",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review"
+    },
+    {
+      "id": "p2-t4-d03-q01",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d03",
+      "topic": "p2-t4-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Hai bounding box có diện tích phần giao bằng 4 và phần hợp bằng 10. IoU bằng bao nhiêu?",
+      "correct_answer": "a",
+      "explanation": "IoU là diện tích giao chia diện tích hợp: 4/10=0,4.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d03",
+          "sha256": "bbc8de22523a77f295328ce15328e0d811a078152b75e9d6cedd159dc45e739e",
+          "pdf_page": 14,
+          "title": "2D Perception: Detection · Segmentation · Keypoints",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,4"
+        },
+        {
+          "id": "b",
+          "text": "2,5"
+        },
+        {
+          "id": "c",
+          "text": "0,6"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d03-q02",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d03",
+      "topic": "p2-t4-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong greedy NMS, sau khi lọc confidence, bước nào được thực hiện trước khi loại các box chồng lấn?",
+      "correct_answer": "d",
+      "explanation": "NMS giữ box điểm cao nhất, rồi loại box còn lại có IoU vượt ngưỡng với box vừa giữ; sau đó lặp lại.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d03",
+          "sha256": "bbc8de22523a77f295328ce15328e0d811a078152b75e9d6cedd159dc45e739e",
+          "pdf_page": 28,
+          "title": "2D Perception: Detection · Segmentation · Keypoints",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "options": [
+        {
+          "id": "a",
+          "text": "Giữ box có diện tích lớn nhất bất kể score."
+        },
+        {
+          "id": "b",
+          "text": "Lấy trung bình tọa độ mọi box rồi xóa tất cả box ban đầu."
+        },
+        {
+          "id": "c",
+          "text": "Sắp score tăng dần và giữ box thấp nhất."
+        },
+        {
+          "id": "d",
+          "text": "Sắp score giảm dần và giữ box có score cao nhất."
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d03-q03",
+      "revision": 2,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d03",
+      "topic": "p2-t4-d03",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Slide nêu những vai trò nào của IoU? Chọn tất cả đáp án đúng.",
+      "correct_answer": [
+        "c",
+        "d",
+        "a"
+      ],
+      "explanation": "Ba vai trò được liệt kê trực tiếp: assignment, NMS, đánh giá TP/FP. IoU đo mức chồng lấn hình học, không phải xác suất lớp từ logits.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d03",
+          "sha256": "bbc8de22523a77f295328ce15328e0d811a078152b75e9d6cedd159dc45e739e",
+          "pdf_page": 14,
+          "title": "2D Perception: Detection · Segmentation · Keypoints",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tiêu chí TP/FP khi đánh giá."
+        },
+        {
+          "id": "b",
+          "text": "Đo trực tiếp xác suất thuộc lớp của vật thể từ logits phân loại."
+        },
+        {
+          "id": "c",
+          "text": "Assignment khi huấn luyện."
+        },
+        {
+          "id": "d",
+          "text": "Ngưỡng trong NMS."
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d03-q04",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d03",
+      "topic": "p2-t4-d03",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong kiến trúc YOLO26 minh họa trên slide, head one-to-one có thể suy luận không cần NMS.",
+      "correct_answer": true,
+      "explanation": "Sơ đồ phân biệt head one-to-many đi qua NMS và head one-to-one không NMS. Câu hỏi bám cấu hình minh họa của tài liệu, không khái quát cho mọi detector.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d03",
+          "sha256": "bbc8de22523a77f295328ce15328e0d811a078152b75e9d6cedd159dc45e739e",
+          "pdf_page": 24,
+          "title": "2D Perception: Detection · Segmentation · Keypoints",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review"
+    },
+    {
+      "id": "p2-t4-d04-q01",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d04",
+      "topic": "p2-t4-d04",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những đại lượng nào thuộc camera intrinsics?",
+      "correct_answer": [
+        "d",
+        "a"
+      ],
+      "explanation": "Intrinsics mô tả tiêu cự, tâm ảnh và méo ảnh; biến đổi giữa cảm biến là extrinsics, lệch timestamp là temporal calibration.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 22,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "options": [
+        {
+          "id": "a",
+          "text": "Distortion của ống kính."
+        },
+        {
+          "id": "b",
+          "text": "Rigid transform từ LiDAR sang camera."
+        },
+        {
+          "id": "c",
+          "text": "Timestamp offset giữa camera và radar."
+        },
+        {
+          "id": "d",
+          "text": "Focal length và principal point."
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d04-q02",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d04",
+      "topic": "p2-t4-d04",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Nên ưu tiên kiểm tra nhóm nguyên nhân nào?",
+      "correct_answer": "c",
+      "explanation": "Slide gợi ý object lệch theo vận tốc là dấu hiệu của lỗi time sync; cần kiểm tra timestamp offset, latency hoặc rolling-shutter timing.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 22,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "context": "Hợp nhất camera–LiDAR trông gần đúng khi xe đứng yên, nhưng vật thể lệch ngày càng nhiều khi xe chạy nhanh.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Extrinsics: chỉ một biến đổi cứng cố định, không xét timestamp."
+        },
+        {
+          "id": "b",
+          "text": "Chỉ giới hạn range của LiDAR, bỏ qua độ trễ."
+        },
+        {
+          "id": "c",
+          "text": "Temporal calibration/time sync."
+        },
+        {
+          "id": "d",
+          "text": "Intrinsics: tiêu cự và méo ống kính, không xét thời gian."
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d04-q03",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d04",
+      "topic": "p2-t4-d04",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "easy",
+      "cognitive_level": "understand",
+      "question": "Online calibration cần đủ robust trước các vật thể chuyển động trong cảnh.",
+      "correct_answer": true,
+      "explanation": "Slide ghi ước lượng khi xe/robot đang chạy phải robust với dynamic objects.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 23,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review"
+    },
+    {
+      "id": "p2-t4-d04-q04",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d04",
+      "topic": "p2-t4-d04",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "rubric",
+      "difficulty": "hard",
+      "cognitive_level": "analyze",
+      "question": "Nêu hai bước kiểm tra có căn cứ để xử lý độ lệch sau khi tháo lắp cảm biến: một bước chẩn đoán và một bước đánh giá sau hiệu chỉnh.",
+      "correct_answer": "Kiểm tra extrinsics/rigid transform và dấu hiệu projection drift sau tháo lắp; hiệu chỉnh rồi đo reprojection error, so sánh ảnh hưởng đến mAP hoặc association.",
+      "explanation": "Slide phân biệt extrinsics với intrinsics/time sync; phần re-calibration nêu rung, tháo lắp, va chạm là trigger và đề xuất đo reprojection error cùng mAP/association drop.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 22,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 23,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "context": "Sau khi tháo lắp LiDAR, phép chiếu lên camera bị lệch cố định. Nhóm muốn xác định nguyên nhân và chứng minh hiệu chỉnh có ích.",
+      "rubric": [
+        {
+          "id": "diagnosis",
+          "description": "Chẩn đoán hình học sau tháo lắp",
+          "weight": 0.5,
+          "full_credit": "Nêu kiểm tra extrinsics/rigid transform và liên hệ với độ lệch cố định hoặc projection drift sau tháo lắp.",
+          "partial_credit": "Nêu đúng extrinsics/rigid transform nhưng chưa liên hệ với triệu chứng.",
+          "no_credit": "Không nêu kiểm tra extrinsics hoặc chỉ quy lỗi cho nhãn/loss."
+        },
+        {
+          "id": "measurement",
+          "description": "Đánh giá sau hiệu chỉnh",
+          "weight": 0.5,
+          "full_credit": "Nêu đo reprojection error trước–sau và thêm ít nhất một chỉ số mAP hoặc association để kiểm tra ảnh hưởng.",
+          "partial_credit": "Chỉ nêu một trong hai: reprojection error hoặc mAP/association trước–sau.",
+          "no_credit": "Không nêu phép đo liên quan, chỉ đánh giá bằng cảm giác."
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d05-q01",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d05",
+      "topic": "p2-t4-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "easy",
+      "cognitive_level": "understand",
+      "question": "Thứ tự hai bước lặp của Kalman filter được mô tả thế nào?",
+      "correct_answer": "c",
+      "explanation": "Predict đưa ước lượng tiến theo mô hình; update kết hợp phép đo đến với trọng số phù hợp.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 18,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ dự đoán, không sử dụng phép đo."
+        },
+        {
+          "id": "b",
+          "text": "Huấn luyện lại mạng neural từ đầu ở mỗi bước."
+        },
+        {
+          "id": "c",
+          "text": "Dự đoán trạng thái, rồi cập nhật bằng phép đo mới."
+        },
+        {
+          "id": "d",
+          "text": "Gán phép đo làm trạng thái và bỏ hoàn toàn dự đoán."
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d05-q02",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d05",
+      "topic": "p2-t4-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "easy",
+      "cognitive_level": "understand",
+      "question": "Bộ lọc Kalman cần giữ hai đại lượng cốt lõi nào giữa các bước?",
+      "correct_answer": "b",
+      "explanation": "Slide nói bộ lọc nhớ phỏng đoán tốt nhất x và độ bất định P, không bắt buộc giữ toàn bộ lịch sử.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 18,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "options": [
+        {
+          "id": "a",
+          "text": "Phép đo gần nhất z và ma trận đo H, không cần trạng thái ước lượng."
+        },
+        {
+          "id": "b",
+          "text": "Ước lượng trạng thái x và độ bất định P."
+        },
+        {
+          "id": "c",
+          "text": "Ước lượng trạng thái x và ma trận nhiễu đo R, không cần P."
+        },
+        {
+          "id": "d",
+          "text": "Ma trận chuyển trạng thái F và nhiễu quá trình Q, không cần x."
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d05-q03",
+      "revision": 2,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d05",
+      "topic": "p2-t4-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "EKF xử lý mô hình đo phi tuyến theo cách nào?",
+      "correct_answer": "a",
+      "explanation": "EKF dùng hàm thật để dự đoán, tính đạo hàm/Jacobian tại điểm đang tin và dùng xấp xỉ đó cho cập nhật.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 31,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tuyến tính hóa cục bộ bằng Jacobian quanh ước lượng hiện tại."
+        },
+        {
+          "id": "b",
+          "text": "Giả định mọi hàm đo đều tuyến tính trên toàn miền."
+        },
+        {
+          "id": "c",
+          "text": "Thay hàm đo bằng trung bình các phép đo mà không tuyến tính hóa quanh ước lượng."
+        },
+        {
+          "id": "d",
+          "text": "Tính Jacobian một lần tại gốc tọa độ rồi giữ cố định cho mọi trạng thái tiếp theo."
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d05-q04",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d05",
+      "topic": "p2-t4-d05",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Theo slide, khi hàm cong mạnh hoặc độ bất định lớn, xấp xỉ của EKF có thể lệch cả trung bình lẫn độ rộng phân phối.",
+      "correct_answer": true,
+      "explanation": "Slide minh họa sự khác biệt của phân phối thật và xấp xỉ EKF, đồng thời nêu các điều kiện làm xấp xỉ kém.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 31,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review"
+    },
+    {
+      "id": "p2-t4-d06-q01",
+      "revision": 2,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d06",
+      "topic": "p2-t4-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao voxel kết hợp sparse convolution giúp tiết kiệm tính toán trên point cloud?",
+      "correct_answer": "b",
+      "explanation": "Sparse convolution tận dụng không gian thưa: tránh tính tại các voxel rỗng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d06",
+          "sha256": "1c49ea2510761c0798a7b9d139ab9074eba188719a16cec41778714cef54f0d7",
+          "pdf_page": 9,
+          "title": "3D from Point Clouds and Where LiDAR Meets the Camera",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nội suy lấp mọi voxel rỗng rồi luôn chạy dense convolution trên toàn lưới."
+        },
+        {
+          "id": "b",
+          "text": "Chỉ tính convolution tại các voxel có dữ liệu."
+        },
+        {
+          "id": "c",
+          "text": "Tính dense convolution trên mọi voxel rỗng và không rỗng với chi phí như nhau."
+        },
+        {
+          "id": "d",
+          "text": "Chỉ tính tại voxel rỗng và bỏ qua voxel có điểm đo."
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d06-q02",
+      "revision": 2,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d06",
+      "topic": "p2-t4-d06",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Chọn các mô tả đúng về biểu diễn point cloud.",
+      "correct_answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "Slide so sánh point, voxel, pillar và range-view; voxel-based rời rạc hóa không gian 3D, nên mô tả giữ liên tục mọi tọa độ là sai.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d06",
+          "sha256": "1c49ea2510761c0798a7b9d139ab9074eba188719a16cec41778714cef54f0d7",
+          "pdf_page": 7,
+          "title": "3D from Point Clouds and Where LiDAR Meets the Camera",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "options": [
+        {
+          "id": "a",
+          "text": "Point-based học trực tiếp trên tập điểm."
+        },
+        {
+          "id": "b",
+          "text": "Pillar/BEV nén theo trục thẳng đứng."
+        },
+        {
+          "id": "c",
+          "text": "Range-view chiếu sang ảnh theo góc quét."
+        },
+        {
+          "id": "d",
+          "text": "Voxel-based luôn giữ nguyên liên tục mọi tọa độ và không rời rạc hóa."
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d06-q03",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d06",
+      "topic": "p2-t4-d06",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "easy",
+      "cognitive_level": "understand",
+      "question": "Mật độ điểm LiDAR thường giảm theo khoảng cách, nên vật thể xa có ít điểm hơn.",
+      "correct_answer": true,
+      "explanation": "Đây là một đặc tính point cloud được nêu trong slide, ảnh hưởng khả năng nhận biết vật thể xa.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d06",
+          "sha256": "1c49ea2510761c0798a7b9d139ab9074eba188719a16cec41778714cef54f0d7",
+          "pdf_page": 5,
+          "title": "3D from Point Clouds and Where LiDAR Meets the Camera",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review"
+    },
+    {
+      "id": "p2-t4-d06-q04",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d06",
+      "topic": "p2-t4-d06",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Việc nào cần được ưu tiên trước khi tăng độ phức tạp model?",
+      "correct_answer": "c",
+      "explanation": "Slide chỉ rõ sai frame/yaw, khác deskew và thiếu timestamp/calibration metadata có thể làm hỏng pipeline; cần ổn định dữ liệu và hình học trước.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d06",
+          "sha256": "1c49ea2510761c0798a7b9d139ab9074eba188719a16cec41778714cef54f0d7",
+          "pdf_page": 4,
+          "title": "3D from Point Clouds and Where LiDAR Meets the Camera",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "context": "Detector 3D chạy tốt trên dữ liệu train nhưng suy luận thực tế cho box quay sai hướng. Pipeline train và inference do hai nhóm cấu hình riêng.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bỏ timestamp để pipeline đơn giản hơn."
+        },
+        {
+          "id": "b",
+          "text": "Chỉ thay NMS threshold mà không kiểm tra preprocessing."
+        },
+        {
+          "id": "c",
+          "text": "Đối chiếu frame, quy ước yaw, deskew và metadata giữa train và inference."
+        },
+        {
+          "id": "d",
+          "text": "Chỉ tăng số lớp backbone để hấp thụ sai lệch tọa độ."
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d07-q01",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d07",
+      "topic": "p2-t4-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Hungarian giải bài toán association khác greedy ở điểm chính nào?",
+      "correct_answer": "a",
+      "explanation": "Slide đối chiếu greedy chọn cặp rẻ nhất trước với Hungarian tối ưu tổng chi phí toàn cục.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d07",
+          "sha256": "e664d320f682ce0aacfe2649cb5dd07e6d85563dadaef5cf92039bc43b07ee26",
+          "pdf_page": 20,
+          "title": "Tracking",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tìm phép ghép có tổng cost nhỏ nhất cho toàn bộ ma trận."
+        },
+        {
+          "id": "b",
+          "text": "Luôn chọn cặp có cost nhỏ nhất đầu tiên rồi khóa hàng/cột, không xét toàn cục."
+        },
+        {
+          "id": "c",
+          "text": "Chỉ ghép theo thứ tự ID tăng dần."
+        },
+        {
+          "id": "d",
+          "text": "Tối đa hóa số box mới bất kể cost."
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d07-q02",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d07",
+      "topic": "p2-t4-d07",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong ByteTrack được mô tả, box score thấp được dùng để tạo track mới ngay lập tức.",
+      "correct_answer": false,
+      "explanation": "Box score thấp dùng ở vòng hai để cứu track chưa ghép; slide ghi không sinh track mới từ nhóm box này.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d07",
+          "sha256": "e664d320f682ce0aacfe2649cb5dd07e6d85563dadaef5cf92039bc43b07ee26",
+          "pdf_page": 27,
+          "title": "Tracking",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review"
+    },
+    {
+      "id": "p2-t4-d07-q03",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d07",
+      "topic": "p2-t4-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "DeepSORT bổ sung thông tin nào so với SORT để giữ ID qua che khuất?",
+      "correct_answer": "c",
+      "explanation": "Slide tóm tắt SORT dựa motion+hình học, DeepSORT thêm trí nhớ ngoại hình để hỗ trợ association.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d07",
+          "sha256": "e664d320f682ce0aacfe2649cb5dd07e6d85563dadaef5cf92039bc43b07ee26",
+          "pdf_page": 26,
+          "title": "Tracking",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ tăng ngưỡng NMS trên từng frame độc lập."
+        },
+        {
+          "id": "b",
+          "text": "Chỉ ghép bằng IoU, không dùng embedding."
+        },
+        {
+          "id": "c",
+          "text": "Embedding ngoại hình/Re-ID."
+        },
+        {
+          "id": "d",
+          "text": "Chỉ giảm ngưỡng confidence của detector mà không thêm đặc trưng ngoại hình."
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d07-q04",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d07",
+      "topic": "p2-t4-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao matching cascade ưu tiên track mới mất trước track đã mất lâu?",
+      "correct_answer": "b",
+      "explanation": "Slide liên hệ thời gian không ghép với độ tin cậy của dự đoán Kalman và nguy cơ ghép nhầm.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d07",
+          "sha256": "e664d320f682ce0aacfe2649cb5dd07e6d85563dadaef5cf92039bc43b07ee26",
+          "pdf_page": 26,
+          "title": "Tracking",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ngoại hình của track mới mất không thể được lưu lại."
+        },
+        {
+          "id": "b",
+          "text": "Dự đoán của track mất lâu kém tin cậy hơn, dễ ghép nhầm nếu xét ngang hàng."
+        },
+        {
+          "id": "c",
+          "text": "Track mất lâu luôn chắc chắn đã ra khỏi cảnh nên không cần bất kỳ logic vòng đời nào."
+        },
+        {
+          "id": "d",
+          "text": "Track mới mất đã được gán ID mới và phải xóa ID cũ."
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d08-q01",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d08",
+      "topic": "p2-t4-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Hướng bottom-up kiểu LSS đưa ảnh lên BEV dựa vào thành phần nào?",
+      "correct_answer": "d",
+      "explanation": "Bottom-up dùng depth để nâng đặc trưng ảnh lên biểu diễn không gian/BEV; chất lượng depth ảnh hưởng kết quả.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d08",
+          "sha256": "0717147c9cedbe8d638ac82013e9c382ecaf338ccb6f379dd907591722d9cef7",
+          "pdf_page": 16,
+          "title": "3D từ Camera, BEV & Sensor Fusion",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ phép NMS trên box 2D, không có bước dùng depth."
+        },
+        {
+          "id": "b",
+          "text": "NMS loại toàn bộ điểm nằm ngoài ảnh mà không dùng hình học."
+        },
+        {
+          "id": "c",
+          "text": "Bỏ camera intrinsics và coi tọa độ pixel là tọa độ mét."
+        },
+        {
+          "id": "d",
+          "text": "Ước lượng depth theo pixel rồi nâng/chiếu đặc trưng lên BEV."
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d08-q02",
+      "revision": 2,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d08",
+      "topic": "p2-t4-d08",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Chọn mô tả phù hợp với nhánh top-down/query attention trên slide.",
+      "correct_answer": [
+        "c",
+        "d"
+      ],
+      "explanation": "Mô tả về BEVFormer và DETR3D đúng với slide; BEVFormer còn dùng attention với BEV của frame trước, nên phủ định temporal information là sai.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d08",
+          "sha256": "0717147c9cedbe8d638ac82013e9c382ecaf338ccb6f379dd907591722d9cef7",
+          "pdf_page": 16,
+          "title": "3D từ Camera, BEV & Sensor Fusion",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mọi mô hình top-down bắt buộc trước tiên dựng một depth map dense chính xác tuyệt đối."
+        },
+        {
+          "id": "b",
+          "text": "Top-down không bao giờ sử dụng nhiều frame."
+        },
+        {
+          "id": "c",
+          "text": "BEVFormer chiếu các điểm 3D của ô BEV vào ảnh để lấy đặc trưng qua attention."
+        },
+        {
+          "id": "d",
+          "text": "DETR3D dùng object query dự đoán tọa độ 3D rồi lấy đặc trưng ảnh."
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d08-q03",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d08",
+      "topic": "p2-t4-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "hard",
+      "cognitive_level": "apply",
+      "question": "Với tọa độ ảnh (u,v), depth z và ma trận nội tại K, công thức giải mã tọa độ camera trên slide là gì?",
+      "correct_answer": "b",
+      "explanation": "Slide nêu phép đi ngược từ pixel cùng depth sang tọa độ 3D bằng nghịch đảo camera intrinsics.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d08",
+          "sha256": "0717147c9cedbe8d638ac82013e9c382ecaf338ccb6f379dd907591722d9cef7",
+          "pdf_page": 9,
+          "title": "3D từ Camera, BEV & Sensor Fusion",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "options": [
+        {
+          "id": "a",
+          "text": "[x,y,z]ᵀ = z·[1,1,1]ᵀ"
+        },
+        {
+          "id": "b",
+          "text": "[x,y,z]ᵀ = z·K⁻¹·[u,v,1]ᵀ"
+        },
+        {
+          "id": "c",
+          "text": "[x,y,z]ᵀ = K·[u,v,1]ᵀ / z²"
+        },
+        {
+          "id": "d",
+          "text": "[x,y,z]ᵀ = [u,v,z]ᵀ không cần K"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d08-q04",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d08",
+      "topic": "p2-t4-d08",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Có thể coi biểu đồ NDS camera/LiDAR trên slide là bảng xếp hạng công bằng tuyệt đối giữa mọi model dù backbone và dữ liệu bổ sung khác nhau.",
+      "correct_answer": false,
+      "explanation": "Slide yêu cầu đọc như xu hướng vì backbone và dữ liệu bổ sung khác nhau, không coi là xếp hạng công bằng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d08",
+          "sha256": "0717147c9cedbe8d638ac82013e9c382ecaf338ccb6f379dd907591722d9cef7",
+          "pdf_page": 19,
+          "title": "3D từ Camera, BEV & Sensor Fusion",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review"
+    },
+    {
+      "id": "p2-t4-d09-q01",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d09",
+      "topic": "p2-t4-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Để hạn chế leakage khi chia dữ liệu video, nên làm gì?",
+      "correct_answer": "c",
+      "explanation": "Các frame gần nhau rất giống; chia theo cảnh hạn chế việc test có frame gần trùng trong train.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d09",
+          "sha256": "b15b6124d171a1174ac98580a2a2515eaaf09840a528dcd85fd37a6d090d4a15",
+          "pdf_page": 33,
+          "title": "Data và annotation pipeline cho Computer Vision và Robotics",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cho mọi frame test vào train để giảm variance."
+        },
+        {
+          "id": "b",
+          "text": "Chỉ đổi tên thư mục sau khi chia ngẫu nhiên từng frame."
+        },
+        {
+          "id": "c",
+          "text": "Chia theo cảnh/scene, tránh để frame gần trùng của cùng cảnh vào cả train và test."
+        },
+        {
+          "id": "d",
+          "text": "Chia ngẫu nhiên từng frame rồi tin rằng file khác tên là độc lập."
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d09-q02",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d09",
+      "topic": "p2-t4-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Khi đồng bộ camera, LiDAR và IMU trong pipeline, nên join theo loại thời gian nào?",
+      "correct_answer": "b",
+      "explanation": "Slide phân biệt event time và ingestion time, yêu cầu join theo thời điểm sự kiện thay vì thứ tự đến.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d09",
+          "sha256": "b15b6124d171a1174ac98580a2a2515eaaf09840a528dcd85fd37a6d090d4a15",
+          "pdf_page": 16,
+          "title": "Data và annotation pipeline cho Computer Vision và Robotics",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "options": [
+        {
+          "id": "a",
+          "text": "Timestamp của lúc ghi Parquet sau khi đã trộn các luồng."
+        },
+        {
+          "id": "b",
+          "text": "Event time: lúc sự kiện xảy ra, có xử lý dữ liệu đến muộn."
+        },
+        {
+          "id": "c",
+          "text": "Ingestion time: lúc pipeline nhận dữ liệu, bất kể độ trễ."
+        },
+        {
+          "id": "d",
+          "text": "Processing time của từng worker xử lý, không theo thời điểm đo."
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d09-q03",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d09",
+      "topic": "p2-t4-d09",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Mask do Grounding DINO + SAM tạo ra trong luồng pre-label đã mặc nhiên là ground truth và không cần người kiểm tra.",
+      "correct_answer": false,
+      "explanation": "Slide ghi pre-label chưa phải đáp án chuẩn; người vẫn cần kiểm tra/chỉnh nhãn.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d09",
+          "sha256": "b15b6124d171a1174ac98580a2a2515eaaf09840a528dcd85fd37a6d090d4a15",
+          "pdf_page": 51,
+          "title": "Data và annotation pipeline cho Computer Vision và Robotics",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review"
+    },
+    {
+      "id": "p2-t4-d09-q04",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d09",
+      "topic": "p2-t4-d09",
+      "taxonomy_status": "verified",
+      "question_type": "short_answer",
+      "answer_format": "rubric",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một dataset chỉ được gọi là “v3” chưa đủ để tái tạo thí nghiệm. Cần lưu những thông tin nào để định danh phiên bản và split?",
+      "correct_answer": "Lưu commit/snapshot của dữ liệu, danh sách hoặc quy tắc split tái tạo được (gồm seed nếu dùng) và revision mã xử lý. Tên v3 chỉ là nhãn, không mô tả đầy đủ đầu vào.",
+      "explanation": "Slide định nghĩa version bằng commit dữ liệu + danh sách split + mã xử lý; ví dụ manifest có data commit, split by_scene(seed) và git revision của code.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d09",
+          "sha256": "b15b6124d171a1174ac98580a2a2515eaaf09840a528dcd85fd37a6d090d4a15",
+          "pdf_page": 30,
+          "title": "Data và annotation pipeline cho Computer Vision và Robotics",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "rubric": [
+        {
+          "id": "data-code",
+          "description": "Định danh dữ liệu và mã xử lý",
+          "weight": 0.5,
+          "full_credit": "Nêu cả commit/snapshot dữ liệu và revision mã xử lý.",
+          "partial_credit": "Chỉ nêu đúng một trong hai: commit dữ liệu hoặc revision code.",
+          "no_credit": "Chỉ nêu tên v3/thời gian tùy ý mà không định danh dữ liệu hay code."
+        },
+        {
+          "id": "split",
+          "description": "Tái tạo tập train/validation/test",
+          "weight": 0.5,
+          "full_credit": "Nêu danh sách split cố định hoặc quy tắc tái tạo đầy đủ kèm seed khi ngẫu nhiên; không chỉ phần trăm chia.",
+          "partial_credit": "Có nêu cần lưu split nhưng chỉ nói tỷ lệ chia, chưa có danh sách/quy tắc tái tạo.",
+          "no_credit": "Không đề cập split hoặc đề xuất chia lại ngẫu nhiên mà không lưu thông tin."
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d10-q01",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d10",
+      "topic": "p2-t4-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Đầu ra đặc trưng của VLA cho robot trong sơ đồ slide là gì?",
+      "correct_answer": "b",
+      "explanation": "VLA được minh họa là VLM đã pretrain được bổ sung đầu ra hành động, phục vụ điều khiển robot.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d10",
+          "sha256": "763149a983add6ef60fee2fafb6f2caec98576b6afb2e1eca01f5c532cf78e2e",
+          "pdf_page": 39,
+          "title": "Vision–Language Model và VLA",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ bản đồ độ sâu, chưa sinh lệnh tác động lên robot."
+        },
+        {
+          "id": "b",
+          "text": "Chuỗi hành động như dịch chuyển, xoay và kẹp."
+        },
+        {
+          "id": "c",
+          "text": "Chỉ caption ảnh mà không có đầu ra hành động."
+        },
+        {
+          "id": "d",
+          "text": "Chỉ bounding box và class của vật thể."
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d10-q02",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d10",
+      "topic": "p2-t4-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Ở giai đoạn alignment Qwen3-VL được minh họa, thành phần nào được cập nhật trong khi ViT và LLM đóng băng?",
+      "correct_answer": "a",
+      "explanation": "Câu hỏi chỉ áp dụng ví dụ Qwen3-VL trong slide: giai đoạn đầu chỉ cập nhật projector/merger. Slide cũng chỉ ra mô hình khác có thể cập nhật khác.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d10",
+          "sha256": "763149a983add6ef60fee2fafb6f2caec98576b6afb2e1eca01f5c532cf78e2e",
+          "pdf_page": 19,
+          "title": "Vision–Language Model và VLA",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "options": [
+        {
+          "id": "a",
+          "text": "Projector/merger."
+        },
+        {
+          "id": "b",
+          "text": "Toàn bộ LLM nhưng không có projector."
+        },
+        {
+          "id": "c",
+          "text": "Chỉ tokenizer dạng chuỗi, không có tham số học."
+        },
+        {
+          "id": "d",
+          "text": "Toàn bộ ViT và LLM, projector đóng băng."
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d10-q03",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d10",
+      "topic": "p2-t4-d10",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Theo slide, những yếu tố nào quyết định số token ảnh?",
+      "correct_answer": [
+        "d",
+        "a",
+        "b"
+      ],
+      "explanation": "Slide nêu độ phân giải, số tile và hệ số gộp đặt ngân sách token ảnh; số token liên quan chi phí và độ chi tiết.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d10",
+          "sha256": "763149a983add6ef60fee2fafb6f2caec98576b6afb2e1eca01f5c532cf78e2e",
+          "pdf_page": 8,
+          "title": "Vision–Language Model và VLA",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "options": [
+        {
+          "id": "a",
+          "text": "Số tile."
+        },
+        {
+          "id": "b",
+          "text": "Hệ số gộp các patch/token."
+        },
+        {
+          "id": "c",
+          "text": "Temperature dùng khi lấy mẫu token văn bản đầu ra."
+        },
+        {
+          "id": "d",
+          "text": "Độ phân giải ảnh."
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d10-q04",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d10",
+      "topic": "p2-t4-d10",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "easy",
+      "cognitive_level": "understand",
+      "question": "CLIP được slide mô tả là học tương phản trên cặp ảnh–văn bản.",
+      "correct_answer": true,
+      "explanation": "Phần lịch sử vision encoder ghi rõ CLIP dùng contrastive learning trên cặp ảnh và văn bản.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d10",
+          "sha256": "763149a983add6ef60fee2fafb6f2caec98576b6afb2e1eca01f5c532cf78e2e",
+          "pdf_page": 7,
+          "title": "Vision–Language Model và VLA",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review"
+    },
+    {
+      "id": "p2-t4-d11-q01",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d11",
+      "topic": "p2-t4-d11",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Slide tách sim2real gap thành những nhóm nào?",
+      "correct_answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "Ba nhóm giúp chẩn đoán nguyên nhân và chọn cách sửa khác nhau; tăng epoch không thay thế mô hình hóa gap.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d11",
+          "sha256": "9f2b8b0d84e67d71598eaa2f2a7d0d186567c3ee10171dcf5213e4d62a492b46",
+          "pdf_page": 15,
+          "title": "Synthetic, Simulated & Trajectory Data",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ngoại hình: ánh sáng, texture, vật liệu."
+        },
+        {
+          "id": "b",
+          "text": "Nội dung/hành vi: bố cục cảnh, ai đi đâu và khi nào."
+        },
+        {
+          "id": "c",
+          "text": "Mô hình cảm biến: nhiễu, raydrop, rolling shutter."
+        },
+        {
+          "id": "d",
+          "text": "Chỉ số lượng epoch; các sai khác của cảnh/cảm biến không liên quan."
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d11-q02",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d11",
+      "topic": "p2-t4-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Nhận xét nào đúng về phạm vi domain randomization theo phần tổng kết?",
+      "correct_answer": "d",
+      "explanation": "Slide nhấn mạnh cân bằng coverage và hiệu quả lấy mẫu, đồng thời ưu tiên randomization có cấu trúc.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d11",
+          "sha256": "9f2b8b0d84e67d71598eaa2f2a7d0d186567c3ee10171dcf5213e4d62a492b46",
+          "pdf_page": 23,
+          "title": "Synthetic, Simulated & Trajectory Data",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "options": [
+        {
+          "id": "a",
+          "text": "Càng rộng vô hạn càng luôn tốt, không có chi phí nào."
+        },
+        {
+          "id": "b",
+          "text": "Chỉ cần ngẫu nhiên seed, không cần thay đổi thuộc tính cảnh."
+        },
+        {
+          "id": "c",
+          "text": "Không nên kiểm tra gap cảm biến vì chỉ appearance ảnh hưởng."
+        },
+        {
+          "id": "d",
+          "text": "Quá hẹp thì không phủ thế giới thật; quá rộng có thể lãng phí mẫu."
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d11-q03",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d11",
+      "topic": "p2-t4-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong cổng tin cậy nhãn được đề xuất cho bài lab, IoU được dùng để đối chiếu gì?",
+      "correct_answer": "c",
+      "explanation": "Slide minh họa kiểm tra vật sinh có nằm đúng chỗ box điều kiện hay không. Đây là thiết kế đề xuất cho lab, không được trình bày như một cổng chuẩn đã được công bố.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d11",
+          "sha256": "9f2b8b0d84e67d71598eaa2f2a7d0d186567c3ee10171dcf5213e4d62a492b46",
+          "pdf_page": 36,
+          "title": "Synthetic, Simulated & Trajectory Data",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hai embedding ảnh–văn bản bằng cosine similarity thay vì đối chiếu vị trí box."
+        },
+        {
+          "id": "b",
+          "text": "Confidence phân loại của một detector mà không so vị trí box điều kiện."
+        },
+        {
+          "id": "c",
+          "text": "Box điều kiện đầu vào với box của vật được detector tìm lại trong ảnh sinh."
+        },
+        {
+          "id": "d",
+          "text": "Box sinh của hai scene không liên quan, bỏ qua box điều kiện."
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d11-q04",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d11",
+      "topic": "p2-t4-d11",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Để quy lợi ích cho dữ liệu tổng hợp một cách công bằng, cần đối chiếu baseline có cùng số bước huấn luyện, batch và kiến trúc.",
+      "correct_answer": true,
+      "explanation": "Slide cảnh báo pretrain rồi fine-tune có thể tăng ngân sách huấn luyện; phải kiểm soát số bước/batch/kiến trúc trước khi gán mức tăng cho dữ liệu sinh.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d11",
+          "sha256": "9f2b8b0d84e67d71598eaa2f2a7d0d186567c3ee10171dcf5213e4d62a492b46",
+          "pdf_page": 38,
+          "title": "Synthetic, Simulated & Trajectory Data",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review"
+    },
+    {
+      "id": "p2-t4-d12-q01",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d12",
+      "topic": "p2-t4-d12",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những thông tin nào được nêu trong thẻ lần chạy để tái tạo log replay?",
+      "correct_answer": [
+        "d",
+        "a",
+        "b"
+      ],
+      "explanation": "Thẻ gồm log, mã phần mềm, model, calibration, seed và config để xác định đầu vào cùng điều kiện chạy.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 17,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "options": [
+        {
+          "id": "a",
+          "text": "Phiên bản model nhận thức và calibration."
+        },
+        {
+          "id": "b",
+          "text": "Seed và cấu hình."
+        },
+        {
+          "id": "c",
+          "text": "Chỉ trọng số model cuối cùng; calibration và seed có thể bỏ."
+        },
+        {
+          "id": "d",
+          "text": "Nhật ký và revision mã phần mềm."
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d12-q02",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d12",
+      "topic": "p2-t4-d12",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "So sánh hai lần replay cần dung sai cho khác biệt số nhỏ thay vì luôn yêu cầu mọi bit đầu ra giống nhau.",
+      "correct_answer": true,
+      "explanation": "Slide minh họa ngưỡng khác biệt chấp nhận được; các khác biệt số học và thực thi phải được đánh giá bằng tolerance phù hợp.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 21,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review"
+    },
+    {
+      "id": "p2-t4-d12-q03",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d12",
+      "topic": "p2-t4-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Theo ví dụ TTC của slide, khoảng cách 12 m và tốc độ tiến gần 5 m/s cho TTC bằng bao nhiêu?",
+      "correct_answer": "b",
+      "explanation": "TTC = khoảng cách / tốc độ tiến gần = 12/5 = 2,4 giây. Đây là độ đo đơn giản trong ví dụ, không đủ một mình để kết luận an toàn của toàn hệ thống.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 43,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "options": [
+        {
+          "id": "a",
+          "text": "7 giây"
+        },
+        {
+          "id": "b",
+          "text": "2,4 giây"
+        },
+        {
+          "id": "c",
+          "text": "0,417 giây"
+        },
+        {
+          "id": "d",
+          "text": "60 giây"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d12-q04",
+      "revision": 1,
+      "author_id": "root-content",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d12",
+      "topic": "p2-t4-d12",
+      "taxonomy_status": "verified",
+      "question_type": "short_answer",
+      "answer_format": "rubric",
+      "difficulty": "hard",
+      "cognitive_level": "analyze",
+      "question": "Giải thích vì sao một bộ điều khiển có điểm vòng hở tốt vẫn có thể gây va chạm khi chạy vòng kín.",
+      "correct_answer": "Vòng hở đánh giá trên trạng thái/log đã ghi và không để hành động làm thay đổi thế giới tiếp theo. Vòng kín cho xe đi theo đầu ra của chính nó, nên sai lệch nhỏ tích lũy, dẫn đến trạng thái chưa gặp và có thể va chạm.",
+      "explanation": "Hai slide đối chiếu feedback và việc reset về log: vòng hở xóa tác động sai lệch qua bước, vòng kín giữ tác động và cho sai lệch tích lũy.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 26,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 27,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "rubric": [
+        {
+          "id": "feedback",
+          "description": "Khác biệt feedback giữa hai kiểu đánh giá",
+          "weight": 0.5,
+          "full_credit": "Nêu vòng hở không cho hành động thay đổi trạng thái/log tiếp theo, còn vòng kín có feedback hành động tới thế giới.",
+          "partial_credit": "Chỉ nêu đúng một phía (vòng hở không feedback hoặc vòng kín có feedback).",
+          "no_credit": "Đảo ngược hoặc không nêu được khác biệt feedback."
+        },
+        {
+          "id": "accumulation",
+          "description": "Giải thích cơ chế thất bại",
+          "weight": 0.5,
+          "full_credit": "Liên hệ sai lệch nhỏ tích lũy qua các bước với trạng thái lệch khỏi log và nguy cơ va chạm.",
+          "partial_credit": "Nêu sai số có thể tích lũy nhưng chưa liên hệ với trạng thái/hậu quả trong vòng kín.",
+          "no_credit": "Khẳng định điểm vòng hở cao bảo đảm an toàn hoặc không nêu cơ chế tích lũy."
+        }
+      ]
+    }
+  ]
+}

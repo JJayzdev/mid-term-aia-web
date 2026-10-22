@@ -1,0 +1,569 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.22.pilot2",
+  "questions": [
+    {
+      "id": "p1-d01-q01",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d01",
+      "topic": "p1-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Đặc điểm nào phân biệt Agentic AI với Generative AI trong bảng ba nhóm AI?",
+      "correct_answer": "b",
+      "explanation": "Slide mô tả Generative AI sinh nội dung mới; Agentic AI tự lập kế hoạch và hành động để đạt mục tiêu.",
+      "source_reference": [
+        {
+          "document_id": "p1-d01",
+          "sha256": "7623057fe66b2a3ef217ace5962109059d94e3d65ae58d4bb4a8d5c7e8c983a8",
+          "pdf_page": 7,
+          "title": "AI & LLM Foundation",
+          "locator": "Physical PDF page 7; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ phân loại đầu vào thành nhãn"
+        },
+        {
+          "id": "b",
+          "text": "Tự lập kế hoạch và hành động"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ tạo ảnh từ prompt"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ dự đoán điểm tín dụng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d01-q02",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d01",
+      "topic": "p1-d01",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những thành phần nào thuộc agent harness theo slide? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "c"
+      ],
+      "explanation": "Harness bao quanh model, gồm quản lý context, quyền/sandbox, vòng lặp, bộ nhớ và quan sát.",
+      "source_reference": [
+        {
+          "document_id": "p1-d01",
+          "sha256": "7623057fe66b2a3ef217ace5962109059d94e3d65ae58d4bb4a8d5c7e8c983a8",
+          "pdf_page": 14,
+          "title": "AI & LLM Foundation",
+          "locator": "Physical PDF page 14; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Quản lý ngữ cảnh và compaction"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ trọng số bên trong model"
+        },
+        {
+          "id": "c",
+          "text": "Quyền và sandbox cho các hành động"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ tập dữ liệu pre-training"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d01-q03",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d01",
+      "topic": "p1-d01",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "LLM có thể trả lời rất tự tin nhưng vẫn sai; sự tự tin của câu trả lời không bảo đảm tính đúng đắn.",
+      "correct_answer": true,
+      "explanation": "Phần Hallucination nêu model tối ưu xác suất token, không phải tính đúng-sai.",
+      "source_reference": [
+        {
+          "document_id": "p1-d01",
+          "sha256": "7623057fe66b2a3ef217ace5962109059d94e3d65ae58d4bb4a8d5c7e8c983a8",
+          "pdf_page": 27,
+          "title": "AI & LLM Foundation",
+          "locator": "Physical PDF page 27; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ]
+    },
+    {
+      "id": "p1-d01-q04",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d01",
+      "topic": "p1-d01",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "rubric",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Đề xuất lựa chọn kiến trúc và nêu một đánh đổi cần kiểm tra.",
+      "correct_answer": "Có thể chọn pipeline STT → LLM → TTS vì kiểm soát từng khâu, ghi transcript và thay nhà cung cấp dễ hơn; cần kiểm tra độ trễ cộng dồn và mất ngữ điệu.",
+      "explanation": "Slide so sánh pipeline ghép ba model với speech-to-speech, nêu ưu thế kiểm soát/audit và đánh đổi độ trễ.",
+      "source_reference": [
+        {
+          "document_id": "p1-d01",
+          "sha256": "7623057fe66b2a3ef217ace5962109059d94e3d65ae58d4bb4a8d5c7e8c983a8",
+          "pdf_page": 10,
+          "title": "AI & LLM Foundation",
+          "locator": "Physical PDF page 10; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "context": "Một voicebot nghiệp vụ cần transcript phục vụ audit và muốn thay từng nhà cung cấp độc lập. Nhóm cân nhắc pipeline STT–LLM–TTS với speech-to-speech.",
+      "rubric": [
+        {
+          "id": "c1",
+          "description": "Chọn pipeline STT–LLM–TTS và liên hệ yêu cầu kiểm soát từng khâu/transcript/thay nhà cung cấp.",
+          "weight": 0.5,
+          "full_credit": "Chọn pipeline STT–LLM–TTS và liên hệ ít nhất một yêu cầu audit/transcript hoặc thay nhà cung cấp.",
+          "partial_credit": "Chọn đúng pipeline nhưng chưa giải thích liên hệ yêu cầu.",
+          "no_credit": "Chọn speech-to-speech mà không đáp ứng yêu cầu hoặc không chọn kiến trúc."
+        },
+        {
+          "id": "c2",
+          "description": "Nêu đánh đổi được nguồn hỗ trợ: độ trễ cộng dồn hoặc mất ngữ điệu/cảm xúc.",
+          "weight": 0.5,
+          "full_credit": "Nêu độ trễ cộng dồn hoặc mất ngữ điệu/cảm xúc là đánh đổi phải kiểm tra.",
+          "partial_credit": "Chỉ nói có đánh đổi hiệu năng/chất lượng nhưng không xác định loại đánh đổi.",
+          "no_credit": "Không nêu đánh đổi hoặc khẳng định pipeline không có đánh đổi."
+        }
+      ]
+    },
+    {
+      "id": "p1-d11-q01",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d11",
+      "topic": "p1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Cặp kiểm soát nào được slide đặt trong output guardrail pipeline?",
+      "correct_answer": "c",
+      "explanation": "Deliverable nêu output pipeline gồm content filter và grounding check.",
+      "source_reference": [
+        {
+          "document_id": "p1-d11",
+          "sha256": "04c49100a4cb70af31bc8b7818d814c940f16ef480368339ffcbc95ec6081803",
+          "pdf_page": 5,
+          "title": "Guardrails, HITL & Responsible AI",
+          "locator": "Physical PDF page 5; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Prompt injection detection và topic filter"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ retry và timeout"
+        },
+        {
+          "id": "c",
+          "text": "Content filter và grounding check"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ lựa chọn model và giảm token"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d11-q02",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d11",
+      "topic": "p1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Artifact pack cuối ngày yêu cầu những thành phần nào? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "c"
+      ],
+      "explanation": "Nguồn yêu cầu adversarial tests trước/sau guardrails và HITL flowchart có ba decision points.",
+      "source_reference": [
+        {
+          "document_id": "p1-d11",
+          "sha256": "04c49100a4cb70af31bc8b7818d814c940f16ef480368339ffcbc95ec6081803",
+          "pdf_page": 5,
+          "title": "Guardrails, HITL & Responsible AI",
+          "locator": "Physical PDF page 5; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Các adversarial prompt test kèm kết quả trước và sau guardrails"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ ảnh chụp demo trả lời đúng"
+        },
+        {
+          "id": "c",
+          "text": "HITL flowchart với các điểm quyết định agent/human"
+        },
+        {
+          "id": "d",
+          "text": "Cam kết mọi rủi ro đã bị loại bỏ hoàn toàn"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d11-q03",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d11",
+      "topic": "p1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Slide đề xuất chọn điểm escalation chỉ từ confidence score của model, không cần xét rủi ro và khả năng hoàn tác.",
+      "correct_answer": false,
+      "explanation": "Mục tiêu bài nêu chọn escalation theo rủi ro × khả năng hoàn tác và cảnh báo confidence score là tín hiệu đáng ngờ.",
+      "source_reference": [
+        {
+          "document_id": "p1-d11",
+          "sha256": "04c49100a4cb70af31bc8b7818d814c940f16ef480368339ffcbc95ec6081803",
+          "pdf_page": 4,
+          "title": "Guardrails, HITL & Responsible AI",
+          "locator": "Physical PDF page 4; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ]
+    },
+    {
+      "id": "p1-d11-q04",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d11",
+      "topic": "p1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "short_answer",
+      "answer_format": "rubric",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Nêu hai cơ chế vận hành cần có để HITL trở thành một hệ thống bền vững thay vì chỉ một câu if.",
+      "correct_answer": "Ví dụ: interrupt/resume để tạm dừng và tiếp tục; hàng đợi duyệt; timeout; audit trail.",
+      "explanation": "Các cơ chế này xuất hiện trực tiếp trong mục tiêu thiết kế HITL.",
+      "source_reference": [
+        {
+          "document_id": "p1-d11",
+          "sha256": "04c49100a4cb70af31bc8b7818d814c940f16ef480368339ffcbc95ec6081803",
+          "pdf_page": 4,
+          "title": "Guardrails, HITL & Responsible AI",
+          "locator": "Physical PDF page 4; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "rubric": [
+        {
+          "id": "c1",
+          "description": "Nêu đúng một cơ chế như interrupt/resume, hàng đợi duyệt, timeout hoặc audit trail.",
+          "weight": 0.5,
+          "full_credit": "Nêu một cơ chế trong interrupt/resume, hàng đợi duyệt, timeout, audit trail.",
+          "partial_credit": "Nêu khái niệm giám sát/duyệt của người nhưng không chỉ ra cơ chế cụ thể.",
+          "no_credit": "Không nêu cơ chế phù hợp."
+        },
+        {
+          "id": "c2",
+          "description": "Nêu thêm một cơ chế khác được slide liệt kê.",
+          "weight": 0.5,
+          "full_credit": "Nêu thêm một cơ chế khác với cơ chế đã nhận điểm ở tiêu chí 1.",
+          "partial_credit": "Nêu thêm một ý có liên quan đến vận hành HITL nhưng chưa đủ cụ thể để xác định cơ chế thứ hai.",
+          "no_credit": "Lặp lại cùng một cơ chế hoặc không nêu ý thứ hai."
+        }
+      ]
+    },
+    {
+      "id": "p1-d14-q01",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d14",
+      "topic": "p1-d14",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao accuracy đơn lẻ chưa đủ để đánh giá LLM/agent theo slide?",
+      "correct_answer": "a",
+      "explanation": "Output mở, có nhiều câu trả lời đúng và chất lượng đa chiều; một metric accuracy không bao phủ đầy đủ.",
+      "source_reference": [
+        {
+          "document_id": "p1-d14",
+          "sha256": "289c3c8ca8e63d8f0eb71be1822bd1149213ac29ff648f0722439ff1dcfd53af",
+          "pdf_page": 6,
+          "title": "AI Evaluation & Benchmarking",
+          "locator": "Physical PDF page 6; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Output mở và chất lượng có nhiều chiều"
+        },
+        {
+          "id": "b",
+          "text": "LLM luôn cho cùng một output với mọi lần chạy"
+        },
+        {
+          "id": "c",
+          "text": "LLM không cần dữ liệu đánh giá"
+        },
+        {
+          "id": "d",
+          "text": "Mọi câu trả lời đều có đúng một nhãn cố định"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d14-q02",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d14",
+      "topic": "p1-d14",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Nguyên tắc nào của evaluation được slide nhấn mạnh? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation": "Evaluation phải lặp lại được, so sánh được và chạy tự động được.",
+      "source_reference": [
+        {
+          "document_id": "p1-d14",
+          "sha256": "289c3c8ca8e63d8f0eb71be1822bd1149213ac29ff648f0722439ff1dcfd53af",
+          "pdf_page": 7,
+          "title": "AI Evaluation & Benchmarking",
+          "locator": "Physical PDF page 7; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Có thể lặp lại"
+        },
+        {
+          "id": "b",
+          "text": "Có thể so sánh"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ cần cảm nhận của người demo"
+        },
+        {
+          "id": "d",
+          "text": "Không cần ghi nhận kết quả thí nghiệm"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d14-q03",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d14",
+      "topic": "p1-d14",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Offline evaluation được mô tả là batch test trên golden dataset, phù hợp khi release hoặc đổi prompt.",
+      "correct_answer": true,
+      "explanation": "Trang phân biệt offline/online/human nêu trực tiếp cách chạy và thời điểm này.",
+      "source_reference": [
+        {
+          "document_id": "p1-d14",
+          "sha256": "289c3c8ca8e63d8f0eb71be1822bd1149213ac29ff648f0722439ff1dcfd53af",
+          "pdf_page": 9,
+          "title": "AI Evaluation & Benchmarking",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ]
+    },
+    {
+      "id": "p1-d14-q04",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d14",
+      "topic": "p1-d14",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "rubric",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Giải thích vì sao kết luận chất lượng như vậy chưa đủ và cần bổ sung khía cạnh nào.",
+      "correct_answer": "Cần đánh giá nhiều chiều thay vì chỉ tính đúng: tính liên quan, đầy đủ, mạch lạc và độ dài/hiệu quả phù hợp. LLM có output mở và stochastic nên cần framework đánh giá rõ.",
+      "explanation": "Slide đưa ví dụ agent trả lời đúng nhưng dài gấp ba để đặt vấn đề pass/fail.",
+      "source_reference": [
+        {
+          "document_id": "p1-d14",
+          "sha256": "289c3c8ca8e63d8f0eb71be1822bd1149213ac29ff648f0722439ff1dcfd53af",
+          "pdf_page": 6,
+          "title": "AI Evaluation & Benchmarking",
+          "locator": "Physical PDF page 6; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "context": "Hai agent cùng trả lời đúng. Agent B trả lời dài gấp ba. Nhóm kết luận chúng hoàn toàn tương đương chỉ dựa trên accuracy.",
+      "rubric": [
+        {
+          "id": "c1",
+          "description": "Giải thích accuracy không bao phủ chất lượng đa chiều/output mở.",
+          "weight": 0.5,
+          "full_credit": "Giải thích cùng accuracy chưa kết luận tương đương vì chất lượng output mở có nhiều chiều.",
+          "partial_credit": "Nói accuracy chưa đủ nhưng chưa giải thích tính đa chiều/output mở.",
+          "no_credit": "Khẳng định cùng accuracy nghĩa là tương đương hoàn toàn."
+        },
+        {
+          "id": "c2",
+          "description": "Đề xuất đánh giá thêm một chiều phù hợp như liên quan, đầy đủ, mạch lạc hoặc độ dài/hiệu quả.",
+          "weight": 0.5,
+          "full_credit": "Đề xuất ít nhất một chiều phù hợp như liên quan, đầy đủ, mạch lạc hoặc độ dài/hiệu quả trong tình huống.",
+          "partial_credit": "Chỉ đề xuất đánh giá thêm mà không chỉ ra chiều cụ thể.",
+          "no_credit": "Không đề xuất chiều bổ sung hoặc chỉ lặp lại accuracy."
+        }
+      ]
+    }
+  ]
+}

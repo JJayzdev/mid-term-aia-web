@@ -1,0 +1,557 @@
+{
+  "batch_file": "data/questions/drafts/track3.json",
+  "reviewer_id": "reviewer",
+  "reviewed_at": "2026-10-22T07:24:47.308043+00:00",
+  "results": [
+    {
+      "id": "p2-t3-d01-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d01",
+          "pdf_page": 11
+        }
+      ],
+      "notes": [
+        "p11: Reflector rútbàihọc,a đúng;actor hànhđộng,evaluatorchấm,toolregistry khôngrole này. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d01-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d01",
+          "pdf_page": 16
+        }
+      ],
+      "notes": [
+        "p16: Lessonconcise/newconstraints,a/b đúng;rawJSON/taskrepeat nằmkhônglưu. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d01-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d01",
+          "pdf_page": 11
+        }
+      ],
+      "notes": [
+        "p11: Textfeedback thaygradient,true đúng,khôngupdateweights mỗiattempt. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d02-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d02",
+          "pdf_page": 11
+        }
+      ],
+      "notes": [
+        "p11: Semantic=embeddingvectorDB/domainretrieval,c đúng;episodic trải nghiệm/working tạm khác. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d02-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d02",
+          "pdf_page": 14
+        }
+      ],
+      "notes": [
+        "p14: Summarize threshold→extract→persist,b/c đúng;persist midtask/infinitecontext trái note. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d02-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d02",
+          "pdf_page": 14
+        }
+      ],
+      "notes": [
+        "p14: Conflict recencywins+flagreview,true đúng theo slide. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d03-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d03",
+          "pdf_page": 13
+        }
+      ],
+      "notes": [
+        "p13: Matchsmallchild injectparent,d đúng;childonly/parentonly/allcorpus bỏtradeoff. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d03-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d03",
+          "pdf_page": 14
+        }
+      ],
+      "notes": [
+        "p14: Embedwholedoc thenpoolboundary,longcontextencoder,b/d đúng;precut/chunkLLM là cách khác. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d03-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d03",
+          "pdf_page": 13
+        }
+      ],
+      "notes": [
+        "p13: Cost lưu hai tầng,true đúng;đánh giácost khácq01 cơ chế. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d04-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d04",
+          "pdf_page": 13
+        }
+      ],
+      "notes": [
+        "p13: Triple subjectpredicateobject,d đúng;queryembedding/docchunk khôngKGtriple. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d04-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d04",
+          "pdf_page": 17
+        }
+      ],
+      "notes": [
+        "p17: Propertygraph metadata vàRDFfullname,b/d đúng;densemodel/noedgemetadata sai. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d04-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d04",
+          "pdf_page": 13
+        }
+      ],
+      "notes": [
+        "p13: Graphtraversal thaychunksearch,true đúng, không hỏi vídụentityfacts bêntrái hình. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d05-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d05",
+          "pdf_page": 13
+        }
+      ],
+      "notes": [
+        "p13: Hardmisroute smallmodel giảmquality,a đúng;largerhard khôngsai,allsmall bỏfit. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d05-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d05",
+          "pdf_page": 15
+        }
+      ],
+      "notes": [
+        "p15: Supervisor decompose/route/aggregate,a/b đúng;workers own tools/sharedstate nguồn rõ. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d05-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d05",
+          "pdf_page": 15
+        }
+      ],
+      "notes": [
+        "p15: Workers separate nodes/tools,true đúng. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d06-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d06",
+          "pdf_page": 5
+        }
+      ],
+      "notes": [
+        "p5: Thiếutri thức→RAG,c đúng;adapter/fullFT bỏchẩnđoán. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d06-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d06",
+          "pdf_page": 17
+        }
+      ],
+      "notes": [
+        "p17: W0frozen,A/Btrain,Bzero→delta0,b/c đúng;allbase/dkparams sai. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d06-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d06",
+          "pdf_page": 17
+        }
+      ],
+      "notes": [
+        "p17: r(d+k) paramcount,true đúng;independent dimensions r×d+k×r. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d07-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d07",
+          "pdf_page": 12
+        }
+      ],
+      "notes": [
+        "p12: DPO bỏ riêngRM,d đúng;preferencepairs/policy còn. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d07-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d07",
+          "pdf_page": 18
+        }
+      ],
+      "notes": [
+        "p18: Human→RLHF/DPO,code→RLVR,b/d đúng;modelself khônghuman. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d07-q03",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d07",
+          "pdf_page": 17
+        }
+      ],
+      "notes": [
+        "Retestrev2 p17 mới render/xem: Alternativesheading single-stage bỏSFTriêng,true đúng;khôngcòntrùngDPOq01. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d08-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d08",
+          "pdf_page": 15
+        }
+      ],
+      "notes": [
+        "p15: Auditevents appendhistory,d đúng;overwrite/reset/counter mấtnộidung. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d08-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d08",
+          "pdf_page": 16
+        }
+      ],
+      "notes": [
+        "p16: Retryidempotent/partialupdate,b/c đúng;mutateall/notimeout trái checklist. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d08-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d08",
+          "pdf_page": 15
+        }
+      ],
+      "notes": [
+        "p15: Overwritecurrent/final vsappendhistory,true đúng;broadfieldclassification khácscenarioq01. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d09-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d09",
+          "pdf_page": 12
+        }
+      ],
+      "notes": [
+        "p12: Componentlocalizes/E2Euserexperience,a đúng;hai loại khôngthaythế. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d09-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d09",
+          "pdf_page": 17
+        }
+      ],
+      "notes": [
+        "p17: Extractclaims+verifycontext,a/c đúng;length/keywords khôngentailment. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d09-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d09",
+          "pdf_page": 17
+        }
+      ],
+      "notes": [
+        "p17: 2/3=.6667≈.67,source explicitclaimextractionnoise/trend. Rubric calculation+limitedcontextsupport+noise rõ,sum1,khôngđánhđồngfaithfulnessrealtruth. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d10-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d10",
+          "pdf_page": 12
+        }
+      ],
+      "notes": [
+        "p12: OPENfailfast,c đúng;CLOSEDnormal/HALFprobe khác,cache reset khôngbreakerbehavior. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d10-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d10",
+          "pdf_page": 17
+        }
+      ],
+      "notes": [
+        "p17: CacheTTL/invalidation/threshold/taskallowlist,a/d đúng;risk/cacheforever sai. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d10-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d10",
+          "pdf_page": 12
+        }
+      ],
+      "notes": [
+        "p12: Perprovider/model/task,Abroken khôngkéoB/cache,false đúng. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d11-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d11",
+          "pdf_page": 10
+        }
+      ],
+      "notes": [
+        "p10: Resources readonlyURIappcontext,d đúng;toolfunction/prompttemplate/samplingcompletion khác. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d11-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d11",
+          "pdf_page": 16
+        }
+      ],
+      "notes": [
+        "p16: Servervalidate/leastprivilege+audit,a/b đúng;TLSonly/clienttrust bỏdepth. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d11-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d11",
+          "pdf_page": 10
+        }
+      ],
+      "notes": [
+        "p10: Userchoosesprompt,LLMtool,true đúngtheotable. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d12-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d12",
+          "pdf_page": 17
+        }
+      ],
+      "notes": [
+        "p17: HITLblocking,b đúng;HOTLpassivemonitor khác. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d12-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d12",
+          "pdf_page": 14
+        }
+      ],
+      "notes": [
+        "p14: Smallapprovals→alertfatigue/unconsciousapprove,true đúng. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d12-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d12",
+          "pdf_page": 17
+        },
+        {
+          "document_id": "p2-t3-d12",
+          "pdf_page": 14
+        }
+      ],
+      "notes": [
+        "p17/14: Sourceexample transferHITL/internalnotificationHOTL;rubricpatterns+interruptionerrortradeoff cụthể,sum1;scopevídụkhôngpolicyfinancialuniversal. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d13-q01",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d13",
+          "pdf_page": 12
+        }
+      ],
+      "notes": [
+        "p12: Fourdimensions accuracy/latency/cost/resilience,a/c đúng. Retestrev2 baverageonly bỏtail/cost/resilience là mismeasurementadjacent,khôngframeworkcount. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d13-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d13",
+          "pdf_page": 15
+        }
+      ],
+      "notes": [
+        "p15: ADRwhydecisions/tradeoffs,c đúng;runbook/apispec mụcđíchkhác. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    },
+    {
+      "id": "p2-t3-d13-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d13",
+          "pdf_page": 15
+        }
+      ],
+      "notes": [
+        "p15: Runbookincidentstepbystep/APIconsumer,selfserve,true đúng. Đã đọc explanation, đáp án và distractors/rubric, không thấy đáp án đúng thứ hai."
+      ]
+    }
+  ]
+}

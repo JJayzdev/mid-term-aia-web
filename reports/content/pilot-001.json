@@ -1,0 +1,178 @@
+{
+  "batch_file": "data/questions/drafts/pilot-001.json",
+  "reviewer_id": "reviewer",
+  "reviewed_at": "2026-10-22T06:50:27.262606+00:00",
+  "results": [
+    {
+      "id": "p1-d01-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d01",
+          "pdf_page": 7
+        }
+      ],
+      "notes": [
+        "Trang vật lý 7 đối chiếu ba nhóm AI: b đúng vì Agentic tự lập kế hoạch/hành động; a,d thuộc discriminative, c chỉ một ví dụ generative. Explanation khớp; không phụ thuộc vị trí option."
+      ]
+    },
+    {
+      "id": "p1-d01-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d01",
+          "pdf_page": 14
+        }
+      ],
+      "notes": [
+        "Trang vật lý14 liệt kê quản lý ngữ cảnh/compaction và quyền/sandbox: a,c đúng. Model weights và chỉ pretraining không thuộc phần non-model harness. Explanation có vòng lặp/bộ nhớ/quan sát đều có trên trang."
+      ]
+    },
+    {
+      "id": "p1-d01-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d01",
+          "pdf_page": 27
+        }
+      ],
+      "notes": [
+        "Trang vật lý27 ghi hallucination: tự tin nhưng sai do tối ưu xác suất token, không phải đúng-sai. True và explanation được nguồn hỗ trợ trực tiếp."
+      ]
+    },
+    {
+      "id": "p1-d01-q04",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d01",
+          "pdf_page": 10
+        }
+      ],
+      "notes": [
+        "Trang vật lý10 hỗ trợ chọn cascaded STT–LLM–TTS cho audit/transcript và thay provider, đổi lại độ trễ/mất ngữ điệu. Tình huống minh bạch, đáp án đúng. Major: partial_credit của cả hai tiêu chí không nêu biên 0.5 cụ thể, khó tự chấm nhất quán; cần định nghĩa phần ý thiếu nào cho từng tiêu chí.",
+        "Retest revision2: đã đọc rubric mới; full/partial/no phân định theo tiêu chí, HITL yêu cầu hai cơ chế khác nhau và bỏ liên hệ tình huống không có. Nội dung/nguồn không đổi; đối chiếu trang đã xem trước. Đóng finding rubric revision1."
+      ]
+    },
+    {
+      "id": "p1-d11-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d11",
+          "pdf_page": 5
+        }
+      ],
+      "notes": [
+        "Trang vật lý5 phân biệt input injection detection/topic filter với output content filter/grounding check. c đúng; a là input, b,d không phải output pipeline nêu trên. Explanation khớp."
+      ]
+    },
+    {
+      "id": "p1-d11-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d11",
+          "pdf_page": 5
+        }
+      ],
+      "notes": [
+        "Trang vật lý5 yêu cầu adversarial tests trước/sau và HITL flowchart: a,c đúng. b chỉ demo không đủ; d trái red-team report còn risk nào. Stem chọn thành phần trong các options, không đòi liệt kê toàn artifact pack."
+      ]
+    },
+    {
+      "id": "p1-d11-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d11",
+          "pdf_page": 4
+        }
+      ],
+      "notes": [
+        "Trang vật lý4 yêu cầu escalation theo rủi ro×hoàn tác, cảnh báo confidence score đáng ngờ. Mệnh đề chỉ confidence là false; explanation đúng."
+      ]
+    },
+    {
+      "id": "p1-d11-q04",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d11",
+          "pdf_page": 4
+        }
+      ],
+      "notes": [
+        "Trang vật lý4 có interrupt/resume, hàng đợi duyệt, timeout, audit trail; đáp án nêu hai cơ chế khác nhau là được hỗ trợ. Major: partial_credit không có biên cụ thể và yêu cầu liên hệ tình huống dù câu này không có tình huống; cần tiêu chí một cơ chế, cơ chế thứ hai khác nhau và cách chấm diễn đạt chưa đầy đủ.",
+        "Retest revision2: đã đọc rubric mới; full/partial/no phân định theo tiêu chí, HITL yêu cầu hai cơ chế khác nhau và bỏ liên hệ tình huống không có. Nội dung/nguồn không đổi; đối chiếu trang đã xem trước. Đóng finding rubric revision1."
+      ]
+    },
+    {
+      "id": "p1-d14-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d14",
+          "pdf_page": 6
+        }
+      ],
+      "notes": [
+        "Trang vật lý6 nêu open-ended/stochastic và chất lượng đa chiều. a đúng; b,c,d trái hoặc không được hỗ trợ. Explanation đúng về nhiều đáp án và nhiều chiều."
+      ]
+    },
+    {
+      "id": "p1-d14-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d14",
+          "pdf_page": 7
+        }
+      ],
+      "notes": [
+        "Trang vật lý7 nguyên tắc lặp lại, so sánh, tự động. a,b đúng; c,d trái scientific method/measure. Không yêu cầu option chứa mọi nguyên tắc để bộ đáp án đúng đầy đủ trong bốn lựa chọn."
+      ]
+    },
+    {
+      "id": "p1-d14-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d14",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "Trang vật lý9 offline=batch golden dataset, mỗi release/prompt change. True/explanation khớp, phân biệt online/human rõ."
+      ]
+    },
+    {
+      "id": "p1-d14-q04",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d14",
+          "pdf_page": 6
+        }
+      ],
+      "notes": [
+        "Trang vật lý6 có ví dụ trả lời đúng nhưng dài gấp3 và chất lượng liên quan/đủ/mạch lạc. Tình huống/đáp án hợp nguồn; không mặc định dài hơn chắc chắn kém. Major: partial_credit chung chung ở hai tiêu chí không định nghĩa mức0.5 cụ thể; cần phân biệt chỉ nêu giới hạn accuracy với giải thích áp dụng, hoặc chỉ nêu chiều với mô tả cách dùng.",
+        "Retest revision2: đã đọc rubric mới; full/partial/no phân định theo tiêu chí, HITL yêu cầu hai cơ chế khác nhau và bỏ liên hệ tình huống không có. Nội dung/nguồn không đổi; đối chiếu trang đã xem trước. Đóng finding rubric revision1."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+node_modules/
+dist/
+/slide/
+/tmp/
+/scripts/qa/tmp/
+/content/
+.vercel/
+.env
+.env.*
+!.env.example
+playwright-report/
+test-results/
+*.log
+__pycache__/
+*.pyc

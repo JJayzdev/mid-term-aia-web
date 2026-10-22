@@ -1,0 +1,689 @@
+{
+  "batch_file": "data/questions/drafts/root-track4.json",
+  "reviewer_id": "reviewer",
+  "reviewed_at": "2026-10-22T07:01:52.217624+00:00",
+  "results": [
+    {
+      "id": "p2-t4-d01-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 56
+        }
+      ],
+      "notes": [
+        "p56: gradient p−y=(-.341,.242,.099), c đúng; d đảo dấu, a,b không trừ nhãn."
+      ]
+    },
+    {
+      "id": "p2-t4-d01-q02",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 66
+        }
+      ],
+      "notes": [
+        "p66: Gradient chỉ local, LR đặt bước; b đúng. Retest rev2 loại phương án cơ chế vô nghĩa, các lựa chọn mới nhầm bước/hướng/phạm vi local."
+      ]
+    },
+    {
+      "id": "p2-t4-d01-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 45
+        }
+      ],
+      "notes": [
+        "p45: Exploding dùng clipping; a đúng; sigmoid/skip confusion và không kiểm norm không giải quyết theo slide."
+      ]
+    },
+    {
+      "id": "p2-t4-d01-q04",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 81
+        }
+      ],
+      "notes": [
+        "p81: Summary AdamW decoupled vs Adam L2 theo PyTorch ví dụ; true được nguồn nêu, không suy rộng mọi API phiên bản."
+      ]
+    },
+    {
+      "id": "p2-t4-d02-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 15
+        }
+      ],
+      "notes": [
+        "p15: F=H−x, b đúng; phép cộng đường tắt ởoutput F+x."
+      ]
+    },
+    {
+      "id": "p2-t4-d02-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 36
+        }
+      ],
+      "notes": [
+        "p36: O(n²d), n×2→4, a đúng, tính đại số độc lập."
+      ]
+    },
+    {
+      "id": "p2-t4-d02-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 32
+        }
+      ],
+      "notes": [
+        "p32: Mỗi head chiếu QKV riêng, concat+project, a,d đúng; shared/all-sequential sai."
+      ]
+    },
+    {
+      "id": "p2-t4-d02-q04",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 15
+        }
+      ],
+      "notes": [
+        "p15: train error cao hơn là degradation không đủ overfitting, false đúng."
+      ]
+    },
+    {
+      "id": "p2-t4-d03-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d03",
+          "pdf_page": 14
+        }
+      ],
+      "notes": [
+        "p14: IoU=intersection/union=4/10=.4, a đúng, các phương án đảo/tách sai."
+      ]
+    },
+    {
+      "id": "p2-t4-d03-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d03",
+          "pdf_page": 28
+        }
+      ],
+      "notes": [
+        "p28: Confidence filter→sortdesc→highest→suppressIoU, d đúng."
+      ]
+    },
+    {
+      "id": "p2-t4-d03-q03",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d03",
+          "pdf_page": 14
+        }
+      ],
+      "notes": [
+        "p14: Vai trò assignment/NMS/TPFP ghi cuối trang, a,c,d đúng. Retest rev2 b class-logits probability nhầm với hình học, sai hợp lý."
+      ]
+    },
+    {
+      "id": "p2-t4-d03-q04",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d03",
+          "pdf_page": 24
+        }
+      ],
+      "notes": [
+        "p24: Sơ đồ one-to-one khôngNMS, true đúng theo ví dụ YOLO26 nguồn."
+      ]
+    },
+    {
+      "id": "p2-t4-d04-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d04",
+          "pdf_page": 22
+        }
+      ],
+      "notes": [
+        "p22: Intrinsics focal/principal/distortion; a,d đúng; transform=extrinsic,timestamp=temporal."
+      ]
+    },
+    {
+      "id": "p2-t4-d04-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d04",
+          "pdf_page": 22
+        }
+      ],
+      "notes": [
+        "p22: Lệch theo tốc độ gợi ý time sync, c đúng; đề hỏi ưu tiên chẩn đoán không khẳng định nguyên nhân duy nhất."
+      ]
+    },
+    {
+      "id": "p2-t4-d04-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d04",
+          "pdf_page": 23
+        }
+      ],
+      "notes": [
+        "p23: Online robust với dynamic objects ghi rõ, true đúng."
+      ]
+    },
+    {
+      "id": "p2-t4-d04-q04",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d04",
+          "pdf_page": 22
+        },
+        {
+          "document_id": "p2-t4-d04",
+          "pdf_page": 23
+        }
+      ],
+      "notes": [
+        "p22/23: Fixed drift sau tháo lắp→extrinsic, đo reprojection+mAP/association. Rubric chẩn đoán+đo trước/sau rõ mức, trọng số1; đáp án giả định vận dụng đúng."
+      ]
+    },
+    {
+      "id": "p2-t4-d05-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d05",
+          "pdf_page": 18
+        }
+      ],
+      "notes": [
+        "p18: Predict rồi update mới, c đúng, các distractor bỏmột vế/NNtraining không phải chu trình."
+      ]
+    },
+    {
+      "id": "p2-t4-d05-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d05",
+          "pdf_page": 18
+        }
+      ],
+      "notes": [
+        "p18: Nhớ x/P, b đúng, các cặp ma trận khác không thay trạng thái/bất định."
+      ]
+    },
+    {
+      "id": "p2-t4-d05-q03",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d05",
+          "pdf_page": 31
+        }
+      ],
+      "notes": [
+        "p31: Jacobian tại estimate current, a đúng. Retest rev2 global linear/fixedorigin/measurementaveraging đều khác local linearization nguồn."
+      ]
+    },
+    {
+      "id": "p2-t4-d05-q04",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d05",
+          "pdf_page": 31
+        }
+      ],
+      "notes": [
+        "p31: cong mạnh/σlớn khiến lệch mean/width, true đúng theo hình."
+      ]
+    },
+    {
+      "id": "p2-t4-d06-q01",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d06",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "p9: Sparse conv chỉ nonempty,b đúng. Retest rev2 distractor dense/all-empty sai lầm adjacent,supported contrast."
+      ]
+    },
+    {
+      "id": "p2-t4-d06-q02",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d06",
+          "pdf_page": 7
+        }
+      ],
+      "notes": [
+        "p7: Point direct,pillar vertical,range angle,a/b/c đúng; voxel continuous sai vì discretize3D.",
+        "Retest revision2 explanation dùng tên model/claim rõ, không còn phụ thuộc vị trí shuffle; source semantics giữ nguyên, approved."
+      ]
+    },
+    {
+      "id": "p2-t4-d06-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d06",
+          "pdf_page": 5
+        }
+      ],
+      "notes": [
+        "p5: Density giảm distance,vật xa ítpoint; true đúng."
+      ]
+    },
+    {
+      "id": "p2-t4-d06-q04",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d06",
+          "pdf_page": 4
+        }
+      ],
+      "notes": [
+        "p4: Frame/yaw,deskew,metadata lỗi pipeline, c đúng; đổiNMS/backbone không xử lý geometry trước."
+      ]
+    },
+    {
+      "id": "p2-t4-d07-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d07",
+          "pdf_page": 20
+        }
+      ],
+      "notes": [
+        "p20: Hungarian min totalcost, a đúng;greedy b local,ID/boxcount không cost objective."
+      ]
+    },
+    {
+      "id": "p2-t4-d07-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d07",
+          "pdf_page": 27
+        }
+      ],
+      "notes": [
+        "p27: Low-score vòng2 cứu track, không tạo mới,false đúng."
+      ]
+    },
+    {
+      "id": "p2-t4-d07-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d07",
+          "pdf_page": 26
+        }
+      ],
+      "notes": [
+        "p26: ReID appearance thêmSORTmotion/geometry,c đúng;NMS/IoUonly/confidence không thêmappearance."
+      ]
+    },
+    {
+      "id": "p2-t4-d07-q04",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d07",
+          "pdf_page": 26
+        }
+      ],
+      "notes": [
+        "p26: Tracklostlong Kalman kém tin cậy, b đúng; các distractor sai về embedding/lifecycle."
+      ]
+    },
+    {
+      "id": "p2-t4-d08-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d08",
+          "pdf_page": 16
+        }
+      ],
+      "notes": [
+        "p16: Bottomup depthpixel→BEV,d đúng;NMS/pixel-metre bỏgeometry không phải lift."
+      ]
+    },
+    {
+      "id": "p2-t4-d08-q02",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d08",
+          "pdf_page": 16
+        }
+      ],
+      "notes": [
+        "p16: BEVFormer projection3Dquery+temporal và DETR3Dquery3D, c,d đúng; a/b tuyệt đối sai. Lỗi explanation tham chiếu vị trí cần sửa trước approve.",
+        "Retest revision2 explanation dùng tên model/claim rõ, không còn phụ thuộc vị trí shuffle; source semantics giữ nguyên, approved."
+      ]
+    },
+    {
+      "id": "p2-t4-d08-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d08",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "p9: Backprojection zK^-1[u,v,1],b đúng, checked geometry and displayed formula."
+      ]
+    },
+    {
+      "id": "p2-t4-d08-q04",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d08",
+          "pdf_page": 19
+        }
+      ],
+      "notes": [
+        "p19: Đọc NDS xu hướng vì backbone/data khác,false đúng; không khẳng định ranking tuyệt đối."
+      ]
+    },
+    {
+      "id": "p2-t4-d09-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d09",
+          "pdf_page": 33
+        }
+      ],
+      "notes": [
+        "p33: Scenewise split ngăn frame near-duplicate leakage,c đúng;rename/randomframe không ngăn."
+      ]
+    },
+    {
+      "id": "p2-t4-d09-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d09",
+          "pdf_page": 16
+        }
+      ],
+      "notes": [
+        "p16: Eventtime+latewait,b đúng;ingestion/process/parquetwrite không measurementtime."
+      ]
+    },
+    {
+      "id": "p2-t4-d09-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d09",
+          "pdf_page": 51
+        }
+      ],
+      "notes": [
+        "p51: Prelabel người sửa/duyệt mớiGT,false đúng."
+      ]
+    },
+    {
+      "id": "p2-t4-d09-q04",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d09",
+          "pdf_page": 30
+        }
+      ],
+      "notes": [
+        "p30: Data commit+splitlist+code,manifest seed; rubric2criteria định danh/split rõ0/.5/1,sum1; đáp án đúng không chỉ v3/tỷlệ."
+      ]
+    },
+    {
+      "id": "p2-t4-d10-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d10",
+          "pdf_page": 39
+        }
+      ],
+      "notes": [
+        "p39: VLA output dx/dy/dz/rotate/grip,b đúng;caption/box/depth chỉ perception khôngaction."
+      ]
+    },
+    {
+      "id": "p2-t4-d10-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d10",
+          "pdf_page": 19
+        }
+      ],
+      "notes": [
+        "p19: Qwen3VL projector-mergeronly frozenViT/LLM,a đúng; scopevídụ rõ."
+      ]
+    },
+    {
+      "id": "p2-t4-d10-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d10",
+          "pdf_page": 8
+        }
+      ],
+      "notes": [
+        "p8: Resolution/tiles/merge,a/b/d đúng;temperature outputsampling không imagebudget."
+      ]
+    },
+    {
+      "id": "p2-t4-d10-q04",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d10",
+          "pdf_page": 7
+        }
+      ],
+      "notes": [
+        "p7: CLIP contrastive image-text,true đúng."
+      ]
+    },
+    {
+      "id": "p2-t4-d11-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d11",
+          "pdf_page": 15
+        }
+      ],
+      "notes": [
+        "p15: Appearance/contentbehavior/sensor,a/b/c đúng;epochonly không mô tả domain gap."
+      ]
+    },
+    {
+      "id": "p2-t4-d11-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d11",
+          "pdf_page": 23
+        }
+      ],
+      "notes": [
+        "p23: DR hẹp thiếucoverage/rộng phímẫu,d đúng;seedonly/appearanceonly sai."
+      ]
+    },
+    {
+      "id": "p2-t4-d11-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d11",
+          "pdf_page": 36
+        }
+      ],
+      "notes": [
+        "p36: IoU conditionbox vs redetectbox,c đúng; nguồn đề xuấtlab không chuẩnpublic,question bảo toàn qualifier."
+      ]
+    },
+    {
+      "id": "p2-t4-d11-q04",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d11",
+          "pdf_page": 38
+        }
+      ],
+      "notes": [
+        "p38: Same steps/batch/arch để quydata effect,true đúng; không hỏi số gain minh họa."
+      ]
+    },
+    {
+      "id": "p2-t4-d12-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d12",
+          "pdf_page": 17
+        }
+      ],
+      "notes": [
+        "p17: Run card log/code/model/calibration/seed/config,a/b/d đúng;onlyweights thiếu."
+      ]
+    },
+    {
+      "id": "p2-t4-d12-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d12",
+          "pdf_page": 21
+        }
+      ],
+      "notes": [
+        "p21: Compare tolerance không everybit,true đúng trong source scope."
+      ]
+    },
+    {
+      "id": "p2-t4-d12-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d12",
+          "pdf_page": 43
+        }
+      ],
+      "notes": [
+        "p43: TTC distance÷closingvelocity=12/5=2.4,b đúng; independently viewed÷symbol and arithmetic;7subtract/60multiply/.417inverse sai."
+      ]
+    },
+    {
+      "id": "p2-t4-d12-q04",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d12",
+          "pdf_page": 26
+        },
+        {
+          "document_id": "p2-t4-d12",
+          "pdf_page": 27
+        }
+      ],
+      "notes": [
+        "p26/27: Openloop resetlog,closed feedback/accumulate leadingcollision; rubric feedback+mechanism precise and weights1, đáp án không khẳng định mọiclosedloop va chạm."
+      ]
+    }
+  ]
+}

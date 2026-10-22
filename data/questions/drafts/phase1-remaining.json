@@ -1,0 +1,1647 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.22.phase1-curated",
+  "questions": [
+    {
+      "id": "p1-d02-q01",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d02",
+      "topic": "p1-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trước khi đề xuất một chatbot, câu hỏi nào bám đúng bước chẩn đoán của slide?",
+      "correct_answer": "b",
+      "explanation": "Bắt đầu từ khó khăn, người quá tải, quy trình hiện tại và đối tượng phục vụ.",
+      "source_reference": [
+        {
+          "document_id": "p1-d02",
+          "sha256": "2ad31138952bf7b032765e29a904c9f3b43e6130896a72f4339fd56d17f37aea",
+          "pdf_page": 12,
+          "title": "Xác định bài toán cho AI",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "d",
+          "text": "Ưu tiên tự động hóa mọi bước có dữ liệu sẵn"
+        },
+        {
+          "id": "a",
+          "text": "Chọn kiến trúc model trước rồi tìm nhóm khách phù hợp"
+        },
+        {
+          "id": "b",
+          "text": "Người dùng gặp khó khăn ở công đoạn nào?"
+        },
+        {
+          "id": "c",
+          "text": "Định nghĩa chatbot là outcome trước khi quan sát workflow"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d02-q02",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d02",
+      "topic": "p1-d02",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Theo slide, chỉ cần thấy một công việc lặp lại là có thể đề xuất giải pháp ngay, dù chưa hiểu điểm đau.",
+      "correct_answer": false,
+      "explanation": "Slide kết luận chưa thấu hiểu điểm đau thì chưa đề xuất giải pháp.",
+      "source_reference": [
+        {
+          "document_id": "p1-d02",
+          "sha256": "2ad31138952bf7b032765e29a904c9f3b43e6130896a72f4339fd56d17f37aea",
+          "pdf_page": 12,
+          "title": "Xác định bài toán cho AI",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ]
+    },
+    {
+      "id": "p1-d02-q03",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d02",
+      "topic": "p1-d02",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những lăng kính nào được dùng để tìm bài toán AI? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation": "Slide liệt kê lặp lại, tốn thời gian, lợi thế AI và điểm đau.",
+      "source_reference": [
+        {
+          "document_id": "p1-d02",
+          "sha256": "2ad31138952bf7b032765e29a904c9f3b43e6130896a72f4339fd56d17f37aea",
+          "pdf_page": 12,
+          "title": "Xác định bài toán cho AI",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "Thời gian hao phí cho tìm kiếm/đọc hiểu/chờ đợi"
+        },
+        {
+          "id": "c",
+          "text": "Bắt đầu từ model mới nhất rồi tìm pain để khớp vào"
+        },
+        {
+          "id": "d",
+          "text": "Xem yêu cầu tính năng của stakeholder là bằng chứng pain đã được xác nhận"
+        },
+        {
+          "id": "a",
+          "text": "Công việc lặp lại cần chuẩn hóa"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d04-q01",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d04",
+      "topic": "p1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Agent lặp vô hạn vì thiếu điều kiện dừng. Lớp nào trực tiếp quyết định quy tắc lặp và dừng?",
+      "correct_answer": "c",
+      "explanation": "Loop engineering quy định lặp thế nào và dừng khi nào.",
+      "source_reference": [
+        {
+          "document_id": "p1-d04",
+          "sha256": "1990fcdcf2ff0da294e52c1ca445ab8858a1922411c9cb1e380c683c2d4985af",
+          "pdf_page": 9,
+          "title": "Context · Loop · Harness Engineering",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "Context engineering: chọn token của một lần gọi"
+        },
+        {
+          "id": "c",
+          "text": "Loop engineering: quy tắc lặp và điều kiện dừng"
+        },
+        {
+          "id": "d",
+          "text": "Harness engineering chỉ đổi danh sách tool mà không sửa quy tắc lặp"
+        },
+        {
+          "id": "a",
+          "text": "Prompt engineering: viết lại lời nhắc trong message"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d04-q02",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d04",
+      "topic": "p1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong mô hình bốn lớp, context engineering quyết định model được thấy gì trong một lần gọi.",
+      "correct_answer": true,
+      "explanation": "Đây là mô tả trực tiếp của lớp context.",
+      "source_reference": [
+        {
+          "document_id": "p1-d04",
+          "sha256": "1990fcdcf2ff0da294e52c1ca445ab8858a1922411c9cb1e380c683c2d4985af",
+          "pdf_page": 9,
+          "title": "Context · Loop · Harness Engineering",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ]
+    },
+    {
+      "id": "p1-d04-q03",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d04",
+      "topic": "p1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những nội dung nào thuộc harness engineering trên bản đồ bốn lớp? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation": "Harness là runtime với tool, sandbox, quyền và trace.",
+      "source_reference": [
+        {
+          "document_id": "p1-d04",
+          "sha256": "1990fcdcf2ff0da294e52c1ca445ab8858a1922411c9cb1e380c683c2d4985af",
+          "pdf_page": 9,
+          "title": "Context · Loop · Harness Engineering",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "d",
+          "text": "Viết câu chữ của một message là toàn bộ harness"
+        },
+        {
+          "id": "a",
+          "text": "Sandbox"
+        },
+        {
+          "id": "b",
+          "text": "Quyền và trace"
+        },
+        {
+          "id": "c",
+          "text": "Chọn những token model nhìn thấy trong một lần gọi là toàn bộ harness"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d10-q01",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d10",
+      "topic": "p1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao lỗi corpus RAG có thể khó phát hiện hơn lỗi dashboard bị vỡ?",
+      "correct_answer": "b",
+      "explanation": "Slide gọi đây là silent failure: hệ thống vẫn trả lời dù chunk stale hoặc mâu thuẫn bản mới.",
+      "source_reference": [
+        {
+          "document_id": "p1-d10",
+          "sha256": "80829f856297080f140ecb28adfd95f0d27179de1660b3315e38bcb4be16e694",
+          "pdf_page": 5,
+          "title": "Data Pipeline & Data Observability",
+          "locator": "Physical PDF page 5; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "d",
+          "text": "Corpus chỉ cần đúng chủ đề, không cần mới"
+        },
+        {
+          "id": "a",
+          "text": "RAG luôn ném exception khi dùng chunk cũ"
+        },
+        {
+          "id": "b",
+          "text": "Câu trả lời có thể dùng chunk lỗi thời mà không phát sinh exception"
+        },
+        {
+          "id": "c",
+          "text": "Mọi dashboard luôn chính xác"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d10-q02",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d10",
+      "topic": "p1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Hợp đồng đúng đắn của RAG chỉ yêu cầu chunk liên quan chủ đề, không cần xét freshness.",
+      "correct_answer": false,
+      "explanation": "Chunk cần vừa liên quan vừa không stale/không bị bản mới hơn mâu thuẫn.",
+      "source_reference": [
+        {
+          "document_id": "p1-d10",
+          "sha256": "80829f856297080f140ecb28adfd95f0d27179de1660b3315e38bcb4be16e694",
+          "pdf_page": 5,
+          "title": "Data Pipeline & Data Observability",
+          "locator": "Physical PDF page 5; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ]
+    },
+    {
+      "id": "p1-d10-q03",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d10",
+      "topic": "p1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những tín hiệu nào cần xét cho chunk được truy xuất theo slide? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation": "Đây là hai phần của hợp đồng đúng đắn cho retrieval.",
+      "source_reference": [
+        {
+          "document_id": "p1-d10",
+          "sha256": "80829f856297080f140ecb28adfd95f0d27179de1660b3315e38bcb4be16e694",
+          "pdf_page": 5,
+          "title": "Data Pipeline & Data Observability",
+          "locator": "Physical PDF page 5; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "Không lỗi thời hoặc mâu thuẫn với bản mới hơn"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ cần top-k similarity cao, bỏ qua phiên bản tài liệu"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ cần job ingestion thành công, không xét nội dung retrieved"
+        },
+        {
+          "id": "a",
+          "text": "Liên quan chủ đề"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d12-q01",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d12",
+      "topic": "p1-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Agent cần giữ bộ nhớ qua nhiều lần gọi nhưng vẫn tuân thủ stateless processes. Cách nào phù hợp?",
+      "correct_answer": "b",
+      "explanation": "Stateless không cấm memory; slide yêu cầu externalize state.",
+      "source_reference": [
+        {
+          "document_id": "p1-d12",
+          "sha256": "eee97925592e858d63163ab40db88fb93100e35606412ade8f6a21aa2142b8aa",
+          "pdf_page": 10,
+          "title": "Deployment — Đưa Agent Lên Cloud",
+          "locator": "Physical PDF page 10; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "Externalize state ra bên ngoài instance"
+        },
+        {
+          "id": "c",
+          "text": "Đưa mọi phiên người dùng vào container image khi build"
+        },
+        {
+          "id": "d",
+          "text": "Khởi tạo lại toàn bộ lịch sử khi container restart"
+        },
+        {
+          "id": "a",
+          "text": "Giữ state trong RAM và dùng sticky session để tránh external store"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d12-q02",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d12",
+      "topic": "p1-d12",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Config in env đồng nghĩa với hardcode API key trong mã để dễ deploy.",
+      "correct_answer": false,
+      "explanation": "Slide nêu config in env và không hardcode API keys.",
+      "source_reference": [
+        {
+          "document_id": "p1-d12",
+          "sha256": "eee97925592e858d63163ab40db88fb93100e35606412ade8f6a21aa2142b8aa",
+          "pdf_page": 10,
+          "title": "Deployment — Đưa Agent Lên Cloud",
+          "locator": "Physical PDF page 10; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ]
+    },
+    {
+      "id": "p1-d12-q03",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d12",
+      "topic": "p1-d12",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những mục nào nằm trong deployment checklist của slide? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation": "Checklist gồm secrets management, health check, structured logging, monitoring endpoint và graceful shutdown.",
+      "source_reference": [
+        {
+          "document_id": "p1-d12",
+          "sha256": "eee97925592e858d63163ab40db88fb93100e35606412ade8f6a21aa2142b8aa",
+          "pdf_page": 10,
+          "title": "Deployment — Đưa Agent Lên Cloud",
+          "locator": "Physical PDF page 10; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "d",
+          "text": "Dùng local instance state thay cho lưu trữ bên ngoài"
+        },
+        {
+          "id": "a",
+          "text": "Health check endpoint"
+        },
+        {
+          "id": "b",
+          "text": "Graceful shutdown"
+        },
+        {
+          "id": "c",
+          "text": "Đưa API key vào source để dev/prod giống nhau"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d13-q01",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d13",
+      "topic": "p1-d13",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Hệ thống cần trả lời một câu hỏi mới về failure mode chưa từng gặp mà không deploy code mới. Khái niệm nào phù hợp?",
+      "correct_answer": "b",
+      "explanation": "Observability là thuộc tính cho phép đặt câu hỏi mới bằng telemetry đủ giàu.",
+      "source_reference": [
+        {
+          "document_id": "p1-d13",
+          "sha256": "8995a58726b43d4f4c0f67c660087205328c5d654d7a6a894c8bcfb1003ae96f",
+          "pdf_page": 9,
+          "title": "Monitoring, Logging & Observability",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "c",
+          "text": "Chỉ kiểm tra endpoint còn phản hồi HTTP200"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ tổng hợp một số uptime cho toàn hệ thống"
+        },
+        {
+          "id": "a",
+          "text": "Monitoring dựa trên các alert đã định nghĩa sẵn"
+        },
+        {
+          "id": "b",
+          "text": "Observability dựa trên telemetry đủ giàu"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d13-q02",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d13",
+      "topic": "p1-d13",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Monitoring được slide mô tả là theo dõi các câu hỏi và failure mode đã biết trước.",
+      "correct_answer": true,
+      "explanation": "Monitoring dùng dashboard/alert dựng sẵn cho known-knowns.",
+      "source_reference": [
+        {
+          "document_id": "p1-d13",
+          "sha256": "8995a58726b43d4f4c0f67c660087205328c5d654d7a6a894c8bcfb1003ae96f",
+          "pdf_page": 9,
+          "title": "Monitoring, Logging & Observability",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ]
+    },
+    {
+      "id": "p1-d13-q03",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d13",
+      "topic": "p1-d13",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những loại telemetry nào được nêu để hỗ trợ observability? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation": "Nguồn liệt kê metrics + logs + traces.",
+      "source_reference": [
+        {
+          "document_id": "p1-d13",
+          "sha256": "8995a58726b43d4f4c0f67c660087205328c5d654d7a6a894c8bcfb1003ae96f",
+          "pdf_page": 9,
+          "title": "Monitoring, Logging & Observability",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Metrics"
+        },
+        {
+          "id": "b",
+          "text": "Logs và traces"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ alert rule biết trước, không cần telemetry chi tiết"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ kiểm tra health endpoint thành công, bỏ qua trace của request"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d15-q01",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d15",
+      "topic": "p1-d15",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Nhóm có GPU server và ưu tiên inference throughput cao. Công cụ nào được slide gợi ý?",
+      "correct_answer": "b",
+      "explanation": "vLLM được mô tả production-grade inference, PagedAttention và continuous batching.",
+      "source_reference": [
+        {
+          "document_id": "p1-d15",
+          "sha256": "58007c609954673decc7bdb3a0c7f5dc0cbeabb57c7dd27e7c3806f2c469b694",
+          "pdf_page": 11,
+          "title": "Triển Khai Thực Tế, Chi Phí Vận Hành & Định Hướng Chuyên Sâu",
+          "locator": "Physical PDF page 11; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Ollama như lựa chọn ưu tiên cho mọi tải production lớn"
+        },
+        {
+          "id": "b",
+          "text": "vLLM"
+        },
+        {
+          "id": "c",
+          "text": "Giữ mọi request chạy tuần tự để tránh batch"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ so giá token API, không cần xét khả năng inference"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d15-q02",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d15",
+      "topic": "p1-d15",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Slide mô tả Ollama phù hợp cho dev, demo và edge deployment với thiết lập đơn giản.",
+      "correct_answer": true,
+      "explanation": "Đây là các trường hợp dùng Ollama được ghi trên slide.",
+      "source_reference": [
+        {
+          "document_id": "p1-d15",
+          "sha256": "58007c609954673decc7bdb3a0c7f5dc0cbeabb57c7dd27e7c3806f2c469b694",
+          "pdf_page": 11,
+          "title": "Triển Khai Thực Tế, Chi Phí Vận Hành & Định Hướng Chuyên Sâu",
+          "locator": "Physical PDF page 11; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ]
+    },
+    {
+      "id": "p1-d15-q03",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d15",
+      "topic": "p1-d15",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Khi so sánh chi phí self-host với cloud API, cần tính những khoản nào ngoài token? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation": "Lưu ý của slide yêu cầu tính cả GPU, ops và maintenance; không mặc định self-host rẻ hơn.",
+      "source_reference": [
+        {
+          "document_id": "p1-d15",
+          "sha256": "58007c609954673decc7bdb3a0c7f5dc0cbeabb57c7dd27e7c3806f2c469b694",
+          "pdf_page": 11,
+          "title": "Triển Khai Thực Tế, Chi Phí Vận Hành & Định Hướng Chuyên Sâu",
+          "locator": "Physical PDF page 11; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "c",
+          "text": "Chỉ tiền token của cloud, không xét phí sở hữu GPU"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ tiền mua GPU lần đầu, xem vận hành bằng không"
+        },
+        {
+          "id": "a",
+          "text": "GPU"
+        },
+        {
+          "id": "b",
+          "text": "Ops và maintenance"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d03-q01",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d03",
+      "topic": "p1-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong Agentic Fit, tiêu chí nào hỏi bước tiếp theo có phụ thuộc kết quả vừa quan sát không?",
+      "correct_answer": "b",
+      "explanation": "Dynamic Decision đánh giá việc quyết định bước tiếp theo từ quan sát mới.",
+      "source_reference": [
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 14,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 14; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Long Horizon: giữ mục tiêu qua nhiều vòng/state"
+        },
+        {
+          "id": "b",
+          "text": "Dynamic Decision"
+        },
+        {
+          "id": "c",
+          "text": "Multi-step Reasoning: chia thành bước phụ thuộc"
+        },
+        {
+          "id": "d",
+          "text": "Tool Interaction: cần gọi công cụ bên ngoài"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d03-q02",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d03",
+      "topic": "p1-d03",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Tool Interaction đánh giá hệ thống có cần gọi search, API, database hoặc các công cụ khác không.",
+      "correct_answer": true,
+      "explanation": "Slide liệt kê trực tiếp các ví dụ tool này.",
+      "source_reference": [
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 14,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 14; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ]
+    },
+    {
+      "id": "p1-d03-q03",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d03",
+      "topic": "p1-d03",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những tiêu chí nào thuộc bộ bốn Agentic Fit? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation": "Bốn tiêu chí gồm multi-step reasoning, tool interaction, dynamic decision và long horizon.",
+      "source_reference": [
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 14,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 14; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "c",
+          "text": "Chỉ số lần trả lời đúng một FAQ cố định"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ số lượng token tối đa, không xét workflow"
+        },
+        {
+          "id": "a",
+          "text": "Multi-step Reasoning"
+        },
+        {
+          "id": "b",
+          "text": "Long Horizon"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d05-q01",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d05",
+      "topic": "p1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao chỉ đáp ứng functional job có thể chưa đủ cho sản phẩm AI?",
+      "correct_answer": "b",
+      "explanation": "Slide yêu cầu xét việc cần làm, cảm giác mong muốn và cách người dùng muốn được nhìn nhận.",
+      "source_reference": [
+        {
+          "document_id": "p1-d05",
+          "sha256": "4054831253c34ed1a3e8ab6a0a2437f5bb7be28bae0d395852831ae737b5353e",
+          "pdf_page": 9,
+          "title": "AI Product Thinking & Requirements",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "c",
+          "text": "Functional job chỉ là tính năng; chỉ cần đổi tên tính năng thành job"
+        },
+        {
+          "id": "d",
+          "text": "Social job chỉ liên quan đội bán hàng, không liên quan người dùng"
+        },
+        {
+          "id": "a",
+          "text": "Functional job đã bao phủ cả nhu cầu cảm xúc nên không cần hỏi thêm"
+        },
+        {
+          "id": "b",
+          "text": "Sản phẩm có thể đúng chức năng nhưng không được dùng lại"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d05-q02",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d05",
+      "topic": "p1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Mong muốn cảm thấy tự tin hơn, ít sợ sai hơn thuộc nhu cầu được slide đưa vào JTBD.",
+      "correct_answer": true,
+      "explanation": "Nguồn nêu trực tiếp các nhu cầu cảm xúc này.",
+      "source_reference": [
+        {
+          "document_id": "p1-d05",
+          "sha256": "4054831253c34ed1a3e8ab6a0a2437f5bb7be28bae0d395852831ae737b5353e",
+          "pdf_page": 9,
+          "title": "AI Product Thinking & Requirements",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ]
+    },
+    {
+      "id": "p1-d05-q03",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d05",
+      "topic": "p1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những câu hỏi nào thuộc JTBD trên slide? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation": "JTBD xét việc cần làm, cảm xúc và cách được nhìn nhận.",
+      "source_reference": [
+        {
+          "document_id": "p1-d05",
+          "sha256": "4054831253c34ed1a3e8ab6a0a2437f5bb7be28bae0d395852831ae737b5353e",
+          "pdf_page": 9,
+          "title": "AI Product Thinking & Requirements",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Người dùng muốn hoàn thành việc gì?"
+        },
+        {
+          "id": "b",
+          "text": "Người dùng muốn được nhìn nhận ra sao?"
+        },
+        {
+          "id": "c",
+          "text": "Model có thể tự động hóa tính năng nào, bất kể mục tiêu người dùng?"
+        },
+        {
+          "id": "d",
+          "text": "Tính năng đã được implement chưa, thay cho việc hỏi nhu cầu?"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d06-q01",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d06",
+      "topic": "p1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một AI feature đã chạy được nhưng thiếu fallback và monitoring. Theo Definition of Done, đánh giá nào đúng?",
+      "correct_answer": "b",
+      "explanation": "Done phải có quality threshold, latency, fallback và monitoring signal.",
+      "source_reference": [
+        {
+          "document_id": "p1-d06",
+          "sha256": "3b0f60cc5e7d6de13102842d2c1e4d0ac7ea513fbad0bea862b48b32f3a3bc95",
+          "pdf_page": 10,
+          "title": "AI Product & Project Management",
+          "locator": "Physical PDF page 10; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "d",
+          "text": "Đã done nếu có feature nhưng chưa có tiêu chí chất lượng"
+        },
+        {
+          "id": "a",
+          "text": "Đã done nếu unit test của code pass dù chưa đo output"
+        },
+        {
+          "id": "b",
+          "text": "Chưa đủ điều kiện done"
+        },
+        {
+          "id": "c",
+          "text": "Đã done nếu demo một prompt thành công"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d06-q02",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d06",
+      "topic": "p1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Backlog AI nên xem xét cả feature debt, data debt và technical debt.",
+      "correct_answer": true,
+      "explanation": "Ba loại debt này được slide liệt kê.",
+      "source_reference": [
+        {
+          "document_id": "p1-d06",
+          "sha256": "3b0f60cc5e7d6de13102842d2c1e4d0ac7ea513fbad0bea862b48b32f3a3bc95",
+          "pdf_page": 10,
+          "title": "AI Product & Project Management",
+          "locator": "Physical PDF page 10; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ]
+    },
+    {
+      "id": "p1-d06-q03",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d06",
+      "topic": "p1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những điều kiện nào được dùng trong ví dụ support agent đã done? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation": "Ví dụ nguồn nêu citation coverage, escalation và test set đạt ngưỡng.",
+      "source_reference": [
+        {
+          "document_id": "p1-d06",
+          "sha256": "3b0f60cc5e7d6de13102842d2c1e4d0ac7ea513fbad0bea862b48b32f3a3bc95",
+          "pdf_page": 10,
+          "title": "AI Product & Project Management",
+          "locator": "Physical PDF page 10; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "Escalation path rõ và test set đạt ngưỡng"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ có endpoint trảHTTP200, không cần kiểm tra câu trả lời"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ hoàn thành coding task, để eval sau khi release"
+        },
+        {
+          "id": "a",
+          "text": "Citation coverage đủ"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d07-q01",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d07",
+      "topic": "p1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Tài liệu có heading và section tốt; cần chunk trọn ý và metadata section rõ. Strategy nào phù hợp nhất trong bảng?",
+      "correct_answer": "b",
+      "explanation": "Heading/structural cắt theo Markdown heading/section, giữ ý và metadata section.",
+      "source_reference": [
+        {
+          "document_id": "p1-d07",
+          "sha256": "ad1669dd5385de460caa68a4b378120c8de3105b1e6c8c7bee296bd5398f7bc5",
+          "pdf_page": 13,
+          "title": "Data Foundations",
+          "locator": "Physical PDF page 13; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Fixed-size cắt mỗi Ntoken với overlap"
+        },
+        {
+          "id": "b",
+          "text": "Heading/structural"
+        },
+        {
+          "id": "c",
+          "text": "Recursive chỉ dừng khi vừa kích thước dù mất section metadata"
+        },
+        {
+          "id": "d",
+          "text": "Chia theo kích thước file lưu trữ thay vì nội dung"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d07-q02",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d07",
+      "topic": "p1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Fixed-size đơn giản và dễ kiểm soát cost nhưng có thể cắt giữa câu hoặc bảng.",
+      "correct_answer": true,
+      "explanation": "Bảng ghi ưu/nhược này cho fixed-size.",
+      "source_reference": [
+        {
+          "document_id": "p1-d07",
+          "sha256": "ad1669dd5385de460caa68a4b378120c8de3105b1e6c8c7bee296bd5398f7bc5",
+          "pdf_page": 13,
+          "title": "Data Foundations",
+          "locator": "Physical PDF page 13; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ]
+    },
+    {
+      "id": "p1-d07-q03",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d07",
+      "topic": "p1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những nhận định nào đúng về recursive chunking trong bảng? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation": "Recursive là mặc định tốt nhưng vẫn có giới hạn khi đoạn vượt kích thước.",
+      "source_reference": [
+        {
+          "document_id": "p1-d07",
+          "sha256": "ad1669dd5385de460caa68a4b378120c8de3105b1e6c8c7bee296bd5398f7bc5",
+          "pdf_page": 13,
+          "title": "Data Foundations",
+          "locator": "Physical PDF page 13; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "c",
+          "text": "Bảo đảm không bao giờ phải cắt đoạn vượt giới hạn"
+        },
+        {
+          "id": "d",
+          "text": "Bắt buộc tài liệu có heading chuẩn mới thực hiện được"
+        },
+        {
+          "id": "a",
+          "text": "Cố gắng tôn trọng ranh giới tự nhiên"
+        },
+        {
+          "id": "b",
+          "text": "Vẫn có thể phải cắt nếu một đoạn quá dài"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d08-q01",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d08",
+      "topic": "p1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trường hợp nào có lý do rõ để dùng RAG theo slide?",
+      "correct_answer": "b",
+      "explanation": "Dữ liệu nội bộ thay đổi và yêu cầu citation là lý do dùng RAG.",
+      "source_reference": [
+        {
+          "document_id": "p1-d08",
+          "sha256": "dad417681be6c8505f3029334b74c364c1c5345fef9a106cbdbf9ac95daba665",
+          "pdf_page": 14,
+          "title": "RAG Pipeline",
+          "locator": "Physical PDF page 14; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "Tra cứu policy nội bộ thay đổi và cần nguồn kiểm chứng"
+        },
+        {
+          "id": "c",
+          "text": "Một tác vụ kiến thức chung mà prompt đơn giản đã đủ"
+        },
+        {
+          "id": "d",
+          "text": "Không có corpus riêng nhưng muốn thêm vectorDB để gọi làRAG"
+        },
+        {
+          "id": "a",
+          "text": "Brainstorm tự do không cần corpus/citation"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d08-q02",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d08",
+      "topic": "p1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Slide cho rằng mọi câu hỏi kiến thức chung đều bắt buộc phải dùng RAG.",
+      "correct_answer": false,
+      "explanation": "Kiến thức chung LLM đã biết được xếp vào nhóm chưa cần RAG.",
+      "source_reference": [
+        {
+          "document_id": "p1-d08",
+          "sha256": "dad417681be6c8505f3029334b74c364c1c5345fef9a106cbdbf9ac95daba665",
+          "pdf_page": 14,
+          "title": "RAG Pipeline",
+          "locator": "Physical PDF page 14; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ]
+    },
+    {
+      "id": "p1-d08-q03",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d08",
+      "topic": "p1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những trường hợp nào được slide xếp vào nhóm chưa cần RAG? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation": "Bảng phân biệt nhu cầu RAG với trường hợp giải pháp đơn giản đã đủ.",
+      "source_reference": [
+        {
+          "document_id": "p1-d08",
+          "sha256": "dad417681be6c8505f3029334b74c364c1c5345fef9a106cbdbf9ac95daba665",
+          "pdf_page": 14,
+          "title": "RAG Pipeline",
+          "locator": "Physical PDF page 14; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "d",
+          "text": "Cần giảm hallucination có hệ thống với corpus sẵn có"
+        },
+        {
+          "id": "a",
+          "text": "Không có corpus riêng để truy xuất"
+        },
+        {
+          "id": "b",
+          "text": "Prompt engineering đơn giản đã đủ"
+        },
+        {
+          "id": "c",
+          "text": "Cần cập nhật policy nội bộ liên tục và kiểm chứng nguồn"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d09-q01",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d09",
+      "topic": "p1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Hai subagent khám phá hai hướng độc lập, còn kết quả cuối là một sản phẩm chung. Cách tổ chức nào phù hợp nguyên tắc slide?",
+      "correct_answer": "b",
+      "explanation": "Khám phá độc lập có thể song song; ghi vào sản phẩm chung nên có một luồng.",
+      "source_reference": [
+        {
+          "document_id": "p1-d09",
+          "sha256": "c5d8e34aaa138debbd52718465cd05696de18fd47eb26ef57caacb57f2bd38fb",
+          "pdf_page": 11,
+          "title": "Multi-Agent & Kết Nối Hệ Thống",
+          "locator": "Physical PDF page 11; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "c",
+          "text": "Tuần tự hóa cả đọc độc lập vì mọi multi-agent đều có xung đột"
+        },
+        {
+          "id": "d",
+          "text": "Tách đọc nhưng bỏ bước điều phối lúc hợp nhất và ghi"
+        },
+        {
+          "id": "a",
+          "text": "Cho mọi agent đồng thời ghi cùng báo cáo để tối đa song song"
+        },
+        {
+          "id": "b",
+          "text": "Song song việc đọc, tuần tự hóa việc ghi chung"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d09-q02",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d09",
+      "topic": "p1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Nguyên tắc trên slide khuyên nhiều subagent đồng thời ghi vào một sản phẩm chung mà không điều phối.",
+      "correct_answer": false,
+      "explanation": "Nguồn nêu tuần tự hóa việc ghi vào sản phẩm chung.",
+      "source_reference": [
+        {
+          "document_id": "p1-d09",
+          "sha256": "c5d8e34aaa138debbd52718465cd05696de18fd47eb26ef57caacb57f2bd38fb",
+          "pdf_page": 11,
+          "title": "Multi-Agent & Kết Nối Hệ Thống",
+          "locator": "Physical PDF page 11; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ]
+    },
+    {
+      "id": "p1-d09-q03",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d09",
+      "topic": "p1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "rubric",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Đề xuất cách phân chia đọc và ghi để tránh xung đột.",
+      "correct_answer": "Cho agent đọc/khám phá các hướng độc lập song song; hợp nhất kết quả và giao một luồng chịu trách nhiệm ghi sản phẩm chung.",
+      "explanation": "Trang nguồn nêu song song hóa việc đọc, tuần tự hóa việc ghi.",
+      "source_reference": [
+        {
+          "document_id": "p1-d09",
+          "sha256": "c5d8e34aaa138debbd52718465cd05696de18fd47eb26ef57caacb57f2bd38fb",
+          "pdf_page": 11,
+          "title": "Multi-Agent & Kết Nối Hệ Thống",
+          "locator": "Physical PDF page 11; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "context": "Ba agent cần khảo sát ba hệ thống khác nhau rồi cùng tạo một báo cáo duy nhất. Nhóm dự định cho cả ba đồng thời sửa cùng phần kết luận.",
+      "rubric": [
+        {
+          "id": "c1",
+          "description": "Phân chia đọc hoặc khám phá độc lập để chạy song song.",
+          "weight": 0.5,
+          "full_credit": "Phân chia đọc hoặc khám phá độc lập để chạy song song.",
+          "partial_credit": "Đề xuất chia việc nhưng chưa nêu rõ các hướng đọc độc lập có thể song song.",
+          "no_credit": "Không chia việc đọc độc lập hoặc yêu cầu mọi bước luôn tuần tự."
+        },
+        {
+          "id": "c2",
+          "description": "Tuần tự hóa/hợp nhất có điều phối việc ghi báo cáo chung.",
+          "weight": 0.5,
+          "full_credit": "Tuần tự hóa/hợp nhất có điều phối việc ghi báo cáo chung.",
+          "partial_credit": "Đề xuất hợp nhất kết quả nhưng chưa xác định một luồng ghi hoặc cơ chế tuần tự hóa.",
+          "no_credit": "Vẫn để cả ba agent ghi cùng kết luận không điều phối."
+        }
+      ]
+    }
+  ]
+}

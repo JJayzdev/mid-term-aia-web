@@ -1,0 +1,602 @@
+{
+  "bank_version": "2026.10.22-cb4b0a35c49b",
+  "approved_questions": 204,
+  "documents_total": 63,
+  "documents_represented": 63,
+  "uncovered_documents": [],
+  "omitted_pending_or_rejected_ids": [],
+  "note": "Mỗi tài liệu được đại diện bằng một số câu từ các trang đã kiểm tra; không phải mọi khái niệm trên toàn bộ slide đều đã có câu hỏi.",
+  "mapping_note": "Phase/Track/Ngày ôn tập theo thư mục và tên file do người học cung cấp; nhãn in trên một số slide có thể khác.",
+  "by_question_type": {
+    "single_choice": 74,
+    "multiple_choice": 54,
+    "true_false": 58,
+    "scenario": 15,
+    "short_answer": 3
+  },
+  "by_answer_format": {
+    "single_choice": 79,
+    "multiple_choice": 54,
+    "boolean": 58,
+    "rubric": 13
+  },
+  "by_difficulty": {
+    "medium": 194,
+    "hard": 4,
+    "easy": 6
+  },
+  "by_cognitive_level": {
+    "understand": 182,
+    "apply": 20,
+    "analyze": 2
+  },
+  "physical_pages_total": 3589,
+  "distinct_cited_pages": 124,
+  "per_document": [
+    {
+      "document_id": "p1-d01",
+      "questions": 4,
+      "cited_pages": [
+        7,
+        10,
+        14,
+        27
+      ],
+      "total_pages": 52
+    },
+    {
+      "document_id": "p1-d11",
+      "questions": 4,
+      "cited_pages": [
+        4,
+        5
+      ],
+      "total_pages": 116
+    },
+    {
+      "document_id": "p1-d14",
+      "questions": 4,
+      "cited_pages": [
+        6,
+        7,
+        9
+      ],
+      "total_pages": 81
+    },
+    {
+      "document_id": "p1-d02",
+      "questions": 3,
+      "cited_pages": [
+        12
+      ],
+      "total_pages": 50
+    },
+    {
+      "document_id": "p1-d04",
+      "questions": 3,
+      "cited_pages": [
+        9
+      ],
+      "total_pages": 83
+    },
+    {
+      "document_id": "p1-d10",
+      "questions": 3,
+      "cited_pages": [
+        5
+      ],
+      "total_pages": 138
+    },
+    {
+      "document_id": "p1-d12",
+      "questions": 3,
+      "cited_pages": [
+        10
+      ],
+      "total_pages": 104
+    },
+    {
+      "document_id": "p1-d13",
+      "questions": 3,
+      "cited_pages": [
+        9
+      ],
+      "total_pages": 85
+    },
+    {
+      "document_id": "p1-d15",
+      "questions": 3,
+      "cited_pages": [
+        11
+      ],
+      "total_pages": 55
+    },
+    {
+      "document_id": "p1-d03",
+      "questions": 3,
+      "cited_pages": [
+        14
+      ],
+      "total_pages": 94
+    },
+    {
+      "document_id": "p1-d05",
+      "questions": 3,
+      "cited_pages": [
+        9
+      ],
+      "total_pages": 51
+    },
+    {
+      "document_id": "p1-d06",
+      "questions": 3,
+      "cited_pages": [
+        10
+      ],
+      "total_pages": 37
+    },
+    {
+      "document_id": "p1-d07",
+      "questions": 3,
+      "cited_pages": [
+        13
+      ],
+      "total_pages": 58
+    },
+    {
+      "document_id": "p1-d08",
+      "questions": 3,
+      "cited_pages": [
+        14
+      ],
+      "total_pages": 66
+    },
+    {
+      "document_id": "p1-d09",
+      "questions": 3,
+      "cited_pages": [
+        11
+      ],
+      "total_pages": 58
+    },
+    {
+      "document_id": "p2-t1-d11",
+      "questions": 3,
+      "cited_pages": [
+        12
+      ],
+      "total_pages": 37
+    },
+    {
+      "document_id": "p2-t1-d05",
+      "questions": 3,
+      "cited_pages": [
+        6
+      ],
+      "total_pages": 31
+    },
+    {
+      "document_id": "p2-t1-d06",
+      "questions": 3,
+      "cited_pages": [
+        12
+      ],
+      "total_pages": 49
+    },
+    {
+      "document_id": "p2-t1-d07",
+      "questions": 3,
+      "cited_pages": [
+        12
+      ],
+      "total_pages": 35
+    },
+    {
+      "document_id": "p2-t1-d08",
+      "questions": 3,
+      "cited_pages": [
+        9
+      ],
+      "total_pages": 29
+    },
+    {
+      "document_id": "p2-t1-d02",
+      "questions": 3,
+      "cited_pages": [
+        9
+      ],
+      "total_pages": 28
+    },
+    {
+      "document_id": "p2-t1-d01",
+      "questions": 3,
+      "cited_pages": [
+        28
+      ],
+      "total_pages": 45
+    },
+    {
+      "document_id": "p2-t1-d10",
+      "questions": 3,
+      "cited_pages": [
+        9
+      ],
+      "total_pages": 37
+    },
+    {
+      "document_id": "p2-t1-d03",
+      "questions": 3,
+      "cited_pages": [
+        10
+      ],
+      "total_pages": 23
+    },
+    {
+      "document_id": "p2-t1-d04",
+      "questions": 3,
+      "cited_pages": [
+        10
+      ],
+      "total_pages": 66
+    },
+    {
+      "document_id": "p2-t1-d09",
+      "questions": 3,
+      "cited_pages": [
+        12
+      ],
+      "total_pages": 37
+    },
+    {
+      "document_id": "p2-t2-d10",
+      "questions": 3,
+      "cited_pages": [
+        14,
+        15
+      ],
+      "total_pages": 60
+    },
+    {
+      "document_id": "p2-t2-d12",
+      "questions": 3,
+      "cited_pages": [
+        6,
+        13
+      ],
+      "total_pages": 40
+    },
+    {
+      "document_id": "p2-t2-d13",
+      "questions": 3,
+      "cited_pages": [
+        10,
+        11
+      ],
+      "total_pages": 22
+    },
+    {
+      "document_id": "p2-t2-d02",
+      "questions": 3,
+      "cited_pages": [
+        9,
+        13
+      ],
+      "total_pages": 42
+    },
+    {
+      "document_id": "p2-t2-d03",
+      "questions": 3,
+      "cited_pages": [
+        11,
+        13
+      ],
+      "total_pages": 46
+    },
+    {
+      "document_id": "p2-t2-d04",
+      "questions": 3,
+      "cited_pages": [
+        13,
+        16
+      ],
+      "total_pages": 61
+    },
+    {
+      "document_id": "p2-t2-d06",
+      "questions": 3,
+      "cited_pages": [
+        7,
+        13
+      ],
+      "total_pages": 40
+    },
+    {
+      "document_id": "p2-t2-d01",
+      "questions": 3,
+      "cited_pages": [
+        11,
+        12
+      ],
+      "total_pages": 40
+    },
+    {
+      "document_id": "p2-t2-d11",
+      "questions": 3,
+      "cited_pages": [
+        9,
+        16
+      ],
+      "total_pages": 50
+    },
+    {
+      "document_id": "p2-t2-d05",
+      "questions": 3,
+      "cited_pages": [
+        6,
+        12
+      ],
+      "total_pages": 46
+    },
+    {
+      "document_id": "p2-t2-d07",
+      "questions": 3,
+      "cited_pages": [
+        12,
+        15
+      ],
+      "total_pages": 75
+    },
+    {
+      "document_id": "p2-t2-d08",
+      "questions": 3,
+      "cited_pages": [
+        9,
+        16
+      ],
+      "total_pages": 42
+    },
+    {
+      "document_id": "p2-t3-d10",
+      "questions": 3,
+      "cited_pages": [
+        12,
+        17
+      ],
+      "total_pages": 34
+    },
+    {
+      "document_id": "p2-t3-d13",
+      "questions": 3,
+      "cited_pages": [
+        12,
+        15
+      ],
+      "total_pages": 30
+    },
+    {
+      "document_id": "p2-t3-d03",
+      "questions": 3,
+      "cited_pages": [
+        13,
+        14
+      ],
+      "total_pages": 56
+    },
+    {
+      "document_id": "p2-t3-d04",
+      "questions": 3,
+      "cited_pages": [
+        13,
+        17
+      ],
+      "total_pages": 65
+    },
+    {
+      "document_id": "p2-t3-d07",
+      "questions": 3,
+      "cited_pages": [
+        12,
+        17,
+        18
+      ],
+      "total_pages": 64
+    },
+    {
+      "document_id": "p2-t3-d09",
+      "questions": 3,
+      "cited_pages": [
+        12,
+        17
+      ],
+      "total_pages": 74
+    },
+    {
+      "document_id": "p2-t3-d01",
+      "questions": 3,
+      "cited_pages": [
+        11,
+        16
+      ],
+      "total_pages": 77
+    },
+    {
+      "document_id": "p2-t3-d11",
+      "questions": 3,
+      "cited_pages": [
+        10,
+        16
+      ],
+      "total_pages": 39
+    },
+    {
+      "document_id": "p2-t3-d12",
+      "questions": 3,
+      "cited_pages": [
+        14,
+        17
+      ],
+      "total_pages": 78
+    },
+    {
+      "document_id": "p2-t3-d02",
+      "questions": 3,
+      "cited_pages": [
+        11,
+        14
+      ],
+      "total_pages": 42
+    },
+    {
+      "document_id": "p2-t3-d05",
+      "questions": 3,
+      "cited_pages": [
+        13,
+        15
+      ],
+      "total_pages": 39
+    },
+    {
+      "document_id": "p2-t3-d06",
+      "questions": 3,
+      "cited_pages": [
+        5,
+        17
+      ],
+      "total_pages": 51
+    },
+    {
+      "document_id": "p2-t3-d08",
+      "questions": 3,
+      "cited_pages": [
+        15,
+        16
+      ],
+      "total_pages": 36
+    },
+    {
+      "document_id": "p2-t4-d01",
+      "questions": 4,
+      "cited_pages": [
+        45,
+        56,
+        66,
+        81
+      ],
+      "total_pages": 96
+    },
+    {
+      "document_id": "p2-t4-d02",
+      "questions": 4,
+      "cited_pages": [
+        15,
+        32,
+        36
+      ],
+      "total_pages": 93
+    },
+    {
+      "document_id": "p2-t4-d03",
+      "questions": 4,
+      "cited_pages": [
+        14,
+        24,
+        28
+      ],
+      "total_pages": 99
+    },
+    {
+      "document_id": "p2-t4-d04",
+      "questions": 4,
+      "cited_pages": [
+        22,
+        23
+      ],
+      "total_pages": 36
+    },
+    {
+      "document_id": "p2-t4-d05",
+      "questions": 4,
+      "cited_pages": [
+        18,
+        31
+      ],
+      "total_pages": 43
+    },
+    {
+      "document_id": "p2-t4-d06",
+      "questions": 4,
+      "cited_pages": [
+        4,
+        5,
+        7,
+        9
+      ],
+      "total_pages": 28
+    },
+    {
+      "document_id": "p2-t4-d07",
+      "questions": 4,
+      "cited_pages": [
+        20,
+        26,
+        27
+      ],
+      "total_pages": 47
+    },
+    {
+      "document_id": "p2-t4-d08",
+      "questions": 4,
+      "cited_pages": [
+        9,
+        16,
+        19
+      ],
+      "total_pages": 47
+    },
+    {
+      "document_id": "p2-t4-d09",
+      "questions": 4,
+      "cited_pages": [
+        16,
+        30,
+        33,
+        51
+      ],
+      "total_pages": 67
+    },
+    {
+      "document_id": "p2-t4-d10",
+      "questions": 4,
+      "cited_pages": [
+        7,
+        8,
+        19,
+        39
+      ],
+      "total_pages": 59
+    },
+    {
+      "document_id": "p2-t4-d11",
+      "questions": 4,
+      "cited_pages": [
+        15,
+        23,
+        36,
+        38
+      ],
+      "total_pages": 95
+    },
+    {
+      "document_id": "p2-t4-d12",
+      "questions": 4,
+      "cited_pages": [
+        17,
+        21,
+        26,
+        27,
+        43
+      ],
+      "total_pages": 85
+    }
+  ]
+}

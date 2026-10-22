@@ -1,0 +1,1524 @@
+{
+  "schema_version": "1.0.0",
+  "catalog_version": "2026.10.22.1",
+  "documents": [
+    {
+      "document_id": "p1-d01",
+      "title": "AI & LLM Foundation",
+      "relative_path": "slide/phase1/day 1 AI & LLM.pdf",
+      "page_count": 52,
+      "sha256": "7623057fe66b2a3ef217ace5962109059d94e3d65ae58d4bb4a8d5c7e8c983a8",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d01",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p1-d11",
+      "title": "Guardrails, HITL & Responsible AI",
+      "relative_path": "slide/phase1/day 11 Guardralis,HITL&Responsible AI.pdf",
+      "page_count": 116,
+      "sha256": "04c49100a4cb70af31bc8b7818d814c940f16ef480368339ffcbc95ec6081803",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d11",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p1-d14",
+      "title": "AI Evaluation & Benchmarking",
+      "relative_path": "slide/phase1/day 14 AI Evaluation & Benchmarking.pdf",
+      "page_count": 81,
+      "sha256": "289c3c8ca8e63d8f0eb71be1822bd1149213ac29ff648f0722439ff1dcfd53af",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d14",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p1-d02",
+      "title": "Xác định bài toán cho AI",
+      "relative_path": "slide/phase1/day 2 ai product.pdf",
+      "page_count": 50,
+      "sha256": "2ad31138952bf7b032765e29a904c9f3b43e6130896a72f4339fd56d17f37aea",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d02",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": [
+        "Taxonomy conflict: folder phase1; cover says AI IN ACTION – DAY 02 – TRACK 1. Phase not visually explicit on cover."
+      ]
+    },
+    {
+      "document_id": "p1-d04",
+      "title": "Context · Loop · Harness Engineering",
+      "relative_path": "slide/phase1/day 4 context,loop,harness.pdf",
+      "page_count": 83,
+      "sha256": "1990fcdcf2ff0da294e52c1ca445ab8858a1922411c9cb1e380c683c2d4985af",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d04",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p1-d10",
+      "title": "Data Pipeline & Data Observability",
+      "relative_path": "slide/phase1/day10 data pipeline & data observabitity.pdf",
+      "page_count": 138,
+      "sha256": "80829f856297080f140ecb28adfd95f0d27179de1660b3315e38bcb4be16e694",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d10",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p1-d12",
+      "title": "Deployment — Đưa Agent Lên Cloud",
+      "relative_path": "slide/phase1/day12 Deployment.pdf",
+      "page_count": 104,
+      "sha256": "eee97925592e858d63163ab40db88fb93100e35606412ade8f6a21aa2142b8aa",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d12",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p1-d13",
+      "title": "Monitoring, Logging & Observability",
+      "relative_path": "slide/phase1/day13 Monitoring,logging & Observability.pdf",
+      "page_count": 85,
+      "sha256": "8995a58726b43d4f4c0f67c660087205328c5d654d7a6a894c8bcfb1003ae96f",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d13",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p1-d15",
+      "title": "Triển Khai Thực Tế, Chi Phí Vận Hành & Định Hướng Chuyên Sâu",
+      "relative_path": "slide/phase1/day15 dinh huong.pdf",
+      "page_count": 55,
+      "sha256": "58007c609954673decc7bdb3a0c7f5dc0cbeabb57c7dd27e7c3806f2c469b694",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d15",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p1-d03",
+      "title": "Từ Chatbot Đến Agentic Agent",
+      "relative_path": "slide/phase1/day3 chat bot & agentic agent.pdf",
+      "page_count": 94,
+      "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d03",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p1-d05",
+      "title": "AI Product Thinking & Requirements",
+      "relative_path": "slide/phase1/day5 AI product & requirements.pdf",
+      "page_count": 51,
+      "sha256": "4054831253c34ed1a3e8ab6a0a2437f5bb7be28bae0d395852831ae737b5353e",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d05",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p1-d06",
+      "title": "AI Product & Project Management",
+      "relative_path": "slide/phase1/day6 AI product & project management.pdf",
+      "page_count": 37,
+      "sha256": "3b0f60cc5e7d6de13102842d2c1e4d0ac7ea513fbad0bea862b48b32f3a3bc95",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d06",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p1-d07",
+      "title": "Data Foundations",
+      "relative_path": "slide/phase1/day7 data foundations.pdf",
+      "page_count": 58,
+      "sha256": "ad1669dd5385de460caa68a4b378120c8de3105b1e6c8c7bee296bd5398f7bc5",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d07",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p1-d08",
+      "title": "RAG Pipeline",
+      "relative_path": "slide/phase1/day8 RAG PIPELINE.pdf",
+      "page_count": 66,
+      "sha256": "dad417681be6c8505f3029334b74c364c1c5345fef9a106cbdbf9ac95daba665",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d08",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p1-d09",
+      "title": "Multi-Agent & Kết Nối Hệ Thống",
+      "relative_path": "slide/phase1/day9 mcp-a2a.pdf",
+      "page_count": 58,
+      "sha256": "c5d8e34aaa138debbd52718465cd05696de18fd47eb26ef57caacb57f2bd38fb",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d09",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t1-d11",
+      "title": "AI Adoption & Change Management",
+      "relative_path": "slide/track1 k3/day 11 AI Adoption & Change Management.pdf",
+      "page_count": 37,
+      "sha256": "30aee39a75df1ce3cac52db0855468d0db2968ea863138b03881b46ad3f933d7",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d11",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t1-d05",
+      "title": "AI Ethic, Responsible AI và AI Compliance",
+      "relative_path": "slide/track1 k3/day 5 AI Ethic.pdf",
+      "page_count": 31,
+      "sha256": "59775f3a6b58971a90d3907a2a672d24232dfe8c3e318b37c3285ac11b2b0c63",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d05",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t1-d06",
+      "title": "Retention, Engagement & Habit Loop",
+      "relative_path": "slide/track1 k3/day 6 Retention.pdf",
+      "page_count": 49,
+      "sha256": "de8ee860c0ea95bc4c6a153600003fa13831e30379b9af72bc8481fd998e0f7a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d06",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t1-d07",
+      "title": "AI Financial Modeling & ROI",
+      "relative_path": "slide/track1 k3/day 7 AI Financial.pdf",
+      "page_count": 35,
+      "sha256": "81f32bf83172309a847edc5fea6e48957435d617ceeaef46aef13dee3ee5e3fc",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d07",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t1-d08",
+      "title": "Từ sản phẩm chạy được đến sản phẩm bán được",
+      "relative_path": "slide/track1 k3/day 8 từ sp chạy được đến sp bán được.pdf",
+      "page_count": 29,
+      "sha256": "878a68770e5b3b9f4353c2d16cb0a0c2245d42535f950773b405986950364731",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d08",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t1-d02",
+      "title": "Product Discovery",
+      "relative_path": "slide/track1 k3/day02 product discovery.pdf",
+      "page_count": 28,
+      "sha256": "fa4ca552c4891545ba2b950767e104db3af401b39ddd7252da5e181c40dbc1de",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d02",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t1-d01",
+      "title": "AI Product Manager",
+      "relative_path": "slide/track1 k3/Day1.pdf",
+      "page_count": 45,
+      "sha256": "b27cad14297b4df6a5302360dbf4d2fe3b835b5fc48cdc14ab24511ffde0cc80",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d01",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t1-d10",
+      "title": "Con Người Trong Dự Án AI — Từ Stakeholder Đến AI Team Performance",
+      "relative_path": "slide/track1 k3/day10 con người trong dự án AI.pdf",
+      "page_count": 37,
+      "sha256": "6f0195bca045e48bd23cd206c3b5d4eeca975edd4ba0b2e843b6051ef8f55a79",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d10",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t1-d03",
+      "title": "Design the Experiment",
+      "relative_path": "slide/track1 k3/day3 design the experiment.pdf",
+      "page_count": 23,
+      "sha256": "30520c1451934d8353c7c56e6dbff101859998742b1ce2b59e57ba77e9e5274c",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d03",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t1-d04",
+      "title": "AI Evaluation",
+      "relative_path": "slide/track1 k3/Day4 Ai Evaluation.pdf",
+      "page_count": 66,
+      "sha256": "031f06753bd77508a5dfb3d84c799dd5928678a8b7e8b689b0d9a3518eb7d6e5",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d04",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t1-d09",
+      "title": "Đèn nào bật trước?",
+      "relative_path": "slide/track1 k3/day9.pdf",
+      "page_count": 37,
+      "sha256": "49deccce776f13846f1a85b32ba2e0c575df17a1be7463296b22fe1afecd25f6",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d09",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t2-d10",
+      "title": "MCP/A2A Infrastructure & Agentic Routing",
+      "relative_path": "slide/track2 k3/day 10 MCP a2a.pdf",
+      "page_count": 60,
+      "sha256": "fb0704ab555d61d3087352c077ef9abd3e28f00eb0744b46f00e7a316b84f35f",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d10",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t2-d12",
+      "title": "Data Observability & Lineage cho hệ thống Data/AI",
+      "relative_path": "slide/track2 k3/day 12 data Observability.pdf",
+      "page_count": 40,
+      "sha256": "077bbb140ad732c33cee87382d0b0cc93d22f9d7070775b0c84589d44617854f",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d12",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t2-d13",
+      "title": "Platform Engineering & Documentation",
+      "relative_path": "slide/track2 k3/day 13 platform Engineeering.pdf",
+      "page_count": 22,
+      "sha256": "fc950a9f33f3370e75103e7d73debffeb457099e6a13ad6a4a784ff719c501d0",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d13",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t2-d02",
+      "title": "Data Pipeline Engineering",
+      "relative_path": "slide/track2 k3/day 2 data pipeline engineering.pdf",
+      "page_count": 42,
+      "sha256": "282c621481e74c6abf6721509b068af38d426e3b46246b0834b3ffd1ae6957e1",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d02",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t2-d03",
+      "title": "Từ Chatbot Đến Agentic Agent",
+      "relative_path": "slide/track2 k3/day 3 tu chatbot den agentic agent.pdf",
+      "page_count": 46,
+      "sha256": "1310041948b937027486fc2b38b214f215135c081bba46a81e51a66aaf16b4f4",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d03",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": [
+        "Taxonomy conflict: folder Track2; cover explicitly AICB-P1 / Ngày3 / Phase1."
+      ]
+    },
+    {
+      "document_id": "p2-t2-d04",
+      "title": "Vector Store & Feature Store",
+      "relative_path": "slide/track2 k3/day 4 vector store & feature store.pdf",
+      "page_count": 61,
+      "sha256": "ab1addcbb57bccdaec49531fbe6ffdbd47c7676feb7ec2d142a4294af39603b5",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d04",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t2-d06",
+      "title": "CI/CD for AI Systems",
+      "relative_path": "slide/track2 k3/day 6 CI_CD for AI Systems.pdf",
+      "page_count": 40,
+      "sha256": "6691bd5fd116760b000276fbe64184d121973e0d6ed70d71754ff6adf52eb2e1",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d06",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t2-d01",
+      "title": "Cloud Infrastructure for AI",
+      "relative_path": "slide/track2 k3/day1 Cloud infrastructure for AI.pdf",
+      "page_count": 40,
+      "sha256": "08e687db8c13d158e5ece9eabc7686b27328450e91f47a2b0548d6900d02fd0d",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d01",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t2-d11",
+      "title": "GPU FinOps & Cost Optimization",
+      "relative_path": "slide/track2 k3/day11 GPU Finops.pdf",
+      "page_count": 50,
+      "sha256": "e5a955292e747e74a3a788a06aa5851a81ccc4e07222b89e19e38afa99b5c550",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d11",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t2-d05",
+      "title": "Model Serving & Inference Optimization",
+      "relative_path": "slide/track2 k3/day5 model serving & in-ference Optimization.pdf",
+      "page_count": 46,
+      "sha256": "b79a2890992731b7b4992f8f3f0d9ca1c495a71a11958ea93302021c8bdb174f",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d05",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t2-d07",
+      "title": "LLMOps & Prompt Versioning",
+      "relative_path": "slide/track2 k3/day7 LLMops & Prompt versioning.pdf",
+      "page_count": 75,
+      "sha256": "4cef91986bf420b28ac78af115a4d474dd649ab7e2b2823b02189f21aca374e5",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d07",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t2-d08",
+      "title": "Disaster Recovery & High Availability cho AI Infrastructure",
+      "relative_path": "slide/track2 k3/day8 disaster recovery.pdf",
+      "page_count": 42,
+      "sha256": "5a6d46fb1e8e04560f76755a26c2588f83fa3fe86a9e2dbf8895c6383341d352",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d08",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t3-d10",
+      "title": "Circuit Breakers, Caching & Reliability for Production Agents",
+      "relative_path": "slide/track3 k3/day 10 Circuit Breakers.pdf",
+      "page_count": 34,
+      "sha256": "8eedb050729d509fcba099e1b5bba2b1c837f82af5531c976ecdc2bf2df5982a",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d10",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t3-d13",
+      "title": "Workshop Tổng Hợp — Full Production Agent System",
+      "relative_path": "slide/track3 k3/day 13 full production agent system.pdf",
+      "page_count": 30,
+      "sha256": "6a22af53d1a77046e98dfbd51b270eff5ce7b68d6003e61bb27ba0e5aac125d3",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d13",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t3-d03",
+      "title": "Production RAG",
+      "relative_path": "slide/track3 k3/day 3 production RAG.pdf",
+      "page_count": 56,
+      "sha256": "7257c0aa57a2b625e17ab2e588105428045d79ded9c763b7c3b4c6e8809982d8",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d03",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t3-d04",
+      "title": "GraphRAG & Knowledge Graphs",
+      "relative_path": "slide/track3 k3/day 4 graphRAG& Knowledge graphs.pdf",
+      "page_count": 65,
+      "sha256": "d5bc2aee10e46b2073e1cb2dac8cd2bb00590e2019a90cacd40b4505181b9c1b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d04",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t3-d07",
+      "title": "DPO, ORPO & Alignment — Từ SFT đến Preference Learning",
+      "relative_path": "slide/track3 k3/day 7 DPO,ORPO alignment.pdf",
+      "page_count": 64,
+      "sha256": "ddb9aa90abbc2c87e6bc30f8b1f09dcdba93af86f73dd48fbcc03107baefd181",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d07",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t3-d09",
+      "title": "RAGAS, LLM-as-Judge & Guardrails",
+      "relative_path": "slide/track3 k3/day 9 RAGAS LLM-as-Judge and Guardrails.pdf",
+      "page_count": 74,
+      "sha256": "4ce70cfb527b720e420f8b4798b8bdf06594c8c44dffd14c68be38bf7351e909",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d09",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t3-d01",
+      "title": "Advanced Agent Architectures",
+      "relative_path": "slide/track3 k3/day1 advenced - agent- architecture.pdf",
+      "page_count": 77,
+      "sha256": "1352af02371ea4f5e189e00b925ba94b55c176646e671eb5a6bcf81dc9955542",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d01",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t3-d11",
+      "title": "Model Context Protocol (MCP)",
+      "relative_path": "slide/track3 k3/day11 MCP Tool Integration.pdf",
+      "page_count": 39,
+      "sha256": "566680634b00ed5a187c0fb5d63a903e97fa376587d96bdcc87ca3909bc6e61a",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d11",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t3-d12",
+      "title": "Human-in-the-Loop UX — Khi Nào Agent Cần Xin Phép?",
+      "relative_path": "slide/track3 k3/day12 HITL,UX khi nao agent can xin phep.pdf",
+      "page_count": 78,
+      "sha256": "bc1b321eaa2bc75a332d63b7ed39335f7873c53e50fbf9d9b9d1cb14b3db53d3",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d12",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t3-d02",
+      "title": "Memory Systems for Agents",
+      "relative_path": "slide/track3 k3/day2  memory systems for agent.pdf",
+      "page_count": 42,
+      "sha256": "70e5349ebe96578fa34667a55b45d1bd70b92474684c27c0ad141d68dbba2735",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d02",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t3-d05",
+      "title": "Multi-Agent Systems",
+      "relative_path": "slide/track3 k3/day5 multi agent systems.pdf",
+      "page_count": 39,
+      "sha256": "371dcc7e89175afc6aa4190f3fe17cddae14a1cd5f207ac766e272758e933c07",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d05",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t3-d06",
+      "title": "Fine-tuning LLMs — Từ Full Fine-tune đến LoRA/QLoRA",
+      "relative_path": "slide/track3 k3/day6 fine tuning llm.pdf",
+      "page_count": 51,
+      "sha256": "26756bbc02660c63316074dd86a606aa14e2b560af188fca206a8b7c623a8553",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d06",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t3-d08",
+      "title": "LangGraph & Agentic Orchestration",
+      "relative_path": "slide/track3 k3/day8 LangGrap and Agentic Orchestration.pdf",
+      "page_count": 36,
+      "sha256": "4b54b3bee4ad0e05aa69428582b0a4d1714c045b9ceaf85e48827ab399014e2b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d08",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t4-d01",
+      "title": "Mạng Nơ-ron và Huấn Luyện",
+      "relative_path": "slide/track4/Day01.pdf",
+      "page_count": 96,
+      "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t4-d02",
+      "title": "Kiến Trúc Mạng Cho Thị Giác Máy Tính",
+      "relative_path": "slide/track4/Day02.pdf",
+      "page_count": 93,
+      "sha256": "58895651f776ef9fb62c9010d0c0c7b338849ea96e4a5dcbbe46b7afb77110b7",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d02",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t4-d03",
+      "title": "2D Perception: Detection · Segmentation · Keypoints",
+      "relative_path": "slide/track4/Day03.pdf",
+      "page_count": 99,
+      "sha256": "bbc8de22523a77f295328ce15328e0d811a078152b75e9d6cedd159dc45e739e",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d03",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t4-d04",
+      "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+      "relative_path": "slide/track4/Day04.pdf",
+      "page_count": 36,
+      "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d04",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t4-d05",
+      "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+      "relative_path": "slide/track4/Day05.pdf",
+      "page_count": 43,
+      "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d05",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t4-d06",
+      "title": "3D from Point Clouds and Where LiDAR Meets the Camera",
+      "relative_path": "slide/track4/Day06.pdf",
+      "page_count": 28,
+      "sha256": "1c49ea2510761c0798a7b9d139ab9074eba188719a16cec41778714cef54f0d7",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d06",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t4-d07",
+      "title": "Tracking",
+      "relative_path": "slide/track4/Day07.pdf",
+      "page_count": 47,
+      "sha256": "e664d320f682ce0aacfe2649cb5dd07e6d85563dadaef5cf92039bc43b07ee26",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d07",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t4-d08",
+      "title": "3D từ Camera, BEV & Sensor Fusion",
+      "relative_path": "slide/track4/Day08.pdf",
+      "page_count": 47,
+      "sha256": "0717147c9cedbe8d638ac82013e9c382ecaf338ccb6f379dd907591722d9cef7",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d08",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t4-d09",
+      "title": "Data và annotation pipeline cho Computer Vision và Robotics",
+      "relative_path": "slide/track4/Day09.pdf",
+      "page_count": 67,
+      "sha256": "b15b6124d171a1174ac98580a2a2515eaaf09840a528dcd85fd37a6d090d4a15",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d09",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t4-d10",
+      "title": "Vision–Language Model và VLA",
+      "relative_path": "slide/track4/Day10.pdf",
+      "page_count": 59,
+      "sha256": "763149a983add6ef60fee2fafb6f2caec98576b6afb2e1eca01f5c532cf78e2e",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d10",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t4-d11",
+      "title": "Synthetic, Simulated & Trajectory Data",
+      "relative_path": "slide/track4/Day11.pdf",
+      "page_count": 95,
+      "sha256": "9f2b8b0d84e67d71598eaa2f2a7d0d186567c3ee10171dcf5213e4d62a492b46",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d11",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    },
+    {
+      "document_id": "p2-t4-d12",
+      "title": "Phát lại nhật ký và kiểm thử vòng kín",
+      "relative_path": "slide/track4/Day12.pdf",
+      "page_count": 85,
+      "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d12",
+      "mapping_status": "verified_by_root_policy",
+      "mapping_policy": "Curricular folder defines phase/track; filename defines local day. This does not assert printed source labels match.",
+      "conflicts": []
+    }
+  ],
+  "topics": [
+    {
+      "id": "p1-d01",
+      "label": "AI & LLM Foundation",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d01",
+      "document_ids": [
+        "p1-d01"
+      ],
+      "question_count": 4
+    },
+    {
+      "id": "p1-d11",
+      "label": "Guardrails, HITL & Responsible AI",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d11",
+      "document_ids": [
+        "p1-d11"
+      ],
+      "question_count": 4
+    },
+    {
+      "id": "p1-d14",
+      "label": "AI Evaluation & Benchmarking",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d14",
+      "document_ids": [
+        "p1-d14"
+      ],
+      "question_count": 4
+    },
+    {
+      "id": "p1-d02",
+      "label": "Xác định bài toán cho AI",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d02",
+      "document_ids": [
+        "p1-d02"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p1-d04",
+      "label": "Context · Loop · Harness Engineering",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d04",
+      "document_ids": [
+        "p1-d04"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p1-d10",
+      "label": "Data Pipeline & Data Observability",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d10",
+      "document_ids": [
+        "p1-d10"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p1-d12",
+      "label": "Deployment — Đưa Agent Lên Cloud",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d12",
+      "document_ids": [
+        "p1-d12"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p1-d13",
+      "label": "Monitoring, Logging & Observability",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d13",
+      "document_ids": [
+        "p1-d13"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p1-d15",
+      "label": "Triển Khai Thực Tế, Chi Phí Vận Hành & Định Hướng Chuyên Sâu",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d15",
+      "document_ids": [
+        "p1-d15"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p1-d03",
+      "label": "Từ Chatbot Đến Agentic Agent",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d03",
+      "document_ids": [
+        "p1-d03"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p1-d05",
+      "label": "AI Product Thinking & Requirements",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d05",
+      "document_ids": [
+        "p1-d05"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p1-d06",
+      "label": "AI Product & Project Management",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d06",
+      "document_ids": [
+        "p1-d06"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p1-d07",
+      "label": "Data Foundations",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d07",
+      "document_ids": [
+        "p1-d07"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p1-d08",
+      "label": "RAG Pipeline",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d08",
+      "document_ids": [
+        "p1-d08"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p1-d09",
+      "label": "Multi-Agent & Kết Nối Hệ Thống",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d09",
+      "document_ids": [
+        "p1-d09"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t1-d11",
+      "label": "AI Adoption & Change Management",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d11",
+      "document_ids": [
+        "p2-t1-d11"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t1-d05",
+      "label": "AI Ethic, Responsible AI và AI Compliance",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d05",
+      "document_ids": [
+        "p2-t1-d05"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t1-d06",
+      "label": "Retention, Engagement & Habit Loop",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d06",
+      "document_ids": [
+        "p2-t1-d06"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t1-d07",
+      "label": "AI Financial Modeling & ROI",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d07",
+      "document_ids": [
+        "p2-t1-d07"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t1-d08",
+      "label": "Từ sản phẩm chạy được đến sản phẩm bán được",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d08",
+      "document_ids": [
+        "p2-t1-d08"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t1-d02",
+      "label": "Product Discovery",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d02",
+      "document_ids": [
+        "p2-t1-d02"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t1-d01",
+      "label": "AI Product Manager",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d01",
+      "document_ids": [
+        "p2-t1-d01"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t1-d10",
+      "label": "Con Người Trong Dự Án AI — Từ Stakeholder Đến AI Team Performance",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d10",
+      "document_ids": [
+        "p2-t1-d10"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t1-d03",
+      "label": "Design the Experiment",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d03",
+      "document_ids": [
+        "p2-t1-d03"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t1-d04",
+      "label": "AI Evaluation",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d04",
+      "document_ids": [
+        "p2-t1-d04"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t1-d09",
+      "label": "Đèn nào bật trước?",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d09",
+      "document_ids": [
+        "p2-t1-d09"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t2-d10",
+      "label": "MCP/A2A Infrastructure & Agentic Routing",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d10",
+      "document_ids": [
+        "p2-t2-d10"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t2-d12",
+      "label": "Data Observability & Lineage cho hệ thống Data/AI",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d12",
+      "document_ids": [
+        "p2-t2-d12"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t2-d13",
+      "label": "Platform Engineering & Documentation",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d13",
+      "document_ids": [
+        "p2-t2-d13"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t2-d02",
+      "label": "Data Pipeline Engineering",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d02",
+      "document_ids": [
+        "p2-t2-d02"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t2-d03",
+      "label": "Từ Chatbot Đến Agentic Agent",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d03",
+      "document_ids": [
+        "p2-t2-d03"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t2-d04",
+      "label": "Vector Store & Feature Store",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d04",
+      "document_ids": [
+        "p2-t2-d04"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t2-d06",
+      "label": "CI/CD for AI Systems",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d06",
+      "document_ids": [
+        "p2-t2-d06"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t2-d01",
+      "label": "Cloud Infrastructure for AI",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d01",
+      "document_ids": [
+        "p2-t2-d01"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t2-d11",
+      "label": "GPU FinOps & Cost Optimization",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d11",
+      "document_ids": [
+        "p2-t2-d11"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t2-d05",
+      "label": "Model Serving & Inference Optimization",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d05",
+      "document_ids": [
+        "p2-t2-d05"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t2-d07",
+      "label": "LLMOps & Prompt Versioning",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d07",
+      "document_ids": [
+        "p2-t2-d07"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t2-d08",
+      "label": "Disaster Recovery & High Availability cho AI Infrastructure",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d08",
+      "document_ids": [
+        "p2-t2-d08"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t3-d10",
+      "label": "Circuit Breakers, Caching & Reliability for Production Agents",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d10",
+      "document_ids": [
+        "p2-t3-d10"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t3-d13",
+      "label": "Workshop Tổng Hợp — Full Production Agent System",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d13",
+      "document_ids": [
+        "p2-t3-d13"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t3-d03",
+      "label": "Production RAG",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d03",
+      "document_ids": [
+        "p2-t3-d03"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t3-d04",
+      "label": "GraphRAG & Knowledge Graphs",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d04",
+      "document_ids": [
+        "p2-t3-d04"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t3-d07",
+      "label": "DPO, ORPO & Alignment — Từ SFT đến Preference Learning",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d07",
+      "document_ids": [
+        "p2-t3-d07"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t3-d09",
+      "label": "RAGAS, LLM-as-Judge & Guardrails",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d09",
+      "document_ids": [
+        "p2-t3-d09"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t3-d01",
+      "label": "Advanced Agent Architectures",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d01",
+      "document_ids": [
+        "p2-t3-d01"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t3-d11",
+      "label": "Model Context Protocol (MCP)",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d11",
+      "document_ids": [
+        "p2-t3-d11"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t3-d12",
+      "label": "Human-in-the-Loop UX — Khi Nào Agent Cần Xin Phép?",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d12",
+      "document_ids": [
+        "p2-t3-d12"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t3-d02",
+      "label": "Memory Systems for Agents",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d02",
+      "document_ids": [
+        "p2-t3-d02"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t3-d05",
+      "label": "Multi-Agent Systems",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d05",
+      "document_ids": [
+        "p2-t3-d05"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t3-d06",
+      "label": "Fine-tuning LLMs — Từ Full Fine-tune đến LoRA/QLoRA",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d06",
+      "document_ids": [
+        "p2-t3-d06"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t3-d08",
+      "label": "LangGraph & Agentic Orchestration",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d08",
+      "document_ids": [
+        "p2-t3-d08"
+      ],
+      "question_count": 3
+    },
+    {
+      "id": "p2-t4-d01",
+      "label": "Mạng Nơ-ron và Huấn Luyện",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "document_ids": [
+        "p2-t4-d01"
+      ],
+      "question_count": 4
+    },
+    {
+      "id": "p2-t4-d02",
+      "label": "Kiến Trúc Mạng Cho Thị Giác Máy Tính",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d02",
+      "document_ids": [
+        "p2-t4-d02"
+      ],
+      "question_count": 4
+    },
+    {
+      "id": "p2-t4-d03",
+      "label": "2D Perception: Detection · Segmentation · Keypoints",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d03",
+      "document_ids": [
+        "p2-t4-d03"
+      ],
+      "question_count": 4
+    },
+    {
+      "id": "p2-t4-d04",
+      "label": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d04",
+      "document_ids": [
+        "p2-t4-d04"
+      ],
+      "question_count": 4
+    },
+    {
+      "id": "p2-t4-d05",
+      "label": "Bộ lọc Kalman & Hợp nhất xác suất",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d05",
+      "document_ids": [
+        "p2-t4-d05"
+      ],
+      "question_count": 4
+    },
+    {
+      "id": "p2-t4-d06",
+      "label": "3D from Point Clouds and Where LiDAR Meets the Camera",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d06",
+      "document_ids": [
+        "p2-t4-d06"
+      ],
+      "question_count": 4
+    },
+    {
+      "id": "p2-t4-d07",
+      "label": "Tracking",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d07",
+      "document_ids": [
+        "p2-t4-d07"
+      ],
+      "question_count": 4
+    },
+    {
+      "id": "p2-t4-d08",
+      "label": "3D từ Camera, BEV & Sensor Fusion",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d08",
+      "document_ids": [
+        "p2-t4-d08"
+      ],
+      "question_count": 4
+    },
+    {
+      "id": "p2-t4-d09",
+      "label": "Data và annotation pipeline cho Computer Vision và Robotics",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d09",
+      "document_ids": [
+        "p2-t4-d09"
+      ],
+      "question_count": 4
+    },
+    {
+      "id": "p2-t4-d10",
+      "label": "Vision–Language Model và VLA",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d10",
+      "document_ids": [
+        "p2-t4-d10"
+      ],
+      "question_count": 4
+    },
+    {
+      "id": "p2-t4-d11",
+      "label": "Synthetic, Simulated & Trajectory Data",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d11",
+      "document_ids": [
+        "p2-t4-d11"
+      ],
+      "question_count": 4
+    },
+    {
+      "id": "p2-t4-d12",
+      "label": "Phát lại nhật ký và kiểm thử vòng kín",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d12",
+      "document_ids": [
+        "p2-t4-d12"
+      ],
+      "question_count": 4
+    }
+  ]
+}

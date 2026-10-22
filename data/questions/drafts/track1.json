@@ -1,0 +1,1507 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.22.track1-curated",
+  "questions": [
+    {
+      "id": "p2-t1-d01-q01",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d01",
+      "topic": "p2-t1-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Slide so sánh AI PM với ship-and-forget. Sau khi ship sản phẩm AI, chu trình nào cần tiếp tục?",
+      "correct_answer": "b",
+      "explanation": "Sản phẩm AI có vòng lặp sau ship vì chất lượng biến thiên, drift và failure.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d01",
+          "sha256": "b27cad14297b4df6a5302360dbf4d2fe3b835b5fc48cdc14ab24511ffde0cc80",
+          "pdf_page": 28,
+          "title": "AI Product Manager",
+          "locator": "Physical PDF page 28; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "c",
+          "text": "Chỉ đo uptime vì output quality sẽ ổn định như phần mềm deterministic"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ kiểm tra unit test lúc build, không xét model drift"
+        },
+        {
+          "id": "a",
+          "text": "Chỉ chốt prompt rồi đóng hoạt động eval sau release"
+        },
+        {
+          "id": "b",
+          "text": "Monitor, eval, fallback và iterate"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d01-q02",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d01",
+      "topic": "p2-t1-d01",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Theo slide, một sản phẩm AI sẽ chạy đúng thiết kế mãi mãi sau lần ship đầu tiên.",
+      "correct_answer": false,
+      "explanation": "Slide bác bỏ ship-and-forget và nhấn mạnh vòng lặp cải thiện.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d01",
+          "sha256": "b27cad14297b4df6a5302360dbf4d2fe3b835b5fc48cdc14ab24511ffde0cc80",
+          "pdf_page": 28,
+          "title": "AI Product Manager",
+          "locator": "Physical PDF page 28; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ]
+    },
+    {
+      "id": "p2-t1-d01-q03",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d01",
+      "topic": "p2-t1-d01",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những hoạt động nào được nêu trong vòng lặp sau ship? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation": "Monitor/eval/fallback/iterate quay lại build.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d01",
+          "sha256": "b27cad14297b4df6a5302360dbf4d2fe3b835b5fc48cdc14ab24511ffde0cc80",
+          "pdf_page": 28,
+          "title": "AI Product Manager",
+          "locator": "Physical PDF page 28; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Monitor"
+        },
+        {
+          "id": "b",
+          "text": "Eval và fallback"
+        },
+        {
+          "id": "c",
+          "text": "Xem model drift là việc riêng provider nên bỏ qua"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ lặp lại build khi có lỗi compile"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d02-q01",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d02",
+      "topic": "p2-t1-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong ví dụ Grab giả định, push notification khi tài xế đến thuộc loại nào?",
+      "correct_answer": "b",
+      "explanation": "Notification là output; outcome là nhận biết, phản ứng, tìm nhau nhanh hơn và bắt đầu chuyến sớm hơn.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d02",
+          "sha256": "fa4ca552c4891545ba2b950767e104db3af401b39ddd7252da5e181c40dbc1de",
+          "pdf_page": 9,
+          "title": "Product Discovery",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "d",
+          "text": "Chỉ số retention"
+        },
+        {
+          "id": "a",
+          "text": "Outcome cuối cùng duy nhất"
+        },
+        {
+          "id": "b",
+          "text": "Output team tạo ra"
+        },
+        {
+          "id": "c",
+          "text": "Bằng chứng chắc chắn pain đã được giải quyết"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d02-q02",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d02",
+      "topic": "p2-t1-d02",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Theo slide, tạo được push notification đồng nghĩa đã đo được tài xế chờ ít hơn.",
+      "correct_answer": false,
+      "explanation": "Output và outcome được tách biệt; phải đánh giá tác động mong muốn.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d02",
+          "sha256": "fa4ca552c4891545ba2b950767e104db3af401b39ddd7252da5e181c40dbc1de",
+          "pdf_page": 9,
+          "title": "Product Discovery",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ]
+    },
+    {
+      "id": "p2-t1-d02-q03",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d02",
+      "topic": "p2-t1-d02",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những điều nào là outcome mong muốn của ví dụ? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation": "Các outcome tập trung vào phối hợp pickup, không phải số tính năng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d02",
+          "sha256": "fa4ca552c4891545ba2b950767e104db3af401b39ddd7252da5e181c40dbc1de",
+          "pdf_page": 9,
+          "title": "Product Discovery",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "Tài xế chờ ít hơn"
+        },
+        {
+          "id": "c",
+          "text": "Notification đã được phát thành công là outcome cuối cùng"
+        },
+        {
+          "id": "d",
+          "text": "Số notification gửi được thay thế được việc đo thời gian chờ"
+        },
+        {
+          "id": "a",
+          "text": "Hai bên tìm thấy nhau nhanh hơn"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d03-q01",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d03",
+      "topic": "p2-t1-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao prototype nên kiểm tra một giả định trong một phiên?",
+      "correct_answer": "b",
+      "explanation": "Ba thay đổi cùng lúc làm lẫn nguyên nhân phản ứng của user.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d03",
+          "sha256": "30520c1451934d8353c7c56e6dbff101859998742b1ce2b59e57ba77e9e5274c",
+          "pdf_page": 10,
+          "title": "Design the Experiment",
+          "locator": "Physical PDF page 10; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Để giảm nhu cầu quan sát người dùng vì một test luôn đủ"
+        },
+        {
+          "id": "b",
+          "text": "Để biết phản ứng đến từ thay đổi nào"
+        },
+        {
+          "id": "c",
+          "text": "Để có thể ship cả sản phẩm sau một prototype"
+        },
+        {
+          "id": "d",
+          "text": "Để biến một pain đã thấy thành bằng chứng mọi solution đều đúng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d03-q02",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d03",
+      "topic": "p2-t1-d03",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Slide khuyên đưa cả nhắc AI, thanh tiến độ và huy hiệu vào một thử nghiệm để biết chính xác tác động từng phần.",
+      "correct_answer": false,
+      "explanation": "Nguồn đối chiếu ba tính năng lẫn nhau với một tính năng ở một khoảnh khắc.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d03",
+          "sha256": "30520c1451934d8353c7c56e6dbff101859998742b1ce2b59e57ba77e9e5274c",
+          "pdf_page": 10,
+          "title": "Design the Experiment",
+          "locator": "Physical PDF page 10; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ]
+    },
+    {
+      "id": "p2-t1-d03-q03",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d03",
+      "topic": "p2-t1-d03",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "rubric",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Thiết kế lại phiên thử để có thể diễn giải phản hồi.",
+      "correct_answer": "Chỉ thử một thay đổi trong một khoảnh khắc, giữ các tính năng còn lại cho phiên sau; phản ứng mới có thể gắn với giả định đang kiểm tra.",
+      "explanation": "Slide yêu cầu một phiên trả lời một giả định.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d03",
+          "sha256": "30520c1451934d8353c7c56e6dbff101859998742b1ce2b59e57ba77e9e5274c",
+          "pdf_page": 10,
+          "title": "Design the Experiment",
+          "locator": "Physical PDF page 10; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "context": "Prototype thay đồng thời AI nhắc học, huy hiệu và thanh tiến độ. User thích màn hình mới nhưng nhóm không biết thành phần nào có tác dụng.",
+      "rubric": [
+        {
+          "id": "c1",
+          "description": "Tập trung một giả định",
+          "weight": 0.5,
+          "full_credit": "Giữ chỉ một tính năng/cơ chế thay đổi trong phiên.",
+          "partial_credit": "Nói giảm số tính năng nhưng chưa chỉ rõ một thay đổi.",
+          "no_credit": "Vẫn thay cả ba cùng lúc."
+        },
+        {
+          "id": "c2",
+          "description": "Giải thích khả năng quy kết",
+          "weight": 0.5,
+          "full_credit": "Giải thích nhiều thay đổi làm lẫn nguyên nhân phản ứng và để phần còn lại cho phiên sau.",
+          "partial_credit": "Chỉ nói dễ test hơn mà không nêu nhiễu/quy kết phản ứng.",
+          "no_credit": "Kết luận phản hồi chung chứng minh riêng cả ba hiệu quả."
+        }
+      ]
+    },
+    {
+      "id": "p2-t1-d04-q01",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d04",
+      "topic": "p2-t1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong quy trình eval mô tả trên slide, dữ liệu khởi đầu nên lấy từ đâu?",
+      "correct_answer": "b",
+      "explanation": "PM đọc thumbs-down/usage logs; data specialist tạo targeted dataset từ log thật.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d04",
+          "sha256": "031f06753bd77508a5dfb3d84c799dd5928678a8b7e8b689b0d9a3518eb7d6e5",
+          "pdf_page": 10,
+          "title": "AI Evaluation",
+          "locator": "Physical PDF page 10; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "Log và tương tác thực, gồm thumbs-down/usage"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ dùng benchmark của provider thay cho application data"
+        },
+        {
+          "id": "d",
+          "text": "Tạo thật nhiều samples trước khi xác định failure mode"
+        },
+        {
+          "id": "a",
+          "text": "Chỉ chọn các output demo thành công"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d04-q02",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d04",
+      "topic": "p2-t1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Slide ưu tiên quality hơn quantity khi human label failures.",
+      "correct_answer": true,
+      "explanation": "Quality quan trọng hơn quantity được ghi ở vai trò data specialist.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d04",
+          "sha256": "031f06753bd77508a5dfb3d84c799dd5928678a8b7e8b689b0d9a3518eb7d6e5",
+          "pdf_page": 10,
+          "title": "AI Evaluation",
+          "locator": "Physical PDF page 10; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ]
+    },
+    {
+      "id": "p2-t1-d04-q03",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d04",
+      "topic": "p2-t1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những việc nào thuộc vòng lặp eval được nêu? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation": "Quy trình Decide–Curate–Score–Inspect quay lại cải thiện từ failure themes.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d04",
+          "sha256": "031f06753bd77508a5dfb3d84c799dd5928678a8b7e8b689b0d9a3518eb7d6e5",
+          "pdf_page": 10,
+          "title": "AI Evaluation",
+          "locator": "Physical PDF page 10; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "d",
+          "text": "Giữ dataset bất biến dù log thật xuất hiện failure mới"
+        },
+        {
+          "id": "a",
+          "text": "Curate targeted dataset"
+        },
+        {
+          "id": "b",
+          "text": "Score rồi inspect/review failures"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ đổi prompt theo trực giác thay vì nhìn failure themes"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d05-q01",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d05",
+      "topic": "p2-t1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Lớp Responsible AI chủ yếu chuyển giá trị thành điều gì theo sơ đồ?",
+      "correct_answer": "b",
+      "explanation": "Responsible AI là tầng hành động/hệ vận hành biến giá trị thành process/roles/accountability.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d05",
+          "sha256": "59775f3a6b58971a90d3907a2a672d24232dfe8c3e318b37c3285ac11b2b0c63",
+          "pdf_page": 6,
+          "title": "AI Ethic, Responsible AI và AI Compliance",
+          "locator": "Physical PDF page 6; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "c",
+          "text": "Chỉ đo benchmark và quyết định threshold"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ thêm một content filter mà không xác định ownership"
+        },
+        {
+          "id": "a",
+          "text": "Chỉ xác định giá trị đạo đức mà không phân vai"
+        },
+        {
+          "id": "b",
+          "text": "Quy trình, vai trò và accountability"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d05-q02",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d05",
+      "topic": "p2-t1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "AI Safety Evaluation trong sơ đồ đặt câu hỏi về failure, harm và ngưỡng chặn launch.",
+      "correct_answer": true,
+      "explanation": "Tầng kiểm tra yêu cầu bằng chứng và safeguard trước deployment.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d05",
+          "sha256": "59775f3a6b58971a90d3907a2a672d24232dfe8c3e318b37c3285ac11b2b0c63",
+          "pdf_page": 6,
+          "title": "AI Ethic, Responsible AI và AI Compliance",
+          "locator": "Physical PDF page 6; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ]
+    },
+    {
+      "id": "p2-t1-d05-q03",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d05",
+      "topic": "p2-t1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những mục nào thuộc lớp AI Ethics trong sơ đồ? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation": "Ethics là la bàn giá trị, gồm fairness, transparency, human rights.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d05",
+          "sha256": "59775f3a6b58971a90d3907a2a672d24232dfe8c3e318b37c3285ac11b2b0c63",
+          "pdf_page": 6,
+          "title": "AI Ethic, Responsible AI và AI Compliance",
+          "locator": "Physical PDF page 6; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Fairness"
+        },
+        {
+          "id": "b",
+          "text": "Human rights và transparency"
+        },
+        {
+          "id": "c",
+          "text": "Threshold chặn launch là định nghĩa toàn bộ Ethics"
+        },
+        {
+          "id": "d",
+          "text": "Process và roles thay thế được mọi câu hỏi giá trị"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d06-q01",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d06",
+      "topic": "p2-t1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Metric nào trong Measurement Ladder phù hợp tầng retention?",
+      "correct_answer": "b",
+      "explanation": "Return rate theo D1/D7/D30 đo người dùng quay lại.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d06",
+          "sha256": "de8ee860c0ea95bc4c6a153600003fa13831e30379b9af72bc8481fd998e0f7a",
+          "pdf_page": 12,
+          "title": "Retention, Engagement & Habit Loop",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "d",
+          "text": "Trial-to-paid/LTV"
+        },
+        {
+          "id": "a",
+          "text": "CTR/reach"
+        },
+        {
+          "id": "b",
+          "text": "D1/D7/D30 return rate"
+        },
+        {
+          "id": "c",
+          "text": "Onboarding completion trong lần đầu"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d06-q02",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d06",
+      "topic": "p2-t1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Revenue như trial-to-paid/LTV thường nhìn thấy muộn hơn tín hiệu marketing/traffic trên ladder.",
+      "correct_answer": true,
+      "explanation": "Nguồn đặt traffic ở Day0 và revenue ở Day30–60+ muộn nhất.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d06",
+          "sha256": "de8ee860c0ea95bc4c6a153600003fa13831e30379b9af72bc8481fd998e0f7a",
+          "pdf_page": 12,
+          "title": "Retention, Engagement & Habit Loop",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ]
+    },
+    {
+      "id": "p2-t1-d06-q03",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d06",
+      "topic": "p2-t1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những metric nào được ghép đúng tầng? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation": "Bảng ghép metric theo giai đoạn, tránh nhầm acquisition với retention/revenue.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d06",
+          "sha256": "de8ee860c0ea95bc4c6a153600003fa13831e30379b9af72bc8481fd998e0f7a",
+          "pdf_page": 12,
+          "title": "Retention, Engagement & Habit Loop",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "Bounce rate/session time → Visitor"
+        },
+        {
+          "id": "c",
+          "text": "CTR → Revenue"
+        },
+        {
+          "id": "d",
+          "text": "D30 return rate → Marketing traffic"
+        },
+        {
+          "id": "a",
+          "text": "Onboarding completion → Activation"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d07-q01",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d07",
+      "topic": "p2-t1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao mô hình unlimited token có thể gây lỗ dù đa số khách dùng ít?",
+      "correct_answer": "b",
+      "explanation": "Một nhóm power user đốt API lớn có thể kéo margin toàn công ty xuống.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d07",
+          "sha256": "81f32bf83172309a847edc5fea6e48957435d617ceeaef46aef13dee3ee5e3fc",
+          "pdf_page": 12,
+          "title": "AI Financial Modeling & ROI",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Usage API là chi phí cố định không tăng theo người dùng"
+        },
+        {
+          "id": "b",
+          "text": "Power user tạo cost lớn hơn khoản phí cố định"
+        },
+        {
+          "id": "c",
+          "text": "Lợi nhuận của đa số user luôn bù mọi power user"
+        },
+        {
+          "id": "d",
+          "text": "Unlimited giúp tránh mọi nhu cầu đo cost/usage"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d07-q02",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d07",
+      "topic": "p2-t1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Mô hình hybrid trong slide gồm phí gói cơ bản và trả thêm khi vượt usage cho phép.",
+      "correct_answer": true,
+      "explanation": "Ví dụ có quota token rồi charge theo usage phần vượt.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d07",
+          "sha256": "81f32bf83172309a847edc5fea6e48957435d617ceeaef46aef13dee3ee5e3fc",
+          "pdf_page": 12,
+          "title": "AI Financial Modeling & ROI",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ]
+    },
+    {
+      "id": "p2-t1-d07-q03",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d07",
+      "topic": "p2-t1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những mục tiêu nào của hybrid pricing được slide nêu? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation": "Hybrid gắn mức trả với usage thay vì cố định unlimited.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d07",
+          "sha256": "81f32bf83172309a847edc5fea6e48957435d617ceeaef46aef13dee3ee5e3fc",
+          "pdf_page": 12,
+          "title": "AI Financial Modeling & ROI",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "c",
+          "text": "Xóa quota nhưng vẫn không thu phí usage vượt"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ tính average user và bỏ qua tailusage"
+        },
+        {
+          "id": "a",
+          "text": "Power user trả tương xứng cost tạo ra"
+        },
+        {
+          "id": "b",
+          "text": "Bảo vệ margin ở các mức sử dụng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d08-q01",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d08",
+      "topic": "p2-t1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Cost/Job trong slide là gì?",
+      "correct_answer": "b",
+      "explanation": "Giá sàn dựa trên cost hoàn thành job, gồm nhiều thành phần.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d08",
+          "sha256": "878a68770e5b3b9f4353c2d16cb0a0c2245d42535f950773b405986950364731",
+          "pdf_page": 9,
+          "title": "Từ sản phẩm chạy được đến sản phẩm bán được",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "Chi phí để AI làm xong một việc"
+        },
+        {
+          "id": "c",
+          "text": "Doanh thu bình quân mỗi tài khoản"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ giá GPU mua ban đầu"
+        },
+        {
+          "id": "a",
+          "text": "Chỉ tổng tiền API của một tháng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d08-q02",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d08",
+      "topic": "p2-t1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong Cost/Job, HITL và retry là những khoản dễ bị quên nhưng cần đưa vào tính toán.",
+      "correct_answer": true,
+      "explanation": "Slide đánh dấu HITL/retry hay quên bên cạnh API, infra và overhead.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d08",
+          "sha256": "878a68770e5b3b9f4353c2d16cb0a0c2245d42535f950773b405986950364731",
+          "pdf_page": 9,
+          "title": "Từ sản phẩm chạy được đến sản phẩm bán được",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ]
+    },
+    {
+      "id": "p2-t1-d08-q03",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d08",
+      "topic": "p2-t1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những khoản nào được đưa vào Cost/Job trên slide? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation": "Cost/Job bao gồm API, infra, HITL, retry và overhead.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d08",
+          "sha256": "878a68770e5b3b9f4353c2d16cb0a0c2245d42535f950773b405986950364731",
+          "pdf_page": 9,
+          "title": "Từ sản phẩm chạy được đến sản phẩm bán được",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "d",
+          "text": "Chỉ lấy server cost và xem sales overhead luôn bằng không"
+        },
+        {
+          "id": "a",
+          "text": "API token/STT/TTS"
+        },
+        {
+          "id": "b",
+          "text": "Infra/server/telephony"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ lấy API cost vì HITL và retry không thuộc cost hoàn thành job"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d09-q01",
+      "revision": 3,
+      "author_id": "a1-question-engineer",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d09",
+      "topic": "p2-t1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Luật xử lý chỉ số nào đủ cụ thể theo khuôn của slide?",
+      "correct_answer": "b",
+      "explanation": "Luật cần metric/ngưỡng, thời lượng/cỡ mẫu, hành động và việc cấm làm.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d09",
+          "sha256": "49deccce776f13846f1a85b32ba2e0c575df17a1be7463296b22fe1afecd25f6",
+          "pdf_page": 12,
+          "title": "Đèn nào bật trước?",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "c",
+          "text": "Nếu một tuần xấu thì tự động tăng quảng cáo không cần xét cohort"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ đặt ngưỡng nhưng không chỉ rõ thời gian và hành động"
+        },
+        {
+          "id": "a",
+          "text": "Nếu retention thấp thì xem xét lại"
+        },
+        {
+          "id": "b",
+          "text": "Nếu D30 retention dưới ngưỡng X giả định trong hai cohort liên tiếp thì dừng acquisition để điều tra onboarding; không tăng quảng cáo để bù"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d09-q02",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d09",
+      "topic": "p2-t1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Khuôn luật xử lý có cả phần KHÔNG THÌ để ngăn phản xạ sai.",
+      "correct_answer": true,
+      "explanation": "Nguồn giải thích phần cấm làm việc gì nhằm chặn phản xạ sai.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d09",
+          "sha256": "49deccce776f13846f1a85b32ba2e0c575df17a1be7463296b22fe1afecd25f6",
+          "pdf_page": 12,
+          "title": "Đèn nào bật trước?",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ]
+    },
+    {
+      "id": "p2-t1-d09-q03",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d09",
+      "topic": "p2-t1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "rubric",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Viết lại nguyên tắc cảnh báo thành luật có thể hành động; có thể dùng ngưỡng giả định và phải ghi rõ là giả định.",
+      "correct_answer": "Ví dụ giả định: nếu D30 retention dưới ngưỡng X trong hai cohort liên tiếp, dừng chiến dịch thu hút mới và điều tra onboarding; không tăng quảng cáo để bù. Cần chỉ rõ metric/ngưỡng, cửa sổ và hành động.",
+      "explanation": "Nguồn yêu cầu NẾU/TRONG/THÌ/KHÔNG THÌ, tránh xem xét lại mơ hồ.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d09",
+          "sha256": "49deccce776f13846f1a85b32ba2e0c575df17a1be7463296b22fe1afecd25f6",
+          "pdf_page": 12,
+          "title": "Đèn nào bật trước?",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "context": "Dashboard ghi: Nếu tỷ lệ giữ chân thấp thì xem xét lại sản phẩm.",
+      "rubric": [
+        {
+          "id": "c1",
+          "description": "Định nghĩa trigger",
+          "weight": 0.5,
+          "full_credit": "Nêu metric, ngưỡng giả định và khoảng thời gian/cỡ mẫu.",
+          "partial_credit": "Có metric/ngưỡng nhưng thiếu cửa sổ hoặc cỡ mẫu.",
+          "no_credit": "Chỉ nói thấp/cao mơ hồ."
+        },
+        {
+          "id": "c2",
+          "description": "Hành động và rào phản xạ",
+          "weight": 0.5,
+          "full_credit": "Nêu hành động cụ thể và một hành động cấm phù hợp khi trigger xuất hiện.",
+          "partial_credit": "Chỉ có hành động cụ thể nhưng thiếu phần cấm.",
+          "no_credit": "Chỉ viết xem xét lại hoặc không có hành động."
+        }
+      ]
+    },
+    {
+      "id": "p2-t1-d10-q01",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d10",
+      "topic": "p2-t1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Stakeholder có ảnh hưởng cao nhưng quan tâm thấp được sơ đồ xếp nhóm nào?",
+      "correct_answer": "b",
+      "explanation": "Ma trận dùng hai trục ảnh hưởng và quan tâm; cao/thấp là nhóm cần thuyết phục.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d10",
+          "sha256": "6f0195bca045e48bd23cd206c3b5d4eeca975edd4ba0b2e843b6051ef8f55a79",
+          "pdf_page": 9,
+          "title": "Con Người Trong Dự Án AI — Từ Stakeholder Đến AI Team Performance",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "d",
+          "text": "Bystanders"
+        },
+        {
+          "id": "a",
+          "text": "Champions"
+        },
+        {
+          "id": "b",
+          "text": "Blockers/người cần thuyết phục"
+        },
+        {
+          "id": "c",
+          "text": "Supporters"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d10-q02",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d10",
+      "topic": "p2-t1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Champions có ảnh hưởng cao và quan tâm cao theo ma trận.",
+      "correct_answer": true,
+      "explanation": "Nguồn đặt champions ở ô ảnh hưởng cao/quan tâm cao.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d10",
+          "sha256": "6f0195bca045e48bd23cd206c3b5d4eeca975edd4ba0b2e843b6051ef8f55a79",
+          "pdf_page": 9,
+          "title": "Con Người Trong Dự Án AI — Từ Stakeholder Đến AI Team Performance",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ]
+    },
+    {
+      "id": "p2-t1-d10-q03",
+      "revision": 2,
+      "author_id": "a1-question-engineer",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d10",
+      "topic": "p2-t1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những câu hỏi nào dùng để đặt stakeholder lên ma trận? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation": "Hai trục phân loại là influence và interest.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d10",
+          "sha256": "6f0195bca045e48bd23cd206c3b5d4eeca975edd4ba0b2e843b6051ef8f55a79",
+          "pdf_page": 9,
+          "title": "Con Người Trong Dự Án AI — Từ Stakeholder Đến AI Team Performance",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "Họ có quan tâm đến dự án không?"
+        },
+        {
+          "id": "c",
+          "text": "Họ có chức danh cao không, bất kể ảnh hưởng thực tế?"
+        },
+        {
+          "id": "d",
+          "text": "Họ đã sử dụng AI chưa, thay cho mức quan tâm dự án?"
+        },
+        {
+          "id": "a",
+          "text": "Họ có ảnh hưởng đến kết quả không?"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d11-q01",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d11",
+      "topic": "p2-t1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một người biết cách dùng AI nhưng chưa thực hiện được trong công việc thực tế đang thiếu yếu tố nào trong ADKAR?",
+      "correct_answer": "b",
+      "explanation": "Knowledge là biết cách; Ability là làm được trong thực tế.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d11",
+          "sha256": "30aee39a75df1ce3cac52db0855468d0db2968ea863138b03881b46ad3f933d7",
+          "pdf_page": 12,
+          "title": "AI Adoption & Change Management",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Awareness"
+        },
+        {
+          "id": "b",
+          "text": "Ability"
+        },
+        {
+          "id": "c",
+          "text": "Reinforcement"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ Desire"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d11-q02",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d11",
+      "topic": "p2-t1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Reinforcement nhằm duy trì hành vi mới, với phản hồi/quản lý theo sát/chỉ số phù hợp.",
+      "correct_answer": true,
+      "explanation": "ADKAR trên slide gắn reinforcement với duy trì hành vi mới.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d11",
+          "sha256": "30aee39a75df1ce3cac52db0855468d0db2968ea863138b03881b46ad3f933d7",
+          "pdf_page": 12,
+          "title": "AI Adoption & Change Management",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ]
+    },
+    {
+      "id": "p2-t1-d11-q03",
+      "revision": 1,
+      "author_id": "a1-question-engineer",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d11",
+      "topic": "p2-t1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những ghép nối nào đúng theo slide ADKAR? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation": "ADKAR phân biệt lý do thay đổi, mong muốn, biết cách, làm được và duy trì.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d11",
+          "sha256": "30aee39a75df1ce3cac52db0855468d0db2968ea863138b03881b46ad3f933d7",
+          "pdf_page": 12,
+          "title": "AI Adoption & Change Management",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "c",
+          "text": "Knowledge → chỉ duy trì hành vi mới"
+        },
+        {
+          "id": "d",
+          "text": "Ability → chỉ hiểu lý do thay đổi"
+        },
+        {
+          "id": "a",
+          "text": "Awareness → hiểu vì sao công việc cần thay đổi"
+        },
+        {
+          "id": "b",
+          "text": "Desire → có lý do muốn thay đổi"
+        }
+      ],
+      "shuffle_options": true
+    }
+  ]
+}

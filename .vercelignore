@@ -1,0 +1,10 @@
+slide/
+tmp/
+content/
+data/questions/drafts/
+reports/
+.git/
+node_modules/
+test-results/
+playwright-report/
+*.log

@@ -1,0 +1,543 @@
+{
+  "batch_file": "data/questions/drafts/phase1-remaining.json",
+  "reviewer_id": "reviewer",
+  "reviewed_at": "2026-10-22T06:54:40.821668+00:00",
+  "results": [
+    {
+      "id": "p1-d02-q01",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d02",
+          "pdf_page": 12
+        }
+      ],
+      "notes": [
+        "p12: Bốn câu hỏi chẩn đoán ghi rõ công đoạn khó khăn; b đúng, các lựa chọn model/màu/bỏ quy trình không thuộc chẩn đoán. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options.",
+        "MAJOR: Distractor implausible/unrelated: landing page color. Replace with plausible neighboring misconception; correctness alone does not satisfy content gate.",
+        "Retest revision2: đã đọc stem/options/correct IDs mới, đối chiếu nội dung trang đã xem. Distractors nay là nhầm lẫn kiến trúc/quy trình lân cận thay vì màu/logo; không có đáp án đúng thứ hai, shuffle giữ ID. Đóng lỗi distractor nếu có ởrevision1."
+      ]
+    },
+    {
+      "id": "p1-d02-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d02",
+          "pdf_page": 12
+        }
+      ],
+      "notes": [
+        "p12: Kết luận chưa hiểu điểm đau chưa đề xuất; false đúng. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options."
+      ]
+    },
+    {
+      "id": "p1-d02-q03",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d02",
+          "pdf_page": 12
+        }
+      ],
+      "notes": [
+        "p12: Lăng kính lặp lại và tốn thời gian có trong bảng; a,b đúng, model lớn/thay mọi quy trình không có. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options.",
+        "Retest revision2: đã đọc stem/options/correct IDs mới, đối chiếu nội dung trang đã xem. Distractors nay là nhầm lẫn kiến trúc/quy trình lân cận thay vì màu/logo; không có đáp án đúng thứ hai, shuffle giữ ID. Đóng lỗi distractor nếu có ởrevision1."
+      ]
+    },
+    {
+      "id": "p1-d04-q01",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d04",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "p9: Loop engineering ghi lặp thế nào/dừng khi nào; c đúng. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options.",
+        "MAJOR: Distractor implausible/unrelated: UI styling. Replace with plausible neighboring misconception; correctness alone does not satisfy content gate.",
+        "Retest revision2: đã đọc stem/options/correct IDs mới, đối chiếu nội dung trang đã xem. Distractors nay là nhầm lẫn kiến trúc/quy trình lân cận thay vì màu/logo; không có đáp án đúng thứ hai, shuffle giữ ID. Đóng lỗi distractor nếu có ởrevision1."
+      ]
+    },
+    {
+      "id": "p1-d04-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d04",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "p9: Context engineering ghi một lần gọi model thấy gì; true đúng. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options."
+      ]
+    },
+    {
+      "id": "p1-d04-q03",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d04",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "p9: Harness runtime có sandbox/quyền/trace; a,b đúng; một message là prompt, gói một lần gọi là context. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options.",
+        "Retest revision2: đã đọc stem/options/correct IDs mới, đối chiếu nội dung trang đã xem. Distractors nay là nhầm lẫn kiến trúc/quy trình lân cận thay vì màu/logo; không có đáp án đúng thứ hai, shuffle giữ ID. Đóng lỗi distractor nếu có ởrevision1."
+      ]
+    },
+    {
+      "id": "p1-d10-q01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d10",
+          "pdf_page": 5
+        }
+      ],
+      "notes": [
+        "p5: RAG stale có thể fail silently không exception; b đúng, các distractor tuyệt đối trái bảng. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options."
+      ]
+    },
+    {
+      "id": "p1-d10-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d10",
+          "pdf_page": 5
+        }
+      ],
+      "notes": [
+        "p5: Hợp đồng retrieval vừa liên quan vừa không stale/bị bản mới mâu thuẫn; false đúng. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options."
+      ]
+    },
+    {
+      "id": "p1-d10-q03",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d10",
+          "pdf_page": 5
+        }
+      ],
+      "notes": [
+        "p5: Hai vế retrieval đúng là a,b; từ giống/file mở được không bảo đảm. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options.",
+        "Retest revision2: đã đọc stem/options/correct IDs mới, đối chiếu nội dung trang đã xem. Distractors nay là nhầm lẫn kiến trúc/quy trình lân cận thay vì màu/logo; không có đáp án đúng thứ hai, shuffle giữ ID. Đóng lỗi distractor nếu có ởrevision1."
+      ]
+    },
+    {
+      "id": "p1-d12-q01",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d12",
+          "pdf_page": 10
+        }
+      ],
+      "notes": [
+        "p10: Chú thích stateless vẫn memory bằng externalize state; b đúng. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options.",
+        "MAJOR: Distractor implausible/unrelated: disable healthcheck unrelated to memory. Replace with plausible neighboring misconception; correctness alone does not satisfy content gate.",
+        "Retest revision2: đã đọc stem/options/correct IDs mới, đối chiếu nội dung trang đã xem. Distractors nay là nhầm lẫn kiến trúc/quy trình lân cận thay vì màu/logo; không có đáp án đúng thứ hai, shuffle giữ ID. Đóng lỗi distractor nếu có ởrevision1."
+      ]
+    },
+    {
+      "id": "p1-d12-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d12",
+          "pdf_page": 10
+        }
+      ],
+      "notes": [
+        "p10: Config in env ghi không hardcode API key; false đúng. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options."
+      ]
+    },
+    {
+      "id": "p1-d12-q03",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d12",
+          "pdf_page": 10
+        }
+      ],
+      "notes": [
+        "p10: Checklist có health endpoint/graceful shutdown; a,b đúng, xóa log/chỉ kiểm UI trái checklist. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options.",
+        "Retest revision2: đã đọc stem/options/correct IDs mới, đối chiếu nội dung trang đã xem. Distractors nay là nhầm lẫn kiến trúc/quy trình lân cận thay vì màu/logo; không có đáp án đúng thứ hai, shuffle giữ ID. Đóng lỗi distractor nếu có ởrevision1."
+      ]
+    },
+    {
+      "id": "p1-d13-q01",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d13",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "p9: Observability hỏi câu mới không deploy và unknown failure; b đúng. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options.",
+        "Retest revision2: đã đọc stem/options/correct IDs mới, đối chiếu nội dung trang đã xem. Distractors nay là nhầm lẫn kiến trúc/quy trình lân cận thay vì màu/logo; không có đáp án đúng thứ hai, shuffle giữ ID. Đóng lỗi distractor nếu có ởrevision1."
+      ]
+    },
+    {
+      "id": "p1-d13-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d13",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "p9: Monitoring theo dõi câu đã biết, dashboard/alert, known-knowns; true đúng. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options."
+      ]
+    },
+    {
+      "id": "p1-d13-q03",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d13",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "p9: Telemetry metrics/logs/traces; a,b đúng, screenshot/browser list không là ba tín hiệu này. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options.",
+        "Retest revision2: đã đọc stem/options/correct IDs mới, đối chiếu nội dung trang đã xem. Distractors nay là nhầm lẫn kiến trúc/quy trình lân cận thay vì màu/logo; không có đáp án đúng thứ hai, shuffle giữ ID. Đóng lỗi distractor nếu có ởrevision1."
+      ]
+    },
+    {
+      "id": "p1-d15-q01",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d15",
+          "pdf_page": 11
+        }
+      ],
+      "notes": [
+        "p11: vLLM production inference cho GPU/high throughput; b đúng, Ollama DNS không được hỗ trợ. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options.",
+        "MAJOR: Distractor implausible/unrelated: Ollama DNS/spreadsheet/compress source. Replace with plausible neighboring misconception; correctness alone does not satisfy content gate.",
+        "Retest revision2: đã đọc stem/options/correct IDs mới, đối chiếu nội dung trang đã xem. Distractors nay là nhầm lẫn kiến trúc/quy trình lân cận thay vì màu/logo; không có đáp án đúng thứ hai, shuffle giữ ID. Đóng lỗi distractor nếu có ởrevision1."
+      ]
+    },
+    {
+      "id": "p1-d15-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d15",
+          "pdf_page": 11
+        }
+      ],
+      "notes": [
+        "p11: Ollama dùng dev/demo/edge, setup đơn giản; true đúng. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options."
+      ]
+    },
+    {
+      "id": "p1-d15-q03",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d15",
+          "pdf_page": 11
+        }
+      ],
+      "notes": [
+        "p11: Tổng chi phí gồm GPU/ops/maintenance; a,b đúng, màu/README không thuộc so sánh chi phí. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options.",
+        "MAJOR: Distractor implausible/unrelated: color/README lines. Replace with plausible neighboring misconception; correctness alone does not satisfy content gate.",
+        "Retest revision2: đã đọc stem/options/correct IDs mới, đối chiếu nội dung trang đã xem. Distractors nay là nhầm lẫn kiến trúc/quy trình lân cận thay vì màu/logo; không có đáp án đúng thứ hai, shuffle giữ ID. Đóng lỗi distractor nếu có ởrevision1."
+      ]
+    },
+    {
+      "id": "p1-d03-q01",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d03",
+          "pdf_page": 14
+        }
+      ],
+      "notes": [
+        "p14: Dynamic Decision hỏi bước tiếp phụ thuộc quan sát; b đúng, Long Horizon nói giữ mục tiêu nhiều vòng. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options.",
+        "MAJOR: Distractor implausible/unrelated: prompt length/user count instead of neighboring Agentic Fit criteria. Replace with plausible neighboring misconception; correctness alone does not satisfy content gate.",
+        "Retest revision2: đã đọc stem/options/correct IDs mới, đối chiếu nội dung trang đã xem. Distractors nay là nhầm lẫn kiến trúc/quy trình lân cận thay vì màu/logo; không có đáp án đúng thứ hai, shuffle giữ ID. Đóng lỗi distractor nếu có ởrevision1."
+      ]
+    },
+    {
+      "id": "p1-d03-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d03",
+          "pdf_page": 14
+        }
+      ],
+      "notes": [
+        "p14: Tool Interaction liệt kê search/API/database và tools; true đúng. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options."
+      ]
+    },
+    {
+      "id": "p1-d03-q03",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d03",
+          "pdf_page": 14
+        }
+      ],
+      "notes": [
+        "p14: Multi-step Reasoning và Long Horizon trong bốn tiêu chí; a,b đúng; avatar/số slide không thuộc bộ tiêu chí. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options.",
+        "MAJOR: Distractor implausible/unrelated: avatar color/slide count. Replace with plausible neighboring misconception; correctness alone does not satisfy content gate.",
+        "Retest revision2: đã đọc stem/options/correct IDs mới, đối chiếu nội dung trang đã xem. Distractors nay là nhầm lẫn kiến trúc/quy trình lân cận thay vì màu/logo; không có đáp án đúng thứ hai, shuffle giữ ID. Đóng lỗi distractor nếu có ởrevision1."
+      ]
+    },
+    {
+      "id": "p1-d05-q01",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d05",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "p9: Cảnh báo chỉ functional có thể đúng chức năng nhưng không dùng lại; b đúng. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options.",
+        "MAJOR: Distractor implausible/unrelated: GPU cost in JTBD. Replace with plausible neighboring misconception; correctness alone does not satisfy content gate.",
+        "Retest revision2: đã đọc stem/options/correct IDs mới, đối chiếu nội dung trang đã xem. Distractors nay là nhầm lẫn kiến trúc/quy trình lân cận thay vì màu/logo; không có đáp án đúng thứ hai, shuffle giữ ID. Đóng lỗi distractor nếu có ởrevision1."
+      ]
+    },
+    {
+      "id": "p1-d05-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d05",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "p9: Ô cảm xúc nêu tự tin hơn/ít sợ sai; true đúng. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options."
+      ]
+    },
+    {
+      "id": "p1-d05-q03",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d05",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "p9: JTBD hỏi việc cần làm và cách được nhìn nhận; a,b đúng, layers/GPU không có trong ba nhu cầu. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options.",
+        "MAJOR: Distractor implausible/unrelated: model layers/GPU brand. Replace with plausible neighboring misconception; correctness alone does not satisfy content gate.",
+        "Retest revision2: đã đọc stem/options/correct IDs mới, đối chiếu nội dung trang đã xem. Distractors nay là nhầm lẫn kiến trúc/quy trình lân cận thay vì màu/logo; không có đáp án đúng thứ hai, shuffle giữ ID. Đóng lỗi distractor nếu có ởrevision1."
+      ]
+    },
+    {
+      "id": "p1-d06-q01",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d06",
+          "pdf_page": 10
+        }
+      ],
+      "notes": [
+        "p10: Done cần quality threshold/latency/fallback/monitoring; thiếu hai mục chưa done, b đúng. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options.",
+        "MAJOR: Distractor implausible/unrelated: logo. Replace with plausible neighboring misconception; correctness alone does not satisfy content gate.",
+        "Retest revision2: đã đọc stem/options/correct IDs mới, đối chiếu nội dung trang đã xem. Distractors nay là nhầm lẫn kiến trúc/quy trình lân cận thay vì màu/logo; không có đáp án đúng thứ hai, shuffle giữ ID. Đóng lỗi distractor nếu có ởrevision1."
+      ]
+    },
+    {
+      "id": "p1-d06-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d06",
+          "pdf_page": 10
+        }
+      ],
+      "notes": [
+        "p10: Backlog liệt kê feature/data/technical debt; true đúng. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options."
+      ]
+    },
+    {
+      "id": "p1-d06-q03",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d06",
+          "pdf_page": 10
+        }
+      ],
+      "notes": [
+        "p10: Ví dụ support yêu cầu citation/escalation/testset; a,b đúng, demo/public URL không đủ. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options.",
+        "Retest revision2: đã đọc stem/options/correct IDs mới, đối chiếu nội dung trang đã xem. Distractors nay là nhầm lẫn kiến trúc/quy trình lân cận thay vì màu/logo; không có đáp án đúng thứ hai, shuffle giữ ID. Đóng lỗi distractor nếu có ởrevision1."
+      ]
+    },
+    {
+      "id": "p1-d07-q01",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d07",
+          "pdf_page": 13
+        }
+      ],
+      "notes": [
+        "p13: Hàng heading/structural nói chunk trọn ý/metadata section, cần cấu trúc tốt; b đúng. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options.",
+        "MAJOR: Distractor implausible/unrelated: random character/file size chunking. Replace with plausible neighboring misconception; correctness alone does not satisfy content gate.",
+        "Retest revision2: đã đọc stem/options/correct IDs mới, đối chiếu nội dung trang đã xem. Distractors nay là nhầm lẫn kiến trúc/quy trình lân cận thay vì màu/logo; không có đáp án đúng thứ hai, shuffle giữ ID. Đóng lỗi distractor nếu có ởrevision1."
+      ]
+    },
+    {
+      "id": "p1-d07-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d07",
+          "pdf_page": 13
+        }
+      ],
+      "notes": [
+        "p13: Fixed-size đơn giản/cost nhưng cắt giữa câu/bảng; true đúng. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options."
+      ]
+    },
+    {
+      "id": "p1-d07-q03",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d07",
+          "pdf_page": 13
+        }
+      ],
+      "notes": [
+        "p13: Recursive tôn trọng ranh giới tự nhiên nhưng cắt nếu đoạn dài; a,b đúng; c tuyệt đối sai,d ảnh không khớp bảng. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options.",
+        "Retest revision2: đã đọc stem/options/correct IDs mới, đối chiếu nội dung trang đã xem. Distractors nay là nhầm lẫn kiến trúc/quy trình lân cận thay vì màu/logo; không có đáp án đúng thứ hai, shuffle giữ ID. Đóng lỗi distractor nếu có ởrevision1."
+      ]
+    },
+    {
+      "id": "p1-d08-q01",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d08",
+          "pdf_page": 14
+        }
+      ],
+      "notes": [
+        "p14: Cần RAG khi nội bộ đổi và citation kiểm chứng; b đúng, ba distractor thuộc chưa cần. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options.",
+        "Retest revision2: đã đọc stem/options/correct IDs mới, đối chiếu nội dung trang đã xem. Distractors nay là nhầm lẫn kiến trúc/quy trình lân cận thay vì màu/logo; không có đáp án đúng thứ hai, shuffle giữ ID. Đóng lỗi distractor nếu có ởrevision1."
+      ]
+    },
+    {
+      "id": "p1-d08-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d08",
+          "pdf_page": 14
+        }
+      ],
+      "notes": [
+        "p14: Kiến thức chung LLM biết thuộc chưa cần; false đúng. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options."
+      ]
+    },
+    {
+      "id": "p1-d08-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d08",
+          "pdf_page": 14
+        }
+      ],
+      "notes": [
+        "p14: Không corpus/prompt đủ thuộc chưa cần; a,b đúng, policy/corpus giảm hallucination thuộc cần. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options."
+      ]
+    },
+    {
+      "id": "p1-d09-q01",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d09",
+          "pdf_page": 11
+        }
+      ],
+      "notes": [
+        "p11: Đọc độc lập song song, sản phẩm chung một luồng ghi; b đúng, các cách ghi không điều phối trái nguồn. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options.",
+        "Retest revision2: đã đọc stem/options/correct IDs mới, đối chiếu nội dung trang đã xem. Distractors nay là nhầm lẫn kiến trúc/quy trình lân cận thay vì màu/logo; không có đáp án đúng thứ hai, shuffle giữ ID. Đóng lỗi distractor nếu có ởrevision1."
+      ]
+    },
+    {
+      "id": "p1-d09-q02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d09",
+          "pdf_page": 11
+        }
+      ],
+      "notes": [
+        "p11: Mệnh đề ghi đồng thời không điều phối trái nguyên tắc, false đúng. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options."
+      ]
+    },
+    {
+      "id": "p1-d09-q03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d09",
+          "pdf_page": 11
+        }
+      ],
+      "notes": [
+        "p11: Scenario vận dụng đúng nguyên tắc đọc song song/ghi tuần tự. Rubric c1 chia đọc độc lập/c2 ghi có điều phối; partial cụ thể, tổng1, không đòi nguyên chuỗi. Explanation khớp trang gốc; không thấy đáp án đúng thứ hai trong options."
+      ]
+    }
+  ]
+}
