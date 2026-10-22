@@ -1,6 +1,6 @@
 # Release QA — AIA Study v1
 
-Run ngày 2026-10-22. Root thực thi trên bản tích hợp thật; không chỉ dùng kết luận của tác giả. **Kiểm tra local đã đạt; code review độc lập và kiểm tra URL sau deploy được cập nhật ở phần trạng thái cuối.**
+Run ngày 2026-10-22. Root thực thi trên bản tích hợp thật; không chỉ dùng kết luận của tác giả. **Kiểm tra local đã đạt; trạng thái code review và URL sau deploy ở phần cuối.**
 
 ## Nội dung phát hành
 
@@ -61,4 +61,5 @@ Module tests thêm exact-set MC, rubric half-up bằng phân số chính xác, 1
 - Tự luận là self-grade, không phải chấm của giảng viên. Đáp án static và đồng hồ thiết bị phù hợp tự học, không phải thi có giám sát.
 - Chỉ sample khái niệm từ 124 trang đã dẫn; toàn bộ OCR vẫn là `extracted_unverified`. Metadata theo thư mục/filename do Root chốt, bảo lưu xung đột nhãn bìa.
 - Git source/PDF exclusion và scan token/private-key pattern đã kiểm tra; không phát hiện credential. Không đưa 407 MB PDF/cache lên repository hoặc website.
-- **Đang chờ** kết luận `CODE_REVIEW.md` và URL production được xác minh trước tuyên bố release hoàn tất.
+- Reviewer độc lập xác nhận không còn blocker; focused retest 46/46 (session, storage, quiz, grading, validation). Xem `CODE_REVIEW.md` cho kết luận và giới hạn. Root chạy toàn bộ 48 tests gồm analytics và published content.
+- **Đang chờ** URL production được xác minh trước tuyên bố release hoàn tất.
