@@ -32,7 +32,7 @@ test('daily saves answer, order and bookmark across reload; wrong/bookmarked mod
   await page.getByRole('button', { name: `Đi đến câu ${n + 1}`, exact: true }).click();
   const q = a.questions[n].question;
   const wrong = q.options.find((o: any) => o.id !== q.correct_answer);
-  await page.locator('.answer-option').filter({ hasText: wrong.text }).click();
+  await page.locator('.answer-option').nth(a.questions[n].optionOrder.indexOf(wrong.id)).click();
   await page.getByRole('button', { name: 'Lưu câu hỏi', exact: true }).click();
   await expect.poll(async () => (await rows(page))[0].answers[q.id]).toBe(wrong.id);
   await page.reload();
@@ -150,7 +150,9 @@ test('custom track weights and objective scoring follow stable option IDs', asyn
     await page.getByRole('button', { name: `Đi đến câu ${index + 1}`, exact: true }).click();
     if (q.answer_format === 'boolean') await page.getByRole('button', { name: q.correct_answer ? 'Đúng' : 'Sai', exact: true }).click();
     else for (const id of Array.isArray(q.correct_answer) ? q.correct_answer : [q.correct_answer]) {
-      await page.locator('.answer-option').filter({ hasText: q.options.find((o: any) => o.id === id).text }).click();
+      const optionIndex = item.optionOrder.indexOf(id);
+      expect(optionIndex).toBeGreaterThanOrEqual(0);
+      await page.locator('.answer-option').nth(optionIndex).click();
       await expect.poll(async () => { const value = (await rows(page))[0].answers[q.id]; return Array.isArray(value) ? value.includes(id) : value === id; }).toBe(true);
     }
   }

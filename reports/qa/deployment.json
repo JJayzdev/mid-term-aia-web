@@ -1,0 +1,57 @@
+{
+  "deployment": {
+    "url": "https://jjayzdev.github.io/mid-term-aia-web/",
+    "source_commit": "a1947b42d2c90f0255826a19e38c67f0ebe2bab3",
+    "pages_commit": "6c1e7ea383dd18e675929ebf112271af7da1fea5",
+    "json_matches_reviewed_release": true,
+    "checks": [
+      {
+        "path": "./",
+        "status": 200,
+        "bytes": 640
+      },
+      {
+        "path": "./favicon.svg",
+        "status": 200,
+        "bytes": 399
+      },
+      {
+        "path": "./assets/index-CUpYODNv.js",
+        "status": 200,
+        "bytes": 472241
+      },
+      {
+        "path": "./assets/index-B6Vm8Sn0.css",
+        "status": 200,
+        "bytes": 39849
+      },
+      {
+        "path": "data/bank.json",
+        "status": 200,
+        "bytes": 385321
+      },
+      {
+        "path": "data/catalog.json",
+        "status": 200,
+        "bytes": 50107
+      },
+      {
+        "path": "data/coverage.json",
+        "status": 200,
+        "bytes": 10296
+      }
+    ]
+  },
+  "live_browser": {
+    "startTime": "2026-10-22T08:02:14.164Z",
+    "duration": 29881.636,
+    "expected": 12,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "unit_tests": 48,
+  "independent_focused_tests": 46,
+  "bank_version": "2026.10.22-cb4b0a35c49b",
+  "approved_questions": 204
+}

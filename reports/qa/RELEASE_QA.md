@@ -1,6 +1,6 @@
 # Release QA — AIA Study v1
 
-Run ngày 2026-10-22. Root thực thi trên bản tích hợp thật; không chỉ dùng kết luận của tác giả. **Kiểm tra local đã đạt; trạng thái code review và URL sau deploy ở phần cuối.**
+Run ngày 2026-10-22. Root thực thi trên bản tích hợp thật; không chỉ dùng kết luận của tác giả. **PASS: kiểm tra local, code review độc lập và kiểm thử trực tiếp GitHub Pages.**
 
 ## Nội dung phát hành
 
@@ -23,6 +23,7 @@ Môi trường: Windows, Node 24.14.1, npm 11.11.0, Python 3.9.13 + jsonschema; 
 | `npm test -- --reporter=json --outputFile=tmp/qa/unit-results.json` | PASS, 48/48 tests, 7 files | `tmp/qa/unit-results.json` |
 | `npm run build` (bao gồm TypeScript) | PASS | `tmp/qa/build.txt`, `dist/` |
 | `npx playwright test --config scripts/qa/playwright.config.ts` | PASS, 12/12, 0 skipped/flaky, 35,3 giây | `tmp/qa/production-browser-results.json` |
+| Cùng lệnh với `AIA_BASE_URL=https://jjayzdev.github.io/mid-term-aia-web/` | PASS live, 12/12, 0 skipped/flaky, 29,9 giây | `tmp/qa/live-browser-results.json`, `reports/qa/deployment.json` |
 | `npm audit --json` | PASS, 0 known vulnerabilities tại thời điểm chạy | `tmp/qa/npm-audit.json` |
 
 Browser chạy **production preview**, không dùng Vite HMR cho lượt nghiệm thu. Test dùng ngân hàng phát hành thực; fixture chỉ nằm trong module tests và không vào public data. Bộ E2E bao gồm:
@@ -54,6 +55,7 @@ Module tests thêm exact-set MC, rubric half-up bằng phân số chính xác, 1
 - Coverage note bị hero che trên điện thoại → layout tăng chiều cao theo nội dung, xem lại screenshot đạt.
 - Vitest cũ có advisory → cập nhật 5.0.5, npm audit 0.
 - Một số lần E2E ban đầu fail do selector nhãn đổi, assert trước khi điều hướng hoàn tất, và trace HTML kích hoạt Vite HMR. Đã sửa harness/chạy production; không tính các lần đó là PASS.
+- Lượt live đầu có 11 pass/1 fail vì selector substring “GPU” khớp nhiều phương án trong đề ngẫu nhiên. Đổi harness sang ID/thứ tự option trong snapshot; chạy lại toàn bộ live suite 12/12 đạt, không sửa ứng dụng hoặc build đã deploy.
 
 ## Giới hạn và trạng thái cuối
 
@@ -62,4 +64,5 @@ Module tests thêm exact-set MC, rubric half-up bằng phân số chính xác, 1
 - Chỉ sample khái niệm từ 124 trang đã dẫn; toàn bộ OCR vẫn là `extracted_unverified`. Metadata theo thư mục/filename do Root chốt, bảo lưu xung đột nhãn bìa.
 - Git source/PDF exclusion và scan token/private-key pattern đã kiểm tra; không phát hiện credential. Không đưa 407 MB PDF/cache lên repository hoặc website.
 - Reviewer độc lập xác nhận không còn blocker; focused retest 46/46 (session, storage, quiz, grading, validation). Xem `CODE_REVIEW.md` cho kết luận và giới hạn. Root chạy toàn bộ 48 tests gồm analytics và published content.
-- **Đang chờ** URL production được xác minh trước tuyên bố release hoàn tất.
+- **Đã deploy và xác minh:** [AIA Study](https://jjayzdev.github.io/mid-term-aia-web/) trên GitHub Pages miễn phí; [repository](https://github.com/JJayzdev/mid-term-aia-web). Source build `a1947b42d2c90f0255826a19e38c67f0ebe2bab3`, Pages `6c1e7ea383dd18e675929ebf112271af7da1fea5`. Các commit sau chỉ bổ sung báo cáo và test harness.
+- Pages API báo `built`, không có build error. HTML, JS, CSS, favicon và ba JSON đều HTTP 200; bank/catalog/coverage bằng đúng JSON phát hành cục bộ. 12 luồng E2E trên URL công khai đạt. Chi tiết máy đọc được: `deployment.json`.

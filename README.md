@@ -2,6 +2,8 @@
 
 Ứng dụng ôn tập tiếng Việt từ bộ slide AIA, chạy hoàn toàn trong trình duyệt. React + TypeScript + Vite; dữ liệu học tập lưu bằng IndexedDB, không cần tài khoản hay backend.
 
+**Dùng ngay:** [AIA Study trên GitHub Pages](https://jjayzdev.github.io/mid-term-aia-web/). [Mã nguồn](https://github.com/JJayzdev/mid-term-aia-web). Bản v1 được triển khai miễn phí ngày 2026-10-22.
+
 ## Chức năng
 
 - Ôn theo ngày học, Phase, Track, chủ đề, độ khó; luyện tổng hợp, câu sai/bỏ trống và câu đã lưu.
