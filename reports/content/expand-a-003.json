@@ -1,0 +1,721 @@
+{
+  "batch_file": "data/questions/drafts/expand-a-003.json",
+  "reviewer_id": "reviewer",
+  "reviewed_at": "2026-10-22T11:52:36.801852+00:00",
+  "results": [
+    {
+      "id": "p1-d07-x01",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d07",
+          "pdf_page": 6
+        }
+      ],
+      "notes": [
+        "PDF p6: In-context đưa thẳng tài liệu ngắn vào prompt, không bắt buộc embedding/DB nhưng chịu context window; b r3 đúng. Hai distractors nhầm với vector indexing hoặc train weights. Đã thay mục tiêu chọn RAG trùng legacy. Actual stem: Đưa một tài liệu ngắn trực tiếp vào prompt theo cách in-context có bắt buộc embedding và database không? Explanation: In-context gửi thẳng nội dung, khác RAG có pipeline lưu và tìm; sự đơn giản đánh đổi giới hạn context. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d07-x02",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d07",
+          "pdf_page": 8
+        }
+      ],
+      "notes": [
+        "PDF p8: Operational data là order/CRM/transactions, contextual là session/preferences; b đúng, distractors tráo nhóm. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d07-x03",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d07",
+          "pdf_page": 10
+        }
+      ],
+      "notes": [
+        "PDF p10: Owner/update responsibility, ACL/freshness/PII thuộc governance trước index; a,b đúng. Similarity không thay quyền. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d07-x04",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d07",
+          "pdf_page": 14
+        }
+      ],
+      "notes": [
+        "PDF p14: Sentence-window index câu để tìm và inject vùng xung quanh; c đúng. Hai distractors bỏ context hoặc nhầm proposition rewriting. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d07-x05",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d07",
+          "pdf_page": 14
+        }
+      ],
+      "notes": [
+        "PDF p14: Proposition dùng LLM tạo mệnh đề tự nghĩa nhưng tốn ingest và có thể distortion; b đúng. Ngắn không bảo đảm giữ mọi sắc thái. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d07-x06",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d07",
+          "pdf_page": 15
+        }
+      ],
+      "notes": [
+        "PDF p15: AST giữ boundary hàm/class cùng signature/import; a đúng. Token split/comment headings không parse cú pháp. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d07-x07",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d07",
+          "pdf_page": 15
+        }
+      ],
+      "notes": [
+        "PDF p15: Table/layout-aware bảo toàn bảng/header; c đúng. Bỏ quan hệ header/ô làm mất nghĩa. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d07-x08",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d07",
+          "pdf_page": 16
+        }
+      ],
+      "notes": [
+        "PDF p16: Chunk nhỏ mất context, lớn trộn chủ đề/inject noise; b đúng. Nguồn khuyên eval, không tuyệt đối hóa kích thước. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d07-x09",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d07",
+          "pdf_page": 18
+        }
+      ],
+      "notes": [
+        "PDF p18: Overlap giữ tham chiếu qua boundary và trả thêm storage phần lặp; a đúng. Không thay metadata hay giảm storage bằng xóa text. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d07-x10",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d07",
+          "pdf_page": 19
+        }
+      ],
+      "notes": [
+        "PDF p19: Cấu trúc rõ/record độc lập/AST hoặc parent-child có thể không overlap; False đúng, bác bỏ mệnh đề luôn bắt buộc. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d07-x11",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d07",
+          "pdf_page": 20
+        }
+      ],
+      "notes": [
+        "PDF p20: Retrieve đúng nhưng inject thiếu context gợi parent-child/sentence-window; b đúng. Rerank/threshold không tự bổ sung ngữ cảnh. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d07-x12",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d07",
+          "pdf_page": 25
+        }
+      ],
+      "notes": [
+        "PDF p25: Embedding biểu diễn text thành vector đo độ gần nghĩa; a đúng. Khác exact term counts hay câu trả lời cố định. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d07-x13",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d07",
+          "pdf_page": 27
+        }
+      ],
+      "notes": [
+        "PDF p27: Chỉ so hướng, loại norm dùng cosine; c đúng. Distractors nói vector chưa chuẩn hóa nên không nêu trường hợp Euclidean tương đương. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d07-x14",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d07",
+          "pdf_page": 29
+        }
+      ],
+      "notes": [
+        "PDF p29: Clustering ticket và dedup FAQ là use cases embedding; b,c đúng. Cosine không chứng minh factual truth. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d07-x15",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d07",
+          "pdf_page": 33
+        }
+      ],
+      "notes": [
+        "PDF p33: Metadata hỗ trợ scope/ACL/freshness và source/section tracing; a,b đúng. Similarity cao không miễn kiểm quyền. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d07-x16",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d07",
+          "pdf_page": 36
+        }
+      ],
+      "notes": [
+        "PDF p36: Thay embedding thường phải re-index theo vector space mới; c đúng. Đổi tên collection không biến vector cũ thành biểu diễn model mới. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d07-x17",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d07",
+          "pdf_page": 40
+        }
+      ],
+      "notes": [
+        "PDF p40: Validate MIME/magic bytes, extractor/OCR và status logging; b đúng. Text rỗng không đồng nghĩa parse thành công. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d08-x01",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d08",
+          "pdf_page": 7
+        }
+      ],
+      "notes": [
+        "PDF p7: Ingestion chuẩn bị index offline/batch, retrieval tìm evidence runtime; c đúng. Hai distractors đảo thời điểm hoặc bỏ preparation. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d08-x02",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d08",
+          "pdf_page": 13
+        }
+      ],
+      "notes": [
+        "PDF p13: Modular RAG compose/replace/skip theo query; b đúng, không pipeline cứng hoặc interface không tách được. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d08-x03",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d08",
+          "pdf_page": 19
+        }
+      ],
+      "notes": [
+        "PDF p19: HyDE sinh hypothetical passage dùng làm search representation; b r3 đúng. Passage giả định không phải final evidence, khác spelling normalization. Đã thay duplicate pre-retrieval ACL. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d08-x04",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d08",
+          "pdf_page": 18
+        }
+      ],
+      "notes": [
+        "PDF p18: Normalization sửa typo/diễn đạt/consistency giảm mơ hồ; c đúng. Không bịa answer hoặc bỏ mã lỗi/tên riêng. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d08-x05",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d08",
+          "pdf_page": 21
+        }
+      ],
+      "notes": [
+        "PDF p21: Hybrid phối sparse exact-keyword và dense semantic matching; b đúng. Hai nhánh không tự giải hết weakness của nhau. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d08-x06",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d08",
+          "pdf_page": 24
+        }
+      ],
+      "notes": [
+        "PDF p24: BM25 lexical không tự hiểu đồng nghĩa/cross-language không có từ chung; a đúng. Length normalization/top-k không tự tạo semantic match. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d08-x07",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d08",
+          "pdf_page": 26
+        }
+      ],
+      "notes": [
+        "PDF p26: RRF dùng rank, alpha fusion dùng scores cùng scale; c đúng. Nguồn công thức xác nhận không đảo rank/score. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d08-x08",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d08",
+          "pdf_page": 28
+        }
+      ],
+      "notes": [
+        "PDF p28: Chọn alpha qua test queries/expected chunks và đo top-k; b đúng. Một demo hoặc thiên dense không phải validation. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d08-x09",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d08",
+          "pdf_page": 35
+        }
+      ],
+      "notes": [
+        "PDF p35: System/Context/Question tách instruction/evidence/request; a đúng. Retrieved text không trở thành system instruction. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d08-x10",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d08",
+          "pdf_page": 36
+        }
+      ],
+      "notes": [
+        "PDF p36: Reordering hạn chế lost-in-the-middle; c đúng. Chỉ tăng context hoặc random order không xử lý vị trí evidence. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d08-x11",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d08",
+          "pdf_page": 37
+        }
+      ],
+      "notes": [
+        "PDF p37: Không ngày/version thiếu căn cứ chọn bản mới hơn; b đúng. Similarity score không thay freshness metadata. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d08-x12",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d08",
+          "pdf_page": 37
+        }
+      ],
+      "notes": [
+        "PDF p37: Recency, authority hoặc surface conflict tùy domain; a,b đúng. Không lấy trung bình con số mâu thuẫn tùy ý. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d08-x13",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d08",
+          "pdf_page": 38
+        }
+      ],
+      "notes": [
+        "PDF p38: ACL trước retrieval chặn dữ liệu trái quyền đến LLM; c đúng. Post-generation filtering quá muộn cho mục tiêu này. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d08-x14",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d08",
+          "pdf_page": 39
+        }
+      ],
+      "notes": [
+        "PDF p39: Giữ headroom instruction/query/output; b đúng. Không dùng hết window cho retrieved chunks rồi cắt output. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d08-x15",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d08",
+          "pdf_page": 43
+        }
+      ],
+      "notes": [
+        "PDF p43: Claim phải có source support; a đúng. Không gắn doc gần chủ đề làm citation giả hoặc trình bày model memory như provided evidence. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d08-x16",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d08",
+          "pdf_page": 54
+        }
+      ],
+      "notes": [
+        "PDF p54: Test case có ground truth và expected chunk/doc IDs; c đúng. Hai trường kiểm riêng generation và retrieval. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d08-x17",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d08",
+          "pdf_page": 57
+        }
+      ],
+      "notes": [
+        "PDF p57: Upsert theo doc_id và xóa thực khi thu hồi; b đúng. UI flag hoặc ID mới để bản cũ vẫn search không bảo đảm freshness. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d09-x01",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d09",
+          "pdf_page": 7
+        }
+      ],
+      "notes": [
+        "PDF p7: Nhiều vai làm prompt dài/khó ổn định là specialization trade-off; c đúng. Các distractors đặt nguyên nhân khác, không chỉ lặp tên. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d09-x02",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d09",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "PDF p9: Nhiều vai/việc độc lập/trách nhiệm và error isolation là lý do cân nhắc multi-agent; b đúng. Không mặc định càng nhiều càng tốt. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d09-x03",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d09",
+          "pdf_page": 12
+        }
+      ],
+      "notes": [
+        "PDF p12: Plan-then-execute thuận lợi khi đủ thông tin ngay đầu; a đúng. ReAct phù hợp thông tin lộ dần, không phải thiếu goal/success criteria. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d09-x04",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d09",
+          "pdf_page": 13
+        }
+      ],
+      "notes": [
+        "PDF p13: Pipeline cho sequence ổn định/test từng bước; c đúng. Debate và dynamic supervisor phục vụ nhu cầu khác. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d09-x05",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d09",
+          "pdf_page": 17
+        }
+      ],
+      "notes": [
+        "PDF p17: Agents-as-tools trả kết quả về caller, handoff chuyển quyền; b đúng. Không mặc định cả hai đều function-return. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d09-x06",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d09",
+          "pdf_page": 18
+        }
+      ],
+      "notes": [
+        "PDF p18: Reducer/merge policy hợp nhất field nhiều worker cập nhật; a đúng. Overwrite cuối và global side effects làm mất state rõ ràng. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d09-x07",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d09",
+          "pdf_page": 19
+        }
+      ],
+      "notes": [
+        "PDF p19: Không concatenate raw worker dumps; cần kết luận nén và structured synthesis; c đúng. Context lớn không tự giải mâu thuẫn. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d09-x08",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d09",
+          "pdf_page": 19
+        }
+      ],
+      "notes": [
+        "PDF p19: None có thể làm lỗi giống success nếu thiếu envelope; b đúng. Supervisor không suy được mọi trạng thái từ final answer. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d09-x09",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d09",
+          "pdf_page": 23
+        }
+      ],
+      "notes": [
+        "PDF p23: Worker chuyên biệt, input/output rõ, stateless khi có thể và fail cục bộ; a,b đúng. Global side effect không tăng testability. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d09-x10",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d09",
+          "pdf_page": 24
+        }
+      ],
+      "notes": [
+        "PDF p24: Supervisor ôm plan/retrieve/synthesize/monitor là God Supervisor; c đúng. Không nhầm specialized worker hoặc pipeline. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d09-x11",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d09",
+          "pdf_page": 25
+        }
+      ],
+      "notes": [
+        "PDF p25: worker_results tách riêng giúp test từng đầu ra và trace đường kết luận; b đúng. Final string không định danh làm mất khả năng kiểm riêng. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d09-x12",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d09",
+          "pdf_page": 29
+        }
+      ],
+      "notes": [
+        "PDF p29: Tools là capability/action, Resources đọc dữ liệu, Prompts mẫu dùng lại; a,b đúng. Prompt không cấp permission. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d09-x13",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d09",
+          "pdf_page": 34
+        }
+      ],
+      "notes": [
+        "PDF p34: A2A giao việc/đồng bộ peer agents; c đúng theo abstract role. MCP capability/resources không thay giao task cho peer có quyết định riêng. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d09-x14",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d09",
+          "pdf_page": 35
+        }
+      ],
+      "notes": [
+        "PDF p35: Message contract giữ task/context cần thiết/expected format; b,c đúng. Full history không phải need-to-know. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d09-x15",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d09",
+          "pdf_page": 38
+        }
+      ],
+      "notes": [
+        "PDF p38: Conditional edge chọn next node theo state; a đúng. Khác update field hoặc tool schema. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d09-x16",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d09",
+          "pdf_page": 40
+        }
+      ],
+      "notes": [
+        "PDF p40: Resume có thể chạy lại node từ đầu nên side effects phải idempotent; c đúng. Checkpointer không tự miễn tác động lặp. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    },
+    {
+      "id": "p1-d09-x17",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d09",
+          "pdf_page": 50
+        }
+      ],
+      "notes": [
+        "PDF p50: Private read + untrusted input + external send có thể ghép qua nhiều agents; b đúng. Kiểm quyền phải xét cả đường dữ liệu trên graph. Đã kiểm stem/options/answer/explanation với ảnh nguồn."
+      ]
+    }
+  ]
+}

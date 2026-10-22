@@ -1,0 +1,2238 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.22.expansion-a-010",
+  "questions": [
+    {
+      "id": "p2-t4-d07-x01",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d07",
+      "topic": "p2-t4-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Tracking cung cấp thêm gì cho prediction/planning so với detection từng frame độc lập?",
+      "correct_answer": "c",
+      "explanation": "Liên kết qua thời gian tạo trạng thái và lịch sử cần cho dự đoán chuyển động.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d07",
+          "sha256": "e664d320f682ce0aacfe2649cb5dd07e6d85563dadaef5cf92039bc43b07ee26",
+          "pdf_page": 7,
+          "title": "Tracking",
+          "locator": "Physical PDF page 7",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ class và score của một frame không có lịch sử"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ box lớn hơn để chứa mọi chuyển động có thể xảy ra"
+        },
+        {
+          "id": "c",
+          "text": "ID ổn định, vận tốc và lịch sử quỹ đạo"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d07-x02",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d07",
+      "topic": "p2-t4-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Online tracking khác offline tracking ở dữ liệu thời gian được phép sử dụng thế nào?",
+      "correct_answer": "b",
+      "explanation": "Quyền nhìn tương lai tạo khác biệt quan trọng cho xử lý occlusion và sửa ID.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d07",
+          "sha256": "e664d320f682ce0aacfe2649cb5dd07e6d85563dadaef5cf92039bc43b07ee26",
+          "pdf_page": 8,
+          "title": "Tracking",
+          "locator": "Physical PDF page 8",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Cả hai bắt buộc cho cùng kết quả vì dùng cùng detections"
+        },
+        {
+          "id": "b",
+          "text": "Online chỉ dùng hiện tại/quá khứ; offline có thể dùng frame tương lai để sửa liên kết"
+        },
+        {
+          "id": "c",
+          "text": "Online luôn dùng toàn video còn offline chỉ dùng frame đầu"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d07-x03",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d07",
+      "topic": "p2-t4-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong tracking-by-detection, association nối hai tập nào?",
+      "correct_answer": "a",
+      "explanation": "Predict ước lượng vị trí track; association chọn detections phù hợp để update.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d07",
+          "sha256": "e664d320f682ce0aacfe2649cb5dd07e6d85563dadaef5cf92039bc43b07ee26",
+          "pdf_page": 10,
+          "title": "Tracking",
+          "locator": "Physical PDF page 10",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Track đã predict với detections hiện tại"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ detections trong cùng một frame với nhau"
+        },
+        {
+          "id": "c",
+          "text": "Ground-truth test với labels train để học model"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d07-x04",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d07",
+      "topic": "p2-t4-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Single-object tracking và multi-object tracking khác nhau ở mục tiêu nào?",
+      "correct_answer": "b",
+      "explanation": "Số lượng/mục tiêu đối tượng là trục khác với online/offline hoặc loại biểu diễn output.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d07",
+          "sha256": "e664d320f682ce0aacfe2649cb5dd07e6d85563dadaef5cf92039bc43b07ee26",
+          "pdf_page": 8,
+          "title": "Tracking",
+          "locator": "Physical PDF page 8",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "SOT luôn là offline còn MOT luôn dùng frame tương lai"
+        },
+        {
+          "id": "b",
+          "text": "SOT bắt đầu từ vật được chỉ định; MOT theo các instances thuộc lớp quan tâm"
+        },
+        {
+          "id": "c",
+          "text": "SOT chỉ dùng masks còn MOT chỉ dùng keypoints"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d07-x05",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d07",
+      "topic": "p2-t4-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một vật mất detection 18 frames với track_buffer 30 có thể giữ cùng ID khi trở lại vì sao?",
+      "correct_answer": "b",
+      "explanation": "Buffer cho phép giữ track tạm mất thay vì xóa ngay.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d07",
+          "sha256": "e664d320f682ce0aacfe2649cb5dd07e6d85563dadaef5cf92039bc43b07ee26",
+          "pdf_page": 12,
+          "title": "Tracking",
+          "locator": "Physical PDF page 12",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "track_buffer là số detection cần để khởi tạo track"
+        },
+        {
+          "id": "b",
+          "text": "Track Lost chưa bị Removed và có thể match lại"
+        },
+        {
+          "id": "c",
+          "text": "Mỗi frame mất detection bắt buộc tạo ID mới"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d07-x06",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d07",
+      "topic": "p2-t4-d07",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những tín hiệu nào có thể phối hợp trong association cost? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "c",
+        "d",
+        "a"
+      ],
+      "explanation": "Nhiều nguồn bổ sung nhau khi một tín hiệu thiếu phân biệt hoặc bị che khuất.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d07",
+          "sha256": "e664d320f682ce0aacfe2649cb5dd07e6d85563dadaef5cf92039bc43b07ee26",
+          "pdf_page": 15,
+          "title": "Tracking",
+          "locator": "Physical PDF page 15",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Appearance embedding"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ class label, không cần phân biệt từng instance"
+        },
+        {
+          "id": "c",
+          "text": "Hình học box"
+        },
+        {
+          "id": "d",
+          "text": "Motion dự đoán và uncertainty"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d07-x07",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d07",
+      "topic": "p2-t4-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Tăng min_hits trước khi xác nhận một track tạo tradeoff nào?",
+      "correct_answer": "b",
+      "explanation": "min_hits liên quan Tentative→Confirmed; khác track_buffer quyết định thời gian giữ Lost.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d07",
+          "sha256": "e664d320f682ce0aacfe2649cb5dd07e6d85563dadaef5cf92039bc43b07ee26",
+          "pdf_page": 12,
+          "title": "Tracking",
+          "locator": "Physical PDF page 12",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Làm track Lost được giữ lâu hơn khi mất detection"
+        },
+        {
+          "id": "b",
+          "text": "Giảm xác nhận detection thoáng qua nhưng chờ nhiều bằng chứng hơn cho track mới"
+        },
+        {
+          "id": "c",
+          "text": "Trực tiếp tăng độ tương đồng appearance giữa hai crop"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d07-x08",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d07",
+      "topic": "p2-t4-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "IoU-only association dễ thất bại ở FPS thấp với vật đi nhanh vì sao?",
+      "correct_answer": "b",
+      "explanation": "Không overlap làm IoU bằng 0 dù hai detections cùng đối tượng; cần tín hiệu bổ sung.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d07",
+          "sha256": "e664d320f682ce0aacfe2649cb5dd07e6d85563dadaef5cf92039bc43b07ee26",
+          "pdf_page": 16,
+          "title": "Tracking",
+          "locator": "Physical PDF page 16",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "IoU tự ước lượng vận tốc từ một box"
+        },
+        {
+          "id": "b",
+          "text": "Cùng vật nhưng box qua hai frames không còn chồng nhau"
+        },
+        {
+          "id": "c",
+          "text": "IoU có thể nhận diện ngoại hình dù box không giao"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d07-x09",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d07",
+      "topic": "p2-t4-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Mahalanobis gating có lợi gì so với dùng khoảng cách Euclidean cố định?",
+      "correct_answer": "a",
+      "explanation": "Vùng chấp nhận có thể hẹp ở hướng chắc và rộng ở hướng bất định.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d07",
+          "sha256": "e664d320f682ce0aacfe2649cb5dd07e6d85563dadaef5cf92039bc43b07ee26",
+          "pdf_page": 18,
+          "title": "Tracking",
+          "locator": "Physical PDF page 18",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chuẩn hóa sai lệch theo covariance để phản ánh hướng chắc/chưa chắc của prediction"
+        },
+        {
+          "id": "b",
+          "text": "Coi mọi hướng có cùng bất định bất kể Kalman estimate"
+        },
+        {
+          "id": "c",
+          "text": "Thay hoàn toàn motion model bằng appearance embedding"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d07-x10",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d07",
+      "topic": "p2-t4-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Appearance embeddings có hạn chế nào khi hai người mặc đồng phục giống nhau?",
+      "correct_answer": "c",
+      "explanation": "Re-ID là một tín hiệu có failure modes, không bảo đảm danh tính trong mọi cảnh.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d07",
+          "sha256": "e664d320f682ce0aacfe2649cb5dd07e6d85563dadaef5cf92039bc43b07ee26",
+          "pdf_page": 19,
+          "title": "Tracking",
+          "locator": "Physical PDF page 19",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Embedding chắc chắn phân biệt mọi instance nếu cùng class"
+        },
+        {
+          "id": "b",
+          "text": "Motion information trở nên không còn hữu ích"
+        },
+        {
+          "id": "c",
+          "text": "Đặc trưng ngoại hình có thể thiếu phân biệt nên vẫn nhầm ID"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d07-x11",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d07",
+      "topic": "p2-t4-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "SORT phù hợp hơn với điều kiện nào khi ưu tiên tốc độ?",
+      "correct_answer": "b",
+      "explanation": "SORT nhẹ nhờ motion/IoU nhưng không có Re-ID để cứu các tình huống khó về danh tính.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d07",
+          "sha256": "e664d320f682ce0aacfe2649cb5dd07e6d85563dadaef5cf92039bc43b07ee26",
+          "pdf_page": 25,
+          "title": "Tracking",
+          "locator": "Physical PDF page 25",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Cần cross-camera re-identification bằng appearance"
+        },
+        {
+          "id": "b",
+          "text": "Camera tĩnh, cảnh thưa và ít occlusion dài"
+        },
+        {
+          "id": "c",
+          "text": "Nhiều người giống nhau che khuất lâu với camera chuyển động mạnh"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d07-x12",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d07",
+      "topic": "p2-t4-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "OC-SORT nhắm vào lỗi nào của Kalman khi vật bị che?",
+      "correct_answer": "a",
+      "explanation": "Quan sát trước/sau và virtual trajectory giúp sửa trạng thái khi motion model đã lệch.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d07",
+          "sha256": "e664d320f682ce0aacfe2649cb5dd07e6d85563dadaef5cf92039bc43b07ee26",
+          "pdf_page": 28,
+          "title": "Tracking",
+          "locator": "Physical PDF page 28",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Vật đổi hướng trong lúc khuất khiến ngoại suy vận tốc cũ trôi xa"
+        },
+        {
+          "id": "b",
+          "text": "Hai crop có cùng màu khiến appearance vector trùng nhau"
+        },
+        {
+          "id": "c",
+          "text": "Detector luôn gán sai class do ontology mơ hồ"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d07-x13",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d07",
+      "topic": "p2-t4-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Global Motion Compensation trong BoT-SORT nhằm tách điều gì?",
+      "correct_answer": "c",
+      "explanation": "Camera chuyển động làm nền/vật tĩnh cũng dịch trên ảnh; bù ego-motion giảm lệch prediction.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d07",
+          "sha256": "e664d320f682ce0aacfe2649cb5dd07e6d85563dadaef5cf92039bc43b07ee26",
+          "pdf_page": 29,
+          "title": "Tracking",
+          "locator": "Physical PDF page 29",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Mọi khác biệt appearance khỏi ảnh màu"
+        },
+        {
+          "id": "b",
+          "text": "Thời gian inference khỏi thời gian annotation"
+        },
+        {
+          "id": "c",
+          "text": "Chuyển động camera khỏi chuyển động của vật"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d07-x14",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d07",
+      "topic": "p2-t4-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Tracker xuất một box ở nơi không có vật thật. Đây là loại lỗi nào?",
+      "correct_answer": "b",
+      "explanation": "FP là box dư; FN là thiếu box cho vật tồn tại.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d07",
+          "sha256": "e664d320f682ce0aacfe2649cb5dd07e6d85563dadaef5cf92039bc43b07ee26",
+          "pdf_page": 35,
+          "title": "Tracking",
+          "locator": "Physical PDF page 35",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ID switch giữa hai track đúng vị trí"
+        },
+        {
+          "id": "b",
+          "text": "False positive"
+        },
+        {
+          "id": "c",
+          "text": "False negative do bỏ sót vật thật"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d07-x15",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d07",
+      "topic": "p2-t4-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Với GT=1000, FN=100, FP=50, IDSW=30, MOTA bằng bao nhiêu?",
+      "correct_answer": "a",
+      "explanation": "MOTA=1−(100+50+30)/1000=0,82.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d07",
+          "sha256": "e664d320f682ce0aacfe2649cb5dd07e6d85563dadaef5cf92039bc43b07ee26",
+          "pdf_page": 37,
+          "title": "Tracking",
+          "locator": "Physical PDF page 37",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "82%"
+        },
+        {
+          "id": "b",
+          "text": "85% vì bỏ qua ID switches"
+        },
+        {
+          "id": "c",
+          "text": "18% vì báo tỷ lệ lỗi thay vì điểm còn lại"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d07-x16",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d07",
+      "topic": "p2-t4-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Box đúng vị trí nhưng một người bị chia thành hai IDs trong video ảnh hưởng metric identity vì sao?",
+      "correct_answer": "c",
+      "explanation": "IDF1 xem tính nhất quán danh tính qua chuỗi, khác chỉ đếm phát hiện hình học.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d07",
+          "sha256": "e664d320f682ce0aacfe2649cb5dd07e6d85563dadaef5cf92039bc43b07ee26",
+          "pdf_page": 38,
+          "title": "Tracking",
+          "locator": "Physical PDF page 38",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Đúng box từng frame làm mọi metric identity đạt tối đa"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ FP/FN box mới ảnh hưởng, đổi ID không có ý nghĩa"
+        },
+        {
+          "id": "c",
+          "text": "Ghép danh tính toàn video chỉ chọn một predicted ID tốt nhất, nên đoạn ID khác vẫn bị phạt"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d08-x01",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d08",
+      "topic": "p2-t4-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao một pixel đơn lẻ chưa xác định duy nhất vị trí 3D?",
+      "correct_answer": "c",
+      "explanation": "Projection mất chiều sâu; cần thêm thông tin hình học, nhiều góc nhìn hoặc sensor đo depth.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d08",
+          "sha256": "0717147c9cedbe8d638ac82013e9c382ecaf338ccb6f379dd907591722d9cef7",
+          "pdf_page": 3,
+          "title": "3D từ Camera, BEV & Sensor Fusion",
+          "locator": "Physical PDF page 3",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Một pixel luôn chứa trực tiếp khoảng cách mét"
+        },
+        {
+          "id": "b",
+          "text": "Ma trận K tự cung cấp depth cho mọi vật"
+        },
+        {
+          "id": "c",
+          "text": "Nhiều điểm dọc cùng tia nhìn có thể chiếu vào cùng pixel"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d08-x02",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d08",
+      "topic": "p2-t4-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Camera intrinsic K và extrinsics R,t mô tả hai loại thông tin nào?",
+      "correct_answer": "b",
+      "explanation": "Intrinsics gồm focal length/principal point; extrinsics nối hệ tọa độ sensor với hệ tham chiếu.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d08",
+          "sha256": "0717147c9cedbe8d638ac82013e9c382ecaf338ccb6f379dd907591722d9cef7",
+          "pdf_page": 5,
+          "title": "3D từ Camera, BEV & Sensor Fusion",
+          "locator": "Physical PDF page 5",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Cả hai đều là tham số thay đổi theo từng object detection"
+        },
+        {
+          "id": "b",
+          "text": "Đặc tính phép chiếu của camera và pose tương đối của camera"
+        },
+        {
+          "id": "c",
+          "text": "K là pose trên xe còn R,t là class của vật"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d08-x03",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d08",
+      "topic": "p2-t4-d08",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một box 3D kiểu xe thường cần nhóm tham số nào? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "b",
+        "c",
+        "d"
+      ],
+      "explanation": "Vị trí, kích thước và hướng mô tả box 3D, khác hình chiếu 2D có depth ambiguity.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d08",
+          "sha256": "0717147c9cedbe8d638ac82013e9c382ecaf338ccb6f379dd907591722d9cef7",
+          "pdf_page": 6,
+          "title": "3D từ Camera, BEV & Sensor Fusion",
+          "locator": "Physical PDF page 6",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ bốn cạnh box 2D là đủ xác định mọi tham số"
+        },
+        {
+          "id": "b",
+          "text": "Tâm 3D"
+        },
+        {
+          "id": "c",
+          "text": "Kích thước rộng/dài/cao"
+        },
+        {
+          "id": "d",
+          "text": "Yaw quanh trục đứng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d08-x04",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d08",
+      "topic": "p2-t4-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Ước lượng khoảng cách từ chân vật trên mặt đường dễ nhạy gần đường chân trời vì sao?",
+      "correct_answer": "c",
+      "explanation": "Hình học ground-contact nhạy ở xa và còn bị ảnh hưởng bởi dốc/dao động camera.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d08",
+          "sha256": "0717147c9cedbe8d638ac82013e9c382ecaf338ccb6f379dd907591722d9cef7",
+          "pdf_page": 7,
+          "title": "3D từ Camera, BEV & Sensor Fusion",
+          "locator": "Physical PDF page 7",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Khoảng cách luôn không phụ thuộc vị trí chân vật"
+        },
+        {
+          "id": "b",
+          "text": "Giả định mặt đường phẳng trở nên đúng tuyệt đối ở xa"
+        },
+        {
+          "id": "c",
+          "text": "Sai số rất nhỏ của hàng pixel có thể tạo sai số depth lớn"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d08-x05",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d08",
+      "topic": "p2-t4-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Copy-paste một xe sang vị trí xa hơn trong ảnh monocular cần điều chỉnh gì để không dạy sai hình học?",
+      "correct_answer": "b",
+      "explanation": "Augmentation phải tôn trọng quan hệ kích thước–khoảng cách, nếu không dữ liệu tạo mâu thuẫn hình học.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d08",
+          "sha256": "0717147c9cedbe8d638ac82013e9c382ecaf338ccb6f379dd907591722d9cef7",
+          "pdf_page": 11,
+          "title": "3D từ Camera, BEV & Sensor Fusion",
+          "locator": "Physical PDF page 11",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Giữ nguyên kích thước pixel dù depth thay đổi"
+        },
+        {
+          "id": "b",
+          "text": "Scale kích thước theo phối cảnh của vị trí mới"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ đổi nhãn class và bỏ qua tỷ lệ ảnh"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d08-x06",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d08",
+      "topic": "p2-t4-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "NDS tổng hợp thêm gì ngoài khả năng tìm đúng object bằng mAP?",
+      "correct_answer": "a",
+      "explanation": "Detection quality cần xét chất lượng vị trí/trạng thái của các detections đúng, không chỉ AP.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d08",
+          "sha256": "0717147c9cedbe8d638ac82013e9c382ecaf338ccb6f379dd907591722d9cef7",
+          "pdf_page": 12,
+          "title": "3D từ Camera, BEV & Sensor Fusion",
+          "locator": "Physical PDF page 12",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Các sai số TP như vị trí, kích thước, hướng, vận tốc và thuộc tính"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ số FPS và bộ nhớ runtime"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ loss train của backbone"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d08-x07",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d08",
+      "topic": "p2-t4-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "BEV hữu ích cho planning bởi đặc tính nào?",
+      "correct_answer": "c",
+      "explanation": "Không gian BEV chung dễ nối nhiều cameras/sensors và các task quanh bản đồ mặt đất.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d08",
+          "sha256": "0717147c9cedbe8d638ac82013e9c382ecaf338ccb6f379dd907591722d9cef7",
+          "pdf_page": 14,
+          "title": "3D từ Camera, BEV & Sensor Fusion",
+          "locator": "Physical PDF page 14",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Giữ vật xa nhỏ hơn để planning dùng kích thước pixel"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ chứa dữ liệu một camera nên không cần hệ tọa độ chung"
+        },
+        {
+          "id": "c",
+          "text": "Biểu diễn vị trí trên mặt đất với kích thước không bị phối cảnh bóp méo"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d08-x08",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d08",
+      "topic": "p2-t4-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "PETR đưa thông tin hình học 3D vào image features bằng cách nào?",
+      "correct_answer": "b",
+      "explanation": "PETR dùng positional encoding 3D trong image feature, khác cách chiếu reference point để lấy feature của DETR3D.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d08",
+          "sha256": "0717147c9cedbe8d638ac82013e9c382ecaf338ccb6f379dd907591722d9cef7",
+          "pdf_page": 17,
+          "title": "3D từ Camera, BEV & Sensor Fusion",
+          "locator": "Physical PDF page 17",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Bắt mọi query dùng cùng pixel cố định của mọi camera"
+        },
+        {
+          "id": "b",
+          "text": "Gắn mã vị trí 3D để object queries attend vào features"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ ghép raw point clouds rồi bỏ ảnh trước decoder"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d08-x09",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d08",
+      "topic": "p2-t4-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Temporal BEV fusion cần xử lý ego-motion trước khi ghép frames vì sao?",
+      "correct_answer": "a",
+      "explanation": "Không align chuyển động bản thân xe sẽ trộn feature của các vị trí vật lý khác nhau.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d08",
+          "sha256": "0717147c9cedbe8d638ac82013e9c382ecaf338ccb6f379dd907591722d9cef7",
+          "pdf_page": 18,
+          "title": "3D từ Camera, BEV & Sensor Fusion",
+          "locator": "Physical PDF page 18",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Đưa biểu diễn cũ về cùng hệ vị trí với hiện tại"
+        },
+        {
+          "id": "b",
+          "text": "Để coi mọi vật dịch trên ảnh đều chuyển động thật"
+        },
+        {
+          "id": "c",
+          "text": "Để thay depth bằng số frame đã qua"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d08-x10",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d08",
+      "topic": "p2-t4-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Occupancy khác chỉ dự đoán boxes ở điểm nào?",
+      "correct_answer": "c",
+      "explanation": "Biểu diễn không gian bị chiếm giúp xử lý cả vật không khớp hình hộp/class quen thuộc.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d08",
+          "sha256": "0717147c9cedbe8d638ac82013e9c382ecaf338ccb6f379dd907591722d9cef7",
+          "pdf_page": 18,
+          "title": "3D từ Camera, BEV & Sensor Fusion",
+          "locator": "Physical PDF page 18",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ giữ vật nằm trong một danh sách boxes cố định"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ dự đoán class mà không xét vùng không gian bị chiếm"
+        },
+        {
+          "id": "c",
+          "text": "Dự đoán trạng thái trống/đặc theo voxel, phù hợp hình dạng bất kỳ"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d08-x11",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d08",
+      "topic": "p2-t4-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một xe chuyển động vuông góc tia nhìn radar có Doppler gần 0. Kết luận nào phù hợp?",
+      "correct_answer": "b",
+      "explanation": "Doppler phản ánh projection vận tốc lên tia nhìn, không phải độ lớn vận tốc toàn phần.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d08",
+          "sha256": "0717147c9cedbe8d638ac82013e9c382ecaf338ccb6f379dd907591722d9cef7",
+          "pdf_page": 25,
+          "title": "3D từ Camera, BEV & Sensor Fusion",
+          "locator": "Physical PDF page 25",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Radar đã đo được đầy đủ vận tốc ngang"
+        },
+        {
+          "id": "b",
+          "text": "Thành phần vận tốc radial nhỏ, không chứng minh xe đứng yên"
+        },
+        {
+          "id": "c",
+          "text": "Toàn bộ vector vận tốc của xe bằng 0"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d08-x12",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d08",
+      "topic": "p2-t4-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Early sensor fusion nhạy với một sensor hỏng hoặc nhiễu theo cơ chế nào?",
+      "correct_answer": "b",
+      "explanation": "Early fusion giữ thông tin raw nhưng đòi hỏi calibration/synchronization tốt và có thể lan lỗi sensor vào đầu vào chung.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d08",
+          "sha256": "0717147c9cedbe8d638ac82013e9c382ecaf338ccb6f379dd907591722d9cef7",
+          "pdf_page": 31,
+          "title": "3D từ Camera, BEV & Sensor Fusion",
+          "locator": "Physical PDF page 31",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Mỗi detector độc lập đã loại bỏ mọi lỗi trước khi ghép boxes"
+        },
+        {
+          "id": "b",
+          "text": "Dữ liệu đã trộn từ input nên lỗi có thể làm hỏng biểu diễn chung ngay từ đầu"
+        },
+        {
+          "id": "c",
+          "text": "Mọi phép đo đều được giữ riêng cho từng Kalman update nên không có input chung"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d08-x13",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d08",
+      "topic": "p2-t4-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong hand-eye calibration AX=XB, X biểu diễn điều gì?",
+      "correct_answer": "b",
+      "explanation": "Di chuyển hệ qua nhiều poses tạo các chuyển động A/B để giải phép biến đổi cố định X giữa hai sensor.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d08",
+          "sha256": "0717147c9cedbe8d638ac82013e9c382ecaf338ccb6f379dd907591722d9cef7",
+          "pdf_page": 28,
+          "title": "3D từ Camera, BEV & Sensor Fusion",
+          "locator": "Physical PDF page 28",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Một pose object mới cần dự đoán ở từng frame"
+        },
+        {
+          "id": "b",
+          "text": "Phép biến đổi cố định giữa hai sensor gắn cứng được suy từ chuyển động tương ứng"
+        },
+        {
+          "id": "c",
+          "text": "Một focal length thay đổi theo khoảng cách tới vật"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d08-x14",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d08",
+      "topic": "p2-t4-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Timestamp matching nên xử lý hai mẫu quá xa nhau về thời gian thế nào?",
+      "correct_answer": "b",
+      "explanation": "Fusion cần phép đo đại diện cùng thời điểm; timestamp gần nhất vẫn phải nằm trong mức lệch chấp nhận.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d08",
+          "sha256": "0717147c9cedbe8d638ac82013e9c382ecaf338ccb6f379dd907591722d9cef7",
+          "pdf_page": 29,
+          "title": "3D từ Camera, BEV & Sensor Fusion",
+          "locator": "Physical PDF page 29",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Giữ mọi cặp vì cùng sequence là đủ đồng thời"
+        },
+        {
+          "id": "b",
+          "text": "Loại cặp vượt cửa sổ dung sai hoặc dùng cơ chế bù phù hợp"
+        },
+        {
+          "id": "c",
+          "text": "Ghép theo thứ tự đến bất kể timestamp"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d08-x15",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d08",
+      "topic": "p2-t4-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong thiết kế fuse-then-track gộp measurements trước tracker, tracker nhận gì ở mỗi chu kỳ?",
+      "correct_answer": "b",
+      "explanation": "Đây là trục thứ tự fusion/tracking: gộp measurement trước khác tuần tự cập nhật một trạng thái bằng từng sensor.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d08",
+          "sha256": "0717147c9cedbe8d638ac82013e9c382ecaf338ccb6f379dd907591722d9cef7",
+          "pdf_page": 36,
+          "title": "3D từ Camera, BEV & Sensor Fusion",
+          "locator": "Physical PDF page 36",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Lần lượt từng phép đo sensor riêng với h(x),R riêng"
+        },
+        {
+          "id": "b",
+          "text": "Một phép đo fused và thực hiện một update"
+        },
+        {
+          "id": "c",
+          "text": "Một track độc lập cho mỗi camera không bao giờ kết hợp"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d08-x16",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d08",
+      "topic": "p2-t4-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Late fusion có thể khó cứu một vật mà cả hai detector đều bỏ qua vì sao?",
+      "correct_answer": "c",
+      "explanation": "Tính module hóa đi cùng mất khả năng khai thác tín hiệu raw/subthreshold đã bị nhánh riêng bỏ qua.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d08",
+          "sha256": "0717147c9cedbe8d638ac82013e9c382ecaf338ccb6f379dd907591722d9cef7",
+          "pdf_page": 33,
+          "title": "3D từ Camera, BEV & Sensor Fusion",
+          "locator": "Physical PDF page 33",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Nó vẫn có đầy đủ mọi raw features nên không mất thông tin"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ vì bắt buộc mọi sensor dùng cùng backbone"
+        },
+        {
+          "id": "c",
+          "text": "Thông tin yếu đã bị loại trước khi tới bước ghép boxes"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d09-x01",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d09",
+      "topic": "p2-t4-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao Bronze nên giữ bản gốc append-only kèm checksum và nguồn?",
+      "correct_answer": "c",
+      "explanation": "Raw data bảo toàn làm nền cho reproducibility và điều tra lỗi ở các bước sau.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d09",
+          "sha256": "b15b6124d171a1174ac98580a2a2515eaaf09840a528dcd85fd37a6d090d4a15",
+          "pdf_page": 15,
+          "title": "Data và annotation pipeline cho Computer Vision và Robotics",
+          "locator": "Physical PDF page 15",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Để sửa trực tiếp bản gốc mỗi lần làm sạch"
+        },
+        {
+          "id": "b",
+          "text": "Để không cần lưu metadata của các lần ingest"
+        },
+        {
+          "id": "c",
+          "text": "Cho phép tái chạy các lớp xử lý và truy nguồn dữ liệu"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d09-x02",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d09",
+      "topic": "p2-t4-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Bảng metadata giữ URI video; xóa một dòng bảng chưa chắc xóa file. Cần quản lý thêm gì?",
+      "correct_answer": "b",
+      "explanation": "Metadata và object có vòng đời riêng; con trỏ không tự quản toàn bộ lifecycle của blob.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d09",
+          "sha256": "b15b6124d171a1174ac98580a2a2515eaaf09840a528dcd85fd37a6d090d4a15",
+          "pdf_page": 18,
+          "title": "Data và annotation pipeline cho Computer Vision và Robotics",
+          "locator": "Physical PDF page 18",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Bỏ object storage để nhúng toàn video vào mọi truy vấn metadata"
+        },
+        {
+          "id": "b",
+          "text": "File mồ côi và tính toàn vẹn nội dung qua checksum"
+        },
+        {
+          "id": "c",
+          "text": "Coi mọi file đã tự biến mất cùng dòng bảng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d09-x03",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d09",
+      "topic": "p2-t4-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Parquet giúp truy vấn chỉ hai cột của một metadata table theo cách nào?",
+      "correct_answer": "a",
+      "explanation": "Lưu theo cột giảm I/O cho column projection và hỗ trợ nén dữ liệu cùng kiểu.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d09",
+          "sha256": "b15b6124d171a1174ac98580a2a2515eaaf09840a528dcd85fd37a6d090d4a15",
+          "pdf_page": 19,
+          "title": "Data và annotation pipeline cho Computer Vision và Robotics",
+          "locator": "Physical PDF page 19",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Đọc các cột cần thay vì toàn bộ mọi cột"
+        },
+        {
+          "id": "b",
+          "text": "Decode toàn bộ video trước khi biết hai cột"
+        },
+        {
+          "id": "c",
+          "text": "Bắt buộc đọc tất cả rows và mọi trường dưới dạng ảnh"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d09-x04",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d09",
+      "topic": "p2-t4-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Time travel của open table format dựa trên cơ chế nào?",
+      "correct_answer": "c",
+      "explanation": "Snapshot/commit cho phép tái dựng trạng thái bảng qua các phiên bản files.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d09",
+          "sha256": "b15b6124d171a1174ac98580a2a2515eaaf09840a528dcd85fd37a6d090d4a15",
+          "pdf_page": 20,
+          "title": "Data và annotation pipeline cho Computer Vision và Robotics",
+          "locator": "Physical PDF page 20",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Sửa đè mọi Parquet file cũ mà không giữ lịch sử"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ đổi tên thư mục thành v1/v2 không lưu danh sách files"
+        },
+        {
+          "id": "c",
+          "text": "Commit xác định tập files tạo một snapshot của bảng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d09-x05",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d09",
+      "topic": "p2-t4-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "ELT thay đổi thứ tự xử lý dữ liệu video so với ETL thế nào?",
+      "correct_answer": "b",
+      "explanation": "ELT tránh để biến đổi video nặng chặn bước nạp; video ở storage còn metadata được xử lý thành bảng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d09",
+          "sha256": "b15b6124d171a1174ac98580a2a2515eaaf09840a528dcd85fd37a6d090d4a15",
+          "pdf_page": 22,
+          "title": "Data và annotation pipeline cho Computer Vision và Robotics",
+          "locator": "Physical PDF page 22",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Luôn decode và biến đổi toàn bộ video trước khi lưu"
+        },
+        {
+          "id": "b",
+          "text": "Nạp bản gốc vào storage/lakehouse trước rồi biến đổi"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ lưu bảng đã xử lý và không giữ video gốc"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d09-x06",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d09",
+      "topic": "p2-t4-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Pipeline embedding video có GPU nhàn nhưng decode CPU nghẽn. Hướng xử lý nào khớp bottleneck?",
+      "correct_answer": "a",
+      "explanation": "Cần tối ưu bước cấp frames trước khi tăng năng lực inference không được nuôi dữ liệu.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d09",
+          "sha256": "b15b6124d171a1174ac98580a2a2515eaaf09840a528dcd85fd37a6d090d4a15",
+          "pdf_page": 24,
+          "title": "Data và annotation pipeline cho Computer Vision và Robotics",
+          "locator": "Physical PDF page 24",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tối ưu/song song hoặc chuyển decode phù hợp sang GPU"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ tăng batch model dù input chưa được decode kịp"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ tối ưu kernel embedding trong khi CPU vẫn không cấp frames đủ nhanh"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d09-x07",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d09",
+      "topic": "p2-t4-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Backfill trong orchestration nghĩa là gì?",
+      "correct_answer": "c",
+      "explanation": "DAG và trạng thái cho phép điều phối lịch, retry và xử lý lại phần lịch sử cần thiết.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d09",
+          "sha256": "b15b6124d171a1174ac98580a2a2515eaaf09840a528dcd85fd37a6d090d4a15",
+          "pdf_page": 25,
+          "title": "Data và annotation pipeline cho Computer Vision và Robotics",
+          "locator": "Physical PDF page 25",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ chạy task tiếp theo ngay khi có event mới"
+        },
+        {
+          "id": "b",
+          "text": "Xóa mọi partition cũ để tạo dataset mới từ đầu"
+        },
+        {
+          "id": "c",
+          "text": "Chạy bù xử lý cho khoảng thời gian dữ liệu cũ"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d09-x08",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d09",
+      "topic": "p2-t4-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Retry một partition đã ghi một phần nên tránh append không kiểm soát vì sao?",
+      "correct_answer": "b",
+      "explanation": "Cùng input chạy lại phải cho cùng kết quả; overwrite/replace partition có thể tránh duplication.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d09",
+          "sha256": "b15b6124d171a1174ac98580a2a2515eaaf09840a528dcd85fd37a6d090d4a15",
+          "pdf_page": 26,
+          "title": "Data và annotation pipeline cho Computer Vision và Robotics",
+          "locator": "Physical PDF page 26",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Ghi thêm luôn tương đương thay partition đối với cùng input"
+        },
+        {
+          "id": "b",
+          "text": "Có thể nhân đôi rows và làm kết quả không idempotent"
+        },
+        {
+          "id": "c",
+          "text": "Append tự nhận ra mọi rows đã có mà không cần khóa"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d09-x09",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d09",
+      "topic": "p2-t4-d09",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những checks nào phù hợp quality gate cho dữ liệu thị giác? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "d",
+        "a",
+        "b"
+      ],
+      "explanation": "Pipeline chạy thành công chưa chứng minh dữ liệu hợp lệ cả ở bảng và nội dung ảnh.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d09",
+          "sha256": "b15b6124d171a1174ac98580a2a2515eaaf09840a528dcd85fd37a6d090d4a15",
+          "pdf_page": 27,
+          "title": "Data và annotation pipeline cho Computer Vision và Robotics",
+          "locator": "Physical PDF page 27",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Khung đen/mờ"
+        },
+        {
+          "id": "b",
+          "text": "Box nằm ngoài ảnh"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ kiểm job có exit code 0"
+        },
+        {
+          "id": "d",
+          "text": "Schema/null/range/freshness và duplicates"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d09-x10",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d09",
+      "topic": "p2-t4-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Cùng bộ bốn số box có thể hợp lệ nhưng sai hình học khi đổi tool vì sao?",
+      "correct_answer": "c",
+      "explanation": "Kiểm type/range chưa đủ; cần rõ convention và vẽ thử sau chuyển đổi.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d09",
+          "sha256": "b15b6124d171a1174ac98580a2a2515eaaf09840a528dcd85fd37a6d090d4a15",
+          "pdf_page": 28,
+          "title": "Data và annotation pipeline cho Computer Vision và Robotics",
+          "locator": "Physical PDF page 28",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Mọi định dạng box dùng cùng convention mặc định"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ class ID mới cần chuyển đổi, tọa độ không đổi"
+        },
+        {
+          "id": "c",
+          "text": "Khác quy ước xyxy/xywh, gốc/tâm hoặc chuẩn hóa"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d09-x11",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d09",
+      "topic": "p2-t4-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Lineage cho model cần trả lời câu hỏi nào?",
+      "correct_answer": "b",
+      "explanation": "Dấu vết nguồn gốc giúp tái lập và truy ngược lỗi từ model về dữ liệu.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d09",
+          "sha256": "b15b6124d171a1174ac98580a2a2515eaaf09840a528dcd85fd37a6d090d4a15",
+          "pdf_page": 29,
+          "title": "Data và annotation pipeline cho Computer Vision và Robotics",
+          "locator": "Physical PDF page 29",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ ai tải model xuống gần nhất"
+        },
+        {
+          "id": "b",
+          "text": "Model được tạo từ dataset, bước xử lý và nguồn nào"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ model đang đạt accuracy bao nhiêu"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d09-x12",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d09",
+      "topic": "p2-t4-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Hai annotators gán nhãn khác nhau cho người dắt xe đạp. Bước giải quyết nền tảng là gì?",
+      "correct_answer": "a",
+      "explanation": "Ground truth phụ thuộc đặc tả thống nhất; cần giải quyết định nghĩa trước khi quy lỗi cho người gán.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d09",
+          "sha256": "b15b6124d171a1174ac98580a2a2515eaaf09840a528dcd85fd37a6d090d4a15",
+          "pdf_page": 42,
+          "title": "Data và annotation pipeline cho Computer Vision và Robotics",
+          "locator": "Physical PDF page 42",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Kiểm guideline định nghĩa cyclist và cách tách người/xe"
+        },
+        {
+          "id": "b",
+          "text": "Chọn nhãn của người làm nhanh hơn"
+        },
+        {
+          "id": "c",
+          "text": "Trộn cả hai conventions để tăng số labels"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d09-x13",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d09",
+      "topic": "p2-t4-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao labels do con người tạo vẫn cần audit mẫu độc lập?",
+      "correct_answer": "c",
+      "explanation": "Kiểm tra độc lập ước lượng lỗi và xác nhận chuẩn dùng đánh giá máy.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d09",
+          "sha256": "b15b6124d171a1174ac98580a2a2515eaaf09840a528dcd85fd37a6d090d4a15",
+          "pdf_page": 46,
+          "title": "Data và annotation pipeline cho Computer Vision và Robotics",
+          "locator": "Physical PDF page 46",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Human labels luôn đúng nên audit chỉ đo tốc độ"
+        },
+        {
+          "id": "b",
+          "text": "Có reviewer thì không cần xác định guideline"
+        },
+        {
+          "id": "c",
+          "text": "Con người cũng có thể sai; quality claim cần cơ sở kiểm tra"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d09-x14",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d09",
+      "topic": "p2-t4-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Auto-label offline có lợi thế nào so với perception online?",
+      "correct_answer": "b",
+      "explanation": "Toàn chuỗi hỗ trợ refinement qua occlusion; khác quyền thông tin của hệ thống realtime.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d09",
+          "sha256": "b15b6124d171a1174ac98580a2a2515eaaf09840a528dcd85fd37a6d090d4a15",
+          "pdf_page": 47,
+          "title": "Data và annotation pipeline cho Computer Vision và Robotics",
+          "locator": "Physical PDF page 47",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Mọi output offline đều đúng nên không cần kiểm tra"
+        },
+        {
+          "id": "b",
+          "text": "Dùng cả frames tương lai và nhiều compute hơn mà không bị cùng latency constraint"
+        },
+        {
+          "id": "c",
+          "text": "Bắt buộc chỉ xem một frame để tránh leakage trong labels"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d09-x15",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d09",
+      "topic": "p2-t4-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Routing labels theo confidence nên được thiết kế như thế nào?",
+      "correct_answer": "a",
+      "explanation": "Confidence cần calibration; phân tầng review giảm công mà vẫn kiểm soát lỗi.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d09",
+          "sha256": "b15b6124d171a1174ac98580a2a2515eaaf09840a528dcd85fd37a6d090d4a15",
+          "pdf_page": 54,
+          "title": "Data và annotation pipeline cho Computer Vision và Robotics",
+          "locator": "Physical PDF page 54",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Calibrate trên gold set, audit nhóm cao và chuyển nhóm yếu/bất đồng cho người"
+        },
+        {
+          "id": "b",
+          "text": "Dùng một threshold tùy chọn như bảo đảm đúng cho mọi domain"
+        },
+        {
+          "id": "c",
+          "text": "Tự chấp nhận toàn bộ nếu model trả score dạng số"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d09-x16",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d09",
+      "topic": "p2-t4-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Chọn mẫu active learning chỉ theo uncertainty có thể gặp hạn chế gì?",
+      "correct_answer": "c",
+      "explanation": "Kết hợp bất định và độ khác nhau giúp tránh dành ngân sách cho một cụm hẹp.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d09",
+          "sha256": "b15b6124d171a1174ac98580a2a2515eaaf09840a528dcd85fd37a6d090d4a15",
+          "pdf_page": 58,
+          "title": "Data và annotation pipeline cho Computer Vision và Robotics",
+          "locator": "Physical PDF page 58",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tự bảo đảm phủ đều mọi vùng dữ liệu"
+        },
+        {
+          "id": "b",
+          "text": "Không thể kết hợp với phương pháp chọn đa dạng"
+        },
+        {
+          "id": "c",
+          "text": "Tập trung vào outliers hoặc mẫu giống nhau, nên cần xét diversity"
+        }
+      ],
+      "shuffle_options": true
+    }
+  ]
+}

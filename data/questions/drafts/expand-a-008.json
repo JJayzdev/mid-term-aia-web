@@ -1,0 +1,2391 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.22.expansion-a-008",
+  "questions": [
+    {
+      "id": "p2-t1-d07-x01",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d07",
+      "topic": "p2-t1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một nhóm có 200 triệu tiền mặt, mỗi tháng chi 30 triệu và thu 10 triệu. Runway theo burn hiện tại là bao lâu?",
+      "correct_answer": "c",
+      "explanation": "Net burn là 30−10=20 triệu/tháng; runway=200/20=10 tháng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d07",
+          "sha256": "81f32bf83172309a847edc5fea6e48957435d617ceeaef46aef13dee3ee5e3fc",
+          "pdf_page": 3,
+          "title": "AI Financial Modeling & ROI",
+          "locator": "Physical PDF page 3",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Khoảng 6,7 tháng vì lấy tiền mặt chia toàn bộ chi phí"
+        },
+        {
+          "id": "b",
+          "text": "20 tháng vì lấy tiền mặt chia doanh thu"
+        },
+        {
+          "id": "c",
+          "text": "10 tháng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d07-x02",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d07",
+      "topic": "p2-t1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một dự toán đã có cloud, model API, lương và sales/marketing. Nhóm chi phí nào vẫn cần rà riêng cho AI?",
+      "correct_answer": "b",
+      "explanation": "Hidden costs thường nằm ở việc duy trì dữ liệu, chất lượng, con người và kiểm soát hệ thống.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d07",
+          "sha256": "81f32bf83172309a847edc5fea6e48957435d617ceeaef46aef13dee3ee5e3fc",
+          "pdf_page": 6,
+          "title": "AI Financial Modeling & ROI",
+          "locator": "Physical PDF page 6",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t1-d07",
+          "sha256": "81f32bf83172309a847edc5fea6e48957435d617ceeaef46aef13dee3ee5e3fc",
+          "pdf_page": 7,
+          "title": "AI Financial Modeling & ROI",
+          "locator": "Physical PDF page 7",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ cộng lại model API vì mọi chi phí AI đều nằm trên hóa đơn API"
+        },
+        {
+          "id": "b",
+          "text": "Labeling, retraining, human review và compliance/security"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ tăng doanh thu giả định để bù mọi chi phí còn thiếu"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d07-x03",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d07",
+      "topic": "p2-t1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Ba kịch bản optimistic, base và pessimistic phục vụ lập kế hoạch theo cách nào?",
+      "correct_answer": "b",
+      "explanation": "Kịch bản giữ các giả định khác nhau hiển thị để đội hiểu khả năng sống sót khi điều kiện xấu.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d07",
+          "sha256": "81f32bf83172309a847edc5fea6e48957435d617ceeaef46aef13dee3ee5e3fc",
+          "pdf_page": 27,
+          "title": "AI Financial Modeling & ROI",
+          "locator": "Physical PDF page 27",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ dùng optimistic vì đó là mức tăng trưởng cần đạt"
+        },
+        {
+          "id": "b",
+          "text": "Base để budget khả thi; pessimistic để stress-test và chuẩn bị cắt scope"
+        },
+        {
+          "id": "c",
+          "text": "Gộp ba kịch bản thành một số trung bình rồi bỏ giả định riêng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d07-x04",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d07",
+      "topic": "p2-t1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Sản phẩm thu 50 đơn vị nhưng khi scale phát sinh tổng cost 60 đơn vị/user. Tăng số user khi economics không đổi sẽ ra sao?",
+      "correct_answer": "c",
+      "explanation": "Mỗi đơn vị đang lỗ 10; tăng volume không tự sửa cost/revenue trên một đơn vị.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d07",
+          "sha256": "81f32bf83172309a847edc5fea6e48957435d617ceeaef46aef13dee3ee5e3fc",
+          "pdf_page": 9,
+          "title": "AI Financial Modeling & ROI",
+          "locator": "Physical PDF page 9",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tự biến contribution margin thành dương"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ làm giảm phần trăm lỗ vì revenue lớn hơn"
+        },
+        {
+          "id": "c",
+          "text": "Làm tổng lỗ tăng theo quy mô"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d07-x05",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d07",
+      "topic": "p2-t1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Dự toán đủ chi phí QA và labeling ngay từ đầu có lợi ích nào khi scale?",
+      "correct_answer": "b",
+      "explanation": "Tính đủ cost giúp nhận diện tradeoff về giá và khả năng sống còn trước khi mở rộng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d07",
+          "sha256": "81f32bf83172309a847edc5fea6e48957435d617ceeaef46aef13dee3ee5e3fc",
+          "pdf_page": 10,
+          "title": "AI Financial Modeling & ROI",
+          "locator": "Physical PDF page 10",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Cho phép bỏ kiểm tra cost khi tăng lưu lượng"
+        },
+        {
+          "id": "b",
+          "text": "Giá và margin được đánh giá trên chi phí thực thay vì một lợi nhuận giả"
+        },
+        {
+          "id": "c",
+          "text": "Bảo đảm chi phí mỗi user không bao giờ thay đổi"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d07-x06",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d07",
+      "topic": "p2-t1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Thu hoa hồng theo giao dịch thuộc revenue model nào?",
+      "correct_answer": "a",
+      "explanation": "Transactional gắn doanh thu với giao dịch, khác đơn vị usage hay subscription cố định.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d07",
+          "sha256": "81f32bf83172309a847edc5fea6e48957435d617ceeaef46aef13dee3ee5e3fc",
+          "pdf_page": 11,
+          "title": "AI Financial Modeling & ROI",
+          "locator": "Physical PDF page 11",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Transactional"
+        },
+        {
+          "id": "b",
+          "text": "Consumption tính theo mức dùng tài nguyên"
+        },
+        {
+          "id": "c",
+          "text": "SaaS/MRR với phí cố định hàng tháng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d07-x07",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d07",
+      "topic": "p2-t1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một API thu tiền theo lượng tài nguyên khách dùng thuộc revenue model nào?",
+      "correct_answer": "c",
+      "explanation": "Consumption tính dùng bao nhiêu trả bấy nhiêu.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d07",
+          "sha256": "81f32bf83172309a847edc5fea6e48957435d617ceeaef46aef13dee3ee5e3fc",
+          "pdf_page": 11,
+          "title": "AI Financial Modeling & ROI",
+          "locator": "Physical PDF page 11",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Transactional theo tỷ lệ giao dịch thương mại"
+        },
+        {
+          "id": "b",
+          "text": "Subscription cố định không phụ thuộc lượng dùng"
+        },
+        {
+          "id": "c",
+          "text": "Consumption"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d07-x08",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d07",
+      "topic": "p2-t1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Tháng này sales/marketing chi 10 triệu để có 100 khách mới. CAC là bao nhiêu?",
+      "correct_answer": "b",
+      "explanation": "CAC=tổng chi phí acquisition/số khách mới=10 triệu/100.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d07",
+          "sha256": "81f32bf83172309a847edc5fea6e48957435d617ceeaef46aef13dee3ee5e3fc",
+          "pdf_page": 15,
+          "title": "AI Financial Modeling & ROI",
+          "locator": "Physical PDF page 15",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "1 triệu/khách"
+        },
+        {
+          "id": "b",
+          "text": "100 nghìn/khách"
+        },
+        {
+          "id": "c",
+          "text": "10 nghìn/khách"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d07-x09",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d07",
+      "topic": "p2-t1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "ARPU 50 nghìn/tháng, COGS 20 nghìn/tháng, khách ở lại trung bình 10 tháng. LTV theo lợi nhuận gộp là bao nhiêu?",
+      "correct_answer": "a",
+      "explanation": "Lợi nhuận gộp tháng là 30 nghìn; nhân 10 tháng được 300 nghìn.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d07",
+          "sha256": "81f32bf83172309a847edc5fea6e48957435d617ceeaef46aef13dee3ee5e3fc",
+          "pdf_page": 16,
+          "title": "AI Financial Modeling & ROI",
+          "locator": "Physical PDF page 16",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "300 nghìn"
+        },
+        {
+          "id": "b",
+          "text": "500 nghìn do dùng nguyên doanh thu"
+        },
+        {
+          "id": "c",
+          "text": "200 nghìn do lấy COGS nhân vòng đời"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d07-x10",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d07",
+      "topic": "p2-t1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Trong mô hình đơn giản dùng lifetime xấp xỉ 1/churn tháng, churn 5% tương ứng lifetime nào?",
+      "correct_answer": "c",
+      "explanation": "Dùng tỷ lệ dạng thập phân: 1/0,05=20; đây là xấp xỉ mô hình, không phải bảo đảm từng khách.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d07",
+          "sha256": "81f32bf83172309a847edc5fea6e48957435d617ceeaef46aef13dee3ee5e3fc",
+          "pdf_page": 17,
+          "title": "AI Financial Modeling & ROI",
+          "locator": "Physical PDF page 17",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Khoảng 5 tháng"
+        },
+        {
+          "id": "b",
+          "text": "Khoảng 0,05 tháng"
+        },
+        {
+          "id": "c",
+          "text": "Khoảng 20 tháng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d07-x11",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d07",
+      "topic": "p2-t1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Doanh thu 100, COGS 40 thì gross margin bằng bao nhiêu?",
+      "correct_answer": "b",
+      "explanation": "Gross margin=(100−40)/100=60%, khác markup trên cost.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d07",
+          "sha256": "81f32bf83172309a847edc5fea6e48957435d617ceeaef46aef13dee3ee5e3fc",
+          "pdf_page": 18,
+          "title": "AI Financial Modeling & ROI",
+          "locator": "Physical PDF page 18",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "150% vì chia lợi nhuận gộp cho COGS"
+        },
+        {
+          "id": "b",
+          "text": "60%"
+        },
+        {
+          "id": "c",
+          "text": "40% vì dùng COGS/revenue"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d07-x12",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d07",
+      "topic": "p2-t1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao LTV/CAC chỉ vừa trên 1 chưa chắc tạo mô hình kinh doanh khỏe?",
+      "correct_answer": "a",
+      "explanation": "Bù CAC chưa đồng nghĩa đủ nguồn lực vận hành và phát triển doanh nghiệp.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d07",
+          "sha256": "81f32bf83172309a847edc5fea6e48957435d617ceeaef46aef13dee3ee5e3fc",
+          "pdf_page": 19,
+          "title": "AI Financial Modeling & ROI",
+          "locator": "Physical PDF page 19",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Còn cần phần đóng góp để trang trải lương, R&D và chi phí khác ngoài acquisition"
+        },
+        {
+          "id": "b",
+          "text": "Vì CAC luôn bao gồm toàn bộ chi phí sản phẩm trong mọi kỳ"
+        },
+        {
+          "id": "c",
+          "text": "Vì chỉ cần thu lại tiền marketing là đã có lợi nhuận ròng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d07-x13",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d07",
+      "topic": "p2-t1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "CAC là 100 nghìn, lợi nhuận gộp mỗi khách mỗi tháng là 10 nghìn. CAC payback là bao lâu?",
+      "correct_answer": "c",
+      "explanation": "Thời gian hoàn CAC=100/10=10 tháng nếu dòng đóng góp này giữ ổn định.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d07",
+          "sha256": "81f32bf83172309a847edc5fea6e48957435d617ceeaef46aef13dee3ee5e3fc",
+          "pdf_page": 20,
+          "title": "AI Financial Modeling & ROI",
+          "locator": "Physical PDF page 20",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "1 tháng vì doanh thu tháng đã phát sinh"
+        },
+        {
+          "id": "b",
+          "text": "100 tháng vì không chia cho contribution tháng"
+        },
+        {
+          "id": "c",
+          "text": "10 tháng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d07-x14",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d07",
+      "topic": "p2-t1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "NPV xử lý điểm nào mà cộng thẳng mọi dòng tiền tương lai sẽ bỏ qua?",
+      "correct_answer": "b",
+      "explanation": "NPV đưa dòng tiền tương lai về hiện tại trước khi so với khoản đầu tư.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d07",
+          "sha256": "81f32bf83172309a847edc5fea6e48957435d617ceeaef46aef13dee3ee5e3fc",
+          "pdf_page": 24,
+          "title": "AI Financial Modeling & ROI",
+          "locator": "Physical PDF page 24",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ số tháng khách ở lại mà không xét dòng tiền"
+        },
+        {
+          "id": "b",
+          "text": "Giá trị hiện tại của dòng tiền sau chiết khấu và vốn đầu tư ban đầu"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ tổng số khách đăng ký vào cuối dự án"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d07-x15",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d07",
+      "topic": "p2-t1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Để đánh giá IRR có hấp dẫn trong mô hình dự án, cần so nó với gì?",
+      "correct_answer": "a",
+      "explanation": "IRR cần được đặt cạnh cost of capital; một con số phần trăm đơn lẻ chưa đủ kết luận.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d07",
+          "sha256": "81f32bf83172309a847edc5fea6e48957435d617ceeaef46aef13dee3ee5e3fc",
+          "pdf_page": 25,
+          "title": "AI Financial Modeling & ROI",
+          "locator": "Physical PDF page 25",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chi phí vốn yêu cầu của dự án"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ doanh thu tháng đầu tiên"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ tỷ lệ churn của một cohort"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d07-x16",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d07",
+      "topic": "p2-t1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Project payback khác CAC payback ở phạm vi vốn nào?",
+      "correct_answer": "c",
+      "explanation": "Project payback xét build/setup/R&D; CAC payback xét thu hồi acquisition cost.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d07",
+          "sha256": "81f32bf83172309a847edc5fea6e48957435d617ceeaef46aef13dee3ee5e3fc",
+          "pdf_page": 26,
+          "title": "AI Financial Modeling & ROI",
+          "locator": "Physical PDF page 26",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ chi phí quảng cáo một khách thay vì toàn bộ dự án"
+        },
+        {
+          "id": "b",
+          "text": "Cả hai luôn cùng mẫu số và cùng phạm vi chi phí"
+        },
+        {
+          "id": "c",
+          "text": "Toàn bộ vốn đầu tư dự án thay vì chỉ chi phí có một khách"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d07-x17",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d07",
+      "topic": "p2-t1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Sensitivity analysis hữu ích để trả lời câu hỏi nào?",
+      "correct_answer": "b",
+      "explanation": "Thay đổi các giả định nhạy giúp phát hiện mức chịu đựng và hành động cần chuẩn bị.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d07",
+          "sha256": "81f32bf83172309a847edc5fea6e48957435d617ceeaef46aef13dee3ee5e3fc",
+          "pdf_page": 28,
+          "title": "AI Financial Modeling & ROI",
+          "locator": "Physical PDF page 28",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Có thể loại bỏ pessimistic case nếu base case đang dương không?"
+        },
+        {
+          "id": "b",
+          "text": "Adoption, ARPU hoặc churn xấu đi thì cash flow nhạy tới mức nào?"
+        },
+        {
+          "id": "c",
+          "text": "Phương án optimistic có thể được trình bày hấp dẫn đến đâu?"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d08-x01",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d08",
+      "topic": "p2-t1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao thêm một user dùng AI nhiều có thể làm tăng cost đáng kể?",
+      "correct_answer": "c",
+      "explanation": "Cost biến đổi phụ thuộc công việc thực hiện, không chỉ khoản đầu tư ban đầu.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d08",
+          "sha256": "878a68770e5b3b9f4353c2d16cb0a0c2245d42535f950773b405986950364731",
+          "pdf_page": 4,
+          "title": "Từ sản phẩm chạy được đến sản phẩm bán được",
+          "locator": "Physical PDF page 4",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Model đã được huấn luyện nên mọi inference đều miễn phí"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ chi phí build ban đầu mới tồn tại khi có user mới"
+        },
+        {
+          "id": "c",
+          "text": "Usage tạo thêm inference và có thể thêm công sửa output"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d08-x02",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d08",
+      "topic": "p2-t1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Hybrid pricing có thể gây khó khăn nào dù giúp cân bằng rủi ro?",
+      "correct_answer": "b",
+      "explanation": "Hybrid phối hợp đơn vị thu phí nên có thể phức tạp hơn khi giải thích, khác một khoản seat cố định.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d08",
+          "sha256": "878a68770e5b3b9f4353c2d16cb0a0c2245d42535f950773b405986950364731",
+          "pdf_page": 7,
+          "title": "Từ sản phẩm chạy được đến sản phẩm bán được",
+          "locator": "Physical PDF page 7",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Không thể đo usage khi có phí nền"
+        },
+        {
+          "id": "b",
+          "text": "Cần giải thích cả phí nền lẫn phần usage để khách hiểu hóa đơn"
+        },
+        {
+          "id": "c",
+          "text": "Mặc nhiên quy mọi kết quả kinh doanh cho AI mà không cần attribution"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d08-x03",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d08",
+      "topic": "p2-t1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Nhược điểm cần xử lý khi dùng usage pricing là gì?",
+      "correct_answer": "a",
+      "explanation": "Usage giúp bảo vệ cost nhưng cần tính dễ dự đoán từ phía khách.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d08",
+          "sha256": "878a68770e5b3b9f4353c2d16cb0a0c2245d42535f950773b405986950364731",
+          "pdf_page": 7,
+          "title": "Từ sản phẩm chạy được đến sản phẩm bán được",
+          "locator": "Physical PDF page 7",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Khách có thể lo hóa đơn biến động/vượt trần"
+        },
+        {
+          "id": "b",
+          "text": "Không thể đo usage dưới bất kỳ hình thức nào"
+        },
+        {
+          "id": "c",
+          "text": "Luôn cần chứng minh attribution outcome tuyệt đối trước khi thu phí"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d08-x04",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d08",
+      "topic": "p2-t1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "AI tự thực hiện công việc nhưng attribution kết quả còn yếu. Value metric nào thường an toàn hơn outcome pricing?",
+      "correct_answer": "c",
+      "explanation": "Autonomy cao chưa đủ; đo attribution yếu khiến thu theo kết quả khó kiểm chứng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d08",
+          "sha256": "878a68770e5b3b9f4353c2d16cb0a0c2245d42535f950773b405986950364731",
+          "pdf_page": 8,
+          "title": "Từ sản phẩm chạy được đến sản phẩm bán được",
+          "locator": "Physical PDF page 8",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Outcome dù chưa đo được phần đóng góp của AI"
+        },
+        {
+          "id": "b",
+          "text": "Seat unlimited bất kể cost và lượng dùng"
+        },
+        {
+          "id": "c",
+          "text": "Usage"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d08-x05",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d08",
+      "topic": "p2-t1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những điều kiện nào hỗ trợ lựa chọn outcome pricing? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "d",
+        "a"
+      ],
+      "explanation": "Phải vừa thực hiện được phần việc vừa quy được kết quả vào phần việc đó.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d08",
+          "sha256": "878a68770e5b3b9f4353c2d16cb0a0c2245d42535f950773b405986950364731",
+          "pdf_page": 8,
+          "title": "Từ sản phẩm chạy được đến sản phẩm bán được",
+          "locator": "Physical PDF page 8",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Đo được attribution của kết quả"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ có một demo ấn tượng nhưng chưa xác định thành công"
+        },
+        {
+          "id": "c",
+          "text": "Không xác định được khi nào khách nhận kết quả"
+        },
+        {
+          "id": "d",
+          "text": "AI có autonomy cao"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d08-x06",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d08",
+      "topic": "p2-t1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Khi định vị giá, so với chi phí nhân công/outsource giúp ích gì hơn chỉ so phí một chatbot phổ thông?",
+      "correct_answer": "a",
+      "explanation": "Neo giá theo giải pháp thay thế và kết quả giúp khách đánh giá giá trị của job cụ thể.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d08",
+          "sha256": "878a68770e5b3b9f4353c2d16cb0a0c2245d42535f950773b405986950364731",
+          "pdf_page": 10,
+          "title": "Từ sản phẩm chạy được đến sản phẩm bán được",
+          "locator": "Physical PDF page 10",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Gắn giá với công việc và khoản tiết kiệm khách thực sự nhận"
+        },
+        {
+          "id": "b",
+          "text": "Bỏ qua cost cung cấp vì giá trị luôn đủ cao"
+        },
+        {
+          "id": "c",
+          "text": "Bảo đảm mọi khách có cùng willingness-to-pay"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d08-x07",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d08",
+      "topic": "p2-t1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Xem pricing là giả thuyết dẫn đến cách làm nào?",
+      "correct_answer": "c",
+      "explanation": "Pricing cần học từ chi phí, phản ứng khách và khả năng đo kết quả.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d08",
+          "sha256": "878a68770e5b3b9f4353c2d16cb0a0c2245d42535f950773b405986950364731",
+          "pdf_page": 11,
+          "title": "Từ sản phẩm chạy được đến sản phẩm bán được",
+          "locator": "Physical PDF page 11",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tìm giá hoàn hảo trước khi tiếp xúc khách"
+        },
+        {
+          "id": "b",
+          "text": "Giữ giá cố định dù evidence về usage và nhu cầu đổi"
+        },
+        {
+          "id": "c",
+          "text": "Chọn một phương án, thử, đo và điều chỉnh"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d08-x08",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d08",
+      "topic": "p2-t1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trước khi chọn đơn vị tính tiền, cần hiểu ngân sách của khách vì sao?",
+      "correct_answer": "b",
+      "explanation": "Nguồn ngân sách và job được thay thế ảnh hưởng cách neo và giải thích giá.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d08",
+          "sha256": "878a68770e5b3b9f4353c2d16cb0a0c2245d42535f950773b405986950364731",
+          "pdf_page": 14,
+          "title": "Từ sản phẩm chạy được đến sản phẩm bán được",
+          "locator": "Physical PDF page 14",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Biết ngân sách sẽ loại bỏ nhu cầu tính Cost/Job"
+        },
+        {
+          "id": "b",
+          "text": "Sản phẩm có thể thay chi phần mềm hoặc chi nhân sự với cách đánh giá khác nhau"
+        },
+        {
+          "id": "c",
+          "text": "Khách có ngân sách thì mọi đơn vị seat/usage/outcome đều tương đương"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d08-x09",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d08",
+      "topic": "p2-t1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Tích hợp AI vào nơi khách đang làm việc chủ yếu giảm ma sát nào?",
+      "correct_answer": "a",
+      "explanation": "Phân phối qua thói quen sẵn có giảm bước chuyển ngữ cảnh, không thay thế kiểm soát chất lượng/cost.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d08",
+          "sha256": "878a68770e5b3b9f4353c2d16cb0a0c2245d42535f950773b405986950364731",
+          "pdf_page": 16,
+          "title": "Từ sản phẩm chạy được đến sản phẩm bán được",
+          "locator": "Physical PDF page 16",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Phải mở công cụ khác và học workflow mới để nhận value"
+        },
+        {
+          "id": "b",
+          "text": "Nhu cầu kiểm chứng chất lượng output trong mọi tình huống"
+        },
+        {
+          "id": "c",
+          "text": "Mọi chi phí inference do công việc tạo ra"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d08-x10",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d08",
+      "topic": "p2-t1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một trợ lý viết code xuất hiện ngay trong editor thể hiện lựa chọn phân phối nào?",
+      "correct_answer": "c",
+      "explanation": "Giá trị xuất hiện tại điểm người dùng đang làm nhiệm vụ, giảm hành động chuyển đổi.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d08",
+          "sha256": "878a68770e5b3b9f4353c2d16cb0a0c2245d42535f950773b405986950364731",
+          "pdf_page": 17,
+          "title": "Từ sản phẩm chạy được đến sản phẩm bán được",
+          "locator": "Physical PDF page 17",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Buộc user chuyển sang website riêng cho mỗi gợi ý"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ bán qua phòng procurement mà không xét lúc dùng"
+        },
+        {
+          "id": "c",
+          "text": "Nhúng vào workflow hiện tại"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d08-x11",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d08",
+      "topic": "p2-t1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một sản phẩm phức tạp, giá cao và cần hiểu sâu khách phù hợp tradeoff nào của sales-led?",
+      "correct_answer": "b",
+      "explanation": "Sales-led có thể phục vụ nhu cầu phức tạp nhưng economics phải nuôi được quá trình bán.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d08",
+          "sha256": "878a68770e5b3b9f4353c2d16cb0a0c2245d42535f950773b405986950364731",
+          "pdf_page": 18,
+          "title": "Từ sản phẩm chạy được đến sản phẩm bán được",
+          "locator": "Physical PDF page 18",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Không phụ thuộc nỗ lực triển khai từng khách"
+        },
+        {
+          "id": "b",
+          "text": "Deal lớn nhưng chậm và tốn nhân lực"
+        },
+        {
+          "id": "c",
+          "text": "Tự phục vụ quy mô lớn mà không cần tư vấn"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d08-x12",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d08",
+      "topic": "p2-t1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Partner-led có ưu điểm và đánh đổi nào?",
+      "correct_answer": "a",
+      "explanation": "Partner mang phân phối nhưng tạo phụ thuộc và cần tính lợi nhuận sau chia sẻ.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d08",
+          "sha256": "878a68770e5b3b9f4353c2d16cb0a0c2245d42535f950773b405986950364731",
+          "pdf_page": 18,
+          "title": "Từ sản phẩm chạy được đến sản phẩm bán được",
+          "locator": "Physical PDF page 18",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Dùng đòn bẩy nền tảng sẵn có nhưng phụ thuộc partner và chia margin"
+        },
+        {
+          "id": "b",
+          "text": "Tự sở hữu toàn bộ kênh khách mà không cần chia lợi ích"
+        },
+        {
+          "id": "c",
+          "text": "Loại bỏ mọi chi phí inference phát sinh từ traffic"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d08-x13",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d08",
+      "topic": "p2-t1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Sản phẩm quá khó để khách tự mua nhưng giá chưa nuôi được sales team đang gặp vấn đề gì?",
+      "correct_answer": "c",
+      "explanation": "Kênh bán phải phù hợp mức giá và effort; có thể đổi giá/service hoặc tận dụng partner.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d08",
+          "sha256": "878a68770e5b3b9f4353c2d16cb0a0c2245d42535f950773b405986950364731",
+          "pdf_page": 19,
+          "title": "Từ sản phẩm chạy được đến sản phẩm bán được",
+          "locator": "Physical PDF page 19",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ thiếu thêm model để tăng số lựa chọn"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ cần tăng số cuộc sales mà giữ nguyên economics"
+        },
+        {
+          "id": "c",
+          "text": "Không khớp ARPU với chi phí kênh bán"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d08-x14",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d08",
+      "topic": "p2-t1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Pain moment nên dẫn việc chọn kênh như thế nào?",
+      "correct_answer": "b",
+      "explanation": "Kênh hữu ích nối điểm đau với hành động nhận giá trị ngay trong ngữ cảnh.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d08",
+          "sha256": "878a68770e5b3b9f4353c2d16cb0a0c2245d42535f950773b405986950364731",
+          "pdf_page": 20,
+          "title": "Từ sản phẩm chạy được đến sản phẩm bán được",
+          "locator": "Physical PDF page 20",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Yêu cầu khách rời điểm làm việc để tìm một demo riêng"
+        },
+        {
+          "id": "b",
+          "text": "Có mặt ở nơi và lúc khách đang bị cản trở công việc"
+        },
+        {
+          "id": "c",
+          "text": "Chọn kênh dễ mua quảng cáo nhất rồi tìm pain phù hợp sau"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d08-x15",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d08",
+      "topic": "p2-t1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một kế hoạch bắt đầu bằng vài khách trong ngành hẹp rồi mới mở rộng có mục đích gì?",
+      "correct_answer": "a",
+      "explanation": "Beachhead hẹp tạo cơ hội học và hoàn thiện cơ chế bán/triển khai có thể nhân rộng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d08",
+          "sha256": "878a68770e5b3b9f4353c2d16cb0a0c2245d42535f950773b405986950364731",
+          "pdf_page": 23,
+          "title": "Từ sản phẩm chạy được đến sản phẩm bán được",
+          "locator": "Physical PDF page 23",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Hiểu sâu, tạo dữ liệu/testimonial và chứng minh playbook trước scale"
+        },
+        {
+          "id": "b",
+          "text": "Tối đa số ngành cùng lúc dù chưa có quy trình lặp lại"
+        },
+        {
+          "id": "c",
+          "text": "Thay mọi evidence bằng số lượng lead rộng hơn"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d08-x16",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d08",
+      "topic": "p2-t1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một demo được khen nhưng procurement chặn vì chưa rõ dữ liệu được dùng thế nào. Cần bổ sung gì?",
+      "correct_answer": "c",
+      "explanation": "Bên mua cần cơ sở kiểm chứng và trách nhiệm để duyệt, không chỉ cảm giác về tính năng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d08",
+          "sha256": "878a68770e5b3b9f4353c2d16cb0a0c2245d42535f950773b405986950364731",
+          "pdf_page": 24,
+          "title": "Từ sản phẩm chạy được đến sản phẩm bán được",
+          "locator": "Physical PDF page 24",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ một demo trơn tru hơn mà không trả lời câu hỏi dữ liệu"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ giảm giá mà giữ nguyên các thông tin chưa rõ"
+        },
+        {
+          "id": "c",
+          "text": "Bằng chứng bằng văn bản về chất lượng, rủi ro và xử lý dữ liệu"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d08-x17",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d08",
+      "topic": "p2-t1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những tài sản nào hợp thành evidence pack bán sản phẩm AI? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "d",
+        "a",
+        "b"
+      ],
+      "explanation": "Ba loại bằng chứng nối năng lực, kiểm soát rủi ro và tác động trong sử dụng thật.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d08",
+          "sha256": "878a68770e5b3b9f4353c2d16cb0a0c2245d42535f950773b405986950364731",
+          "pdf_page": 25,
+          "title": "Từ sản phẩm chạy được đến sản phẩm bán được",
+          "locator": "Physical PDF page 25",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Risk checklist"
+        },
+        {
+          "id": "b",
+          "text": "Pilot report có kết quả thực tế"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ roadmap hứa hẹn năng lực chưa được thử"
+        },
+        {
+          "id": "d",
+          "text": "Eval results"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d09-x01",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d09",
+      "topic": "p2-t1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một leading indicator có ích phải liên hệ được với điều gì?",
+      "correct_answer": "c",
+      "explanation": "Nhanh chưa đủ; chỉ báo sớm phải giúp dự kiến một outcome cần quản lý.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d09",
+          "sha256": "49deccce776f13846f1a85b32ba2e0c575df17a1be7463296b22fe1afecd25f6",
+          "pdf_page": 7,
+          "title": "Đèn nào bật trước?",
+          "locator": "Physical PDF page 7",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ một con số đẹp được cập nhật nhanh"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ chỉ tiêu dễ lấy từ dashboard hiện có"
+        },
+        {
+          "id": "c",
+          "text": "Một kết quả cụ thể mà nó báo trước"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d09-x02",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d09",
+      "topic": "p2-t1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Dashboard chỉ có doanh thu, LTV/CAC và runway hạn chế khả năng điều hành thế nào?",
+      "correct_answer": "b",
+      "explanation": "Kết quả cuối cho biết đã xảy ra gì; điều hành cần thêm tín hiệu và đòn bẩy thay đổi.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d09",
+          "sha256": "49deccce776f13846f1a85b32ba2e0c575df17a1be7463296b22fe1afecd25f6",
+          "pdf_page": 8,
+          "title": "Đèn nào bật trước?",
+          "locator": "Physical PDF page 8",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Càng nhiều lagging metrics càng thay thế được hành động tuần"
+        },
+        {
+          "id": "b",
+          "text": "Thiếu tín hiệu sớm và biến vận hành để can thiệp trước khi kết quả xấu"
+        },
+        {
+          "id": "c",
+          "text": "Đã đủ mọi bằng chứng nguyên nhân nên không cần metric khác"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d09-x03",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d09",
+      "topic": "p2-t1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao định nghĩa “active user” phải nói rõ điều được tính và không tính?",
+      "correct_answer": "a",
+      "explanation": "Định nghĩa tác động trực tiếp mẫu số/tử số và quyết định sản phẩm.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d09",
+          "sha256": "49deccce776f13846f1a85b32ba2e0c575df17a1be7463296b22fe1afecd25f6",
+          "pdf_page": 9,
+          "title": "Đèn nào bật trước?",
+          "locator": "Physical PDF page 9",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Các cách đếm mở app, hoàn thành việc hoặc quay lại có ý nghĩa khác nhau"
+        },
+        {
+          "id": "b",
+          "text": "Mọi định nghĩa active luôn cho cùng số người"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ cần ghi tên metric bằng tiếng Anh là đã loại được mơ hồ"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d09-x04",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d09",
+      "topic": "p2-t1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Tỷ lệ partner có người dùng thật không nên tính tài khoản thử do partner tự tạo vì sao?",
+      "correct_answer": "c",
+      "explanation": "Metric activation của partner cần phân biệt kiểm thử nội bộ với sử dụng thực từ khách cuối.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d09",
+          "sha256": "49deccce776f13846f1a85b32ba2e0c575df17a1be7463296b22fe1afecd25f6",
+          "pdf_page": 10,
+          "title": "Đèn nào bật trước?",
+          "locator": "Physical PDF page 10",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Mọi thử nghiệm kỹ thuật đều phải được tính thành doanh thu"
+        },
+        {
+          "id": "b",
+          "text": "Bỏ chúng sẽ khiến không thể đo số partner đã ký"
+        },
+        {
+          "id": "c",
+          "text": "Chúng chưa chứng minh phân phối tới người dùng cuối"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d09-x05",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d09",
+      "topic": "p2-t1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một mốc cảnh báo nên có cơ sở nào thay vì chọn tùy ý? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "d",
+        "a",
+        "b"
+      ],
+      "explanation": "Threshold cần căn cứ để biết vì sao cần can thiệp, thay vì biến mong muốn thành chuẩn.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d09",
+          "sha256": "49deccce776f13846f1a85b32ba2e0c575df17a1be7463296b22fe1afecd25f6",
+          "pdf_page": 11,
+          "title": "Đèn nào bật trước?",
+          "locator": "Physical PDF page 11",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Baseline và mục tiêu tự đo"
+        },
+        {
+          "id": "b",
+          "text": "Benchmark phù hợp có nguồn và bối cảnh"
+        },
+        {
+          "id": "c",
+          "text": "Một tỷ lệ nghe có vẻ hợp lý nhưng không có rationale"
+        },
+        {
+          "id": "d",
+          "text": "Tự tính từ economics của mô hình"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d09-x06",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d09",
+      "topic": "p2-t1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Nếu evidence cho thấy giả định về nhóm khách ban đầu sai, lựa chọn nào phù hợp hơn tiếp tục sửa cùng tính năng?",
+      "correct_answer": "b",
+      "explanation": "Pivot phản ứng với giả định nền tảng sai, khác sửa một nguyên nhân đã hiểu trong hướng vẫn có cơ sở.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d09",
+          "sha256": "49deccce776f13846f1a85b32ba2e0c575df17a1be7463296b22fe1afecd25f6",
+          "pdf_page": 32,
+          "title": "Đèn nào bật trước?",
+          "locator": "Physical PDF page 32",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Giữ nguyên mọi giả định và coi mọi thất bại là thiếu quảng cáo"
+        },
+        {
+          "id": "b",
+          "text": "Đổi hướng về nhóm khách, cách bán hoặc cách tính tiền phù hợp hơn"
+        },
+        {
+          "id": "c",
+          "text": "Lặp lại cùng sửa chữa dù chưa rõ vì sao chưa đạt mốc"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d09-x07",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d09",
+      "topic": "p2-t1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Đối với B2B, tín hiệu nào trực tiếp phản ánh khoảng cách từ ký hợp đồng đến giá trị?",
+      "correct_answer": "c",
+      "explanation": "Hợp đồng cần chuyển thành giá trị thực, không chỉ trạng thái đã bán.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d09",
+          "sha256": "49deccce776f13846f1a85b32ba2e0c575df17a1be7463296b22fe1afecd25f6",
+          "pdf_page": 15,
+          "title": "Đèn nào bật trước?",
+          "locator": "Physical PDF page 15",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ số logo mới đã ký"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ tổng số tài khoản đã cấp"
+        },
+        {
+          "id": "c",
+          "text": "Thời gian đến kết quả đo được của khách"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d09-x08",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d09",
+      "topic": "p2-t1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một nhóm free users dùng AI rất nhiều cần được theo dõi vì sao?",
+      "correct_answer": "b",
+      "explanation": "Usage có cost nên cần hiểu ai tạo cost và cơ chế chuyển đổi/giới hạn phù hợp.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d09",
+          "sha256": "49deccce776f13846f1a85b32ba2e0c575df17a1be7463296b22fe1afecd25f6",
+          "pdf_page": 16,
+          "title": "Đèn nào bật trước?",
+          "locator": "Physical PDF page 16",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Free usage không có cost vì chưa xuất hóa đơn cho khách"
+        },
+        {
+          "id": "b",
+          "text": "Họ có thể tạo chi phí lặp lại chưa được doanh thu bù"
+        },
+        {
+          "id": "c",
+          "text": "Số người dùng luôn là tài sản dù contribution âm"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d09-x09",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d09",
+      "topic": "p2-t1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Average cost/user thấp nhưng heavy users gần hết revenue/user nên ưu tiên kiểm tra gì?",
+      "correct_answer": "a",
+      "explanation": "Trung bình che tail usage; can thiệp theo nhóm giúp xử lý nơi tạo mất margin.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d09",
+          "sha256": "49deccce776f13846f1a85b32ba2e0c575df17a1be7463296b22fe1afecd25f6",
+          "pdf_page": 18,
+          "title": "Đèn nào bật trước?",
+          "locator": "Physical PDF page 18",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Cost distribution của nhóm dùng nặng và thiết kế gói/giới hạn phù hợp"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ average vì nó đã đại diện mọi nhóm"
+        },
+        {
+          "id": "c",
+          "text": "Tăng giá tất cả ngay mà không phân tích segment"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d09-x10",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d09",
+      "topic": "p2-t1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một mốc kiểm tra 30 ngày đầu của sản phẩm mới nên ưu tiên bằng chứng nào?",
+      "correct_answer": "b",
+      "explanation": "Mốc đầu phục vụ học và tạo số nền trước các mốc giữ chân, giá trị và mở rộng tiếp theo.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d09",
+          "sha256": "49deccce776f13846f1a85b32ba2e0c575df17a1be7463296b22fe1afecd25f6",
+          "pdf_page": 32,
+          "title": "Đèn nào bật trước?",
+          "locator": "Physical PDF page 32",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ yêu cầu revenue lớn dù chưa có baseline hành vi"
+        },
+        {
+          "id": "b",
+          "text": "Hiểu và đo được việc người dùng nhận giá trị ban đầu"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ đếm số tính năng hoàn tất mà không xác định core value"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d09-x11",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d09",
+      "topic": "p2-t1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Sales cycle dài cần được đối chiếu với runway để làm gì?",
+      "correct_answer": "b",
+      "explanation": "Một runway danh nghĩa có thể rất ngắn khi phải chờ gần hết thời gian đó mới chốt doanh thu.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d09",
+          "sha256": "49deccce776f13846f1a85b32ba2e0c575df17a1be7463296b22fe1afecd25f6",
+          "pdf_page": 21,
+          "title": "Đèn nào bật trước?",
+          "locator": "Physical PDF page 21",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Bỏ chi phí triển khai vì hợp đồng đã được ký"
+        },
+        {
+          "id": "b",
+          "text": "Biết khoảng thời gian thực còn lại trước khi có thể thu được tiền từ bán hàng"
+        },
+        {
+          "id": "c",
+          "text": "Coi mọi cơ hội trong pipeline như tiền mặt đã có"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d09-x12",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d09",
+      "topic": "p2-t1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Tỷ lệ hợp đồng chết ở security/procurement review giúp nhận diện bottleneck nào?",
+      "correct_answer": "a",
+      "explanation": "Cần phân loại nơi deal mất để chọn hành động phù hợp thay vì mặc định mọi thất bại là giá.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d09",
+          "sha256": "49deccce776f13846f1a85b32ba2e0c575df17a1be7463296b22fe1afecd25f6",
+          "pdf_page": 22,
+          "title": "Đèn nào bật trước?",
+          "locator": "Physical PDF page 22",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Thiếu điều kiện/bằng chứng để bên mua duyệt"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ nhu cầu luôn thấp nên không cần xem review"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ thiếu chiết khấu bất kể lý do bên mua nêu"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d09-x13",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d09",
+      "topic": "p2-t1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Muốn rút ngắn time-to-result của pilot B2B, hướng thiết kế nào phù hợp?",
+      "correct_answer": "c",
+      "explanation": "Scope nhỏ tạo kết quả sớm và rõ, giảm rủi ro pilot kéo dài vì quá nhiều phụ thuộc.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d09",
+          "sha256": "49deccce776f13846f1a85b32ba2e0c575df17a1be7463296b22fe1afecd25f6",
+          "pdf_page": 23,
+          "title": "Đèn nào bật trước?",
+          "locator": "Physical PDF page 23",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Mở ngay toàn công ty để có nhiều use cases nhất"
+        },
+        {
+          "id": "b",
+          "text": "Tăng số tính năng hứa hẹn trước khi tích hợp xong việc đầu"
+        },
+        {
+          "id": "c",
+          "text": "Thu về một việc, một phòng ban và một chỉ số đo được"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d09-x14",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d09",
+      "topic": "p2-t1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Khi bán qua partner, gross margin cần được tính tại điểm nào?",
+      "correct_answer": "b",
+      "explanation": "Margin trước chia chưa phản ánh phần kinh tế thực sự giữ lại từ kênh.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d09",
+          "sha256": "49deccce776f13846f1a85b32ba2e0c575df17a1be7463296b22fe1afecd25f6",
+          "pdf_page": 25,
+          "title": "Đèn nào bật trước?",
+          "locator": "Physical PDF page 25",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ từ số khách partner công bố có sẵn"
+        },
+        {
+          "id": "b",
+          "text": "Sau phần chia cho partner và chi phí cung cấp liên quan"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ trước phần chia để giữ khả năng so sánh doanh thu"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d09-x15",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d09",
+      "topic": "p2-t1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một mạng lưới có nhiều partner ký hợp đồng nhưng ít triển khai cần được đo thêm phễu nào?",
+      "correct_answer": "a",
+      "explanation": "Tiềm năng phân phối không bằng reach thực; cần đo cả chuyển đổi ở phía partner và khách cuối.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d09",
+          "sha256": "49deccce776f13846f1a85b32ba2e0c575df17a1be7463296b22fe1afecd25f6",
+          "pdf_page": 26,
+          "title": "Đèn nào bật trước?",
+          "locator": "Physical PDF page 26",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Từ partner thực sự triển khai đến khách cuối thực sự dùng"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ phễu ký thêm partner mới"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ tổng số khách tiềm năng của mọi partner"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d09-x16",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d09",
+      "topic": "p2-t1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những điều khoản nào có thể hạn chế rủi ro partner tăng traffic nhưng bên cung cấp gánh inference cost? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "Hợp đồng cần nối quyền điều khiển volume với phân bổ cost và trách nhiệm.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d09",
+          "sha256": "49deccce776f13846f1a85b32ba2e0c575df17a1be7463296b22fe1afecd25f6",
+          "pdf_page": 28,
+          "title": "Đèn nào bật trước?",
+          "locator": "Physical PDF page 28",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Usage cap hoặc giá bậc thang"
+        },
+        {
+          "id": "b",
+          "text": "Phần vượt ngưỡng do partner chi trả"
+        },
+        {
+          "id": "c",
+          "text": "Cam kết lượng tối thiểu và chất lượng hai chiều"
+        },
+        {
+          "id": "d",
+          "text": "Phí cố định không giới hạn bất kể lượng tăng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d09-x17",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d09",
+      "topic": "p2-t1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trước khi bán theo outcome qua partner, hai bên cần thống nhất điều gì?",
+      "correct_answer": "b",
+      "explanation": "Nếu cả hai cùng nhận công mà attribution chưa rõ, đơn vị thu tiền theo kết quả sẽ khó kiểm chứng và thương lượng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d09",
+          "sha256": "49deccce776f13846f1a85b32ba2e0c575df17a1be7463296b22fe1afecd25f6",
+          "pdf_page": 25,
+          "title": "Đèn nào bật trước?",
+          "locator": "Physical PDF page 25",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ tổng số tài khoản partner sở hữu"
+        },
+        {
+          "id": "b",
+          "text": "Cách quy công kết quả cho đóng góp của từng bên"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ thời điểm ký hợp đồng mà chưa xác định thành công"
+        }
+      ],
+      "shuffle_options": true
+    }
+  ]
+}

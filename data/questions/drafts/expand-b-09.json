@@ -1,0 +1,1692 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.22.expand-b-09",
+  "questions": [
+    {
+      "id": "p2-t3-d09-x01",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d09",
+      "topic": "p2-t3-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Answer Relevancy dùng reverse-question generation để tránh nhầm lẫn nào của cosine Q–A trực tiếp?",
+      "correct_answer": "c",
+      "explanation": "Reverse questions biểu diễn câu hỏi mà answer thực sự giải đáp, rồi so với question gốc để tách cùng chủ đề khỏi đúng trọng tâm.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d09",
+          "sha256": "4ce70cfb527b720e420f8b4798b8bdf06594c8c44dffd14c68be38bf7351e909",
+          "pdf_page": 18,
+          "title": "RAGAS, LLM-as-Judge & Guardrails",
+          "locator": "Physical PDF page 18; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Answer phải lặp nguyên question mới relevant"
+        },
+        {
+          "id": "b",
+          "text": "Mọi paraphrase của câu trả lời đều off-topic"
+        },
+        {
+          "id": "c",
+          "text": "Cùng entity/từ khóa chưa có nghĩa answer trả đúng điều được hỏi"
+        },
+        {
+          "id": "d",
+          "text": "Cosine cao luôn chứng minh answer đủ thông tin"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d09-x02",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d09",
+      "topic": "p2-t3-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Context Recall cần ground-truth answer để đánh giá điều gì?",
+      "correct_answer": "b",
+      "explanation": "Recall kiểm coverage các ý đáp án cần thiết; thiếu reference khó biết context đã lấy có bỏ sót ý phải có hay không.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d09",
+          "sha256": "4ce70cfb527b720e420f8b4798b8bdf06594c8c44dffd14c68be38bf7351e909",
+          "pdf_page": 20,
+          "title": "RAGAS, LLM-as-Judge & Guardrails",
+          "locator": "Physical PDF page 20; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ answer bám context đã lấy, dù context bỏ sót thông tin cần có"
+        },
+        {
+          "id": "b",
+          "text": "Các ý cần thiết của đáp án chuẩn có được retrieved context hỗ trợ"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ tỷ lệ retrieved chunks liên quan, không xét ý chuẩn bị thiếu"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d09-x03",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d09",
+      "topic": "p2-t3-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Traffic thật chủ yếu cần tổng hợp nhiều context nhưng test set đa số câu một chunk. Cần sửa thiết kế nào?",
+      "correct_answer": "a",
+      "explanation": "Synthetic test distribution phải phản ánh user behavior; default nhiều simple có thể che lỗi multi-context.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d09",
+          "sha256": "4ce70cfb527b720e420f8b4798b8bdf06594c8c44dffd14c68be38bf7351e909",
+          "pdf_page": 22,
+          "title": "RAGAS, LLM-as-Judge & Guardrails",
+          "locator": "Physical PDF page 22; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Điều chỉnh phân bố loại câu hỏi theo traffic và review dữ liệu sinh"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ tăng số câu một chunk để score ổn định hơn"
+        },
+        {
+          "id": "c",
+          "text": "Giữ nguyên distribution vì default luôn đại diện mọi sản phẩm"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ đổi judge để che khoảng trống coverage"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d09-x04",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d09",
+      "topic": "p2-t3-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Đổi judge model và nâng RAGAS version cùng lúc có thể làm so sánh score trước/sau sai ở đâu?",
+      "correct_answer": "d",
+      "explanation": "Pin judge/framework version và log metadata giúp so sánh; upgrade major cần đo baseline/regression lại.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d09",
+          "sha256": "4ce70cfb527b720e420f8b4798b8bdf06594c8c44dffd14c68be38bf7351e909",
+          "pdf_page": 23,
+          "title": "RAGAS, LLM-as-Judge & Guardrails",
+          "locator": "Physical PDF page 23; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Mọi version luôn cùng scoring nên delta chắc do model"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ số lượng câu hỏi mới tác động score"
+        },
+        {
+          "id": "c",
+          "text": "Nếu API đều 200 thì baseline không cần đo lại"
+        },
+        {
+          "id": "d",
+          "text": "Scoring/judge thay đổi nên delta không chỉ do hệ RAG"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d09-x05",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d09",
+      "topic": "p2-t3-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Pairwise evaluation phù hợp loại quyết định nào hơn absolute score đơn lẻ?",
+      "correct_answer": "b",
+      "explanation": "Pairwise chọn A/B/tie dựa cùng đầu vào; absolute score theo rubric hữu ích theo dõi trend nhưng dễ subjective drift.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d09",
+          "sha256": "4ce70cfb527b720e420f8b4798b8bdf06594c8c44dffd14c68be38bf7351e909",
+          "pdf_page": 29,
+          "title": "RAGAS, LLM-as-Judge & Guardrails",
+          "locator": "Physical PDF page 29; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ theo dõi điểm tuyệt đối qua thời gian mà không chạy baseline cùng input"
+        },
+        {
+          "id": "b",
+          "text": "So phiên bản mới với baseline để xét regression"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ chấm một response theo rubric khi không có response đối chiếu"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d09-x06",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d09",
+      "topic": "p2-t3-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một judge thường ưu ái output của cùng họ model khi chọn production model. Cần giảm bias nào?",
+      "correct_answer": "b",
+      "explanation": "Cross-judge tránh một model tự ưu ái fingerprint/style của nó khi so chất lượng các model.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d09",
+          "sha256": "4ce70cfb527b720e420f8b4798b8bdf06594c8c44dffd14c68be38bf7351e909",
+          "pdf_page": 32,
+          "title": "RAGAS, LLM-as-Judge & Guardrails",
+          "locator": "Physical PDF page 32; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ lấy judge cùng model để đồng bộ style"
+        },
+        {
+          "id": "b",
+          "text": "Self-enhancement bằng cross-judge khác family"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ position bias bằng đổi chỗ A và B"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ temperature cao để judge đa dạng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d09-x07",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d09",
+      "topic": "p2-t3-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Hai answer cùng nội dung nhưng markdown được chấm cao hơn prose dù UI không render Markdown. Cách giảm nhiễu nào phù hợp?",
+      "correct_answer": "a",
+      "explanation": "Style/verbosity bias thưởng vẻ chuyên nghiệp ngoài nội dung; normalization và rubric rõ giúp giảm bias.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d09",
+          "sha256": "4ce70cfb527b720e420f8b4798b8bdf06594c8c44dffd14c68be38bf7351e909",
+          "pdf_page": 33,
+          "title": "RAGAS, LLM-as-Judge & Guardrails",
+          "locator": "Physical PDF page 33; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Strip formatting hoặc rubric yêu cầu chỉ chấm content"
+        },
+        {
+          "id": "b",
+          "text": "Ép mọi answer nhiều header hơn để tối đa điểm"
+        },
+        {
+          "id": "c",
+          "text": "Coi formatting score là business outcome không cần kiểm"
+        },
+        {
+          "id": "d",
+          "text": "Bỏ toàn bộ answer plain text khỏi eval"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d09-x08",
+      "revision": 3,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d09",
+      "topic": "p2-t3-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một chuỗi validator đã xác nhận input phải bị từ chối ngay ở bước đầu. Fail-fast nên điều khiển các bước kiểm tra sau thế nào?",
+      "correct_answer": "b",
+      "explanation": "Fail-fast dừng chuỗi sau verdict reject và trả lỗi; không tiếp tục các validator sau hoặc đưa input đã bị chặn vào LLM.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d09",
+          "sha256": "4ce70cfb527b720e420f8b4798b8bdf06594c8c44dffd14c68be38bf7351e909",
+          "pdf_page": 46,
+          "title": "RAGAS, LLM-as-Judge & Guardrails",
+          "locator": "Physical PDF page 46; fail-fast validators chain stops after first rejection",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Vẫn gọi LLM trước, chỉ dùng verdict reject để ghi log sau"
+        },
+        {
+          "id": "b",
+          "text": "Bỏ qua các validator còn lại và trả lỗi"
+        },
+        {
+          "id": "c",
+          "text": "Chạy tiếp mọi validator rồi cho verdict cuối ghi đè reject trước"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d09-x09",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d09",
+      "topic": "p2-t3-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Tiered judge tiết kiệm bằng cách dành model mạnh cho nhóm nào?",
+      "correct_answer": "c",
+      "explanation": "Tầng rẻ bắt lỗi cấu trúc rộng, semantic judge nhỏ rồi escalate case khó để giữ chi phí hợp lý.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d09",
+          "sha256": "4ce70cfb527b720e420f8b4798b8bdf06594c8c44dffd14c68be38bf7351e909",
+          "pdf_page": 35,
+          "title": "RAGAS, LLM-as-Judge & Guardrails",
+          "locator": "Physical PDF page 35; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ query đã được model nhỏ chắc chắn đúng"
+        },
+        {
+          "id": "b",
+          "text": "Không case nào vì heuristic luôn đủ"
+        },
+        {
+          "id": "c",
+          "text": "Các case khó/borderline sau heuristic và judge nhỏ"
+        },
+        {
+          "id": "d",
+          "text": "Mọi query kể cả schema lỗi rõ ràng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d09-x10",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d09",
+      "topic": "p2-t3-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Answer nói số nhân viên khác trực tiếp con số context cung cấp thuộc loại hallucination nào?",
+      "correct_answer": "b",
+      "explanation": "Intrinsic trái bằng chứng đang có, khác extrinsic bổ sung thông tin không xuất hiện trong context.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d09",
+          "sha256": "4ce70cfb527b720e420f8b4798b8bdf06594c8c44dffd14c68be38bf7351e909",
+          "pdf_page": 37,
+          "title": "RAGAS, LLM-as-Judge & Guardrails",
+          "locator": "Physical PDF page 37; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ lỗi format không cần kiểm fact"
+        },
+        {
+          "id": "b",
+          "text": "Intrinsic: mâu thuẫn với context"
+        },
+        {
+          "id": "c",
+          "text": "Extrinsic: chỉ thêm fact ngoài context mà không mâu thuẫn"
+        },
+        {
+          "id": "d",
+          "text": "Không phải hallucination nếu cùng công ty"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d09-x11",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d09",
+      "topic": "p2-t3-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "SelfCheckGPT tìm tín hiệu hallucination bằng cách nào?",
+      "correct_answer": "b",
+      "explanation": "Sample outputs có thể bất nhất ở phần hallucinated; phương pháp reference-free nhưng thêm generation cost và không phải proof chắc chắn.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d09",
+          "sha256": "4ce70cfb527b720e420f8b4798b8bdf06594c8c44dffd14c68be38bf7351e909",
+          "pdf_page": 38,
+          "title": "RAGAS, LLM-as-Judge & Guardrails",
+          "locator": "Physical PDF page 38; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ coi một response tự khai confidence cao là đủ xác nhận facts"
+        },
+        {
+          "id": "b",
+          "text": "So mức nhất quán của nhiều sample answer cho cùng question"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ kiểm agreement giữa question và một response duy nhất"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d09-x12",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d09",
+      "topic": "p2-t3-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Semantic entropy khác string-level entropy ở cách nhóm answer nào?",
+      "correct_answer": "d",
+      "explanation": "Paraphrase khác chữ nhưng cùng fact không nên bị coi là bất định ngữ nghĩa; entropy trên semantic clusters phân biệt wording và meaning.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d09",
+          "sha256": "4ce70cfb527b720e420f8b4798b8bdf06594c8c44dffd14c68be38bf7351e909",
+          "pdf_page": 40,
+          "title": "RAGAS, LLM-as-Judge & Guardrails",
+          "locator": "Physical PDF page 40; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Mỗi cách viết khác nhau luôn là fact khác nhau"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ nhóm bằng độ dài token"
+        },
+        {
+          "id": "c",
+          "text": "Bỏ mọi answer không cùng chuỗi ký tự"
+        },
+        {
+          "id": "d",
+          "text": "Gộp các paraphrase cùng nghĩa trước khi đo bất định"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d09-x13",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d09",
+      "topic": "p2-t3-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong NLI hallucination check, premise và hypothesis nên lấy từ đâu?",
+      "correct_answer": "c",
+      "explanation": "Context là bằng chứng premise, claim answer là hypothesis để xét entailment/contradiction/neutral.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d09",
+          "sha256": "4ce70cfb527b720e420f8b4798b8bdf06594c8c44dffd14c68be38bf7351e909",
+          "pdf_page": 39,
+          "title": "RAGAS, LLM-as-Judge & Guardrails",
+          "locator": "Physical PDF page 39; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Question làm premise và final answer làm hypothesis, bỏ context"
+        },
+        {
+          "id": "b",
+          "text": "Lấy chính claim làm cả premise lẫn hypothesis để kiểm tự nhất quán"
+        },
+        {
+          "id": "c",
+          "text": "Retrieved context và từng sentence/claim trong answer"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d09-x14",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d09",
+      "topic": "p2-t3-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Validator timeout nên fail-open hay fail-closed được quyết định theo điều gì?",
+      "correct_answer": "b",
+      "explanation": "Timeout là failure của control; allow/block cần theo risk, không nhầm không chấm được với an toàn đã xác nhận.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d09",
+          "sha256": "4ce70cfb527b720e420f8b4798b8bdf06594c8c44dffd14c68be38bf7351e909",
+          "pdf_page": 46,
+          "title": "RAGAS, LLM-as-Judge & Guardrails",
+          "locator": "Physical PDF page 46; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Luôn coi timeout như một approval đã được reviewer xác nhận"
+        },
+        {
+          "id": "b",
+          "text": "Risk của tác vụ và chính sách đã định"
+        },
+        {
+          "id": "c",
+          "text": "Luôn fail-open dù tác vụ có side effect nhạy cảm"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d09-x15",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d09",
+      "topic": "p2-t3-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Presidio mặc định bỏ sót CCCD/số điện thoại Việt Nam. Hướng sửa nào phù hợp?",
+      "correct_answer": "a",
+      "explanation": "PII locale-specific cần custom recognition; default en-only không đủ cho trường dữ liệu Việt Nam.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d09",
+          "sha256": "4ce70cfb527b720e420f8b4798b8bdf06594c8c44dffd14c68be38bf7351e909",
+          "pdf_page": 69,
+          "title": "RAGAS, LLM-as-Judge & Guardrails",
+          "locator": "Physical PDF page 69; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Thêm recognizer/regex phù hợp Việt Nam hoặc mô hình NER phù hợp"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ dùng recognizers tiếng Anh hiện có vì mọi định dạng định danh đều giống nhau"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ đổi masking character nhưng không sửa bộ phát hiện PII"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d09-x16",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d09",
+      "topic": "p2-t3-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một malicious turn đã bị chặn output nhưng vẫn nằm trong history. Defense cần thay đổi ở đâu?",
+      "correct_answer": "c",
+      "explanation": "Session poisoning khai thác input độc còn trong history; input-level replacement ngăn “continue earlier” kích hoạt lại.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d09",
+          "sha256": "4ce70cfb527b720e420f8b4798b8bdf06594c8c44dffd14c68be38bf7351e909",
+          "pdf_page": 54,
+          "title": "RAGAS, LLM-as-Judge & Guardrails",
+          "locator": "Physical PDF page 54; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ chặn output turn hiện tại rồi giữ nguyên input độc trong history"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ kiểm tin nhắn mới, coi history đã lưu luôn đáng tin"
+        },
+        {
+          "id": "c",
+          "text": "Sanitize/replace input độc trong history trước khi model đọc lại"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d09-x17",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d09",
+      "topic": "p2-t3-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Execution rails khác retrieval rails ở đối tượng kiểm tra nào?",
+      "correct_answer": "c",
+      "explanation": "Rails theo tầng: dialog cho flow/topic, retrieval cho doc, execution cho tool validation trước side effect.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d09",
+          "sha256": "4ce70cfb527b720e420f8b4798b8bdf06594c8c44dffd14c68be38bf7351e909",
+          "pdf_page": 56,
+          "title": "RAGAS, LLM-as-Judge & Guardrails",
+          "locator": "Physical PDF page 56; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Execution rails chỉ đổi topic flow"
+        },
+        {
+          "id": "b",
+          "text": "Retrieval rails cấp quyền mọi tool nếu doc đúng"
+        },
+        {
+          "id": "c",
+          "text": "Tool call/args trước thực thi thay retrieved documents trước đưa vào LLM"
+        },
+        {
+          "id": "d",
+          "text": "Cả hai chỉ chấm post-hoc final answer"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d10-x01",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d10",
+      "topic": "p2-t3-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Nhiều client cùng retry khi provider timeout có thể biến lỗi nhỏ thành outage thế nào?",
+      "correct_answer": "b",
+      "explanation": "Retry không bounded/breaker/fallback/budget có thể khuếch đại failure thay phục hồi.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d10",
+          "sha256": "8eedb050729d509fcba099e1b5bba2b1c837f82af5531c976ecdc2bf2df5982a",
+          "pdf_page": 9,
+          "title": "Circuit Breakers, Caching & Reliability for Production Agents",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ output answer quality thay đổi, hệ thống không ảnh hưởng"
+        },
+        {
+          "id": "b",
+          "text": "Retry storm cạn quota/rate limit và dồn tải thêm"
+        },
+        {
+          "id": "c",
+          "text": "Retry tự giảm tải provider theo số client"
+        },
+        {
+          "id": "d",
+          "text": "Mỗi retry luôn được miễn quota nên không cascade"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d10-x02",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d10",
+      "topic": "p2-t3-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Error rate 0% nhưng faithfulness giảm dần cho thấy uptime SLO thiếu chiều gì?",
+      "correct_answer": "a",
+      "explanation": "Silent degradation có thể do model/prompt/KB/cache đổi mà không exception; reliability phải đo quality cùng availability.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d10",
+          "sha256": "8eedb050729d509fcba099e1b5bba2b1c837f82af5531c976ecdc2bf2df5982a",
+          "pdf_page": 10,
+          "title": "Circuit Breakers, Caching & Reliability for Production Agents",
+          "locator": "Physical PDF page 10; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Quality SLO cho hành vi câu trả lời"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ availability của endpoint dù response sai nghiệp vụ"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ HTTP success rate vì status200 bảo đảm grounding"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d10-x03",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d10",
+      "topic": "p2-t3-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "HALF-OPEN trong circuit breaker nhằm mục đích gì?",
+      "correct_answer": "d",
+      "explanation": "Sau reset timeout, probe đánh giá recovery trước khi trở về CLOSED hoặc OPEN lại.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d10",
+          "sha256": "8eedb050729d509fcba099e1b5bba2b1c837f82af5531c976ecdc2bf2df5982a",
+          "pdf_page": 12,
+          "title": "Circuit Breakers, Caching & Reliability for Production Agents",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Cho toàn traffic quay lại ngay bất kể kết quả"
+        },
+        {
+          "id": "b",
+          "text": "Chặn vĩnh viễn mọi lời gọi như đã xóa provider"
+        },
+        {
+          "id": "c",
+          "text": "Đổi provider mà không cần kiểm health"
+        },
+        {
+          "id": "d",
+          "text": "Thử probe có kiểm soát để xem dependency đã phục hồi"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d10-x04",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d10",
+      "topic": "p2-t3-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao cần định nghĩa exception nào được tính là breaker failure?",
+      "correct_answer": "c",
+      "explanation": "Failure classification quyết định breaker trip đúng; cấu hình threshold/reset/success cùng semantics lỗi cần rõ.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d10",
+          "sha256": "8eedb050729d509fcba099e1b5bba2b1c837f82af5531c976ecdc2bf2df5982a",
+          "pdf_page": 13,
+          "title": "Circuit Breakers, Caching & Reliability for Production Agents",
+          "locator": "Physical PDF page 13; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ đếm status 200 là failure để thử breaker"
+        },
+        {
+          "id": "b",
+          "text": "Không cần vì exception nào cũng giống nhau"
+        },
+        {
+          "id": "c",
+          "text": "Không phải mọi lỗi ứng dụng đều phản ánh dependency đang hỏng"
+        },
+        {
+          "id": "d",
+          "text": "Mọi validation error của user luôn phải làm provider OPEN"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d10-x05",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d10",
+      "topic": "p2-t3-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Gateway nhiều instance chỉ giữ circuit state trong memory riêng có rủi ro gì?",
+      "correct_answer": "b",
+      "explanation": "Production multi-instance nên có backend chung như Redis để chia sẻ trạng thái breaker phù hợp.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d10",
+          "sha256": "8eedb050729d509fcba099e1b5bba2b1c837f82af5531c976ecdc2bf2df5982a",
+          "pdf_page": 13,
+          "title": "Circuit Breakers, Caching & Reliability for Production Agents",
+          "locator": "Physical PDF page 13; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Không thể có retry storm vì đã có class CircuitBreaker"
+        },
+        {
+          "id": "b",
+          "text": "Các replica không phối hợp trạng thái dependency đang lỗi"
+        },
+        {
+          "id": "c",
+          "text": "State tự đồng bộ nhờ cùng model name"
+        },
+        {
+          "id": "d",
+          "text": "Mọi instance luôn thấy cùng failure counter mà không backend"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d10-x06",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d10",
+      "topic": "p2-t3-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Backup provider trả JSON được nhưng không hỗ trợ tool calling mà task cần. Điều gì phải được kiểm trước khi fallback?",
+      "correct_answer": "a",
+      "explanation": "Fallback không chỉ đổi model; cần JSON/tool/context/latency/cost/policy semantics tương thích.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d10",
+          "sha256": "8eedb050729d509fcba099e1b5bba2b1c837f82af5531c976ecdc2bf2df5982a",
+          "pdf_page": 14,
+          "title": "Circuit Breakers, Caching & Reliability for Production Agents",
+          "locator": "Physical PDF page 14; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Feature compatibility với yêu cầu task"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ backup có giá rẻ hơn"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ model cùng kích thước params"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ HTTP endpoint phản hồi 200"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d10-x07",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d10",
+      "topic": "p2-t3-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một tác vụ nhạy cảm không cho phép chất lượng giảm xuống model yếu. Fallback policy nên thể hiện điều gì?",
+      "correct_answer": "d",
+      "explanation": "Ladder phải nêu điều kiện chuyển bậc và task không được phép dùng model yếu, cân cost/safety/trust.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d10",
+          "sha256": "8eedb050729d509fcba099e1b5bba2b1c837f82af5531c976ecdc2bf2df5982a",
+          "pdf_page": 15,
+          "title": "Circuit Breakers, Caching & Reliability for Production Agents",
+          "locator": "Physical PDF page 15; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Luôn xuống model rẻ nhất để không báo lỗi"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ dùng cache cũ bất kể freshness"
+        },
+        {
+          "id": "c",
+          "text": "Bỏ rủi ro khi giảm availability"
+        },
+        {
+          "id": "d",
+          "text": "Giới hạn bậc fallback theo rủi ro, có thể dùng phản hồi an toàn thay model yếu"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d10-x08",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d10",
+      "topic": "p2-t3-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Tool-result cache nên ưu tiên loại kết quả nào?",
+      "correct_answer": "c",
+      "explanation": "Cache deterministic low-risk trước giúp giảm cost/latency với ít rủi ro semantic collision/freshness hơn.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d10",
+          "sha256": "8eedb050729d509fcba099e1b5bba2b1c837f82af5531c976ecdc2bf2df5982a",
+          "pdf_page": 17,
+          "title": "Circuit Breakers, Caching & Reliability for Production Agents",
+          "locator": "Physical PDF page 17; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Mọi action có side effect chỉ cầncacheanswer"
+        },
+        {
+          "id": "b",
+          "text": "Mọi output stochastic luôn đúng lâu dài"
+        },
+        {
+          "id": "c",
+          "text": "Đắt để tính nhưng deterministic và low-risk"
+        },
+        {
+          "id": "d",
+          "text": "Mọi số dư tài khoản cá nhân đều cache shared"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d10-x09",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d10",
+      "topic": "p2-t3-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Hit rate cao nhưng nhiều query khác intent nhận chung answer cần đo thêm gì?",
+      "correct_answer": "b",
+      "explanation": "Similarity gần không bảo đảm intent giống; false-hit đo lỗi reuse để tránh tối ưu hit rate bằng cách hạ threshold quá mức.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d10",
+          "sha256": "8eedb050729d509fcba099e1b5bba2b1c837f82af5531c976ecdc2bf2df5982a",
+          "pdf_page": 18,
+          "title": "Circuit Breakers, Caching & Reliability for Production Agents",
+          "locator": "Physical PDF page 18; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ đo tổng token mà không kiểm answer"
+        },
+        {
+          "id": "b",
+          "text": "False-hit rate và ví dụ sai cụ thể"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ tăng hit rate tối đa"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ đếm request cache MISS"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d10-x10",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d10",
+      "topic": "p2-t3-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Monthly budget đã đạt 100% nhưng dashboard chỉ cảnh báo. Control nào còn thiếu?",
+      "correct_answer": "a",
+      "explanation": "Budget cần enforcement theo mốc, không chỉ visibility; per-request/user/monthly controls có vai trò khác nhau.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d10",
+          "sha256": "8eedb050729d509fcba099e1b5bba2b1c837f82af5531c976ecdc2bf2df5982a",
+          "pdf_page": 19,
+          "title": "Circuit Breakers, Caching & Reliability for Production Agents",
+          "locator": "Physical PDF page 19; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Hard stop hoặc route rẻ theo chính sách giới hạn"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ thêm chart mà không chặn"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ lưu input token sau khi tiếp tục chi"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ đổi đơn vị tính bill"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d10-x11",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d10",
+      "topic": "p2-t3-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Per-request max tools và timeout bổ sung cho monthly budget ở rủi ro nào?",
+      "correct_answer": "a",
+      "explanation": "Cap từng request giới hạn work/cost/latency của lần chạy; tổng tháng không thay thế giới hạn vòng cục bộ.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d10",
+          "sha256": "8eedb050729d509fcba099e1b5bba2b1c837f82af5531c976ecdc2bf2df5982a",
+          "pdf_page": 19,
+          "title": "Circuit Breakers, Caching & Reliability for Production Agents",
+          "locator": "Physical PDF page 19; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Một task đơn lẻ chạy quá dài/gọi quá nhiều trước khi tổng tháng chạm trần"
+        },
+        {
+          "id": "b",
+          "text": "Monthly budget đã tự giới hạn mọi request có cùng số tool calls"
+        },
+        {
+          "id": "c",
+          "text": "Timeout đã tự chặn số calls dù mọi call rất nhanh và liên tiếp"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d10-x12",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d10",
+      "topic": "p2-t3-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Vì sao response số dư tài khoản không phù hợp semantic cache dùng chung?",
+      "correct_answer": "c",
+      "explanation": "Account balance là private/current, không thể reuse theo similarity đơn thuần như FAQ công khai.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d10",
+          "sha256": "8eedb050729d509fcba099e1b5bba2b1c837f82af5531c976ecdc2bf2df5982a",
+          "pdf_page": 20,
+          "title": "Circuit Breakers, Caching & Reliability for Production Agents",
+          "locator": "Physical PDF page 20; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Similarity của intent đủ thay user isolation và timestamp của dữ liệu"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ key theo text câu hỏi là đủ vì mọi user hỏi cùng một ý"
+        },
+        {
+          "id": "c",
+          "text": "Privacy và freshness của thông tin theo user"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d10-x13",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d10",
+      "topic": "p2-t3-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Policy summary được cache cần trigger invalidation nào đặc biệt?",
+      "correct_answer": "b",
+      "explanation": "Nội dung đúng cũ có thể sai hiện tại; event invalidation phù hợp policy update thay chờ arbitrary TTL.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d10",
+          "sha256": "8eedb050729d509fcba099e1b5bba2b1c837f82af5531c976ecdc2bf2df5982a",
+          "pdf_page": 20,
+          "title": "Circuit Breakers, Caching & Reliability for Production Agents",
+          "locator": "Physical PDF page 20; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Không cần invalidation nếu similarity cao"
+        },
+        {
+          "id": "b",
+          "text": "Sự kiện policy nguồn được cập nhật"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ sau khi model weights đổi"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ khi user phản hồi sai mới được xóa"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d10-x14",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d10",
+      "topic": "p2-t3-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Kết quả thời tiết hôm nay cần cache theo hướng nào để cân freshness?",
+      "correct_answer": "a",
+      "explanation": "Weather thay đổi theo thời gian, nên TTL ngắn và key đúng tham số phù hợp hơn reuse response lâu dài.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d10",
+          "sha256": "8eedb050729d509fcba099e1b5bba2b1c837f82af5531c976ecdc2bf2df5982a",
+          "pdf_page": 20,
+          "title": "Circuit Breakers, Caching & Reliability for Production Agents",
+          "locator": "Physical PDF page 20; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tool cache với TTL ngắn"
+        },
+        {
+          "id": "b",
+          "text": "Response cache vĩnh viễn vì câu hỏi tương tự"
+        },
+        {
+          "id": "c",
+          "text": "Dùng TTL của preference 90 ngày"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ cache bất kể city/date"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d10-x15",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d10",
+      "topic": "p2-t3-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "SLI khác SLO và SLA ở vai trò nào?",
+      "correct_answer": "d",
+      "explanation": "Phân biệt đo lường, mục tiêu và cam kết giúp thiết kế error budget và vận hành theo đúng mức yêu cầu.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d10",
+          "sha256": "8eedb050729d509fcba099e1b5bba2b1c837f82af5531c976ecdc2bf2df5982a",
+          "pdf_page": 22,
+          "title": "Circuit Breakers, Caching & Reliability for Production Agents",
+          "locator": "Physical PDF page 22; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Cả ba là tên khác của một chart"
+        },
+        {
+          "id": "b",
+          "text": "SLA chỉ là metric không có commitment"
+        },
+        {
+          "id": "c",
+          "text": "SLO luôn là hợp đồng pháp lý với khách"
+        },
+        {
+          "id": "d",
+          "text": "SLI là metric đo được; SLO mục tiêu nội bộ; SLA cam kết bên ngoài"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d10-x16",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d10",
+      "topic": "p2-t3-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Chaos test provider timeout 100% cần evidence nào để chứng minh containment?",
+      "correct_answer": "c",
+      "explanation": "Chaos phải thể hiện hành vi failure/recovery thực, có state transition và recovery time thay chỉ cấu hình tồn tại.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d10",
+          "sha256": "8eedb050729d509fcba099e1b5bba2b1c837f82af5531c976ecdc2bf2df5982a",
+          "pdf_page": 24,
+          "title": "Circuit Breakers, Caching & Reliability for Production Agents",
+          "locator": "Physical PDF page 24; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ một request đúng trước khi tạo outage"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ sơ đồ lý thuyết không metric recovery"
+        },
+        {
+          "id": "c",
+          "text": "Breaker chuyển state, fallback phục vụ và không retry storm"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ code không ném exception tại lúc startup"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d10-x17",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d10",
+      "topic": "p2-t3-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Báo cáo cache trước/sau cần giữ experiment setup và config nhằm mục đích gì?",
+      "correct_answer": "a",
+      "explanation": "Config/experiment setup đi cùng metrics và failure analysis giúp so sánh có căn cứ, không chỉ một số savings rời rạc.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d10",
+          "sha256": "8eedb050729d509fcba099e1b5bba2b1c837f82af5531c976ecdc2bf2df5982a",
+          "pdf_page": 28,
+          "title": "Circuit Breakers, Caching & Reliability for Production Agents",
+          "locator": "Physical PDF page 28; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Làm kết quả latency/cost có thể tái lập và giải thích"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ cần giữ số savings cuối, không cần lưu tải và config"
+        },
+        {
+          "id": "c",
+          "text": "Cho baseline và treatment dùng tải khác nhau mà vẫn quy delta cho cache"
+        }
+      ],
+      "shuffle_options": true
+    }
+  ]
+}

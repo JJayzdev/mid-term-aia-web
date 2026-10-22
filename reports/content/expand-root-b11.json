@@ -1,0 +1,487 @@
+{
+  "batch_file": "data/questions/drafts/expand-b-11.json",
+  "reviewer_id": "root-independent-review",
+  "reviewed_at": "2026-10-22T12:17:02.040284+00:00",
+  "results": [
+    {
+      "id": "p2-t4-d01-x01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "Validation selects hyperparameters/stopping; held-out test reserved for final evaluation.",
+        "Root independently read final question/options/answer/explanation and visually checked all31 distinct cited physical pages; both PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t4-d01-x02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 12
+        }
+      ],
+      "notes": [
+        "4 neurons times (3 weights + 1 bias) = 16 trainable parameters.",
+        "Root independently read final question/options/answer/explanation and visually checked all31 distinct cited physical pages; both PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t4-d01-x03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 13
+        }
+      ],
+      "notes": [
+        "Composition of affine maps remains affine without nonlinear activations.",
+        "Root independently read final question/options/answer/explanation and visually checked all31 distinct cited physical pages; both PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t4-d01-x04",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 17
+        }
+      ],
+      "notes": [
+        "Sigmoid saturation produces small local derivative at either extreme.",
+        "Root independently read final question/options/answer/explanation and visually checked all31 distinct cited physical pages; both PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t4-d01-x05",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 18
+        }
+      ],
+      "notes": [
+        "Universal approximation asserts representation existence, not optimizer convergence.",
+        "Root independently read final question/options/answer/explanation and visually checked all31 distinct cited physical pages; both PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t4-d01-x06",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 27
+        }
+      ],
+      "notes": [
+        "Partial derivative varies one coordinate holding others fixed.",
+        "Root independently read final question/options/answer/explanation and visually checked all31 distinct cited physical pages; both PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t4-d01-x07",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 33
+        }
+      ],
+      "notes": [
+        "Finite difference has truncation-versus-roundoff trade-off; smaller h not always better.",
+        "Root independently read final question/options/answer/explanation and visually checked all31 distinct cited physical pages; both PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t4-d01-x08",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 36
+        }
+      ],
+      "notes": [
+        "Reverse-mode chain rule reuses shared gradient factors.",
+        "Root independently read final question/options/answer/explanation and visually checked all31 distinct cited physical pages; both PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t4-d01-x09",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 30
+        }
+      ],
+      "notes": [
+        "Revision2 replacement: dense Hessian has n-squared entries, distinct from gradient-checkpointing objective elsewhere.",
+        "Root independently read final question/options/answer/explanation and visually checked all31 distinct cited physical pages; both PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t4-d01-x10",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 46
+        }
+      ],
+      "notes": [
+        "Autograd differentiates supplied computation, not whether business objective was chosen correctly.",
+        "Root independently read final question/options/answer/explanation and visually checked all31 distinct cited physical pages; both PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t4-d01-x11",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 51
+        }
+      ],
+      "notes": [
+        "Squared residual gives outlier quadratic penalty.",
+        "Root independently read final question/options/answer/explanation and visually checked all31 distinct cited physical pages; both PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t4-d01-x12",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 52
+        }
+      ],
+      "notes": [
+        "Logit-space stable BCE avoids naive sigmoid/log numerical instability.",
+        "Root independently read final question/options/answer/explanation and visually checked all31 distinct cited physical pages; both PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t4-d01-x13",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 58
+        }
+      ],
+      "notes": [
+        "Smooth L1 quadratic near zero and linear far away bounds large-error gradient.",
+        "Root independently read final question/options/answer/explanation and visually checked all31 distinct cited physical pages; both PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t4-d01-x14",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 69
+        }
+      ],
+      "notes": [
+        "Revision2 explicitly asks standard deviation under independent random sampling: fourfold batch halves it, unlike variance.",
+        "Root independently read final question/options/answer/explanation and visually checked all31 distinct cited physical pages; both PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t4-d01-x15",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 71
+        }
+      ],
+      "notes": [
+        "Momentum accumulates persistent directions and damps alternating signs.",
+        "Root independently read final question/options/answer/explanation and visually checked all31 distinct cited physical pages; both PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t4-d01-x16",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 78
+        }
+      ],
+      "notes": [
+        "Revision2 distractors compare checkpoint selection rules; best validation loss addresses overfit.",
+        "Root independently read final question/options/answer/explanation and visually checked all31 distinct cited physical pages; both PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t4-d02-x01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "Shared weights independent of image area while MACs scale with output area.",
+        "Root independently read final question/options/answer/explanation and visually checked all31 distinct cited physical pages; both PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t4-d02-x02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "1x1 convolution mixes channels at each spatial position.",
+        "Root independently read final question/options/answer/explanation and visually checked all31 distinct cited physical pages; both PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t4-d02-x03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 12
+        }
+      ],
+      "notes": [
+        "Translation equivariance means output features translate with input, distinct from invariance.",
+        "Root independently read final question/options/answer/explanation and visually checked all31 distinct cited physical pages; both PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t4-d02-x04",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 14
+        }
+      ],
+      "notes": [
+        "Revision2 states intervening nonlinear activation; two 3x3 layers have RF5 and 18C-squared weights versus 25C-squared.",
+        "Root independently read final question/options/answer/explanation and visually checked all31 distinct cited physical pages; both PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t4-d02-x05",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 17
+        }
+      ],
+      "notes": [
+        "Revision2 all choices concern normalization; GroupNorm computes per sample/group for small batches.",
+        "Root independently read final question/options/answer/explanation and visually checked all31 distinct cited physical pages; both PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t4-d02-x06",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 21
+        }
+      ],
+      "notes": [
+        "RNN shares transition weights through time; length affects compute not parameter count.",
+        "Root independently read final question/options/answer/explanation and visually checked all31 distinct cited physical pages; both PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t4-d02-x07",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 24
+        }
+      ],
+      "notes": [
+        "Norm clipping only shrinks excessively large gradients; cannot amplify vanishing ones.",
+        "Root independently read final question/options/answer/explanation and visually checked all31 distinct cited physical pages; both PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t4-d02-x08",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 25
+        }
+      ],
+      "notes": [
+        "Revision2 same-mechanism gate distractors; forget gate retains old cell state.",
+        "Root independently read final question/options/answer/explanation and visually checked all31 distinct cited physical pages; both PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t4-d02-x09",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 28
+        }
+      ],
+      "notes": [
+        "Dependence on previous hidden state limits parallelism across time.",
+        "Root independently read final question/options/answer/explanation and visually checked all31 distinct cited physical pages; both PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t4-d02-x10",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 30
+        }
+      ],
+      "notes": [
+        "Query/key scores weight value vectors in soft lookup.",
+        "Root independently read final question/options/answer/explanation and visually checked all31 distinct cited physical pages; both PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t4-d02-x11",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 33
+        }
+      ],
+      "notes": [
+        "Position information distinguishes order beyond permutation-equivariant attention.",
+        "Root independently read final question/options/answer/explanation and visually checked all31 distinct cited physical pages; both PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t4-d02-x12",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 35
+        }
+      ],
+      "notes": [
+        "Cross-attention obtains queries from one set and keys/values from another.",
+        "Root independently read final question/options/answer/explanation and visually checked all31 distinct cited physical pages; both PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t4-d02-x13",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 44
+        }
+      ],
+      "notes": [
+        "Window attention lowers interaction cost; shifted windows communicate across boundaries.",
+        "Root independently read final question/options/answer/explanation and visually checked all31 distinct cited physical pages; both PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t4-d02-x14",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 57
+        }
+      ],
+      "notes": [
+        "Directional labels require geometric augmentation consistency.",
+        "Root independently read final question/options/answer/explanation and visually checked all31 distinct cited physical pages; both PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t4-d02-x15",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 58
+        }
+      ],
+      "notes": [
+        "Smaller pretrained backbone learning rate protects learned features versus new head.",
+        "Root independently read final question/options/answer/explanation and visually checked all31 distinct cited physical pages; both PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t4-d02-x16",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 70
+        }
+      ],
+      "notes": [
+        "TTA spatial predictions must be inverse-transformed before fusion.",
+        "Root independently read final question/options/answer/explanation and visually checked all31 distinct cited physical pages; both PDF hashes match catalog."
+      ]
+    }
+  ]
+}

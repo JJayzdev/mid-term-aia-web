@@ -110,7 +110,7 @@
     },
     {
       "id": "p2-t3-d01-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -121,7 +121,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Reflexion trong sơ đồ dùng text feedback để cải thiện vòng thử, không cập nhật gradient của model trong mỗi vòng.",
+      "question": "Reflexion dùng text feedback để cải thiện vòng thử, không cập nhật gradient của model trong mỗi vòng.",
       "correct_answer": true,
       "explanation": "Slide nêu dùng text feedback thay gradient và lặp đến khi đúng hoặc hết attempts.",
       "source_reference": [
@@ -137,7 +137,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ]
     },
     {
@@ -422,7 +423,7 @@
     },
     {
       "id": "p2-t3-d04-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -433,7 +434,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Triple trong knowledge graph được mô tả theo cấu trúc nào?",
+      "question": "Một triple trong knowledge graph có cấu trúc nào?",
       "correct_answer": "d",
       "explanation": "Đơn vị lõi là subject–predicate–object; entity là node, relation là edge.",
       "source_reference": [
@@ -449,7 +450,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -528,7 +530,7 @@
     },
     {
       "id": "p2-t3-d04-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -539,7 +541,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Trong mô tả KG cho RAG, retrieval có thể là graph traversal trên entities/relations thay vì chỉ chunk search.",
+      "question": "Trong hệ thống RAG dùng knowledge graph, retrieval có thể duyệt entities và relations thay vì chỉ tìm chunk văn bản.",
       "correct_answer": true,
       "explanation": "Đây là phân biệt trực tiếp ở trang 13.",
       "source_reference": [
@@ -555,7 +557,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ]
     },
     {
@@ -699,7 +702,7 @@
     },
     {
       "id": "p2-t3-d06-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -710,7 +713,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Few-shot prompt chưa đạt ngưỡng vì thiếu tri thức riêng, không phải thiếu hành vi. Theo cây quyết định nên đánh giá hướng nào trước?",
+      "question": "Few-shot prompt chưa đạt ngưỡng vì thiếu tri thức riêng, không phải thiếu hành vi. Nên đánh giá hướng xử lý nào trước?",
       "correct_answer": "c",
       "explanation": "Cây quyết định tách thiếu tri thức→RAG và thiếu hành vi→các hướng fine-tuning.",
       "source_reference": [
@@ -726,7 +729,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -805,7 +809,7 @@
     },
     {
       "id": "p2-t3-d06-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -816,7 +820,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Trong sơ đồ LoRA, số tham số trainable của hai matrix được viết r(d+k) thay vì dk.",
+      "question": "Với ma trận trọng số kích thước d × k, LoRA rank r dùng hai ma trận adapter có tổng r(d+k) tham số trainable, thay vì cập nhật toàn bộ dk tham số gốc.",
       "correct_answer": true,
       "explanation": "Nguồn đưa công thức này để thể hiện số tham số adapter.",
       "source_reference": [
@@ -832,12 +836,13 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ]
     },
     {
       "id": "p2-t3-d07-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -848,7 +853,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "DPO loại bỏ thành phần trung gian nào so với cách RLHF được đối chiếu ở đây?",
+      "question": "DPO không cần huấn luyện riêng thành phần nào vốn được dùng để chấm reward trong pipeline RLHF truyền thống?",
       "correct_answer": "d",
       "explanation": "DPO train trực tiếp trên preference pairs mà không cần Reward Model riêng.",
       "source_reference": [
@@ -864,7 +869,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -888,7 +894,7 @@
     },
     {
       "id": "p2-t3-d07-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -899,7 +905,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Theo câu hỏi ai phân biệt good/bad trên timeline, những ghép nối nào đúng? (Chọn tất cả đáp án đúng.)",
+      "question": "Những ghép nối nào đúng giữa nguồn tín hiệu đánh giá tốt/xấu và phương pháp alignment? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "d",
         "b"
@@ -918,7 +924,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -942,7 +949,7 @@
     },
     {
       "id": "p2-t3-d07-q03",
-      "revision": 2,
+      "revision": 4,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -953,23 +960,24 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Phần ORPO, SimPO & Alternatives giới thiệu single-stage alignment như một hướng bỏ bước SFT riêng biệt.",
+      "question": "Single-stage alignment có thể kết hợp việc học từ demonstration và preference trong một giai đoạn, thay cho một bước SFT riêng biệt.",
       "correct_answer": true,
-      "explanation": "Trang mở đầu phần Alternatives nêu rõ single-stage alignment và bỏ bước SFT riêng biệt.",
+      "explanation": "ORPO kết hợp SFT loss và preference loss trong cùng một objective, nên có thể huấn luyện trong một giai đoạn thay vì tách riêng bước SFT.",
       "source_reference": [
         {
           "document_id": "p2-t3-d07",
           "sha256": "ddb9aa90abbc2c87e6bc30f8b1f09dcdba93af86f73dd48fbcc03107baefd181",
-          "pdf_page": 17,
+          "pdf_page": 21,
           "title": "DPO, ORPO & Alignment — Từ SFT đến Preference Learning",
-          "locator": "Physical PDF page 17; ORPO, SimPO & Alternatives section divider",
+          "locator": "Physical PDF page 21; ORPO single-stage SFT plus preference objective",
           "verification": "needs_review"
         }
       ],
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ]
     },
     {
@@ -1025,7 +1033,7 @@
     },
     {
       "id": "p2-t3-d08-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -1036,7 +1044,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những nguyên tắc node function nào được checklist production nêu? (Chọn tất cả đáp án đúng.)",
+      "question": "Những nguyên tắc nào giúp node function an toàn khi retry và cập nhật state? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "c",
         "b"
@@ -1055,7 +1063,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -1269,7 +1278,7 @@
     },
     {
       "id": "p2-t3-d10-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -1280,7 +1289,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Circuit breaker ở trạng thái OPEN có hành vi nào trong sơ đồ?",
+      "question": "Circuit breaker ở trạng thái OPEN xử lý lời gọi đến dependency như thế nào?",
       "correct_answer": "c",
       "explanation": "OPEN fail fast; HALF-OPEN cho phép probe call; CLOSED gọi bình thường.",
       "source_reference": [
@@ -1296,7 +1305,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -1407,7 +1417,7 @@
     },
     {
       "id": "p2-t3-d11-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -1418,7 +1428,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Primitive MCP nào được bảng mô tả là dữ liệu read-only theo URI do app cung cấp làm context?",
+      "question": "Primitive MCP nào cung cấp dữ liệu chỉ đọc theo URI để ứng dụng dùng làm context?",
       "correct_answer": "d",
       "explanation": "Resources là read-only data; Tools là callable functions; Prompts là templates.",
       "source_reference": [
@@ -1434,7 +1444,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {

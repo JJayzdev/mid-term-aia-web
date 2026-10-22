@@ -1,0 +1,262 @@
+{
+  "batch_file": "reports/expansion/wording-change-set.json",
+  "reviewer_id": "reviewer",
+  "reviewed_at": "2026-10-22T14:35:52.709046+00:00",
+  "results": [
+    {
+      "id": "p1-d04-q03",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d04",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "p9: Harness runtime gồm sandbox/quyền/trace, a,b đúng. Stem nêu mô hình bốn lớp; context-token selection và một-message wording không là toàn bộ harness.",
+        "Draft: data/questions/drafts/phase1-remaining.json"
+      ]
+    },
+    {
+      "id": "p1-d11-q02",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d11",
+          "pdf_page": 5
+        }
+      ],
+      "notes": [
+        "p5: Adversarial tests trước/sau và HITL decision flow là evidence kiểm guardrails/human escalation; a,c đúng. Demo thuận lợi hoặc hứa loại mọi risk không đủ kiểm chứng.",
+        "Draft: data/questions/drafts/pilot-001.json"
+      ]
+    },
+    {
+      "id": "p1-d14-q03",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d14",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "p9: Offline batch golden dataset phù hợp release/prompt change; True đúng. Không suy offline đủ thay continuous/human evaluation.",
+        "Draft: data/questions/drafts/pilot-001.json"
+      ]
+    },
+    {
+      "id": "p2-t4-d05-q01",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d05",
+          "pdf_page": 18
+        }
+      ],
+      "notes": [
+        "p18: Predict theo dynamics rồi update bằng phép đo mới; c đúng. Bỏ cả prediction hoặc measurement không là vòng lặp Kalman.",
+        "Draft: data/questions/drafts/root-track4.json"
+      ]
+    },
+    {
+      "id": "p2-t4-d07-q02",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d07",
+          "pdf_page": 27
+        }
+      ],
+      "notes": [
+        "p27: ByteTrack low-score vòng hai cứu existing track, không khởi tạo mới; False đúng. Stem gọi rõ ByteTrack, không còn phụ thuộc sơ đồ.",
+        "Draft: data/questions/drafts/root-track4.json"
+      ]
+    },
+    {
+      "id": "p2-t4-d11-q03",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d11",
+          "pdf_page": 36
+        }
+      ],
+      "notes": [
+        "p36: Quy trình giả định kiểm IoU giữa conditioning box và box detector tìm lại trong ảnh sinh; c đúng. Stem đã nêu quy trình có điều kiện, không gọi đây là chuẩn công bố.",
+        "Draft: data/questions/drafts/root-track4.json"
+      ]
+    },
+    {
+      "id": "p2-t1-d10-q02",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t1-d10",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "p9: Taxonomy Champions ở high influence/high interest; True đúng. Thuật ngữ nhóm xác định điều đang kiểm.",
+        "Draft: data/questions/drafts/track1.json"
+      ]
+    },
+    {
+      "id": "p2-t1-d10-q03",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t1-d10",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "p9: Hai trục hỏi ảnh hưởng đến kết quả và quan tâm dự án; a,b đúng. Title cao hoặc đã dùng AI không thay hai trục.",
+        "Draft: data/questions/drafts/track1.json"
+      ]
+    },
+    {
+      "id": "p2-t2-d12-q01",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d12",
+          "pdf_page": 6
+        }
+      ],
+      "notes": [
+        "p6: Freshness đo thời gian cập nhật/so SLA; d đúng. Schema/lineage/volume không trực tiếp kiểm độ trễ nguồn.",
+        "Draft: data/questions/drafts/track2.json"
+      ]
+    },
+    {
+      "id": "p2-t2-d13-q01",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d13",
+          "pdf_page": 10
+        }
+      ],
+      "notes": [
+        "p10: Audit trail giữ token cost per component và model version used; a,c đúng. Chỉ uptime/user count không trace request/model/cost.",
+        "Draft: data/questions/drafts/track2.json"
+      ]
+    },
+    {
+      "id": "p2-t3-d04-q01",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d04",
+          "pdf_page": 13
+        }
+      ],
+      "notes": [
+        "p13: Triple subject–predicate–object; d đúng. Embedding-score/chunk-overlap/prompt-token không là KG triple.",
+        "Draft: data/questions/drafts/track3.json"
+      ]
+    },
+    {
+      "id": "p2-t3-d04-q03",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d04",
+          "pdf_page": 13
+        }
+      ],
+      "notes": [
+        "p13: Graph retrieval có thể traverse entities/relations thay chỉ chunk search; True đúng với điều kiện hệ RAG dùng KG.",
+        "Draft: data/questions/drafts/track3.json"
+      ]
+    },
+    {
+      "id": "p2-t3-d07-q01",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d07",
+          "pdf_page": 12
+        }
+      ],
+      "notes": [
+        "p12: DPO train preference pairs trực tiếp, không cần Reward Model riêng; d đúng. Không loại dữ liệu preference hoặc trainable policy.",
+        "Draft: data/questions/drafts/track3.json"
+      ]
+    },
+    {
+      "id": "p2-t3-d07-q02",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d07",
+          "pdf_page": 18
+        }
+      ],
+      "notes": [
+        "p18: Human preference ghép RLHF/DPO, verifiable code/regex ghép RLVR; b,d đúng. Stem hỏi ghép nguồn tín hiệu, không bắt nhớ timeline.",
+        "Draft: data/questions/drafts/track3.json"
+      ]
+    },
+    {
+      "id": "p2-t3-d07-q03",
+      "revision": 4,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d07",
+          "pdf_page": 21
+        }
+      ],
+      "notes": [
+        "p21: ORPO kết hợp SFT loss + preference loss trong cùng objective; True đúng với từ có thể. Retest r4 đã thay citation p17 section divider bằng p21 support trực tiếp.",
+        "Draft: data/questions/drafts/track3.json"
+      ]
+    },
+    {
+      "id": "p2-t3-d08-q02",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d08",
+          "pdf_page": 16
+        }
+      ],
+      "notes": [
+        "p16: Node retry idempotent và return partial update; b,c đúng. Không mutate toàn state hoặc bỏ timeout dựa graph tự hết lỗi.",
+        "Draft: data/questions/drafts/track3.json"
+      ]
+    },
+    {
+      "id": "p2-t3-d11-q01",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d11",
+          "pdf_page": 10
+        }
+      ],
+      "notes": [
+        "p10: MCP Resources cung cấp read-only data qua URI làm context; d đúng. Tools callable, prompts templates, sampling completions là primitive khác.",
+        "Draft: data/questions/drafts/track3.json"
+      ]
+    }
+  ]
+}

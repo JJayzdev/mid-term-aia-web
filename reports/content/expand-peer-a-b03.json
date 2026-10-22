@@ -1,0 +1,517 @@
+{
+  "batch_file": "data/questions/drafts/expand-b-03.json",
+  "reviewer_id": "peer-reviewer-a",
+  "reviewed_at": "2026-10-22T10:31:42.417422+00:00",
+  "results": [
+    {
+      "id": "p2-t2-d07-x01",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d07",
+          "pdf_page": 7
+        }
+      ],
+      "notes": [
+        "LLMOps expands prompt/embedding/version drift.",
+        "Independent final-item semantic read, all33 physical pages visually inspected in tmp/root-review/expand-b-03/pages-01..09.png; six legacy objectives checked."
+      ]
+    },
+    {
+      "id": "p2-t2-d07-x02",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d07",
+          "pdf_page": 8
+        }
+      ],
+      "notes": [
+        "Compound pipeline versioning includes all behavior dependencies.",
+        "Independent final-item semantic read, all33 physical pages visually inspected in tmp/root-review/expand-b-03/pages-01..09.png; six legacy objectives checked."
+      ]
+    },
+    {
+      "id": "p2-t2-d07-x03",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d07",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "Floating point/batching means temperature zero is not bitwise guarantee.",
+        "Independent final-item semantic read, all33 physical pages visually inspected in tmp/root-review/expand-b-03/pages-01..09.png; six legacy objectives checked."
+      ]
+    },
+    {
+      "id": "p2-t2-d07-x04",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d07",
+          "pdf_page": 13
+        }
+      ],
+      "notes": [
+        "Prompt version is paired to model snapshot.",
+        "Independent final-item semantic read, all33 physical pages visually inspected in tmp/root-review/expand-b-03/pages-01..09.png; six legacy objectives checked."
+      ]
+    },
+    {
+      "id": "p2-t2-d07-x05",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d07",
+          "pdf_page": 17
+        }
+      ],
+      "notes": [
+        "Commit explanation needs change, evidence and tradeoff.",
+        "Independent final-item semantic read, all33 physical pages visually inspected in tmp/root-review/expand-b-03/pages-01..09.png; six legacy objectives checked."
+      ]
+    },
+    {
+      "id": "p2-t2-d07-x06",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d07",
+          "pdf_page": 19
+        }
+      ],
+      "notes": [
+        "Registry webhook sync to Git supplies backup/CI.",
+        "Independent final-item semantic read, all33 physical pages visually inspected in tmp/root-review/expand-b-03/pages-01..09.png; six legacy objectives checked."
+      ]
+    },
+    {
+      "id": "p2-t2-d07-x07",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d07",
+          "pdf_page": 23
+        }
+      ],
+      "notes": [
+        "Stale-while-revalidate serves old version then refreshes background.",
+        "Independent final-item semantic read, all33 physical pages visually inspected in tmp/root-review/expand-b-03/pages-01..09.png; six legacy objectives checked."
+      ]
+    },
+    {
+      "id": "p2-t2-d07-x08",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d07",
+          "pdf_page": 23
+        }
+      ],
+      "notes": [
+        "TTL changes propagation and rollback time.",
+        "Independent final-item semantic read, all33 physical pages visually inspected in tmp/root-review/expand-b-03/pages-01..09.png; six legacy objectives checked."
+      ]
+    },
+    {
+      "id": "p2-t2-d07-x09",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d07",
+          "pdf_page": 26
+        }
+      ],
+      "notes": [
+        "Production label is a privileged release surface.",
+        "Independent final-item semantic read, all33 physical pages visually inspected in tmp/root-review/expand-b-03/pages-01..09.png; six legacy objectives checked."
+      ]
+    },
+    {
+      "id": "p2-t2-d07-x10",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d07",
+          "pdf_page": 28
+        }
+      ],
+      "notes": [
+        "Gate covers prompt/model/retrieval config changes.",
+        "Independent final-item semantic read, all33 physical pages visually inspected in tmp/root-review/expand-b-03/pages-01..09.png; six legacy objectives checked."
+      ]
+    },
+    {
+      "id": "p2-t2-d07-x11",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d07",
+          "pdf_page": 29
+        }
+      ],
+      "notes": [
+        "Declarative YAML tests accessible to PM review.",
+        "Independent final-item semantic read, all33 physical pages visually inspected in tmp/root-review/expand-b-03/pages-01..09.png; six legacy objectives checked."
+      ]
+    },
+    {
+      "id": "p2-t2-d07-x12",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d07",
+          "pdf_page": 41
+        }
+      ],
+      "notes": [
+        "Stable prefix before dynamic suffix preserves reuse.",
+        "Independent final-item semantic read, all33 physical pages visually inspected in tmp/root-review/expand-b-03/pages-01..09.png; six legacy objectives checked."
+      ]
+    },
+    {
+      "id": "p2-t2-d07-x13",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d07",
+          "pdf_page": 45
+        }
+      ],
+      "notes": [
+        "Nondeterministic prefix invalidators diagnose cache miss.",
+        "Independent final-item semantic read, all33 physical pages visually inspected in tmp/root-review/expand-b-03/pages-01..09.png; six legacy objectives checked."
+      ]
+    },
+    {
+      "id": "p2-t2-d07-x14",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d07",
+          "pdf_page": 49
+        }
+      ],
+      "notes": [
+        "Historical prices need version for valid cost comparison.",
+        "Independent final-item semantic read, all33 physical pages visually inspected in tmp/root-review/expand-b-03/pages-01..09.png; six legacy objectives checked."
+      ]
+    },
+    {
+      "id": "p2-t2-d07-x15",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d07",
+          "pdf_page": 50
+        }
+      ],
+      "notes": [
+        "Cache rate per prompt version distinguishes cost causes.",
+        "Independent final-item semantic read, all33 physical pages visually inspected in tmp/root-review/expand-b-03/pages-01..09.png; six legacy objectives checked."
+      ]
+    },
+    {
+      "id": "p2-t2-d07-x16",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d07",
+          "pdf_page": 52
+        }
+      ],
+      "notes": [
+        "Guardrail threshold included in versioned behavior bundle.",
+        "Independent final-item semantic read, all33 physical pages visually inspected in tmp/root-review/expand-b-03/pages-01..09.png; six legacy objectives checked."
+      ]
+    },
+    {
+      "id": "p2-t2-d07-x17",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d07",
+          "pdf_page": 62
+        }
+      ],
+      "notes": [
+        "Task-specific procedures are lazy-loaded context.",
+        "Independent final-item semantic read, all33 physical pages visually inspected in tmp/root-review/expand-b-03/pages-01..09.png; six legacy objectives checked."
+      ]
+    },
+    {
+      "id": "p2-t2-d08-x01",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d08",
+          "pdf_page": 7
+        }
+      ],
+      "notes": [
+        "Weights load and warm GPU cost distinguish AI DR.",
+        "Independent final-item semantic read, all33 physical pages visually inspected in tmp/root-review/expand-b-03/pages-01..09.png; six legacy objectives checked."
+      ]
+    },
+    {
+      "id": "p2-t2-d08-x02",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d08",
+          "pdf_page": 8
+        }
+      ],
+      "notes": [
+        "Monitoring co-region can fail with workload.",
+        "Independent final-item semantic read, all33 physical pages visually inspected in tmp/root-review/expand-b-03/pages-01..09.png; six legacy objectives checked."
+      ]
+    },
+    {
+      "id": "p2-t2-d08-x03",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d08",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "RTO distinguished from detection/ack/RPO; revised credible alternatives checked.",
+        "Independent final-item semantic read, all33 physical pages visually inspected in tmp/root-review/expand-b-03/pages-01..09.png; six legacy objectives checked."
+      ]
+    },
+    {
+      "id": "p2-t2-d08-x04",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d08",
+          "pdf_page": 13
+        }
+      ],
+      "notes": [
+        "Active-active writes require conflict resolution.",
+        "Independent final-item semantic read, all33 physical pages visually inspected in tmp/root-review/expand-b-03/pages-01..09.png; six legacy objectives checked."
+      ]
+    },
+    {
+      "id": "p2-t2-d08-x05",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d08",
+          "pdf_page": 14
+        }
+      ],
+      "notes": [
+        "DNS caches can delay actual cutover.",
+        "Independent final-item semantic read, all33 physical pages visually inspected in tmp/root-review/expand-b-03/pages-01..09.png; six legacy objectives checked."
+      ]
+    },
+    {
+      "id": "p2-t2-d08-x06",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d08",
+          "pdf_page": 15
+        }
+      ],
+      "notes": [
+        "Checksums validate replicated content.",
+        "Independent final-item semantic read, all33 physical pages visually inspected in tmp/root-review/expand-b-03/pages-01..09.png; six legacy objectives checked."
+      ]
+    },
+    {
+      "id": "p2-t2-d08-x07",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d08",
+          "pdf_page": 17
+        }
+      ],
+      "notes": [
+        "Routing/compute/state all need recovery.",
+        "Independent final-item semantic read, all33 physical pages visually inspected in tmp/root-review/expand-b-03/pages-01..09.png; six legacy objectives checked."
+      ]
+    },
+    {
+      "id": "p2-t2-d08-x08",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d08",
+          "pdf_page": 19
+        }
+      ],
+      "notes": [
+        "Embedding version must match restored index; different restore application from B02 migration item.",
+        "Independent final-item semantic read, all33 physical pages visually inspected in tmp/root-review/expand-b-03/pages-01..09.png; six legacy objectives checked."
+      ]
+    },
+    {
+      "id": "p2-t2-d08-x09",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d08",
+          "pdf_page": 20
+        }
+      ],
+      "notes": [
+        "Artifact and metadata backup must be consistent.",
+        "Independent final-item semantic read, all33 physical pages visually inspected in tmp/root-review/expand-b-03/pages-01..09.png; six legacy objectives checked."
+      ]
+    },
+    {
+      "id": "p2-t2-d08-x10",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d08",
+          "pdf_page": 21
+        }
+      ],
+      "notes": [
+        "PITR protects against replicated logical corruption.",
+        "Independent final-item semantic read, all33 physical pages visually inspected in tmp/root-review/expand-b-03/pages-01..09.png; six legacy objectives checked."
+      ]
+    },
+    {
+      "id": "p2-t2-d08-x11",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d08",
+          "pdf_page": 22
+        }
+      ],
+      "notes": [
+        "Component backup cadence follows its RPO.",
+        "Independent final-item semantic read, all33 physical pages visually inspected in tmp/root-review/expand-b-03/pages-01..09.png; six legacy objectives checked."
+      ]
+    },
+    {
+      "id": "p2-t2-d08-x12",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d08",
+          "pdf_page": 24
+        }
+      ],
+      "notes": [
+        "Confirm limits flapping; revised same-context alternatives checked.",
+        "Independent final-item semantic read, all33 physical pages visually inspected in tmp/root-review/expand-b-03/pages-01..09.png; six legacy objectives checked."
+      ]
+    },
+    {
+      "id": "p2-t2-d08-x13",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d08",
+          "pdf_page": 25
+        }
+      ],
+      "notes": [
+        "Warm standby/preloaded weights lower cold recovery time.",
+        "Independent final-item semantic read, all33 physical pages visually inspected in tmp/root-review/expand-b-03/pages-01..09.png; six legacy objectives checked."
+      ]
+    },
+    {
+      "id": "p2-t2-d08-x14",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d08",
+          "pdf_page": 26
+        }
+      ],
+      "notes": [
+        "Golden signals verify actual service recovery.",
+        "Independent final-item semantic read, all33 physical pages visually inspected in tmp/root-review/expand-b-03/pages-01..09.png; six legacy objectives checked."
+      ]
+    },
+    {
+      "id": "p2-t2-d08-x15",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d08",
+          "pdf_page": 27
+        }
+      ],
+      "notes": [
+        "Shared IAM/billing is common failure domain; revised distractors checked.",
+        "Independent final-item semantic read, all33 physical pages visually inspected in tmp/root-review/expand-b-03/pages-01..09.png; six legacy objectives checked."
+      ]
+    },
+    {
+      "id": "p2-t2-d08-x16",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d08",
+          "pdf_page": 28
+        }
+      ],
+      "notes": [
+        "Blameless actions have owner/deadline.",
+        "Independent final-item semantic read, all33 physical pages visually inspected in tmp/root-review/expand-b-03/pages-01..09.png; six legacy objectives checked."
+      ]
+    },
+    {
+      "id": "p2-t2-d08-x17",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d08",
+          "pdf_page": 35
+        }
+      ],
+      "notes": [
+        "Chaos staging/kill switch/on-call safety supported.",
+        "Independent final-item semantic read, all33 physical pages visually inspected in tmp/root-review/expand-b-03/pages-01..09.png; six legacy objectives checked."
+      ]
+    }
+  ]
+}

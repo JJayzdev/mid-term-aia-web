@@ -10,4 +10,6 @@ Build mới phát hiện kiểu `number` suy rộng trong regression test lịch
 
 Root chạy12E2E trên production preview:12/12 PASS,0skipped/flaky,21,4giây; `tmp/qa/wording-preview-browser-results.json`. Đề60câu và36/24quota vẫn đúng. Các bài cũ giữ nguyên nội dung snapshot trong lịch sử.
 
-Deploy/live verification cập nhật sau publish.
+Đã deploy GitHub Pages: source `c3f2b23cff5d9a3687932ece6c437c2243c0c247`, Pages `27208b78644d9cd04f61cb2840af27e9fe0c26aa`; Pages báo `built`. HTTP HTML, JS/CSS, favicon và ba JSON đều200; JSON công khai khớp bản đã duyệt. Bằng chứng `tmp/qa/wording-live-http-verification.json`.
+
+Root chạy lại đủ12E2E trên URL công khai: **12/12 PASS**,0skipped/flaky,29,8giây. Bằng chứng `tmp/qa/wording-live-browser-results.json`. Đường dẫn: https://jjayzdev.github.io/mid-term-aia-web/ .

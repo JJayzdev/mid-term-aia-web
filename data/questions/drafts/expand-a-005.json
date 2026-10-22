@@ -1,0 +1,2351 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.22.expansion-a-005",
+  "questions": [
+    {
+      "id": "p1-d13-x01",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d13",
+      "topic": "p1-d13",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "RED và USE nhìn hệ thống từ hai góc nào?",
+      "correct_answer": "c",
+      "explanation": "RED gồm rate/errors/duration; USE gồm utilization/saturation/errors của resource.",
+      "source_reference": [
+        {
+          "document_id": "p1-d13",
+          "sha256": "8995a58726b43d4f4c0f67c660087205328c5d654d7a6a894c8bcfb1003ae96f",
+          "pdf_page": 22,
+          "title": "Monitoring, Logging & Observability",
+          "locator": "Physical PDF page 22",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "RED theo tài nguyên; USE chỉ theo chất lượng final answer"
+        },
+        {
+          "id": "b",
+          "text": "Cả hai chỉ đo CPU/RAM, không đo request latency"
+        },
+        {
+          "id": "c",
+          "text": "RED theo requests; USE theo tài nguyên và saturation"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d13-x02",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d13",
+      "topic": "p1-d13",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao latency trung bình có thể che trải nghiệm xấu của một nhóm người dùng?",
+      "correct_answer": "b",
+      "explanation": "Percentiles thể hiện phần đuôi phân bố mà một số trung bình có thể làm mờ.",
+      "source_reference": [
+        {
+          "document_id": "p1-d13",
+          "sha256": "8995a58726b43d4f4c0f67c660087205328c5d654d7a6a894c8bcfb1003ae96f",
+          "pdf_page": 23,
+          "title": "Monitoring, Logging & Observability",
+          "locator": "Physical PDF page 23",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Average chỉ đo token đầu tiên nên bỏ qua total duration"
+        },
+        {
+          "id": "b",
+          "text": "Một số request ở long tail có thể rất chậm dù average vẫn thấp"
+        },
+        {
+          "id": "c",
+          "text": "Average luôn bằng P95 nên không cần percentile"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d13-x03",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d13",
+      "topic": "p1-d13",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "TTFT đo khoảng thời gian nào?",
+      "correct_answer": "a",
+      "explanation": "TTFT phản ánh thời điểm người dùng bắt đầu thấy phản hồi, khác inter-token và tổng latency.",
+      "source_reference": [
+        {
+          "document_id": "p1-d13",
+          "sha256": "8995a58726b43d4f4c0f67c660087205328c5d654d7a6a894c8bcfb1003ae96f",
+          "pdf_page": 23,
+          "title": "Monitoring, Logging & Observability",
+          "locator": "Physical PDF page 23",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Từ khi gửi request đến token đầu tiên"
+        },
+        {
+          "id": "b",
+          "text": "Từ token đầu đến token cuối"
+        },
+        {
+          "id": "c",
+          "text": "Trung bình khoảng cách giữa các output tokens"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d13-x04",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d13",
+      "topic": "p1-d13",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao nên phối hợp heuristic, judge, user signal và outcome trong quality monitoring?",
+      "correct_answer": "c",
+      "explanation": "Kiểm tự động rẻ giúp phát hiện sớm; feedback/outcome xác nhận tác động thực tế.",
+      "source_reference": [
+        {
+          "document_id": "p1-d13",
+          "sha256": "8995a58726b43d4f4c0f67c660087205328c5d654d7a6a894c8bcfb1003ae96f",
+          "pdf_page": 26,
+          "title": "Monitoring, Logging & Observability",
+          "locator": "Physical PDF page 26",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Heuristic đúng format là đủ thay toàn bộ task success và user outcome"
+        },
+        {
+          "id": "b",
+          "text": "Outcome đến chậm nên không có ích để kiểm chứng xu hướng quality"
+        },
+        {
+          "id": "c",
+          "text": "Các tầng có cost/độ trễ/độ gần business value khác nhau và bổ sung nhau"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d13-x05",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d13",
+      "topic": "p1-d13",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những metric nào trực tiếp hỗ trợ chẩn đoán hành vi gọi tool? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "d",
+        "a"
+      ],
+      "explanation": "Tool failures cần được đo ở selection/args/execution/repetition, không chỉ endpoint health.",
+      "source_reference": [
+        {
+          "document_id": "p1-d13",
+          "sha256": "8995a58726b43d4f4c0f67c660087205328c5d654d7a6a894c8bcfb1003ae96f",
+          "pdf_page": 29,
+          "title": "Monitoring, Logging & Observability",
+          "locator": "Physical PDF page 29",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Loop rate và argument hallucination"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ latency tổng của endpoint"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ số lượng documents trong corpus"
+        },
+        {
+          "id": "d",
+          "text": "Schema-fail/timeout rate"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d13-x06",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d13",
+      "topic": "p1-d13",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao error taxonomy hữu ích hơn chỉ ghi error rate tổng?",
+      "correct_answer": "a",
+      "explanation": "Một tỷ lệ tổng không nói lỗi nằm ở dependency nào hay cần fallback/re-prompt/giảm context.",
+      "source_reference": [
+        {
+          "document_id": "p1-d13",
+          "sha256": "8995a58726b43d4f4c0f67c660087205328c5d654d7a6a894c8bcfb1003ae96f",
+          "pdf_page": 30,
+          "title": "Monitoring, Logging & Observability",
+          "locator": "Physical PDF page 30",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Giúp phân biệt provider timeout, tool schema, guardrail block hoặc context overflow để chọn owner/cách xử lý"
+        },
+        {
+          "id": "b",
+          "text": "Mọi loại lỗi đều nên dùng cùng một retry policy"
+        },
+        {
+          "id": "c",
+          "text": "Error rate thấp tự bảo đảm không có một loại lỗi nghiêm trọng tập trung ở một flow"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d13-x07",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d13",
+      "topic": "p1-d13",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Policy đổi làm cùng một input nay cần output khác đang thể hiện loại drift nào?",
+      "correct_answer": "c",
+      "explanation": "Concept drift là mapping input→output thay đổi; khác distribution đầu vào hoặc behavior model.",
+      "source_reference": [
+        {
+          "document_id": "p1-d13",
+          "sha256": "8995a58726b43d4f4c0f67c660087205328c5d654d7a6a894c8bcfb1003ae96f",
+          "pdf_page": 31,
+          "title": "Monitoring, Logging & Observability",
+          "locator": "Physical PDF page 31",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Data drift chỉ do user dùng cách diễn đạt mới"
+        },
+        {
+          "id": "b",
+          "text": "Model drift chỉ do provider thay model snapshot"
+        },
+        {
+          "id": "c",
+          "text": "Concept drift"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d13-x08",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d13",
+      "topic": "p1-d13",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những trường nào giúp điều tra một LLM call mà không phải log raw prompt nhạy cảm? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation": "Telemetry cấu trúc giữ thông tin vận hành nhưng giảm dữ liệu bí mật không cần thiết.",
+      "source_reference": [
+        {
+          "document_id": "p1-d13",
+          "sha256": "8995a58726b43d4f4c0f67c660087205328c5d654d7a6a894c8bcfb1003ae96f",
+          "pdf_page": 35,
+          "title": "Monitoring, Logging & Observability",
+          "locator": "Physical PDF page 35",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Prompt template ID và model/version"
+        },
+        {
+          "id": "b",
+          "text": "Token counts, latency, finish reason và sanitized tool results"
+        },
+        {
+          "id": "c",
+          "text": "API key đầy đủ để đối chiếu tài khoản"
+        },
+        {
+          "id": "d",
+          "text": "Raw prompt chứa PII để tránh cần correlation ID"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d13-x09",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d13",
+      "topic": "p1-d13",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Fallback đã được dùng nhưng request vẫn hoàn thành ở trạng thái degraded thường phù hợp log level nào hơn một fatal failure?",
+      "correct_answer": "a",
+      "explanation": "WARN diễn tả suy giảm nhưng còn chạy; ERROR dành cho thất bại cần chú ý.",
+      "source_reference": [
+        {
+          "document_id": "p1-d13",
+          "sha256": "8995a58726b43d4f4c0f67c660087205328c5d654d7a6a894c8bcfb1003ae96f",
+          "pdf_page": 38,
+          "title": "Monitoring, Logging & Observability",
+          "locator": "Physical PDF page 38",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "WARN"
+        },
+        {
+          "id": "b",
+          "text": "DEBUG như thông tin chỉ dùng trong dev"
+        },
+        {
+          "id": "c",
+          "text": "ERROR dù đã có fallback thành công và không còn lỗi cần can thiệp"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d13-x10",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d13",
+      "topic": "p1-d13",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Correlation ID giải quyết nhu cầu nào khi request đi qua nhiều service?",
+      "correct_answer": "c",
+      "explanation": "Một ID xuyên service giúp đi từ sự kiện đầu vào đến response và làm cầu nối với tracing.",
+      "source_reference": [
+        {
+          "document_id": "p1-d13",
+          "sha256": "8995a58726b43d4f4c0f67c660087205328c5d654d7a6a894c8bcfb1003ae96f",
+          "pdf_page": 39,
+          "title": "Monitoring, Logging & Observability",
+          "locator": "Physical PDF page 39",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Xác định hai user có cùng preference hay không"
+        },
+        {
+          "id": "b",
+          "text": "Thay model version để xác định prompt nào được dùng"
+        },
+        {
+          "id": "c",
+          "text": "Nối các log entries của cùng một request"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d13-x11",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d13",
+      "topic": "p1-d13",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Head sampling và tail sampling khác nhau ở thời điểm quyết định giữ trace thế nào?",
+      "correct_answer": "b",
+      "explanation": "Tail có thêm kết quả để giữ errors/slow runs nhưng chi phí thu thập/quản lý cao hơn.",
+      "source_reference": [
+        {
+          "document_id": "p1-d13",
+          "sha256": "8995a58726b43d4f4c0f67c660087205328c5d654d7a6a894c8bcfb1003ae96f",
+          "pdf_page": 41,
+          "title": "Monitoring, Logging & Observability",
+          "locator": "Physical PDF page 41",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Cả hai luôn giữ đúng cùng traces bất kể kết quả thực thi"
+        },
+        {
+          "id": "b",
+          "text": "Head quyết định lúc đầu; tail đợi kết thúc để chọn theo lỗi/outlier"
+        },
+        {
+          "id": "c",
+          "text": "Head chỉ giữ error sau khi xong; tail quyết định ngẫu nhiên trước khi chạy"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d13-x12",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d13",
+      "topic": "p1-d13",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Audit log khác app log chủ yếu ở mục đích và tính toàn vẹn nào?",
+      "correct_answer": "a",
+      "explanation": "Audit phục vụ accountability/forensics; không được xử lý như log debug có thể sample tùy ý.",
+      "source_reference": [
+        {
+          "document_id": "p1-d13",
+          "sha256": "8995a58726b43d4f4c0f67c660087205328c5d654d7a6a894c8bcfb1003ae96f",
+          "pdf_page": 43,
+          "title": "Monitoring, Logging & Observability",
+          "locator": "Physical PDF page 43",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Ghi ai làm gì khi nào, append-only và truy cập hạn chế"
+        },
+        {
+          "id": "b",
+          "text": "Ưu tiên debug text tùy sửa/xóa để giảm volume"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ chứa latency tổng, không cần danh tính hay hành động"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d13-x13",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d13",
+      "topic": "p1-d13",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một trace và các spans có quan hệ nào?",
+      "correct_answer": "c",
+      "explanation": "Span tree thể hiện cấu trúc và thời gian để tìm bottleneck trong hành trình request.",
+      "source_reference": [
+        {
+          "document_id": "p1-d13",
+          "sha256": "8995a58726b43d4f4c0f67c660087205328c5d654d7a6a894c8bcfb1003ae96f",
+          "pdf_page": 45,
+          "title": "Monitoring, Logging & Observability",
+          "locator": "Physical PDF page 45",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Mỗi span luôn là một request độc lập không thể liên kết"
+        },
+        {
+          "id": "b",
+          "text": "Trace chỉ là total latency, không có thời gian từng bước"
+        },
+        {
+          "id": "c",
+          "text": "Trace bao gồm các spans của một request, có quan hệ cha–con giữa các bước"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d13-x14",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d13",
+      "topic": "p1-d13",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Instrumentation bằng OpenTelemetry giúp giảm vendor lock-in theo cách nào?",
+      "correct_answer": "b",
+      "explanation": "OTel tách lớp thu telemetry khỏi backend lưu/hiển thị, có thể xuất nhiều đích.",
+      "source_reference": [
+        {
+          "document_id": "p1-d13",
+          "sha256": "8995a58726b43d4f4c0f67c660087205328c5d654d7a6a894c8bcfb1003ae96f",
+          "pdf_page": 47,
+          "title": "Monitoring, Logging & Observability",
+          "locator": "Physical PDF page 47",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Đổi storage backend luôn phải viết lại mọi log statement"
+        },
+        {
+          "id": "b",
+          "text": "Sinh/xuất telemetry theo chuẩn để gửi đến nhiều backend"
+        },
+        {
+          "id": "c",
+          "text": "Mã ứng dụng chỉ có thể gửi tới một dashboard độc quyền"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d13-x15",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d13",
+      "topic": "p1-d13",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Triệu chứng nào thích hợp để page hơn một chỉ số nguyên nhân chưa ảnh hưởng người dùng?",
+      "correct_answer": "a",
+      "explanation": "Paging nên gắn tác động mà user cảm nhận; resource metrics hỗ trợ chẩn đoán nguyên nhân.",
+      "source_reference": [
+        {
+          "document_id": "p1-d13",
+          "sha256": "8995a58726b43d4f4c0f67c660087205328c5d654d7a6a894c8bcfb1003ae96f",
+          "pdf_page": 56,
+          "title": "Monitoring, Logging & Observability",
+          "locator": "Physical PDF page 56",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Error rate hoặc latency user-facing vượt ngưỡng"
+        },
+        {
+          "id": "b",
+          "text": "Cache miss cao nhưng service vẫn đáp ứng SLO"
+        },
+        {
+          "id": "c",
+          "text": "CPU tăng trong một batch nền không ảnh hưởng request"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d13-x16",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d13",
+      "topic": "p1-d13",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một alert đủ hành động được cần nối current value/severity/impact với thông tin nào?",
+      "correct_answer": "c",
+      "explanation": "Alert phải giúp người trực hiểu tác động và bước xử lý ngay, không chỉ báo có số bất thường.",
+      "source_reference": [
+        {
+          "document_id": "p1-d13",
+          "sha256": "8995a58726b43d4f4c0f67c660087205328c5d654d7a6a894c8bcfb1003ae96f",
+          "pdf_page": 59,
+          "title": "Monitoring, Logging & Observability",
+          "locator": "Physical PDF page 59",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ tên metric để người trực tự tìm mọi ngữ cảnh"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ threshold, không cần trạng thái hiện tại hoặc nơi xử lý"
+        },
+        {
+          "id": "c",
+          "text": "Dashboard/trace đã lọc, runbook và on-call owner"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d13-x17",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d13",
+      "topic": "p1-d13",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những biện pháp nào giảm PII leakage trong logs/traces ngay từ nguồn? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "d",
+        "a",
+        "b"
+      ],
+      "explanation": "Không thu dữ liệu không cần thiết giảm bề mặt rủi ro và gánh nặng retention/deletion.",
+      "source_reference": [
+        {
+          "document_id": "p1-d13",
+          "sha256": "8995a58726b43d4f4c0f67c660087205328c5d654d7a6a894c8bcfb1003ae96f",
+          "pdf_page": 74,
+          "title": "Monitoring, Logging & Observability",
+          "locator": "Physical PDF page 74",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Dùng template ID thay raw sensitive prompt"
+        },
+        {
+          "id": "b",
+          "text": "Hash định danh khi không cần giữ bản gốc"
+        },
+        {
+          "id": "c",
+          "text": "Capture mọi content rồi chỉ hạn chế quyền dashboard"
+        },
+        {
+          "id": "d",
+          "text": "Mask/redact và allowlist fields cần log"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d14-x01",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d14",
+      "topic": "p1-d14",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Partial credit và weighted scoring khác binary completion ở điểm nào?",
+      "correct_answer": "c",
+      "explanation": "Binary đơn giản nhưng mất thông tin; partial/weighted mô tả tiến độ và tầm quan trọng.",
+      "source_reference": [
+        {
+          "document_id": "p1-d14",
+          "sha256": "289c3c8ca8e63d8f0eb71be1822bd1149213ac29ff648f0722439ff1dcfd53af",
+          "pdf_page": 20,
+          "title": "AI Evaluation & Benchmarking",
+          "locator": "Physical PDF page 20",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ đổi nhãn pass thành một con số nhưng không xét subtasks"
+        },
+        {
+          "id": "b",
+          "text": "Tự bảo đảm một agent hoàn thành task khi nó làm nhiều bước hơn"
+        },
+        {
+          "id": "c",
+          "text": "Cho biết phần việc đạt được và mức quan trọng từng bước, thay vì chỉ pass/fail toàn task"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d14-x02",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d14",
+      "topic": "p1-d14",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Với câu trả lời open-ended nhiều cách diễn đạt đúng, vì sao exact match thường chưa đủ?",
+      "correct_answer": "b",
+      "explanation": "Exact match phù hợp câu ngắn/factual hoặc sanity check; nuance cần judge/human được calibrate.",
+      "source_reference": [
+        {
+          "document_id": "p1-d14",
+          "sha256": "289c3c8ca8e63d8f0eb71be1822bd1149213ac29ff648f0722439ff1dcfd53af",
+          "pdf_page": 21,
+          "title": "AI Evaluation & Benchmarking",
+          "locator": "Physical PDF page 21",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "LLM judge không cần calibration vì thay được mọi expert"
+        },
+        {
+          "id": "b",
+          "text": "Khác câu chữ có thể vẫn tương đương nghĩa, cần phương pháp đánh giá nuance phù hợp"
+        },
+        {
+          "id": "c",
+          "text": "Exact match luôn nhận ra mọi paraphrase có nghĩa tương đương"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d14-x03",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d14",
+      "topic": "p1-d14",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những yếu tố nào làm golden dataset đáng tin cậy hơn? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "b",
+        "c",
+        "d"
+      ],
+      "explanation": "Nhãn đúng và phạm vi đại diện quyết định evaluation có phản ánh hệ thống thực hay không.",
+      "source_reference": [
+        {
+          "document_id": "p1-d14",
+          "sha256": "289c3c8ca8e63d8f0eb71be1822bd1149213ac29ff648f0722439ff1dcfd53af",
+          "pdf_page": 27,
+          "title": "AI Evaluation & Benchmarking",
+          "locator": "Physical PDF page 27",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ gồm các query demo dễ nhất đã pass"
+        },
+        {
+          "id": "b",
+          "text": "Expected answers được expert review"
+        },
+        {
+          "id": "c",
+          "text": "Bao phủ use cases và độ khó khác nhau"
+        },
+        {
+          "id": "d",
+          "text": "Có edge/adversarial cases"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d14-x04",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d14",
+      "topic": "p1-d14",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "LLM-generated QA pairs thích hợp cho bootstrapping với điều kiện nào?",
+      "correct_answer": "c",
+      "explanation": "Sinh nhanh tạo nền ban đầu nhưng cần chỉnh nhãn/phạm vi bằng domain judgment và dữ liệu thực.",
+      "source_reference": [
+        {
+          "document_id": "p1-d14",
+          "sha256": "289c3c8ca8e63d8f0eb71be1822bd1149213ac29ff648f0722439ff1dcfd53af",
+          "pdf_page": 28,
+          "title": "AI Evaluation & Benchmarking",
+          "locator": "Physical PDF page 28",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Giữ nguyên mọi generated label để tránh human bias"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ dùng data tổng hợp rồi bỏ production failures vì khó chuẩn hóa"
+        },
+        {
+          "id": "c",
+          "text": "Human filter/fix và bổ sung cases thực/giá trị cao"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d14-x05",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d14",
+      "topic": "p1-d14",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Cohen’s kappa bổ sung gì so với tỷ lệ agreement quan sát thuần túy?",
+      "correct_answer": "b",
+      "explanation": "Kappa phân biệt agreement thực với mức có thể xuất hiện bởi chance, giúp đánh giá rubric/label consistency.",
+      "source_reference": [
+        {
+          "document_id": "p1-d14",
+          "sha256": "289c3c8ca8e63d8f0eb71be1822bd1149213ac29ff648f0722439ff1dcfd53af",
+          "pdf_page": 31,
+          "title": "AI Evaluation & Benchmarking",
+          "locator": "Physical PDF page 31",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ tính accuracy của model so với một labeler duy nhất"
+        },
+        {
+          "id": "b",
+          "text": "Điều chỉnh agreement kỳ vọng do ngẫu nhiên"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ đo tỷ lệ agreement thô, không điều chỉnh phần có thể do chance"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d14-x06",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d14",
+      "topic": "p1-d14",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Stratified sampling giúp benchmark đại diện hơn bằng cách nào?",
+      "correct_answer": "a",
+      "explanation": "Cấu trúc sample cần phản ánh các lát cắt và edge cases, không chỉ số lượng tổng.",
+      "source_reference": [
+        {
+          "document_id": "p1-d14",
+          "sha256": "289c3c8ca8e63d8f0eb71be1822bd1149213ac29ff648f0722439ff1dcfd53af",
+          "pdf_page": 32,
+          "title": "AI Evaluation & Benchmarking",
+          "locator": "Physical PDF page 32",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Giữ samples cho từng use case, difficulty và user type thay vì chỉ lấy case dễ phổ biến"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ lấy use case có traffic lớn nhất rồi bỏ mọi nhóm còn lại"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ tăng tổng số sample mà không xét composition"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d14-x07",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d14",
+      "topic": "p1-d14",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Reference-based và reference-free evaluation khác nhau ở căn cứ chấm nào?",
+      "correct_answer": "c",
+      "explanation": "Cả hai cần tiêu chí rõ; có hay không ground truth quyết định cách dùng và calibration.",
+      "source_reference": [
+        {
+          "document_id": "p1-d14",
+          "sha256": "289c3c8ca8e63d8f0eb71be1822bd1149213ac29ff648f0722439ff1dcfd53af",
+          "pdf_page": 38,
+          "title": "AI Evaluation & Benchmarking",
+          "locator": "Physical PDF page 38",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Reference-free không cần tiêu chí nào, chỉ cần model thích answer"
+        },
+        {
+          "id": "b",
+          "text": "Reference-based chỉ chấm format còn reference-free mới được chấm nội dung"
+        },
+        {
+          "id": "c",
+          "text": "Reference-based so với đáp án chuẩn; reference-free xét rubric khi không có reference chắc chắn"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d14-x08",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d14",
+      "topic": "p1-d14",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong pairwise judging, đổi thứ tự A/B giúp kiểm soát bias nào?",
+      "correct_answer": "b",
+      "explanation": "Judge có thể ưu tiên vị trí xuất hiện, nên swap/randomize giúp phát hiện thiên lệch thứ tự.",
+      "source_reference": [
+        {
+          "document_id": "p1-d14",
+          "sha256": "289c3c8ca8e63d8f0eb71be1822bd1149213ac29ff648f0722439ff1dcfd53af",
+          "pdf_page": 39,
+          "title": "AI Evaluation & Benchmarking",
+          "locator": "Physical PDF page 39",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Self-preference bias khi một answer do model cùng family tạo ra"
+        },
+        {
+          "id": "b",
+          "text": "Position bias"
+        },
+        {
+          "id": "c",
+          "text": "Verbosity bias do một answer dài hơn answer còn lại"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d14-x09",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d14",
+      "topic": "p1-d14",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Judge thường cho answer dài điểm cao hơn dù không thêm thông tin. Cách giảm verbosity bias nào phù hợp?",
+      "correct_answer": "a",
+      "explanation": "Tách độ dài khỏi quality tránh việc văn bản dài nhận lợi thế không xứng đáng.",
+      "source_reference": [
+        {
+          "document_id": "p1-d14",
+          "sha256": "289c3c8ca8e63d8f0eb71be1822bd1149213ac29ff648f0722439ff1dcfd53af",
+          "pdf_page": 41,
+          "title": "AI Evaluation & Benchmarking",
+          "locator": "Physical PDF page 41",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Rubric chấp nhận câu ngắn đúng và đo length riêng"
+        },
+        {
+          "id": "b",
+          "text": "Bổ sung yêu cầu answer phải dài hơn baseline"
+        },
+        {
+          "id": "c",
+          "text": "Coi độ dài là bằng chứng correctness trong mọi domain"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d14-x10",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d14",
+      "topic": "p1-d14",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao binary judge theo từng failure mode hữu ích cho CI gate hơn một điểm tổng mơ hồ?",
+      "correct_answer": "c",
+      "explanation": "Các verdict riêng như hallucination/policy/relevance chuyển thành tỷ lệ lỗi có thể chẩn đoán.",
+      "source_reference": [
+        {
+          "document_id": "p1-d14",
+          "sha256": "289c3c8ca8e63d8f0eb71be1822bd1149213ac29ff648f0722439ff1dcfd53af",
+          "pdf_page": 42,
+          "title": "AI Evaluation & Benchmarking",
+          "locator": "Physical PDF page 42",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Một điểm tổng luôn xác định được chính xác module và lỗi cần sửa"
+        },
+        {
+          "id": "b",
+          "text": "Binary cho phép bỏ critique và bỏ kiểm tra nhãn người"
+        },
+        {
+          "id": "c",
+          "text": "FAIL gắn lỗi cụ thể dẫn tới hành động sửa rõ, giảm ranh giới điểm chủ quan"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d14-x11",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d14",
+      "topic": "p1-d14",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trước khi dùng LLM judge làm tín hiệu chất lượng, calibration cần đối chiếu với gì?",
+      "correct_answer": "b",
+      "explanation": "Cùng outputs, rubric và nhãn người giúp đo mức agreement/lỗi của judge trước khi dựa vào nó.",
+      "source_reference": [
+        {
+          "document_id": "p1-d14",
+          "sha256": "289c3c8ca8e63d8f0eb71be1822bd1149213ac29ff648f0722439ff1dcfd53af",
+          "pdf_page": 43,
+          "title": "AI Evaluation & Benchmarking",
+          "locator": "Physical PDF page 43",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ so với một LLM judge khác, không có human labels làm đối chiếu"
+        },
+        {
+          "id": "b",
+          "text": "Human labels trên cùng tập outputs và rubric"
+        },
+        {
+          "id": "c",
+          "text": "Một tập answer khác do cùng judge tự sinh và tự chấm"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d14-x12",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d14",
+      "topic": "p1-d14",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao chạy 5 lần trên cùng 20 items không tạo ra 100 mẫu độc lập?",
+      "correct_answer": "a",
+      "explanation": "Lặp giúp giảm noise trong item nhưng không thay việc có thêm item độc lập.",
+      "source_reference": [
+        {
+          "document_id": "p1-d14",
+          "sha256": "289c3c8ca8e63d8f0eb71be1822bd1149213ac29ff648f0722439ff1dcfd53af",
+          "pdf_page": 53,
+          "title": "AI Evaluation & Benchmarking",
+          "locator": "Physical PDF page 53",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Các run trên cùng item tương quan; item khó vẫn khó qua nhiều lần"
+        },
+        {
+          "id": "b",
+          "text": "Mỗi run luôn có output giống hệt nên chỉ có một sample"
+        },
+        {
+          "id": "c",
+          "text": "Số run nhiều tự động tăng số dạng nhiệm vụ được bao phủ"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d14-x13",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d14",
+      "topic": "p1-d14",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "So sánh hai version bằng paired difference theo cùng item giúp điều gì?",
+      "correct_answer": "c",
+      "explanation": "Ghép cùng item tách bớt chênh lệch do composition/độ khó, cần báo uncertainty của hiệu số.",
+      "source_reference": [
+        {
+          "document_id": "p1-d14",
+          "sha256": "289c3c8ca8e63d8f0eb71be1822bd1149213ac29ff648f0722439ff1dcfd53af",
+          "pdf_page": 55,
+          "title": "AI Evaluation & Benchmarking",
+          "locator": "Physical PDF page 55",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Biến các run lặp trên một item thành các item độc lập"
+        },
+        {
+          "id": "b",
+          "text": "Tự tăng mức significance chỉ bằng tăng n mà không chọn alpha"
+        },
+        {
+          "id": "c",
+          "text": "Kiểm soát độ khó item chung, thường giảm phương sai của hiệu số"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d14-x14",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d14",
+      "topic": "p1-d14",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao gate outcome không nên ép agent phải đi đúng một trajectory mẫu?",
+      "correct_answer": "b",
+      "explanation": "Chấm outcome phân biệt mục tiêu đạt được với một cách giải duy nhất, còn trace giúp hiểu hành vi.",
+      "source_reference": [
+        {
+          "document_id": "p1-d14",
+          "sha256": "289c3c8ca8e63d8f0eb71be1822bd1149213ac29ff648f0722439ff1dcfd53af",
+          "pdf_page": 59,
+          "title": "AI Evaluation & Benchmarking",
+          "locator": "Physical PDF page 59",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ kiểm từng tool name là đủ bỏ qua kết quả task"
+        },
+        {
+          "id": "b",
+          "text": "Có thể tồn tại một đường khác vẫn đạt kết quả đúng; trace hữu ích riêng để chẩn đoán"
+        },
+        {
+          "id": "c",
+          "text": "Mọi trajectory khác nhau đều dẫn tới outcome khác nhau"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d14-x15",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d14",
+      "topic": "p1-d14",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "pass@k và pass^k khác nhau ở sự kiện thành công nào?",
+      "correct_answer": "a",
+      "explanation": "Một metric biểu thị capability có thể làm được, metric kia nhấn mạnh độ tin cậy lặp lại.",
+      "source_reference": [
+        {
+          "document_id": "p1-d14",
+          "sha256": "289c3c8ca8e63d8f0eb71be1822bd1149213ac29ff648f0722439ff1dcfd53af",
+          "pdf_page": 62,
+          "title": "AI Evaluation & Benchmarking",
+          "locator": "Physical PDF page 62",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "pass@k: ít nhất một lần; pass^k: cả k lần đều thành công"
+        },
+        {
+          "id": "b",
+          "text": "pass@k: cả k lần; pass^k: ít nhất một lần"
+        },
+        {
+          "id": "c",
+          "text": "Cả hai chỉ đo lần chạy tốt nhất và luôn tăng cùng nhau theo k"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d14-x16",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d14",
+      "topic": "p1-d14",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Failure clustering nên ưu tiên sửa theo tiêu chí nào?",
+      "correct_answer": "c",
+      "explanation": "Sửa một nguyên nhân chung có thể giải nhiều triệu chứng; taxonomy rồi cluster tạo đòn bẩy cải thiện.",
+      "source_reference": [
+        {
+          "document_id": "p1-d14",
+          "sha256": "289c3c8ca8e63d8f0eb71be1822bd1149213ac29ff648f0722439ff1dcfd53af",
+          "pdf_page": 74,
+          "title": "AI Evaluation & Benchmarking",
+          "locator": "Physical PDF page 74",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Sửa ngẫu nhiên từng output riêng để tăng số ticket đã đóng"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ sửa case có wording dễ thay nhất trong prompt"
+        },
+        {
+          "id": "c",
+          "text": "Nhóm root cause có nhiều failure và impact cao"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d15-x01",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d15",
+      "topic": "p1-d15",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Hệ thống có ràng buộc dữ liệu không ra mạng ngoài và chỉ được chạy trong mạng air-gapped. Quyết định deploy cần ưu tiên gì?",
+      "correct_answer": "c",
+      "explanation": "Ràng buộc enterprise có thể quyết định nơi chạy, trước lựa chọn tiện lợi của platform.",
+      "source_reference": [
+        {
+          "document_id": "p1-d15",
+          "sha256": "58007c609954673decc7bdb3a0c7f5dc0cbeabb57c7dd27e7c3806f2c469b694",
+          "pdf_page": 9,
+          "title": "Triển Khai Thực Tế, Chi Phí Vận Hành & Định Hướng Chuyên Sâu",
+          "locator": "Physical PDF page 9",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Đẩy mọi request lên cloud API vì triển khai nhanh hơn"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ đổi giao diện rồi giữ nguyên đường truyền dữ liệu ra ngoài"
+        },
+        {
+          "id": "c",
+          "text": "Kiến trúc đáp ứng ràng buộc residency/network, có thể cần on-premise"
+        }
+      ],
+      "shuffle_options": true,
+      "context": "Đây là yêu cầu thiết kế đã được chủ hệ thống xác nhận cho workload."
+    },
+    {
+      "id": "p1-d15-x02",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d15",
+      "topic": "p1-d15",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Hybrid deployment có thể phân tách sensitive và non-sensitive workloads thế nào?",
+      "correct_answer": "b",
+      "explanation": "Hybrid kết hợp vị trí xử lý theo tính chất dữ liệu, trade-off control và khả năng triển khai.",
+      "source_reference": [
+        {
+          "document_id": "p1-d15",
+          "sha256": "58007c609954673decc7bdb3a0c7f5dc0cbeabb57c7dd27e7c3806f2c469b694",
+          "pdf_page": 10,
+          "title": "Triển Khai Thực Tế, Chi Phí Vận Hành & Định Hướng Chuyên Sâu",
+          "locator": "Physical PDF page 10",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Giữ toàn bộ workload on-prem nhưng gọi đó là hybrid chỉ vì có browser UI"
+        },
+        {
+          "id": "b",
+          "text": "Giữ dữ liệu nhạy cảm ở on-prem, route phần phù hợp sang cloud API"
+        },
+        {
+          "id": "c",
+          "text": "Gửi mọi dữ liệu lên cloud rồi xóa bản local để tăng control"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d15-x03",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d15",
+      "topic": "p1-d15",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Giả sử tháng này dùng 2 triệu input tokens giá 1 USD/triệu và 0,5 triệu output tokens giá 4 USD/triệu, không có chi phí khác. Token cost tháng là bao nhiêu?",
+      "correct_answer": "b",
+      "explanation": "Input cost=2×1=2 USD; output cost=0,5×4=2 USD; tổng=4 USD. Đây là giá giả định cho bài toán, không phải báo giá hiện hành.",
+      "source_reference": [
+        {
+          "document_id": "p1-d15",
+          "sha256": "58007c609954673decc7bdb3a0c7f5dc0cbeabb57c7dd27e7c3806f2c469b694",
+          "pdf_page": 14,
+          "title": "Triển Khai Thực Tế, Chi Phí Vận Hành & Định Hướng Chuyên Sâu",
+          "locator": "Physical PDF page 14",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "10 USD vì áp giá output cho mọi token"
+        },
+        {
+          "id": "b",
+          "text": "4 USD"
+        },
+        {
+          "id": "c",
+          "text": "2,5 USD vì coi giá input áp cho cả output"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d15-x04",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d15",
+      "topic": "p1-d15",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Budget chỉ nhân giá token với traffic có thể thiếu những phần nào? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation": "Các đường phụ và vòng kiểm soát cũng tiêu compute/LLM/human effort nên cần tính tổng.",
+      "source_reference": [
+        {
+          "document_id": "p1-d15",
+          "sha256": "58007c609954673decc7bdb3a0c7f5dc0cbeabb57c7dd27e7c3806f2c469b694",
+          "pdf_page": 14,
+          "title": "Triển Khai Thực Tế, Chi Phí Vận Hành & Định Hướng Chuyên Sâu",
+          "locator": "Physical PDF page 14",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Retry overhead và các LLM calls của guardrails"
+        },
+        {
+          "id": "b",
+          "text": "Monitoring và eval pipeline"
+        },
+        {
+          "id": "c",
+          "text": "Cộng lại token cost của call chính đã được tính đầy đủ để tăng tổng budget"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ tính happy-path call rồi xem retry/guardrail là đã nằm sẵn trong token estimate"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d15-x05",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d15",
+      "topic": "p1-d15",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao nên nâng deployment tier theo traffic thực thay vì tối ưu quy mô lớn ngay từ MVP?",
+      "correct_answer": "b",
+      "explanation": "Khởi đầu theo nhu cầu nhỏ rồi tăng mức đầu tư khi tải và yêu cầu thực đòi hỏi.",
+      "source_reference": [
+        {
+          "document_id": "p1-d15",
+          "sha256": "58007c609954673decc7bdb3a0c7f5dc0cbeabb57c7dd27e7c3806f2c469b694",
+          "pdf_page": 15,
+          "title": "Triển Khai Thực Tế, Chi Phí Vận Hành & Định Hướng Chuyên Sâu",
+          "locator": "Physical PDF page 15",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "MVP không cần đo traffic vì chỉ có giai đoạn Scale mới có người dùng"
+        },
+        {
+          "id": "b",
+          "text": "Tránh đầu tư độ phức tạp/cost trước khi nhu cầu chứng minh cần thiết"
+        },
+        {
+          "id": "c",
+          "text": "Stack đắt hơn luôn tạo user value cao hơn"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d15-x06",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d15",
+      "topic": "p1-d15",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Semantic caching giảm chi phí trong workload nào trực tiếp nhất?",
+      "correct_answer": "a",
+      "explanation": "Cache response theo similarity hữu ích khi query lặp nghĩa, nhưng phải xét tính còn hiệu lực.",
+      "source_reference": [
+        {
+          "document_id": "p1-d15",
+          "sha256": "58007c609954673decc7bdb3a0c7f5dc0cbeabb57c7dd27e7c3806f2c469b694",
+          "pdf_page": 17,
+          "title": "Triển Khai Thực Tế, Chi Phí Vận Hành & Định Hướng Chuyên Sâu",
+          "locator": "Physical PDF page 17",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Nhiều câu hỏi gần nghĩa có thể tái dùng response phù hợp"
+        },
+        {
+          "id": "b",
+          "text": "Mỗi request có dữ liệu độc nhất thay đổi liên tục và không thể tái sử dụng"
+        },
+        {
+          "id": "c",
+          "text": "Mọi action ghi tiền cần được thực thi lại dù intent đã có kết quả"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d15-x07",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d15",
+      "topic": "p1-d15",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Prompt compression tối ưu khoản nào bằng cơ chế nào?",
+      "correct_answer": "c",
+      "explanation": "Compression rút ngắn context trước call, khác routing model hoặc tái dùng response.",
+      "source_reference": [
+        {
+          "document_id": "p1-d15",
+          "sha256": "58007c609954673decc7bdb3a0c7f5dc0cbeabb57c7dd27e7c3806f2c469b694",
+          "pdf_page": 17,
+          "title": "Triển Khai Thực Tế, Chi Phí Vận Hành & Định Hướng Chuyên Sâu",
+          "locator": "Physical PDF page 17",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Giảm output cost bằng cách không thu thập evidence"
+        },
+        {
+          "id": "b",
+          "text": "Thay mọi context bằng câu trả lời cũ từ semantic cache"
+        },
+        {
+          "id": "c",
+          "text": "Giảm input tokens bằng cách giữ ý cần thiết trong context ngắn hơn"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d15-x08",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d15",
+      "topic": "p1-d15",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Model routing cân bằng cost/quality bằng cách nào?",
+      "correct_answer": "b",
+      "explanation": "Routing dùng độ khó/use case để dành năng lực đắt hơn cho nơi tạo giá trị.",
+      "source_reference": [
+        {
+          "document_id": "p1-d15",
+          "sha256": "58007c609954673decc7bdb3a0c7f5dc0cbeabb57c7dd27e7c3806f2c469b694",
+          "pdf_page": 18,
+          "title": "Triển Khai Thực Tế, Chi Phí Vận Hành & Định Hướng Chuyên Sâu",
+          "locator": "Physical PDF page 18",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chọn model rẻ cho mọi task rồi bỏ kiểm tra quality khi task khó"
+        },
+        {
+          "id": "b",
+          "text": "Phân loại độ khó, đưa simple task tới model rẻ và complex task tới model mạnh"
+        },
+        {
+          "id": "c",
+          "text": "Chọn cùng model mạnh nhất cho mọi query để coi cost là cố định"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d15-x09",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d15",
+      "topic": "p1-d15",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Queue-based processing giúp xử lý traffic spike theo cơ chế nào?",
+      "correct_answer": "a",
+      "explanation": "Queue làm mượt tải, cho người dùng trạng thái đang xử lý khi công việc chưa xong.",
+      "source_reference": [
+        {
+          "document_id": "p1-d15",
+          "sha256": "58007c609954673decc7bdb3a0c7f5dc0cbeabb57c7dd27e7c3806f2c469b694",
+          "pdf_page": 20,
+          "title": "Triển Khai Thực Tế, Chi Phí Vận Hành & Định Hướng Chuyên Sâu",
+          "locator": "Physical PDF page 20",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Buffer công việc và xử lý có điều phối thay vì làm mọi request timeout"
+        },
+        {
+          "id": "b",
+          "text": "Tự tăng tốc model bằng cách xóa mọi request còn chờ"
+        },
+        {
+          "id": "c",
+          "text": "Cho mọi request chạy đồng thời không giới hạn dependency capacity"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d15-x10",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d15",
+      "topic": "p1-d15",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Khi LLM provider gặp outage, circuit breaker/fallback nhằm đạt mục tiêu nào?",
+      "correct_answer": "c",
+      "explanation": "Breaker hạn chế cascading load và dùng cache/message/provider khác theo policy.",
+      "source_reference": [
+        {
+          "document_id": "p1-d15",
+          "sha256": "58007c609954673decc7bdb3a0c7f5dc0cbeabb57c7dd27e7c3806f2c469b694",
+          "pdf_page": 20,
+          "title": "Triển Khai Thực Tế, Chi Phí Vận Hành & Định Hướng Chuyên Sâu",
+          "locator": "Physical PDF page 20",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tăng retry tới provider lỗi mà không giới hạn để đạt success"
+        },
+        {
+          "id": "b",
+          "text": "Giữ trạng thái closed bất kể error rate để tránh thay đường xử lý"
+        },
+        {
+          "id": "c",
+          "text": "Ngừng gọi dependency lỗi và giữ trải nghiệm suy giảm có kiểm soát"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d15-x11",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d15",
+      "topic": "p1-d15",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Horizontal scaling của agent cần điều kiện trạng thái nào để nhiều instance phối hợp?",
+      "correct_answer": "b",
+      "explanation": "Nhiều instance cần truy cập state nhất quán thay vì phụ thuộc một process cụ thể.",
+      "source_reference": [
+        {
+          "document_id": "p1-d15",
+          "sha256": "58007c609954673decc7bdb3a0c7f5dc0cbeabb57c7dd27e7c3806f2c469b694",
+          "pdf_page": 20,
+          "title": "Triển Khai Thực Tế, Chi Phí Vận Hành & Định Hướng Chuyên Sâu",
+          "locator": "Physical PDF page 20",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Mỗi instance tự giữ một bản state không đồng bộ nhưng vẫn xử lý cùng session"
+        },
+        {
+          "id": "b",
+          "text": "Stateless compute với state được externalize phù hợp"
+        },
+        {
+          "id": "c",
+          "text": "Mọi session chỉ nằm trong RAM instance và mất khi route sang instance khác"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d15-x12",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d15",
+      "topic": "p1-d15",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một nhóm đang thiếu PRD, risk assessment và ROI model cần tăng cường năng lực nào trước?",
+      "correct_answer": "a",
+      "explanation": "Định nghĩa giá trị, requirement, risk và economics là nhóm năng lực business, khác infra hay model mechanics.",
+      "source_reference": [
+        {
+          "document_id": "p1-d15",
+          "sha256": "58007c609954673decc7bdb3a0c7f5dc0cbeabb57c7dd27e7c3806f2c469b694",
+          "pdf_page": 22,
+          "title": "Triển Khai Thực Tế, Chi Phí Vận Hành & Định Hướng Chuyên Sâu",
+          "locator": "Physical PDF page 22",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Business/product judgment"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ inference-kernel optimization"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ model alignment training"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d15-x13",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d15",
+      "topic": "p1-d15",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "AI exposure cao của một nghề cho phép kết luận chắc chắn nào về mất việc?",
+      "correct_answer": "c",
+      "explanation": "Khả năng tác động nhiệm vụ khác automation thực tế và khác net employment change.",
+      "source_reference": [
+        {
+          "document_id": "p1-d15",
+          "sha256": "58007c609954673decc7bdb3a0c7f5dc0cbeabb57c7dd27e7c3806f2c469b694",
+          "pdf_page": 28,
+          "title": "Triển Khai Thực Tế, Chi Phí Vận Hành & Định Hướng Chuyên Sâu",
+          "locator": "Physical PDF page 28",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Exposure chính là tỷ lệ lao động đã mất việc thực tế"
+        },
+        {
+          "id": "b",
+          "text": "Exposure tự chứng minh mọi nhiệm vụ sẽ được tự động hóa hoàn toàn"
+        },
+        {
+          "id": "c",
+          "text": "Không thể đồng nhất với mất việc; exposure nói nhiệm vụ có thể được AI hỗ trợ/thực hiện"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d15-x14",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d15",
+      "topic": "p1-d15",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Khi AI hỗ trợ nhiều phần viết code, những kỹ năng nào vẫn quan trọng để chịu trách nhiệm sản phẩm? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "c",
+        "d"
+      ],
+      "explanation": "Tự động hóa một phần execution không thay việc định nghĩa đúng, kiểm chứng và phối hợp giải pháp.",
+      "source_reference": [
+        {
+          "document_id": "p1-d15",
+          "sha256": "58007c609954673decc7bdb3a0c7f5dc0cbeabb57c7dd27e7c3806f2c469b694",
+          "pdf_page": 36,
+          "title": "Triển Khai Thực Tế, Chi Phí Vận Hành & Định Hướng Chuyên Sâu",
+          "locator": "Physical PDF page 36",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ tăng tốc gõ code, bỏ việc kiểm chứng kết quả"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ biết gọi tool là đủ thay mọi phán đoán bối cảnh"
+        },
+        {
+          "id": "c",
+          "text": "Kiểm soát chất lượng output và tư duy phản biện"
+        },
+        {
+          "id": "d",
+          "text": "Thu thập yêu cầu, thiết kế hệ thống và giao tiếp liên chức năng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d15-x15",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d15",
+      "topic": "p1-d15",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Lựa chọn hướng chuyên môn cá nhân nên kết hợp những trục nào thay vì chỉ nhìn một dự báo tăng trưởng?",
+      "correct_answer": "a",
+      "explanation": "Fit cá nhân nằm ở giao điểm thị trường, năng lực và động lực, không có hướng tuyệt đối đúng cho mọi người.",
+      "source_reference": [
+        {
+          "document_id": "p1-d15",
+          "sha256": "58007c609954673decc7bdb3a0c7f5dc0cbeabb57c7dd27e7c3806f2c469b694",
+          "pdf_page": 42,
+          "title": "Triển Khai Thực Tế, Chi Phí Vận Hành & Định Hướng Chuyên Sâu",
+          "locator": "Physical PDF page 42",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Cơ hội, rào cản gia nhập, sở thích và mức sẵn sàng năng lực"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ chức danh có tốc độ tăng trưởng cao nhất"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ chọn mảng có demo dễ làm nhất bất kể sở thích/nền tảng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d15-x16",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d15",
+      "topic": "p1-d15",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Bộ deliverable nào thể hiện trọng tâm AI infrastructure/data rõ nhất?",
+      "correct_answer": "c",
+      "explanation": "Infrastructure tập trung đường dữ liệu, serving và vận hành đáng tin cậy, khác product strategy.",
+      "source_reference": [
+        {
+          "document_id": "p1-d15",
+          "sha256": "58007c609954673decc7bdb3a0c7f5dc0cbeabb57c7dd27e7c3806f2c469b694",
+          "pdf_page": 45,
+          "title": "Triển Khai Thực Tế, Chi Phí Vận Hành & Định Hướng Chuyên Sâu",
+          "locator": "Physical PDF page 45",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Business plan, pricing và go-to-market strategy"
+        },
+        {
+          "id": "b",
+          "text": "Bộ user interviews và brand positioning không có hạ tầng vận hành"
+        },
+        {
+          "id": "c",
+          "text": "Production data pipeline, self-hosted serving, CI/CD và monitoring"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d15-x17",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d15",
+      "topic": "p1-d15",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Nhu cầu phát triển agent có memory dài hạn, GraphRAG và fine-tuning thuộc trọng tâm kỹ thuật nào?",
+      "correct_answer": "b",
+      "explanation": "Đây là các năng lực xây hành vi và tri thức của ứng dụng agent, bổ sung cho nền hạ tầng.",
+      "source_reference": [
+        {
+          "document_id": "p1-d15",
+          "sha256": "58007c609954673decc7bdb3a0c7f5dc0cbeabb57c7dd27e7c3806f2c469b694",
+          "pdf_page": 46,
+          "title": "Triển Khai Thực Tế, Chi Phí Vận Hành & Định Hướng Chuyên Sâu",
+          "locator": "Physical PDF page 46",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ quản lý quota GPU, không cần logic ứng dụng"
+        },
+        {
+          "id": "b",
+          "text": "AI application/agent engineering"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ financial modeling và market sizing"
+        }
+      ],
+      "shuffle_options": true
+    }
+  ]
+}

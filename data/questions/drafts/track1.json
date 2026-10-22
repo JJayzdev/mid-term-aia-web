@@ -229,7 +229,7 @@
     },
     {
       "id": "p2-t1-d02-q03",
-      "revision": 2,
+      "revision": 3,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 1,
@@ -240,7 +240,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những điều nào là outcome mong muốn của ví dụ? (Chọn tất cả đáp án đúng.)",
+      "question": "Một dịch vụ gọi xe muốn cải thiện việc tài xế và hành khách tìm thấy nhau tại điểm đón. Những kết quả nào thể hiện outcome mong muốn? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "a",
         "b"
@@ -259,7 +259,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -559,7 +560,7 @@
     },
     {
       "id": "p2-t1-d05-q01",
-      "revision": 2,
+      "revision": 3,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 1,
@@ -570,7 +571,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Lớp Responsible AI chủ yếu chuyển giá trị thành điều gì theo sơ đồ?",
+      "question": "Responsible AI chuyển các giá trị đạo đức thành những yếu tố vận hành nào?",
       "correct_answer": "b",
       "explanation": "Responsible AI là tầng hành động/hệ vận hành biến giá trị thành process/roles/accountability.",
       "source_reference": [
@@ -586,7 +587,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -610,7 +612,7 @@
     },
     {
       "id": "p2-t1-d05-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 1,
@@ -621,7 +623,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "AI Safety Evaluation trong sơ đồ đặt câu hỏi về failure, harm và ngưỡng chặn launch.",
+      "question": "AI Safety Evaluation xem xét các dạng thất bại, tác hại và ngưỡng chặn triển khai.",
       "correct_answer": true,
       "explanation": "Tầng kiểm tra yêu cầu bằng chứng và safeguard trước deployment.",
       "source_reference": [
@@ -637,12 +639,13 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ]
     },
     {
       "id": "p2-t1-d05-q03",
-      "revision": 2,
+      "revision": 3,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 1,
@@ -653,7 +656,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những mục nào thuộc lớp AI Ethics trong sơ đồ? (Chọn tất cả đáp án đúng.)",
+      "question": "Những giá trị nào thuộc AI Ethics? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "a",
         "b"
@@ -672,7 +675,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -1246,7 +1250,7 @@
     },
     {
       "id": "p2-t1-d10-q01",
-      "revision": 1,
+      "revision": 3,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 1,
@@ -1257,7 +1261,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Stakeholder có ảnh hưởng cao nhưng quan tâm thấp được sơ đồ xếp nhóm nào?",
+      "question": "Trong mô hình phân nhóm stakeholder Champions–Blockers–Supporters–Bystanders theo ảnh hưởng và quan tâm, stakeholder có ảnh hưởng cao nhưng quan tâm thấp thuộc nhóm nào?",
       "correct_answer": "b",
       "explanation": "Ma trận dùng hai trục ảnh hưởng và quan tâm; cao/thấp là nhóm cần thuyết phục.",
       "source_reference": [
@@ -1273,7 +1277,9 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -1297,7 +1303,7 @@
     },
     {
       "id": "p2-t1-d10-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 1,
@@ -1308,7 +1314,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Champions có ảnh hưởng cao và quan tâm cao theo ma trận.",
+      "question": "Trong ma trận ảnh hưởng–quan tâm, Champions có ảnh hưởng cao và quan tâm cao.",
       "correct_answer": true,
       "explanation": "Nguồn đặt champions ở ô ảnh hưởng cao/quan tâm cao.",
       "source_reference": [
@@ -1324,12 +1330,13 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ]
     },
     {
       "id": "p2-t1-d10-q03",
-      "revision": 2,
+      "revision": 3,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 1,
@@ -1340,7 +1347,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những câu hỏi nào dùng để đặt stakeholder lên ma trận? (Chọn tất cả đáp án đúng.)",
+      "question": "Những câu hỏi nào giúp phân loại stakeholder theo hai trục ảnh hưởng và quan tâm? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "a",
         "b"
@@ -1359,7 +1366,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {

@@ -1,0 +1,2389 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.22.expansion-a-007",
+  "questions": [
+    {
+      "id": "p2-t1-d04-x01",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d04",
+      "topic": "p2-t1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vibe check ở giai đoạn prototype nhằm mục đích chính nào?",
+      "correct_answer": "c",
+      "explanation": "Quan sát model chạy giúp xác định giới hạn và yêu cầu sản phẩm thực tế.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d04",
+          "sha256": "031f06753bd77508a5dfb3d84c799dd5928678a8b7e8b689b0d9a3518eb7d6e5",
+          "pdf_page": 15,
+          "title": "AI Evaluation",
+          "locator": "Physical PDF page 15",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Công bố điểm benchmark chính thức thay cho offline eval"
+        },
+        {
+          "id": "b",
+          "text": "Chốt release chỉ từ một demo thành công"
+        },
+        {
+          "id": "c",
+          "text": "Khám phá hành vi, failure modes và đầu ra tốt trước khi đặc tả chi tiết"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d04-x02",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d04",
+      "topic": "p2-t1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Golden outputs có thể được sử dụng vào những việc nào? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "c",
+        "d"
+      ],
+      "explanation": "Đầu ra đạt kỳ vọng tạo chuẩn tham chiếu; dataset vẫn cần edge cases và tiếp tục lớn lên.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d04",
+          "sha256": "031f06753bd77508a5dfb3d84c799dd5928678a8b7e8b689b0d9a3518eb7d6e5",
+          "pdf_page": 16,
+          "title": "AI Evaluation",
+          "locator": "Physical PDF page 16",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Thay mọi kiểm tra production vì đã có output mẫu"
+        },
+        {
+          "id": "b",
+          "text": "Buộc model đoán khi input thiếu thông tin"
+        },
+        {
+          "id": "c",
+          "text": "Làm reference cho evals"
+        },
+        {
+          "id": "d",
+          "text": "Làm ví dụ few-shot"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d04-x03",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d04",
+      "topic": "p2-t1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Sau một prompt change làm regression, quy trình xử lý phù hợp là gì?",
+      "correct_answer": "a",
+      "explanation": "Cùng dataset/baseline giúp nhận diện regression; sửa một case không bảo đảm các case khác còn tốt.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d04",
+          "sha256": "031f06753bd77508a5dfb3d84c799dd5928678a8b7e8b689b0d9a3518eb7d6e5",
+          "pdf_page": 17,
+          "title": "AI Evaluation",
+          "locator": "Physical PDF page 17",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Điều tra, sửa rồi chạy lại toàn bộ eval trên reference dataset"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ chạy lại case vừa fail và bỏ baseline"
+        },
+        {
+          "id": "c",
+          "text": "Đổi threshold để phiên bản mới được pass ngay"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d04-x04",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d04",
+      "topic": "p2-t1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Offline score tốt nhưng online quality giảm thường là tín hiệu cần kiểm tra điều gì?",
+      "correct_answer": "c",
+      "explanation": "Khoảng cách phân bố hoặc tình huống mới có thể làm offline eval không đại diện thực tế.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d04",
+          "sha256": "031f06753bd77508a5dfb3d84c799dd5928678a8b7e8b689b0d9a3518eb7d6e5",
+          "pdf_page": 19,
+          "title": "AI Evaluation",
+          "locator": "Physical PDF page 19",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Có thể ngừng monitor vì offline score đã cao"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ tăng số happy-path paraphrases trong dataset"
+        },
+        {
+          "id": "c",
+          "text": "Dataset có phản ánh input và hành vi production hiện tại không"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d04-x05",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d04",
+      "topic": "p2-t1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "“Cải thiện hỗ trợ khách hàng bằng AI” cần được thu hẹp thế nào để đánh giá được?",
+      "correct_answer": "b",
+      "explanation": "Một unit cụ thể cho phép hai người chấm độc lập đi đến cùng kết luận pass/fail.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d04",
+          "sha256": "031f06753bd77508a5dfb3d84c799dd5928678a8b7e8b689b0d9a3518eb7d6e5",
+          "pdf_page": 23,
+          "title": "AI Evaluation",
+          "locator": "Physical PDF page 23",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tăng số người chấm mà giữ nguyên tiêu chí mơ hồ"
+        },
+        {
+          "id": "b",
+          "text": "Xác định task, điều kiện input và mức tự chủ thành một đơn vị công việc có rubric rõ"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ đổi thành “AI hỗ trợ tốt hơn” để giữ mục tiêu linh hoạt"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d04-x06",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d04",
+      "topic": "p2-t1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao 50 test inputs chưa chắc có coverage tốt hơn 20 inputs?",
+      "correct_answer": "a",
+      "explanation": "Coverage phụ thuộc trường hợp hành vi và điều kiện được chọn, không chỉ số lượng rows.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d04",
+          "sha256": "031f06753bd77508a5dfb3d84c799dd5928678a8b7e8b689b0d9a3518eb7d6e5",
+          "pdf_page": 25,
+          "title": "AI Evaluation",
+          "locator": "Physical PDF page 25",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Nhiều inputs có thể chỉ là bản diễn đạt lại của vài trường hợp"
+        },
+        {
+          "id": "b",
+          "text": "Số rows luôn tỷ lệ thuận với số failure modes được bao phủ"
+        },
+        {
+          "id": "c",
+          "text": "Dataset nhỏ hơn tự động có nhiều edge cases hơn"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d04-x07",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d04",
+      "topic": "p2-t1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một thuộc tính input đáng làm dimension của test grid khi nào?",
+      "correct_answer": "c",
+      "explanation": "Dimension cần tạo đa dạng có ý nghĩa cho hành vi, như đủ thông tin so với thiếu mã đơn.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d04",
+          "sha256": "031f06753bd77508a5dfb3d84c799dd5928678a8b7e8b689b0d9a3518eb7d6e5",
+          "pdf_page": 26,
+          "title": "AI Evaluation",
+          "locator": "Physical PDF page 26",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ đổi cách diễn đạt nhưng agent vẫn phải làm cùng hành động"
+        },
+        {
+          "id": "b",
+          "text": "Thuộc tính dễ sinh nhiều paraphrases nhất"
+        },
+        {
+          "id": "c",
+          "text": "Đổi giá trị thuộc tính làm expected behavior đúng thay đổi"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d04-x08",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d04",
+      "topic": "p2-t1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong quy trình thiết kế test grid, AI nên hỗ trợ vai trò nào?",
+      "correct_answer": "b",
+      "explanation": "Human chọn dimensions/combinations quan trọng; LLM hỗ trợ biến scenario thành cách hỏi tự nhiên.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d04",
+          "sha256": "031f06753bd77508a5dfb3d84c799dd5928678a8b7e8b689b0d9a3518eb7d6e5",
+          "pdf_page": 29,
+          "title": "AI Evaluation",
+          "locator": "Physical PDF page 29",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tạo nhiều rows trước rồi xem số lượng là coverage"
+        },
+        {
+          "id": "b",
+          "text": "Diễn đạt lại các scenarios do con người kiểm soát coverage"
+        },
+        {
+          "id": "c",
+          "text": "Tự chọn toàn bộ coverage thay cho quyết định sản phẩm"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d04-x09",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d04",
+      "topic": "p2-t1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao pass rate trên challenge set không thể được coi trực tiếp là production success rate?",
+      "correct_answer": "a",
+      "explanation": "Over-sampling tình huống khó phục vụ khám phá lỗi nhưng không đại diện tỷ lệ lưu lượng thật.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d04",
+          "sha256": "031f06753bd77508a5dfb3d84c799dd5928678a8b7e8b689b0d9a3518eb7d6e5",
+          "pdf_page": 30,
+          "title": "AI Evaluation",
+          "locator": "Physical PDF page 30",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Challenge set cố ý lấy nhiều tình huống khó hơn tỷ trọng tự nhiên"
+        },
+        {
+          "id": "b",
+          "text": "Mọi challenge case đều không xuất hiện trong production"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ cần tăng sample size là loại bỏ khác biệt phân bố"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d04-x10",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d04",
+      "topic": "p2-t1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Agent nói “đã đặt vé” chưa đủ chứng minh task hoàn tất. Bằng chứng nào cần kiểm tra?",
+      "correct_answer": "c",
+      "explanation": "Transcript là lời kể; trace và state cho thấy hành động thực sự được thực hiện.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d04",
+          "sha256": "031f06753bd77508a5dfb3d84c799dd5928678a8b7e8b689b0d9a3518eb7d6e5",
+          "pdf_page": 32,
+          "title": "AI Evaluation",
+          "locator": "Physical PDF page 32",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ độ tự tin trong câu trả lời cuối"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ việc response không có lỗi ngữ pháp"
+        },
+        {
+          "id": "c",
+          "text": "Tool call/tham số và reservation thật trong trạng thái cuối"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d04-x11",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d04",
+      "topic": "p2-t1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Chuẩn hóa ghi chú lỗi thành trace codes hỗ trợ điều gì?",
+      "correct_answer": "b",
+      "explanation": "Taxonomy thống nhất nối quan sát tự do với phân tích có thể tổng hợp và hành động.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d04",
+          "sha256": "031f06753bd77508a5dfb3d84c799dd5928678a8b7e8b689b0d9a3518eb7d6e5",
+          "pdf_page": 35,
+          "title": "AI Evaluation",
+          "locator": "Physical PDF page 35",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Loại bỏ nhu cầu xem các trace cụ thể đằng sau nhãn"
+        },
+        {
+          "id": "b",
+          "text": "Đo, so sánh và sửa cùng một loại failure bằng ngôn ngữ chung"
+        },
+        {
+          "id": "c",
+          "text": "Giữ mỗi người đặt tên khác nhau để có nhiều nhãn hơn"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d04-x12",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d04",
+      "topic": "p2-t1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Agent chưa bao giờ gửi được lịch vì Calendar API chưa được kết nối. Nên ưu tiên gì?",
+      "correct_answer": "a",
+      "explanation": "Đây là architectural gap, khác việc có lúc làm được nhưng thiếu khả năng generalize ổn định.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d04",
+          "sha256": "031f06753bd77508a5dfb3d84c799dd5928678a8b7e8b689b0d9a3518eb7d6e5",
+          "pdf_page": 39,
+          "title": "AI Evaluation",
+          "locator": "Physical PDF page 39",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Sửa năng lực/tích hợp hệ thống"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ viết thêm automated eval cho tính nhất quán"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ thêm ví dụ vào judge prompt để tăng pass rate"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d04-x13",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d04",
+      "topic": "p2-t1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những tiêu chí nào phù hợp kiểm tra bằng code trước khi dùng LLM judge? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "d",
+        "a"
+      ],
+      "explanation": "Rule rõ và có thể kiểm deterministic nên dùng code; sắc thái/ngữ cảnh thường cần cách khác.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d04",
+          "sha256": "031f06753bd77508a5dfb3d84c799dd5928678a8b7e8b689b0d9a3518eb7d6e5",
+          "pdf_page": 40,
+          "title": "AI Evaluation",
+          "locator": "Physical PDF page 40",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Có gọi đúng tool hay không"
+        },
+        {
+          "id": "b",
+          "text": "Cảm nhận brand voice tinh tế trong ngữ cảnh mở"
+        },
+        {
+          "id": "c",
+          "text": "Tính thuyết phục tùy người đọc"
+        },
+        {
+          "id": "d",
+          "text": "Trường bắt buộc và schema output"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d04-x14",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d04",
+      "topic": "p2-t1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Khi tiêu chí không có referent kiểm chứng độc lập ngoài phán đoán con người, AI nên hỗ trợ thế nào?",
+      "correct_answer": "b",
+      "explanation": "Không có referent thì AI hỗ trợ giảm công kiểm tra, không thay người phán quyết bằng số tự sinh.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d04",
+          "sha256": "031f06753bd77508a5dfb3d84c799dd5928678a8b7e8b689b0d9a3518eb7d6e5",
+          "pdf_page": 41,
+          "title": "AI Evaluation",
+          "locator": "Physical PDF page 41",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Dùng confidence của chính model làm chuẩn đúng"
+        },
+        {
+          "id": "b",
+          "text": "Trích dữ kiện/bằng chứng để người quyết định"
+        },
+        {
+          "id": "c",
+          "text": "Xuất điểm số tự động như kết luận cuối"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d04-x15",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d04",
+      "topic": "p2-t1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một eval bỗng có pass rate 0% nhưng spot check output có vẻ ổn. Nên kiểm tra gì trước?",
+      "correct_answer": "a",
+      "explanation": "Evaluator có thể sai; cần kiểm chính phép đo trước khi quy nguyên nhân cho agent.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d04",
+          "sha256": "031f06753bd77508a5dfb3d84c799dd5928678a8b7e8b689b0d9a3518eb7d6e5",
+          "pdf_page": 47,
+          "title": "AI Evaluation",
+          "locator": "Physical PDF page 47",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Regex, field và logic evaluator"
+        },
+        {
+          "id": "b",
+          "text": "Kết luận agent hoàn toàn mất năng lực"
+        },
+        {
+          "id": "c",
+          "text": "Bỏ toàn bộ reference labels để khôi phục pass rate"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d04-x16",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d04",
+      "topic": "p2-t1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao threshold release cần được chốt trước khi iterate?",
+      "correct_answer": "c",
+      "explanation": "Một gate chỉ có ý nghĩa khi chuẩn được định trước và mọi thay đổi đi qua cùng phép kiểm.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d04",
+          "sha256": "031f06753bd77508a5dfb3d84c799dd5928678a8b7e8b689b0d9a3518eb7d6e5",
+          "pdf_page": 49,
+          "title": "AI Evaluation",
+          "locator": "Physical PDF page 49",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Để luôn hạ threshold nếu model mới kém baseline"
+        },
+        {
+          "id": "b",
+          "text": "Để thay regression test bằng cảm giác demo"
+        },
+        {
+          "id": "c",
+          "text": "Tránh thương lượng tiêu chuẩn theo kết quả vừa quan sát"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d04-x17",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d04",
+      "topic": "p2-t1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Human và judge đều cho 70% Pass. Có thể kết luận judge đã calibrate chưa?",
+      "correct_answer": "b",
+      "explanation": "Cùng tổng tỷ lệ có thể che cả bỏ lọt output xấu lẫn chặn nhầm output tốt.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d04",
+          "sha256": "031f06753bd77508a5dfb3d84c799dd5928678a8b7e8b689b0d9a3518eb7d6e5",
+          "pdf_page": 53,
+          "title": "AI Evaluation",
+          "locator": "Physical PDF page 53",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Có; chỉ cần judge trả reasoning dài và rõ"
+        },
+        {
+          "id": "b",
+          "text": "Chưa; cần so verdict từng case và loại sai lệch"
+        },
+        {
+          "id": "c",
+          "text": "Có; cùng tổng pass rate nghĩa là cùng quyết định mọi case"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d05-x01",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d05",
+      "topic": "p2-t1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong AI tuyển dụng, quyền human review và override cần được xác định để giải quyết nhu cầu nào?",
+      "correct_answer": "c",
+      "explanation": "Quyền bác quyết định và trách nhiệm rõ tạo khả năng can thiệp vào workflow thực.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d05",
+          "sha256": "59775f3a6b58971a90d3907a2a672d24232dfe8c3e318b37c3285ac11b2b0c63",
+          "pdf_page": 7,
+          "title": "AI Ethic, Responsible AI và AI Compliance",
+          "locator": "Physical PDF page 7",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Bảo đảm mọi điểm số model đều thành quyết định cuối"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ đo shortlist tổng mà không xét người bị loại"
+        },
+        {
+          "id": "c",
+          "text": "Có người có thẩm quyền kiểm tra và bác quyết định tự động"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d05-x02",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d05",
+      "topic": "p2-t1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một AI tutor giúp ra đáp án nhanh nhưng khiến sinh viên phụ thuộc hơn. Câu hỏi sản phẩm cần đánh giá là gì?",
+      "correct_answer": "b",
+      "explanation": "Mục tiêu học tập cần xét tác động lên năng lực người học, không chỉ output đúng và nhanh.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d05",
+          "sha256": "59775f3a6b58971a90d3907a2a672d24232dfe8c3e318b37c3285ac11b2b0c63",
+          "pdf_page": 8,
+          "title": "AI Ethic, Responsible AI và AI Compliance",
+          "locator": "Physical PDF page 8",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ tốc độ sinh đáp án có cao hơn bản trước không"
+        },
+        {
+          "id": "b",
+          "text": "Cách hỗ trợ có thúc đẩy hiểu và tự suy nghĩ hay làm tăng lệ thuộc?"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ response có đúng format để gửi cho sinh viên không"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d05-x03",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d05",
+      "topic": "p2-t1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Đánh giá safety của sản phẩm AI cần gắn kết quả kỹ thuật với điều gì?",
+      "correct_answer": "a",
+      "explanation": "Safety là tính chất trong sử dụng thực với người và hậu quả cụ thể.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d05",
+          "sha256": "59775f3a6b58971a90d3907a2a672d24232dfe8c3e318b37c3285ac11b2b0c63",
+          "pdf_page": 9,
+          "title": "AI Ethic, Responsible AI và AI Compliance",
+          "locator": "Physical PDF page 9",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Ai chịu tác động, trong ngữ cảnh nào và bằng chứng đủ để triển khai"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ benchmark của model nền độc lập với ứng dụng"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ mức hài lòng của nhóm phát triển về demo"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d05-x04",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d05",
+      "topic": "p2-t1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Quan hệ nào mô tả đúng model và AI system?",
+      "correct_answer": "c",
+      "explanation": "Lỗi có thể xuất phát ở các thành phần quanh model, không chỉ weights hoặc thuật toán.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d05",
+          "sha256": "59775f3a6b58971a90d3907a2a672d24232dfe8c3e318b37c3285ac11b2b0c63",
+          "pdf_page": 13,
+          "title": "AI Ethic, Responsible AI và AI Compliance",
+          "locator": "Physical PDF page 13",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Model weights bao gồm mọi quyết định UX và workflow triển khai"
+        },
+        {
+          "id": "b",
+          "text": "Cải thiện model tự động giải quyết mọi lỗi ở lớp system"
+        },
+        {
+          "id": "c",
+          "text": "Model là một phần của hệ thống có cả giao diện và hạ tầng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d05-x05",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d05",
+      "topic": "p2-t1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Ngoài thành phần kỹ thuật, phân tích tác động AI cần xét những yếu tố nào? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "d",
+        "a"
+      ],
+      "explanation": "Bối cảnh sử dụng và stakeholder mở rộng cho thấy ảnh hưởng vượt người vận hành trực tiếp.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d05",
+          "sha256": "59775f3a6b58971a90d3907a2a672d24232dfe8c3e318b37c3285ac11b2b0c63",
+          "pdf_page": 14,
+          "title": "AI Ethic, Responsible AI và AI Compliance",
+          "locator": "Physical PDF page 14",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Những người chịu ảnh hưởng hoặc có quyền tác động"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ người trực tiếp đăng nhập hệ thống"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ tên model và kích thước weights"
+        },
+        {
+          "id": "d",
+          "text": "Bối cảnh văn hóa, quản trị và ứng dụng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d05-x06",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d05",
+      "topic": "p2-t1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Tổ hợp nào phản ánh việc triển khai AI an toàn hơn?",
+      "correct_answer": "a",
+      "explanation": "Safety cần cả cơ chế kiểm soát lẫn accountability trong ứng dụng cụ thể.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d05",
+          "sha256": "59775f3a6b58971a90d3907a2a672d24232dfe8c3e318b37c3285ac11b2b0c63",
+          "pdf_page": 15,
+          "title": "AI Ethic, Responsible AI và AI Compliance",
+          "locator": "Physical PDF page 15",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Bối cảnh phù hợp, guardrails và người chịu trách nhiệm"
+        },
+        {
+          "id": "b",
+          "text": "Model có benchmark cao nên không cần owner xử lý sự cố"
+        },
+        {
+          "id": "c",
+          "text": "Có cảnh báo chung nên không cần thiết kế escalation"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d05-x07",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d05",
+      "topic": "p2-t1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Hệ thống tối ưu đúng mục tiêu thiết kế có thể vẫn gây harm không?",
+      "correct_answer": "c",
+      "explanation": "Đạt mục tiêu kỹ thuật không tự chứng minh mục tiêu và hậu quả là phù hợp.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d05",
+          "sha256": "59775f3a6b58971a90d3907a2a672d24232dfe8c3e318b37c3285ac11b2b0c63",
+          "pdf_page": 17,
+          "title": "AI Ethic, Responsible AI và AI Compliance",
+          "locator": "Physical PDF page 17",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Không, harm chỉ xảy ra khi code sai đặc tả"
+        },
+        {
+          "id": "b",
+          "text": "Không, nếu metric kinh doanh đang tăng thì tác động đã tốt"
+        },
+        {
+          "id": "c",
+          "text": "Có, vì mục tiêu tối ưu có thể xung đột với lợi ích con người và xã hội"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d05-x08",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d05",
+      "topic": "p2-t1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Việc dùng dữ liệu cá nhân để dựng narrative gây hại dù có điều khoản dài cần đặt câu hỏi nào?",
+      "correct_answer": "b",
+      "explanation": "Một chấp thuận trên giấy không tự bảo đảm quyền kiểm soát và phẩm giá trong việc tái sử dụng dữ liệu.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d05",
+          "sha256": "59775f3a6b58971a90d3907a2a672d24232dfe8c3e318b37c3285ac11b2b0c63",
+          "pdf_page": 19,
+          "title": "AI Ethic, Responsible AI và AI Compliance",
+          "locator": "Physical PDF page 19",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ việc dữ liệu có đủ lớn để cá nhân hóa không"
+        },
+        {
+          "id": "b",
+          "text": "Người dùng có đồng thuận thực chất và quyền kiểm soát hình ảnh/câu chuyện của mình không?"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ việc nội dung có tăng tương tác đúng mục tiêu không"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d05-x09",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d05",
+      "topic": "p2-t1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Khi xây thư viện test cho hệ thống tự lái trong operational domain, tình huống hiếm có thể dẫn đến va chạm nên được xử lý thế nào?",
+      "correct_answer": "a",
+      "explanation": "Mức hậu quả và tính liên quan tới phạm vi vận hành khiến edge/corner cases vẫn cần kiểm thử.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d05",
+          "sha256": "59775f3a6b58971a90d3907a2a672d24232dfe8c3e318b37c3285ac11b2b0c63",
+          "pdf_page": 22,
+          "title": "AI Ethic, Responsible AI và AI Compliance",
+          "locator": "Physical PDF page 22",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Đưa vào test dù tần suất thấp"
+        },
+        {
+          "id": "b",
+          "text": "Bỏ qua vì chỉ cần bao phủ tình huống trung bình"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ test sau khi có nhiều va chạm thực tế"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d05-x10",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d05",
+      "topic": "p2-t1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "AI đồng ý với nhận định sai của người dùng sau khi bị thúc ép đang biểu hiện failure mode nào?",
+      "correct_answer": "c",
+      "explanation": "Sycophancy là chiều theo người dùng dù nhận định của họ sai.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d05",
+          "sha256": "59775f3a6b58971a90d3907a2a672d24232dfe8c3e318b37c3285ac11b2b0c63",
+          "pdf_page": 23,
+          "title": "AI Ethic, Responsible AI và AI Compliance",
+          "locator": "Physical PDF page 23",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Privacy leak do xuất dữ liệu không được phép"
+        },
+        {
+          "id": "b",
+          "text": "Escalation failure vì thiếu kênh chuyển người"
+        },
+        {
+          "id": "c",
+          "text": "Sycophancy"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d05-x11",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d05",
+      "topic": "p2-t1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Người dùng xem output AI như quyết định cuối rồi ngừng kiểm tra đang gặp rủi ro nào?",
+      "correct_answer": "b",
+      "explanation": "Tin quá mức có thể do cách nói chắc chắn hoặc UX tạo cảm giác chính thức, khác cố ý lạm dụng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d05",
+          "sha256": "59775f3a6b58971a90d3907a2a672d24232dfe8c3e318b37c3285ac11b2b0c63",
+          "pdf_page": 23,
+          "title": "AI Ethic, Responsible AI và AI Compliance",
+          "locator": "Physical PDF page 23",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Jailbreak vì user cố vượt policy"
+        },
+        {
+          "id": "b",
+          "text": "Over-reliance"
+        },
+        {
+          "id": "c",
+          "text": "Grounding tốt vì user tin response"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d05-x12",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d05",
+      "topic": "p2-t1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Bot tiếp tục tự xử lý một trường hợp đã vượt thẩm quyền thay vì handoff đang mắc lỗi nào?",
+      "correct_answer": "a",
+      "explanation": "Thiếu rule/handoff/fallback có thể giữ AI ở quyết định cần người có trách nhiệm.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d05",
+          "sha256": "59775f3a6b58971a90d3907a2a672d24232dfe8c3e318b37c3285ac11b2b0c63",
+          "pdf_page": 23,
+          "title": "AI Ethic, Responsible AI và AI Compliance",
+          "locator": "Physical PDF page 23",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Escalation failure"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ lỗi tone dù workflow vẫn đúng"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ dữ liệu lệch giữa các nhóm"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d05-x13",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d05",
+      "topic": "p2-t1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Bot HR trả lời chính sách nghỉ phép từ handbook cũ. Layer nào nên kiểm tra trước?",
+      "correct_answer": "c",
+      "explanation": "Dữ liệu chuẩn không cập nhật khiến model có thể trả lời sai ngay cả khi diễn đạt tốt.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d05",
+          "sha256": "59775f3a6b58971a90d3907a2a672d24232dfe8c3e318b37c3285ac11b2b0c63",
+          "pdf_page": 24,
+          "title": "AI Ethic, Responsible AI và AI Compliance",
+          "locator": "Physical PDF page 24",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ UX của nút gửi câu hỏi"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ safety refusal dù câu hỏi hợp lệ"
+        },
+        {
+          "id": "c",
+          "text": "Grounding và nguồn dữ liệu được dùng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d05-x14",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d05",
+      "topic": "p2-t1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Giao diện trình bày câu trả lời bot như quyết định chính thức và không có đường xem nguồn làm tăng rủi ro nào?",
+      "correct_answer": "b",
+      "explanation": "Lớp UX có thể khiến người dùng đánh giá sai độ chắc chắn và bỏ qua kiểm chứng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d05",
+          "sha256": "59775f3a6b58971a90d3907a2a672d24232dfe8c3e318b37c3285ac11b2b0c63",
+          "pdf_page": 24,
+          "title": "AI Ethic, Responsible AI và AI Compliance",
+          "locator": "Physical PDF page 24",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ tool timeout trong lúc thực thi"
+        },
+        {
+          "id": "b",
+          "text": "Người dùng tin quá mức do UX che giới hạn và cơ sở thông tin"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ model bị thiếu context window cho câu hỏi dài"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d05-x15",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d05",
+      "topic": "p2-t1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Sau khi xác định failure mode và layer khởi phát, harm map cần làm rõ điều gì?",
+      "correct_answer": "a",
+      "explanation": "Harm cần diễn tả tác động thật như mất cơ hội, tiền, quyền riêng tư hay phẩm giá.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d05",
+          "sha256": "59775f3a6b58971a90d3907a2a672d24232dfe8c3e318b37c3285ac11b2b0c63",
+          "pdf_page": 25,
+          "title": "AI Ethic, Responsible AI và AI Compliance",
+          "locator": "Physical PDF page 25",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Ai bị ảnh hưởng và hậu quả cụ thể có thể xảy ra"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ tên lỗi kỹ thuật để kết thúc phân tích"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ severity chung mà không mô tả sự kiện"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d05-x16",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d05",
+      "topic": "p2-t1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một lần rò dữ liệu nhạy cảm hiếm gặp vẫn có thể cần ưu tiên cao vì sao?",
+      "correct_answer": "c",
+      "explanation": "Đánh giá cần tách tần suất, xác suất, mức nghiêm trọng và scale thay vì dùng một trục duy nhất.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d05",
+          "sha256": "59775f3a6b58971a90d3907a2a672d24232dfe8c3e318b37c3285ac11b2b0c63",
+          "pdf_page": 26,
+          "title": "AI Ethic, Responsible AI và AI Compliance",
+          "locator": "Physical PDF page 26",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tần suất thấp luôn đồng nghĩa severity thấp"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ lỗi thường xuyên mới tạo tác động thực"
+        },
+        {
+          "id": "c",
+          "text": "Hậu quả khó thu hồi và phạm vi ảnh hưởng có thể lớn"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d05-x17",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d05",
+      "topic": "p2-t1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những thông tin nào giúp biến một compliance gap thành việc có thể quản lý trong roadmap? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "d",
+        "a",
+        "b"
+      ],
+      "explanation": "Action plan cần nối gap với hành động và bằng chứng hoàn thành, không chỉ tuyên bố tuân thủ.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d05",
+          "sha256": "59775f3a6b58971a90d3907a2a672d24232dfe8c3e318b37c3285ac11b2b0c63",
+          "pdf_page": 29,
+          "title": "AI Ethic, Responsible AI và AI Compliance",
+          "locator": "Physical PDF page 29",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Owner, deadline và trạng thái"
+        },
+        {
+          "id": "b",
+          "text": "Evidence, monitoring và re-test"
+        },
+        {
+          "id": "c",
+          "text": "Một cam kết chung không có người chịu trách nhiệm"
+        },
+        {
+          "id": "d",
+          "text": "Requirement và current/required state"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d06-x01",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d06",
+      "topic": "p2-t1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Activation khác một lần đăng nhập ở điểm nào?",
+      "correct_answer": "c",
+      "explanation": "Activation gắn với first value, không phải mọi hành vi truy cập.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d06",
+          "sha256": "de8ee860c0ea95bc4c6a153600003fa13831e30379b9af72bc8481fd998e0f7a",
+          "pdf_page": 4,
+          "title": "Retention, Engagement & Habit Loop",
+          "locator": "Physical PDF page 4",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ cần tạo tài khoản dù chưa làm việc chính"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ cần nằm trong danh sách MAU"
+        },
+        {
+          "id": "c",
+          "text": "Người dùng lần đầu thực sự nhận được giá trị"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d06-x02",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d06",
+      "topic": "p2-t1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Time to Value đo khoảng thời gian nào?",
+      "correct_answer": "b",
+      "explanation": "TTV phản ánh tốc độ đạt giá trị ban đầu, khác vòng đời và payback.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d06",
+          "sha256": "de8ee860c0ea95bc4c6a153600003fa13831e30379b9af72bc8481fd998e0f7a",
+          "pdf_page": 4,
+          "title": "Retention, Engagement & Habit Loop",
+          "locator": "Physical PDF page 4",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Từ thanh toán lần đầu đến khi thu hồi CAC"
+        },
+        {
+          "id": "b",
+          "text": "Từ khi vào sản phẩm đến giá trị đầu tiên"
+        },
+        {
+          "id": "c",
+          "text": "Từ giá trị đầu tiên đến lúc churn"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d06-x03",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d06",
+      "topic": "p2-t1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Tăng số vị trí quảng cáo có thể tăng revenue/user nhưng giảm engagement. Vì sao cần tradeoff metric?",
+      "correct_answer": "a",
+      "explanation": "Một thay đổi có thể tác động trái chiều lên nhiều mục tiêu cần được theo dõi cùng nhau.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d06",
+          "sha256": "de8ee860c0ea95bc4c6a153600003fa13831e30379b9af72bc8481fd998e0f7a",
+          "pdf_page": 7,
+          "title": "Retention, Engagement & Habit Loop",
+          "locator": "Physical PDF page 7",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Để thấy tổn hại của tối ưu một chỉ số lên giá trị khác"
+        },
+        {
+          "id": "b",
+          "text": "Để mọi input metric tăng đều được coi là thành công"
+        },
+        {
+          "id": "c",
+          "text": "Để bỏ qua engagement khi doanh thu ngắn hạn tăng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d06-x04",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d06",
+      "topic": "p2-t1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao MAU tăng chưa chứng minh retention tốt?",
+      "correct_answer": "c",
+      "explanation": "Chỉ số tổng gộp che chuyển động cohort và mức sử dụng lặp lại.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d06",
+          "sha256": "de8ee860c0ea95bc4c6a153600003fa13831e30379b9af72bc8481fd998e0f7a",
+          "pdf_page": 15,
+          "title": "Retention, Engagement & Habit Loop",
+          "locator": "Physical PDF page 15",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "MAU chỉ đếm người dùng quay lại mỗi ngày"
+        },
+        {
+          "id": "b",
+          "text": "Mọi tăng trưởng MAU đều đến từ cùng cohort được giữ lại"
+        },
+        {
+          "id": "c",
+          "text": "Acquisition/hype có thể bù người rời đi và một lần vào trong tháng vẫn được tính"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d06-x05",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d06",
+      "topic": "p2-t1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những cơ chế nào giải thích giá trị kinh doanh của retention? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "d",
+        "a",
+        "b"
+      ],
+      "explanation": "Giữ người dùng có giá trị nối việc sử dụng dài hạn với phân phối và monetization.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d06",
+          "sha256": "de8ee860c0ea95bc4c6a153600003fa13831e30379b9af72bc8481fd998e0f7a",
+          "pdf_page": 16,
+          "title": "Retention, Engagement & Habit Loop",
+          "locator": "Physical PDF page 16",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Người dùng ở lại có thêm thời gian mua và trả tiền"
+        },
+        {
+          "id": "b",
+          "text": "Có thể cải thiện economics và tái đầu tư tăng trưởng"
+        },
+        {
+          "id": "c",
+          "text": "Tự loại bỏ nhu cầu tạo core value cho user"
+        },
+        {
+          "id": "d",
+          "text": "Tăng cơ hội referral/content và acquisition loops"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d06-x06",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d06",
+      "topic": "p2-t1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Retention và engagement trả lời hai câu hỏi khác nhau như thế nào?",
+      "correct_answer": "a",
+      "explanation": "Retention là độ rộng quay lại; engagement là chiều sâu sử dụng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d06",
+          "sha256": "de8ee860c0ea95bc4c6a153600003fa13831e30379b9af72bc8481fd998e0f7a",
+          "pdf_page": 17,
+          "title": "Retention, Engagement & Habit Loop",
+          "locator": "Physical PDF page 17",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Ai còn quay lại theo thời gian, và những người đó dùng sâu/thường xuyên đến đâu"
+        },
+        {
+          "id": "b",
+          "text": "Cả hai chỉ đếm số tài khoản đăng ký mới"
+        },
+        {
+          "id": "c",
+          "text": "Retention đo thời lượng session còn engagement chỉ đo cohort quay lại"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d06-x07",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d06",
+      "topic": "p2-t1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một authenticator được dùng đều nhưng mỗi lần rất ngắn có nhất thiết đang thất bại về engagement không?",
+      "correct_answer": "c",
+      "explanation": "Metric cần phản ánh việc hoàn thành job, không ép mọi sản phẩm theo cùng mức tương tác.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d06",
+          "sha256": "de8ee860c0ea95bc4c6a153600003fa13831e30379b9af72bc8481fd998e0f7a",
+          "pdf_page": 18,
+          "title": "Retention, Engagement & Habit Loop",
+          "locator": "Physical PDF page 18",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Có; mọi sản phẩm phải kéo dài session mới tạo value"
+        },
+        {
+          "id": "b",
+          "text": "Có; retention cao không có ý nghĩa nếu không tăng screen time"
+        },
+        {
+          "id": "c",
+          "text": "Không; thời lượng ngắn có thể phù hợp nature của use case"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d06-x08",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d06",
+      "topic": "p2-t1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Nature và nurture khác nhau thế nào khi thiết kế quay lại sản phẩm?",
+      "correct_answer": "b",
+      "explanation": "Nhắc nhở nên bám nhu cầu có thật thay vì áp lịch chủ quan lên người dùng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d06",
+          "sha256": "de8ee860c0ea95bc4c6a153600003fa13831e30379b9af72bc8481fd998e0f7a",
+          "pdf_page": 21,
+          "title": "Retention, Engagement & Habit Loop",
+          "locator": "Physical PDF page 21",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Nature là lịch push mà đội marketing muốn gửi"
+        },
+        {
+          "id": "b",
+          "text": "Nature là nhịp nhu cầu vốn có; nurture là tác động nuôi/khuếch đại nhịp đó"
+        },
+        {
+          "id": "c",
+          "text": "Nurture tự tạo nhu cầu từ số không bất kể use case"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d06-x09",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d06",
+      "topic": "p2-t1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một công cụ lập báo cáo hàng tháng nên kiểm tra nhịp quay lại theo cơ sở nào?",
+      "correct_answer": "a",
+      "explanation": "Tần suất tự nhiên phụ thuộc job; ép daily có thể đo sai giá trị thật.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d06",
+          "sha256": "de8ee860c0ea95bc4c6a153600003fa13831e30379b9af72bc8481fd998e0f7a",
+          "pdf_page": 22,
+          "title": "Retention, Engagement & Habit Loop",
+          "locator": "Physical PDF page 22",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chu kỳ công việc hàng tháng của người dùng"
+        },
+        {
+          "id": "b",
+          "text": "DAU chỉ vì coding copilot thường được dùng hàng ngày"
+        },
+        {
+          "id": "c",
+          "text": "Số notification tối đa hệ thống có thể gửi"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d06-x10",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d06",
+      "topic": "p2-t1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Hai segment có nhịp nhu cầu khác nhau. Chiến lược reminder phù hợp là gì?",
+      "correct_answer": "c",
+      "explanation": "Một lịch nhắc chung có thể hữu ích cho nhóm này nhưng làm phiền nhóm khác.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d06",
+          "sha256": "de8ee860c0ea95bc4c6a153600003fa13831e30379b9af72bc8481fd998e0f7a",
+          "pdf_page": 23,
+          "title": "Retention, Engagement & Habit Loop",
+          "locator": "Physical PDF page 23",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Gửi cùng tần suất cao nhất cho tất cả"
+        },
+        {
+          "id": "b",
+          "text": "Dùng nhịp trung bình để coi mọi người không quay lại đúng lịch là churn"
+        },
+        {
+          "id": "c",
+          "text": "Điều chỉnh theo nhịp từng segment"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d06-x11",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d06",
+      "topic": "p2-t1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Định nghĩa active user nên xuất phát từ đâu?",
+      "correct_answer": "b",
+      "explanation": "Đếm hoạt động có ý nghĩa cần nối metric với công việc và nhịp sử dụng thực.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d06",
+          "sha256": "de8ee860c0ea95bc4c6a153600003fa13831e30379b9af72bc8481fd998e0f7a",
+          "pdf_page": 25,
+          "title": "Retention, Engagement & Habit Loop",
+          "locator": "Physical PDF page 25",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ chọn DAU/MAU nào tạo con số lớn hơn"
+        },
+        {
+          "id": "b",
+          "text": "Core action gần nhất với việc nhận value của use case"
+        },
+        {
+          "id": "c",
+          "text": "Mọi click để metric tăng nhanh hơn"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d06-x12",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d06",
+      "topic": "p2-t1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Thứ tự nào phù hợp để chọn metric sản phẩm?",
+      "correct_answer": "a",
+      "explanation": "Metric cần được xây từ logic tạo giá trị thay vì chọn trước vì quen thuộc.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d06",
+          "sha256": "de8ee860c0ea95bc4c6a153600003fa13831e30379b9af72bc8481fd998e0f7a",
+          "pdf_page": 27,
+          "title": "Retention, Engagement & Habit Loop",
+          "locator": "Physical PDF page 27",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Use case → natural cadence → core action → ngưỡng active → metric"
+        },
+        {
+          "id": "b",
+          "text": "Metric phổ biến → gom thêm hành vi → suy ra use case"
+        },
+        {
+          "id": "c",
+          "text": "Mục tiêu báo cáo → chọn con số lớn → định nghĩa active sau"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d06-x13",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d06",
+      "topic": "p2-t1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Retention cohort percentage giúp so sánh các cohort khác quy mô ban đầu bằng cách nào?",
+      "correct_answer": "c",
+      "explanation": "Tỷ lệ cho thấy phần cohort còn lại tại cùng mốc thời gian, thay vì bị quy mô đăng ký chi phối.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d06",
+          "sha256": "de8ee860c0ea95bc4c6a153600003fa13831e30379b9af72bc8481fd998e0f7a",
+          "pdf_page": 29,
+          "title": "Retention, Engagement & Habit Loop",
+          "locator": "Physical PDF page 29",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Cộng tất cả người active thành một tổng không chia cohort"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ giữ số người còn lại tuyệt đối, bỏ mẫu số"
+        },
+        {
+          "id": "c",
+          "text": "Chuẩn hóa người còn active theo tỷ lệ của cohort ban đầu"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d06-x14",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d06",
+      "topic": "p2-t1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Retention rất kém ngay từ đầu thường cần xem xét điều gì trước tối ưu bề mặt?",
+      "correct_answer": "b",
+      "explanation": "Nếu giá trị cốt lõi chưa tồn tại thì các chỉnh nhỏ khó giải quyết lý do người dùng rời đi.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d06",
+          "sha256": "de8ee860c0ea95bc4c6a153600003fa13831e30379b9af72bc8481fd998e0f7a",
+          "pdf_page": 33,
+          "title": "Retention, Engagement & Habit Loop",
+          "locator": "Physical PDF page 33",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ tăng acquisition để làm cohort cũ bớt nổi bật"
+        },
+        {
+          "id": "b",
+          "text": "Core value, job, đối tượng hoặc trải nghiệm trung tâm có đúng không"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ thêm popup quay lại mà giữ mọi giả định core value"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d06-x15",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d06",
+      "topic": "p2-t1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Thông báo push và cảm giác muốn tiến bộ thuộc hai loại trigger nào?",
+      "correct_answer": "a",
+      "explanation": "External đến từ tín hiệu bên ngoài; internal gắn trạng thái/cảm xúc bên trong người dùng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d06",
+          "sha256": "de8ee860c0ea95bc4c6a153600003fa13831e30379b9af72bc8481fd998e0f7a",
+          "pdf_page": 38,
+          "title": "Retention, Engagement & Habit Loop",
+          "locator": "Physical PDF page 38",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Push là external; mong muốn nội tại là internal"
+        },
+        {
+          "id": "b",
+          "text": "Push là internal; mong muốn tiến bộ là external"
+        },
+        {
+          "id": "c",
+          "text": "Cả hai đều là reward thay vì trigger"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d06-x16",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d06",
+      "topic": "p2-t1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Niềm vui làm chủ thử thách và thấy tiến bộ thuộc loại variable reward nào?",
+      "correct_answer": "c",
+      "explanation": "Self liên quan mastery/completion, khác phần thưởng xã hội hay tìm kiếm tài nguyên.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d06",
+          "sha256": "de8ee860c0ea95bc4c6a153600003fa13831e30379b9af72bc8481fd998e0f7a",
+          "pdf_page": 39,
+          "title": "Retention, Engagement & Habit Loop",
+          "locator": "Physical PDF page 39",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "The Tribe: được cộng đồng công nhận"
+        },
+        {
+          "id": "b",
+          "text": "The Hunt: săn tài nguyên/thông tin"
+        },
+        {
+          "id": "c",
+          "text": "The Self"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d06-x17",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d06",
+      "topic": "p2-t1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Gamification nên được đánh giá theo tiêu chí nào để hỗ trợ sản phẩm?",
+      "correct_answer": "b",
+      "explanation": "Cơ chế game chỉ hữu ích khi làm mạnh vòng giá trị thay vì thêm cản trở hoặc hoạt động rỗng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d06",
+          "sha256": "de8ee860c0ea95bc4c6a153600003fa13831e30379b9af72bc8481fd998e0f7a",
+          "pdf_page": 44,
+          "title": "Retention, Engagement & Habit Loop",
+          "locator": "Physical PDF page 44",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Có làm tăng thao tác dù cản trở nhiệm vụ chính không"
+        },
+        {
+          "id": "b",
+          "text": "Có phục vụ core loop và hành vi tạo value không"
+        },
+        {
+          "id": "c",
+          "text": "Có đủ streak/leaderboard bất kể job của người dùng"
+        }
+      ],
+      "shuffle_options": true
+    }
+  ]
+}

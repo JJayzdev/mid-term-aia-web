@@ -1,0 +1,757 @@
+{
+  "batch_file": "data/questions/drafts/expand-a-005.json",
+  "reviewer_id": "root-independent-review",
+  "reviewed_at": "2026-10-22T13:08:23.903977+00:00",
+  "results": [
+    {
+      "id": "p1-d13-x01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d13",
+          "pdf_page": 22
+        }
+      ],
+      "notes": [
+        "RED request view and USE resource/saturation view complement each other.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d13-x02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d13",
+          "pdf_page": 23
+        }
+      ],
+      "notes": [
+        "Mean latency can hide slow-tail users; percentiles expose distribution.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d13-x03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d13",
+          "pdf_page": 23
+        }
+      ],
+      "notes": [
+        "TTFT request-to-first-token distinct from output duration and inter-token interval.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d13-x04",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d13",
+          "pdf_page": 26
+        }
+      ],
+      "notes": [
+        "Heuristic/judge/user/outcome signals differ in cost, delay and proximity to business impact.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d13-x05",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d13",
+          "pdf_page": 29
+        }
+      ],
+      "notes": [
+        "Tool schema/timeout and looping/argument hallucination are direct tool failure metrics.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d13-x06",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d13",
+          "pdf_page": 30
+        }
+      ],
+      "notes": [
+        "Error taxonomy selects responsible dependency and recovery method.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d13-x07",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d13",
+          "pdf_page": 31
+        }
+      ],
+      "notes": [
+        "Changed input-output mapping is concept drift versus input or model change.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d13-x08",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d13",
+          "pdf_page": 35
+        }
+      ],
+      "notes": [
+        "Structured sanitized telemetry preserves operational data without raw sensitive prompts/keys.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d13-x09",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d13",
+          "pdf_page": 38
+        }
+      ],
+      "notes": [
+        "WARN fits completed but degraded fallback result versus fatal failure.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d13-x10",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d13",
+          "pdf_page": 39
+        }
+      ],
+      "notes": [
+        "Correlation ID links one request across services.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d13-x11",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d13",
+          "pdf_page": 41
+        }
+      ],
+      "notes": [
+        "Head decision early versus tail after outcome; extra collection overhead.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d13-x12",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d13",
+          "pdf_page": 43
+        }
+      ],
+      "notes": [
+        "Append-only restricted audit records accountability versus mutable/sampled debug logs.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d13-x13",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d13",
+          "pdf_page": 45
+        }
+      ],
+      "notes": [
+        "Trace contains linked spans and parent-child timings.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d13-x14",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d13",
+          "pdf_page": 47
+        }
+      ],
+      "notes": [
+        "Vendor-neutral OTel separates instrumentation from telemetry backend.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d13-x15",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d13",
+          "pdf_page": 56
+        }
+      ],
+      "notes": [
+        "User-facing symptoms warrant paging before non-impacting resource indicators.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d13-x16",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d13",
+          "pdf_page": 59
+        }
+      ],
+      "notes": [
+        "Actionable alert connects impact/current value to filtered evidence, runbook and owner.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d13-x17",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d13",
+          "pdf_page": 74
+        }
+      ],
+      "notes": [
+        "Source-side minimization, masking, hashing and allowlists reduce PII exposure.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d14-x01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d14",
+          "pdf_page": 20
+        }
+      ],
+      "notes": [
+        "Partial/weighted scoring captures subtask progress and importance beyond binary completion.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d14-x02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d14",
+          "pdf_page": 21
+        }
+      ],
+      "notes": [
+        "Open-ended semantic equivalence exceeds exact wording match.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d14-x03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d14",
+          "pdf_page": 27
+        }
+      ],
+      "notes": [
+        "Golden set requires expert-checked labels and representative/edge coverage.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d14-x04",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d14",
+          "pdf_page": 28
+        }
+      ],
+      "notes": [
+        "Generated QA bootstrapping requires human filtering and real high-value cases.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d14-x05",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d14",
+          "pdf_page": 31
+        }
+      ],
+      "notes": [
+        "Kappa adjusts chance agreement; duplicate in B09 retargeted by its author/reviewer.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d14-x06",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d14",
+          "pdf_page": 32
+        }
+      ],
+      "notes": [
+        "Stratification covers use cases, difficulty and user types.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d14-x07",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d14",
+          "pdf_page": 38
+        }
+      ],
+      "notes": [
+        "Reference-based compares known answer; reference-free still requires explicit criteria.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d14-x08",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d14",
+          "pdf_page": 39
+        }
+      ],
+      "notes": [
+        "A/B order swap probes position bias versus self-preference/verbosity.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d14-x09",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d14",
+          "pdf_page": 41
+        }
+      ],
+      "notes": [
+        "Concise-correct rubric and separate length measurement address verbosity bias.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d14-x10",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d14",
+          "pdf_page": 42
+        }
+      ],
+      "notes": [
+        "Failure-mode binary verdicts support actionable CI/error analysis.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d14-x11",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d14",
+          "pdf_page": 43
+        }
+      ],
+      "notes": [
+        "Calibrate judge on same outputs/rubric against human labels.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d14-x12",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d14",
+          "pdf_page": 53
+        }
+      ],
+      "notes": [
+        "Revision2 spacing; repeated runs share item-level difficulty, not new independent samples.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d14-x13",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d14",
+          "pdf_page": 55
+        }
+      ],
+      "notes": [
+        "Paired same-item differences reduce shared difficulty variance.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d14-x14",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d14",
+          "pdf_page": 59
+        }
+      ],
+      "notes": [
+        "Outcome gate allows alternative correct trajectories; traces separately diagnose.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d14-x15",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d14",
+          "pdf_page": 62
+        }
+      ],
+      "notes": [
+        "pass@k at least one success versus pass^k all successes.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d14-x16",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d14",
+          "pdf_page": 74
+        }
+      ],
+      "notes": [
+        "Prioritize root-cause clusters by frequency and impact.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d15-x01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d15",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "Explicit owner-specified air-gap requirement constrains deployment architecture; not a universal legal claim.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d15-x02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d15",
+          "pdf_page": 10
+        }
+      ],
+      "notes": [
+        "Hybrid routing can keep sensitive data on-prem and send suitable work to cloud.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d15-x03",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d15",
+          "pdf_page": 14
+        }
+      ],
+      "notes": [
+        "Revision2 replaces duplicated cost-component list with explicit hypothetical monthly arithmetic: 2M at1 +0.5M at4 =4 USD; p14 inspected.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d15-x04",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d15",
+          "pdf_page": 14
+        }
+      ],
+      "notes": [
+        "Retry/guardrail/eval/monitoring paths add costs beyond main-call estimate.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d15-x05",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d15",
+          "pdf_page": 15
+        }
+      ],
+      "notes": [
+        "Upgrade deployment tier when actual demand justifies added complexity.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d15-x06",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d15",
+          "pdf_page": 17
+        }
+      ],
+      "notes": [
+        "Semantic response cache applies to reusable similar queries subject to validity.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d15-x07",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d15",
+          "pdf_page": 17
+        }
+      ],
+      "notes": [
+        "Prompt compression reduces input tokens while retaining necessary information.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d15-x08",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d15",
+          "pdf_page": 18
+        }
+      ],
+      "notes": [
+        "Complexity-aware routing reserves expensive model capacity for harder work.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d15-x09",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d15",
+          "pdf_page": 20
+        }
+      ],
+      "notes": [
+        "Queue buffers spikes and regulates processing capacity.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d15-x10",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d15",
+          "pdf_page": 20
+        }
+      ],
+      "notes": [
+        "Circuit breaker/fallback limits bad dependency calls and provides controlled degradation.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d15-x11",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d15",
+          "pdf_page": 20
+        }
+      ],
+      "notes": [
+        "Horizontal stateless compute requires externalized consistent session state.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d15-x12",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d15",
+          "pdf_page": 22
+        }
+      ],
+      "notes": [
+        "PRD/risk/ROI deliverables indicate product/business skill needs.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d15-x13",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d15",
+          "pdf_page": 28
+        }
+      ],
+      "notes": [
+        "Occupational AI exposure is not observed job loss or total automation.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d15-x14",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d15",
+          "pdf_page": 36
+        }
+      ],
+      "notes": [
+        "Product accountability still needs quality control, reasoning, requirements and communication.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d15-x15",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d15",
+          "pdf_page": 42
+        }
+      ],
+      "notes": [
+        "Specialization choice combines market opportunity, entry barriers, interests and readiness.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d15-x16",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d15",
+          "pdf_page": 45
+        }
+      ],
+      "notes": [
+        "Data/serving/CI-CD/monitoring deliverables identify infrastructure work.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    },
+    {
+      "id": "p1-d15-x17",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d15",
+          "pdf_page": 46
+        }
+      ],
+      "notes": [
+        "Memory/GraphRAG/fine-tuning are application/agent engineering focus.",
+        "Root independently read all50 complete items and10 legacy questions, visually inspected46 cited physical PDF pages, verified3 source hashes, and reread both revisions."
+      ]
+    }
+  ]
+}

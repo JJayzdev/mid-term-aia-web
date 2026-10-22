@@ -1,0 +1,1740 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.22.expand-b-07",
+  "questions": [
+    {
+      "id": "p2-t3-d05-x01",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d05",
+      "topic": "p2-t3-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Thêm nhiều agent nhưng không phân rã nhiệm vụ rõ gây vấn đề gì?",
+      "correct_answer": "c",
+      "explanation": "Specialization/parallelization/cross-checking cần decomposition; thiếu nó tạo miscoordination và complexity.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d05",
+          "sha256": "371dcc7e89175afc6aa4190f3fe17cddae14a1cd5f207ac766e272758e933c07",
+          "pdf_page": 6,
+          "title": "Multi-Agent Systems",
+          "locator": "Physical PDF page 6; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tự giảm mọi overhead điều phối"
+        },
+        {
+          "id": "b",
+          "text": "Bảo đảm mọi agent biết nhiệm vụ của nhau"
+        },
+        {
+          "id": "c",
+          "text": "Một tập agent khó phối hợp thay vì chuyên môn hóa hữu ích"
+        },
+        {
+          "id": "d",
+          "text": "Tự tạo consensus đáng tin chỉ nhờ số lượng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d05-x02",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d05",
+      "topic": "p2-t3-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trước khi code multi-agent workflow, cần chốt bộ quy tắc nào để hạn chế lỗi specification và termination?",
+      "correct_answer": "b",
+      "explanation": "Multi-agent failure gồm system specification, misalignment và verification/termination; roles/rubric/stop phải rõ từ thiết kế.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d05",
+          "sha256": "371dcc7e89175afc6aa4190f3fe17cddae14a1cd5f207ac766e272758e933c07",
+          "pdf_page": 9,
+          "title": "Multi-Agent Systems",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ format final answer, không cần vai trò hay dừng"
+        },
+        {
+          "id": "b",
+          "text": "Roles, stop condition và rubric"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ tên các model mạnh nhất"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ tăng số worker trước khi biết output cần gì"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d05-x03",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d05",
+      "topic": "p2-t3-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Parallel sectioning khác voting ở cách giao task nào?",
+      "correct_answer": "a",
+      "explanation": "Parallel có hai kiểu: chia subtask độc lập hoặc tạo nhiều lời giải cùng task để aggregate.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d05",
+          "sha256": "371dcc7e89175afc6aa4190f3fe17cddae14a1cd5f207ac766e272758e933c07",
+          "pdf_page": 11,
+          "title": "Multi-Agent Systems",
+          "locator": "Physical PDF page 11; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Sectioning chia việc; voting cho nhiều model cùng làm một việc rồi tổng hợp"
+        },
+        {
+          "id": "b",
+          "text": "Cả hai đều bắt buộc tuần tự cùng một task"
+        },
+        {
+          "id": "c",
+          "text": "Voting chỉ chia corpus thành partition không cần aggregate"
+        },
+        {
+          "id": "d",
+          "text": "Sectioning buộc mọi worker giải lại cùng một câu hỏi"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d05-x04",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d05",
+      "topic": "p2-t3-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Evaluator–optimizer loop khác prompt chaining cố định ở bước phản hồi nào?",
+      "correct_answer": "d",
+      "explanation": "Evaluator–optimizer dùng generate/critique loop; chaining là chuỗi bước cố định có validation.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d05",
+          "sha256": "371dcc7e89175afc6aa4190f3fe17cddae14a1cd5f207ac766e272758e933c07",
+          "pdf_page": 11,
+          "title": "Multi-Agent Systems",
+          "locator": "Physical PDF page 11; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ nối output bước trước vào bước sau theo sequence biết trước"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ classify input rồi chọn một specialist"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ chạy workers song song và bỏ vòng sửa"
+        },
+        {
+          "id": "d",
+          "text": "Critique output rồi dùng đánh giá để cải thiện lượt sinh kế tiếp"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d05-x05",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d05",
+      "topic": "p2-t3-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Supervisor routing có thể dùng model rẻ trong khi specialist dùng model mạnh hơn vì sao?",
+      "correct_answer": "c",
+      "explanation": "Cost có thể tách theo vai trò: routing nhẹ và specialists chuyên môn đắt hơn, vẫn phải kiểm routing quality.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d05",
+          "sha256": "371dcc7e89175afc6aa4190f3fe17cddae14a1cd5f207ac766e272758e933c07",
+          "pdf_page": 15,
+          "title": "Multi-Agent Systems",
+          "locator": "Physical PDF page 15; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Worker chỉ copy final answer nên không cần năng lực"
+        },
+        {
+          "id": "b",
+          "text": "Dùng model rẻ tự bảo đảm routing đúng không cần eval"
+        },
+        {
+          "id": "c",
+          "text": "Bài toán chọn worker có thể đơn giản hơn công việc chuyên môn"
+        },
+        {
+          "id": "d",
+          "text": "Routing luôn cần nhiều compute hơn mọi worker"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d05-x06",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d05",
+      "topic": "p2-t3-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Supervisor luân phiên A→B→A dù không tiến triển cần guard nào?",
+      "correct_answer": "b",
+      "explanation": "Infinite routing loop là failure mode riêng; max iterations giới hạn số vòng và buộc kết thúc/fallback.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d05",
+          "sha256": "371dcc7e89175afc6aa4190f3fe17cddae14a1cd5f207ac766e272758e933c07",
+          "pdf_page": 16,
+          "title": "Multi-Agent Systems",
+          "locator": "Physical PDF page 16; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ tăng context window để loop lâu hơn"
+        },
+        {
+          "id": "b",
+          "text": "Max iterations cho vòng routing"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ thêm worker thứ ba mà không stop condition"
+        },
+        {
+          "id": "d",
+          "text": "Xóa next_worker khỏi state rồi tiếp tục"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d05-x07",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d05",
+      "topic": "p2-t3-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Hai debate agent đưa cùng một kết luận sai và Judge cũng đồng ý. Rủi ro này là gì?",
+      "correct_answer": "a",
+      "explanation": "Debate không bảo đảm đúng nếu agents có blind spot chung; model diversity có thể giảm lỗi tương quan.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d05",
+          "sha256": "371dcc7e89175afc6aa4190f3fe17cddae14a1cd5f207ac766e272758e933c07",
+          "pdf_page": 18,
+          "title": "Multi-Agent Systems",
+          "locator": "Physical PDF page 18; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Collective delusion do lỗi tương quan"
+        },
+        {
+          "id": "b",
+          "text": "Disagreement giữa các agent có kết luận đối lập"
+        },
+        {
+          "id": "c",
+          "text": "Một bằng chứng kết luận đúng chỉ nhờ consensus"
+        },
+        {
+          "id": "d",
+          "text": "Các kiểm tra độc lập đã loại trừ lỗi chung của model"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d05-x08",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d05",
+      "topic": "p2-t3-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao dùng các model khác nhau có thể hữu ích trong adversarial collaboration?",
+      "correct_answer": "d",
+      "explanation": "Khác training data có thể tạo góc nhìn khác, nhưng sequential critique thêm cost/latency nên cần cân giá trị.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d05",
+          "sha256": "371dcc7e89175afc6aa4190f3fe17cddae14a1cd5f207ac766e272758e933c07",
+          "pdf_page": 19,
+          "title": "Multi-Agent Systems",
+          "locator": "Physical PDF page 19; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Ba bản sao cùng model luôn độc lập hoàn toàn"
+        },
+        {
+          "id": "b",
+          "text": "Model diversity loại bỏ mọi nhu cầu Judge"
+        },
+        {
+          "id": "c",
+          "text": "Nhiều model luôn rẻ và nhanh hơn một model"
+        },
+        {
+          "id": "d",
+          "text": "Blind spots khác nhau giúp tăng coverage kiểm tra"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d05-x09",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d05",
+      "topic": "p2-t3-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao parallel execution không mặc định nhanh hơn?",
+      "correct_answer": "c",
+      "explanation": "DAG dependencies, contention và aggregation tạo overhead; cần đo thay giả định parallel luôn thắng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d05",
+          "sha256": "371dcc7e89175afc6aa4190f3fe17cddae14a1cd5f207ac766e272758e933c07",
+          "pdf_page": 21,
+          "title": "Multi-Agent Systems",
+          "locator": "Physical PDF page 21; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Thời gian merge luôn bằng0"
+        },
+        {
+          "id": "b",
+          "text": "Số worker càng lớn luôn giảm latency tỷ lệ thuận"
+        },
+        {
+          "id": "c",
+          "text": "Dependencies, locks và merge conflict có thể triệt tiêu speedup"
+        },
+        {
+          "id": "d",
+          "text": "Mọi subtask tự động độc lập khi chạy async"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d05-x10",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d05",
+      "topic": "p2-t3-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Blackboard shared state và message passing khác nhau ở đánh đổi coordination nào?",
+      "correct_answer": "b",
+      "explanation": "Blackboard dùng state chung; message passing qua queue scale/decouple tốt hơn nhưng thêm truyền thông và handoff design.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d05",
+          "sha256": "371dcc7e89175afc6aa4190f3fe17cddae14a1cd5f207ac766e272758e933c07",
+          "pdf_page": 22,
+          "title": "Multi-Agent Systems",
+          "locator": "Physical PDF page 22; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Queue luôn giảm latency về 0 so với local state"
+        },
+        {
+          "id": "b",
+          "text": "Central state đơn giản nhưng cần bảo vệ concurrent writes; queue decouple thêm network latency"
+        },
+        {
+          "id": "c",
+          "text": "Blackboard không bao giờ có race vì mọi agent dùng LLM"
+        },
+        {
+          "id": "d",
+          "text": "Message passing không cần schema hay context bàn giao"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d05-x11",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d05",
+      "topic": "p2-t3-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Handoff chỉ gửi partial context không đủ cho worker thường gây vấn đề nào?",
+      "correct_answer": "a",
+      "explanation": "Context loss qua handoff là coordination failure; cần truyền đủ thông tin liên quan và trace được đường đi.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d05",
+          "sha256": "371dcc7e89175afc6aa4190f3fe17cddae14a1cd5f207ac766e272758e933c07",
+          "pdf_page": 22,
+          "title": "Multi-Agent Systems",
+          "locator": "Physical PDF page 22; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Worker mất thông tin mục tiêu/ràng buộc nên chất lượng giảm"
+        },
+        {
+          "id": "b",
+          "text": "Tự tăng privacy và quality trong mọi task"
+        },
+        {
+          "id": "c",
+          "text": "Tự bảo đảm isolation đồng nghĩa đầy đủ bằng chứng"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ đổi chi phí token mà không ảnh hưởng outcome"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d05-x12",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d05",
+      "topic": "p2-t3-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một worker timeout trong supervisor workflow nên có chính sách nào?",
+      "correct_answer": "d",
+      "explanation": "Supervisor cần detect timeout và retry/fallback thay để task treo hoặc hợp nhất kết quả giả.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d05",
+          "sha256": "371dcc7e89175afc6aa4190f3fe17cddae14a1cd5f207ac766e272758e933c07",
+          "pdf_page": 22,
+          "title": "Multi-Agent Systems",
+          "locator": "Physical PDF page 22; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Luôn đợi vô hạn vì worker có thể trả lời sau"
+        },
+        {
+          "id": "b",
+          "text": "Coi timeout như kết quả nghiệp vụ rỗng đã xác minh"
+        },
+        {
+          "id": "c",
+          "text": "Bỏ mọi log để tránh trace phức tạp"
+        },
+        {
+          "id": "d",
+          "text": "Retry worker khác hoặc fallback theo failure handling"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d05-x13",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d05",
+      "topic": "p2-t3-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Pre-initialize một agent pool rồi cấp việc qua queue nhằm mục tiêu nào?",
+      "correct_answer": "c",
+      "explanation": "Pool tái sử dụng instances và giới hạn số việc đồng thời, khác tạo agent mới không kiểm soát mỗi request.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d05",
+          "sha256": "371dcc7e89175afc6aa4190f3fe17cddae14a1cd5f207ac766e272758e933c07",
+          "pdf_page": 23,
+          "title": "Multi-Agent Systems",
+          "locator": "Physical PDF page 23; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Giảm thời gian init chỉ bằng tăng số worker không giới hạn"
+        },
+        {
+          "id": "b",
+          "text": "Queue tự loại bỏ mọi init overhead dù không tái sử dụng instance"
+        },
+        {
+          "id": "c",
+          "text": "Amortize init cost và kiểm soát concurrency"
+        },
+        {
+          "id": "d",
+          "text": "Khởi tạo lại toàn bộ worker sau mỗi task để tăng reuse"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d05-x14",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d05",
+      "topic": "p2-t3-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Dependency giới hạn số API calls đang chạy cùng lúc. Kích thước agent pool cần trực tiếp tuân theo giới hạn nào?",
+      "correct_answer": "b",
+      "explanation": "Pool quá lớn làm API calls vượt concurrency/rate limit và tạo lỗi thay vì tăng throughput.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d05",
+          "sha256": "371dcc7e89175afc6aa4190f3fe17cddae14a1cd5f207ac766e272758e933c07",
+          "pdf_page": 23,
+          "title": "Multi-Agent Systems",
+          "locator": "Physical PDF page 23; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ context length tối đa của một call"
+        },
+        {
+          "id": "b",
+          "text": "Giới hạn số API calls đang chạy đồng thời"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ requests-per-minute dù số call đang chạy đã vượt cap"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ tokens-per-minute thay cap số call đang chạy"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d05-x15",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d05",
+      "topic": "p2-t3-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Dead-letter queue hỗ trợ việc gì sau task thất bại?",
+      "correct_answer": "a",
+      "explanation": "DLQ lưu tác vụ thất bại tách khỏi luồng thường, giữ dữ liệu phục vụ điều tra và xử lý sau.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d05",
+          "sha256": "371dcc7e89175afc6aa4190f3fe17cddae14a1cd5f207ac766e272758e933c07",
+          "pdf_page": 23,
+          "title": "Multi-Agent Systems",
+          "locator": "Physical PDF page 23; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Giữ failed tasks để điều tra/debug"
+        },
+        {
+          "id": "b",
+          "text": "Tự đánh dấu mọi task là completed"
+        },
+        {
+          "id": "c",
+          "text": "Retry không giới hạn mà không lưu lỗi"
+        },
+        {
+          "id": "d",
+          "text": "Xóa evidence lỗi để giảm queue depth"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d05-x16",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d05",
+      "topic": "p2-t3-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một hệ cần full state control, conditional routing và debug production nên ưu tiên tiêu chí framework nào?",
+      "correct_answer": "d",
+      "explanation": "Framework cho production cần kiểm state/routing/debug; lựa chọn dựa use case chứ không chỉ setup prototype.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d05",
+          "sha256": "371dcc7e89175afc6aa4190f3fe17cddae14a1cd5f207ac766e272758e933c07",
+          "pdf_page": 25,
+          "title": "Multi-Agent Systems",
+          "locator": "Physical PDF page 25; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ độ dễ viết một role description ban đầu"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ tên model vendor mà không runtime control"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ số lượng agent tạo trong một dòng code"
+        },
+        {
+          "id": "d",
+          "text": "Khả năng biểu diễn state machine và quan sát flow"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d05-x17",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d05",
+      "topic": "p2-t3-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Peer review phát hiện nhiều agent nhận nhiệm vụ trùng nhau và thiếu owner. Cần sửa khía cạnh nào?",
+      "correct_answer": "c",
+      "explanation": "Vai trò rõ và hạn chế overlap giúp coordination; thêm compute không sửa specification mơ hồ.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d05",
+          "sha256": "371dcc7e89175afc6aa4190f3fe17cddae14a1cd5f207ac766e272758e933c07",
+          "pdf_page": 31,
+          "title": "Multi-Agent Systems",
+          "locator": "Physical PDF page 31; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ đổi model mạnh hơn cho Judge"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ giảm số log trong trace"
+        },
+        {
+          "id": "c",
+          "text": "Role clarity và ranh giới trách nhiệm"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ tăng token budget cho mọi agent"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d06-x01",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d06",
+      "topic": "p2-t3-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "analyze",
+      "question": "Một base model thiếu kiến thức/ngôn ngữ miền y khoa, nhưng đội chỉ có vài nghìn mẫu SFT giọng văn. Kỳ vọng nào hợp lý?",
+      "correct_answer": "b",
+      "explanation": "Fine-tune định hình điều model đã biết; base selection/domain knowledge không dễ được sửa bằng vài nghìn mẫu hành vi.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d06",
+          "sha256": "26756bbc02660c63316074dd86a606aa14e2b560af188fca206a8b7c623a8553",
+          "pdf_page": 7,
+          "title": "Fine-tuning LLMs — Từ Full Fine-tune đến LoRA/QLoRA",
+          "locator": "Physical PDF page 7; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tăng rank luôn biến mẫu style thành kiến thức thiếu"
+        },
+        {
+          "id": "b",
+          "text": "SFT chủ yếu định hình hành vi, khó tự tạo năng lực miền chưa học ở base"
+        },
+        {
+          "id": "c",
+          "text": "SFT nhỏ luôn thay được pretraining miền đầy đủ"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ đổi chat template là đủ bổ sung toàn bộ tri thức y khoa"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d06-x02",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d06",
+      "topic": "p2-t3-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một optimizer tốt cho pretraining có tự động là lựa chọn tốt khi fine-tune checkpoint dùng optimizer khác không?",
+      "correct_answer": "a",
+      "explanation": "Câu hỏi pretraining và adapting checkpoint khác nhau; cần kiểm mức cập nhật và regression khi đổi optimizer.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d06",
+          "sha256": "26756bbc02660c63316074dd86a606aa14e2b560af188fca206a8b7c623a8553",
+          "pdf_page": 10,
+          "title": "Fine-tuning LLMs — Từ Full Fine-tune đến LoRA/QLoRA",
+          "locator": "Physical PDF page 10; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Không; optimizer mismatch có thể phá kiến thức đã học"
+        },
+        {
+          "id": "b",
+          "text": "Có; thứ hạng pretraining áp dụng nguyên cho mọi fine-tune"
+        },
+        {
+          "id": "c",
+          "text": "Có; chỉ cần đổi optimizer name mà không đo regression"
+        },
+        {
+          "id": "d",
+          "text": "Không cần quan tâm vì LoRA không dùng gradient"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d06-x03",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d06",
+      "topic": "p2-t3-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Fine-tune MoE muốn chỉ gắn adapter ở expert hữu ích nên dựa bằng chứng nào?",
+      "correct_answer": "d",
+      "explanation": "Routing lệch khiến nhiều expert ít được dùng; đo usage trước giúp chọn vị trí adapter thay dựa parameter count đơn thuần.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d06",
+          "sha256": "26756bbc02660c63316074dd86a606aa14e2b560af188fca206a8b7c623a8553",
+          "pdf_page": 12,
+          "title": "Fine-tuning LLMs — Từ Full Fine-tune đến LoRA/QLoRA",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chọn ngẫu nhiên expert cùng parameter budget"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ chọn expert ID nhỏ nhất"
+        },
+        {
+          "id": "c",
+          "text": "Gắn mọi expert giống nhau vì tần suất luôn đều"
+        },
+        {
+          "id": "d",
+          "text": "Tần suất routing trên tập hiệu chuẩn đại diện"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d06-x04",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d06",
+      "topic": "p2-t3-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Full FT/CPT vẫn có lý do phù hợp hơn PEFT trong trường hợp nào?",
+      "correct_answer": "c",
+      "explanation": "Full FT/CPT hợp thay đổi nền tảng/quy mô dữ liệu lớn; PEFT thường phù hợp post-training hạn chế và nhiều adapter.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d06",
+          "sha256": "26756bbc02660c63316074dd86a606aa14e2b560af188fca206a8b7c623a8553",
+          "pdf_page": 15,
+          "title": "Fine-tuning LLMs — Từ Full Fine-tune đến LoRA/QLoRA",
+          "locator": "Physical PDF page 15; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Cần nhiều biến thể khách hàng nhưng GPU hạn chế"
+        },
+        {
+          "id": "b",
+          "text": "Muốn giữ năng lực gốc và chỉ học style hẹp"
+        },
+        {
+          "id": "c",
+          "text": "Dịch chuyển miền rất lớn hoặc xây base với dữ liệu quy mô lớn"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ đổi format JSON trên dataset nhỏ"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d06-x05",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d06",
+      "topic": "p2-t3-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một phương pháp thêm layer hoặc đổi attention pattern khác adapter initialization ở rủi ro triển khai nào?",
+      "correct_answer": "b",
+      "explanation": "Các phương pháp architecture surgery khác optimizer/parameterization/init; graph model thay đổi tạo yêu cầu triển khai riêng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d06",
+          "sha256": "26756bbc02660c63316074dd86a606aa14e2b560af188fca206a8b7c623a8553",
+          "pdf_page": 16,
+          "title": "Fine-tuning LLMs — Từ Full Fine-tune đến LoRA/QLoRA",
+          "locator": "Physical PDF page 16; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Không ảnh hưởng serving vì tên vẫn có LoRA"
+        },
+        {
+          "id": "b",
+          "text": "Nó có thể thay kiến trúc base và cần nuôi runtime phi tiêu chuẩn"
+        },
+        {
+          "id": "c",
+          "text": "Nó chỉ đổi trọng số khởi tạo trong cùng graph"
+        },
+        {
+          "id": "d",
+          "text": "Luôn merge/export như base ở mọi backend"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d06-x06",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d06",
+      "topic": "p2-t3-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Chỉ tăng rank attention adapter mà bỏ MLP có thể bỏ sót yếu tố nào?",
+      "correct_answer": "a",
+      "explanation": "LoRA coverage cần xét MLP/các linear modules; tăng rank ở vị trí hẹp không tương đương phủ đúng lớp.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d06",
+          "sha256": "26756bbc02660c63316074dd86a606aa14e2b560af188fca206a8b7c623a8553",
+          "pdf_page": 19,
+          "title": "Fine-tuning LLMs — Từ Full Fine-tune đến LoRA/QLoRA",
+          "locator": "Physical PDF page 19; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Vị trí phủ adapter có thể quan trọng hơn tổng tham số/rank"
+        },
+        {
+          "id": "b",
+          "text": "Rank đủ lớn tự bảo đảm phủ cả MLP chưa gắn"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ alpha ảnh hưởng còn target_modules không quan trọng"
+        },
+        {
+          "id": "d",
+          "text": "MLP không chứa nhiều tham số nên luôn bỏ qua được"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d06-x07",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d06",
+      "topic": "p2-t3-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một run LoRA học rất ít khi dùng LR theo thói quen full fine-tune nên kiểm gì?",
+      "correct_answer": "d",
+      "explanation": "LR tối ưu LoRA có thể cao hơn đáng kể full FT; cấu hình thang sai làm model học ít dù run không lỗi.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d06",
+          "sha256": "26756bbc02660c63316074dd86a606aa14e2b560af188fca206a8b7c623a8553",
+          "pdf_page": 20,
+          "title": "Fine-tuning LLMs — Từ Full Fine-tune đến LoRA/QLoRA",
+          "locator": "Physical PDF page 20; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ tăng epoch mãi bất kể eval"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ đổi tên adapter và giữ mọi LR"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ giảm LR thêm vì training không tiến triển"
+        },
+        {
+          "id": "d",
+          "text": "Quét thang LR phù hợp LoRA thay coi phương pháp vốn kém"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d06-x08",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d06",
+      "topic": "p2-t3-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Tăng batch để lấp GPU làm LoRA quality giảm. Tăng rank có bảo đảm bù được không?",
+      "correct_answer": "c",
+      "explanation": "Batch effect không được bù đơn giản bằng rank; tối ưu memory utilization phải đi cùng chất lượng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d06",
+          "sha256": "26756bbc02660c63316074dd86a606aa14e2b560af188fca206a8b7c623a8553",
+          "pdf_page": 21,
+          "title": "Fine-tuning LLMs — Từ Full Fine-tune đến LoRA/QLoRA",
+          "locator": "Physical PDF page 21; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Có; batch càng lớn luôn tốt nếu VRAM đầy"
+        },
+        {
+          "id": "b",
+          "text": "Không cần đo vì train loss đơn lẻ đủ để kết luận"
+        },
+        {
+          "id": "c",
+          "text": "Không; độ nhạy batch là đặc tính riêng, cần đo batch phù hợp"
+        },
+        {
+          "id": "d",
+          "text": "Có; rank luôn bù mọi thay đổi batch"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d06-x09",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d06",
+      "topic": "p2-t3-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Khi so hai biến thể PEFT, vì sao cần tune LR cho từng phương pháp?",
+      "correct_answer": "b",
+      "explanation": "Một số chênh lệch tưởng do phương pháp đến từ LR/scaling; cần hyperparameter comparison phù hợp.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d06",
+          "sha256": "26756bbc02660c63316074dd86a606aa14e2b560af188fca206a8b7c623a8553",
+          "pdf_page": 23,
+          "title": "Fine-tuning LLMs — Từ Full Fine-tune đến LoRA/QLoRA",
+          "locator": "Physical PDF page 23; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ số trainable params đủ giải thích mọi quality gap"
+        },
+        {
+          "id": "b",
+          "text": "Khác scaling có thể đổi effective learning rate và làm ranking so sánh sai"
+        },
+        {
+          "id": "c",
+          "text": "Mọi biến thể có cùng LR tối ưu tuyệt đối"
+        },
+        {
+          "id": "d",
+          "text": "Giữ một LR cố định luôn là so sánh công bằng nhất"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d06-x10",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d06",
+      "topic": "p2-t3-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong QLoRA, base 4-bit đóng băng vẫn tham gia backward theo nghĩa nào?",
+      "correct_answer": "a",
+      "explanation": "Quantized base vẫn tham gia forward/backprop path tới adapter; trainable adapter bf16, base không được update.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d06",
+          "sha256": "26756bbc02660c63316074dd86a606aa14e2b560af188fca206a8b7c623a8553",
+          "pdf_page": 25,
+          "title": "Fine-tuning LLMs — Từ Full Fine-tune đến LoRA/QLoRA",
+          "locator": "Physical PDF page 25; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Gradient đi qua tính toán base để cập nhật adapter, không cập nhật weights 4-bit"
+        },
+        {
+          "id": "b",
+          "text": "Mọi weights 4-bit được cập nhật trực tiếp như full FT"
+        },
+        {
+          "id": "c",
+          "text": "Base bị bỏ qua hoàn toàn nên không dùng compute"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ paged optimizer cập nhật lại tokenizer"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d06-x11",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d06",
+      "topic": "p2-t3-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một backend cho phép nạp quantized model và train adapter có bảo đảm bàn giao merged model được không?",
+      "correct_answer": "d",
+      "explanation": "Quantization backend matrix phải kiểm cả merge/dtype/export; load-and-train không đồng nghĩa train-and-deliver.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d06",
+          "sha256": "26756bbc02660c63316074dd86a606aa14e2b560af188fca206a8b7c623a8553",
+          "pdf_page": 26,
+          "title": "Fine-tuning LLMs — Từ Full Fine-tune đến LoRA/QLoRA",
+          "locator": "Physical PDF page 26; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Có; train được thì mọi dtype đều merge được"
+        },
+        {
+          "id": "b",
+          "text": "Có; mọi quantization format đều là full-precision export"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ cần đổi extension checkpoint là merge thành công"
+        },
+        {
+          "id": "d",
+          "text": "Không; hỗ trợ train và hỗ trợ merge là hai khả năng riêng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d06-x12",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d06",
+      "topic": "p2-t3-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao cần decontaminate eval khỏi training dataset?",
+      "correct_answer": "c",
+      "explanation": "Data quality pipeline cần dedup và khử nhiễm eval; leakage làm kết quả không đại diện generalization.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d06",
+          "sha256": "26756bbc02660c63316074dd86a606aa14e2b560af188fca206a8b7c623a8553",
+          "pdf_page": 27,
+          "title": "Fine-tuning LLMs — Từ Full Fine-tune đến LoRA/QLoRA",
+          "locator": "Physical PDF page 27; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ để file dataset nhỏ mà không ảnh hưởng đánh giá"
+        },
+        {
+          "id": "b",
+          "text": "Để thay split validation bằng train loss"
+        },
+        {
+          "id": "c",
+          "text": "Tránh điểm eval cao do model đã thấy mẫu kiểm tra"
+        },
+        {
+          "id": "d",
+          "text": "Để train có thêm đáp án của test cho chất lượng tốt hơn"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d06-x13",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d06",
+      "topic": "p2-t3-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trước SFT, decode ngược token được tính loss để xác nhận điều gì?",
+      "correct_answer": "b",
+      "explanation": "Loss mask sai có thể dạy model sinh lại câu hỏi/prompt dù training chạy bình thường; cần kiểm token thực sự giám sát.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d06",
+          "sha256": "26756bbc02660c63316074dd86a606aa14e2b560af188fca206a8b7c623a8553",
+          "pdf_page": 28,
+          "title": "Fine-tuning LLMs — Từ Full Fine-tune đến LoRA/QLoRA",
+          "locator": "Physical PDF page 28; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chat template đã tạo prompt đúng nhưng chưa kiểm label mask"
+        },
+        {
+          "id": "b",
+          "text": "Vùng giám sát đúng nội dung assistant cần học"
+        },
+        {
+          "id": "c",
+          "text": "Mask đang tính loss trên prompt user thay assistant response"
+        },
+        {
+          "id": "d",
+          "text": "Mask đang tính loss trên padding thay response thật"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d06-x14",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d06",
+      "topic": "p2-t3-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Packing nhiều mẫu vào một sequence cần bảo vệ ranh giới attention vì sao?",
+      "correct_answer": "a",
+      "explanation": "Cross-example attention gây contamination; packing cần xử lý varlen/position boundary đúng, không chỉ nối token.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d06",
+          "sha256": "26756bbc02660c63316074dd86a606aa14e2b560af188fca206a8b7c623a8553",
+          "pdf_page": 29,
+          "title": "Fine-tuning LLMs — Từ Full Fine-tune đến LoRA/QLoRA",
+          "locator": "Physical PDF page 29; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tránh mẫu sau đọc nội dung mẫu trước và học liên hệ giả"
+        },
+        {
+          "id": "b",
+          "text": "Reset position IDs tự bảo đảm cách ly attention trên mọi backend"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ padding giữa mẫu là đủ chặn attention xuyên mẫu"
+        },
+        {
+          "id": "d",
+          "text": "EOS tự tạo block-diagonal attention mask ở mọi kernel"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d06-x15",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d06",
+      "topic": "p2-t3-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Train loss giảm nhưng eval loss quay đầu tăng nên ưu tiên chẩn đoán gì?",
+      "correct_answer": "d",
+      "explanation": "Train/eval divergence là dấu hiệu quá khớp; điểm dừng và dữ liệu/rank cần xét thay giảm LR theo phản xạ.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d06",
+          "sha256": "26756bbc02660c63316074dd86a606aa14e2b560af188fca206a8b7c623a8553",
+          "pdf_page": 33,
+          "title": "Fine-tuning LLMs — Từ Full Fine-tune đến LoRA/QLoRA",
+          "locator": "Physical PDF page 33; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Underfitting vì cả train loss và eval loss đều cao không giảm"
+        },
+        {
+          "id": "b",
+          "text": "Learning rate quá lớn gây cả train loss lẫn eval loss dao động mạnh"
+        },
+        {
+          "id": "c",
+          "text": "Generalization đang cải thiện vì chỉ train loss giảm là đủ"
+        },
+        {
+          "id": "d",
+          "text": "Overfitting và cân nhắc dừng/giảm epoch hoặc thêm dữ liệu"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d06-x16",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d06",
+      "topic": "p2-t3-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Tokenizer eos_token khác token kết thúc lượt mà chat template phát ra có nguy cơ gì?",
+      "correct_answer": "c",
+      "explanation": "Training và inference cần cùng template/EOS semantics; mismatch có thể làm không dừng hoặc quality giảm âm thầm.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d06",
+          "sha256": "26756bbc02660c63316074dd86a606aa14e2b560af188fca206a8b7c623a8553",
+          "pdf_page": 37,
+          "title": "Fine-tuning LLMs — Từ Full Fine-tune đến LoRA/QLoRA",
+          "locator": "Physical PDF page 37; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tự được optimizer sửa trong epoch đầu"
+        },
+        {
+          "id": "b",
+          "text": "Không ảnh hưởng vì mọi special token tương đương"
+        },
+        {
+          "id": "c",
+          "text": "Model học/suy luận với hai định nghĩa hết lượt không khớp"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ giảm kích thước adapter không ảnh hưởng hành vi"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d06-x17",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d06",
+      "topic": "p2-t3-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "analyze",
+      "question": "Một model fine-tuned có perplexity tốt nhưng regression benchmark chung giảm quá ngưỡng. Quyết định hợp lý là gì?",
+      "correct_answer": "b",
+      "explanation": "PPL đo mức giống dataset, không bao phủ năng lực chung/format/ops; regression gate phải bảo toàn năng lực cần thiết.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d06",
+          "sha256": "26756bbc02660c63316074dd86a606aa14e2b560af188fca206a8b7c623a8553",
+          "pdf_page": 38,
+          "title": "Fine-tuning LLMs — Từ Full Fine-tune đến LoRA/QLoRA",
+          "locator": "Physical PDF page 38; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ xem train loss để quyết định"
+        },
+        {
+          "id": "b",
+          "text": "Chặn deploy dù target task đẹp"
+        },
+        {
+          "id": "c",
+          "text": "Deploy vì PPL thấp đủ chứng minh chất lượng"
+        },
+        {
+          "id": "d",
+          "text": "Bỏ regression metric vì không thuộc miền mới"
+        }
+      ],
+      "shuffle_options": true
+    }
+  ]
+}

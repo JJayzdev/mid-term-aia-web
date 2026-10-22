@@ -74,6 +74,24 @@
       ]
     },
     {
+      "id": "p1-d04-q03",
+      "previous_revision": 2,
+      "revision": 3,
+      "before": "Những nội dung nào thuộc harness engineering trên bản đồ bốn lớp? (Chọn tất cả đáp án đúng.)",
+      "after": "Trong mô hình bốn lớp của hệ thống agent, những nội dung nào thuộc harness engineering? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/phase1-remaining.json",
+      "source_reference": [
+        {
+          "document_id": "p1-d04",
+          "sha256": "1990fcdcf2ff0da294e52c1ca445ab8858a1922411c9cb1e380c683c2d4985af",
+          "pdf_page": 9,
+          "title": "Context · Loop · Harness Engineering",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
       "id": "p1-d05-q02",
       "previous_revision": 1,
       "revision": 2,
@@ -290,6 +308,24 @@
       ]
     },
     {
+      "id": "p1-d11-q02",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Artifact pack cuối ngày yêu cầu những thành phần nào? (Chọn tất cả đáp án đúng.)",
+      "after": "Để kiểm chứng guardrails và cơ chế chuyển xử lý cho con người, cần chuẩn bị những bằng chứng nào? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/pilot-001.json",
+      "source_reference": [
+        {
+          "document_id": "p1-d11",
+          "sha256": "04c49100a4cb70af31bc8b7818d814c940f16ef480368339ffcbc95ec6081803",
+          "pdf_page": 5,
+          "title": "Guardrails, HITL & Responsible AI",
+          "locator": "Physical PDF page 5; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
       "id": "p1-d11-q03",
       "previous_revision": 1,
       "revision": 2,
@@ -393,6 +429,24 @@
           "pdf_page": 7,
           "title": "AI Evaluation & Benchmarking",
           "locator": "Physical PDF page 7; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p1-d14-q03",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Offline evaluation được mô tả là batch test trên golden dataset, phù hợp khi release hoặc đổi prompt.",
+      "after": "Offline evaluation dùng batch test trên golden dataset, phù hợp khi phát hành phiên bản hoặc thay đổi prompt.",
+      "draft_path": "data/questions/drafts/pilot-001.json",
+      "source_reference": [
+        {
+          "document_id": "p1-d14",
+          "sha256": "289c3c8ca8e63d8f0eb71be1822bd1149213ac29ff648f0722439ff1dcfd53af",
+          "pdf_page": 9,
+          "title": "AI Evaluation & Benchmarking",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
           "verification": "needs_review"
         }
       ]
@@ -524,6 +578,24 @@
       ]
     },
     {
+      "id": "p2-t1-d02-q03",
+      "previous_revision": 2,
+      "revision": 3,
+      "before": "Những điều nào là outcome mong muốn của ví dụ? (Chọn tất cả đáp án đúng.)",
+      "after": "Một dịch vụ gọi xe muốn cải thiện việc tài xế và hành khách tìm thấy nhau tại điểm đón. Những kết quả nào thể hiện outcome mong muốn? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/track1.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d02",
+          "sha256": "fa4ca552c4891545ba2b950767e104db3af401b39ddd7252da5e181c40dbc1de",
+          "pdf_page": 9,
+          "title": "Product Discovery",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
       "id": "p2-t1-d03-q02",
       "previous_revision": 1,
       "revision": 2,
@@ -591,6 +663,60 @@
           "pdf_page": 10,
           "title": "AI Evaluation",
           "locator": "Physical PDF page 10; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t1-d05-q01",
+      "previous_revision": 2,
+      "revision": 3,
+      "before": "Lớp Responsible AI chủ yếu chuyển giá trị thành điều gì theo sơ đồ?",
+      "after": "Responsible AI chuyển các giá trị đạo đức thành những yếu tố vận hành nào?",
+      "draft_path": "data/questions/drafts/track1.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d05",
+          "sha256": "59775f3a6b58971a90d3907a2a672d24232dfe8c3e318b37c3285ac11b2b0c63",
+          "pdf_page": 6,
+          "title": "AI Ethic, Responsible AI và AI Compliance",
+          "locator": "Physical PDF page 6; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t1-d05-q02",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "AI Safety Evaluation trong sơ đồ đặt câu hỏi về failure, harm và ngưỡng chặn launch.",
+      "after": "AI Safety Evaluation xem xét các dạng thất bại, tác hại và ngưỡng chặn triển khai.",
+      "draft_path": "data/questions/drafts/track1.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d05",
+          "sha256": "59775f3a6b58971a90d3907a2a672d24232dfe8c3e318b37c3285ac11b2b0c63",
+          "pdf_page": 6,
+          "title": "AI Ethic, Responsible AI và AI Compliance",
+          "locator": "Physical PDF page 6; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t1-d05-q03",
+      "previous_revision": 2,
+      "revision": 3,
+      "before": "Những mục nào thuộc lớp AI Ethics trong sơ đồ? (Chọn tất cả đáp án đúng.)",
+      "after": "Những giá trị nào thuộc AI Ethics? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/track1.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d05",
+          "sha256": "59775f3a6b58971a90d3907a2a672d24232dfe8c3e318b37c3285ac11b2b0c63",
+          "pdf_page": 6,
+          "title": "AI Ethic, Responsible AI và AI Compliance",
+          "locator": "Physical PDF page 6; local extracted cache available by SHA256",
           "verification": "needs_review"
         }
       ]
@@ -681,6 +807,60 @@
           "pdf_page": 12,
           "title": "Đèn nào bật trước?",
           "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t1-d10-q01",
+      "previous_revision": 2,
+      "revision": 3,
+      "before": "Trong ma trận ảnh hưởng–quan tâm, stakeholder có ảnh hưởng cao nhưng quan tâm thấp thuộc nhóm nào?",
+      "after": "Trong mô hình phân nhóm stakeholder Champions–Blockers–Supporters–Bystanders theo ảnh hưởng và quan tâm, stakeholder có ảnh hưởng cao nhưng quan tâm thấp thuộc nhóm nào?",
+      "draft_path": "data/questions/drafts/track1.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d10",
+          "sha256": "6f0195bca045e48bd23cd206c3b5d4eeca975edd4ba0b2e843b6051ef8f55a79",
+          "pdf_page": 9,
+          "title": "Con Người Trong Dự Án AI — Từ Stakeholder Đến AI Team Performance",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t1-d10-q02",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Champions có ảnh hưởng cao và quan tâm cao theo ma trận.",
+      "after": "Trong ma trận ảnh hưởng–quan tâm, Champions có ảnh hưởng cao và quan tâm cao.",
+      "draft_path": "data/questions/drafts/track1.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d10",
+          "sha256": "6f0195bca045e48bd23cd206c3b5d4eeca975edd4ba0b2e843b6051ef8f55a79",
+          "pdf_page": 9,
+          "title": "Con Người Trong Dự Án AI — Từ Stakeholder Đến AI Team Performance",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t1-d10-q03",
+      "previous_revision": 2,
+      "revision": 3,
+      "before": "Những câu hỏi nào dùng để đặt stakeholder lên ma trận? (Chọn tất cả đáp án đúng.)",
+      "after": "Những câu hỏi nào giúp phân loại stakeholder theo hai trục ảnh hưởng và quan tâm? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/track1.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d10",
+          "sha256": "6f0195bca045e48bd23cd206c3b5d4eeca975edd4ba0b2e843b6051ef8f55a79",
+          "pdf_page": 9,
+          "title": "Con Người Trong Dự Án AI — Từ Stakeholder Đến AI Team Performance",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
           "verification": "needs_review"
         }
       ]
@@ -956,6 +1136,24 @@
       ]
     },
     {
+      "id": "p2-t2-d10-q03",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Trong mô hình phi trạng thái trình bày ở đây, mỗi request cần mang danh tính để kiểm tra lại từng lời gọi.",
+      "after": "Với API phi trạng thái có xác thực, mỗi request cần mang thông tin xác thực để hệ thống kiểm tra danh tính cho từng lời gọi.",
+      "draft_path": "data/questions/drafts/track2.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d10",
+          "sha256": "fb0704ab555d61d3087352c077ef9abd3e28f00eb0744b46f00e7a316b84f35f",
+          "pdf_page": 15,
+          "title": "MCP/A2A Infrastructure & Agentic Routing",
+          "locator": "Physical PDF page 15; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
       "id": "p2-t2-d11-q03",
       "previous_revision": 1,
       "revision": 2,
@@ -969,6 +1167,24 @@
           "pdf_page": 9,
           "title": "GPU FinOps & Cost Optimization",
           "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t2-d12-q01",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Nguồn dữ liệu cập nhật trễ so vớiSLA nhưng schema vẫn đúng. Trụ cột nào trực tiếp phát hiện vấn đề này?",
+      "after": "Nguồn dữ liệu cập nhật trễ so với SLA nhưng schema vẫn đúng. Trụ cột nào trực tiếp phát hiện vấn đề này?",
+      "draft_path": "data/questions/drafts/track2.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d12",
+          "sha256": "077bbb140ad732c33cee87382d0b0cc93d22f9d7070775b0c84589d44617854f",
+          "pdf_page": 6,
+          "title": "Data Observability & Lineage cho hệ thống Data/AI",
+          "locator": "Physical PDF page 6; local extracted cache available by SHA256",
           "verification": "needs_review"
         }
       ]
@@ -992,6 +1208,24 @@
       ]
     },
     {
+      "id": "p2-t2-d13-q01",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Những thành phần nào được liệt kê trong request audit trail? (Chọn tất cả đáp án đúng.)",
+      "after": "Những thông tin nào cần ghi trong audit trail của request để truy vết phiên bản mô hình và chi phí? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/track2.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d13",
+          "sha256": "fc950a9f33f3370e75103e7d73debffeb457099e6a13ad6a4a784ff719c501d0",
+          "pdf_page": 10,
+          "title": "Platform Engineering & Documentation",
+          "locator": "Physical PDF page 10; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
       "id": "p2-t3-d01-q02",
       "previous_revision": 1,
       "revision": 2,
@@ -1005,6 +1239,24 @@
           "pdf_page": 16,
           "title": "Advanced Agent Architectures",
           "locator": "Physical PDF page 16; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t3-d01-q03",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Reflexion trong sơ đồ dùng text feedback để cải thiện vòng thử, không cập nhật gradient của model trong mỗi vòng.",
+      "after": "Reflexion dùng text feedback để cải thiện vòng thử, không cập nhật gradient của model trong mỗi vòng.",
+      "draft_path": "data/questions/drafts/track3.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d01",
+          "sha256": "1352af02371ea4f5e189e00b925ba94b55c176646e671eb5a6bcf81dc9955542",
+          "pdf_page": 11,
+          "title": "Advanced Agent Architectures",
+          "locator": "Physical PDF page 11; local extracted cache available by SHA256",
           "verification": "needs_review"
         }
       ]
@@ -1100,6 +1352,24 @@
       ]
     },
     {
+      "id": "p2-t3-d04-q01",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Triple trong knowledge graph được mô tả theo cấu trúc nào?",
+      "after": "Một triple trong knowledge graph có cấu trúc nào?",
+      "draft_path": "data/questions/drafts/track3.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d04",
+          "sha256": "d5bc2aee10e46b2073e1cb2dac8cd2bb00590e2019a90cacd40b4505181b9c1b",
+          "pdf_page": 13,
+          "title": "GraphRAG & Knowledge Graphs",
+          "locator": "Physical PDF page 13; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
       "id": "p2-t3-d04-q02",
       "previous_revision": 1,
       "revision": 2,
@@ -1113,6 +1383,24 @@
           "pdf_page": 17,
           "title": "GraphRAG & Knowledge Graphs",
           "locator": "Physical PDF page 17; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t3-d04-q03",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Trong mô tả KG cho RAG, retrieval có thể là graph traversal trên entities/relations thay vì chỉ chunk search.",
+      "after": "Trong hệ thống RAG dùng knowledge graph, retrieval có thể duyệt entities và relations thay vì chỉ tìm chunk văn bản.",
+      "draft_path": "data/questions/drafts/track3.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d04",
+          "sha256": "d5bc2aee10e46b2073e1cb2dac8cd2bb00590e2019a90cacd40b4505181b9c1b",
+          "pdf_page": 13,
+          "title": "GraphRAG & Knowledge Graphs",
+          "locator": "Physical PDF page 13; local extracted cache available by SHA256",
           "verification": "needs_review"
         }
       ]
@@ -1154,6 +1442,24 @@
       ]
     },
     {
+      "id": "p2-t3-d06-q01",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Few-shot prompt chưa đạt ngưỡng vì thiếu tri thức riêng, không phải thiếu hành vi. Theo cây quyết định nên đánh giá hướng nào trước?",
+      "after": "Few-shot prompt chưa đạt ngưỡng vì thiếu tri thức riêng, không phải thiếu hành vi. Nên đánh giá hướng xử lý nào trước?",
+      "draft_path": "data/questions/drafts/track3.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d06",
+          "sha256": "26756bbc02660c63316074dd86a606aa14e2b560af188fca206a8b7c623a8553",
+          "pdf_page": 5,
+          "title": "Fine-tuning LLMs — Từ Full Fine-tune đến LoRA/QLoRA",
+          "locator": "Physical PDF page 5; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
       "id": "p2-t3-d06-q02",
       "previous_revision": 1,
       "revision": 2,
@@ -1167,6 +1473,97 @@
           "pdf_page": 17,
           "title": "Fine-tuning LLMs — Từ Full Fine-tune đến LoRA/QLoRA",
           "locator": "Physical PDF page 17; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t3-d06-q03",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Trong sơ đồ LoRA, số tham số trainable của hai matrix được viết r(d+k) thay vì dk.",
+      "after": "Với ma trận trọng số kích thước d × k, LoRA rank r dùng hai ma trận adapter có tổng r(d+k) tham số trainable, thay vì cập nhật toàn bộ dk tham số gốc.",
+      "draft_path": "data/questions/drafts/track3.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d06",
+          "sha256": "26756bbc02660c63316074dd86a606aa14e2b560af188fca206a8b7c623a8553",
+          "pdf_page": 17,
+          "title": "Fine-tuning LLMs — Từ Full Fine-tune đến LoRA/QLoRA",
+          "locator": "Physical PDF page 17; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t3-d07-q01",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "DPO loại bỏ thành phần trung gian nào so với cách RLHF được đối chiếu ở đây?",
+      "after": "DPO không cần huấn luyện riêng thành phần nào vốn được dùng để chấm reward trong pipeline RLHF truyền thống?",
+      "draft_path": "data/questions/drafts/track3.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d07",
+          "sha256": "ddb9aa90abbc2c87e6bc30f8b1f09dcdba93af86f73dd48fbcc03107baefd181",
+          "pdf_page": 12,
+          "title": "DPO, ORPO & Alignment — Từ SFT đến Preference Learning",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t3-d07-q02",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Theo câu hỏi ai phân biệt good/bad trên timeline, những ghép nối nào đúng? (Chọn tất cả đáp án đúng.)",
+      "after": "Những ghép nối nào đúng giữa nguồn tín hiệu đánh giá tốt/xấu và phương pháp alignment? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/track3.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d07",
+          "sha256": "ddb9aa90abbc2c87e6bc30f8b1f09dcdba93af86f73dd48fbcc03107baefd181",
+          "pdf_page": 18,
+          "title": "DPO, ORPO & Alignment — Từ SFT đến Preference Learning",
+          "locator": "Physical PDF page 18; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t3-d07-q03",
+      "previous_revision": 2,
+      "revision": 4,
+      "before": "Phần ORPO, SimPO & Alternatives giới thiệu single-stage alignment như một hướng bỏ bước SFT riêng biệt.",
+      "after": "Single-stage alignment có thể kết hợp việc học từ demonstration và preference trong một giai đoạn, thay cho một bước SFT riêng biệt.",
+      "draft_path": "data/questions/drafts/track3.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d07",
+          "sha256": "ddb9aa90abbc2c87e6bc30f8b1f09dcdba93af86f73dd48fbcc03107baefd181",
+          "pdf_page": 21,
+          "title": "DPO, ORPO & Alignment — Từ SFT đến Preference Learning",
+          "locator": "Physical PDF page 21; ORPO single-stage SFT plus preference objective",
+          "verification": "needs_review"
+        }
+      ],
+      "source_correction": "Reviewer requested physical page21, directly supporting combined objective; p17 was only section introduction."
+    },
+    {
+      "id": "p2-t3-d08-q02",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Những nguyên tắc node function nào được checklist production nêu? (Chọn tất cả đáp án đúng.)",
+      "after": "Những nguyên tắc nào giúp node function an toàn khi retry và cập nhật state? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/track3.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d08",
+          "sha256": "4b54b3bee4ad0e05aa69428582b0a4d1714c045b9ceaf85e48827ab399014e2b",
+          "pdf_page": 16,
+          "title": "LangGraph & Agentic Orchestration",
+          "locator": "Physical PDF page 16; local extracted cache available by SHA256",
           "verification": "needs_review"
         }
       ]
@@ -1208,6 +1605,24 @@
       ]
     },
     {
+      "id": "p2-t3-d10-q01",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Circuit breaker ở trạng thái OPEN có hành vi nào trong sơ đồ?",
+      "after": "Circuit breaker ở trạng thái OPEN xử lý lời gọi đến dependency như thế nào?",
+      "draft_path": "data/questions/drafts/track3.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d10",
+          "sha256": "8eedb050729d509fcba099e1b5bba2b1c837f82af5531c976ecdc2bf2df5982a",
+          "pdf_page": 12,
+          "title": "Circuit Breakers, Caching & Reliability for Production Agents",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
       "id": "p2-t3-d10-q02",
       "previous_revision": 1,
       "revision": 2,
@@ -1221,6 +1636,24 @@
           "pdf_page": 17,
           "title": "Circuit Breakers, Caching & Reliability for Production Agents",
           "locator": "Physical PDF page 17; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t3-d11-q01",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Primitive MCP nào được bảng mô tả là dữ liệu read-only theo URI do app cung cấp làm context?",
+      "after": "Primitive MCP nào cung cấp dữ liệu chỉ đọc theo URI để ứng dụng dùng làm context?",
+      "draft_path": "data/questions/drafts/track3.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d11",
+          "sha256": "566680634b00ed5a187c0fb5d63a903e97fa376587d96bdcc87ca3909bc6e61a",
+          "pdf_page": 10,
+          "title": "Model Context Protocol (MCP)",
+          "locator": "Physical PDF page 10; local extracted cache available by SHA256",
           "verification": "needs_review"
         }
       ]
@@ -1347,6 +1780,23 @@
       ]
     },
     {
+      "id": "p2-t4-d05-q01",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Thứ tự hai bước lặp của Kalman filter được mô tả thế nào?",
+      "after": "Hai bước lặp của Kalman filter được thực hiện theo thứ tự nào?",
+      "draft_path": "data/questions/drafts/root-track4.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 18,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
       "id": "p2-t4-d05-q04",
       "previous_revision": 1,
       "revision": 2,
@@ -1359,6 +1809,23 @@
           "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
           "pdf_page": 31,
           "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d07-q02",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Trong ByteTrack được mô tả, box score thấp được dùng để tạo track mới ngay lập tức.",
+      "after": "Trong ByteTrack, box score thấp được dùng để tạo track mới ngay lập tức.",
+      "draft_path": "data/questions/drafts/root-track4.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d07",
+          "sha256": "e664d320f682ce0aacfe2649cb5dd07e6d85563dadaef5cf92039bc43b07ee26",
+          "pdf_page": 27,
+          "title": "Tracking",
           "verification": "needs_review"
         }
       ]
@@ -1511,6 +1978,23 @@
           "document_id": "p2-t4-d11",
           "sha256": "9f2b8b0d84e67d71598eaa2f2a7d0d186567c3ee10171dcf5213e4d62a492b46",
           "pdf_page": 23,
+          "title": "Synthetic, Simulated & Trajectory Data",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d11-q03",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Trong cổng tin cậy nhãn được đề xuất cho bài lab, IoU được dùng để đối chiếu gì?",
+      "after": "Một quy trình tạo ảnh có điều kiện dùng IoU để kiểm tra vật sinh có nằm đúng vị trí yêu cầu. Hai box nào cần được đối chiếu?",
+      "draft_path": "data/questions/drafts/root-track4.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d11",
+          "sha256": "9f2b8b0d84e67d71598eaa2f2a7d0d186567c3ee10171dcf5213e4d62a492b46",
+          "pdf_page": 36,
           "title": "Synthetic, Simulated & Trajectory Data",
           "verification": "needs_review"
         }

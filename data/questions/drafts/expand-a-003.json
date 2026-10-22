@@ -1,0 +1,2413 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.22.expansion-a-003",
+  "questions": [
+    {
+      "id": "p1-d07-x01",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d07",
+      "topic": "p1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Đưa một tài liệu ngắn trực tiếp vào prompt theo cách in-context có bắt buộc embedding và database không?",
+      "correct_answer": "b",
+      "explanation": "In-context gửi thẳng nội dung, khác RAG có pipeline lưu và tìm; sự đơn giản đánh đổi giới hạn context.",
+      "source_reference": [
+        {
+          "document_id": "p1-d07",
+          "sha256": "ad1669dd5385de460caa68a4b378120c8de3105b1e6c8c7bee296bd5398f7bc5",
+          "pdf_page": 6,
+          "title": "Data Foundations",
+          "locator": "Physical PDF page 6",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Có; mọi văn bản vào prompt phải đi qua vector index trước"
+        },
+        {
+          "id": "b",
+          "text": "Không; nội dung được cung cấp trực tiếp nhưng bị giới hạn bởi context window"
+        },
+        {
+          "id": "c",
+          "text": "Có; cần huấn luyện lại weights để model nhìn được tài liệu trong prompt"
+        }
+      ],
+      "shuffle_options": true,
+      "context": "Nhân viên cần tra chính sách nội bộ mới nhất và kiểm tra được nguồn."
+    },
+    {
+      "id": "p1-d07-x02",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d07",
+      "topic": "p1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trạng thái đơn hàng và CRM records khác session preferences ở loại dữ liệu nào?",
+      "correct_answer": "b",
+      "explanation": "Operational data là DB/order/ticket/CRM; contextual data là session/profile/preferences/recent actions.",
+      "source_reference": [
+        {
+          "document_id": "p1-d07",
+          "sha256": "ad1669dd5385de460caa68a4b378120c8de3105b1e6c8c7bee296bd5398f7bc5",
+          "pdf_page": 8,
+          "title": "Data Foundations",
+          "locator": "Physical PDF page 8",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Contextual data vì mọi CRM records đều là preferences của session hiện tại"
+        },
+        {
+          "id": "b",
+          "text": "Operational data thay vì contextual data"
+        },
+        {
+          "id": "c",
+          "text": "Knowledge data tĩnh như policy/manual thay vì trạng thái nghiệp vụ"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d07-x03",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d07",
+      "topic": "p1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trước khi index corpus nội bộ, những vấn đề governance nào cần được xác định? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation": "Quản trị nguồn, quyền, freshness và PII phải được xét trước index.",
+      "source_reference": [
+        {
+          "document_id": "p1-d07",
+          "sha256": "ad1669dd5385de460caa68a4b378120c8de3105b1e6c8c7bee296bd5398f7bc5",
+          "pdf_page": 10,
+          "title": "Data Foundations",
+          "locator": "Physical PDF page 10",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Owner và trách nhiệm cập nhật"
+        },
+        {
+          "id": "b",
+          "text": "ACL, freshness và xử lý PII trước embedding"
+        },
+        {
+          "id": "c",
+          "text": "Index toàn bộ trước, rồi để similarity score quyết định quyền truy cập và freshness"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d07-x04",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d07",
+      "topic": "p1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Sentence-window retrieval tách bước tìm và bước inject context như thế nào?",
+      "correct_answer": "c",
+      "explanation": "Sentence-window giữ tìm chính xác ở mức câu nhưng bổ sung ngữ cảnh khi đưa cho model.",
+      "source_reference": [
+        {
+          "document_id": "p1-d07",
+          "sha256": "ad1669dd5385de460caa68a4b378120c8de3105b1e6c8c7bee296bd5398f7bc5",
+          "pdf_page": 14,
+          "title": "Data Foundations",
+          "locator": "Physical PDF page 14",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Index mỗi đoạn độc lập và chỉ inject câu có điểm cao nhất, bỏ ngữ cảnh lân cận"
+        },
+        {
+          "id": "b",
+          "text": "Dùng LLM viết lại mỗi câu thành mệnh đề tự nghĩa thay vì lấy window quanh câu tìm được"
+        },
+        {
+          "id": "c",
+          "text": "Index một câu để tìm, inject thêm các câu xung quanh"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d07-x05",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d07",
+      "topic": "p1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Proposition/atomic chunking có đánh đổi nào đáng lưu ý?",
+      "correct_answer": "b",
+      "explanation": "Strategy này tạo mệnh đề tự nghĩa nhưng đắt và có rủi ro distortion.",
+      "source_reference": [
+        {
+          "document_id": "p1-d07",
+          "sha256": "ad1669dd5385de460caa68a4b378120c8de3105b1e6c8c7bee296bd5398f7bc5",
+          "pdf_page": 14,
+          "title": "Data Foundations",
+          "locator": "Physical PDF page 14",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chi phí ingest thấp hơn fixed-size vì gọi LLM thay toàn bộ bước xử lý"
+        },
+        {
+          "id": "b",
+          "text": "LLM viết lại thành mệnh đề có thể tốn chi phí và bóp méo nội dung"
+        },
+        {
+          "id": "c",
+          "text": "Mệnh đề ngắn đồng nghĩa đã giữ nguyên mọi sắc thái, không cần kiểm lại nội dung"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d07-x06",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d07",
+      "topic": "p1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Khi corpus là source code, strategy nào phù hợp để tránh cắt giữa hàm/class?",
+      "correct_answer": "a",
+      "explanation": "AST parser giúp giữ boundary hàm/class cùng import/signature.",
+      "source_reference": [
+        {
+          "document_id": "p1-d07",
+          "sha256": "ad1669dd5385de460caa68a4b378120c8de3105b1e6c8c7bee296bd5398f7bc5",
+          "pdf_page": 15,
+          "title": "Data Foundations",
+          "locator": "Physical PDF page 15",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Code-aware chunking bằng AST"
+        },
+        {
+          "id": "b",
+          "text": "Fixed-size theo số token, không kiểm tra boundary hàm hoặc class"
+        },
+        {
+          "id": "c",
+          "text": "Heading-based dựa vào comment mà không parse cú pháp hàm/class"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d07-x07",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d07",
+      "topic": "p1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một PDF có nhiều bảng cần cách chunking nào để tránh mất nghĩa header?",
+      "correct_answer": "c",
+      "explanation": "Table-aware cần layout parser, bảo toàn cấu trúc/ngữ cảnh header.",
+      "source_reference": [
+        {
+          "document_id": "p1-d07",
+          "sha256": "ad1669dd5385de460caa68a4b378120c8de3105b1e6c8c7bee296bd5398f7bc5",
+          "pdf_page": 15,
+          "title": "Data Foundations",
+          "locator": "Physical PDF page 15",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Cắt từng hàng thành chunk nhưng bỏ header và cấu trúc cột để giảm token"
+        },
+        {
+          "id": "b",
+          "text": "Giữ text của bảng theo thứ tự OCR nhưng không bảo toàn liên hệ giữa ô và header"
+        },
+        {
+          "id": "c",
+          "text": "Table/layout-aware, giữ bảng và lặp header cần thiết"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d07-x08",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d07",
+      "topic": "p1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Chunk quá nhỏ và quá lớn tạo ra hai vấn đề nào?",
+      "correct_answer": "b",
+      "explanation": "Trade-off của chunk size là precision và đủ context, cần eval thay vì đoán.",
+      "source_reference": [
+        {
+          "document_id": "p1-d07",
+          "sha256": "ad1669dd5385de460caa68a4b378120c8de3105b1e6c8c7bee296bd5398f7bc5",
+          "pdf_page": 16,
+          "title": "Data Foundations",
+          "locator": "Physical PDF page 16",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chọn chunk lớn nhất để giữ mọi chủ đề trong cùng một vector, không xét nhiễu"
+        },
+        {
+          "id": "b",
+          "text": "Quá nhỏ mất ngữ cảnh; quá lớn trộn chủ đề và inject nhiễu"
+        },
+        {
+          "id": "c",
+          "text": "Chọn chunk nhỏ nhất để tối đa số record, không xét ngữ cảnh cần tổng hợp"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d07-x09",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d07",
+      "topic": "p1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Overlap giúp giải quyết trường hợp nào và phải trả giá gì?",
+      "correct_answer": "a",
+      "explanation": "Ví dụ mức tăng trưởng này cần ngữ cảnh ở chunk trước; overlap lưu lặp phần đó.",
+      "source_reference": [
+        {
+          "document_id": "p1-d07",
+          "sha256": "ad1669dd5385de460caa68a4b378120c8de3105b1e6c8c7bee296bd5398f7bc5",
+          "pdf_page": 18,
+          "title": "Data Foundations",
+          "locator": "Physical PDF page 18",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Giữ tham chiếu qua ranh giới chunk nhưng tăng dung lượng phần lặp"
+        },
+        {
+          "id": "b",
+          "text": "Overlap thay thế được mọi nhu cầu metadata về nguồn và phiên bản"
+        },
+        {
+          "id": "c",
+          "text": "Overlap chỉ giảm storage bằng cách bỏ phần văn bản ở ranh giới"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d07-x10",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d07",
+      "topic": "p1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Overlap luôn bắt buộc cho mọi dữ liệu có cấu trúc và mọi kiểu chunking.",
+      "correct_answer": false,
+      "explanation": "Bản ghi độc lập, cấu trúc rõ hoặc parent-child/AST có thể không cần overlap.",
+      "source_reference": [
+        {
+          "document_id": "p1-d07",
+          "sha256": "ad1669dd5385de460caa68a4b378120c8de3105b1e6c8c7bee296bd5398f7bc5",
+          "pdf_page": 19,
+          "title": "Data Foundations",
+          "locator": "Physical PDF page 19",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ]
+    },
+    {
+      "id": "p1-d07-x11",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d07",
+      "topic": "p1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Retrieval tìm đúng chunk nhưng câu trả lời vẫn thiếu ngữ cảnh xung quanh. Nâng cấp nào phù hợp?",
+      "correct_answer": "b",
+      "explanation": "Cây quyết định ghép thiếu context với parent-child/sentence-window để thêm vùng đọc.",
+      "source_reference": [
+        {
+          "document_id": "p1-d07",
+          "sha256": "ad1669dd5385de460caa68a4b378120c8de3105b1e6c8c7bee296bd5398f7bc5",
+          "pdf_page": 20,
+          "title": "Data Foundations",
+          "locator": "Physical PDF page 20",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ rerank các mảnh hiện có, không bổ sung parent hoặc câu lân cận"
+        },
+        {
+          "id": "b",
+          "text": "Parent-child hoặc sentence-window"
+        },
+        {
+          "id": "c",
+          "text": "Tăng similarity threshold nhưng vẫn inject đúng mảnh thiếu ngữ cảnh đó"
+        }
+      ],
+      "shuffle_options": true,
+      "context": "Query khớp một câu chính sách nhưng điều kiện áp dụng nằm ở đoạn lân cận."
+    },
+    {
+      "id": "p1-d07-x12",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d07",
+      "topic": "p1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Embedding hỗ trợ semantic search bằng cơ chế nào?",
+      "correct_answer": "a",
+      "explanation": "Vector biểu diễn ngữ nghĩa cho search/clustering/dedup/recommendation, không tạo sự thật.",
+      "source_reference": [
+        {
+          "document_id": "p1-d07",
+          "sha256": "ad1669dd5385de460caa68a4b378120c8de3105b1e6c8c7bee296bd5398f7bc5",
+          "pdf_page": 25,
+          "title": "Data Foundations",
+          "locator": "Physical PDF page 25",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Biến text thành vector để so độ gần về nghĩa"
+        },
+        {
+          "id": "b",
+          "text": "Biểu diễn text bằng chỉ mục từ khóa chỉ dựa vào exact-term counts"
+        },
+        {
+          "id": "c",
+          "text": "Lưu một câu trả lời cố định cho mỗi query thay vì biểu diễn ngữ nghĩa tài liệu"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d07-x13",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d07",
+      "topic": "p1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Khi chỉ quan tâm hướng của text embedding và không muốn độ dài vector chi phối, metric nào phù hợp?",
+      "correct_answer": "c",
+      "explanation": "Cosine bỏ ảnh hưởng norm; khi norm có ý nghĩa và scale phù hợp mới xét khoảng cách tuyệt đối.",
+      "source_reference": [
+        {
+          "document_id": "p1-d07",
+          "sha256": "ad1669dd5385de460caa68a4b378120c8de3105b1e6c8c7bee296bd5398f7bc5",
+          "pdf_page": 27,
+          "title": "Data Foundations",
+          "locator": "Physical PDF page 27",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Dot product của vector chưa chuẩn hóa, để norm vẫn chi phối"
+        },
+        {
+          "id": "b",
+          "text": "Euclidean distance trên các vector chưa xét độ dài/scale dù chỉ muốn so hướng"
+        },
+        {
+          "id": "c",
+          "text": "Cosine similarity"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d07-x14",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d07",
+      "topic": "p1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Embedding có thể hỗ trợ những tác vụ nào? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "b",
+        "c"
+      ],
+      "explanation": "Clustering và dedup là use case; embedding không thay chất lượng nguồn hoặc access control.",
+      "source_reference": [
+        {
+          "document_id": "p1-d07",
+          "sha256": "ad1669dd5385de460caa68a4b378120c8de3105b1e6c8c7bee296bd5398f7bc5",
+          "pdf_page": 29,
+          "title": "Data Foundations",
+          "locator": "Physical PDF page 29",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Cosine cao tự chứng minh hai nguồn đều đúng về mặt sự thật"
+        },
+        {
+          "id": "b",
+          "text": "Gom nhóm ticket theo chủ đề"
+        },
+        {
+          "id": "c",
+          "text": "Tìm FAQ gần trùng nội dung"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d07-x15",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d07",
+      "topic": "p1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Metadata giúp retrieval tốt hơn similarity thuần ở những khía cạnh nào? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation": "Metadata kết hợp semantic similarity với scope, freshness, quyền và locator.",
+      "source_reference": [
+        {
+          "document_id": "p1-d07",
+          "sha256": "ad1669dd5385de460caa68a4b378120c8de3105b1e6c8c7bee296bd5398f7bc5",
+          "pdf_page": 33,
+          "title": "Data Foundations",
+          "locator": "Physical PDF page 33",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Lọc domain/quyền và tránh bản cũ"
+        },
+        {
+          "id": "b",
+          "text": "Truy vết nguồn, section/chunk để cite/debug"
+        },
+        {
+          "id": "c",
+          "text": "Similarity cao cho phép bỏ metadata phiên bản và quyền truy cập"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d07-x16",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d07",
+      "topic": "p1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Đổi embedding model có chi phí chuyển đổi nào khác đổi vector store interface?",
+      "correct_answer": "c",
+      "explanation": "Vector store interface tương đối tương tự, nhưng thay embedding làm thay hệ vector cần index lại.",
+      "source_reference": [
+        {
+          "document_id": "p1-d07",
+          "sha256": "ad1669dd5385de460caa68a4b378120c8de3105b1e6c8c7bee296bd5398f7bc5",
+          "pdf_page": 36,
+          "title": "Data Foundations",
+          "locator": "Physical PDF page 36",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Đổi embedding model chỉ cần giữ nguyên vectors cũ rồi đổi tên collection"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ re-index một số query mới, không cần cập nhật document vectors theo model mới"
+        },
+        {
+          "id": "c",
+          "text": "Thường phải re-index toàn bộ vector theo model mới"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d07-x17",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d07",
+      "topic": "p1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một file đuôi.pdf thực tế là scan ảnh. Input validation nên làm gì?",
+      "correct_answer": "b",
+      "explanation": "Không chỉ tin extension; thiếu extractor phải fail/skip rõ và log, không index rác.",
+      "source_reference": [
+        {
+          "document_id": "p1-d07",
+          "sha256": "ad1669dd5385de460caa68a4b378120c8de3105b1e6c8c7bee296bd5398f7bc5",
+          "pdf_page": 40,
+          "title": "Data Foundations",
+          "locator": "Physical PDF page 40",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Bỏ qua file không đọc được nhưng không lưu MIME, extractor hoặc status để điều tra"
+        },
+        {
+          "id": "b",
+          "text": "Kiểm tra MIME/magic bytes và chọn extractor/OCR phù hợp, log status"
+        },
+        {
+          "id": "c",
+          "text": "Chạy cùng text extractor cho mọi file.pdf và coi text rỗng là parse thành công"
+        }
+      ],
+      "shuffle_options": true,
+      "context": "Pipeline parse không lấy được text nhưng file mở hiển thị toàn ảnh."
+    },
+    {
+      "id": "p1-d08-x01",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d08",
+      "topic": "p1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Ingestion và retrieval khác nhau về thời điểm và sản phẩm đầu ra như thế nào?",
+      "correct_answer": "c",
+      "explanation": "Ingestion offline/batch chuẩn bị dữ liệu, runtime retrieval chạy mỗi khi user hỏi.",
+      "source_reference": [
+        {
+          "document_id": "p1-d08",
+          "sha256": "dad417681be6c8505f3029334b74c364c1c5345fef9a106cbdbf9ac95daba665",
+          "pdf_page": 7,
+          "title": "RAG Pipeline",
+          "locator": "Physical PDF page 7",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Ingestion xử lý query ở runtime; retrieval chuẩn bị document index theo batch"
+        },
+        {
+          "id": "b",
+          "text": "Ingestion chỉ lưu raw files, còn mọi cleaning và metadata được bỏ đến lúc model sinh answer"
+        },
+        {
+          "id": "c",
+          "text": "Ingestion chuẩn bị index; retrieval dùng index theo query để tìm bằng chứng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d08-x02",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d08",
+      "topic": "p1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Modular RAG đem lại khả năng nào?",
+      "correct_answer": "b",
+      "explanation": "Tách module cho phép cấu hình linh hoạt thay vì pipeline cứng cho mọi truy vấn.",
+      "source_reference": [
+        {
+          "document_id": "p1-d08",
+          "sha256": "dad417681be6c8505f3029334b74c364c1c5345fef9a106cbdbf9ac95daba665",
+          "pdf_page": 13,
+          "title": "RAG Pipeline",
+          "locator": "Physical PDF page 13",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Gộp retrieval và generation thành một bước không có interface kiểm thử riêng"
+        },
+        {
+          "id": "b",
+          "text": "Compose, thay thế hoặc bỏ qua module theo đặc điểm query"
+        },
+        {
+          "id": "c",
+          "text": "Buộc mọi query đi cùng một thứ tự module, không cho thay hoặc bỏ module"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d08-x03",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d08",
+      "topic": "p1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "HyDE biến đổi query để truy xuất bằng cách nào?",
+      "correct_answer": "b",
+      "explanation": "Đoạn giả định là phương tiện tìm kiếm, không tự trở thành nguồn xác minh cho câu trả lời.",
+      "source_reference": [
+        {
+          "document_id": "p1-d08",
+          "sha256": "dad417681be6c8505f3029334b74c364c1c5345fef9a106cbdbf9ac95daba665",
+          "pdf_page": 19,
+          "title": "RAG Pipeline",
+          "locator": "Physical PDF page 19",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Coi đoạn sinh giả định là bằng chứng cuối và bỏ qua retrieval"
+        },
+        {
+          "id": "b",
+          "text": "Sinh một đoạn trả lời giả định rồi dùng biểu diễn của đoạn đó để tìm tài liệu"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ sửa lỗi chính tả mà không tạo biểu diễn truy vấn mới"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d08-x04",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d08",
+      "topic": "p1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Query normalization nhằm mục tiêu nào?",
+      "correct_answer": "c",
+      "explanation": "Normalization làm sạch/nhất quán query trước retrieval, không tự tạo kiến thức trả lời.",
+      "source_reference": [
+        {
+          "document_id": "p1-d08",
+          "sha256": "dad417681be6c8505f3029334b74c364c1c5345fef9a106cbdbf9ac95daba665",
+          "pdf_page": 18,
+          "title": "RAG Pipeline",
+          "locator": "Physical PDF page 18",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Mở rộng query bằng thông tin trả lời chưa có bằng chứng rồi xem đó là input thật"
+        },
+        {
+          "id": "b",
+          "text": "Bỏ tên riêng và mã lỗi để mọi query đều thành diễn đạt chung dễ semantic match"
+        },
+        {
+          "id": "c",
+          "text": "Chuẩn hóa typo, cách diễn đạt và sự không nhất quán để giảm mơ hồ"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d08-x05",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d08",
+      "topic": "p1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Corpus có mã lỗi chính xác và nhiều cách diễn đạt đồng nghĩa. Vì sao hybrid search hữu ích?",
+      "correct_answer": "b",
+      "explanation": "Dense mạnh nghĩa/paraphrase, sparse mạnh exact terms; kết hợp bù điểm yếu.",
+      "source_reference": [
+        {
+          "document_id": "p1-d08",
+          "sha256": "dad417681be6c8505f3029334b74c364c1c5345fef9a106cbdbf9ac95daba665",
+          "pdf_page": 21,
+          "title": "RAG Pipeline",
+          "locator": "Physical PDF page 21",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ sparse vì các từ đồng nghĩa ở hai ngôn ngữ luôn có cùng token"
+        },
+        {
+          "id": "b",
+          "text": "Kết hợp sparse exact-keyword với dense semantic matching"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ dense vì độ gần ngữ nghĩa tự bảo đảm exact match mọi mã lỗi"
+        }
+      ],
+      "shuffle_options": true,
+      "context": "User vừa hỏi mã ERR cụ thể vừa dùng ngôn ngữ khác với tài liệu."
+    },
+    {
+      "id": "p1-d08-x06",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d08",
+      "topic": "p1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "BM25 có thể bỏ sót tài liệu chỉ dùng annual leave khi query là nghỉ phép vì hạn chế nào?",
+      "correct_answer": "a",
+      "explanation": "Lexical search mạnh exact match nhưng dễ hụt paraphrase/synonym nếu không có từ chung.",
+      "source_reference": [
+        {
+          "document_id": "p1-d08",
+          "sha256": "dad417681be6c8505f3029334b74c364c1c5345fef9a106cbdbf9ac95daba665",
+          "pdf_page": 24,
+          "title": "RAG Pipeline",
+          "locator": "Physical PDF page 24",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Đối sánh từ khóa không tự bảo đảm hiểu đồng nghĩa/đa ngôn ngữ"
+        },
+        {
+          "id": "b",
+          "text": "Sparse đã mã hóa ngữ nghĩa đồng nghĩa nên lỗi chỉ do top-k chưa đủ lớn"
+        },
+        {
+          "id": "c",
+          "text": "Lexical matching chỉ cần normalize độ dài document là tự hiểu paraphrase"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d08-x07",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d08",
+      "topic": "p1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "RRF và alpha weighting khác nhau ở dữ liệu dùng để fusion thế nào?",
+      "correct_answer": "c",
+      "explanation": "Rank fusion tránh phụ thuộc scale; score fusion cần normalization và tuning trọng số.",
+      "source_reference": [
+        {
+          "document_id": "p1-d08",
+          "sha256": "dad417681be6c8505f3029334b74c364c1c5345fef9a106cbdbf9ac95daba665",
+          "pdf_page": 26,
+          "title": "RAG Pipeline",
+          "locator": "Physical PDF page 26",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "RRF cộng trực tiếp raw dense/sparse scores; alpha weighting chỉ nhìn rank"
+        },
+        {
+          "id": "b",
+          "text": "Hai score raw luôn cùng scale nên alpha weighting không cần normalization"
+        },
+        {
+          "id": "c",
+          "text": "RRF dùng thứ hạng; alpha weighting dùng score cần cùng scale"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d08-x08",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d08",
+      "topic": "p1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Thay vì đoán alpha, quy trình chọn alpha nên dựa vào gì?",
+      "correct_answer": "b",
+      "explanation": "Chọn fusion weight dựa retrieval evaluation trên query đại diện.",
+      "source_reference": [
+        {
+          "document_id": "p1-d08",
+          "sha256": "dad417681be6c8505f3029334b74c364c1c5345fef9a106cbdbf9ac95daba665",
+          "pdf_page": 28,
+          "title": "RAG Pipeline",
+          "locator": "Physical PDF page 28",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chọn alpha từ một query demo thành công rồi áp cố định cho mọi domain"
+        },
+        {
+          "id": "b",
+          "text": "Test set có expected chunks, quét giá trị và đo kết quả top-k"
+        },
+        {
+          "id": "c",
+          "text": "Chọn alpha cao nhất để dense luôn quyết định vì semantic search được xem là tốt hơn"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d08-x09",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d08",
+      "topic": "p1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao prompt RAG cần tách rõ System, Context và Question?",
+      "correct_answer": "a",
+      "explanation": "Delimiter/header rõ giúp model không lẫn các vai trò của từng phần.",
+      "source_reference": [
+        {
+          "document_id": "p1-d08",
+          "sha256": "dad417681be6c8505f3029334b74c364c1c5345fef9a106cbdbf9ac95daba665",
+          "pdf_page": 35,
+          "title": "RAG Pipeline",
+          "locator": "Physical PDF page 35",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Phân biệt chỉ dẫn, bằng chứng và yêu cầu người dùng"
+        },
+        {
+          "id": "b",
+          "text": "Trộn retrieved text vào system instructions để nguồn luôn được xem là lệnh"
+        },
+        {
+          "id": "c",
+          "text": "Đặt tất cả evidence vào user question mà không phân biệt nguồn và yêu cầu"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d08-x10",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d08",
+      "topic": "p1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Document reordering nhằm giảm rủi ro nào?",
+      "correct_answer": "c",
+      "explanation": "Lost in the middle mô tả vị trí giữa dễ bị bỏ sót; reordering cân nhắc vị trí bằng chứng quan trọng.",
+      "source_reference": [
+        {
+          "document_id": "p1-d08",
+          "sha256": "dad417681be6c8505f3029334b74c364c1c5345fef9a106cbdbf9ac95daba665",
+          "pdf_page": 36,
+          "title": "RAG Pipeline",
+          "locator": "Physical PDF page 36",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Giảm top-k chỉ dựa độ dài mà không xét vị trí bằng chứng quan trọng trong prompt"
+        },
+        {
+          "id": "b",
+          "text": "Giữ chunk order ngẫu nhiên và chỉ tăng context size để giải quyết việc bỏ sót thông tin giữa prompt"
+        },
+        {
+          "id": "c",
+          "text": "Thông tin quan trọng nằm giữa prompt bị bỏ qua"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d08-x11",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d08",
+      "topic": "p1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Hai chính sách mâu thuẫn nhưng chunk không mang ngày hoặc version sẽ làm bước conflict resolution khó ở đâu?",
+      "correct_answer": "b",
+      "explanation": "Thiếu metadata freshness là lỗi indexing bộc lộ khi augmentation phải xử lý xung đột.",
+      "source_reference": [
+        {
+          "document_id": "p1-d08",
+          "sha256": "dad417681be6c8505f3029334b74c364c1c5345fef9a106cbdbf9ac95daba665",
+          "pdf_page": 37,
+          "title": "RAG Pipeline",
+          "locator": "Physical PDF page 37",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Không thể xác định nguồn nào là primary authority nếu metadata chỉ có ngày/version"
+        },
+        {
+          "id": "b",
+          "text": "Không có căn cứ xác định bản mới hơn"
+        },
+        {
+          "id": "c",
+          "text": "Không thể quyết định bản nào có similarity cao hơn dù đã có score"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d08-x12",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d08",
+      "topic": "p1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những chiến lược xử lý xung đột context nào có thể dùng tùy domain? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation": "Recency, authority và surface conflict có mục tiêu/điều kiện khác nhau.",
+      "source_reference": [
+        {
+          "document_id": "p1-d08",
+          "sha256": "dad417681be6c8505f3029334b74c364c1c5345fef9a106cbdbf9ac95daba665",
+          "pdf_page": 37,
+          "title": "RAG Pipeline",
+          "locator": "Physical PDF page 37",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Ưu tiên recency hoặc authority"
+        },
+        {
+          "id": "b",
+          "text": "Nêu rõ xung đột để người dùng quyết định"
+        },
+        {
+          "id": "c",
+          "text": "Gộp mọi con số mâu thuẫn bằng trung bình thay vì xét nguồn, ngày hoặc nêu xung đột"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d08-x13",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d08",
+      "topic": "p1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Để tránh đưa dữ liệu trái quyền vào LLM, access filtering nên nằm ở đâu?",
+      "correct_answer": "c",
+      "explanation": "Pre-retrieval filtering giới hạn dữ liệu được truy xuất trước khi model tiếp cận.",
+      "source_reference": [
+        {
+          "document_id": "p1-d08",
+          "sha256": "dad417681be6c8505f3029334b74c364c1c5345fef9a106cbdbf9ac95daba665",
+          "pdf_page": 38,
+          "title": "RAG Pipeline",
+          "locator": "Physical PDF page 38",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Sau generation, chỉ lọc các từ nhạy cảm khỏi answer dù LLM đã đọc dữ liệu trái quyền"
+        },
+        {
+          "id": "b",
+          "text": "Đưa toàn corpus vào context và dùng prompt yêu cầu model tự chọn dữ liệu được phép"
+        },
+        {
+          "id": "c",
+          "text": "Trước retrieval/search theo ACL/role phù hợp"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d08-x14",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d08",
+      "topic": "p1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao không nên dùng toàn bộ context window cho retrieved chunks?",
+      "correct_answer": "b",
+      "explanation": "Context budget hữu hạn; overfill có thể cắt output hoặc giảm chất lượng.",
+      "source_reference": [
+        {
+          "document_id": "p1-d08",
+          "sha256": "dad417681be6c8505f3029334b74c364c1c5345fef9a106cbdbf9ac95daba665",
+          "pdf_page": 39,
+          "title": "RAG Pipeline",
+          "locator": "Physical PDF page 39",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ giới hạn system prompt, không tính retrieved context trong cùng token budget"
+        },
+        {
+          "id": "b",
+          "text": "Cần headroom cho instructions, query và output"
+        },
+        {
+          "id": "c",
+          "text": "Dùng toàn context cho chunks rồi cắt output khi hết token để tối đa evidence"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d08-x15",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d08",
+      "topic": "p1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một factual claim không được nguồn hỗ trợ nên được xử lý thế nào trong generation contract?",
+      "correct_answer": "a",
+      "explanation": "Citation phải support claim; evidence không đủ thì thừa nhận thiếu thông tin.",
+      "source_reference": [
+        {
+          "document_id": "p1-d08",
+          "sha256": "dad417681be6c8505f3029334b74c364c1c5345fef9a106cbdbf9ac95daba665",
+          "pdf_page": 43,
+          "title": "RAG Pipeline",
+          "locator": "Physical PDF page 43",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Không gắn citation giả; nêu thiếu bằng chứng khi không đủ thông tin"
+        },
+        {
+          "id": "b",
+          "text": "Gắn doc_id gần chủ đề nhất dù doc đó không support claim"
+        },
+        {
+          "id": "c",
+          "text": "Dùng kiến thức model tự nhớ rồi trình bày như thể suy ra từ provided context"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d08-x16",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d08",
+      "topic": "p1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một retrieval test case nên chứa những gì ngoài question?",
+      "correct_answer": "c",
+      "explanation": "Ground truth đo answer, expected chunks giúp kiểm retrieval đúng evidence.",
+      "source_reference": [
+        {
+          "document_id": "p1-d08",
+          "sha256": "dad417681be6c8505f3029334b74c364c1c5345fef9a106cbdbf9ac95daba665",
+          "pdf_page": 54,
+          "title": "RAG Pipeline",
+          "locator": "Physical PDF page 54",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ ground-truth answer, bỏ expected chunk IDs nên không tách được lỗi retrieval"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ expected chunks, không giữ answer chuẩn nên không đánh giá được generation"
+        },
+        {
+          "id": "c",
+          "text": "Ground truth và expected chunk/doc IDs"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d08-x17",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d08",
+      "topic": "p1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Khi policy bị thu hồi, cách quản lý index nào tránh giữ song song bản không còn hiệu lực?",
+      "correct_answer": "b",
+      "explanation": "Freshness đòi index được quản lý liên tục; thu hồi cần delete khỏi vector store.",
+      "source_reference": [
+        {
+          "document_id": "p1-d08",
+          "sha256": "dad417681be6c8505f3029334b74c364c1c5345fef9a106cbdbf9ac95daba665",
+          "pdf_page": 57,
+          "title": "RAG Pipeline",
+          "locator": "Physical PDF page 57",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ đánh dấu thu hồi ở UI trong khi vector store tiếp tục phục vụ chunk cũ"
+        },
+        {
+          "id": "b",
+          "text": "Cập nhật/upsert theo doc_id và xóa thực sự tài liệu bị thu hồi"
+        },
+        {
+          "id": "c",
+          "text": "Thêm bản mới với ID khác, để bản thu hồi vẫn được search vì có similarity cao"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d09-x01",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d09",
+      "topic": "p1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một agent ôm nhiều vai trò khiến prompt dài và hành vi khó ổn định đang gặp hạn chế nào?",
+      "correct_answer": "c",
+      "explanation": "Một context/role quá tải khó chuyên môn hóa và ổn định.",
+      "source_reference": [
+        {
+          "document_id": "p1-d09",
+          "sha256": "c5d8e34aaa138debbd52718465cd05696de18fd47eb26ef57caacb57f2bd38fb",
+          "pdf_page": 7,
+          "title": "Multi-Agent & Kết Nối Hệ Thống",
+          "locator": "Physical PDF page 7",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Context bottleneck: mọi evidence vượt một context window dù các vai đã rõ"
+        },
+        {
+          "id": "b",
+          "text": "Reliability yếu do lỗi đầu luồng lan truyền, không phải sự pha trộn nhiều chuyên môn"
+        },
+        {
+          "id": "c",
+          "text": "Specialization trade-off"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d09-x02",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d09",
+      "topic": "p1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Khi nào nên cân nhắc multi-agent thay vì thêm agent theo phong trào?",
+      "correct_answer": "b",
+      "explanation": "Multi-agent tăng calls/token/error surface nên cần nhu cầu kiến trúc rõ.",
+      "source_reference": [
+        {
+          "document_id": "p1-d09",
+          "sha256": "c5d8e34aaa138debbd52718465cd05696de18fd47eb26ef57caacb57f2bd38fb",
+          "pdf_page": 9,
+          "title": "Multi-Agent & Kết Nối Hệ Thống",
+          "locator": "Physical PDF page 9",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Thêm worker trước khi có thể tách trách nhiệm hoặc định nghĩa output của từng phần"
+        },
+        {
+          "id": "b",
+          "text": "Nhiều vai khác nhau, việc độc lập và cần khoanh vùng trách nhiệm/lỗi"
+        },
+        {
+          "id": "c",
+          "text": "Tách thành nhiều agent chỉ để chạy cùng task và cùng context nhiều lần"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d09-x03",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d09",
+      "topic": "p1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Plan-then-execute phù hợp hơn ReAct khi đặc điểm nào đúng?",
+      "correct_answer": "a",
+      "explanation": "Plan trước thuận lợi khi đã biết đủ; ReAct thích nghi khi thông tin lộ dần qua hành động.",
+      "source_reference": [
+        {
+          "document_id": "p1-d09",
+          "sha256": "c5d8e34aaa138debbd52718465cd05696de18fd47eb26ef57caacb57f2bd38fb",
+          "pdf_page": 12,
+          "title": "Multi-Agent & Kết Nối Hệ Thống",
+          "locator": "Physical PDF page 12",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Bài toán đã lộ đủ thông tin từ đầu để lập kế hoạch"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ khi thông tin môi trường lộ dần sau từng action mới đủ căn cứ lập kế hoạch"
+        },
+        {
+          "id": "c",
+          "text": "Khi không có tiêu chí hoặc mục tiêu rõ để quyết định task đã xong"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d09-x04",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d09",
+      "topic": "p1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Pattern nào phù hợp luồng ổn định, dễ kiểm thử từng bước theo chuỗi?",
+      "correct_answer": "c",
+      "explanation": "Pipeline có luồng ổn định; supervisor-worker mạnh routing/trace; debate bổ sung phản biện.",
+      "source_reference": [
+        {
+          "document_id": "p1-d09",
+          "sha256": "c5d8e34aaa138debbd52718465cd05696de18fd47eb26ef57caacb57f2bd38fb",
+          "pdf_page": 13,
+          "title": "Multi-Agent & Kết Nối Hệ Thống",
+          "locator": "Physical PDF page 13",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Debate: nhiều vai phản biện để giảm điểm mù thay vì sequence ổn định"
+        },
+        {
+          "id": "b",
+          "text": "Supervisor-Worker: supervisor route theo input động thay cho một chuỗi bước cố định"
+        },
+        {
+          "id": "c",
+          "text": "Pipeline"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d09-x05",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d09",
+      "topic": "p1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Agents-as-tools khác handoff ở quyền tiếp tục hội thoại thế nào?",
+      "correct_answer": "b",
+      "explanation": "Câu kiểm tra là sau lời gọi, ai nói với user; input scope và quyền điều khiển cũng khác.",
+      "source_reference": [
+        {
+          "document_id": "p1-d09",
+          "sha256": "c5d8e34aaa138debbd52718465cd05696de18fd47eb26ef57caacb57f2bd38fb",
+          "pdf_page": 17,
+          "title": "Multi-Agent & Kết Nối Hệ Thống",
+          "locator": "Physical PDF page 17",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Agents-as-tools chuyển toàn quyền hội thoại và toàn bộ lịch sử cho worker"
+        },
+        {
+          "id": "b",
+          "text": "Agents-as-tools trả kết quả về agent gọi; handoff chuyển quyền cho agent được gọi"
+        },
+        {
+          "id": "c",
+          "text": "Handoff trả control về agent gọi sau mỗi worker result như function call"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d09-x06",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d09",
+      "topic": "p1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Hai worker cùng cập nhật một field cần hợp nhất kết quả. Thiết kế nào phù hợp?",
+      "correct_answer": "a",
+      "explanation": "Reducer giải quyết hợp nhất, tránh xung đột hoặc mất giá trị khi overwrite.",
+      "source_reference": [
+        {
+          "document_id": "p1-d09",
+          "sha256": "c5d8e34aaa138debbd52718465cd05696de18fd47eb26ef57caacb57f2bd38fb",
+          "pdf_page": 18,
+          "title": "Multi-Agent & Kết Nối Hệ Thống",
+          "locator": "Physical PDF page 18",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Khai báo reducer/merge policy rõ cho field đó"
+        },
+        {
+          "id": "b",
+          "text": "Dùng overwrite tuần tự cho cùng field và coi giá trị cuối là merge của mọi worker"
+        },
+        {
+          "id": "c",
+          "text": "Để các worker ghi side effect vào global state thay cho field có reducer"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d09-x07",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d09",
+      "topic": "p1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao không nên chỉ nối raw output của mọi worker thành context chung?",
+      "correct_answer": "c",
+      "explanation": "Worker nên trả kết luận/envelope rõ, supervisor synthesis thay vì concatenate dump.",
+      "source_reference": [
+        {
+          "document_id": "p1-d09",
+          "sha256": "c5d8e34aaa138debbd52718465cd05696de18fd47eb26ef57caacb57f2bd38fb",
+          "pdf_page": 19,
+          "title": "Multi-Agent & Kết Nối Hệ Thống",
+          "locator": "Physical PDF page 19",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Nối raw outputs là đủ synthesis vì context lớn tự xử lý mọi mâu thuẫn"
+        },
+        {
+          "id": "b",
+          "text": "Mỗi worker gửi toàn history để supervisor không phải định nghĩa output contract"
+        },
+        {
+          "id": "c",
+          "text": "Context phình theo số worker; cần kết luận nén và synthesis có cấu trúc"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d09-x08",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d09",
+      "topic": "p1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Worker trả None có thể gây vấn đề gì nếu thiếu result envelope có cấu trúc?",
+      "correct_answer": "b",
+      "explanation": "Output cần cấu trúc để phân biệt success, failure và dữ liệu dùng tổng hợp.",
+      "source_reference": [
+        {
+          "document_id": "p1-d09",
+          "sha256": "c5d8e34aaa138debbd52718465cd05696de18fd47eb26ef57caacb57f2bd38fb",
+          "pdf_page": 19,
+          "title": "Multi-Agent & Kết Nối Hệ Thống",
+          "locator": "Physical PDF page 19",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Supervisor có thể suy ra mọi lỗi worker chỉ từ final answer, không cần envelope"
+        },
+        {
+          "id": "b",
+          "text": "Lỗi trông giống thành công và supervisor không biết trạng thái thực"
+        },
+        {
+          "id": "c",
+          "text": "None được hiểu mặc định là thành công với kết quả rỗng, không cần ghi status"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d09-x09",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d09",
+      "topic": "p1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những đặc tính nào làm worker dễ kiểm thử và thay thế? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation": "Worker chuyên môn hóa, testable, ít state và failure isolation giúp reliability.",
+      "source_reference": [
+        {
+          "document_id": "p1-d09",
+          "sha256": "c5d8e34aaa138debbd52718465cd05696de18fd47eb26ef57caacb57f2bd38fb",
+          "pdf_page": 23,
+          "title": "Multi-Agent & Kết Nối Hệ Thống",
+          "locator": "Physical PDF page 23",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Stateless khi có thể, lỗi cục bộ không kéo sập toàn hệ"
+        },
+        {
+          "id": "b",
+          "text": "Một năng lực chuyên biệt với input/output rõ"
+        },
+        {
+          "id": "c",
+          "text": "Giữ mọi state trong global side effects để worker không cần input/output rõ"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d09-x10",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d09",
+      "topic": "p1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Supervisor tự plan, retrieve, synthesize và monitor mọi thứ có thể rơi vào anti-pattern nào?",
+      "correct_answer": "c",
+      "explanation": "Chia tên role mà supervisor vẫn ôm mọi việc không tạo chuyên môn hóa thực.",
+      "source_reference": [
+        {
+          "document_id": "p1-d09",
+          "sha256": "c5d8e34aaa138debbd52718465cd05696de18fd47eb26ef57caacb57f2bd38fb",
+          "pdf_page": 24,
+          "title": "Multi-Agent & Kết Nối Hệ Thống",
+          "locator": "Physical PDF page 24",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Specialized worker: một năng lực hẹp với input/output riêng dễ test"
+        },
+        {
+          "id": "b",
+          "text": "Pipeline: mỗi bước cố định giao rõ phần việc cho một component"
+        },
+        {
+          "id": "c",
+          "text": "God Supervisor: single-agent đổi tên"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d09-x11",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d09",
+      "topic": "p1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Shared state nên giữ worker_results tách riêng thay vì chỉ một final_answer vì sao?",
+      "correct_answer": "b",
+      "explanation": "Schema giữ task/plan/results/status/final/trace, giúp test và debug độc lập.",
+      "source_reference": [
+        {
+          "document_id": "p1-d09",
+          "sha256": "c5d8e34aaa138debbd52718465cd05696de18fd47eb26ef57caacb57f2bd38fb",
+          "pdf_page": 25,
+          "title": "Multi-Agent & Kết Nối Hệ Thống",
+          "locator": "Physical PDF page 25",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Dồn mọi output vào cùng một string không định danh worker để tổng hợp nhanh hơn"
+        },
+        {
+          "id": "b",
+          "text": "Dễ kiểm từng kết quả và biết đường đi đến kết luận"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ giữ final_answer và ghi đè worker results để giảm schema complexity"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d09-x12",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d09",
+      "topic": "p1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những cặp MCP primitive–vai trò nào đúng? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation": "Phân biệt khả năng hành động, tài nguyên đọc và mẫu prompt.",
+      "source_reference": [
+        {
+          "document_id": "p1-d09",
+          "sha256": "c5d8e34aaa138debbd52718465cd05696de18fd47eb26ef57caacb57f2bd38fb",
+          "pdf_page": 29,
+          "title": "Multi-Agent & Kết Nối Hệ Thống",
+          "locator": "Physical PDF page 29",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tools: hành động/capability gọi được"
+        },
+        {
+          "id": "b",
+          "text": "Resources: dữ liệu đọc được; Prompts: mẫu dùng lại"
+        },
+        {
+          "id": "c",
+          "text": "Prompts cấp quyền thực thi cho tools thay thế permission policy"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d09-x13",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d09",
+      "topic": "p1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một hệ thống cần giao việc cho agent khác có quyết định riêng thay vì gọi một capability thuần. Giao thức nào đúng vai trò?",
+      "correct_answer": "c",
+      "explanation": "MCP nối capability/tool; A2A chia việc/đồng bộ giữa agents.",
+      "source_reference": [
+        {
+          "document_id": "p1-d09",
+          "sha256": "c5d8e34aaa138debbd52718465cd05696de18fd47eb26ef57caacb57f2bd38fb",
+          "pdf_page": 34,
+          "title": "Multi-Agent & Kết Nối Hệ Thống",
+          "locator": "Physical PDF page 34",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "MCP vì mọi peer agent đều chỉ là một capability thụ động không có quyết định riêng"
+        },
+        {
+          "id": "b",
+          "text": "Resources vì giao task cho peer được coi như đọc một tài liệu tĩnh"
+        },
+        {
+          "id": "c",
+          "text": "A2A"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d09-x14",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d09",
+      "topic": "p1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Message contract giao việc tối thiểu cần làm rõ những gì? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "b",
+        "c"
+      ],
+      "explanation": "Need-to-know: thiếu gây sai, thừa tốn token và có thể lộ dữ liệu.",
+      "source_reference": [
+        {
+          "document_id": "p1-d09",
+          "sha256": "c5d8e34aaa138debbd52718465cd05696de18fd47eb26ef57caacb57f2bd38fb",
+          "pdf_page": 35,
+          "title": "Multi-Agent & Kết Nối Hệ Thống",
+          "locator": "Physical PDF page 35",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Gửi toàn bộ lịch sử và dữ liệu nội bộ thay vì chọn context need-to-know"
+        },
+        {
+          "id": "b",
+          "text": "Task cần làm và context cần thiết"
+        },
+        {
+          "id": "c",
+          "text": "Expected output/format"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d09-x15",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d09",
+      "topic": "p1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Conditional edge trong graph orchestration quyết định điều gì?",
+      "correct_answer": "a",
+      "explanation": "Node là bước xử lý, edge là chuyển tiếp, state là dữ kiện truyền qua graph.",
+      "source_reference": [
+        {
+          "document_id": "p1-d09",
+          "sha256": "c5d8e34aaa138debbd52718465cd05696de18fd47eb26ef57caacb57f2bd38fb",
+          "pdf_page": 38,
+          "title": "Multi-Agent & Kết Nối Hệ Thống",
+          "locator": "Physical PDF page 38",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Node tiếp theo dựa trên state"
+        },
+        {
+          "id": "b",
+          "text": "Ghi một field state mới nhưng không thay đổi node tiếp theo"
+        },
+        {
+          "id": "c",
+          "text": "Mô tả input/output của tool nhưng không quyết định control flow giữa các node"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d09-x16",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d09",
+      "topic": "p1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Resume có thể chạy lại node từ đầu. Side effect trong node cần được thiết kế thế nào?",
+      "correct_answer": "c",
+      "explanation": "Persistence/resume không thay nghĩa của side effect; phải bảo đảm chạy lại an toàn.",
+      "source_reference": [
+        {
+          "document_id": "p1-d09",
+          "sha256": "c5d8e34aaa138debbd52718465cd05696de18fd47eb26ef57caacb57f2bd38fb",
+          "pdf_page": 40,
+          "title": "Multi-Agent & Kết Nối Hệ Thống",
+          "locator": "Physical PDF page 40",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Cho side effect chạy lại mỗi lần resume để đồng bộ với lần gọi model mới"
+        },
+        {
+          "id": "b",
+          "text": "Dựa vào việc có checkpoint để mặc định mọi write action đều không thể bị lặp"
+        },
+        {
+          "id": "c",
+          "text": "Idempotent để tránh lặp tác động khi resume/retry"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d09-x17",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d09",
+      "topic": "p1-d09",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Vì sao phân quyền từng agent riêng lẻ chưa đủ để đánh giá rủi ro exfiltration?",
+      "correct_answer": "b",
+      "explanation": "Bộ ba có thể nằm ở các agent khác nhau nhưng kết hợp thành năng lực toàn hệ.",
+      "source_reference": [
+        {
+          "document_id": "p1-d09",
+          "sha256": "c5d8e34aaa138debbd52718465cd05696de18fd47eb26ef57caacb57f2bd38fb",
+          "pdf_page": 50,
+          "title": "Multi-Agent & Kết Nối Hệ Thống",
+          "locator": "Physical PDF page 50",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tách agent đọc web khỏi agent gửi email rồi mặc định data không thể đi qua supervisor"
+        },
+        {
+          "id": "b",
+          "text": "Quyền đọc private, đọc untrusted và gửi ra ngoài có thể hợp thành đường nguy hiểm trên toàn graph"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ kiểm từng agent có đủ cả ba quyền riêng lẻ hay không, bỏ qua đường truyền dữ liệu"
+        }
+      ],
+      "shuffle_options": true,
+      "context": "Worker A đọc dữ liệu nội bộ, worker B đọc web, supervisor có tool gửi email ra ngoài."
+    }
+  ]
+}

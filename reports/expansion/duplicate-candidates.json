@@ -1,0 +1,69 @@
+{
+  "note": "Lexical screening only. Reviewer must determine whether learning objectives are unnecessarily duplicated; absence does not prove semantic uniqueness.",
+  "questions_checked": 1260,
+  "candidates": [
+    {
+      "similarity": 0.796,
+      "first": "p2-t4-d09-x11",
+      "second": "p2-t2-d12-x14",
+      "first_stem": "Lineage cho model cần trả lời câu hỏi nào?",
+      "second_stem": "Column lineage trả lời câu hỏi nào?"
+    },
+    {
+      "similarity": 0.721,
+      "first": "p1-d13-x03",
+      "second": "p2-t2-d05-q03",
+      "first_stem": "TTFT đo khoảng thời gian nào?",
+      "second_stem": "TTFT và TPOT đo cùng một khoảng thời gian nên chỉ cần báo cáo một trong hai."
+    },
+    {
+      "similarity": 0.701,
+      "first": "p1-d13-x03",
+      "second": "p2-t2-d08-x03",
+      "first_stem": "TTFT đo khoảng thời gian nào?",
+      "second_stem": "RTO đo khoảng thời gian nào?"
+    },
+    {
+      "similarity": 0.632,
+      "first": "p2-t1-d07-q02",
+      "second": "p2-t1-d07-q03",
+      "first_stem": "Một mô hình định giá hybrid có thể gồm phí gói cơ bản và khoản trả thêm khi vượt mức sử dụng cho phép.",
+      "second_stem": "Định giá hybrid kết hợp phí gói và phí vượt mức sử dụng nhằm những mục tiêu nào? (Chọn tất cả đáp án đúng.)"
+    },
+    {
+      "similarity": 0.63,
+      "first": "p2-t2-d05-x11",
+      "second": "p2-t2-d11-x03",
+      "first_stem": "Tách prefill/decode thành hai pool đặc biệt đáng cân nhắc cho workload nào?",
+      "second_stem": "Vì sao tách pool prefill/decode có thể giảm chi phí cho workload phù hợp?"
+    },
+    {
+      "similarity": 0.594,
+      "first": "p1-d13-x03",
+      "second": "p2-t1-d06-x02",
+      "first_stem": "TTFT đo khoảng thời gian nào?",
+      "second_stem": "Time to Value đo khoảng thời gian nào?"
+    },
+    {
+      "similarity": 0.594,
+      "first": "p2-t1-d06-x02",
+      "second": "p2-t2-d08-x03",
+      "first_stem": "Time to Value đo khoảng thời gian nào?",
+      "second_stem": "RTO đo khoảng thời gian nào?"
+    },
+    {
+      "similarity": 0.581,
+      "first": "p1-d08-q01",
+      "second": "p1-d08-q03",
+      "first_stem": "Trường hợp nào có lý do rõ ràng để dùng RAG?",
+      "second_stem": "Những trường hợp nào chưa cần dùng RAG? (Chọn tất cả đáp án đúng.)"
+    },
+    {
+      "similarity": 0.555,
+      "first": "p2-t1-d06-x11",
+      "second": "p2-t1-d09-x03",
+      "first_stem": "Định nghĩa active user nên xuất phát từ đâu?",
+      "second_stem": "Vì sao định nghĩa “active user” phải nói rõ điều được tính và không tính?"
+    }
+  ]
+}

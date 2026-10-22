@@ -1,0 +1,2388 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.22.expansion-a-001",
+  "questions": [
+    {
+      "id": "p1-d01-x01",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d01",
+      "topic": "p1-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Foundation model được phân biệt với LLM thế nào?",
+      "correct_answer": "c",
+      "explanation": "Taxonomy nêu foundation model không chỉ text mà còn ảnh, âm thanh, video; LLM chuyên ngôn ngữ.",
+      "source_reference": [
+        {
+          "document_id": "p1-d01",
+          "sha256": "7623057fe66b2a3ef217ace5962109059d94e3d65ae58d4bb4a8d5c7e8c983a8",
+          "pdf_page": 6,
+          "title": "AI & LLM Foundation",
+          "locator": "Physical PDF page 6",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Foundation model chỉ làm một tác vụ cố định, còn LLM là tên chung cho mọi modality"
+        },
+        {
+          "id": "b",
+          "text": "LLM và foundation model chỉ khác ở nơi deploy, không khác phạm vi ứng dụng"
+        },
+        {
+          "id": "c",
+          "text": "Foundation model có thể áp dụng nhiều tác vụ và modality; LLM chuyên ngôn ngữ"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d01-x02",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d01",
+      "topic": "p1-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong kiến trúc voicebot cascaded, STT và TTS đảm nhận hai chiều chuyển đổi nào?",
+      "correct_answer": "b",
+      "explanation": "Pipeline tách nhận dạng giọng nói thành text và tổng hợp text thành âm thanh.",
+      "source_reference": [
+        {
+          "document_id": "p1-d01",
+          "sha256": "7623057fe66b2a3ef217ace5962109059d94e3d65ae58d4bb4a8d5c7e8c983a8",
+          "pdf_page": 10,
+          "title": "AI & LLM Foundation",
+          "locator": "Physical PDF page 10",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "STT suy ra intent và tạo câu trả lời; TTS chỉ chép lại transcript đầu vào"
+        },
+        {
+          "id": "b",
+          "text": "STT: speech→text; TTS: text→speech"
+        },
+        {
+          "id": "c",
+          "text": "STT chuyển text thành speech; TTS chuyển speech thành text"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d01-x03",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d01",
+      "topic": "p1-d01",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Khi người dùng nói chen lúc voicebot đang phát âm thanh, hành vi nào đúng với yêu cầu barge-in?",
+      "correct_answer": "a",
+      "explanation": "Slide yêu cầu khi người dùng ngắt lời phải dừng TTS ngay.",
+      "source_reference": [
+        {
+          "document_id": "p1-d01",
+          "sha256": "7623057fe66b2a3ef217ace5962109059d94e3d65ae58d4bb4a8d5c7e8c983a8",
+          "pdf_page": 11,
+          "title": "AI & LLM Foundation",
+          "locator": "Physical PDF page 11",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Dừng TTS ngay để xử lý lời chen"
+        },
+        {
+          "id": "b",
+          "text": "Đưa lời sửa vào hàng đợi nhưng để TTS phát hết câu đang nói"
+        },
+        {
+          "id": "c",
+          "text": "Bỏ qua lượt nói chen và yêu cầu người dùng nhắc lại sau câu trả lời"
+        }
+      ],
+      "shuffle_options": true,
+      "context": "Một khách hàng ngắt lời để sửa số tài khoản trong khi bot đang đọc câu trả lời."
+    },
+    {
+      "id": "p1-d01-x04",
+      "revision": 4,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d01",
+      "topic": "p1-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Streaming từng khâu của voice pipeline giảm độ trễ cảm nhận bằng cơ chế nào?",
+      "correct_answer": "c",
+      "explanation": "Khâu sau có thể bắt đầu xử lý các phần output mới xuất hiện, thay vì chờ LLM sinh xong toàn bộ câu rồi TTS mới đọc.",
+      "source_reference": [
+        {
+          "document_id": "p1-d01",
+          "sha256": "7623057fe66b2a3ef217ace5962109059d94e3d65ae58d4bb4a8d5c7e8c983a8",
+          "pdf_page": 11,
+          "title": "AI & LLM Foundation",
+          "locator": "Physical PDF page 11",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Đợi LLM hoàn tất toàn câu rồi chuyển nguyên câu cho TTS"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ giảm max_tokens nhưng vẫn chờ toàn bộ output sinh xong mới bắt đầu đọc"
+        },
+        {
+          "id": "c",
+          "text": "Chuyển phần output vừa sinh sang khâu sau trước khi toàn bộ câu hoàn thành"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d01-x05",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d01",
+      "topic": "p1-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một vòng agent sau khi gọi tool cần bước nào trước khi quyết định lặp hoặc trả kết quả?",
+      "correct_answer": "b",
+      "explanation": "Sơ đồ đặt quan sát kết quả sau tool call, rồi trả kết quả hoặc tiếp tục vòng lặp.",
+      "source_reference": [
+        {
+          "document_id": "p1-d01",
+          "sha256": "7623057fe66b2a3ef217ace5962109059d94e3d65ae58d4bb4a8d5c7e8c983a8",
+          "pdf_page": 13,
+          "title": "AI & LLM Foundation",
+          "locator": "Physical PDF page 13",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Lập lại cùng action trước khi đọc observation để tránh gián đoạn"
+        },
+        {
+          "id": "b",
+          "text": "Quan sát kết quả tool"
+        },
+        {
+          "id": "c",
+          "text": "Tổng hợp final answer ngay từ lời gọi tool chưa có result"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d01-x06",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d01",
+      "topic": "p1-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Progressive disclosure của Agent Skills giải quyết hạn chế nào?",
+      "correct_answer": "a",
+      "explanation": "Agent đọc mô tả trước, khi khớp việc mới mở hướng dẫn và tài nguyên đầy đủ.",
+      "source_reference": [
+        {
+          "document_id": "p1-d01",
+          "sha256": "7623057fe66b2a3ef217ace5962109059d94e3d65ae58d4bb4a8d5c7e8c983a8",
+          "pdf_page": 15,
+          "title": "AI & LLM Foundation",
+          "locator": "Physical PDF page 15",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Context window hữu hạn nên chỉ nạp toàn bộ skill khi công việc phù hợp"
+        },
+        {
+          "id": "b",
+          "text": "Nạp toàn bộ nội dung mọi skill vào mỗi context packet để bảo đảm đủ kiến thức"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ giữ tên skill mà không có đường nạp hướng dẫn khi cần"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d01-x07",
+      "revision": 4,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d01",
+      "topic": "p1-d01",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những nội dung nào có thể nằm trong một Agent Skill? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "b",
+        "c"
+      ],
+      "explanation": "Ví dụ skill có SKILL.md, mẫu Excel, quy tắc kế toán và script đối soát.",
+      "source_reference": [
+        {
+          "document_id": "p1-d01",
+          "sha256": "7623057fe66b2a3ef217ace5962109059d94e3d65ae58d4bb4a8d5c7e8c983a8",
+          "pdf_page": 15,
+          "title": "AI & LLM Foundation",
+          "locator": "Physical PDF page 15",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ một description để model biết tên skill, không có hướng dẫn đầy đủ để nạp khi cần"
+        },
+        {
+          "id": "b",
+          "text": "Script và mẫu tài liệu"
+        },
+        {
+          "id": "c",
+          "text": "Hướng dẫn Markdown"
+        },
+        {
+          "id": "d",
+          "text": "Một thư mục chỉ gồm schema tool, không có hướng dẫn quy trình hay tài nguyên hỗ trợ"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d01-x08",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d01",
+      "topic": "p1-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một nhóm cần chuẩn kết nối agent với CRM và database bên ngoài. Mảnh ghép nào trả lời câu hỏi cắm vào hệ thống nào?",
+      "correct_answer": "b",
+      "explanation": "Bảng bốn mảnh ghép mô tả MCP là chuẩn kết nối agent với tool/dữ liệu ngoài.",
+      "source_reference": [
+        {
+          "document_id": "p1-d01",
+          "sha256": "7623057fe66b2a3ef217ace5962109059d94e3d65ae58d4bb4a8d5c7e8c983a8",
+          "pdf_page": 16,
+          "title": "AI & LLM Foundation",
+          "locator": "Physical PDF page 16",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tool calling vì chỉ cần định nghĩa một function cụ thể, không cần chuẩn kết nối hệ thống"
+        },
+        {
+          "id": "b",
+          "text": "MCP"
+        },
+        {
+          "id": "c",
+          "text": "Agent Skill vì đóng gói cách thực hiện báo cáo theo quy tắc nội bộ"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d01-x09",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d01",
+      "topic": "p1-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Đối với LLM, tác vụ nền tảng nào dẫn tới khả năng sinh văn bản?",
+      "correct_answer": "a",
+      "explanation": "Next-token prediction là đặc điểm chính được nêu trong định nghĩa LLM.",
+      "source_reference": [
+        {
+          "document_id": "p1-d01",
+          "sha256": "7623057fe66b2a3ef217ace5962109059d94e3d65ae58d4bb4a8d5c7e8c983a8",
+          "pdf_page": 20,
+          "title": "AI & LLM Foundation",
+          "locator": "Physical PDF page 20",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Dự đoán token tiếp theo"
+        },
+        {
+          "id": "b",
+          "text": "Tìm câu trả lời nguyên văn gần nhất trong corpus training rồi sao chép"
+        },
+        {
+          "id": "c",
+          "text": "Phân loại toàn bộ câu hỏi vào một nhãn câu trả lời cố định"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d01-x10",
+      "revision": 4,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d01",
+      "topic": "p1-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong câu “Con mèo ngồi trên bàn. Nó rất đáng yêu.”, self-attention giúp model xử lý từ “Nó” như thế nào?",
+      "correct_answer": "c",
+      "explanation": "Ví dụ attention gắn trọng số cao cho mèo khi xử lý đại từ nó để giải quyết tham chiếu.",
+      "source_reference": [
+        {
+          "document_id": "p1-d01",
+          "sha256": "7623057fe66b2a3ef217ace5962109059d94e3d65ae58d4bb4a8d5c7e8c983a8",
+          "pdf_page": 23,
+          "title": "AI & LLM Foundation",
+          "locator": "Physical PDF page 23",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Dùng cùng trọng số cho mọi token bất kể quan hệ với đại từ"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ dựa vào token ngay trước Nó mà không xét các từ khác trong câu"
+        },
+        {
+          "id": "c",
+          "text": "Gắn trọng số liên hệ với từ liên quan trong context"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d01-x11",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d01",
+      "topic": "p1-d01",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "token nhất thiết tương ứng đúng một từ hoàn chỉnh trong mọi ngôn ngữ.",
+      "correct_answer": false,
+      "explanation": "Bài mô tả tokenization thành subword units và số token tiếng Việt khác tiếng Anh.",
+      "source_reference": [
+        {
+          "document_id": "p1-d01",
+          "sha256": "7623057fe66b2a3ef217ace5962109059d94e3d65ae58d4bb4a8d5c7e8c983a8",
+          "pdf_page": 24,
+          "title": "AI & LLM Foundation",
+          "locator": "Physical PDF page 24",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ]
+    },
+    {
+      "id": "p1-d01-x12",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d01",
+      "topic": "p1-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong cơ chế autoregressive, token vừa sinh ảnh hưởng bước sinh tiếp theo thế nào?",
+      "correct_answer": "a",
+      "explanation": "Slide nêu output token trở thành input của bước kế tiếp.",
+      "source_reference": [
+        {
+          "document_id": "p1-d01",
+          "sha256": "7623057fe66b2a3ef217ace5962109059d94e3d65ae58d4bb4a8d5c7e8c983a8",
+          "pdf_page": 25,
+          "title": "AI & LLM Foundation",
+          "locator": "Physical PDF page 25",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Trở thành một phần input cho bước tiếp theo"
+        },
+        {
+          "id": "b",
+          "text": "Token vừa sinh chỉ được lưu để tính usage, không tham gia lượt dự đoán kế"
+        },
+        {
+          "id": "c",
+          "text": "Mọi token output được dự đoán độc lập từ cùng prompt ban đầu"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d01-x13",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d01",
+      "topic": "p1-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Chuỗi vai trò pre-training → SFT → RLHF/DPO có vai trò tương ứng theo thứ tự nào?",
+      "correct_answer": "c",
+      "explanation": "Pre-training đọc nhiều, SFT học cách trả lời, alignment uốn nắn hành vi theo sở thích/an toàn.",
+      "source_reference": [
+        {
+          "document_id": "p1-d01",
+          "sha256": "7623057fe66b2a3ef217ace5962109059d94e3d65ae58d4bb4a8d5c7e8c983a8",
+          "pdf_page": 26,
+          "title": "AI & LLM Foundation",
+          "locator": "Physical PDF page 26",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Pre-training học format trả lời; SFT học kiến thức từ web; alignment chỉ mở rộng context window"
+        },
+        {
+          "id": "b",
+          "text": "Pre-training học sở thích; SFT thay thế retrieval; alignment học ngôn ngữ cơ bản từ đầu"
+        },
+        {
+          "id": "c",
+          "text": "Học ngôn ngữ/kiến thức → học ví dụ trả lời → căn chỉnh sở thích và an toàn"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d01-x14",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d01",
+      "topic": "p1-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Khi cần trả lời về thông tin sau thời điểm training, hạn chế nào khiến model cần thêm dữ liệu hoặc tools?",
+      "correct_answer": "b",
+      "explanation": "Model không tự biết các sự kiện sau training nếu không được cấp dữ liệu/tools.",
+      "source_reference": [
+        {
+          "document_id": "p1-d01",
+          "sha256": "7623057fe66b2a3ef217ace5962109059d94e3d65ae58d4bb4a8d5c7e8c983a8",
+          "pdf_page": 27,
+          "title": "AI & LLM Foundation",
+          "locator": "Physical PDF page 27",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Hallucination: trả lời tự tin mà không bảo đảm thông tin đúng"
+        },
+        {
+          "id": "b",
+          "text": "Knowledge cutoff"
+        },
+        {
+          "id": "c",
+          "text": "Context window: giới hạn lượng token model thấy trong một lần gọi"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d01-x15",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d01",
+      "topic": "p1-d01",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những yếu tố nào cần được kiểm soát đồng thời trong một API call? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "b",
+        "c",
+        "d"
+      ],
+      "explanation": "Lưu ý bài nhấn mạnh đồng thời quality, latency và cost.",
+      "source_reference": [
+        {
+          "document_id": "p1-d01",
+          "sha256": "7623057fe66b2a3ef217ace5962109059d94e3d65ae58d4bb4a8d5c7e8c983a8",
+          "pdf_page": 36,
+          "title": "AI & LLM Foundation",
+          "locator": "Physical PDF page 36",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ tối đa quality; latency và cost được xem là cố định theo provider"
+        },
+        {
+          "id": "b",
+          "text": "Quality"
+        },
+        {
+          "id": "c",
+          "text": "Latency"
+        },
+        {
+          "id": "d",
+          "text": "Cost"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d01-x16",
+      "revision": 4,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d01",
+      "topic": "p1-d01",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Với response schema có usage.input_tokens, usage.output_tokens và stop_reason, những trường nào giúp phân tích chi phí và nguyên nhân kết thúc lần gọi? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "c"
+      ],
+      "explanation": "Response có usage cho token input/output và stop_reason cho nguyên nhân dừng.",
+      "source_reference": [
+        {
+          "document_id": "p1-d01",
+          "sha256": "7623057fe66b2a3ef217ace5962109059d94e3d65ae58d4bb4a8d5c7e8c983a8",
+          "pdf_page": 39,
+          "title": "AI & LLM Foundation",
+          "locator": "Physical PDF page 39",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "usage.input_tokens và usage.output_tokens"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ content và tên model, suy chi phí từ số ký tự hiển thị và bỏ stop_reason"
+        },
+        {
+          "id": "c",
+          "text": "stop_reason"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d02-x01",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d02",
+      "topic": "p1-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao câu yêu cầu xây AI chatbot chưa đủ để xác định bài toán?",
+      "correct_answer": "c",
+      "explanation": "Bài đối chiếu chatbot phục vụ khách hàng với hỗ trợ nội bộ, mỗi đối tượng dẫn đến metric khác.",
+      "source_reference": [
+        {
+          "document_id": "p1-d02",
+          "sha256": "2ad31138952bf7b032765e29a904c9f3b43e6130896a72f4339fd56d17f37aea",
+          "pdf_page": 8,
+          "title": "Xác định bài toán cho AI",
+          "locator": "Physical PDF page 8",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ cần chọn model và kênh chat là đủ suy ra workflow của mọi đối tượng"
+        },
+        {
+          "id": "b",
+          "text": "Có thể dùng cùng success metric cho khách hàng và nhân viên nội bộ vì đều là hội thoại"
+        },
+        {
+          "id": "c",
+          "text": "Chưa rõ đối tượng nên workflow, metric và rủi ro chưa xác định"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d02-x02",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d02",
+      "topic": "p1-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Thứ tự câu hỏi nào phù hợp nguyên tắc PAIR?",
+      "correct_answer": "b",
+      "explanation": "AI chỉ là một trong nhiều phương án; hỏi bài toán trước, hỏi AI sau.",
+      "source_reference": [
+        {
+          "document_id": "p1-d02",
+          "sha256": "2ad31138952bf7b032765e29a904c9f3b43e6130896a72f4339fd56d17f37aea",
+          "pdf_page": 13,
+          "title": "Xác định bài toán cho AI",
+          "locator": "Physical PDF page 13",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chọn mức tự động hóa trước rồi viết Problem Statement phù hợp mức đó"
+        },
+        {
+          "id": "b",
+          "text": "Hỏi giải quyết vấn đề thế nào, rồi AI có lợi thế riêng không"
+        },
+        {
+          "id": "c",
+          "text": "Chốt AI là giải pháp rồi tìm pain point có thể mô tả theo capability của model"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d02-x03",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d02",
+      "topic": "p1-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong Double Diamond, Discover và Define thuộc mục tiêu nào?",
+      "correct_answer": "a",
+      "explanation": "Diamond đầu mở rộng khám phá rồi hội tụ xác định bài toán gốc.",
+      "source_reference": [
+        {
+          "document_id": "p1-d02",
+          "sha256": "2ad31138952bf7b032765e29a904c9f3b43e6130896a72f4339fd56d17f37aea",
+          "pdf_page": 16,
+          "title": "Xác định bài toán cho AI",
+          "locator": "Physical PDF page 16",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tìm đúng vấn đề"
+        },
+        {
+          "id": "b",
+          "text": "Mở rộng rồi chọn cách triển khai giải pháp đã được chốt"
+        },
+        {
+          "id": "c",
+          "text": "Kiểm thử prototype rồi tối ưu giải pháp trước khi quay lại problem"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d02-x04",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d02",
+      "topic": "p1-d02",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Develop và Deliver đều là hai bước phân kỳ nhằm tăng số giải pháp mà không cần lựa chọn.",
+      "correct_answer": false,
+      "explanation": "Develop mở rộng các giải pháp; Deliver hội tụ lựa chọn và triển khai.",
+      "source_reference": [
+        {
+          "document_id": "p1-d02",
+          "sha256": "2ad31138952bf7b032765e29a904c9f3b43e6130896a72f4339fd56d17f37aea",
+          "pdf_page": 16,
+          "title": "Xác định bài toán cho AI",
+          "locator": "Physical PDF page 16",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ]
+    },
+    {
+      "id": "p1-d02-x05",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d02",
+      "topic": "p1-d02",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những kỹ thuật nào được xếp vào khám phá/phân kỳ vấn đề? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "d"
+      ],
+      "explanation": "Slide liệt kê observation/interview/survey/diary/analytics/stakeholder mapping ở phía khám phá.",
+      "source_reference": [
+        {
+          "document_id": "p1-d02",
+          "sha256": "2ad31138952bf7b032765e29a904c9f3b43e6130896a72f4339fd56d17f37aea",
+          "pdf_page": 18,
+          "title": "Xác định bài toán cho AI",
+          "locator": "Physical PDF page 18",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Quan sát thực tế và phỏng vấn người dùng"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ dot voting để chốt một phương án trước khi quan sát hoặc phỏng vấn"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ viết Problem Statement để hội tụ khi chưa thu thập bằng chứng khám phá"
+        },
+        {
+          "id": "d",
+          "text": "Diary study và phân tích log"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d02-x06",
+      "revision": 5,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d02",
+      "topic": "p1-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trường Boundary của Problem Card cho một trợ giảng AI có chức năng gì?",
+      "correct_answer": "a",
+      "explanation": "Boundary xác định giới hạn hành động: trợ giảng AI không tự chấm điểm và chuyển câu hỏi chuyên sâu cho TA duyệt.",
+      "source_reference": [
+        {
+          "document_id": "p1-d02",
+          "sha256": "2ad31138952bf7b032765e29a904c9f3b43e6130896a72f4339fd56d17f37aea",
+          "pdf_page": 23,
+          "title": "Xác định bài toán cho AI",
+          "locator": "Physical PDF page 23",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Nêu rõ việc AI không làm và trường hợp cần TA duyệt"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ mô tả người dùng mục tiêu, không giới hạn hành động AI"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ nêu success metric, để nhóm phát triển tự suy ra mọi việc không được làm"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d02-x07",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d02",
+      "topic": "p1-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Tiêu chí thành công hành động được phải có những thành phần nào?",
+      "correct_answer": "c",
+      "explanation": "Ba thành phần bắt buộc là chỉ số cụ thể, ngưỡng có nghĩa và hành động cụ thể.",
+      "source_reference": [
+        {
+          "document_id": "p1-d02",
+          "sha256": "2ad31138952bf7b032765e29a904c9f3b43e6130896a72f4339fd56d17f37aea",
+          "pdf_page": 25,
+          "title": "Xác định bài toán cho AI",
+          "locator": "Physical PDF page 25",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Metric và một target cuối kỳ nhưng chưa quy định hành động khi vượt ngưỡng"
+        },
+        {
+          "id": "b",
+          "text": "Một hành động mong muốn nhưng chưa có metric và cửa sổ thời gian để kích hoạt"
+        },
+        {
+          "id": "c",
+          "text": "Metric cụ thể, ngưỡng có thời gian và hành động khi chạm ngưỡng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d02-x08",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d02",
+      "topic": "p1-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "PAIR phân biệt automate và augment để quyết định điều gì?",
+      "correct_answer": "b",
+      "explanation": "Bước hai đặt vai trò con người; mức tự động hóa theo độ tin cậy và rủi ro.",
+      "source_reference": [
+        {
+          "document_id": "p1-d02",
+          "sha256": "2ad31138952bf7b032765e29a904c9f3b43e6130896a72f4339fd56d17f37aea",
+          "pdf_page": 28,
+          "title": "Xác định bài toán cho AI",
+          "locator": "Physical PDF page 28",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Cách chia công việc theo thứ tự cố định hay kế hoạch động"
+        },
+        {
+          "id": "b",
+          "text": "Vai trò AI thay thế hay hỗ trợ con người"
+        },
+        {
+          "id": "c",
+          "text": "Độ phức tạp kỹ thuật giữa rule, workflow và agent"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d02-x09",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d02",
+      "topic": "p1-d02",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Bài toán có đầu vào hữu hạn, một đáp án đúng rõ ràng và sai sót rất đắt. Hướng nào phù hợp nhất?",
+      "correct_answer": "a",
+      "explanation": "Ba câu hỏi về đa dạng input, đáp án duy nhất và cost of error giúp so rule với AI.",
+      "source_reference": [
+        {
+          "document_id": "p1-d02",
+          "sha256": "2ad31138952bf7b032765e29a904c9f3b43e6130896a72f4339fd56d17f37aea",
+          "pdf_page": 29,
+          "title": "Xác định bài toán cho AI",
+          "locator": "Physical PDF page 29",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Ưu tiên rule hoặc tách phần chắc chắn, không mặc định dùng AI"
+        },
+        {
+          "id": "b",
+          "text": "Ưu tiên agent để tạo nhiều lời giải rồi lấy câu trả lời model tự tin nhất"
+        },
+        {
+          "id": "c",
+          "text": "Ưu tiên generative model vì input hữu hạn giúp nó tự bảo đảm deterministic"
+        }
+      ],
+      "shuffle_options": true,
+      "context": "Nhóm tự động hóa một quy tắc nghiệp vụ với vài chục dạng đầu vào và yêu cầu kết quả lặp lại tuyệt đối."
+    },
+    {
+      "id": "p1-d02-x10",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d02",
+      "topic": "p1-d02",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Các tác vụ có stakes cao hoặc cần trách nhiệm cá nhân có xu hướng phù hợp augment hơn automate.",
+      "correct_answer": true,
+      "explanation": "Bảng augment nêu tiền bạc, pháp lý, sức khỏe và kết quả cần trách nhiệm cá nhân.",
+      "source_reference": [
+        {
+          "document_id": "p1-d02",
+          "sha256": "2ad31138952bf7b032765e29a904c9f3b43e6130896a72f4339fd56d17f37aea",
+          "pdf_page": 30,
+          "title": "Xác định bài toán cho AI",
+          "locator": "Physical PDF page 30",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ]
+    },
+    {
+      "id": "p1-d02-x11",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d02",
+      "topic": "p1-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Mức tự động hóa nên tăng khi nào theo lộ trình?",
+      "correct_answer": "b",
+      "explanation": "Tỷ lệ tự động đi lên nhờ dữ liệu đánh giá và lùi lại khi chất lượng tụt.",
+      "source_reference": [
+        {
+          "document_id": "p1-d02",
+          "sha256": "2ad31138952bf7b032765e29a904c9f3b43e6130896a72f4339fd56d17f37aea",
+          "pdf_page": 31,
+          "title": "Xác định bài toán cho AI",
+          "locator": "Physical PDF page 31",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tăng tự động ngay sau khi demo một case thành công, chưa phân nhóm ca được kiểm chứng"
+        },
+        {
+          "id": "b",
+          "text": "Khi dữ liệu đánh giá cho phép và nhóm ca đã chứng minh chất lượng"
+        },
+        {
+          "id": "c",
+          "text": "Theo tỷ lệ tự động hóa đã cam kết từ đầu dù dữ liệu mới cho thấy chất lượng giảm"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d02-x12",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d02",
+      "topic": "p1-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Rule/Workflow/Agent và Automate/Augment có quan hệ nào?",
+      "correct_answer": "a",
+      "explanation": "Slide nhấn mạnh cấp kỹ thuật khác vai trò tự động hóa/hỗ trợ.",
+      "source_reference": [
+        {
+          "document_id": "p1-d02",
+          "sha256": "2ad31138952bf7b032765e29a904c9f3b43e6130896a72f4339fd56d17f37aea",
+          "pdf_page": 32,
+          "title": "Xác định bài toán cho AI",
+          "locator": "Physical PDF page 32",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Hai trục độc lập: cấp kỹ thuật và vai trò con người"
+        },
+        {
+          "id": "b",
+          "text": "Workflow luôn là automate, còn agent luôn là augment"
+        },
+        {
+          "id": "c",
+          "text": "Rule chỉ dùng khi có người duyệt; agent mặc định được tự thực thi toàn bộ"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d02-x13",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d02",
+      "topic": "p1-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Đặc điểm nào làm hệ thống được mô tả là workflow thay vì agent tự chủ?",
+      "correct_answer": "c",
+      "explanation": "Workflow có các bước cố định, code điều phối và gate kiểm tra, dù từng bước có LLM.",
+      "source_reference": [
+        {
+          "document_id": "p1-d02",
+          "sha256": "2ad31138952bf7b032765e29a904c9f3b43e6130896a72f4339fd56d17f37aea",
+          "pdf_page": 34,
+          "title": "Xác định bài toán cho AI",
+          "locator": "Physical PDF page 34",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Model quyết định lại lộ trình và số bước theo observation ở mỗi lượt"
+        },
+        {
+          "id": "b",
+          "text": "Các agent peer tự chia kế hoạch mà không có sequence do code quy định"
+        },
+        {
+          "id": "c",
+          "text": "Lộ trình xử lý do code quy định trước với gate giữa các bước"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d02-x14",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d02",
+      "topic": "p1-d02",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những điều kiện nào cần khi cân nhắc agent? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "b",
+        "c"
+      ],
+      "explanation": "Agent dành cho số bước không biết trước nhưng cần sandbox, guardrails và điều kiện dừng.",
+      "source_reference": [
+        {
+          "document_id": "p1-d02",
+          "sha256": "2ad31138952bf7b032765e29a904c9f3b43e6130896a72f4339fd56d17f37aea",
+          "pdf_page": 35,
+          "title": "Xác định bài toán cho AI",
+          "locator": "Physical PDF page 35",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Không cần định nghĩa stop condition vì số bước chưa biết trước"
+        },
+        {
+          "id": "b",
+          "text": "Kế hoạch cần thay đổi theo môi trường và nhiều công cụ"
+        },
+        {
+          "id": "c",
+          "text": "Có điểm dừng cùng chốt giám sát"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d02-x15",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d02",
+      "topic": "p1-d02",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Nhóm có một LLM tạo bản dịch, LLM khác chấm theo tiêu chí rõ rồi phản hồi để sửa tiếp. Pattern nào phù hợp?",
+      "correct_answer": "a",
+      "explanation": "Pattern mô tả vòng tạo–chấm–phản hồi đến khi đạt tiêu chí.",
+      "source_reference": [
+        {
+          "document_id": "p1-d02",
+          "sha256": "2ad31138952bf7b032765e29a904c9f3b43e6130896a72f4339fd56d17f37aea",
+          "pdf_page": 36,
+          "title": "Xác định bài toán cho AI",
+          "locator": "Physical PDF page 36",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Evaluator-Optimizer"
+        },
+        {
+          "id": "b",
+          "text": "Prompt Chaining: các bước cố định nối nhau nhưng không có vòng đánh giá/sửa"
+        },
+        {
+          "id": "c",
+          "text": "Routing: phân loại input vào một nhánh xử lý rồi trả kết quả"
+        }
+      ],
+      "shuffle_options": true,
+      "context": "Bản dịch cần cải thiện qua nhiều lượt dựa trên nhận xét có cấu trúc, không chỉ phân loại input."
+    },
+    {
+      "id": "p1-d02-x16",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d02",
+      "topic": "p1-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Input metric khác output metric thế nào?",
+      "correct_answer": "c",
+      "explanation": "Ví dụ phân loại/chuyển tiếp/hiệu chỉnh là đòn bẩy; thời gian học viên chờ là kết quả cuối.",
+      "source_reference": [
+        {
+          "document_id": "p1-d02",
+          "sha256": "2ad31138952bf7b032765e29a904c9f3b43e6130896a72f4339fd56d17f37aea",
+          "pdf_page": 45,
+          "title": "Xác định bài toán cho AI",
+          "locator": "Physical PDF page 45",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Input chỉ đo output của model; output chỉ đo số request gửi đến hệ thống"
+        },
+        {
+          "id": "b",
+          "text": "Input và output cùng đo thời gian chờ, chỉ khác công cụ ghi nhận"
+        },
+        {
+          "id": "c",
+          "text": "Input là đòn bẩy có thể tác động; output phản ánh kết quả người dùng cuối"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d02-x17",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d02",
+      "topic": "p1-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Khi automation thất bại, hướng xử lý nào phù hợp Paths forward from failure?",
+      "correct_answer": "b",
+      "explanation": "Bài yêu cầu feedback, quyền kiểm soát và thiết kế thất bại an toàn.",
+      "source_reference": [
+        {
+          "document_id": "p1-d02",
+          "sha256": "2ad31138952bf7b032765e29a904c9f3b43e6130896a72f4339fd56d17f37aea",
+          "pdf_page": 50,
+          "title": "Xác định bài toán cho AI",
+          "locator": "Physical PDF page 50",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ báo một thông điệp lỗi chung rồi kết thúc, không mở feedback hay lựa chọn tiếp theo"
+        },
+        {
+          "id": "b",
+          "text": "Trả quyền kiểm soát kèm thông tin để người dùng tiếp quản"
+        },
+        {
+          "id": "c",
+          "text": "Retry cùng automation mà không cung cấp trạng thái để người dùng tiếp quản"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d03-x01",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d03",
+      "topic": "p1-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Tool calling đóng vai trò gì trong kiến trúc agent?",
+      "correct_answer": "c",
+      "explanation": "Tool call cho agent tương tác API/DB/search, đồng thời thêm dependency ngoài.",
+      "source_reference": [
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 26,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 26",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Một cách lưu tri thức vào weights để tránh truy cập hệ thống ngoài"
+        },
+        {
+          "id": "b",
+          "text": "Một cách tổ chức final answer mà không tạo tác động đến môi trường"
+        },
+        {
+          "id": "c",
+          "text": "Cầu nối từ reasoning của model sang hành động ngoài hệ thống"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d03-x02",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d03",
+      "topic": "p1-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một tool chỉ khai báo tên và input nhưng không có return format/error modes sẽ thiếu điều gì quan trọng?",
+      "correct_answer": "b",
+      "explanation": "Tool definition cần name, description, parameter constraints, return format và error modes.",
+      "source_reference": [
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 30,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 30",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Thông tin về policy truy cập dữ liệu, nhưng không cần mô tả kết quả hay lỗi tool"
+        },
+        {
+          "id": "b",
+          "text": "Thông tin để agent hiểu kết quả nhận được và các tình huống thất bại"
+        },
+        {
+          "id": "c",
+          "text": "Thông tin về số tham số của model được phép dùng tool"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d03-x03",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d03",
+      "topic": "p1-d03",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những thành phần nào làm parameter schema của tool rõ hơn? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "b",
+        "c"
+      ],
+      "explanation": "Parameters cần type, tính bắt buộc và ràng buộc để tránh sai args.",
+      "source_reference": [
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 30,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 30",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ đưa một ví dụ request, bỏ type/required và để các input khác suy theo ví dụ"
+        },
+        {
+          "id": "b",
+          "text": "Type và required/optional"
+        },
+        {
+          "id": "c",
+          "text": "Constraints như IATA code hoặc định dạng ngày"
+        },
+        {
+          "id": "d",
+          "text": "Một trường input any không có ràng buộc; model tự suy ra format ở runtime"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d03-x04",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d03",
+      "topic": "p1-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Observation trong ReAct là gì?",
+      "correct_answer": "c",
+      "explanation": "ReAct xen kẽ Thought, Action, Observation để quyết định đủ thông tin hay cần hành động tiếp.",
+      "source_reference": [
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 34,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 34",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Phần phân tích trước khi agent chọn công cụ"
+        },
+        {
+          "id": "b",
+          "text": "Tên tool và arguments agent vừa đề xuất, trước khi tool thực thi"
+        },
+        {
+          "id": "c",
+          "text": "Kết quả từ tool/environment được dùng cho bước suy luận tiếp"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d03-x05",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d03",
+      "topic": "p1-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trace ReAct giúp debug tốt hơn chỉ nhìn final answer vì lý do nào?",
+      "correct_answer": "b",
+      "explanation": "Trace làm rõ quyết định và kết quả tool để con người debug/can thiệp.",
+      "source_reference": [
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 37,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 37",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ ghi Thought mà không cần action arguments hoặc tool observations"
+        },
+        {
+          "id": "b",
+          "text": "Cho thấy lý do hành động và quan sát dẫn tới kết luận"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ ghi final answer và total cost, bỏ các action trung gian"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d03-x06",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d03",
+      "topic": "p1-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Hai tool không phụ thuộc output nhau có thể được tổ chức thế nào?",
+      "correct_answer": "a",
+      "explanation": "Bảng phân biệt parallel tools độc lập với chained tools có dependency.",
+      "source_reference": [
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 41,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 41",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Có thể gọi đồng thời hoặc tuần tự tùy thiết kế"
+        },
+        {
+          "id": "b",
+          "text": "Bắt buộc chờ tool A để dùng output A làm input B dù hai tool độc lập"
+        },
+        {
+          "id": "c",
+          "text": "Gộp hai kết quả bằng cách bỏ một tool để không phải quản lý hai observation"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d03-x07",
+      "revision": 4,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d03",
+      "topic": "p1-d03",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Tool tìm vé timeout hai lần. Cách phản hồi nào phù hợp để hệ thống suy giảm chức năng an toàn?",
+      "correct_answer": "c",
+      "explanation": "Ví dụ retry có giới hạn, không bịa dữ liệu và fallback thông báo người dùng.",
+      "source_reference": [
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 42,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 42",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Trả một mức giá ước lượng nhưng không phân biệt với giá lấy từ tool"
+        },
+        {
+          "id": "b",
+          "text": "Tiếp tục retry cùng request không giới hạn vì chưa có kết quả tìm vé"
+        },
+        {
+          "id": "c",
+          "text": "Thông báo không lấy được dữ liệu và đưa đường kiểm tra thủ công"
+        }
+      ],
+      "shuffle_options": true,
+      "context": "Agent không lấy được bất kỳ observation giá vé nào từ tool đang lỗi."
+    },
+    {
+      "id": "p1-d03-x08",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d03",
+      "topic": "p1-d03",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những giới hạn nào cho ReAct? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "b",
+        "c"
+      ],
+      "explanation": "ReAct cần safeguard và eval trace; không phù hợp mọi bài toán đơn giản hoặc deterministic tuyệt đối.",
+      "source_reference": [
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 45,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 45",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ cần chấm final answer; trace không ảnh hưởng việc đánh giá hành vi"
+        },
+        {
+          "id": "b",
+          "text": "Tốn token và latency hơn chatbot"
+        },
+        {
+          "id": "c",
+          "text": "Có thể loop hoặc gọi sai tool"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d03-x09",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d03",
+      "topic": "p1-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "ReAct và native Function Calling khác nhau ở cấp khái niệm thế nào?",
+      "correct_answer": "a",
+      "explanation": "Slide phân biệt concept và mechanism, có thể kết hợp trong hybrid.",
+      "source_reference": [
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 47,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 47",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ReAct là pattern reasoning xen acting; Function Calling là cơ chế gọi tool có cấu trúc"
+        },
+        {
+          "id": "b",
+          "text": "ReAct là định dạng JSON chuẩn; Function Calling là một vòng suy luận có text Thought"
+        },
+        {
+          "id": "c",
+          "text": "ReAct và Function Calling là hai lựa chọn loại trừ nhau, không thể ghép trong một agent"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d03-x10",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d03",
+      "topic": "p1-d03",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Có thể chọn cách tiếp cận Hybrid để kết hợp native structured tool calls với khả năng theo dõi reasoning/trace khi debug.",
+      "correct_answer": true,
+      "explanation": "Hybrid kết hợp native Function Calling với reasoning/trace, nhằm giữ cấu trúc gọi tool và khả năng quan sát quá trình xử lý.",
+      "source_reference": [
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 48,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 48",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ]
+    },
+    {
+      "id": "p1-d03-x11",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d03",
+      "topic": "p1-d03",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những phần nào được nhấn mạnh phải bổ sung vào system prompt production so với prompt demo? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "b",
+        "c"
+      ],
+      "explanation": "Năm phần gồm identity, capabilities, instructions, constraints và output format; demo thiếu phần4/5.",
+      "source_reference": [
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 56,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 56",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ thêm ví dụ thành công; không cần quy định output hoặc giới hạn hành động"
+        },
+        {
+          "id": "b",
+          "text": "Constraints rõ"
+        },
+        {
+          "id": "c",
+          "text": "Output format rõ"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d03-x12",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d03",
+      "topic": "p1-d03",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Agent lặp cùng tool với cùng observation và không tiến triển. Cách xử lý nào đúng?",
+      "correct_answer": "a",
+      "explanation": "Slide nêu dấu hiệu loop và cần dừng/fallback khi không tiến triển.",
+      "source_reference": [
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 59,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 59",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Dừng loop và fallback, kết hợp giới hạn vòng/retry/budget"
+        },
+        {
+          "id": "b",
+          "text": "Tiếp tục gọi tool cho đến khi model tự đổi câu trả lời, dù observation không đổi"
+        },
+        {
+          "id": "c",
+          "text": "Xóa observation khỏi history rồi thực hiện lại action giống hệt để coi là lượt mới"
+        }
+      ],
+      "shuffle_options": true,
+      "context": "Log có nhiều lời gọi giống hệt nhau và agent hỏi lại thông tin đã có."
+    },
+    {
+      "id": "p1-d03-x13",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d03",
+      "topic": "p1-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Khi workflow nhiều nhánh hoặc cần persist state, graph approach hỗ trợ điều gì?",
+      "correct_answer": "c",
+      "explanation": "Bài nêu graph/state machine rõ hơn loop ad-hoc khi hệ thống phức tạp.",
+      "source_reference": [
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 60,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 60",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Ẩn routing trong một prompt dài để tránh phải khai báo state"
+        },
+        {
+          "id": "b",
+          "text": "Thêm nhiều tool vào cùng vòng while mà không mô tả state transitions"
+        },
+        {
+          "id": "c",
+          "text": "Biểu diễn state, nodes, edges và routing rõ để dễ maintain"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d03-x14",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d03",
+      "topic": "p1-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "So cost chatbot với agent, câu hỏi ra quyết định nào phù hợp phần scale?",
+      "correct_answer": "b",
+      "explanation": "Slide yêu cầu cân nhắc giá trị accuracy và refund/lost trust/support khi sai.",
+      "source_reference": [
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 64,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 64",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ so accuracy trung bình, không xét latency hoặc tổng chi phí khi scale"
+        },
+        {
+          "id": "b",
+          "text": "Accuracy gain có justify phần cost tăng và cost của câu trả lời sai không"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ so giá mỗi query, không đưa thiệt hại do câu trả lời sai vào phân tích"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d03-x15",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d03",
+      "topic": "p1-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao tool output làm tăng attack surface của agent?",
+      "correct_answer": "a",
+      "explanation": "Indirect prompt injection có thể nằm trong nội dung web/tool observation.",
+      "source_reference": [
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 66,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 66",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Agent nhận thêm nội dung untrusted ngoài input trực tiếp của user"
+        },
+        {
+          "id": "b",
+          "text": "Tool result được xem như system instruction vì đến qua API đã tích hợp"
+        },
+        {
+          "id": "c",
+          "text": "Tool output chỉ là một kênh của user input nên có thể bỏ kiểm tra nội dung ngoài"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d03-x16",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d03",
+      "topic": "p1-d03",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những khía cạnh nào cần đánh giá trên trace ngoài chất lượng final answer? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "c"
+      ],
+      "explanation": "Bài liệt kê reasoning, tool selection, args, stopping và grounding.",
+      "source_reference": [
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 77,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 77",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tool selection và argument correctness"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ đánh giá văn phong và độ trôi chảy của final answer thay cho hành vi trace"
+        },
+        {
+          "id": "c",
+          "text": "Stopping optimality"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d03-x17",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d03",
+      "topic": "p1-d03",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một hệ thống nhận cả FAQ một bước và request cần nhiều tool. Hybrid triage nên phân luồng thế nào?",
+      "correct_answer": "b",
+      "explanation": "Slide đề xuất triage nhanh: simple path cho câu đơn giản, agent cho multi-step, human/fallback khi cần.",
+      "source_reference": [
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 80,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 80",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Giữ tất cả request trong chatbot path và chỉ escalate sau khi đã trả lời không có dữ liệu"
+        },
+        {
+          "id": "b",
+          "text": "FAQ vào chatbot path; request phức tạp mới mở agent loop và có escalation"
+        },
+        {
+          "id": "c",
+          "text": "Mở cùng agent loop nhiều bước cho cả FAQ để đồng nhất đường xử lý"
+        }
+      ],
+      "shuffle_options": true,
+      "context": "Team muốn giảm overhead cho FAQ nhưng vẫn hỗ trợ tác vụ nhiều bước."
+    }
+  ]
+}

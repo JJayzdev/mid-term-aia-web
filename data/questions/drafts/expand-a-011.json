@@ -1,0 +1,2246 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.22.expansion-a-011",
+  "questions": [
+    {
+      "id": "p2-t4-d10-x01",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d10",
+      "topic": "p2-t4-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong kiến trúc ViT–projector–LLM, vision encoder đảm nhiệm vai trò nào?",
+      "correct_answer": "c",
+      "explanation": "Vision encoder trích đặc trưng ảnh; projector nối biểu diễn này vào không gian mà LLM xử lý.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d10",
+          "sha256": "763149a983add6ef60fee2fafb6f2caec98576b6afb2e1eca01f5c532cf78e2e",
+          "pdf_page": 5,
+          "title": "Vision–Language Model và VLA",
+          "locator": "Physical PDF page 5",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Trực tiếp xác nhận mọi fact cuối cùng là đúng"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ chọn câu lệnh điều khiển robot không qua biểu diễn ảnh"
+        },
+        {
+          "id": "c",
+          "text": "Biến ảnh thành biểu diễn/token thị giác"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d10-x02",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d10",
+      "topic": "p2-t4-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Với cấu hình patch 16 px và merge 2×2, một nhóm 4 patch ban đầu thành bao nhiêu token sau merge?",
+      "correct_answer": "b",
+      "explanation": "Merge không gian 2×2 gom bốn patch thành một token cho chuỗi đầu vào.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d10",
+          "sha256": "763149a983add6ef60fee2fafb6f2caec98576b6afb2e1eca01f5c532cf78e2e",
+          "pdf_page": 6,
+          "title": "Vision–Language Model và VLA",
+          "locator": "Physical PDF page 6",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "16 tokens vì nhân thêm hai trục"
+        },
+        {
+          "id": "b",
+          "text": "1 token"
+        },
+        {
+          "id": "c",
+          "text": "4 tokens vì merge không đổi độ dài chuỗi"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d10-x03",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d10",
+      "topic": "p2-t4-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Projector/connector trong VLM giải quyết nhu cầu nào?",
+      "correct_answer": "a",
+      "explanation": "Nó nối hai phần biểu diễn, nhưng không tự tạo bảo đảm về tính đúng nội dung.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d10",
+          "sha256": "763149a983add6ef60fee2fafb6f2caec98576b6afb2e1eca01f5c532cf78e2e",
+          "pdf_page": 9,
+          "title": "Vision–Language Model và VLA",
+          "locator": "Physical PDF page 9",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chuyển và có thể nén biểu diễn vision để đưa vào LLM"
+        },
+        {
+          "id": "b",
+          "text": "Thay hoàn toàn vision encoder bằng text tokenizer"
+        },
+        {
+          "id": "c",
+          "text": "Bảo đảm mọi object trong ảnh đều được grounding chính xác"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d10-x04",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d10",
+      "topic": "p2-t4-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Adapter-based multimodal training khác early fusion ở điểm nào?",
+      "correct_answer": "c",
+      "explanation": "Đây là lựa chọn về cách tích hợp modality trong quá trình học, không phải sensor late fusion.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d10",
+          "sha256": "763149a983add6ef60fee2fafb6f2caec98576b6afb2e1eca01f5c532cf78e2e",
+          "pdf_page": 10,
+          "title": "Vision–Language Model và VLA",
+          "locator": "Physical PDF page 10",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Adapter chỉ dùng văn bản và không nhận ảnh ở inference"
+        },
+        {
+          "id": "b",
+          "text": "Early fusion bắt buộc là ghép boxes sau hai detectors"
+        },
+        {
+          "id": "c",
+          "text": "Nối vision vào LLM đã pretrain text so với học chung modality từ đầu"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d10-x05",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d10",
+      "topic": "p2-t4-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao token ảnh/video cần thông tin vị trí không gian và thời gian?",
+      "correct_answer": "b",
+      "explanation": "Token không chỉ có nội dung; cấu trúc vị trí giúp giữ quan hệ mà ảnh/video vốn có.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d10",
+          "sha256": "763149a983add6ef60fee2fafb6f2caec98576b6afb2e1eca01f5c532cf78e2e",
+          "pdf_page": 11,
+          "title": "Vision–Language Model và VLA",
+          "locator": "Physical PDF page 11",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Để thay nội dung ảnh bằng một timestamp duy nhất"
+        },
+        {
+          "id": "b",
+          "text": "Để mô hình phân biệt vị trí h/w và quan hệ theo t trong chuỗi thị giác"
+        },
+        {
+          "id": "c",
+          "text": "Để mọi patch có cùng vị trí và bỏ cấu trúc ảnh"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d10-x06",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d10",
+      "topic": "p2-t4-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "DeepStack bổ sung đặc trưng nhiều lớp ViT vào LLM có nhất thiết tăng số token ảnh trong chuỗi không?",
+      "correct_answer": "a",
+      "explanation": "Bổ sung thông tin qua các lớp khác với kéo dài chuỗi đầu vào.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d10",
+          "sha256": "763149a983add6ef60fee2fafb6f2caec98576b6afb2e1eca01f5c532cf78e2e",
+          "pdf_page": 12,
+          "title": "Vision–Language Model và VLA",
+          "locator": "Physical PDF page 12",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Không; các đặc trưng được đưa vào lớp LLM qua mergers mà số token chuỗi giữ nguyên"
+        },
+        {
+          "id": "b",
+          "text": "Có; mỗi lớp ViT bắt buộc nối thêm một bản ảnh đầy đủ"
+        },
+        {
+          "id": "c",
+          "text": "Có; nó thay một token thành toàn bộ pixels gốc"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d10-x07",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d10",
+      "topic": "p2-t4-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Chèn timestamp cùng tokens của các frames video nhằm cung cấp loại ngữ cảnh nào?",
+      "correct_answer": "c",
+      "explanation": "Thời gian là một phần của cấu trúc video; timestamp không thay nhãn hoặc nội dung.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d10",
+          "sha256": "763149a983add6ef60fee2fafb6f2caec98576b6afb2e1eca01f5c532cf78e2e",
+          "pdf_page": 13,
+          "title": "Vision–Language Model và VLA",
+          "locator": "Physical PDF page 13",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Class label đúng của mọi vật trong frame"
+        },
+        {
+          "id": "b",
+          "text": "Bảo đảm mọi frame được quay ở cùng FPS thực tế"
+        },
+        {
+          "id": "c",
+          "text": "Mốc thời gian để diễn giải diễn biến giữa các khung"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d10-x08",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d10",
+      "topic": "p2-t4-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Model trả box theo thang 0–1000 nhưng ảnh rộng W, cao H. Trước khi dùng box pixel cần làm gì?",
+      "correct_answer": "b",
+      "explanation": "Convention box phải được chuyển chính xác; cùng tên box không đồng nghĩa cùng hệ tọa độ.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d10",
+          "sha256": "763149a983add6ef60fee2fafb6f2caec98576b6afb2e1eca01f5c532cf78e2e",
+          "pdf_page": 14,
+          "title": "Vision–Language Model và VLA",
+          "locator": "Physical PDF page 14",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chia cả x và y cho W bất kể chiều cao ảnh"
+        },
+        {
+          "id": "b",
+          "text": "Scale x theo W/1000 và y theo H/1000"
+        },
+        {
+          "id": "c",
+          "text": "Dùng nguyên số như pixel vì mọi VLM cùng convention"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d10-x09",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d10",
+      "topic": "p2-t4-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong MoE, vì sao cần phân biệt total parameters và active parameters/token?",
+      "correct_answer": "a",
+      "explanation": "Routing kích hoạt một phần chuyên gia nhưng tổng weights vẫn ảnh hưởng yêu cầu lưu trữ/bộ nhớ.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d10",
+          "sha256": "763149a983add6ef60fee2fafb6f2caec98576b6afb2e1eca01f5c532cf78e2e",
+          "pdf_page": 16,
+          "title": "Vision–Language Model và VLA",
+          "locator": "Physical PDF page 16",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Bộ nhớ weights và lượng tính toán mỗi token phản ánh hai phạm vi khác nhau"
+        },
+        {
+          "id": "b",
+          "text": "Active parameters luôn bằng total nên không cần phân biệt"
+        },
+        {
+          "id": "c",
+          "text": "Total parameters chỉ là số tokens trong context"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d10-x10",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d10",
+      "topic": "p2-t4-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "RL với phần thưởng kiểm chứng được cần cơ sở nào để tạo reward?",
+      "correct_answer": "c",
+      "explanation": "Reward lấy từ kiểm tra có thể xác minh, thay vì đồng nhất cách trình bày với tính đúng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d10",
+          "sha256": "763149a983add6ef60fee2fafb6f2caec98576b6afb2e1eca01f5c532cf78e2e",
+          "pdf_page": 21,
+          "title": "Vision–Language Model và VLA",
+          "locator": "Physical PDF page 21",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ lời tự nhận “tôi đúng” của policy"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ độ dài reasoning bất kể kết quả"
+        },
+        {
+          "id": "c",
+          "text": "Một verifier có thể kiểm đáp án hoặc điều kiện thành công"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d10-x11",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d10",
+      "topic": "p2-t4-d10",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những hướng can thiệp nào có thể giảm hallucination trong quá trình học VLM? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "b",
+        "c",
+        "d"
+      ],
+      "explanation": "Chất lượng dữ liệu và tín hiệu học có thể tác động nhiều điểm của pipeline, không chỉ inference prompt.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d10",
+          "sha256": "763149a983add6ef60fee2fafb6f2caec98576b6afb2e1eca01f5c532cf78e2e",
+          "pdf_page": 22,
+          "title": "Vision–Language Model và VLA",
+          "locator": "Physical PDF page 22",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Coi output dài hơn là bằng chứng nhìn ảnh chính xác"
+        },
+        {
+          "id": "b",
+          "text": "Loại chi tiết không thật khi recaption"
+        },
+        {
+          "id": "c",
+          "text": "Lọc dữ liệu chất lượng kém trước SFT"
+        },
+        {
+          "id": "d",
+          "text": "Dùng reward cho nhiệm vụ thị giác kiểm chứng được"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d10-x12",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d10",
+      "topic": "p2-t4-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một benchmark VLM công bố tốt nên được dùng thế nào trước auto-label dữ liệu riêng?",
+      "correct_answer": "a",
+      "explanation": "Độ phù hợp thực tế còn phụ thuộc dữ liệu, giao diện output và cost của pipeline.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d10",
+          "sha256": "763149a983add6ef60fee2fafb6f2caec98576b6afb2e1eca01f5c532cf78e2e",
+          "pdf_page": 26,
+          "title": "Vision–Language Model và VLA",
+          "locator": "Physical PDF page 26",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Làm đầu mối lựa chọn rồi thử trên domain, format và chi phí thực tế"
+        },
+        {
+          "id": "b",
+          "text": "Thay hoàn toàn validation trên dữ liệu cần gán"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ chọn model lớn nhất bất kể box parser và điều kiện sử dụng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d10-x13",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d10",
+      "topic": "p2-t4-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "VLM được dùng để tạo seed labels, tìm cảnh, duyệt nhãn và sinh reasoning traces. Nên đánh giá thế nào?",
+      "correct_answer": "c",
+      "explanation": "Các công việc có mục tiêu và loại lỗi khác nhau nên không thể dùng một phép đo thay mọi kiểm chứng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d10",
+          "sha256": "763149a983add6ef60fee2fafb6f2caec98576b6afb2e1eca01f5c532cf78e2e",
+          "pdf_page": 28,
+          "title": "Vision–Language Model và VLA",
+          "locator": "Physical PDF page 28",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Dùng một điểm captioning để xác nhận tất cả vai trò"
+        },
+        {
+          "id": "b",
+          "text": "Coi việc có JSON hợp lệ chứng minh tất cả nhãn đúng"
+        },
+        {
+          "id": "c",
+          "text": "Đo riêng chất lượng cho từng vai trò"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d10-x14",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d10",
+      "topic": "p2-t4-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Schema cho phép một trường giá trị là null giúp xử lý tình huống nào?",
+      "correct_answer": "b",
+      "explanation": "Cho phép không biết giảm áp lực điền dữ kiện giả; app vẫn cần kiểm giá trị và ngữ nghĩa.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d10",
+          "sha256": "763149a983add6ef60fee2fafb6f2caec98576b6afb2e1eca01f5c532cf78e2e",
+          "pdf_page": 30,
+          "title": "Vision–Language Model và VLA",
+          "locator": "Physical PDF page 30",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Bỏ qua mọi value validation vì schema đã hợp lệ"
+        },
+        {
+          "id": "b",
+          "text": "Không đủ thông tin để trả giá trị mà không cần bịa một số hợp lệ"
+        },
+        {
+          "id": "c",
+          "text": "Tự xác nhận mọi số khác null đều đúng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d10-x15",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d10",
+      "topic": "p2-t4-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Caption VLM mâu thuẫn inventory detector nên được xử lý theo hướng nào?",
+      "correct_answer": "a",
+      "explanation": "Hai nguồn đều có thể sai; bất đồng là tín hiệu để định tuyến kiểm chứng, không phải kết luận tự động.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d10",
+          "sha256": "763149a983add6ef60fee2fafb6f2caec98576b6afb2e1eca01f5c532cf78e2e",
+          "pdf_page": 34,
+          "title": "Vision–Language Model và VLA",
+          "locator": "Physical PDF page 34",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Đưa vào kiểm tra/bất đồng thay vì tự chấp nhận caption"
+        },
+        {
+          "id": "b",
+          "text": "Coi VLM luôn đúng vì sinh được lời giải thích"
+        },
+        {
+          "id": "c",
+          "text": "Coi detector luôn đúng rồi xóa mọi case khác biệt không audit"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d10-x16",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d10",
+      "topic": "p2-t4-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Flow/diffusion action head khác giải mã action tokens rời rạc ở điểm nào?",
+      "correct_answer": "c",
+      "explanation": "Hai họ biểu diễn và sinh hành động theo cơ chế khác nhau; flow head hướng tới chuỗi liên tục mượt.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d10",
+          "sha256": "763149a983add6ef60fee2fafb6f2caec98576b6afb2e1eca01f5c532cf78e2e",
+          "pdf_page": 40,
+          "title": "Vision–Language Model và VLA",
+          "locator": "Physical PDF page 40",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ chọn một nhãn hữu hạn không thể tạo quỹ đạo"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ tạo caption về hành động thay vì điều khiển"
+        },
+        {
+          "id": "c",
+          "text": "Tinh chỉnh/khử nhiễu cả chuỗi quỹ đạo thay vì sinh từng token tuần tự"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d11-x01",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d11",
+      "topic": "p2-t4-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Synthetic data nên được xem như bổ sung dữ liệu thật theo nguyên tắc nào?",
+      "correct_answer": "c",
+      "explanation": "Generator có phân bố riêng, nên hiệu quả ngoài đời phải được kiểm trên dữ liệu không phụ thuộc nó.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d11",
+          "sha256": "9f2b8b0d84e67d71598eaa2f2a7d0d186567c3ee10171dcf5213e4d62a492b46",
+          "pdf_page": 7,
+          "title": "Synthetic, Simulated & Trajectory Data",
+          "locator": "Physical PDF page 7",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Thay toàn bộ test thật bằng dữ liệu cùng generator"
+        },
+        {
+          "id": "b",
+          "text": "Cứ giống ảnh thật là có thể bỏ mọi đánh giá domain thật"
+        },
+        {
+          "id": "c",
+          "text": "Lấp vùng dữ liệu khó có, còn phán quyết cuối dùng test thật độc lập"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d11-x02",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d11",
+      "topic": "p2-t4-d11",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những nhãn nào simulator có thể cung cấp trực tiếp từ trạng thái cảnh? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "c",
+        "d",
+        "a"
+      ],
+      "explanation": "Thông tin hình học/trạng thái đã biết giúp tạo labels khó gán thủ công; ontology vẫn cần xác định.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d11",
+          "sha256": "9f2b8b0d84e67d71598eaa2f2a7d0d186567c3ee10171dcf5213e4d62a492b46",
+          "pdf_page": 10,
+          "title": "Synthetic, Simulated & Trajectory Data",
+          "locator": "Physical PDF page 10",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Vận tốc và masks từ trạng thái mô phỏng"
+        },
+        {
+          "id": "b",
+          "text": "Mọi quy ước class nghiệp vụ tự được xác định không cần đặc tả"
+        },
+        {
+          "id": "c",
+          "text": "Depth theo pixel"
+        },
+        {
+          "id": "d",
+          "text": "Optical/scene flow"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d11-x03",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d11",
+      "topic": "p2-t4-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Mở rộng ngẫu nhiên hóa nhiều tham số với cùng ngân sách mẫu có rủi ro gì?",
+      "correct_answer": "a",
+      "explanation": "Bao phủ biên không đồng nghĩa đủ mật độ; chiều cao hơn cần thiết kế sampling có chủ đích.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d11",
+          "sha256": "9f2b8b0d84e67d71598eaa2f2a7d0d186567c3ee10171dcf5213e4d62a492b46",
+          "pdf_page": 17,
+          "title": "Synthetic, Simulated & Trajectory Data",
+          "locator": "Physical PDF page 17",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Không gian phình lớn làm mẫu hữu ích gần điều kiện thật trở nên thưa"
+        },
+        {
+          "id": "b",
+          "text": "Mỗi chiều mới tự tăng mật độ mẫu ở mọi vùng"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ cần điều kiện thật nằm trong biên là đã đủ coverage dày"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d11-x04",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d11",
+      "topic": "p2-t4-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Structured domain randomization khác đặt object hoàn toàn ngẫu nhiên ở điểm nào?",
+      "correct_answer": "c",
+      "explanation": "Đa dạng cần đồng thời hợp lý để mô hình học từ các tình huống có nghĩa.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d11",
+          "sha256": "9f2b8b0d84e67d71598eaa2f2a7d0d186567c3ee10171dcf5213e4d62a492b46",
+          "pdf_page": 18,
+          "title": "Synthetic, Simulated & Trajectory Data",
+          "locator": "Physical PDF page 18",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Buộc mọi cảnh giống hệt log nên không còn biến thể"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ đổi texture mà bỏ toàn bộ vị trí objects"
+        },
+        {
+          "id": "c",
+          "text": "Giữ ràng buộc ngữ cảnh như xe trên đường và khoảng cách hợp lý"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d11-x05",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d11",
+      "topic": "p2-t4-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Dịch phong cách ảnh sau rendering chủ yếu nhắm vào khoảng cách nào?",
+      "correct_answer": "b",
+      "explanation": "Làm ảnh trông thật hơn không đồng nghĩa sửa content, sensor hay behavior gaps.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d11",
+          "sha256": "9f2b8b0d84e67d71598eaa2f2a7d0d186567c3ee10171dcf5213e4d62a492b46",
+          "pdf_page": 19,
+          "title": "Synthetic, Simulated & Trajectory Data",
+          "locator": "Physical PDF page 19",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tự cung cấp phản ứng của xe khác trong closed loop"
+        },
+        {
+          "id": "b",
+          "text": "Appearance như texture/ánh sáng"
+        },
+        {
+          "id": "c",
+          "text": "Tự sửa mọi tương tác hành vi giữa tác nhân"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d11-x06",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d11",
+      "topic": "p2-t4-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Khi mô phỏng LiDAR mất tia, vì sao chỉ khớp tổng số điểm rơi có thể chưa đủ?",
+      "correct_answer": "a",
+      "explanation": "Sensor gap nằm cả ở cách dữ liệu mất, không chỉ số lượng điểm còn lại.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d11",
+          "sha256": "9f2b8b0d84e67d71598eaa2f2a7d0d186567c3ee10171dcf5213e4d62a492b46",
+          "pdf_page": 20,
+          "title": "Synthetic, Simulated & Trajectory Data",
+          "locator": "Physical PDF page 20",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Vị trí và cấu trúc mất tia ảnh hưởng thông tin vật thể"
+        },
+        {
+          "id": "b",
+          "text": "Mọi pattern mất cùng số điểm đều tương đương"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ ảnh camera mới bị ảnh hưởng bởi cấu trúc missing data"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d11-x07",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d11",
+      "topic": "p2-t4-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Real2Sim chỉ replay tracks cố định có giới hạn nào khi ego đổi đường?",
+      "correct_answer": "c",
+      "explanation": "Tái dựng cảnh và sinh góc nhìn khác không tự tạo mô hình hành vi phản ứng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d11",
+          "sha256": "9f2b8b0d84e67d71598eaa2f2a7d0d186567c3ee10171dcf5213e4d62a492b46",
+          "pdf_page": 25,
+          "title": "Synthetic, Simulated & Trajectory Data",
+          "locator": "Physical PDF page 25",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Mọi actor tự có policy tương tác do có track log"
+        },
+        {
+          "id": "b",
+          "text": "Ảnh mới không còn phụ thuộc geometry của cảnh"
+        },
+        {
+          "id": "c",
+          "text": "Các tác nhân khác không tự phản ứng với hành động mới của ego"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d11-x08",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d11",
+      "topic": "p2-t4-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "NeRF và Gaussian Splatting lưu/hiển thị cảnh theo hai cơ chế nào?",
+      "correct_answer": "b",
+      "explanation": "Cách biểu diễn implicit hay explicit dẫn tới đánh đổi rendering và lưu thông tin.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d11",
+          "sha256": "9f2b8b0d84e67d71598eaa2f2a7d0d186567c3ee10171dcf5213e4d62a492b46",
+          "pdf_page": 26,
+          "title": "Synthetic, Simulated & Trajectory Data",
+          "locator": "Physical PDF page 26",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "NeRF chỉ là box annotations còn splatting chỉ là class labels"
+        },
+        {
+          "id": "b",
+          "text": "NeRF truy vấn trường qua mạng dọc tia; splatting raster hóa Gaussian tường minh"
+        },
+        {
+          "id": "c",
+          "text": "Cả hai chỉ sao chép ảnh gần nhất không có biểu diễn 3D"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d11-x09",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d11",
+      "topic": "p2-t4-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Camera mới lệch xa quỹ đạo đã ghi có thể làm novel-view rendering kém vì sao?",
+      "correct_answer": "a",
+      "explanation": "Disocclusion và thiếu quan sát giới hạn tính tin cậy của tái dựng ở các góc mới.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d11",
+          "sha256": "9f2b8b0d84e67d71598eaa2f2a7d0d186567c3ee10171dcf5213e4d62a492b46",
+          "pdf_page": 28,
+          "title": "Synthetic, Simulated & Trajectory Data",
+          "locator": "Physical PDF page 28",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Một số bề mặt/góc nhìn chưa từng được quan sát đầy đủ"
+        },
+        {
+          "id": "b",
+          "text": "Tăng khoảng cách tới log luôn tạo thêm dữ liệu thực cho model"
+        },
+        {
+          "id": "c",
+          "text": "Mọi góc nhìn đều đã được xác định duy nhất từ một ảnh"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d11-x10",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d11",
+      "topic": "p2-t4-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Sinh ảnh có điều kiện từ box/map/calibration đặt yêu cầu kiểm tra quan trọng nào?",
+      "correct_answer": "c",
+      "explanation": "Có nhãn trước không bảo đảm generator đặt đúng vật, vị trí và cấu trúc tương ứng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d11",
+          "sha256": "9f2b8b0d84e67d71598eaa2f2a7d0d186567c3ee10171dcf5213e4d62a492b46",
+          "pdf_page": 35,
+          "title": "Synthetic, Simulated & Trajectory Data",
+          "locator": "Physical PDF page 35",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ labels tồn tại trước ảnh là đủ chứng minh đúng"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ ảnh có độ phân giải cao là đủ xác nhận hình học"
+        },
+        {
+          "id": "c",
+          "text": "Ảnh sinh có thực sự tuân thủ các labels điều kiện không"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d11-x11",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d11",
+      "topic": "p2-t4-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao FID đẹp chưa chứng minh synthetic labels phù hợp để train detector?",
+      "correct_answer": "b",
+      "explanation": "Cần kiểm nhãn và downstream performance trên real test, ngoài chất lượng hình ảnh.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d11",
+          "sha256": "9f2b8b0d84e67d71598eaa2f2a7d0d186567c3ee10171dcf5213e4d62a492b46",
+          "pdf_page": 39,
+          "title": "Synthetic, Simulated & Trajectory Data",
+          "locator": "Physical PDF page 39",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Ảnh giống thật luôn có đúng tất cả nhãn điều kiện"
+        },
+        {
+          "id": "b",
+          "text": "Metric phân bố hình ảnh không trực tiếp xác nhận box/label alignment"
+        },
+        {
+          "id": "c",
+          "text": "FID đo chính xác IoU của mọi box trong ảnh"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d11-x12",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d11",
+      "topic": "p2-t4-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Đánh giá dữ liệu sinh nên báo theo target slices và cả slices cần giữ để làm gì?",
+      "correct_answer": "a",
+      "explanation": "Bổ sung cho tình huống hiếm có thể ảnh hưởng nơi khác; đánh giá cần nhìn cả lợi ích và tổn hại.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d11",
+          "sha256": "9f2b8b0d84e67d71598eaa2f2a7d0d186567c3ee10171dcf5213e4d62a492b46",
+          "pdf_page": 40,
+          "title": "Synthetic, Simulated & Trajectory Data",
+          "locator": "Physical PDF page 40",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Nhận diện lợi ích đúng vùng cùng regression ở vùng khác"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ chọn slice tăng mạnh nhất để kết luận tổng quát"
+        },
+        {
+          "id": "c",
+          "text": "Trộn mọi điều kiện thành average để che khác biệt"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d11-x13",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d11",
+      "topic": "p2-t4-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một ID switch trong dữ liệu quỹ đạo có thể dạy forecasting điều sai nào?",
+      "correct_answer": "c",
+      "explanation": "Lỗi association trở thành cấu trúc sai trong mẫu trajectory, cần nối và kiểm offline.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d11",
+          "sha256": "9f2b8b0d84e67d71598eaa2f2a7d0d186567c3ee10171dcf5213e4d62a492b46",
+          "pdf_page": 45,
+          "title": "Synthetic, Simulated & Trajectory Data",
+          "locator": "Physical PDF page 45",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ thay tên file mà không ảnh hưởng mẫu học"
+        },
+        {
+          "id": "b",
+          "text": "Tự tạo thêm ground-truth tương lai chính xác"
+        },
+        {
+          "id": "c",
+          "text": "Vật biến mất/xuất hiện hoặc quỹ đạo bị cắt thay vì liên tục"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d11-x14",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d11",
+      "topic": "p2-t4-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Tính gia tốc bằng sai phân hai lần trên box vị trí nhiễu có rủi ro gì?",
+      "correct_answer": "b",
+      "explanation": "Đạo hàm số nhạy với noise và khoảng thời gian; cần smoothing và kiểm tính khả thi.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d11",
+          "sha256": "9f2b8b0d84e67d71598eaa2f2a7d0d186567c3ee10171dcf5213e4d62a492b46",
+          "pdf_page": 46,
+          "title": "Synthetic, Simulated & Trajectory Data",
+          "locator": "Physical PDF page 46",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Không phụ thuộc sampling interval"
+        },
+        {
+          "id": "b",
+          "text": "Khuếch đại nhiễu thành gia tốc giả lớn"
+        },
+        {
+          "id": "c",
+          "text": "Tự loại hết jitter vì đạo hàm làm mượt"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d11-x15",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d11",
+      "topic": "p2-t4-d11",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những checks nào hỗ trợ phát hiện quỹ đạo không khả thi? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "b",
+        "c",
+        "d"
+      ],
+      "explanation": "Nhiều phép kiểm bắt các lỗi khác nhau: jitter, nối nhầm ID, hướng lật, calibration hay pose sai.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d11",
+          "sha256": "9f2b8b0d84e67d71598eaa2f2a7d0d186567c3ee10171dcf5213e4d62a492b46",
+          "pdf_page": 49,
+          "title": "Synthetic, Simulated & Trajectory Data",
+          "locator": "Physical PDF page 49",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ số frames đủ dài bất kể chuyển động"
+        },
+        {
+          "id": "b",
+          "text": "Gia tốc/jerk"
+        },
+        {
+          "id": "c",
+          "text": "Độ cong và gia tốc ngang"
+        },
+        {
+          "id": "d",
+          "text": "Tính liên tục và vị trí trong vùng chạy được"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d11-x16",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d11",
+      "topic": "p2-t4-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Automatic Domain Randomization điều chỉnh vùng tham số theo nguyên tắc nào?",
+      "correct_answer": "c",
+      "explanation": "ADR điều chỉnh độ khó theo khả năng thay vì ngẫu nhiên hóa vô hạn hoặc không đổi.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d11",
+          "sha256": "9f2b8b0d84e67d71598eaa2f2a7d0d186567c3ee10171dcf5213e4d62a492b46",
+          "pdf_page": 66,
+          "title": "Synthetic, Simulated & Trajectory Data",
+          "locator": "Physical PDF page 66",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Luôn dùng range rộng nhất ngay từ đầu"
+        },
+        {
+          "id": "b",
+          "text": "Giữ mọi tham số cố định dù policy đã học vững"
+        },
+        {
+          "id": "c",
+          "text": "Nới khi policy làm tốt, thu khi khó vượt khả năng hiện tại"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d12-x01",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d12",
+      "topic": "p2-t4-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Log nhiều sensor cần giữ chung điều gì để replay có ý nghĩa?",
+      "correct_answer": "c",
+      "explanation": "Temporal alignment là nền để dựng lại chuỗi dữ liệu đúng lúc.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 11,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 11",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ thứ tự files theo tên để coi là đồng thời"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ một FPS cố định thay cho mọi sensor clocks"
+        },
+        {
+          "id": "c",
+          "text": "Trục thời gian và timestamps dù mỗi sensor có nhịp riêng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d12-x02",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d12",
+      "topic": "p2-t4-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Replay raw sensor và replay output perception có đánh đổi nào?",
+      "correct_answer": "b",
+      "explanation": "Điểm chèn dữ liệu quyết định khối nào được thực sự thử và khả năng cô lập lỗi.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 12,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 12",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Mọi mức replay đi qua cùng khối phần mềm nên không khác cost"
+        },
+        {
+          "id": "b",
+          "text": "Raw sát pipeline đầy đủ hơn; output perception cô lập phần sau và thường nhẹ hơn"
+        },
+        {
+          "id": "c",
+          "text": "Output perception luôn kiểm tra được detector mới như raw sensor"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d12-x03",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d12",
+      "topic": "p2-t4-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Khi đổi duy nhất perception block, vì sao cần so theo slices như đêm/mưa/occlusion?",
+      "correct_answer": "a",
+      "explanation": "Giữ cùng log và phân tích lát cắt giúp quy khác biệt về thay đổi và vùng bị ảnh hưởng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 16,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 16",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Average có thể che một điều kiện xấu đi dù tổng tăng"
+        },
+        {
+          "id": "b",
+          "text": "Mọi slice phải tăng cùng mức nếu average tăng"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ cần kiểm điều kiện dễ để ước lượng mọi failure mode"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d12-x04",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d12",
+      "topic": "p2-t4-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Replay kho log cũ sau mỗi thay đổi code phục vụ mục tiêu gì?",
+      "correct_answer": "c",
+      "explanation": "Regression replay kiểm tính ổn định trên lịch sử; phạm vi bằng chứng vẫn bị giới hạn bởi các logs đó.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 18,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 18",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Thay toàn bộ đánh giá hành động mới trong thế giới phản ứng"
+        },
+        {
+          "id": "b",
+          "text": "Chứng minh hệ thống chưa từng gặp failure ngoài log"
+        },
+        {
+          "id": "c",
+          "text": "Phát hiện regression so với kết quả chuẩn đã biết"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d12-x05",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d12",
+      "topic": "p2-t4-d12",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những yếu tố nào có thể làm replay khác nhau một lượng số nhỏ? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "d",
+        "a",
+        "b"
+      ],
+      "explanation": "Thực thi số và song song có thể tạo nondeterminism cần kiểm soát/đặt dung sai phù hợp.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 19,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 19",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Đa luồng/thứ tự messages"
+        },
+        {
+          "id": "b",
+          "text": "GPU kernels"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ việc tên experiment khác trong báo cáo"
+        },
+        {
+          "id": "d",
+          "text": "Thứ tự cộng số thực"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d12-x06",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d12",
+      "topic": "p2-t4-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao replay “nhanh nhất có thể” có thể bỏ sót deadline misses?",
+      "correct_answer": "a",
+      "explanation": "Kiểm timing cần chạy theo timestamps/rate thực để thấy backlog và trễ hạn.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 22,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 22",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Nó có thể chờ xử lý xong mới cấp frame sau, không tái tạo hạn thời gian thật"
+        },
+        {
+          "id": "b",
+          "text": "Tăng tốc luôn làm mọi lỗi latency nghiêm trọng hơn nên không thể bỏ sót"
+        },
+        {
+          "id": "c",
+          "text": "Deadline chỉ tồn tại khi dùng dữ liệu tổng hợp"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d12-x07",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d12",
+      "topic": "p2-t4-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Log replay phù hợp nhất để kiểm gì trước khi chạy thực?",
+      "correct_answer": "c",
+      "explanation": "Thế giới ghi sẵn không thay đổi theo hành động mới, nên phạm vi replay cần được hiểu rõ.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 24,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 24",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Mọi phản ứng của thế giới với hành động ego chưa từng thực hiện"
+        },
+        {
+          "id": "b",
+          "text": "Bảo đảm an toàn với mọi kịch bản chưa quan sát"
+        },
+        {
+          "id": "c",
+          "text": "Perception trên dữ liệu đã xảy ra và lỗi phần mềm trong pipeline"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d12-x08",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d12",
+      "topic": "p2-t4-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Model giữ vận tốc hiện tại có thể có open-loop score cao khi nào?",
+      "correct_answer": "b",
+      "explanation": "Dữ liệu nhiều cảnh dễ có thể thưởng baseline đơn giản; cần kiểm slices và hành vi khó.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 29,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 29",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Open-loop metric tự cân bằng mọi maneuver hiếm"
+        },
+        {
+          "id": "b",
+          "text": "Dataset chủ yếu chứa cảnh đi thẳng ít thay đổi"
+        },
+        {
+          "id": "c",
+          "text": "Nó đã chứng minh xử lý mọi tương tác khó"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d12-x09",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d12",
+      "topic": "p2-t4-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "mAP tăng cần được nối với closed-loop evaluation vì sao?",
+      "correct_answer": "a",
+      "explanation": "Metric thành phần và mục tiêu hệ thống có thể không biến đổi cùng chiều.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 31,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 31",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Cải thiện perception metric chưa chắc cải thiện hành vi toàn hệ thống"
+        },
+        {
+          "id": "b",
+          "text": "mAP là tỷ lệ va chạm nên đã đủ cho release"
+        },
+        {
+          "id": "c",
+          "text": "Mọi lỗi perception có tác động planner giống nhau"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d12-x10",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d12",
+      "topic": "p2-t4-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "So mô hình học với bộ luật đơn giản trong closed loop giúp quyết định điều gì?",
+      "correct_answer": "c",
+      "explanation": "Độ phức tạp không tự là giá trị; baseline xác định mức tối thiểu phải vượt ở task thực.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 32,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 32",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ số tham số model có lớn hơn rule code không"
+        },
+        {
+          "id": "b",
+          "text": "Có thể bỏ mọi test khác nếu model phức tạp hơn"
+        },
+        {
+          "id": "c",
+          "text": "Mô hình mới có đem lợi ích vượt baseline đủ để thay thế không"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d12-x11",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d12",
+      "topic": "p2-t4-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Cùng phần mềm/bản đồ nhưng kết quả closed-loop biến động do noise. Nên làm gì?",
+      "correct_answer": "b",
+      "explanation": "Một lần chạy không mô tả đủ độ ổn định của hệ thống stochastic.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 34,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 34",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Kết luận mọi thất bại là do model ngay từ một seed"
+        },
+        {
+          "id": "b",
+          "text": "Chạy lặp nhiều lần và báo biến động thay vì chọn một lần đẹp"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ giữ lần thành công để loại nhiễu khỏi báo cáo"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d12-x12",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d12",
+      "topic": "p2-t4-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Điểm hoàn thành route cao vẫn có thể bị giảm mạnh bởi điều gì?",
+      "correct_answer": "a",
+      "explanation": "Completion cần đi cùng tuân thủ; đi hết nhưng vi phạm không đồng nghĩa hành vi tốt.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 35,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 35",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Các vi phạm và mức phạt trong scoring"
+        },
+        {
+          "id": "b",
+          "text": "Việc route được đo bằng khoảng cách thay vì tên map"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ số lượng sensors dù không có vi phạm"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d12-x13",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d12",
+      "topic": "p2-t4-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Kịch bản logic và kịch bản cụ thể khác nhau thế nào?",
+      "correct_answer": "c",
+      "explanation": "Từ mô tả chức năng đi tới ranges rồi instances giúp sinh cả họ test cases.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 39,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 39",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Logic chỉ là một log file còn cụ thể chỉ là mô tả bằng lời"
+        },
+        {
+          "id": "b",
+          "text": "Cả hai đều bắt buộc một giá trị cố định cho mọi điều kiện"
+        },
+        {
+          "id": "c",
+          "text": "Logic quy định khoảng tham số; cụ thể chọn giá trị để chạy ngay"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d12-x14",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d12",
+      "topic": "p2-t4-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Từ một ca cắt làn gây lỗi, mở rộng thành test family nên làm gì?",
+      "correct_answer": "b",
+      "explanation": "Ranh giới failure cho biết độ bền của giải pháp, hơn việc ghi nhớ đúng một instance.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 41,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 41",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ test một điểm trung bình dễ pass"
+        },
+        {
+          "id": "b",
+          "text": "Tham số hóa và quét quanh khoảng cách/tốc độ để tìm boundary"
+        },
+        {
+          "id": "c",
+          "text": "Sao chép cùng ca nhiều lần chỉ đổi tên"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d12-x15",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d12",
+      "topic": "p2-t4-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao hai bộ cùng 24 scenarios có thể có coverage khác nhau?",
+      "correct_answer": "a",
+      "explanation": "Cần xem vùng tham số/điều kiện đã thử, không chỉ đếm files.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 51,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 51",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Một bộ có thể tập trung cùng góc ODD, bộ kia trải các điều kiện quan trọng"
+        },
+        {
+          "id": "b",
+          "text": "Cùng số scenarios luôn bao phủ cùng không gian"
+        },
+        {
+          "id": "c",
+          "text": "Coverage chỉ phụ thuộc tổng số frames, không cần xét vùng tham số"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d12-x16",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d12",
+      "topic": "p2-t4-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "DAgger giúp mô hình điều khiển học phục hồi khỏi sai số của chính nó bằng dữ liệu nào?",
+      "correct_answer": "b",
+      "explanation": "Thu thập các trạng thái do policy hiện tại gặp và expert labels mở rộng dữ liệu sang nơi cần phục hồi.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 72,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 72",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ lặp thêm dữ liệu expert cũ mà không ghi trạng thái model gây ra"
+        },
+        {
+          "id": "b",
+          "text": "Trạng thái model tự đi tới được expert gán hành động rồi đưa vào huấn luyện lại"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ bỏ các lần model lệch khỏi quỹ đạo để dataset nhìn sạch hơn"
+        }
+      ],
+      "shuffle_options": true
+    }
+  ]
+}

@@ -1,0 +1,772 @@
+{
+  "batch_file": "data/questions/drafts/expand-b-10.json",
+  "reviewer_id": "root-independent-review",
+  "reviewed_at": "2026-10-22T15:18:25.219912+00:00",
+  "results": [
+    {
+      "id": "p2-t3-d11-x01",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d11",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "Each MCP client maintains its own server connection; revised alternatives compare connection ownership.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d11-x02",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d11",
+          "pdf_page": 11
+        }
+      ],
+      "notes": [
+        "Tool name and description communicate usage intent beyond valid argument schemas; revised alternatives stay within tool selection.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d11-x03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d11",
+          "pdf_page": 13
+        }
+      ],
+      "notes": [
+        "Structured error data supports retry/fallback decisions.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d11-x04",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d11",
+          "pdf_page": 14
+        }
+      ],
+      "notes": [
+        "MCP Inspector tests server schema and errors separately from an LLM host.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d11-x05",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d11",
+          "pdf_page": 17
+        }
+      ],
+      "notes": [
+        "Breaking output contracts require major semantic version changes.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d11-x06",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d11",
+          "pdf_page": 17
+        }
+      ],
+      "notes": [
+        "Deprecation includes notification and a migration period.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d11-x07",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d11",
+          "pdf_page": 19
+        }
+      ],
+      "notes": [
+        "Database query result feeds a subsequent GitHub issue action across servers.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d11-x08",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d11",
+          "pdf_page": 22
+        }
+      ],
+      "notes": [
+        "Dynamic schema context exposes actual table and column structure.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d11-x09",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d11",
+          "pdf_page": 25
+        }
+      ],
+      "notes": [
+        "Capability negotiation discovers supported features before use.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d11-x10",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d11",
+          "pdf_page": 28
+        }
+      ],
+      "notes": [
+        "Sentry supplies runtime error/release evidence; GitHub supplies code context.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d11-x11",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d11",
+          "pdf_page": 28
+        }
+      ],
+      "notes": [
+        "Context7/versioned docs supplies API reference matching a library release.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d11-x12",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d11",
+          "pdf_page": 29
+        }
+      ],
+      "notes": [
+        "Shared remote HTTP endpoint fits central auth; revised alternatives compare process-local transport.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d11-x13",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d11",
+          "pdf_page": 31
+        }
+      ],
+      "notes": [
+        "Revision2 explicitly scopes .mcp.json project sharing to Claude Code.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d11-x14",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d11",
+          "pdf_page": 31
+        }
+      ],
+      "notes": [
+        "Summary plus ID/URI preserves access to detail without dumping all payload.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d11-x15",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d11",
+          "pdf_page": 32
+        }
+      ],
+      "notes": [
+        "Fetch reads full identified source after search snippets; revised alternatives concern search/ranking.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d11-x16",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d11",
+          "pdf_page": 34
+        }
+      ],
+      "notes": [
+        "Read-only access can still expose sensitive data.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d11-x17",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d11",
+          "pdf_page": 34
+        }
+      ],
+      "notes": [
+        "Separate sandbox/production credentials limit accidental production access.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d12-x01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d12",
+          "pdf_page": 7
+        }
+      ],
+      "notes": [
+        "Raw model confidence is not calibrated business correctness.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d12-x02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d12",
+          "pdf_page": 11
+        }
+      ],
+      "notes": [
+        "Drafting precedes an approval gate without the external side effect of sending.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d12-x03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d12",
+          "pdf_page": 17
+        }
+      ],
+      "notes": [
+        "HOTL allows monitored execution rather than pre-action blocking.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d12-x04",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d12",
+          "pdf_page": 20
+        }
+      ],
+      "notes": [
+        "Clarification resolves missing input before an expensive wrong-dataset query.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d12-x05",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d12",
+          "pdf_page": 21
+        }
+      ],
+      "notes": [
+        "Escalation hands an out-of-domain case to a qualified human.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d12-x06",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d12",
+          "pdf_page": 24
+        }
+      ],
+      "notes": [
+        "Application hard rules override high self-reported confidence.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d12-x07",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d12",
+          "pdf_page": 28
+        }
+      ],
+      "notes": [
+        "Token logprobs do not directly establish business correctness.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d12-x08",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d12",
+          "pdf_page": 31
+        }
+      ],
+      "notes": [
+        "Disagreement across sampled paths signals uncertainty.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d12-x09",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d12",
+          "pdf_page": 35
+        }
+      ],
+      "notes": [
+        "Threshold calibration depends on history and risk appetite.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d12-x10",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d12",
+          "pdf_page": 36
+        }
+      ],
+      "notes": [
+        "Shadow mode records proposals without real-world action for comparison with verified outcomes.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d12-x11",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d12",
+          "pdf_page": 46
+        }
+      ],
+      "notes": [
+        "Revision2 replaces duplicate memory-persistence item: get_state snapshot.next identifies the pending node (p46).",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d12-x12",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d12",
+          "pdf_page": 48
+        }
+      ],
+      "notes": [
+        "Revision2 replaces duplicate thread isolation item: update_state approval then invoke(None,same config) resumes the existing workflow (p48).",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d12-x13",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d12",
+          "pdf_page": 41
+        }
+      ],
+      "notes": [
+        "Interrupt after safe drafting and before publication allows review of generated output.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d12-x14",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d12",
+          "pdf_page": 50
+        }
+      ],
+      "notes": [
+        "Expired TTL requires re-evaluating stale proposals rather than changing their timestamp.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d12-x15",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d12",
+          "pdf_page": 56
+        }
+      ],
+      "notes": [
+        "Diff exposes before/after field values and effects for the approver.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d12-x16",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d12",
+          "pdf_page": 62
+        }
+      ],
+      "notes": [
+        "Outliers must remain visible/separate in batch approvals.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d12-x17",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d12",
+          "pdf_page": 69
+        }
+      ],
+      "notes": [
+        "High approval rates can reflect quality or inattentive rubber-stamping; examine other metrics.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d13-x01",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d13",
+          "pdf_page": 6
+        }
+      ],
+      "notes": [
+        "Integration seams include format, error propagation and timeout mismatches; revised alternatives examine component-versus-interface testing.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d13-x02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d13",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "Happy-path testing does not cover edge user scenarios.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d13-x03",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d13",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "Revised handoff answer checks output/state arriving at the next agent input contract.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d13-x04",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d13",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "Concurrent stress differs from sequential request tests.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d13-x05",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d13",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "Induced primary failure tests the actual fallback path; pinging backup alone does not.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d13-x06",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d13",
+          "pdf_page": 10
+        }
+      ],
+      "notes": [
+        "Traces for each run permit investigation beyond selected demos.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d13-x07",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d13",
+          "pdf_page": 10
+        }
+      ],
+      "notes": [
+        "Alert rules turn metrics into operational signals.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d13-x08",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d13",
+          "pdf_page": 12
+        }
+      ],
+      "notes": [
+        "Controlled with/without-cache workload comparison measures cost savings.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d13-x09",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d13",
+          "pdf_page": 12
+        }
+      ],
+      "notes": [
+        "Per-component latency traces locate an end-to-end bottleneck.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d13-x10",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d13",
+          "pdf_page": 13
+        }
+      ],
+      "notes": [
+        "Actual measurements provide benchmark evidence; targets alone do not.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d13-x11",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d13",
+          "pdf_page": 13
+        }
+      ],
+      "notes": [
+        "Quality and latency are separate requirements and can have different pass results.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d13-x12",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d13",
+          "pdf_page": 15
+        }
+      ],
+      "notes": [
+        "API schema and request/response examples support consumer integration.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d13-x13",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d13",
+          "pdf_page": 17
+        }
+      ],
+      "notes": [
+        "Actionable review identifies a specific issue, evidence and proposed change.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d13-x14",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d13",
+          "pdf_page": 13
+        }
+      ],
+      "notes": [
+        "Revision3 replaces repeated coverage/ADR questions: hypothetical 120 cache hits of 400 requests gives 30%, not hits/misses or miss rate; p13 lists cache hit rate as benchmark metric.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d13-x15",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d13",
+          "pdf_page": 20
+        }
+      ],
+      "notes": [
+        "Interface contract validation before E2E localizes integration errors.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d13-x16",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d13",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "Revision3 replaces repeated failure/runbook questions: explicitly defined TPR=96/100=96%, exceeding supplied >95% criterion from p9; 4% is miss rate.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    },
+    {
+      "id": "p2-t3-d13-x17",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d13",
+          "pdf_page": 23
+        }
+      ],
+      "notes": [
+        "Implementing and retesting priority feedback closes the review loop.",
+        "Root read actual final stem/options/answer/explanation and all40 original cited physical pages plus replacement pages46/48; compared9 legacy questions;3 actual PDF hashes match catalog."
+      ]
+    }
+  ]
+}

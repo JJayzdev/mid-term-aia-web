@@ -1,0 +1,1720 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.22.expand-b-08",
+  "questions": [
+    {
+      "id": "p2-t3-d07-x01",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d07",
+      "topic": "p2-t3-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Preference pair chứa loại tín hiệu nào mà chỉ demonstration tốt không nêu trực tiếp?",
+      "correct_answer": "a",
+      "explanation": "Preference so sánh good/bad tạo tín hiệu về điều không nên nói và margin giữa hai response.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d07",
+          "sha256": "ddb9aa90abbc2c87e6bc30f8b1f09dcdba93af86f73dd48fbcc03107baefd181",
+          "pdf_page": 7,
+          "title": "DPO, ORPO & Alignment — Từ SFT đến Preference Learning",
+          "locator": "Physical PDF page 7; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Câu trả lời nào kém hơn và cần tránh tương đối với câu tốt"
+        },
+        {
+          "id": "b",
+          "text": "Một đáp án duy nhất phải được copy nguyên văn"
+        },
+        {
+          "id": "c",
+          "text": "Toàn bộ tri thức mới của domain chưa có trong base"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ số lượng token tối đa được phép sinh"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d07-x02",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d07",
+      "topic": "p2-t3-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Offline DPO vẫn có thể làm model “viết dài hơn” thay vì “tốt hơn”. Đây là rủi ro gì?",
+      "correct_answer": "a",
+      "explanation": "Response length có thể trở thành proxy mà model tối ưu; cần phân biệt quality thực với dài hơn.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d07",
+          "sha256": "ddb9aa90abbc2c87e6bc30f8b1f09dcdba93af86f73dd48fbcc03107baefd181",
+          "pdf_page": 14,
+          "title": "DPO, ORPO & Alignment — Từ SFT đến Preference Learning",
+          "locator": "Physical PDF page 14; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Length bias/hacking trong preference optimization"
+        },
+        {
+          "id": "b",
+          "text": "Sycophancy: ưu tiên đồng ý với ý kiến người dùng dù sai"
+        },
+        {
+          "id": "c",
+          "text": "Preference collapse: nhiều prompt khác nhau nhận cùng một mẫu trả lời"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d07-x03",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d07",
+      "topic": "p2-t3-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong DPO, beta là hệ số ràng buộc KL với reference policy. Tăng hệ số này tác động thế nào tới mức bám reference?",
+      "correct_answer": "c",
+      "explanation": "Beta kiểm mức ràng buộc reference; cao hơn được mô tả conservative hơn, thấp hơn cho tự do thay đổi.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d07",
+          "sha256": "ddb9aa90abbc2c87e6bc30f8b1f09dcdba93af86f73dd48fbcc03107baefd181",
+          "pdf_page": 15,
+          "title": "DPO, ORPO & Alignment — Từ SFT đến Preference Learning",
+          "locator": "Physical PDF page 15; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Xóa reference model khỏi objective"
+        },
+        {
+          "id": "b",
+          "text": "Chuyển DPO thành single-stage SFT"
+        },
+        {
+          "id": "c",
+          "text": "Giữ model gần reference hơn"
+        },
+        {
+          "id": "d",
+          "text": "Luôn làm model rời reference xa hơn"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d07-x04",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d07",
+      "topic": "p2-t3-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Chosen reward bắt đầu giảm trong khi run vẫn tiếp tục tối ưu có thể là tín hiệu nào?",
+      "correct_answer": "b",
+      "explanation": "Chosen/rejected quá gần hoặc optimization conflict có thể gây displacement; cần lọc pair và dừng khi chosen đảo chiều.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d07",
+          "sha256": "ddb9aa90abbc2c87e6bc30f8b1f09dcdba93af86f73dd48fbcc03107baefd181",
+          "pdf_page": 16,
+          "title": "DPO, ORPO & Alignment — Từ SFT đến Preference Learning",
+          "locator": "Physical PDF page 16; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ cần train thêm epoch mà không điều tra"
+        },
+        {
+          "id": "b",
+          "text": "Likelihood displacement cần xem lại pairs và điểm dừng"
+        },
+        {
+          "id": "c",
+          "text": "Bằng chứng model đang học chosen tốt hơn chắc chắn"
+        },
+        {
+          "id": "d",
+          "text": "Một chỉ số không liên quan chất lượng nên bỏ"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d07-x05",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d07",
+      "topic": "p2-t3-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "SimPO phù hợp ràng buộc nào so với DPO có reference?",
+      "correct_answer": "a",
+      "explanation": "SimPO reference-free và bình quân log-prob theo chiều dài, phù hợp VRAM hạn chế/length bias.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d07",
+          "sha256": "ddb9aa90abbc2c87e6bc30f8b1f09dcdba93af86f73dd48fbcc03107baefd181",
+          "pdf_page": 20,
+          "title": "DPO, ORPO & Alignment — Từ SFT đến Preference Learning",
+          "locator": "Physical PDF page 20; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Muốn bỏ reference và dùng length-normalized implicit reward"
+        },
+        {
+          "id": "b",
+          "text": "Cần train reward model riêng cùng PPO critic"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ có thumbs-up/down không có response pair"
+        },
+        {
+          "id": "d",
+          "text": "Muốn hợp SFT và preference loss thành ORPO objective"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d07-x06",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d07",
+      "topic": "p2-t3-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Production chỉ thu thumbs-up/down trên từng response, không có cặp xếp hạng. Hướng nào phù hợp dạng nhãn này?",
+      "correct_answer": "d",
+      "explanation": "KTO không cần preference pairs, khai thác tín hiệu binary tốt/xấu dễ thu từ feedback logs.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d07",
+          "sha256": "ddb9aa90abbc2c87e6bc30f8b1f09dcdba93af86f73dd48fbcc03107baefd181",
+          "pdf_page": 20,
+          "title": "DPO, ORPO & Alignment — Từ SFT đến Preference Learning",
+          "locator": "Physical PDF page 20; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "DPO mặc định không cần rejected response"
+        },
+        {
+          "id": "b",
+          "text": "ORPO không cần bất kỳ tín hiệu tốt/xấu nào"
+        },
+        {
+          "id": "c",
+          "text": "GRPO tự coi thumb-up là unit test chính xác"
+        },
+        {
+          "id": "d",
+          "text": "KTO dùng good/bad label từng example"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d07-x07",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d07",
+      "topic": "p2-t3-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "ORPO đơn giản hóa pipeline bằng cách kết hợp gì trong một objective?",
+      "correct_answer": "c",
+      "explanation": "ORPO hướng base tới aligned model trong một run, bỏ stage SFT riêng nhưng vẫn có thành phần SFT trong objective.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d07",
+          "sha256": "ddb9aa90abbc2c87e6bc30f8b1f09dcdba93af86f73dd48fbcc03107baefd181",
+          "pdf_page": 21,
+          "title": "DPO, ORPO & Alignment — Từ SFT đến Preference Learning",
+          "locator": "Physical PDF page 21; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ continued-pretraining trên raw text"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ reference KL mà không có tín hiệu preference"
+        },
+        {
+          "id": "c",
+          "text": "SFT loss và preference loss"
+        },
+        {
+          "id": "d",
+          "text": "PPO loss và value-model training riêng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d07-x08",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d07",
+      "topic": "p2-t3-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "GRPO dùng gì làm baseline thay value model của PPO?",
+      "correct_answer": "b",
+      "explanation": "Group-relative reward lấy thống kê nhóm output cùng prompt làm baseline, bỏ value/critic model.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d07",
+          "sha256": "ddb9aa90abbc2c87e6bc30f8b1f09dcdba93af86f73dd48fbcc03107baefd181",
+          "pdf_page": 23,
+          "title": "DPO, ORPO & Alignment — Từ SFT đến Preference Learning",
+          "locator": "Physical PDF page 23; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Một human annotator chấm từng token trong rollout"
+        },
+        {
+          "id": "b",
+          "text": "Reward tương đối trong nhóm samples cùng prompt"
+        },
+        {
+          "id": "c",
+          "text": "Một constant reward chung cho mọi prompt"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ likelihood của câu rejected trong dataset offline"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d07-x09",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d07",
+      "topic": "p2-t3-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao RLVR không thay thế mọi preference learning cho tác vụ chủ quan?",
+      "correct_answer": "a",
+      "explanation": "Math/code/format/tool result có verifier rõ; style/helpfulness thường cần judgment/preference và hai hướng bổ sung nhau.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d07",
+          "sha256": "ddb9aa90abbc2c87e6bc30f8b1f09dcdba93af86f73dd48fbcc03107baefd181",
+          "pdf_page": 24,
+          "title": "DPO, ORPO & Alignment — Từ SFT đến Preference Learning",
+          "locator": "Physical PDF page 24; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Nó cần reward kiểm chứng được bằng chương trình"
+        },
+        {
+          "id": "b",
+          "text": "Regex luôn đo đầy đủ tone/helpfulness của mọi tác vụ"
+        },
+        {
+          "id": "c",
+          "text": "Unit tests tự quyết mọi giá trị thương hiệu"
+        },
+        {
+          "id": "d",
+          "text": "Tác vụ chủ quan luôn có một đáp án số duy nhất"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d07-x10",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d07",
+      "topic": "p2-t3-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "GRPO có thể tốn thời gian hơn offline DPO chủ yếu vì công việc nào?",
+      "correct_answer": "b",
+      "explanation": "RL reasoning cần generation rollouts nhóm samples, thêm compute so với học offline pairs có sẵn.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d07",
+          "sha256": "ddb9aa90abbc2c87e6bc30f8b1f09dcdba93af86f73dd48fbcc03107baefd181",
+          "pdf_page": 25,
+          "title": "DPO, ORPO & Alignment — Từ SFT đến Preference Learning",
+          "locator": "Physical PDF page 25; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chi phí chỉ đến từ optimizer update; rollout inference không tốn compute"
+        },
+        {
+          "id": "b",
+          "text": "Sinh nhiều rollout cho mỗi prompt trước cập nhật"
+        },
+        {
+          "id": "c",
+          "text": "Offline DPO cũng phải sinh lại mọi chosen/rejected trong mỗi update nên không khác"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d07-x11",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d07",
+      "topic": "p2-t3-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Chosen và rejected trong dataset nên khác nhau theo tiêu chí nào?",
+      "correct_answer": "c",
+      "explanation": "Preference genuine cần phản ánh quality, helpfulness/safety; chênh lệch hình thức đơn thuần dễ tạo proxy lệch.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d07",
+          "sha256": "ddb9aa90abbc2c87e6bc30f8b1f09dcdba93af86f73dd48fbcc03107baefd181",
+          "pdf_page": 27,
+          "title": "DPO, ORPO & Alignment — Từ SFT đến Preference Learning",
+          "locator": "Physical PDF page 27; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Hai response giống hệt nhau luôn cho tín hiệu mạnh nhất"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ khác khoảng trắng nhưng nhãn ngẫu nhiên"
+        },
+        {
+          "id": "c",
+          "text": "Khác chất lượng thực, không chỉ dài/ngắn"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ một câu dài hơn là đủ tạo preference đáng tin"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d07-x12",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d07",
+      "topic": "p2-t3-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Không cần RM trong DPO loss có nghĩa RM không còn vai trò ở pipeline không?",
+      "correct_answer": "b",
+      "explanation": "RM có thể ở data filtering, rejection sampling và inference selection, khác việc nằm trong DPO gradient update.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d07",
+          "sha256": "ddb9aa90abbc2c87e6bc30f8b1f09dcdba93af86f73dd48fbcc03107baefd181",
+          "pdf_page": 30,
+          "title": "DPO, ORPO & Alignment — Từ SFT đến Preference Learning",
+          "locator": "Physical PDF page 30; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Không; DPO luôn bắt buộc cập nhật RM trong mỗi gradient step"
+        },
+        {
+          "id": "b",
+          "text": "Không; RM vẫn có thể lọc pairs và chọn best-of-N"
+        },
+        {
+          "id": "c",
+          "text": "Có; mọi bước data filtering phải bỏ reward signal"
+        },
+        {
+          "id": "d",
+          "text": "Có; rejection sampling không còn dùng được"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d07-x13",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d07",
+      "topic": "p2-t3-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Constitutional AI tạo cặp preference qua chu trình nào?",
+      "correct_answer": "a",
+      "explanation": "Explicit constitution neo tiêu chí critique/revision, tạo preference pair có thể dùng DPO/ORPO.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d07",
+          "sha256": "ddb9aa90abbc2c87e6bc30f8b1f09dcdba93af86f73dd48fbcc03107baefd181",
+          "pdf_page": 34,
+          "title": "DPO, ORPO & Alignment — Từ SFT đến Preference Learning",
+          "locator": "Physical PDF page 34; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Generate, critique theo principles, revise rồi ghép original/revised"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ random đảo chosen/rejected không có nguyên tắc"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ tăng quy mô base pretraining để bỏ data alignment"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ giữ response đầu và không bao giờ chỉnh sửa"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d07-x14",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d07",
+      "topic": "p2-t3-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Kết quả red-team nên quay lại vòng cải tiến alignment thế nào?",
+      "correct_answer": "d",
+      "explanation": "Attack→analyze failure→update preference data tạo vòng cải tiến, thay thử an toàn như một lần kiểm duy nhất.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d07",
+          "sha256": "ddb9aa90abbc2c87e6bc30f8b1f09dcdba93af86f73dd48fbcc03107baefd181",
+          "pdf_page": 36,
+          "title": "DPO, ORPO & Alignment — Từ SFT đến Preference Learning",
+          "locator": "Physical PDF page 36; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ lưu dashboard rồi bỏ khi train phiên bản sau"
+        },
+        {
+          "id": "b",
+          "text": "Tự coi mọi attack pass là bằng chứng an toàn tuyệt đối"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ tăng refusal cho mọi request kể cả vô hại"
+        },
+        {
+          "id": "d",
+          "text": "Phân tích failure và bổ sung preference data phù hợp domain"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d07-x15",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d07",
+      "topic": "p2-t3-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Helpfulness score 1–5 là proxy thay vì business target nghĩa là gì?",
+      "correct_answer": "c",
+      "explanation": "Response quality mở có nhiều đáp án; score proxy không trực tiếp đồng nhất retention/task completion/trust.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d07",
+          "sha256": "ddb9aa90abbc2c87e6bc30f8b1f09dcdba93af86f73dd48fbcc03107baefd181",
+          "pdf_page": 38,
+          "title": "DPO, ORPO & Alignment — Từ SFT đến Preference Learning",
+          "locator": "Physical PDF page 38; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ cần một score judge để quyết mọi rủi ro"
+        },
+        {
+          "id": "b",
+          "text": "Mọi metric đều vô ích và nên bỏ"
+        },
+        {
+          "id": "c",
+          "text": "Nó chỉ đo một lát cắt, cần thêm task outcome/human feedback"
+        },
+        {
+          "id": "d",
+          "text": "Đạt 5 đồng nghĩa retention/trust được bảo đảm"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d07-x16",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d07",
+      "topic": "p2-t3-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Hai judge khác nhau bất đồng mạnh trên cùng prompt nên xử lý như tín hiệu nào?",
+      "correct_answer": "b",
+      "explanation": "Cross-judge disagreement giúp tìm bias/ambiguity cần human review thay tin một judge duy nhất.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d07",
+          "sha256": "ddb9aa90abbc2c87e6bc30f8b1f09dcdba93af86f73dd48fbcc03107baefd181",
+          "pdf_page": 40,
+          "title": "DPO, ORPO & Alignment — Từ SFT đến Preference Learning",
+          "locator": "Physical PDF page 40; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Luôn trung bình hóa rồi coi là ground truth tuyệt đối"
+        },
+        {
+          "id": "b",
+          "text": "Ưu tiên xem tay các trường hợp bất đồng"
+        },
+        {
+          "id": "c",
+          "text": "Tự chọn judge chấm điểm cao hơn để tối đa metric"
+        },
+        {
+          "id": "d",
+          "text": "Bỏ cả hai verdict mà không điều tra"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d07-x17",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d07",
+      "topic": "p2-t3-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Gradient checkpointing tiết kiệm memory bằng đánh đổi nào?",
+      "correct_answer": "a",
+      "explanation": "Activation checkpointing giảm lưu trữ activation nhưng tốn recomputation; khác sharding hay quantization.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d07",
+          "sha256": "ddb9aa90abbc2c87e6bc30f8b1f09dcdba93af86f73dd48fbcc03107baefd181",
+          "pdf_page": 55,
+          "title": "DPO, ORPO & Alignment — Từ SFT đến Preference Learning",
+          "locator": "Physical PDF page 55; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Không giữ mọi activation forward, recompute khi backward nên thêm compute"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ shard optimizer states giữa các GPU mà không tính lại activations"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ quantize model weights mà giữ toàn bộ activations như cũ"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ tăng gradient accumulation mà không thay activations lưu cho mỗi microbatch"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d08-x01",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d08",
+      "topic": "p2-t3-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Support workflow còn thiếu thông tin cần thiết nên route nào phù hợp state hiện tại?",
+      "correct_answer": "d",
+      "explanation": "State-driven flow có loop clarification cho missing-info, khác chain luôn đi thẳng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d08",
+          "sha256": "4b54b3bee4ad0e05aa69428582b0a4d1714c045b9ceaf85e48827ab399014e2b",
+          "pdf_page": 11,
+          "title": "LangGraph & Agentic Orchestration",
+          "locator": "Physical PDF page 11; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tự đoán thông tin thiếu rồi thực thi action"
+        },
+        {
+          "id": "b",
+          "text": "Luôn chuyển vào final answer dù thiếu evidence"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ retry cùng tool với args rỗng vô hạn"
+        },
+        {
+          "id": "d",
+          "text": "Hỏi khách để bổ sung trước khi xử lý tiếp"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d08-x02",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d08",
+      "topic": "p2-t3-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "State chứa nguyên blob tài liệu lớn ảnh hưởng persistence thế nào?",
+      "correct_answer": "c",
+      "explanation": "Lean state tránh blob lớn; references giúp giảm kích thước snapshot và overhead checkpoint.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d08",
+          "sha256": "4b54b3bee4ad0e05aa69428582b0a4d1714c045b9ceaf85e48827ab399014e2b",
+          "pdf_page": 14,
+          "title": "LangGraph & Agentic Orchestration",
+          "locator": "Physical PDF page 14; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tự giảm latency vì không cần serialization"
+        },
+        {
+          "id": "b",
+          "text": "Bắt buộc phải giữ blob để reference không thể dùng"
+        },
+        {
+          "id": "c",
+          "text": "Checkpoint lớn hơn và chậm; nên giữ references"
+        },
+        {
+          "id": "d",
+          "text": "Không ảnh hưởng vì checkpoint chỉ lưu field names"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d08-x03",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d08",
+      "topic": "p2-t3-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Khi state schema thay đổi giữa các phiên triển khai, nguyên tắc nào cần giữ?",
+      "correct_answer": "b",
+      "explanation": "Typed/validate được và versioned state giúp quản lý thay đổi schema thay để checkpoint cũ bị hiểu sai.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d08",
+          "sha256": "4b54b3bee4ad0e05aa69428582b0a4d1714c045b9ceaf85e48827ab399014e2b",
+          "pdf_page": 14,
+          "title": "LangGraph & Agentic Orchestration",
+          "locator": "Physical PDF page 14; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Bỏ validation vì state đã là TypedDict"
+        },
+        {
+          "id": "b",
+          "text": "Version state schema và bảo đảm có thể validate"
+        },
+        {
+          "id": "c",
+          "text": "Đổi field tùy ý nhưng coi checkpoint cũ luôn tương thích"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ sửa Python type mà không xem persisted state"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d08-x04",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d08",
+      "topic": "p2-t3-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Node trả partial update đem lại cách tổ chức nào?",
+      "correct_answer": "a",
+      "explanation": "Node nhỏ, partial update và reducer rõ tránh ghi đè state ngoài trách nhiệm; hỗ trợ test/audit.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d08",
+          "sha256": "4b54b3bee4ad0e05aa69428582b0a4d1714c045b9ceaf85e48827ab399014e2b",
+          "pdf_page": 16,
+          "title": "LangGraph & Agentic Orchestration",
+          "locator": "Physical PDF page 16; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Mỗi node cập nhật phần nó chịu trách nhiệm để graph merge"
+        },
+        {
+          "id": "b",
+          "text": "Mọi node ghi đè toàn state bất kể field không sở hữu"
+        },
+        {
+          "id": "c",
+          "text": "Node bỏ state input và chỉ trả một string chung"
+        },
+        {
+          "id": "d",
+          "text": "Mọi node phải mutate toàn shared dict cùng lúc"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d08-x05",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d08",
+      "topic": "p2-t3-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Conditional route function nên dùng gì để chọn nhánh tiếp theo?",
+      "correct_answer": "d",
+      "explanation": "Route dựa state có thể chọn cheap path, ask-user, approval hoặc fallback theo điều kiện.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d08",
+          "sha256": "4b54b3bee4ad0e05aa69428582b0a4d1714c045b9ceaf85e48827ab399014e2b",
+          "pdf_page": 17,
+          "title": "LangGraph & Agentic Orchestration",
+          "locator": "Physical PDF page 17; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ thứ tự alphabet tên node"
+        },
+        {
+          "id": "b",
+          "text": "Luôn route một path cố định dù evidence đã đổi"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ random nhánh để tăng khám phá ở mọi request"
+        },
+        {
+          "id": "d",
+          "text": "State hiện tại và chính sách cost/latency/risk"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d08-x06",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d08",
+      "topic": "p2-t3-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Khi graph đã có state schema và nodes, bước nào biến cấu trúc wiring thành graph có thể chạy?",
+      "correct_answer": "b",
+      "explanation": "Build order gồm schema, nodes, route, edges, compile với checkpointer rồi invoke/thread ID.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d08",
+          "sha256": "4b54b3bee4ad0e05aa69428582b0a4d1714c045b9ceaf85e48827ab399014e2b",
+          "pdf_page": 18,
+          "title": "LangGraph & Agentic Orchestration",
+          "locator": "Physical PDF page 18; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ compile graph rồi coi workflow đã thực thi mà không invoke"
+        },
+        {
+          "id": "b",
+          "text": "Compile rồi invoke với config phù hợp"
+        },
+        {
+          "id": "c",
+          "text": "Invoke trực tiếp graph builder trước compile dù edges mới khai báo"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d08-x07",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d08",
+      "topic": "p2-t3-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Memory saver có hạn chế nào khi process restart?",
+      "correct_answer": "b",
+      "explanation": "Memory saver nhanh cho in-process nhưng không durable; SQLite/Postgres phục vụ persistence phù hợp hơn.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d08",
+          "sha256": "4b54b3bee4ad0e05aa69428582b0a4d1714c045b9ceaf85e48827ab399014e2b",
+          "pdf_page": 20,
+          "title": "LangGraph & Agentic Orchestration",
+          "locator": "Physical PDF page 20; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Không thể dùng cho bất kỳ demo nào"
+        },
+        {
+          "id": "b",
+          "text": "Checkpoint trong memory không bền qua restart"
+        },
+        {
+          "id": "c",
+          "text": "Tự có mọi transaction durability như Postgres"
+        },
+        {
+          "id": "d",
+          "text": "Luôn lưu snapshot xuống disk dù không cấu hình"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d08-x08",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d08",
+      "topic": "p2-t3-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Service nhiều workflow thread cần durable checkpoints nên cân nhắc backend nào?",
+      "correct_answer": "a",
+      "explanation": "Postgres phù hợp service nhiều thread, khác memory saver dễ mất khi restart và SQLite cho demo đơn giản.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d08",
+          "sha256": "4b54b3bee4ad0e05aa69428582b0a4d1714c045b9ceaf85e48827ab399014e2b",
+          "pdf_page": 20,
+          "title": "LangGraph & Agentic Orchestration",
+          "locator": "Physical PDF page 20; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Postgres saver"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ một dict Python local trong worker"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ process memory saver không external store"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ log text không state snapshot"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d08-x09",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d08",
+      "topic": "p2-t3-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Checkpoint đại diện điều gì trong workflow graph?",
+      "correct_answer": "b",
+      "explanation": "Checkpointer giữ state theo bước để pause/resume/replay/debug thay chỉ lưu output cuối.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d08",
+          "sha256": "4b54b3bee4ad0e05aa69428582b0a4d1714c045b9ceaf85e48827ab399014e2b",
+          "pdf_page": 21,
+          "title": "LangGraph & Agentic Orchestration",
+          "locator": "Physical PDF page 21; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ final answer không có state trung gian"
+        },
+        {
+          "id": "b",
+          "text": "Snapshot state sau một super-step"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ log các tên node đã chạy mà không lưu giá trị state"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d08-x10",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d08",
+      "topic": "p2-t3-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Replay từ checkpoint hữu ích nhất cho thao tác nào?",
+      "correct_answer": "c",
+      "explanation": "Time travel/replay cho phép quan sát state trước và thử nhánh khác; không chỉ chạy lại từ đầu.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d08",
+          "sha256": "4b54b3bee4ad0e05aa69428582b0a4d1714c045b9ceaf85e48827ab399014e2b",
+          "pdf_page": 21,
+          "title": "LangGraph & Agentic Orchestration",
+          "locator": "Physical PDF page 21; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Bỏ history để làm sạch evidence incident"
+        },
+        {
+          "id": "b",
+          "text": "Luôn gửi lại mọi side effect đã hoàn tất bất kể an toàn"
+        },
+        {
+          "id": "c",
+          "text": "Thử route khác hoặc điều tra quyết định tại state đã lưu"
+        },
+        {
+          "id": "d",
+          "text": "Đổi raw source mà không ghi version rồi coi cùng run"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d08-x11",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d08",
+      "topic": "p2-t3-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Human sửa dữ liệu tại checkpoint trước resume cho thấy persistence hỗ trợ điều gì ngoài lưu trữ?",
+      "correct_answer": "b",
+      "explanation": "Update state trước resume là cơ chế HITL/time travel, giúp workflow tiếp tục với quyết định mới.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d08",
+          "sha256": "4b54b3bee4ad0e05aa69428582b0a4d1714c045b9ceaf85e48827ab399014e2b",
+          "pdf_page": 21,
+          "title": "LangGraph & Agentic Orchestration",
+          "locator": "Physical PDF page 21; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ đổi tên thread mà không đổi state"
+        },
+        {
+          "id": "b",
+          "text": "Can thiệp state có kiểm soát để tiếp tục workflow"
+        },
+        {
+          "id": "c",
+          "text": "Tự bỏ hết approval sau mọi crash"
+        },
+        {
+          "id": "d",
+          "text": "Tự quyết thay human vì snapshot tồn tại"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d08-x12",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d08",
+      "topic": "p2-t3-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Hai ticket độc lập dùng cùng một thread_id có nguy cơ thiết kế nào?",
+      "correct_answer": "a",
+      "explanation": "Thread định danh một phiên workflow/ticket; ID riêng giúp state history và trace đúng run.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d08",
+          "sha256": "4b54b3bee4ad0e05aa69428582b0a4d1714c045b9ceaf85e48827ab399014e2b",
+          "pdf_page": 22,
+          "title": "LangGraph & Agentic Orchestration",
+          "locator": "Physical PDF page 22; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Không tách đúng phiên state/history của từng workflow"
+        },
+        {
+          "id": "b",
+          "text": "Tự bảo đảm mọi ticket nhận cùng evidence là đúng"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ làm tên trace ngắn hơn mà không ảnh hưởng state"
+        },
+        {
+          "id": "d",
+          "text": "Tự cung cấp isolation tốt hơn hai ID riêng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d08-x13",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d08",
+      "topic": "p2-t3-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Approval pause cần làm gì với state trước khi chờ human?",
+      "correct_answer": "d",
+      "explanation": "Interrupt/resume giúp pause bền và tiếp tục từ trạng thái đã giữ, phù hợp duyệt trước destructive action.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d08",
+          "sha256": "4b54b3bee4ad0e05aa69428582b0a4d1714c045b9ceaf85e48827ab399014e2b",
+          "pdf_page": 24,
+          "title": "LangGraph & Agentic Orchestration",
+          "locator": "Physical PDF page 24; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Giữ toàn tác vụ chỉ trong một socket không lưu state"
+        },
+        {
+          "id": "b",
+          "text": "Thực thi action trước rồi mới hỏi"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ trả final answer và không bao giờ quay lại graph"
+        },
+        {
+          "id": "d",
+          "text": "Lưu state và resume tại vị trí thích hợp với decision mới"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d08-x14",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d08",
+      "topic": "p2-t3-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Approval payload cần evidence của proposed action nhằm mục đích gì?",
+      "correct_answer": "c",
+      "explanation": "Action, risk và tool_results/evidence tạo quyết định có căn cứ; không execute destructive action trước approval.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d08",
+          "sha256": "4b54b3bee4ad0e05aa69428582b0a4d1714c045b9ceaf85e48827ab399014e2b",
+          "pdf_page": 25,
+          "title": "LangGraph & Agentic Orchestration",
+          "locator": "Physical PDF page 25; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Reviewer chỉ cần tên tool, không cần biết args hay phạm vi tác động"
+        },
+        {
+          "id": "b",
+          "text": "Evidence chỉ dùng sau khi action đã thực thi, không cần trước duyệt"
+        },
+        {
+          "id": "c",
+          "text": "Reviewer có dữ kiện để approve/reject/edit đúng hành động"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d08-x15",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d08",
+      "topic": "p2-t3-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Sau retry đạt max attempts rồi fallback cũng thất bại, tầng xử lý nào tiếp theo?",
+      "correct_answer": "b",
+      "explanation": "Recovery ba tầng là retry bounded/backoff, fallback, rồi dead-letter thay loop không kết thúc.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d08",
+          "sha256": "4b54b3bee4ad0e05aa69428582b0a4d1714c045b9ceaf85e48827ab399014e2b",
+          "pdf_page": 26,
+          "title": "LangGraph & Agentic Orchestration",
+          "locator": "Physical PDF page 26; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Xóa task khỏi mọi audit/history"
+        },
+        {
+          "id": "b",
+          "text": "Dead-letter để manual review"
+        },
+        {
+          "id": "c",
+          "text": "Retry vô hạn cùng action"
+        },
+        {
+          "id": "d",
+          "text": "Báo success với kết quả rỗng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d08-x16",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d08",
+      "topic": "p2-t3-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Resume success là metric bổ sung quan trọng vì điều gì?",
+      "correct_answer": "a",
+      "explanation": "Persistence/recovery cần bằng chứng resume, bên cạnh task success, retry, interrupt và state validation errors.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d08",
+          "sha256": "4b54b3bee4ad0e05aa69428582b0a4d1714c045b9ceaf85e48827ab399014e2b",
+          "pdf_page": 27,
+          "title": "LangGraph & Agentic Orchestration",
+          "locator": "Physical PDF page 27; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Graph chạy được ban đầu chưa chứng minh có thể tiếp tục sau pause/crash"
+        },
+        {
+          "id": "b",
+          "text": "Task success đầu tiên tự bảo đảm mọi checkpoint hợp lệ"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ latency đủ chứng minh persistence hoạt động"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ nodes visited đủ xác nhận human approval"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d08-x17",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d08",
+      "topic": "p2-t3-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "analyze",
+      "question": "Một test suite chỉ có simple và tool-success còn thiếu coverage nào của workflow support?",
+      "correct_answer": "d",
+      "explanation": "Sáu scenario bao normal routes cùng clarification, approval và bounded error recovery.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d08",
+          "sha256": "4b54b3bee4ad0e05aa69428582b0a4d1714c045b9ceaf85e48827ab399014e2b",
+          "pdf_page": 29,
+          "title": "LangGraph & Agentic Orchestration",
+          "locator": "Physical PDF page 29; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ thêm nhiều câu đơn giản cùng route"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ đổi thứ tự chạy simple/tool nhưng không failure scenario"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ tăng node coverage bằng cách gọi từng node riêng mà không test các nhánh phục hồi"
+        },
+        {
+          "id": "d",
+          "text": "Missing-info, risky-action, transient-error và max-error"
+        }
+      ],
+      "shuffle_options": true
+    }
+  ]
+}

@@ -41,11 +41,16 @@ def validate(bank_path, catalog_path, verify_sources=False, min_per_document=0, 
     counts = Counter()
     per_doc = Counter()
     audit_entries = {}
-    for path in (ROOT / 'reports/content').glob('*.json'):
+    latest_decisions = {}
+    for path in sorted((ROOT / 'reports/content').glob('*.json')):
         report = read(path)
         for result in report.get('results', []):
+            key = (result['id'], result['revision'])
+            existing = latest_decisions.get(key)
+            if not existing or report['reviewed_at'] >= existing[0]:
+                latest_decisions[key] = (report['reviewed_at'], result, report, path.relative_to(ROOT).as_posix())
             if result.get('decision') == 'approved':
-                audit_entries[(result['id'], result['revision'], path.relative_to(ROOT).as_posix())] = report
+                audit_entries[(*key, path.relative_to(ROOT).as_posix())] = (report, result)
     for q in bank['questions']:
         qid = q['id']
         def fail(msg):
@@ -54,7 +59,7 @@ def validate(bank_path, catalog_path, verify_sources=False, min_per_document=0, 
             fail('duplicate question ID')
         ids.add(qid)
         fingerprint = normalize(q.get('context', '') + ' ' + q['question'])
-        if standalone_stems and re.search(r'\bslides?\b|theo (?:tài liệu|bài giảng|bảng|phần)|trong bảng|nguồn nêu|khớp bảng|phù hợp nguồn|được minh họa', q['question'], re.I):
+        if standalone_stems and re.search(r'\bslides?\b|theo (?:tài liệu|bài giảng|bảng|phần|sơ đồ|cây quyết định)|trong (?:bảng|sơ đồ)|được sơ đồ|của ví dụ|nguồn nêu|khớp bảng|phù hợp nguồn|được minh họa', q['question'], re.I):
             fail('question must test knowledge directly; source-dependent stem')
         if fingerprint in fingerprints:
             fail('exact normalized duplicate of ' + fingerprints[fingerprint])
@@ -65,8 +70,19 @@ def validate(bank_path, catalog_path, verify_sources=False, min_per_document=0, 
         if review.get('reviewer_id') == q['author_id'] or review.get('reviewed_revision') != q['revision']:
             fail('review must be independent and match revision')
         audit = audit_entries.get((qid, q['revision'], review.get('report_id')))
-        if not audit or audit.get('reviewer_id') != review.get('reviewer_id'):
+        if not audit or audit[0].get('reviewer_id') != review.get('reviewer_id'):
             fail('no matching independent approval artifact')
+        else:
+            report, decision = audit
+            if review.get('reviewed_at') != report['reviewed_at']:
+                fail('review timestamp differs from approval artifact')
+            reviewed_pages = {(s['document_id'], s['pdf_page']) for s in decision.get('source_pages', [])}
+            referenced_pages = {(s['document_id'], s['pdf_page']) for s in q['source_reference']}
+            if not referenced_pages <= reviewed_pages:
+                fail('approval does not cover all referenced source pages')
+        latest = latest_decisions.get((qid, q['revision']))
+        if latest and (latest[1]['decision'] != 'approved' or latest[3] != review.get('report_id')):
+            fail('release does not use the latest exact-revision approval')
         topic = topics.get(q['topic'])
         if not topic or any(q[k] != topic[k] for k in ('phase', 'track', 'day')):
             fail('unknown topic or taxonomy differs from catalog')

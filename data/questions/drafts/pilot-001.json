@@ -246,7 +246,7 @@
     },
     {
       "id": "p1-d11-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 1,
       "track": null,
@@ -257,7 +257,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Artifact pack cuối ngày yêu cầu những thành phần nào? (Chọn tất cả đáp án đúng.)",
+      "question": "Để kiểm chứng guardrails và cơ chế chuyển xử lý cho con người, cần chuẩn bị những bằng chứng nào? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "a",
         "c"
@@ -276,7 +276,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -490,7 +491,7 @@
     },
     {
       "id": "p1-d14-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 1,
       "track": null,
@@ -501,7 +502,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Offline evaluation được mô tả là batch test trên golden dataset, phù hợp khi release hoặc đổi prompt.",
+      "question": "Offline evaluation dùng batch test trên golden dataset, phù hợp khi phát hành phiên bản hoặc thay đổi prompt.",
       "correct_answer": true,
       "explanation": "Trang phân biệt offline/online/human nêu trực tiếp cách chạy và thời điểm này.",
       "source_reference": [
@@ -517,7 +518,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ]
     },
     {

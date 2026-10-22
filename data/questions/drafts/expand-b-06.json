@@ -1,0 +1,1748 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.22.expand-b-06",
+  "questions": [
+    {
+      "id": "p2-t3-d03-x01",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d03",
+      "topic": "p2-t3-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "analyze",
+      "question": "Chunk gốc đã mất bảng và quan hệ ngữ cảnh lúc ingestion. Vì sao chỉ đổi retriever thường chưa đủ?",
+      "correct_answer": "a",
+      "explanation": "Ingestion đặt trần chất lượng; thiếu thông tin/cấu trúc ở index không thể được giải quyết chỉ bằng lấy lại cùng nội dung.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d03",
+          "sha256": "7257c0aa57a2b625e17ab2e588105428045d79ded9c763b7c3b4c6e8809982d8",
+          "pdf_page": 10,
+          "title": "Production RAG",
+          "locator": "Physical PDF page 10; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Retrieval bị giới hạn bởi nội dung đã được index"
+        },
+        {
+          "id": "b",
+          "text": "Retriever mạnh luôn tự khôi phục mọi thông tin chưa index"
+        },
+        {
+          "id": "c",
+          "text": "Reranker có thể sinh lại bảng nguồn chính xác mà không cần dữ liệu"
+        },
+        {
+          "id": "d",
+          "text": "Generation prompt đủ để phục hồi mọi cấu trúc đã mất"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d03-x02",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d03",
+      "topic": "p2-t3-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "analyze",
+      "question": "Chunk chứa đáp án không có trong candidate retrieval. Vì sao chỉ thêm reranker chưa xử lý được lỗi này?",
+      "correct_answer": "d",
+      "explanation": "Reranking có ROI khi recall đã đủ; nếu chunk đúng chưa được retrieve thì phải sửa retrieval trước khi ranking candidate.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d03",
+          "sha256": "7257c0aa57a2b625e17ab2e588105428045d79ded9c763b7c3b4c6e8809982d8",
+          "pdf_page": 52,
+          "title": "Production RAG",
+          "locator": "Physical PDF page 52; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Reranker luôn tự tìm toàn corpus nên chắc chắn lấy được chunk thiếu"
+        },
+        {
+          "id": "b",
+          "text": "Cross-encoder sẽ sinh chunk mới để lấp corpus trống"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ cần giảm top-k xuống 1 để recall tự tăng"
+        },
+        {
+          "id": "d",
+          "text": "Reranker chỉ sắp lại candidate đã lấy, không phục hồi chunk bị miss"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d03-x03",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d03",
+      "topic": "p2-t3-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "RAPTOR hỗ trợ câu hỏi tổng hợp xuyên nhiều đoạn bằng cấu trúc gì?",
+      "correct_answer": "c",
+      "explanation": "RAPTOR cluster và tóm tắt đệ quy; câu hỏi tổng quan dùng node cao, chi tiết dùng leaf, đổi thêm chi phí index.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d03",
+          "sha256": "7257c0aa57a2b625e17ab2e588105428045d79ded9c763b7c3b4c6e8809982d8",
+          "pdf_page": 15,
+          "title": "Production RAG",
+          "locator": "Physical PDF page 15; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ tăng overlap mà không có summary node"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ rerank một chunk ngắn nhất cho mọi câu hỏi"
+        },
+        {
+          "id": "c",
+          "text": "Cây tóm tắt phân cấp, truy xuất ở độ cao phù hợp"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ một flat index các chunk cùng mức chi tiết"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d03-x04",
+      "revision": 3,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d03",
+      "topic": "p2-t3-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Contextual enrichment khác late chunking ở chi phí bổ sung chủ yếu nào?",
+      "correct_answer": "b",
+      "explanation": "Contextual prepend dùng LLM thêm câu ngữ cảnh, thường một call/chunk offline; late chunking dùng encoder phù hợp rồi pooling.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d03",
+          "sha256": "7257c0aa57a2b625e17ab2e588105428045d79ded9c763b7c3b4c6e8809982d8",
+          "pdf_page": 17,
+          "title": "Production RAG",
+          "locator": "Physical PDF page 17; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t3-d03",
+          "sha256": "7257c0aa57a2b625e17ab2e588105428045d79ded9c763b7c3b4c6e8809982d8",
+          "pdf_page": 14,
+          "title": "Production RAG",
+          "locator": "Physical PDF page 14; late chunking encoding and pooling",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ thay số dimension mà không tạo ngữ cảnh"
+        },
+        {
+          "id": "b",
+          "text": "Gọi LLM tạo ngữ cảnh cho chunk ở thời điểm index"
+        },
+        {
+          "id": "c",
+          "text": "Luôn gọi LLM cho mỗi user query thay index"
+        },
+        {
+          "id": "d",
+          "text": "Không dùng văn bản context nào trước embed"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d03-x05",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d03",
+      "topic": "p2-t3-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Hypothetical Q&A ở ingestion làm giảm vocab gap bằng cách nào?",
+      "correct_answer": "a",
+      "explanation": "User hay hỏi khác cách văn bản khẳng định; các câu hỏi chunk trả lời được được embed cạnh chunk để làm cầu nối.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d03",
+          "sha256": "7257c0aa57a2b625e17ab2e588105428045d79ded9c763b7c3b4c6e8809982d8",
+          "pdf_page": 19,
+          "title": "Production RAG",
+          "locator": "Physical PDF page 19; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Index câu hỏi giả định trỏ về chunk để query user khớp trực tiếp dạng câu hỏi"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ thay câu trả lời thật bằng đáp án giả để generate"
+        },
+        {
+          "id": "c",
+          "text": "Sinh câu hỏi sau mọi user query và không lưu index"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ lập mục lục tên tài liệu mà không embedding"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d03-x06",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d03",
+      "topic": "p2-t3-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Matryoshka representation cho phép một embedding phục vụ nhiều budget ra sao?",
+      "correct_answer": "d",
+      "explanation": "Model MRL được train cho vector lồng nhau; truncate prefix tạo trade-off cost/quality mà không cần gọi embed lại.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d03",
+          "sha256": "7257c0aa57a2b625e17ab2e588105428045d79ded9c763b7c3b4c6e8809982d8",
+          "pdf_page": 20,
+          "title": "Production RAG",
+          "locator": "Physical PDF page 20; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Cắt tùy vị trí dimension của bất kỳ model thường mà không mất chất lượng"
+        },
+        {
+          "id": "b",
+          "text": "Bắt buộc re-embed toàn corpus mỗi lần thay dimension budget"
+        },
+        {
+          "id": "c",
+          "text": "Dùng cùng vector nhưng thêm zero để luôn tăng precision"
+        },
+        {
+          "id": "d",
+          "text": "Dùng prefix số chiều ngắn để lọc thô rồi full vector cho bước tinh"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d03-x07",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d03",
+      "topic": "p2-t3-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một PDF scan nhiều bảng cần chọn ingestion theo đặc tính nào trước tiên?",
+      "correct_answer": "c",
+      "explanation": "Loại dữ liệu quyết định chunking; PDF/table/scan cần layout-aware, không thể chỉ tối ưu text splitter khi layout bị mất.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d03",
+          "sha256": "7257c0aa57a2b625e17ab2e588105428045d79ded9c763b7c3b4c6e8809982d8",
+          "pdf_page": 21,
+          "title": "Production RAG",
+          "locator": "Physical PDF page 21; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Fixed byte split bất kể hàng/cột bị cắt"
+        },
+        {
+          "id": "b",
+          "text": "Semantic text splitter dù parser chưa đọc được bảng"
+        },
+        {
+          "id": "c",
+          "text": "Layout-aware để giữ quan hệ hàng/cột và cấu trúc trang"
+        },
+        {
+          "id": "d",
+          "text": "Sentence window vì mọi bảng đều là câu văn độc lập"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d03-x08",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d03",
+      "topic": "p2-t3-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "BM25 cho corpus tiếng Việt cần bước chuẩn bị ngôn ngữ nào?",
+      "correct_answer": "b",
+      "explanation": "Tiếng Việt cần phân đoạn từ để sparse keyword indexing phản ánh đơn vị từ, có thể dùng underthesea/VnCoreNLP.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d03",
+          "sha256": "7257c0aa57a2b625e17ab2e588105428045d79ded9c763b7c3b4c6e8809982d8",
+          "pdf_page": 24,
+          "title": "Production RAG",
+          "locator": "Physical PDF page 24; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ stem từng âm tiết riêng lẻ để thay phân đoạn từ"
+        },
+        {
+          "id": "b",
+          "text": "Word segmentation trước khi index"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ tách theo khoảng trắng và coi mỗi âm tiết là một từ hoàn chỉnh"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ loại stopwords mà không phân đoạn từ ghép"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d03-x09",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d03",
+      "topic": "p2-t3-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "SPLADE khác BM25 cơ bản ở cơ chế sparse representation nào?",
+      "correct_answer": "a",
+      "explanation": "SPLADE tạo sparse vector có term expansion để nối vocab gap và vẫn dùng inverted index; cần model encode lúc index.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d03",
+          "sha256": "7257c0aa57a2b625e17ab2e588105428045d79ded9c763b7c3b4c6e8809982d8",
+          "pdf_page": 27,
+          "title": "Production RAG",
+          "locator": "Physical PDF page 27; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Học trọng số và term expansion cho từ liên quan"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ đếm exact term đã xuất hiện không mở rộng"
+        },
+        {
+          "id": "c",
+          "text": "Giữ một vector mỗi token rồi MaxSim như ColBERT"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ ghép rank nhiều hệ mà không có learned sparse encoding"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d03-x10",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d03",
+      "topic": "p2-t3-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "analyze",
+      "question": "Đội chưa có relevance labels hay click log đáng tin cậy. Vì sao nên bắt đầu RRF trước learned fusion?",
+      "correct_answer": "d",
+      "explanation": "Fusion học trọng số cần label gold hoặc weak feedback; RRF không cần train là baseline trước khi thu đủ dữ liệu.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d03",
+          "sha256": "7257c0aa57a2b625e17ab2e588105428045d79ded9c763b7c3b4c6e8809982d8",
+          "pdf_page": 28,
+          "title": "Production RAG",
+          "locator": "Physical PDF page 28; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "RRF cần nhiều nhãn hơn learned fusion"
+        },
+        {
+          "id": "b",
+          "text": "Không có label thì chỉ có thể bỏ sparse search"
+        },
+        {
+          "id": "c",
+          "text": "Weighted fusion tự học chính xác từ model name mà không data"
+        },
+        {
+          "id": "d",
+          "text": "Learned weights cần labeled query-document relevance để train"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d03-x11",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d03",
+      "topic": "p2-t3-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Open-weight reranker có đồng nghĩa không có chi phí vận hành không?",
+      "correct_answer": "c",
+      "explanation": "Chi phí license khác compute self-host; cần chọn reranker theo quality, latency, ngôn ngữ và budget.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d03",
+          "sha256": "7257c0aa57a2b625e17ab2e588105428045d79ded9c763b7c3b4c6e8809982d8",
+          "pdf_page": 34,
+          "title": "Production RAG",
+          "locator": "Physical PDF page 34; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Có; model nhỏ luôn không dùng CPU/GPU"
+        },
+        {
+          "id": "b",
+          "text": "Không; mọi open-weight đều bắt buộc trả API theo query"
+        },
+        {
+          "id": "c",
+          "text": "Không; self-host vẫn tốn compute và phải xét latency/ngôn ngữ"
+        },
+        {
+          "id": "d",
+          "text": "Có; không có license fee nghĩa mọi inference miễn phí"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d03-x12",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d03",
+      "topic": "p2-t3-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "HYDE khác hypothetical Q&A offline ở vị trí phát sinh chi phí nào?",
+      "correct_answer": "b",
+      "explanation": "HYDE embed hypothetical answer cho query hiện tại; offline Q&A làm sẵn cho corpus và trỏ về chunk.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d03",
+          "sha256": "7257c0aa57a2b625e17ab2e588105428045d79ded9c763b7c3b4c6e8809982d8",
+          "pdf_page": 37,
+          "title": "Production RAG",
+          "locator": "Physical PDF page 37; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Hypothetical Q&A offline bắt buộc gọi lại ở mọi user request"
+        },
+        {
+          "id": "b",
+          "text": "HYDE sinh đáp án giả định cho từng query nên thêm call online"
+        },
+        {
+          "id": "c",
+          "text": "HYDE chỉ sinh Q một lần cho mỗi chunk lúc index"
+        },
+        {
+          "id": "d",
+          "text": "Cả hai chỉ cần một call duy nhất cho toàn corpus vĩnh viễn"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d03-x13",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d03",
+      "topic": "p2-t3-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Câu hỏi so sánh nghỉ phép với nghỉ ốm nên cân nhắc Multi-Query theo cách nào?",
+      "correct_answer": "a",
+      "explanation": "Multi-part question cần coverage các phần; Multi-Query decomposition xử lý từng phần với chi phí online thêm.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d03",
+          "sha256": "7257c0aa57a2b625e17ab2e588105428045d79ded9c763b7c3b4c6e8809982d8",
+          "pdf_page": 37,
+          "title": "Production RAG",
+          "locator": "Physical PDF page 37; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tách các sub-query rồi retrieve và hợp kết quả"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ lặp cùng query nguyên văn nhiều lần"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ thêm top-k mà không phủ hai phần hỏi"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ sinh đáp án giả định cho một vế rồi bỏ vế còn lại"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d03-x14",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d03",
+      "topic": "p2-t3-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "CRAG evaluator đánh retrieved context là ambiguous nên chọn nhánh nào?",
+      "correct_answer": "d",
+      "explanation": "CRAG grade-and-route phân biệt correct dùng luôn, ambiguous rewrite, wrong fallback search.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d03",
+          "sha256": "7257c0aa57a2b625e17ab2e588105428045d79ded9c763b7c3b4c6e8809982d8",
+          "pdf_page": 38,
+          "title": "Production RAG",
+          "locator": "Physical PDF page 38; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Luôn dùng context hiện có để generate ngay"
+        },
+        {
+          "id": "b",
+          "text": "Coi ambiguous là bằng chứng đã đủ và dừng"
+        },
+        {
+          "id": "c",
+          "text": "Xóa toàn corpus rồi re-index cho mọi query"
+        },
+        {
+          "id": "d",
+          "text": "Rewrite query trước khi retrieve lại"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d03-x15",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d03",
+      "topic": "p2-t3-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Context có policy v2 và v3 mâu thuẫn, cùng metadata ngày rõ ràng. Bước augment nào nhắm đúng vấn đề?",
+      "correct_answer": "c",
+      "explanation": "Conflict resolution dùng metadata hoặc adjudication để xử lý bản mâu thuẫn trước generation.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d03",
+          "sha256": "7257c0aa57a2b625e17ab2e588105428045d79ded9c763b7c3b4c6e8809982d8",
+          "pdf_page": 39,
+          "title": "Production RAG",
+          "locator": "Physical PDF page 39; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ nén text mà bỏ metadata version"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ chọn chunk có cosine cao hơn bất kể hiệu lực thời gian"
+        },
+        {
+          "id": "c",
+          "text": "Conflict resolution dựa version/time như newest-wins theo chính sách"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ tăng top-k để cung cấp thêm cả hai bản"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d03-x16",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d03",
+      "topic": "p2-t3-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Hai đoạn “được nghỉ” và “không được nghỉ” có cosine cao. Điều này minh họa giới hạn nào?",
+      "correct_answer": "b",
+      "explanation": "Embedding similarity có thể cao dù nghĩa phủ định ngược; cần kiểm entailment thay suy nghĩa chỉ từ cosine.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d03",
+          "sha256": "7257c0aa57a2b625e17ab2e588105428045d79ded9c763b7c3b4c6e8809982d8",
+          "pdf_page": 44,
+          "title": "Production RAG",
+          "locator": "Physical PDF page 44; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ lỗi token budget của LLM generation"
+        },
+        {
+          "id": "b",
+          "text": "Negation insensitivity của embedding"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ thiếu index dimension bất kể model"
+        },
+        {
+          "id": "d",
+          "text": "Bảo đảm hai câu có cùng nghĩa vì vector gần"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d03-x17",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d03",
+      "topic": "p2-t3-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "NLI verification sau retrieval giúp kiểm rủi ro nào mà similarity đơn thuần có thể bỏ sót?",
+      "correct_answer": "a",
+      "explanation": "NLI kiểm quan hệ entailment/contradiction query-chunk, bổ sung cho vector gần nhưng nghĩa khác.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d03",
+          "sha256": "7257c0aa57a2b625e17ab2e588105428045d79ded9c763b7c3b4c6e8809982d8",
+          "pdf_page": 45,
+          "title": "Production RAG",
+          "locator": "Physical PDF page 45; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Negation và entity-swap khiến chunk không entail query"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ xem cosine cao là đủ chứng minh entailment"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ lọc metadata đúng nguồn là đủ chứng minh nội dung hỗ trợ claim"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ đếm keyword trùng nhau để xác định entailment"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d04-x01",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d04",
+      "topic": "p2-t3-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong property graph, năm một quan hệ được thiết lập nên được mô hình hóa thế nào?",
+      "correct_answer": "d",
+      "explanation": "Properties có thể gắn node hoặc edge; year của quan hệ thuộc metadata edge.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d04",
+          "sha256": "d5bc2aee10e46b2073e1cb2dac8cd2bb00590e2019a90cacd40b4505181b9c1b",
+          "pdf_page": 14,
+          "title": "GraphRAG & Knowledge Graphs",
+          "locator": "Physical PDF page 14; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Bắt buộc thành một person node riêng"
+        },
+        {
+          "id": "b",
+          "text": "Đổi label entity thành năm để bỏ relation"
+        },
+        {
+          "id": "c",
+          "text": "Xóa edge và chỉ giữ embedding của hai node"
+        },
+        {
+          "id": "d",
+          "text": "Property trên edge quan hệ tương ứng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d04-x02",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d04",
+      "topic": "p2-t3-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao không thể đảo tùy ý một cạnh BORN_IN trong knowledge graph?",
+      "correct_answer": "c",
+      "explanation": "KG thường directed labeled; quan hệ người-sinh ở-thành phố không giữ cùng nghĩa khi đảo chủ thể/đối tượng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d04",
+          "sha256": "d5bc2aee10e46b2073e1cb2dac8cd2bb00590e2019a90cacd40b4505181b9c1b",
+          "pdf_page": 16,
+          "title": "GraphRAG & Knowledge Graphs",
+          "locator": "Physical PDF page 16; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Graph traversal tự biến mọi edge thành undirected"
+        },
+        {
+          "id": "b",
+          "text": "Có label nghĩa hướng không còn quan trọng"
+        },
+        {
+          "id": "c",
+          "text": "Nhãn quan hệ có hướng subject/object khác vai trò"
+        },
+        {
+          "id": "d",
+          "text": "Mọi relation đều đối xứng như KNOWS"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d04-x03",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d04",
+      "topic": "p2-t3-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong Cypher, WHERE phục vụ thao tác nào?",
+      "correct_answer": "b",
+      "explanation": "MATCH tìm pattern, WHERE lọc và RETURN chọn kết quả trả về.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d04",
+          "sha256": "d5bc2aee10e46b2073e1cb2dac8cd2bb00590e2019a90cacd40b4505181b9c1b",
+          "pdf_page": 18,
+          "title": "GraphRAG & Knowledge Graphs",
+          "locator": "Physical PDF page 18; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tự resolve mọi alias entity trước truy vấn"
+        },
+        {
+          "id": "b",
+          "text": "Lọc dữ liệu khớp điều kiện"
+        },
+        {
+          "id": "c",
+          "text": "Tạo pattern match thay MATCH"
+        },
+        {
+          "id": "d",
+          "text": "Quy định trường kết quả thay RETURN"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d04-x04",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d04",
+      "topic": "p2-t3-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một graph rất lớn nhưng entity/relation extraction nhiễu sẽ gặp hạn chế nào?",
+      "correct_answer": "a",
+      "explanation": "Extraction là bottleneck chi phí/chất lượng; garbage-in tạo graph quan hệ không đáng tin dù nhiều triples.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d04",
+          "sha256": "d5bc2aee10e46b2073e1cb2dac8cd2bb00590e2019a90cacd40b4505181b9c1b",
+          "pdf_page": 19,
+          "title": "GraphRAG & Knowledge Graphs",
+          "locator": "Physical PDF page 19; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Kích thước graph không bù được quan hệ sai hoặc thiếu"
+        },
+        {
+          "id": "b",
+          "text": "Traversal luôn sửa được mọi extraction error"
+        },
+        {
+          "id": "c",
+          "text": "Thêm node tự động làm citation chính xác hơn"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ generation prompt quyết định graph quality"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d04-x05",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d04",
+      "topic": "p2-t3-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "NER và relation extraction khác nhau ở câu hỏi nào?",
+      "correct_answer": "d",
+      "explanation": "NER tìm ai/cái gì/ở đâu; RE xác định quan hệ giữa các thực thể đã nhận diện.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d04",
+          "sha256": "d5bc2aee10e46b2073e1cb2dac8cd2bb00590e2019a90cacd40b4505181b9c1b",
+          "pdf_page": 20,
+          "title": "GraphRAG & Knowledge Graphs",
+          "locator": "Physical PDF page 20; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Cả hai chỉ đếm số token trong chunk"
+        },
+        {
+          "id": "b",
+          "text": "NER chỉ tạo edge còn relation extraction chỉ đặt node name"
+        },
+        {
+          "id": "c",
+          "text": "Relation extraction không cần biết entity nào"
+        },
+        {
+          "id": "d",
+          "text": "Nhận diện thực thể so với xác định cách thực thể tương tác"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d04-x06",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d04",
+      "topic": "p2-t3-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Đại từ “ông” bị tạo thành node riêng thay vì trỏ về nhân vật vừa nhắc. Thiếu bước nào?",
+      "correct_answer": "c",
+      "explanation": "Coreference nối đại từ với entity đúng để không tạo node cô lập và làm mất quan hệ trong văn bản.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d04",
+          "sha256": "d5bc2aee10e46b2073e1cb2dac8cd2bb00590e2019a90cacd40b4505181b9c1b",
+          "pdf_page": 21,
+          "title": "GraphRAG & Knowledge Graphs",
+          "locator": "Physical PDF page 21; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Đổi graph DB sang vector store"
+        },
+        {
+          "id": "b",
+          "text": "Tăng traversal depth sau khi graph đã mất liên kết"
+        },
+        {
+          "id": "c",
+          "text": "Coreference resolution"
+        },
+        {
+          "id": "d",
+          "text": "Entity dedup giữa hai tên viết tắt của công ty"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d04-x07",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d04",
+      "topic": "p2-t3-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Từ “Apple” trong báo cáo iPhone và trong bài trái cây nên xử lý ra sao?",
+      "correct_answer": "b",
+      "explanation": "Disambiguation tách các nghĩa của cùng surface form, tránh tạo quan hệ giả giữa entity khác nhau.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d04",
+          "sha256": "d5bc2aee10e46b2073e1cb2dac8cd2bb00590e2019a90cacd40b4505181b9c1b",
+          "pdf_page": 22,
+          "title": "GraphRAG & Knowledge Graphs",
+          "locator": "Physical PDF page 22; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Đặt cả hai cùng entity ID để tăng connectivity"
+        },
+        {
+          "id": "b",
+          "text": "Phân giải theo ngữ cảnh thành hai thực thể khác nhau"
+        },
+        {
+          "id": "c",
+          "text": "Gộp mọi chuỗi giống nhau thành một node duy nhất"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ dựa chữ hoa đầu câu để quyết định"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d04-x08",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d04",
+      "topic": "p2-t3-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "“OpenAI”, “Open AI” và viết tắt cùng chỉ một tổ chức. Bước nào tránh graph bị chia thành nhiều node?",
+      "correct_answer": "a",
+      "explanation": "Chuẩn hóa và đối sánh string/vector/LLM hợp nhất cách gọi cùng thực thể trước lưu graph.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d04",
+          "sha256": "d5bc2aee10e46b2073e1cb2dac8cd2bb00590e2019a90cacd40b4505181b9c1b",
+          "pdf_page": 23,
+          "title": "GraphRAG & Knowledge Graphs",
+          "locator": "Physical PDF page 23; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Entity normalization/deduplication"
+        },
+        {
+          "id": "b",
+          "text": "Disambiguation buộc tách mọi cách viết thành entity khác"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ tăng BFS depth để coi node là giống nhau"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ tóm tắt community không sửa identity"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d04-x09",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d04",
+      "topic": "p2-t3-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Prototype graph nhỏ đang chuyển sang production hàng triệu node cần cân nhắc gì?",
+      "correct_answer": "d",
+      "explanation": "NetworkX thuận prototype; graph DB hỗ trợ scale/transaction và vận hành production tốt hơn theo nhu cầu.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d04",
+          "sha256": "d5bc2aee10e46b2073e1cb2dac8cd2bb00590e2019a90cacd40b4505181b9c1b",
+          "pdf_page": 25,
+          "title": "GraphRAG & Knowledge Graphs",
+          "locator": "Physical PDF page 25; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Giữ NetworkX trong mọi trường hợp vì không cần ACID"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ tăng depth vô hạn trong memory của một process"
+        },
+        {
+          "id": "c",
+          "text": "Bỏ transaction và persist vì graph có thể tái tạo tức thì"
+        },
+        {
+          "id": "d",
+          "text": "Graph database như Neo4j thay giới hạn in-process prototype"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d04-x10",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d04",
+      "topic": "p2-t3-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Textualization nằm giữa traversal và generation để làm gì?",
+      "correct_answer": "c",
+      "explanation": "Subgraph triples cần được biểu diễn thành text/context mà LLM dùng tổng hợp câu trả lời.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d04",
+          "sha256": "d5bc2aee10e46b2073e1cb2dac8cd2bb00590e2019a90cacd40b4505181b9c1b",
+          "pdf_page": 27,
+          "title": "GraphRAG & Knowledge Graphs",
+          "locator": "Physical PDF page 27; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chạy NER lại trên câu hỏi thay seed matching"
+        },
+        {
+          "id": "b",
+          "text": "Thay traversal bằng exact keyword search"
+        },
+        {
+          "id": "c",
+          "text": "Chuyển subgraph thu được thành context văn bản cho LLM"
+        },
+        {
+          "id": "d",
+          "text": "Tạo entity ID mới thay mọi node cũ"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d04-x11",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d04",
+      "topic": "p2-t3-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Tăng traversal depth không giới hạn có đánh đổi gì?",
+      "correct_answer": "b",
+      "explanation": "Depth quá nông miss multi-hop; quá sâu có thể kéo noise và vượt context, nên cần giới hạn hợp workload.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d04",
+          "sha256": "d5bc2aee10e46b2073e1cb2dac8cd2bb00590e2019a90cacd40b4505181b9c1b",
+          "pdf_page": 30,
+          "title": "GraphRAG & Knowledge Graphs",
+          "locator": "Physical PDF page 30; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Loại bỏ nhu cầu seed node matching"
+        },
+        {
+          "id": "b",
+          "text": "Kéo nhiều quan hệ không liên quan và làm quá tải context"
+        },
+        {
+          "id": "c",
+          "text": "Luôn tăng accuracy mà không thêm noise"
+        },
+        {
+          "id": "d",
+          "text": "Giảm số edge truy xuất vì graph sâu hơn"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d04-x12",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d04",
+      "topic": "p2-t3-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Temporal knowledge graph dùng validity dates trên edge nhằm trả lời loại câu hỏi nào?",
+      "correct_answer": "a",
+      "explanation": "Quan hệ thay đổi theo thời gian; start/end validity cho phép chọn trạng thái phù hợp mốc hỏi.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d04",
+          "sha256": "d5bc2aee10e46b2073e1cb2dac8cd2bb00590e2019a90cacd40b4505181b9c1b",
+          "pdf_page": 35,
+          "title": "GraphRAG & Knowledge Graphs",
+          "locator": "Physical PDF page 35; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Quan hệ nào có hiệu lực tại thời điểm được hỏi"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ entity nào có tên gần nhất theo cosine"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ số node ở thời điểm graph được deploy"
+        },
+        {
+          "id": "d",
+          "text": "Quan hệ hiện tại luôn là đúng cho mọi năm quá khứ"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d04-x13",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d04",
+      "topic": "p2-t3-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một super-node có rất nhiều cạnh gây rủi ro gì khi traversal không chặn?",
+      "correct_answer": "d",
+      "explanation": "Node degree rất lớn có thể kéo quá nhiều dữ liệu không liên quan; cần depth/edge caps.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d04",
+          "sha256": "d5bc2aee10e46b2073e1cb2dac8cd2bb00590e2019a90cacd40b4505181b9c1b",
+          "pdf_page": 36,
+          "title": "GraphRAG & Knowledge Graphs",
+          "locator": "Physical PDF page 36; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tự giảm mọi disconnected component"
+        },
+        {
+          "id": "b",
+          "text": "Bảo đảm mọi fact có source pointer"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ tăng accuracy vì càng nhiều edge càng tốt"
+        },
+        {
+          "id": "d",
+          "text": "Subgraph phình lớn làm tràn context và tăng noise"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d04-x14",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d04",
+      "topic": "p2-t3-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Pointer từ graph node về source chunk gốc hỗ trợ việc gì?",
+      "correct_answer": "c",
+      "explanation": "Source pointer nối cấu trúc đã trích với tài liệu gốc để giữ grounding và kiểm ý nghĩa bị lược khi textualize.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d04",
+          "sha256": "d5bc2aee10e46b2073e1cb2dac8cd2bb00590e2019a90cacd40b4505181b9c1b",
+          "pdf_page": 37,
+          "title": "GraphRAG & Knowledge Graphs",
+          "locator": "Physical PDF page 37; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ quy định số hop tối đa của truy vấn"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ lưu seed entity ID để bắt đầu traversal"
+        },
+        {
+          "id": "c",
+          "text": "Khôi phục ngữ cảnh và kiểm bằng chứng của quan hệ"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ ghi lại thứ tự traversal giữa các node đã duyệt"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d04-x15",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d04",
+      "topic": "p2-t3-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Community detection bằng Leiden tổ chức graph theo hướng nào?",
+      "correct_answer": "b",
+      "explanation": "Community structure tạo đơn vị tóm tắt nhiều cấp phục vụ sensemaking/global questions.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d04",
+          "sha256": "d5bc2aee10e46b2073e1cb2dac8cd2bb00590e2019a90cacd40b4505181b9c1b",
+          "pdf_page": 41,
+          "title": "GraphRAG & Knowledge Graphs",
+          "locator": "Physical PDF page 41; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Nhóm node theo thứ tự được BFS khám phá từ một seed"
+        },
+        {
+          "id": "b",
+          "text": "Nhóm node liên kết chặt thành cộng đồng phân cấp"
+        },
+        {
+          "id": "c",
+          "text": "Nhóm node chỉ theo cosine của tên thực thể, bỏ qua cạnh"
+        },
+        {
+          "id": "d",
+          "text": "Nhóm node chỉ theo degree bằng nhau dù không liên kết"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d04-x16",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d04",
+      "topic": "p2-t3-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Global search của MS GraphRAG khác local search ở nguồn context nào?",
+      "correct_answer": "a",
+      "explanation": "Local phù hợp entity/relation cụ thể; global dùng community summaries cho chủ đề toàn corpus.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d04",
+          "sha256": "d5bc2aee10e46b2073e1cb2dac8cd2bb00590e2019a90cacd40b4505181b9c1b",
+          "pdf_page": 43,
+          "title": "GraphRAG & Knowledge Graphs",
+          "locator": "Physical PDF page 43; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Đọc báo cáo cộng đồng đã có thay vì chỉ duyệt node cho quan hệ cụ thể"
+        },
+        {
+          "id": "b",
+          "text": "Luôn đọc nguyên corpus thô ở mỗi request"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ tìm một seed node và bỏ mọi summary"
+        },
+        {
+          "id": "d",
+          "text": "Không dùng LLM generation vì community là đáp án cuối cố định"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d04-x17",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d04",
+      "topic": "p2-t3-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "LightRAG giảm phần index nặng của MS GraphRAG bằng hướng nào?",
+      "correct_answer": "d",
+      "explanation": "LightRAG tập trung dual-level retrieval và embedding node/edge, tránh chi phí xây sẵn bộ community summaries lớn.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d04",
+          "sha256": "d5bc2aee10e46b2073e1cb2dac8cd2bb00590e2019a90cacd40b4505181b9c1b",
+          "pdf_page": 45,
+          "title": "GraphRAG & Knowledge Graphs",
+          "locator": "Physical PDF page 45; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Bỏ mọi relation và chỉ giữ raw chunk"
+        },
+        {
+          "id": "b",
+          "text": "Luôn tạo thêm nhiều community report hơn mọi cấp"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ tăng context window để không cần retrieval"
+        },
+        {
+          "id": "d",
+          "text": "Dual-level retrieval cho entity/khái niệm mà không precompute mọi community report"
+        }
+      ],
+      "shuffle_options": true
+    }
+  ]
+}

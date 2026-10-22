@@ -1,0 +1,517 @@
+{
+  "batch_file": "data/questions/drafts/expand-b-09.json",
+  "reviewer_id": "root-independent-review",
+  "reviewed_at": "2026-10-22T15:28:49.967685+00:00",
+  "results": [
+    {
+      "id": "p2-t3-d09-x01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d09",
+          "pdf_page": 18
+        }
+      ],
+      "notes": [
+        "Answer Relevancy reverse question generation separates on-topic from actual answering.",
+        "Root independently read stem, options, explanation and verified against cited PDF page."
+      ]
+    },
+    {
+      "id": "p2-t3-d09-x02",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d09",
+          "pdf_page": 20
+        }
+      ],
+      "notes": [
+        "Context Recall requires ground-truth answer to measure coverage of necessary reference points.",
+        "Root independently read stem, options, explanation and verified against cited PDF page."
+      ]
+    },
+    {
+      "id": "p2-t3-d09-x03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d09",
+          "pdf_page": 22
+        }
+      ],
+      "notes": [
+        "Synthetic question distribution must match real multi-context traffic patterns.",
+        "Root independently read stem, options, explanation and verified against cited PDF page."
+      ]
+    },
+    {
+      "id": "p2-t3-d09-x04",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d09",
+          "pdf_page": 23
+        }
+      ],
+      "notes": [
+        "Concurrently upgrading judge model and RAGAS version confounds score changes.",
+        "Root independently read stem, options, explanation and verified against cited PDF page."
+      ]
+    },
+    {
+      "id": "p2-t3-d09-x05",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d09",
+          "pdf_page": 29
+        }
+      ],
+      "notes": [
+        "Pairwise evaluation compares candidate versions directly on same input, reducing drift.",
+        "Root independently read stem, options, explanation and verified against cited PDF page."
+      ]
+    },
+    {
+      "id": "p2-t3-d09-x06",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d09",
+          "pdf_page": 32
+        }
+      ],
+      "notes": [
+        "Judge model family self-preference bias requires mitigation through model swapping.",
+        "Root independently read stem, options, explanation and verified against cited PDF page."
+      ]
+    },
+    {
+      "id": "p2-t3-d09-x07",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d09",
+          "pdf_page": 33
+        }
+      ],
+      "notes": [
+        "Formatting/markdown verbosity bias in LLM judges scored higher despite identical information.",
+        "Root independently read stem, options, explanation and verified against cited PDF page."
+      ]
+    },
+    {
+      "id": "p2-t3-d09-x08",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d09",
+          "pdf_page": 46
+        }
+      ],
+      "notes": [
+        "Input validator immediate refusal saves compute and latency by not passing malicious requests downstream.",
+        "Root independently read stem, options, explanation and verified against cited PDF page."
+      ]
+    },
+    {
+      "id": "p2-t3-d09-x09",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d09",
+          "pdf_page": 35
+        }
+      ],
+      "notes": [
+        "Tiered evaluation routes easy cases to cheaper models and reserves frontier models for ambiguous cases.",
+        "Root independently read stem, options, explanation and verified against cited PDF page."
+      ]
+    },
+    {
+      "id": "p2-t3-d09-x10",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d09",
+          "pdf_page": 37
+        }
+      ],
+      "notes": [
+        "Hallucination check against retrieved context flags direct contradiction in quantitative facts.",
+        "Root independently read stem, options, explanation and verified against cited PDF page."
+      ]
+    },
+    {
+      "id": "p2-t3-d09-x11",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d09",
+          "pdf_page": 38
+        }
+      ],
+      "notes": [
+        "SelfCheckGPT samples multiple stochastic completions to evaluate consistency without reference.",
+        "Root independently read stem, options, explanation and verified against cited PDF page."
+      ]
+    },
+    {
+      "id": "p2-t3-d09-x12",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d09",
+          "pdf_page": 40
+        }
+      ],
+      "notes": [
+        "Semantic entropy groups paraphrases into semantic clusters rather than token differences.",
+        "Root independently read stem, options, explanation and verified against cited PDF page."
+      ]
+    },
+    {
+      "id": "p2-t3-d09-x13",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d09",
+          "pdf_page": 39
+        }
+      ],
+      "notes": [
+        "NLI-based faithfulness treats retrieved context as premise and model output claim as hypothesis.",
+        "Root independently read stem, options, explanation and verified against cited PDF page."
+      ]
+    },
+    {
+      "id": "p2-t3-d09-x14",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d09",
+          "pdf_page": 46
+        }
+      ],
+      "notes": [
+        "Fail-open vs fail-closed guardrail policy balances user experience against safety/compliance risk.",
+        "Root independently read stem, options, explanation and verified against cited PDF page."
+      ]
+    },
+    {
+      "id": "p2-t3-d09-x15",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d09",
+          "pdf_page": 69
+        }
+      ],
+      "notes": [
+        "Entity recognition customization handles Vietnamese PII formats (CCCD, phone numbers).",
+        "Root independently read stem, options, explanation and verified against cited PDF page."
+      ]
+    },
+    {
+      "id": "p2-t3-d09-x16",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d09",
+          "pdf_page": 54
+        }
+      ],
+      "notes": [
+        "Retaining blocked malicious prompts in session history risks subsequent jailbreak exploitation.",
+        "Root independently read stem, options, explanation and verified against cited PDF page."
+      ]
+    },
+    {
+      "id": "p2-t3-d09-x17",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d09",
+          "pdf_page": 56
+        }
+      ],
+      "notes": [
+        "Execution rails validate tool calls and argument bounds before real-world external side-effects.",
+        "Root independently read stem, options, explanation and verified against cited PDF page."
+      ]
+    },
+    {
+      "id": "p2-t3-d10-x01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d10",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "Cascading retry storms amplify provider degradation without exponential backoff and jitter.",
+        "Root independently read stem, options, explanation and verified against cited PDF page."
+      ]
+    },
+    {
+      "id": "p2-t3-d10-x02",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d10",
+          "pdf_page": 10
+        }
+      ],
+      "notes": [
+        "0% error rate with declining faithfulness indicates silent degradation not captured by HTTP uptime.",
+        "Root independently read stem, options, explanation and verified against cited PDF page."
+      ]
+    },
+    {
+      "id": "p2-t3-d10-x03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d10",
+          "pdf_page": 12
+        }
+      ],
+      "notes": [
+        "HALF-OPEN state in circuit breaker probes provider recovery with limited test requests.",
+        "Root independently read stem, options, explanation and verified against cited PDF page."
+      ]
+    },
+    {
+      "id": "p2-t3-d10-x04",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d10",
+          "pdf_page": 13
+        }
+      ],
+      "notes": [
+        "Defining specific breaker-tripping exceptions avoids tripping on client-side bad requests (400).",
+        "Root independently read stem, options, explanation and verified against cited PDF page."
+      ]
+    },
+    {
+      "id": "p2-t3-d10-x05",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d10",
+          "pdf_page": 13
+        }
+      ],
+      "notes": [
+        "In-memory breaker state across multiple instances causes inconsistent routing.",
+        "Root independently read stem, options, explanation and verified against cited PDF page."
+      ]
+    },
+    {
+      "id": "p2-t3-d10-x06",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d10",
+          "pdf_page": 14
+        }
+      ],
+      "notes": [
+        "Fallback provider without tool calling capability requires graceful degradation to text-only mode.",
+        "Root independently read stem, options, explanation and verified against cited PDF page."
+      ]
+    },
+    {
+      "id": "p2-t3-d10-x07",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d10",
+          "pdf_page": 15
+        }
+      ],
+      "notes": [
+        "Sensitive tasks require hard refusal or human escalation rather than degraded model substitution.",
+        "Root independently read stem, options, explanation and verified against cited PDF page."
+      ]
+    },
+    {
+      "id": "p2-t3-d10-x08",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d10",
+          "pdf_page": 17
+        }
+      ],
+      "notes": [
+        "Tool-result caching prioritizes deterministic idempotent read operations over stateful mutations.",
+        "Root independently read stem, options, explanation and verified against cited PDF page."
+      ]
+    },
+    {
+      "id": "p2-t3-d10-x09",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d10",
+          "pdf_page": 18
+        }
+      ],
+      "notes": [
+        "High semantic cache hit rate with wrong answers indicates semantic similarity threshold set too loose.",
+        "Root independently read stem, options, explanation and verified against cited PDF page."
+      ]
+    },
+    {
+      "id": "p2-t3-d10-x10",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d10",
+          "pdf_page": 19
+        }
+      ],
+      "notes": [
+        "Hard budget limit enforcement requires stopping requests or switching to local/free models.",
+        "Root independently read stem, options, explanation and verified against cited PDF page."
+      ]
+    },
+    {
+      "id": "p2-t3-d10-x11",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d10",
+          "pdf_page": 19
+        }
+      ],
+      "notes": [
+        "Per-request tool call limits and timeouts prevent single runaway queries from exhausting quota.",
+        "Root independently read stem, options, explanation and verified against cited PDF page."
+      ]
+    },
+    {
+      "id": "p2-t3-d10-x12",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d10",
+          "pdf_page": 20
+        }
+      ],
+      "notes": [
+        "Dynamic personalized data (account balance) violates semantic cache freshness and privacy assumptions.",
+        "Root independently read stem, options, explanation and verified against cited PDF page."
+      ]
+    },
+    {
+      "id": "p2-t3-d10-x13",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d10",
+          "pdf_page": 20
+        }
+      ],
+      "notes": [
+        "Policy summary caching requires explicit invalidation trigger when underlying source policy updates.",
+        "Root independently read stem, options, explanation and verified against cited PDF page."
+      ]
+    },
+    {
+      "id": "p2-t3-d10-x14",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d10",
+          "pdf_page": 20
+        }
+      ],
+      "notes": [
+        "Time-sensitive weather query caching requires short TTL expiring at end of target observation window.",
+        "Root independently read stem, options, explanation and verified against cited PDF page."
+      ]
+    },
+    {
+      "id": "p2-t3-d10-x15",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d10",
+          "pdf_page": 22
+        }
+      ],
+      "notes": [
+        "SLI measures observed metric value; SLO defines target threshold; SLA establishes contractual commitment.",
+        "Root independently read stem, options, explanation and verified against cited PDF page."
+      ]
+    },
+    {
+      "id": "p2-t3-d10-x16",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d10",
+          "pdf_page": 24
+        }
+      ],
+      "notes": [
+        "Chaos testing provider timeout verifies that fallback activates, circuit trips, and errors degrade gracefully.",
+        "Root independently read stem, options, explanation and verified against cited PDF page."
+      ]
+    },
+    {
+      "id": "p2-t3-d10-x17",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d10",
+          "pdf_page": 28
+        }
+      ],
+      "notes": [
+        "Cache evaluation before/after report must preserve identical test workload, temperature, and environment.",
+        "Root independently read stem, options, explanation and verified against cited PDF page."
+      ]
+    }
+  ]
+}

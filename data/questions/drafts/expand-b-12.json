@@ -1,0 +1,1614 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.22.expand-b-12",
+  "questions": [
+    {
+      "id": "p2-t4-d03-x01",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d03",
+      "topic": "p2-t4-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Cần tách từng người thành mask riêng thay vì tô tất cả người bằng cùng một class. Output nào đáp ứng?",
+      "correct_answer": "a",
+      "explanation": "Instance segmentation gắn mask với từng đối tượng, giữ khả năng phân biệt các cá thể cùng class.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d03",
+          "sha256": "bbc8de22523a77f295328ce15328e0d811a078152b75e9d6cedd159dc45e739e",
+          "pdf_page": 7,
+          "title": "2D Perception: Detection · Segmentation · Keypoints",
+          "locator": "Physical PDF page 7; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Instance segmentation"
+        },
+        {
+          "id": "b",
+          "text": "Semantic segmentation chỉ có class mỗi pixel"
+        },
+        {
+          "id": "c",
+          "text": "Image classification chỉ có nhãn cả ảnh"
+        },
+        {
+          "id": "d",
+          "text": "Object detection chỉ có box không mask"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d03-x02",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d03",
+      "topic": "p2-t4-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Đưa box dự đoán trên ảnh letterbox về ảnh gốc cần xử lý gì?",
+      "correct_answer": "d",
+      "explanation": "Letterbox thêm đệm sau resize giữ tỉ lệ; phải đảo cả hai biến đổi hình học.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d03",
+          "sha256": "bbc8de22523a77f295328ce15328e0d811a078152b75e9d6cedd159dc45e739e",
+          "pdf_page": 13,
+          "title": "2D Perception: Detection · Segmentation · Keypoints",
+          "locator": "Physical PDF page 13; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ chia scale và giữ nguyên padding trong tọa độ"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ trừ padding mà không đảo scale"
+        },
+        {
+          "id": "c",
+          "text": "Coi tọa độ sau letterbox đã thuộc ảnh gốc"
+        },
+        {
+          "id": "d",
+          "text": "Trừ padding rồi chia scale resize"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d03-x03",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d03",
+      "topic": "p2-t4-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Fast R-CNN tiết kiệm compute so với chạy CNN riêng cho từng region bằng cách nào?",
+      "correct_answer": "c",
+      "explanation": "Chia sẻ tính toán backbone trên ảnh tránh hàng nghìn lượt CNN theo proposal.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d03",
+          "sha256": "bbc8de22523a77f295328ce15328e0d811a078152b75e9d6cedd159dc45e739e",
+          "pdf_page": 15,
+          "title": "2D Perception: Detection · Segmentation · Keypoints",
+          "locator": "Physical PDF page 15; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Bỏ toàn bộ feature map và chỉ dùng box coordinates"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ dùng Selective Search thay cho mọi phép phân lớp"
+        },
+        {
+          "id": "c",
+          "text": "Chạy CNN toàn ảnh một lần rồi lấy feature cho từng RoI"
+        },
+        {
+          "id": "d",
+          "text": "Tăng số region rồi chạy CNN độc lập trên tất cả"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d03-x04",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d03",
+      "topic": "p2-t4-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "RoIAlign cải thiện căn chỉnh feature cho mask bằng cơ chế nào?",
+      "correct_answer": "c",
+      "explanation": "Không lượng tử hóa tọa độ giúp feature khớp không gian, quan trọng cho mask từng pixel.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d03",
+          "sha256": "bbc8de22523a77f295328ce15328e0d811a078152b75e9d6cedd159dc45e739e",
+          "pdf_page": 18,
+          "title": "2D Perception: Detection · Segmentation · Keypoints",
+          "locator": "Physical PDF page 18; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Làm tròn biên RoI và bin trước khi max pooling"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ chọn pixel nguyên gần nhất cho mọi tọa độ lấy mẫu"
+        },
+        {
+          "id": "c",
+          "text": "Nội suy song tuyến thay làm tròn tọa độ vùng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d03-x05",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d03",
+      "topic": "p2-t4-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Hai người đứng sát nhau có box IoU cao. Giảm mạnh ngưỡng NMS có nguy cơ gì?",
+      "correct_answer": "a",
+      "explanation": "NMS có trade-off giữa bỏ duplicate và suppress các vật thật chồng nhau trong cảnh đông.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d03",
+          "sha256": "bbc8de22523a77f295328ce15328e0d811a078152b75e9d6cedd159dc45e739e",
+          "pdf_page": 29,
+          "title": "2D Perception: Detection · Segmentation · Keypoints",
+          "locator": "Physical PDF page 29; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Xóa nhầm box của một người thật"
+        },
+        {
+          "id": "b",
+          "text": "Tự tăng khả năng giữ mọi người và mọi duplicate"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ đổi confidence không bao giờ loại box"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ ảnh hưởng class khác, không ảnh hưởng hai người"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d03-x06",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d03",
+      "topic": "p2-t4-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong DETR, query không được Hungarian matching ghép với ground truth học mục tiêu nào?",
+      "correct_answer": "d",
+      "explanation": "One-to-one matching dành query dư cho no-object để tránh nhiều dự đoán foreground cho cùng object.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d03",
+          "sha256": "bbc8de22523a77f295328ce15328e0d811a078152b75e9d6cedd159dc45e739e",
+          "pdf_page": 31,
+          "title": "2D Perception: Detection · Segmentation · Keypoints",
+          "locator": "Physical PDF page 31; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Bắt buộc ghép lại với ground truth đã có query khác"
+        },
+        {
+          "id": "b",
+          "text": "Một class foreground ngẫu nhiên"
+        },
+        {
+          "id": "c",
+          "text": "Box trung bình của mọi object trong ảnh"
+        },
+        {
+          "id": "d",
+          "text": "Class no-object"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d03-x07",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d03",
+      "topic": "p2-t4-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "CLIP thực hiện zero-shot classification bằng cách so ảnh với đại lượng nào?",
+      "correct_answer": "c",
+      "explanation": "Image và text encoders ánh xạ về không gian chung; chọn mô tả class gần ảnh nhất.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d03",
+          "sha256": "bbc8de22523a77f295328ce15328e0d811a078152b75e9d6cedd159dc45e739e",
+          "pdf_page": 35,
+          "title": "2D Perception: Detection · Segmentation · Keypoints",
+          "locator": "Physical PDF page 35; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tọa độ ground truth boxes của ảnh đang hỏi"
+        },
+        {
+          "id": "b",
+          "text": "Mask của từng class do NMS sinh ra"
+        },
+        {
+          "id": "c",
+          "text": "Embeddings của các mô tả text ứng với class"
+        },
+        {
+          "id": "d",
+          "text": "Weights classifier mới phải train đầy đủ trên nhãn đích"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d03-x08",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d03",
+      "topic": "p2-t4-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Hai dự đoán cùng class đều phủ một ground truth đã được ghép. Dự đoán duplicate còn lại được tính thế nào?",
+      "correct_answer": "b",
+      "explanation": "Mỗi ground truth chỉ ghép một dự đoán; duplicate không được tính thêm true positive.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d03",
+          "sha256": "bbc8de22523a77f295328ce15328e0d811a078152b75e9d6cedd159dc45e739e",
+          "pdf_page": 42,
+          "title": "2D Perception: Detection · Segmentation · Keypoints",
+          "locator": "Physical PDF page 42; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Không bao giờ ảnh hưởng precision"
+        },
+        {
+          "id": "b",
+          "text": "False positive"
+        },
+        {
+          "id": "c",
+          "text": "True positive thứ hai của cùng ground truth"
+        },
+        {
+          "id": "d",
+          "text": "False negative vì có thêm box"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d03-x09",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d03",
+      "topic": "p2-t4-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Hai detector có cùng mAP tổng nhưng sản phẩm quan tâm vật rất nhỏ. Cần xem thêm metric nào?",
+      "correct_answer": "a",
+      "explanation": "Aggregate mAP có thể che khác biệt theo kích thước; slice metric kiểm nhóm quan trọng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d03",
+          "sha256": "bbc8de22523a77f295328ce15328e0d811a078152b75e9d6cedd159dc45e739e",
+          "pdf_page": 44,
+          "title": "2D Perception: Detection · Segmentation · Keypoints",
+          "locator": "Physical PDF page 44; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "AP theo nhóm kích thước, đặc biệt AP-small"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ số lượng tham số vì nó thay được AP-small"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ AP-large vì mAP đã cố định"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ confidence trung bình trên mọi prediction"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d03-x10",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d03",
+      "topic": "p2-t4-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Model triển khai ở confidence 0.5 cần bổ sung báo cáo nào ngoài mAP tính bằng quét score?",
+      "correct_answer": "d",
+      "explanation": "mAP tóm tắt ranking qua ngưỡng; operating point triển khai cần P/R thực tại threshold đã chọn.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d03",
+          "sha256": "bbc8de22523a77f295328ce15328e0d811a078152b75e9d6cedd159dc45e739e",
+          "pdf_page": 45,
+          "title": "2D Perception: Detection · Segmentation · Keypoints",
+          "locator": "Physical PDF page 45; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ mAP rồi suy mọi operating point đều tốt"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ AP50 thay mọi ngưỡng score thực tế"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ số prediction trước lọc mà bỏ TP/FP/FN"
+        },
+        {
+          "id": "d",
+          "text": "Precision/recall/F1 tại chính ngưỡng triển khai"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d03-x11",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d03",
+      "topic": "p2-t4-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Skip connections của U-Net hỗ trợ decoder khôi phục biên bằng cách nào?",
+      "correct_answer": "c",
+      "explanation": "Feature nông giữ chi tiết không gian, được concat với feature decoder để phục hồi cấu trúc biên.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d03",
+          "sha256": "bbc8de22523a77f295328ce15328e0d811a078152b75e9d6cedd159dc45e739e",
+          "pdf_page": 51,
+          "title": "2D Perception: Detection · Segmentation · Keypoints",
+          "locator": "Physical PDF page 51; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Loại hết feature nông vì ít ngữ nghĩa"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ tăng số lớp fully connected sau downsampling"
+        },
+        {
+          "id": "c",
+          "text": "Ghép feature encoder cùng độ phân giải vào decoder"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ truyền final class label từ encoder sang mọi pixel"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d03-x12",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d03",
+      "topic": "p2-t4-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Pixel accuracy cao có thể gây hiểu nhầm khi foreground rất nhỏ vì sao?",
+      "correct_answer": "b",
+      "explanation": "Class imbalance khiến accuracy bị lớp lớn chi phối; class-wise IoU/mIoU hoặc Dice nhìn rõ vùng nhỏ hơn.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d03",
+          "sha256": "bbc8de22523a77f295328ce15328e0d811a078152b75e9d6cedd159dc45e739e",
+          "pdf_page": 54,
+          "title": "2D Perception: Detection · Segmentation · Keypoints",
+          "locator": "Physical PDF page 54; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Foreground nhỏ không được tính vào bất kỳ metric nào"
+        },
+        {
+          "id": "b",
+          "text": "Dự đoán lớp nền chiếm đa số vẫn có thể cho accuracy cao"
+        },
+        {
+          "id": "c",
+          "text": "Pixel accuracy luôn bằng mIoU bất kể phân bố class"
+        },
+        {
+          "id": "d",
+          "text": "Accuracy tự cân bằng mọi class hiếm"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d03-x13",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d03",
+      "topic": "p2-t4-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "YOLO-seg tạo mask riêng cho từng detection từ cơ chế nào?",
+      "correct_answer": "a",
+      "explanation": "Prototype masks dùng chung được kết hợp bằng vector coefficients từng object rồi crop/upsample.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d03",
+          "sha256": "bbc8de22523a77f295328ce15328e0d811a078152b75e9d6cedd159dc45e739e",
+          "pdf_page": 57,
+          "title": "2D Perception: Detection · Segmentation · Keypoints",
+          "locator": "Physical PDF page 57; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tổ hợp prototypes dùng chung với coefficients riêng mỗi detection"
+        },
+        {
+          "id": "b",
+          "text": "Chạy image encoder đầy đủ riêng cho mỗi pixel mask"
+        },
+        {
+          "id": "c",
+          "text": "Dùng cùng một mask nhị phân cho mọi detection"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ rasterize bounding box và coi đó là mask chính xác"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d03-x14",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d03",
+      "topic": "p2-t4-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Đổi thứ tự keypoint trong dataset nhưng giữ nguyên decoder có thể gây lỗi gì?",
+      "correct_answer": "b",
+      "explanation": "Keypoint ordering là contract giữa nhãn, model và hậu xử lý, nên lỗi có thể âm thầm qua shape checks.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d03",
+          "sha256": "bbc8de22523a77f295328ce15328e0d811a078152b75e9d6cedd159dc45e739e",
+          "pdf_page": 67,
+          "title": "2D Perception: Detection · Segmentation · Keypoints",
+          "locator": "Physical PDF page 67; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Decoder tự suy thứ tự joint mới từ các coordinate values mà không đổi schema"
+        },
+        {
+          "id": "b",
+          "text": "Tọa độ được diễn giải thành sai khớp dù tensor shape hợp lệ"
+        },
+        {
+          "id": "c",
+          "text": "Tensor shape chắc chắn không hợp lệ ngay khi hoán đổi thứ tự keypoint"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d03-x15",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d03",
+      "topic": "p2-t4-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Top-down pose thường có latency tăng theo số người vì sao?",
+      "correct_answer": "c",
+      "explanation": "Top-down xử lý mỗi person crop; bottom-up hay one-stage chia sẻ lượt suy luận toàn ảnh.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d03",
+          "sha256": "bbc8de22523a77f295328ce15328e0d811a078152b75e9d6cedd159dc45e739e",
+          "pdf_page": 70,
+          "title": "2D Perception: Detection · Segmentation · Keypoints",
+          "locator": "Physical PDF page 70; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Không có bước phát hiện người trước pose"
+        },
+        {
+          "id": "b",
+          "text": "Mọi người dùng chung một crop duy nhất"
+        },
+        {
+          "id": "c",
+          "text": "Chạy pose estimator cho từng crop người đã detect"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ tạo một heatmap chung bất kể số người"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d03-x16",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d03",
+      "topic": "p2-t4-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "PCK trên crop người đã biết có thể bỏ qua lỗi nào của pipeline pose từ ảnh thô?",
+      "correct_answer": "b",
+      "explanation": "PCK đo định vị khi biết person location; OKS-AP từ ảnh thô xét cả detection và keypoints.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d03",
+          "sha256": "bbc8de22523a77f295328ce15328e0d811a078152b75e9d6cedd159dc45e739e",
+          "pdf_page": 75,
+          "title": "2D Perception: Detection · Segmentation · Keypoints",
+          "locator": "Physical PDF page 75; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Sai số định vị keypoint trong crop được chấm"
+        },
+        {
+          "id": "b",
+          "text": "Bỏ sót hoặc phát hiện nhầm người"
+        },
+        {
+          "id": "c",
+          "text": "Sai tọa độ khớp so với chuẩn tham chiếu"
+        },
+        {
+          "id": "d",
+          "text": "Khớp lệch quá ngưỡng chuẩn hóa đã chọn"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d04-x01",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d04",
+      "topic": "p2-t4-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Hệ thống cần nhận diện màu đèn và nội dung biển báo. Modality nào cung cấp semantic/color context trực tiếp nhất?",
+      "correct_answer": "d",
+      "explanation": "Camera phù hợp lane/sign/color; modality khác đóng góp geometry, velocity hoặc near-field range.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 6,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "locator": "Physical PDF page 6; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Radar Doppler targets đơn thuần"
+        },
+        {
+          "id": "b",
+          "text": "Sonar range samples đơn thuần"
+        },
+        {
+          "id": "c",
+          "text": "LiDAR ranges không kèm ảnh"
+        },
+        {
+          "id": "d",
+          "text": "Camera"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d04-x02",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d04",
+      "topic": "p2-t4-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Event camera tạo khác biệt dữ liệu nào so với camera RGB frame thông thường?",
+      "correct_answer": "c",
+      "explanation": "Event camera có latency thấp/HDR cho motion nhanh nhưng cần toolchain cho dữ liệu sparse asynchronous.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 7,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "locator": "Physical PDF page 7; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ một scalar range tại mỗi lần đo"
+        },
+        {
+          "id": "b",
+          "text": "Point cloud LiDAR có azimuth và intensity"
+        },
+        {
+          "id": "c",
+          "text": "Sự kiện thưa và bất đồng bộ, phù hợp chuyển động nhanh"
+        },
+        {
+          "id": "d",
+          "text": "Các frame RGB đầy đủ luôn đồng bộ cùng một tần số cố định"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d04-x03",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d04",
+      "topic": "p2-t4-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Camera tăng resolution và bit depth rồi bắt đầu drop frames. Kiểm tra hệ thống nào sát nguyên nhân?",
+      "correct_answer": "c",
+      "explanation": "Data rate tăng có thể vượt link/buffer trước model; cần kiểm IO và latency pipeline.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 8,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "locator": "Physical PDF page 8; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ đo thời gian inference trên các frame đã nhận, bỏ qua link và buffer"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ tăng buffer mà không đo data rate vượt throughput của interface"
+        },
+        {
+          "id": "c",
+          "text": "Bandwidth theo FPS×resolution×bit depth và interface IO"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d04-x04",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d04",
+      "topic": "p2-t4-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Các cột thẳng bị nghiêng khi drone quay nhanh. Hiện tượng camera nào nên nghi ngờ?",
+      "correct_answer": "b",
+      "explanation": "Rolling shutter tạo méo theo thời gian quét; global shutter hoặc motion compensation là hướng xử lý.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 8,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "locator": "Physical PDF page 8; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Lens distortion cố định theo vị trí ảnh, không phụ thuộc tốc độ quay"
+        },
+        {
+          "id": "b",
+          "text": "Rolling shutter do các scanline được ghi ở thời điểm khác nhau"
+        },
+        {
+          "id": "c",
+          "text": "Motion blur đồng đều trên toàn frame do exposure dài, không có lệch thời điểm giữa các hàng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d04-x05",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d04",
+      "topic": "p2-t4-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Robot dùng 2D scanning LiDAR ngang vẫn có thể bỏ sót loại vật nào?",
+      "correct_answer": "d",
+      "explanation": "2D scanner chỉ quan sát một mặt phẳng, không bảo đảm coverage vật ở cao độ khác.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 9,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Mọi vật cắt đúng mặt phẳng ngang đều vô hình"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ vật có class không có trong camera label map"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ vật di chuyển, còn mọi vật tĩnh đều được phủ toàn 3D"
+        },
+        {
+          "id": "d",
+          "text": "Vật treo cao hoặc vật thấp ngoài mặt phẳng quét"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d04-x06",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d04",
+      "topic": "p2-t4-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Point cloud bị thiếu một số dải azimuth sau truyền Ethernet/UDP. Bằng chứng nào nên xem trước?",
+      "correct_answer": "c",
+      "explanation": "Packet loss có thể làm scan thủng; IO evidence giúp phân biệt thiếu dữ liệu với model miss.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 10,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "locator": "Physical PDF page 10; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ semantic class score của object còn thấy"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ accuracy trên ảnh sạch ban ngày"
+        },
+        {
+          "id": "c",
+          "text": "Packet count và azimuth coverage của scan"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ focal length camera"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d04-x07",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d04",
+      "topic": "p2-t4-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Radar bổ sung đại lượng nào đặc biệt hữu ích cho ACC bên cạnh range?",
+      "correct_answer": "b",
+      "explanation": "Radar hỗ trợ range và velocity trong điều kiện thời tiết xấu, dù semantic và angular resolution có hạn chế.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 11,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "locator": "Physical PDF page 11; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Instance mask chi tiết từng pixel"
+        },
+        {
+          "id": "b",
+          "text": "Vận tốc đo qua Doppler"
+        },
+        {
+          "id": "c",
+          "text": "Màu sơn xe chính xác"
+        },
+        {
+          "id": "d",
+          "text": "Nội dung chữ trên biển báo"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d04-x08",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d04",
+      "topic": "p2-t4-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Nhiều sonar phát gần nhau làm range nhảy bất thường. Failure mode nào phù hợp?",
+      "correct_answer": "a",
+      "explanation": "Phản xạ âm của sensor lân cận có thể gây nhiễu; cần xem bố trí/scheduling và kiểm reading.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 12,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Ultrasonic cross-talk"
+        },
+        {
+          "id": "b",
+          "text": "Camera rolling shutter"
+        },
+        {
+          "id": "c",
+          "text": "LiDAR azimuth packet loss"
+        },
+        {
+          "id": "d",
+          "text": "Sai principal point của camera"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d04-x09",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d04",
+      "topic": "p2-t4-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Camera gặp glare làm nhiều pixel cháy sáng. Health metric nào đo trực tiếp dấu hiệu đó?",
+      "correct_answer": "c",
+      "explanation": "Tỉ lệ pixel bão hòa và local contrast phản ánh overexposure làm mất texture.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 16,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "locator": "Physical PDF page 16; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ số dropped-frame ratio để suy ra mức cháy sáng"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ tỷ lệ frame đến trễ mà không xem giá trị pixel"
+        },
+        {
+          "id": "c",
+          "text": "Saturated pixel ratio"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d04-x10",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d04",
+      "topic": "p2-t4-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "LiDAR trong fog có thể giảm range và xuất hiện false returns. Slice health nào phù hợp để theo dõi?",
+      "correct_answer": "b",
+      "explanation": "Weather làm chất lượng returns thay đổi theo range; density/outlier metrics phản ánh ảnh hưởng này.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 17,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "locator": "Physical PDF page 17; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ timestamp jitter dù scan vẫn đủ điểm nhưng returns giả tăng"
+        },
+        {
+          "id": "b",
+          "text": "Point density theo khoảng cách và outlier ratio"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ packet loss để kết luận chất lượng returns không bị thời tiết ảnh hưởng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d04-x11",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d04",
+      "topic": "p2-t4-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Radar ghost gần barrier không nên được coi là obstacle chắc chắn chỉ từ một reading vì sao?",
+      "correct_answer": "b",
+      "explanation": "Tracking, gating và modality khác giúp loại ghost thay tin tuyệt đối một reading.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 18,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "locator": "Physical PDF page 18; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ đổi class label là loại được mọi multipath"
+        },
+        {
+          "id": "b",
+          "text": "Multipath có thể tạo phản xạ phụ cần persistence/gating/fusion kiểm lại"
+        },
+        {
+          "id": "c",
+          "text": "Mọi radar target đều là lỗi nên phải bỏ toàn bộ radar"
+        },
+        {
+          "id": "d",
+          "text": "Radar không bao giờ đo được vật đứng gần barrier thật"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d04-x12",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d04",
+      "topic": "p2-t4-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một sensor ở mức critical không còn đáng tin cần được xử lý theo hướng nào?",
+      "correct_answer": "a",
+      "explanation": "Critical khác mild: sensor không còn tin cậy cần thay đổi hành vi vận hành, không chỉ smoothing.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 20,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "locator": "Physical PDF page 20; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Disable feature phụ thuộc hoặc chuyển safe fallback"
+        },
+        {
+          "id": "b",
+          "text": "Giữ nguyên weight cao để tránh mất modality"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ log warning nhẹ rồi tiếp tục như normal"
+        },
+        {
+          "id": "d",
+          "text": "Tăng confidence output để bù thiếu dữ liệu"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d04-x13",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d04",
+      "topic": "p2-t4-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Target-based calibration bằng checkerboard/AprilTag có hạn chế gì khi áp dụng cho fleet lớn?",
+      "correct_answer": "d",
+      "explanation": "Target-based có thể chính xác trong lab nhưng triển khai target cho fleet khó mở rộng; targetless dùng edge/plane/object consistency trong scene tự nhiên.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 23,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "locator": "Physical PDF page 23",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tự hiệu chỉnh mọi xe liên tục mà không cần quan sát target"
+        },
+        {
+          "id": "b",
+          "text": "Không thể đạt độ chính xác tốt ngay cả trong lab"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ đo timestamp và không liên quan hình học"
+        },
+        {
+          "id": "d",
+          "text": "Cần target bố trí trong điều kiện đo nên khó scale hơn targetless theo cảnh tự nhiên"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d04-x14",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d04",
+      "topic": "p2-t4-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Camera và LiDAR có tần số khác nhau cần fusion ở common time. Cách xử lý nào phù hợp?",
+      "correct_answer": "c",
+      "explanation": "Ghi thời gian gốc, đo node latency và bù chuyển động giúp đưa measurements về thời điểm fusion thống nhất.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 24,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "locator": "Physical PDF page 24; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Gán cùng timestamp cho mọi dữ liệu lúc callback chạy"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ dùng frame rate danh nghĩa để coi mọi mẫu đồng thời"
+        },
+        {
+          "id": "c",
+          "text": "Giữ timestamp gốc và interpolate/deskew theo ego-motion"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ ghép frame theo số thứ tự nhận, bỏ timestamp"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d04-x15",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d04",
+      "topic": "p2-t4-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Pseudo-label từ camera–LiDAR agreement có thể đồng loạt sai khi nào?",
+      "correct_answer": "b",
+      "explanation": "Cross-sensor labeling vẫn phụ thuộc phép chiếu và thời gian; agreement không tự sửa alignment sai.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 25,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "locator": "Physical PDF page 25; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Có manual audit các trường hợp uncertainty cao"
+        },
+        {
+          "id": "b",
+          "text": "Calibration hoặc time synchronization giữa sensors bị sai"
+        },
+        {
+          "id": "c",
+          "text": "Camera có semantic tốt và LiDAR có geometry tốt"
+        },
+        {
+          "id": "d",
+          "text": "Các sensors được kiểm bằng cùng timestamp chính xác"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d04-x16",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d04",
+      "topic": "p2-t4-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Log health metrics cùng raw data giúp chọn dữ liệu retrain theo cách nào?",
+      "correct_answer": "a",
+      "explanation": "Health-aware mining lấy đúng điều kiện model/sensor/fusion đang yếu và cho phép tái hiện lỗi.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 26,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "locator": "Physical PDF page 26; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Mine các slice yếu như night/glare/low-density thay lấy thêm ngẫu nhiên"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ lấy frame đẹp nhất để tăng điểm trung bình"
+        },
+        {
+          "id": "c",
+          "text": "Bỏ timestamp để không lộ thứ tự failure"
+        },
+        {
+          "id": "d",
+          "text": "Thay mọi per-slice benchmark bằng số lượng frame thu được"
+        }
+      ],
+      "shuffle_options": true
+    }
+  ]
+}

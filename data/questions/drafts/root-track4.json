@@ -698,7 +698,7 @@
     },
     {
       "id": "p2-t4-d05-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -709,7 +709,7 @@
       "answer_format": "single_choice",
       "difficulty": "easy",
       "cognitive_level": "understand",
-      "question": "Thứ tự hai bước lặp của Kalman filter được mô tả thế nào?",
+      "question": "Hai bước lặp của Kalman filter được thực hiện theo thứ tự nào?",
       "correct_answer": "c",
       "explanation": "Predict đưa ước lượng tiến theo mô hình; update kết hợp phép đo đến với trọng số phù hợp.",
       "source_reference": [
@@ -740,7 +740,10 @@
           "text": "Gán phép đo làm trạng thái và bỏ hoàn toàn dự đoán."
         }
       ],
-      "shuffle_options": true
+      "shuffle_options": true,
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ]
     },
     {
       "id": "p2-t4-d05-q02",
@@ -1082,7 +1085,7 @@
     },
     {
       "id": "p2-t4-d07-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -1093,7 +1096,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Trong ByteTrack được mô tả, box score thấp được dùng để tạo track mới ngay lập tức.",
+      "question": "Trong ByteTrack, box score thấp được dùng để tạo track mới ngay lập tức.",
       "correct_answer": false,
       "explanation": "Box score thấp dùng ở vòng hai để cứu track chưa ghép; slide ghi không sinh track mới từ nhóm box này.",
       "source_reference": [
@@ -1105,7 +1108,10 @@
           "verification": "needs_review"
         }
       ],
-      "status": "pending_review"
+      "status": "pending_review",
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ]
     },
     {
       "id": "p2-t4-d07-q03",
@@ -1825,7 +1831,7 @@
     },
     {
       "id": "p2-t4-d11-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -1836,7 +1842,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Trong cổng tin cậy nhãn được đề xuất cho bài lab, IoU được dùng để đối chiếu gì?",
+      "question": "Một quy trình tạo ảnh có điều kiện dùng IoU để kiểm tra vật sinh có nằm đúng vị trí yêu cầu. Hai box nào cần được đối chiếu?",
       "correct_answer": "c",
       "explanation": "Slide minh họa kiểm tra vật sinh có nằm đúng chỗ box điều kiện hay không. Đây là thiết kế đề xuất cho lab, không được trình bày như một cổng chuẩn đã được công bố.",
       "source_reference": [
@@ -1867,7 +1873,10 @@
           "text": "Box sinh của hai scene không liên quan, bỏ qua box điều kiện."
         }
       ],
-      "shuffle_options": true
+      "shuffle_options": true,
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ]
     },
     {
       "id": "p2-t4-d11-q04",

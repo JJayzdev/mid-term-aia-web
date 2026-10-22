@@ -67,7 +67,7 @@ Mặc định 100 điểm:
 | Phase 2 / Track 4 | 9 | 1 | 10 |
 | Tổng | 90 | 10 | 100 |
 
-Ví dụ blueprint khả thi để làm fixture: Phase 1 gồm 18 câu khách quan ×3 điểm + 2 tự luận ngắn ×3; mỗi track Phase 2 gồm 3 khách quan ×3 + 1 tự luận ngắn ×1. Tổng 36 câu, 30 khách quan, 6 tự luận; **chưa chốt số câu thi mặc định**, cần pilot về thời gian/độ khó. Điểm thuộc slot, không gắn cứng trong ngân hàng; rubric chuẩn hóa cho phép dùng lại câu ở nhiều chế độ.
+Blueprint hiện hành theo yêu cầu người dùng: 60 câu trong 90 phút, tổng 100 điểm. Phase 1 có 34 câu khách quan / 54 điểm và 2 tự luận / 6 điểm; Phase 2 có 20 khách quan / 36 điểm và 4 tự luận / 4 điểm, chia đều số câu cho bốn Track. Trọng số điểm Track có thể điều chỉnh nhưng tổng Phase 2 luôn 40 điểm. Điểm thuộc slot, không gắn cứng trong ngân hàng; rubric chuẩn hóa cho phép dùng lại câu ở nhiều chế độ. Bản 36 câu ban đầu được thay thế; lịch sử đã lưu vẫn giữ snapshot cũ. Độ khó là ước lượng biên soạn, chưa được hiệu chuẩn bằng dữ liệu thi thực tế.
 
 Với trọng số track w tổng bằng 1, mỗi track nhận `40w`, khách quan `36w`, tự luận `4w` điểm. Cấu hình nhập phải có đủ 4 trọng số dương, tổng đúng 1 theo biểu diễn rational/units; không normalize hay phân bổ phần dư âm thầm. Từ chối cấu hình không biểu diễn chính xác hoặc không đủ slot/câu cho từng nhóm.
 

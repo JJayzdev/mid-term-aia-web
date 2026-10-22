@@ -1,0 +1,516 @@
+{
+  "note": "Draft counts are not approval. Only exact-revision independent review counts as approved; semantic/source review remains mandatory.",
+  "questions_total": 1260,
+  "new_questions": 1056,
+  "independently_approved_current_revision": 1260,
+  "minimum_draft_per_document": 20,
+  "minimum_approved_per_document": 20,
+  "documents_at_target_draft": 63,
+  "documents_at_target_approved": 63,
+  "missing_to_target": 0,
+  "exact_duplicate_groups": [],
+  "duplicate_ids": [],
+  "source_dependent_stems": [],
+  "batches": [
+    {
+      "file": "expand-a-001.json",
+      "questions": 50
+    },
+    {
+      "file": "expand-a-002.json",
+      "questions": 51
+    },
+    {
+      "file": "expand-a-003.json",
+      "questions": 51
+    },
+    {
+      "file": "expand-a-004.json",
+      "questions": 50
+    },
+    {
+      "file": "expand-a-005.json",
+      "questions": 50
+    },
+    {
+      "file": "expand-a-006.json",
+      "questions": 51
+    },
+    {
+      "file": "expand-a-007.json",
+      "questions": 51
+    },
+    {
+      "file": "expand-a-008.json",
+      "questions": 51
+    },
+    {
+      "file": "expand-a-009.json",
+      "questions": 34
+    },
+    {
+      "file": "expand-a-010.json",
+      "questions": 48
+    },
+    {
+      "file": "expand-a-011.json",
+      "questions": 48
+    },
+    {
+      "file": "expand-b-01.json",
+      "questions": 51
+    },
+    {
+      "file": "expand-b-02.json",
+      "questions": 51
+    },
+    {
+      "file": "expand-b-03.json",
+      "questions": 34
+    },
+    {
+      "file": "expand-b-04.json",
+      "questions": 68
+    },
+    {
+      "file": "expand-b-05.json",
+      "questions": 34
+    },
+    {
+      "file": "expand-b-06.json",
+      "questions": 34
+    },
+    {
+      "file": "expand-b-07.json",
+      "questions": 34
+    },
+    {
+      "file": "expand-b-08.json",
+      "questions": 34
+    },
+    {
+      "file": "expand-b-09.json",
+      "questions": 34
+    },
+    {
+      "file": "expand-b-10.json",
+      "questions": 51
+    },
+    {
+      "file": "expand-b-11.json",
+      "questions": 32
+    },
+    {
+      "file": "expand-b-12.json",
+      "questions": 32
+    },
+    {
+      "file": "expand-b-13.json",
+      "questions": 32
+    },
+    {
+      "file": "phase1-remaining.json",
+      "questions": 36
+    },
+    {
+      "file": "pilot-001.json",
+      "questions": 12
+    },
+    {
+      "file": "root-track4.json",
+      "questions": 48
+    },
+    {
+      "file": "track1.json",
+      "questions": 33
+    },
+    {
+      "file": "track2.json",
+      "questions": 36
+    },
+    {
+      "file": "track3.json",
+      "questions": 39
+    }
+  ],
+  "documents": [
+    {
+      "document_id": "p1-d01",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 16
+    },
+    {
+      "document_id": "p1-d02",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 17
+    },
+    {
+      "document_id": "p1-d03",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 17
+    },
+    {
+      "document_id": "p1-d04",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 18
+    },
+    {
+      "document_id": "p1-d05",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 17
+    },
+    {
+      "document_id": "p1-d06",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 16
+    },
+    {
+      "document_id": "p1-d07",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 16
+    },
+    {
+      "document_id": "p1-d08",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 17
+    },
+    {
+      "document_id": "p1-d09",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 17
+    },
+    {
+      "document_id": "p1-d10",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 18
+    },
+    {
+      "document_id": "p1-d11",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 17
+    },
+    {
+      "document_id": "p1-d12",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 18
+    },
+    {
+      "document_id": "p1-d13",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 17
+    },
+    {
+      "document_id": "p1-d14",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 19
+    },
+    {
+      "document_id": "p1-d15",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 14
+    },
+    {
+      "document_id": "p2-t1-d01",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 16
+    },
+    {
+      "document_id": "p2-t1-d02",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 18
+    },
+    {
+      "document_id": "p2-t1-d03",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 16
+    },
+    {
+      "document_id": "p2-t1-d04",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 18
+    },
+    {
+      "document_id": "p2-t1-d05",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 15
+    },
+    {
+      "document_id": "p2-t1-d06",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 17
+    },
+    {
+      "document_id": "p2-t1-d07",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 18
+    },
+    {
+      "document_id": "p2-t1-d08",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 15
+    },
+    {
+      "document_id": "p2-t1-d09",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 16
+    },
+    {
+      "document_id": "p2-t1-d10",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 16
+    },
+    {
+      "document_id": "p2-t1-d11",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 16
+    },
+    {
+      "document_id": "p2-t2-d01",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 12
+    },
+    {
+      "document_id": "p2-t2-d02",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 19
+    },
+    {
+      "document_id": "p2-t2-d03",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 17
+    },
+    {
+      "document_id": "p2-t2-d04",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 19
+    },
+    {
+      "document_id": "p2-t2-d05",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 19
+    },
+    {
+      "document_id": "p2-t2-d06",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 18
+    },
+    {
+      "document_id": "p2-t2-d07",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 18
+    },
+    {
+      "document_id": "p2-t2-d08",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 18
+    },
+    {
+      "document_id": "p2-t2-d10",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 19
+    },
+    {
+      "document_id": "p2-t2-d11",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 19
+    },
+    {
+      "document_id": "p2-t2-d12",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 19
+    },
+    {
+      "document_id": "p2-t2-d13",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 11
+    },
+    {
+      "document_id": "p2-t3-d01",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 19
+    },
+    {
+      "document_id": "p2-t3-d02",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 19
+    },
+    {
+      "document_id": "p2-t3-d03",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 18
+    },
+    {
+      "document_id": "p2-t3-d04",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 19
+    },
+    {
+      "document_id": "p2-t3-d05",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 13
+    },
+    {
+      "document_id": "p2-t3-d06",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 19
+    },
+    {
+      "document_id": "p2-t3-d07",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 18
+    },
+    {
+      "document_id": "p2-t3-d08",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 14
+    },
+    {
+      "document_id": "p2-t3-d09",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 18
+    },
+    {
+      "document_id": "p2-t3-d10",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 13
+    },
+    {
+      "document_id": "p2-t3-d11",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 15
+    },
+    {
+      "document_id": "p2-t3-d12",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 18
+    },
+    {
+      "document_id": "p2-t3-d13",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 9
+    },
+    {
+      "document_id": "p2-t4-d01",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 20
+    },
+    {
+      "document_id": "p2-t4-d02",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 18
+    },
+    {
+      "document_id": "p2-t4-d03",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 19
+    },
+    {
+      "document_id": "p2-t4-d04",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 16
+    },
+    {
+      "document_id": "p2-t4-d05",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 16
+    },
+    {
+      "document_id": "p2-t4-d06",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 13
+    },
+    {
+      "document_id": "p2-t4-d07",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 17
+    },
+    {
+      "document_id": "p2-t4-d08",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 18
+    },
+    {
+      "document_id": "p2-t4-d09",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 20
+    },
+    {
+      "document_id": "p2-t4-d10",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 20
+    },
+    {
+      "document_id": "p2-t4-d11",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 20
+    },
+    {
+      "document_id": "p2-t4-d12",
+      "draft_questions": 20,
+      "approved_current_revision": 20,
+      "distinct_cited_pages": 21
+    }
+  ]
+}

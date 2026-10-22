@@ -1,0 +1,1618 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.22.expand-b-13",
+  "questions": [
+    {
+      "id": "p2-t4-d05-x01",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d05",
+      "topic": "p2-t4-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "GPS tạm mất trong hầm nhưng motion sensors còn hoạt động. Bộ lọc duy trì vị trí theo cách nào?",
+      "correct_answer": "c",
+      "explanation": "Prediction mang state đi theo chuyển động trong lúc thiếu GPS; measurement trở lại giúp sửa drift.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 3,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 3; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Coi tọa độ GPS cuối là phép đo mới ở mọi bước"
+        },
+        {
+          "id": "b",
+          "text": "Reset vị trí về gốc tọa độ mỗi khi GPS mất"
+        },
+        {
+          "id": "c",
+          "text": "Tiếp tục prediction/dead reckoning rồi sửa lại khi GPS trở về"
+        },
+        {
+          "id": "d",
+          "text": "Giữ covariance cố định vì không có measurement mới"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d05-x02",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d05",
+      "topic": "p2-t4-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Fusion gyro và accelerometer cho attitude khai thác sự bổ sung nào?",
+      "correct_answer": "b",
+      "explanation": "Hai nguồn có đặc tính lỗi khác nhau: gyro mượt ngắn hạn, gravity reference từ accelerometer hữu ích dài hạn.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 5,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 5; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ cần gyro rồi bỏ mọi nguồn tham chiếu dài hạn"
+        },
+        {
+          "id": "b",
+          "text": "Gyro theo chuyển động nhanh tốt nhưng drift; accelerometer giúp kéo drift về"
+        },
+        {
+          "id": "c",
+          "text": "Cả hai đều không drift và không nhiễu nên chỉ lấy trung bình tùy ý"
+        },
+        {
+          "id": "d",
+          "text": "Accelerometer tích lũy drift quay còn gyro đo hướng trọng lực tuyệt đối"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d05-x03",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d05",
+      "topic": "p2-t4-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Ensemble Kalman filter xử lý covariance quá lớn để lưu trực tiếp bằng cách nào?",
+      "correct_answer": "a",
+      "explanation": "EnKF dùng ensemble samples biểu diễn spread thay lưu trực tiếp ma trận covariance khổng lồ.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 7,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 7; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Ước lượng covariance từ độ phân tán của nhiều lần chạy mô hình"
+        },
+        {
+          "id": "b",
+          "text": "Đặt mọi covariance bằng 0 để không cần lưu"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ giữ một trajectory rồi coi nó chứa mọi uncertainty"
+        },
+        {
+          "id": "d",
+          "text": "Bỏ observation update vì state dimension lớn"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d05-x04",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d05",
+      "topic": "p2-t4-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong Gaussian belief một chiều, độ lệch chuẩn lớn hơn thể hiện điều gì?",
+      "correct_answer": "d",
+      "explanation": "Mean biểu diễn vị trí ước lượng; spread biểu diễn uncertainty, không xác định chiều bias.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 14,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 14; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Trung bình bắt buộc tăng cùng độ lệch chuẩn"
+        },
+        {
+          "id": "b",
+          "text": "Belief hẹp hơn vì nhiều thông tin hơn"
+        },
+        {
+          "id": "c",
+          "text": "Sensor nhất thiết có bias dương"
+        },
+        {
+          "id": "d",
+          "text": "Belief rộng hơn và kém chắc chắn hơn"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d05-x05",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d05",
+      "topic": "p2-t4-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Hai Gaussian beliefs độc lập cùng mô tả một đại lượng được fusion. Mean kết hợp nghiêng về phía nào?",
+      "correct_answer": "c",
+      "explanation": "Inverse-variance weighting trao trọng số cao hơn cho nguồn chắc chắn hơn; giả định độc lập rất quan trọng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 15,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 15; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Luôn trung bình số học bất kể variance"
+        },
+        {
+          "id": "b",
+          "text": "Luôn chọn nguồn có mean lớn hơn"
+        },
+        {
+          "id": "c",
+          "text": "Nguồn có variance nhỏ hơn"
+        },
+        {
+          "id": "d",
+          "text": "Nguồn có variance lớn hơn vì nó phủ nhiều giá trị"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d05-x06",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d05",
+      "topic": "p2-t4-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong Kalman update một chiều, innovation là gì?",
+      "correct_answer": "b",
+      "explanation": "Innovation là độ bất ngờ của dữ liệu đo so với điều mô hình dự đoán.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 17,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 17; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Learning rate nhân state hiện tại"
+        },
+        {
+          "id": "b",
+          "text": "Measurement trừ prediction của measurement"
+        },
+        {
+          "id": "c",
+          "text": "Covariance sau update trừ covariance trước predict"
+        },
+        {
+          "id": "d",
+          "text": "Tổng Q và R không phụ thuộc giá trị đo"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d05-x07",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d05",
+      "topic": "p2-t4-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "K gần 1 trong scalar Kalman update cho biết ước lượng mới có xu hướng nào?",
+      "correct_answer": "a",
+      "explanation": "Gain lớn trao trọng số lớn cho innovation; measurement đáng tin hơn prediction thì correction mạnh.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 17,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 17; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Dịch mạnh về phía measurement"
+        },
+        {
+          "id": "b",
+          "text": "Giữ gần như nguyên prediction và bỏ measurement"
+        },
+        {
+          "id": "c",
+          "text": "Đảo innovation để đi xa measurement"
+        },
+        {
+          "id": "d",
+          "text": "Reset cả state và covariance về 0"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d05-x08",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d05",
+      "topic": "p2-t4-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong mô hình một chiều x_next=x+u+w với process noise độc lập có variance Q>0, vì sao bước predict có P_next=P+Q lớn hơn P?",
+      "correct_answer": "d",
+      "explanation": "Với hệ số chuyển trạng thái bằng 1 và process noise độc lập, variance của prediction cộng thêm Q; mô hình này không có measurement update để giảm bất định.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 19,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 19; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Không có measurement mới thì uncertainty phải tự giảm"
+        },
+        {
+          "id": "b",
+          "text": "Prediction luôn chính xác hơn measurement nên covariance về 0"
+        },
+        {
+          "id": "c",
+          "text": "Q chỉ đổi mean và không liên quan covariance"
+        },
+        {
+          "id": "d",
+          "text": "Có chuyển động/nhiễu chưa được mô hình hóa làm uncertainty tích lũy"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d05-x09",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d05",
+      "topic": "p2-t4-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Giữ prediction uncertainty cố định nhưng tăng R, bộ lọc sẽ tin measurement như thế nào?",
+      "correct_answer": "c",
+      "explanation": "R lớn làm measurement kém chắc chắn và gain nhỏ hơn, nên correction dựa measurement yếu đi.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 23,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 23; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Không đổi vì R không tham gia gain"
+        },
+        {
+          "id": "b",
+          "text": "Loại toàn bộ motion model ở mọi bước"
+        },
+        {
+          "id": "c",
+          "text": "Ít hơn vì measurement noise lớn hơn"
+        },
+        {
+          "id": "d",
+          "text": "Nhiều hơn vì R lớn chứng minh sensor mạnh"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d05-x10",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d05",
+      "topic": "p2-t4-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Bộ lọc đo vị trí qua nhiều thời điểm có thể suy ra velocity dù sensor không đo trực tiếp nhờ đâu?",
+      "correct_answer": "b",
+      "explanation": "State có thể chứa hidden quantities; chuỗi vị trí cùng dynamics và covariance coupling cho phép ước lượng velocity.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 25,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 25; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ dùng nhãn class của vật để chọn vận tốc cố định"
+        },
+        {
+          "id": "b",
+          "text": "Motion model và quan hệ giữa sai số position/velocity trong state"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ đổi tên measurement position thành velocity"
+        },
+        {
+          "id": "d",
+          "text": "Đặt velocity bằng 0 mãi vì không có sensor velocity"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d05-x11",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d05",
+      "topic": "p2-t4-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Phần tử ngoài đường chéo covariance mô tả gì?",
+      "correct_answer": "a",
+      "explanation": "Diagonal chứa uncertainty từng biến; off-diagonal chứa covariance/correlation giữa các biến.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 27,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 27; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Quan hệ giữa sai số của các thành phần state"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ variance riêng của một thành phần state"
+        },
+        {
+          "id": "c",
+          "text": "Giá trị mean của sensor đang dùng"
+        },
+        {
+          "id": "d",
+          "text": "Số measurement đã update trong lịch sử"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d05-x12",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d05",
+      "topic": "p2-t4-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "UKF truyền Gaussian belief qua hàm phi tuyến bằng đại diện nào?",
+      "correct_answer": "d",
+      "explanation": "UKF đẩy tập điểm đại diện qua hàm thật, không cần Jacobian nhưng vẫn biểu diễn Gaussian.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 32,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 32; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ tiếp tuyến Jacobian tại mean như EKF"
+        },
+        {
+          "id": "b",
+          "text": "Một hạt duy nhất đặt tại mode và bỏ mọi spread"
+        },
+        {
+          "id": "c",
+          "text": "Toàn bộ lịch sử raw measurements không có state"
+        },
+        {
+          "id": "d",
+          "text": "Các sigma points rồi dựng lại mean/covariance có trọng số"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d05-x13",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d05",
+      "topic": "p2-t4-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Robot có thể đang ở một trong ba cửa giống nhau, belief có nhiều đỉnh. Vì sao particle filter phù hợp hơn Gaussian đơn?",
+      "correct_answer": "c",
+      "explanation": "PF biểu diễn belief bằng weighted samples, có thể duy trì đa đỉnh khi robot chưa định vị rõ.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 33,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 33; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Particle filter bắt buộc gộp mọi mode thành một mean ngay"
+        },
+        {
+          "id": "b",
+          "text": "UKF luôn biến mọi multimodal belief thành đúng một vị trí thật"
+        },
+        {
+          "id": "c",
+          "text": "Các particles có thể giữ nhiều giả thuyết vị trí riêng biệt"
+        },
+        {
+          "id": "d",
+          "text": "Một Gaussian đơn luôn giữ ba mode tách biệt chính xác"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d05-x14",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d05",
+      "topic": "p2-t4-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Resampling trong particle filter có tác dụng gì với các particles sau measurement weighting?",
+      "correct_answer": "c",
+      "explanation": "Resampling tập trung biểu diễn vào vùng có likelihood cao, bên cạnh bước motion và weighting.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 33,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 33; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Giữ mọi particle đúng một bản bất kể likelihood"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ dịch mọi particle theo motion model mà không dùng weights"
+        },
+        {
+          "id": "c",
+          "text": "Nhân các giả thuyết trọng số cao và loại bớt trọng số thấp"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d05-x15",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d05",
+      "topic": "p2-t4-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Track-to-track fusion cần lưu ý gì khi hai trackers dùng chung nguồn thông tin?",
+      "correct_answer": "a",
+      "explanation": "Nguồn sai số chung làm fusion ngây thơ đếm trùng thông tin và đánh giá uncertainty quá thấp.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 37,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 37; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Errors có thể tương quan nên không thể coi hai track là độc lập tùy tiện"
+        },
+        {
+          "id": "b",
+          "text": "Hai tracker riêng process thì mọi error chắc chắn độc lập"
+        },
+        {
+          "id": "c",
+          "text": "Track estimates luôn chính xác hơn raw measurements bất kể nguồn chung"
+        },
+        {
+          "id": "d",
+          "text": "Gộp hai covariance bằng trung bình luôn tránh overconfidence"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d05-x16",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d05",
+      "topic": "p2-t4-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Measurement outlier kéo state nhảy mạnh. Gating nên dựa trên điều gì?",
+      "correct_answer": "d",
+      "explanation": "Gating loại residual bất thường so với innovation covariance, tránh outlier được tin như measurement bình thường.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 38,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 38; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ giá trị tuyệt đối của measurement không xét prediction"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ tên sensor mà bỏ residual của lần đo"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ thứ tự measurement đến trong queue"
+        },
+        {
+          "id": "d",
+          "text": "Innovation so với mức bất ngờ kỳ vọng và uncertainty"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d06-x01",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d06",
+      "topic": "p2-t4-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "analyze",
+      "question": "Detector train trên scans đã deskew nhưng inference nhận scans méo khi xe quay. Đây là loại mismatch nào?",
+      "correct_answer": "b",
+      "explanation": "Deskew là phần input contract; khác preprocessing gây distribution mismatch dù model weights đúng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d06",
+          "sha256": "1c49ea2510761c0798a7b9d139ab9074eba188719a16cec41778714cef54f0d7",
+          "pdf_page": 4,
+          "title": "3D from Point Clouds and Where LiDAR Meets the Camera",
+          "locator": "Physical PDF page 4; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ score threshold cao hơn mặc định"
+        },
+        {
+          "id": "b",
+          "text": "Preprocessing train/inference không nhất quán"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ class imbalance giữa xe và người"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ head có ít output channels"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d06-x02",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d06",
+      "topic": "p2-t4-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Point attributes có time offset ngoài xyz hữu ích cho tác vụ tiền xử lý nào?",
+      "correct_answer": "b",
+      "explanation": "Các points không nhất thiết đo cùng thời điểm; time offsets cùng motion/pose hỗ trợ deskew.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d06",
+          "sha256": "1c49ea2510761c0798a7b9d139ab9074eba188719a16cec41778714cef54f0d7",
+          "pdf_page": 5,
+          "title": "3D from Point Clouds and Where LiDAR Meets the Camera",
+          "locator": "Physical PDF page 5; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ sửa timestamp của toàn scan mà không xét thời điểm từng point"
+        },
+        {
+          "id": "b",
+          "text": "Bù chuyển động trong thời gian scan"
+        },
+        {
+          "id": "c",
+          "text": "Coi mọi point cùng timestamp đầu scan nên không cần nội suy pose"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d06-x03",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d06",
+      "topic": "p2-t4-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "PointNet gốc hạn chế gì khi cần khai thác cấu trúc lân cận trong cảnh lớn?",
+      "correct_answer": "d",
+      "explanation": "PointNet thuận trực tiếp trên tập điểm nhưng local geometry và scale scene là hạn chế; có thể dùng như building block.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d06",
+          "sha256": "1c49ea2510761c0798a7b9d139ab9074eba188719a16cec41778714cef54f0d7",
+          "pdf_page": 8,
+          "title": "3D from Point Clouds and Where LiDAR Meets the Camera",
+          "locator": "Physical PDF page 8; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Bắt buộc voxel hóa trước nên không còn point-level input"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ dùng được ảnh màu có lưới đều"
+        },
+        {
+          "id": "c",
+          "text": "Không thể dùng như object refinement module"
+        },
+        {
+          "id": "d",
+          "text": "Local structure yếu và khó scale lên toàn cảnh"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d06-x04",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d06",
+      "topic": "p2-t4-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Voxel size cần được coi là hyperparameter hệ thống vì tác động đồng thời đến điều gì?",
+      "correct_answer": "c",
+      "explanation": "Discretization resolution điều chỉnh mức chi tiết và lượng ô cần xử lý; cần đo cả quality lẫn budget.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d06",
+          "sha256": "1c49ea2510761c0798a7b9d139ab9074eba188719a16cec41778714cef54f0d7",
+          "pdf_page": 9,
+          "title": "3D from Point Clouds and Where LiDAR Meets the Camera",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Voxel nhỏ luôn giảm memory vì mỗi ô chứa ít points hơn"
+        },
+        {
+          "id": "b",
+          "text": "Voxel lớn luôn giữ nguyên chi tiết vật nhỏ và chỉ giảm latency"
+        },
+        {
+          "id": "c",
+          "text": "Độ chi tiết hình học, mAP, memory và latency"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d06-x05",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d06",
+      "topic": "p2-t4-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Point cloud range quá hẹp gây mất recall theo cơ chế nào?",
+      "correct_answer": "b",
+      "explanation": "Range filter xác định phần không gian đầu vào; model không thể dùng points đã bị crop ra.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d06",
+          "sha256": "1c49ea2510761c0798a7b9d139ab9074eba188719a16cec41778714cef54f0d7",
+          "pdf_page": 9,
+          "title": "3D from Point Clouds and Where LiDAR Meets the Camera",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ tăng memory chứ không bỏ bất kỳ points nào"
+        },
+        {
+          "id": "b",
+          "text": "Points của object ngoài vùng crop bị loại trước detector"
+        },
+        {
+          "id": "c",
+          "text": "Object ngoài range vẫn luôn được backbone suy lại chính xác"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ giảm số class, không thay coverage không gian"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d06-x06",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d06",
+      "topic": "p2-t4-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Muốn tái lập benchmark voxel detector cần giữ rõ cấu hình nào ngoài model name?",
+      "correct_answer": "a",
+      "explanation": "Giới hạn voxelization quyết định dữ liệu thực vào backbone và compute, nên là một phần benchmark contract.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d06",
+          "sha256": "1c49ea2510761c0798a7b9d139ab9074eba188719a16cec41778714cef54f0d7",
+          "pdf_page": 9,
+          "title": "3D from Point Clouds and Where LiDAR Meets the Camera",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Voxel size, cloud range, max points/voxel và max voxels"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ số epoch mà bỏ mọi voxelization config"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ random seed, mọi input representation đều tương đương"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ checkpoint filename vì preprocessing tự được suy ra"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d06-x07",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d06",
+      "topic": "p2-t4-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Robot cần phân biệt vật cản cao và thấp chồng lên nhau. Pillar/BEV có đánh đổi cần xem xét nào?",
+      "correct_answer": "d",
+      "explanation": "Pseudo-image BEV hiệu quả nhưng mất chi tiết chiều cao sớm, khó hơn với vật chồng lớp.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d06",
+          "sha256": "1c49ea2510761c0798a7b9d139ab9074eba188719a16cec41778714cef54f0d7",
+          "pdf_page": 10,
+          "title": "3D from Point Clouds and Where LiDAR Meets the Camera",
+          "locator": "Physical PDF page 10; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Pillar luôn giữ nguyên mọi chi tiết z ở mọi layer"
+        },
+        {
+          "id": "b",
+          "text": "BEV tự tạo đủ depth cho mọi vật bị che"
+        },
+        {
+          "id": "c",
+          "text": "Pillar chỉ có vấn đề class names, không liên quan hình học"
+        },
+        {
+          "id": "d",
+          "text": "Nén chiều cao sớm có thể làm mất chi tiết theo trục đứng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d06-x08",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d06",
+      "topic": "p2-t4-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Port 3D boxes giữa hai datasets cần kiểm convention nào để tránh box sai hình dù tensor shape đúng?",
+      "correct_answer": "b",
+      "explanation": "Datasets có thể khác axis, heading, center convention; shape đúng không chứng minh semantics đúng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d06",
+          "sha256": "1c49ea2510761c0798a7b9d139ab9074eba188719a16cec41778714cef54f0d7",
+          "pdf_page": 11,
+          "title": "3D from Point Clouds and Where LiDAR Meets the Camera",
+          "locator": "Physical PDF page 11; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ đổi đơn vị mét là đủ, không cần kiểm box center hay trục yaw"
+        },
+        {
+          "id": "b",
+          "text": "Thứ tự w/l/h, mốc tâm và chiều yaw/trục tọa độ"
+        },
+        {
+          "id": "c",
+          "text": "Tensor đều có 7 giá trị nên thứ tự kích thước và yaw chắc chắn tương thích"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d06-x09",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d06",
+      "topic": "p2-t4-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Center-based 3D detection head dự đoán gì sau khi định vị tâm object?",
+      "correct_answer": "b",
+      "explanation": "Center-based heads dùng center làm điểm tham chiếu rồi regress thuộc tính hộp/động học.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d06",
+          "sha256": "1c49ea2510761c0798a7b9d139ab9074eba188719a16cec41778714cef54f0d7",
+          "pdf_page": 12,
+          "title": "3D from Point Clouds and Where LiDAR Meets the Camera",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ IoU giữa hai ground truth boxes"
+        },
+        {
+          "id": "b",
+          "text": "Kích thước, hướng và có thể velocity"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ anchor ID rồi giữ nguyên kích thước mọi object"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ camera RGB class score không có geometry"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d06-x10",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d06",
+      "topic": "p2-t4-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "3D detector có false positives gần đầu xe dù mAP tổng tăng. Vì sao cần đánh giá riêng vùng này?",
+      "correct_answer": "a",
+      "explanation": "Metric tổng không biểu diễn đầy đủ risk không gian; vùng gần ego/planner cần theo dõi lỗi riêng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d06",
+          "sha256": "1c49ea2510761c0798a7b9d139ab9074eba188719a16cec41778714cef54f0d7",
+          "pdf_page": 13,
+          "title": "3D from Point Clouds and Where LiDAR Meets the Camera",
+          "locator": "Physical PDF page 13; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Planner có thể nhạy với obstacle giả trong vùng chuyển động"
+        },
+        {
+          "id": "b",
+          "text": "Mọi false positive ở mọi nơi đều có cùng tác động điều khiển"
+        },
+        {
+          "id": "c",
+          "text": "mAP cao tự bảo đảm planner tốt hơn"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ latency quyết định tác động, vị trí false positive không quan trọng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d06-x11",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d06",
+      "topic": "p2-t4-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Feature fusion khác early fusion ở điểm ghép hai modalities nào?",
+      "correct_answer": "d",
+      "explanation": "Early ghép input; mid/feature fusion ghép đặc trưng; late ghép output của module độc lập.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d06",
+          "sha256": "1c49ea2510761c0798a7b9d139ab9074eba188719a16cec41778714cef54f0d7",
+          "pdf_page": 19,
+          "title": "3D from Point Clouds and Where LiDAR Meets the Camera",
+          "locator": "Physical PDF page 19; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Ghép raw inputs trước mọi feature extraction"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ ghép final tracks sau khi mọi detector hoàn tất"
+        },
+        {
+          "id": "c",
+          "text": "Không trao đổi bất kỳ thông tin nào giữa sensors"
+        },
+        {
+          "id": "d",
+          "text": "Mỗi sensor học feature riêng rồi mới kết hợp"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d06-x12",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d06",
+      "topic": "p2-t4-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Frustum PointNets dùng detection 2D để giới hạn xử lý 3D bằng cách nào?",
+      "correct_answer": "c",
+      "explanation": "Box ảnh tạo vùng frustum trong không gian, giúp chọn cụm points cho bước 3D.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d06",
+          "sha256": "1c49ea2510761c0798a7b9d139ab9074eba188719a16cec41778714cef54f0d7",
+          "pdf_page": 20,
+          "title": "3D from Point Clouds and Where LiDAR Meets the Camera",
+          "locator": "Physical PDF page 20; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ gộp final 2D boxes mà không dùng point cloud"
+        },
+        {
+          "id": "b",
+          "text": "Voxel hóa toàn cảnh rồi bỏ mọi thông tin 2D"
+        },
+        {
+          "id": "c",
+          "text": "Sinh frustum và lấy points nằm trong vùng đó để ước lượng box 3D"
+        },
+        {
+          "id": "d",
+          "text": "Đổi mọi pixel box thành point có depth cố định duy nhất"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d06-x13",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d06",
+      "topic": "p2-t4-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "PointPainting đưa tri thức camera vào LiDAR ở dạng nào?",
+      "correct_answer": "b",
+      "explanation": "Camera segmentation/detection cung cấp semantic scores gắn qua phép chiếu cho từng point.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d06",
+          "sha256": "1c49ea2510761c0798a7b9d139ab9074eba188719a16cec41778714cef54f0d7",
+          "pdf_page": 20,
+          "title": "3D from Point Clouds and Where LiDAR Meets the Camera",
+          "locator": "Physical PDF page 20; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Thay xyz point bằng normalized box coordinates"
+        },
+        {
+          "id": "b",
+          "text": "Gắn semantic score của pixel tương ứng vào point"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ tô màu viewer mà không thêm feature cho points"
+        },
+        {
+          "id": "d",
+          "text": "Dùng camera exposure làm ground truth yaw"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d06-x14",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d06",
+      "topic": "p2-t4-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "BEVFusion đưa camera và LiDAR về không gian chung nào để kết hợp feature?",
+      "correct_answer": "b",
+      "explanation": "Unified BEV cho phép kết hợp representation của hai modalities trong một không gian nhìn từ trên xuống.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d06",
+          "sha256": "1c49ea2510761c0798a7b9d139ab9074eba188719a16cec41778714cef54f0d7",
+          "pdf_page": 20,
+          "title": "3D from Point Clouds and Where LiDAR Meets the Camera",
+          "locator": "Physical PDF page 20; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ hợp nhất final 3D boxes, không kết hợp feature maps"
+        },
+        {
+          "id": "b",
+          "text": "Bird’s-eye-view"
+        },
+        {
+          "id": "c",
+          "text": "Giữ image features và LiDAR features ở hai hệ tọa độ riêng, chỉ nối tensor theo index"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d06-x15",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d06",
+      "topic": "p2-t4-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "analyze",
+      "question": "Box 3D khớp point cloud nhưng overlay lên ảnh sai, bước điều tra nào sát hơn thay head detector?",
+      "correct_answer": "d",
+      "explanation": "Geometry đúng trong point cloud nhưng sai khi chiếu gợi ý projection/calibration bug hơn lỗi detector.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d06",
+          "sha256": "1c49ea2510761c0798a7b9d139ab9074eba188719a16cec41778714cef54f0d7",
+          "pdf_page": 21,
+          "title": "3D from Point Clouds and Where LiDAR Meets the Camera",
+          "locator": "Physical PDF page 21; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ tăng regression loss weight của box"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ thêm nhiều object queries cho head"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ tăng số anchors theo hướng yaw"
+        },
+        {
+          "id": "d",
+          "text": "Kiểm phép chiếu và calibration giữa LiDAR/camera"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d06-x16",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d06",
+      "topic": "p2-t4-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Chọn pipeline 3D cho drone thay vì xe chạy chủ yếu trên mặt phẳng cần xét khác biệt nào?",
+      "correct_answer": "c",
+      "explanation": "Platform khác đổi motion, sensor setup và resource constraints; pipeline cần đánh giá robustness phù hợp.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d06",
+          "sha256": "1c49ea2510761c0798a7b9d139ab9074eba188719a16cec41778714cef54f0d7",
+          "pdf_page": 23,
+          "title": "3D from Point Clouds and Where LiDAR Meets the Camera",
+          "locator": "Physical PDF page 23; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Bỏ motion robustness vì drone luôn ít rung"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ tăng far-range car recall mà bỏ vật cản và chuyển động drone"
+        },
+        {
+          "id": "c",
+          "text": "Motion 6-DoF/quay mạnh cùng hạn chế power và compute"
+        },
+        {
+          "id": "d",
+          "text": "Coi mọi chuyển động đều planar và dùng nguyên budget của xe"
+        }
+      ],
+      "shuffle_options": true
+    }
+  ]
+}

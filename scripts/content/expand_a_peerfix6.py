@@ -1,0 +1,4 @@
+# -*- coding: utf-8 -*-
+exec(open('scripts/content/expand_a_peerfix2.py',encoding='utf-8').read().split("addpage(8,'p2-t1-d07-x02'")[0])
+change(5,'p1-d15-x03','Giả sử tháng này dùng 2 triệu input tokens giá 1 USD/triệu và 0,5 triệu output tokens giá 4 USD/triệu, không có chi phí khác. Token cost tháng là bao nhiêu?', ['4 USD','10 USD vì áp giá output cho mọi token','2,5 USD vì coi giá input áp cho cả output'],'Input cost=2×1=2 USD; output cost=0,5×4=2 USD; tổng=4 USD. Đây là giá giả định cho bài toán, không phải báo giá hiện hành.',14)
+p=R/'data/questions/drafts/expand-a-005.json';b=json.loads(p.read_text(encoding='utf-8'));q=next(q for q in b['questions'] if q['id']=='p1-d14-x12');q['question']='Chạy 5 lần trên cùng 20 items có tạo ra 100 mẫu độc lập để ước lượng độ bất định không?';q['revision']+=1;p.write_text(json.dumps(b,ensure_ascii=False,indent=2),encoding='utf-8')

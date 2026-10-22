@@ -1,0 +1,157 @@
+{
+  "batch_file": "reports/expansion/wording-change-set.json",
+  "reviewer_id": "reviewer",
+  "reviewed_at": "2026-10-22T10:51:26.129969+00:00",
+  "results": [
+    {
+      "id": "p2-t1-d02-q03",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t1-d02",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "p9: Tình huống pickup nay tự chứa bối cảnh. a,b là outcome tìm nhau nhanh/chờ ít; notification delivery/count là output. Đáp án và giải thích giữ đúng phạm vi.",
+        "Draft: data/questions/drafts/track1.json"
+      ]
+    },
+    {
+      "id": "p2-t1-d05-q01",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t1-d05",
+          "pdf_page": 6
+        }
+      ],
+      "notes": [
+        "p6: Responsible AI chuyển giá trị thành process/roles/accountability; b đúng. Bỏ tham chiếu sơ đồ không làm đổi taxonomy hoặc biến filter/benchmark thành toàn bộ vận hành.",
+        "Draft: data/questions/drafts/track1.json"
+      ]
+    },
+    {
+      "id": "p2-t1-d05-q02",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t1-d05",
+          "pdf_page": 6
+        }
+      ],
+      "notes": [
+        "p6: Safety evaluation kiểm fail/harm/threshold/safeguard trước deployment; True đúng. Stem nay tự đứng được.",
+        "Draft: data/questions/drafts/track1.json"
+      ]
+    },
+    {
+      "id": "p2-t1-d05-q03",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t1-d05",
+          "pdf_page": 6
+        }
+      ],
+      "notes": [
+        "p6: Fairness/transparency/human rights thuộc tầng giá trị Ethics; a,b đúng. Threshold hay process không thay toàn bộ câu hỏi đạo đức.",
+        "Draft: data/questions/drafts/track1.json"
+      ]
+    },
+    {
+      "id": "p2-t1-d10-q01",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t1-d10",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "p9: Mô hình bốn nhóm trong nguồn đặt high influence/low interest là Blockers/người cần thuyết phục; b đúng khi nêu cụ thể taxonomy Champions/Blockers/Supporters/Bystanders. Không suy đây là tên nhóm chung cho mọi power-interest matrix.",
+        "Draft: data/questions/drafts/track1.json"
+      ]
+    },
+    {
+      "id": "p2-t2-d10-q03",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d10",
+          "pdf_page": 15
+        }
+      ],
+      "notes": [
+        "p15: API phi trạng thái có xác thực mang danh tính trên mỗi request và kiểm lại từng lời gọi; True đúng. Stem đã nêu điều kiện có xác thực, không suy mọi API công khai bắt buộc xác thực.",
+        "Draft: data/questions/drafts/track2.json"
+      ]
+    },
+    {
+      "id": "p2-t3-d01-q03",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d01",
+          "pdf_page": 11
+        }
+      ],
+      "notes": [
+        "p11: Reflexion dùng text feedback qua evaluate/reflect/retry, không gradient update trong mỗi vòng; True đúng. Không cần nhìn sơ đồ để hiểu mệnh đề.",
+        "Draft: data/questions/drafts/track3.json"
+      ]
+    },
+    {
+      "id": "p2-t3-d06-q01",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d06",
+          "pdf_page": 5
+        }
+      ],
+      "notes": [
+        "p5: Chẩn đoán thiếu tri thức riêng dẫn đến đánh giá RAG trước; c đúng. Stem giữ điều kiện few-shot chưa đủ và không phải thiếu hành vi, không suy fine-tune luôn sai.",
+        "Draft: data/questions/drafts/track3.json"
+      ]
+    },
+    {
+      "id": "p2-t3-d06-q03",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d06",
+          "pdf_page": 17
+        }
+      ],
+      "notes": [
+        "p17: Adapter A r×d và B k×r có rd+kr=r(d+k), W0 đóng băng; True đúng. Stem cung cấp d,k,r và không nhầm với dk trainable gốc.",
+        "Draft: data/questions/drafts/track3.json"
+      ]
+    },
+    {
+      "id": "p2-t3-d10-q01",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d10",
+          "pdf_page": 12
+        }
+      ],
+      "notes": [
+        "p12: OPEN fail fast, HALF-OPEN probe và CLOSED normal calls; c đúng. Bỏ tham chiếu sơ đồ không đổi trạng thái hoặc hành vi dependency.",
+        "Draft: data/questions/drafts/track3.json"
+      ]
+    }
+  ]
+}

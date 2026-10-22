@@ -6,7 +6,7 @@ Ngày 2026-10-22. Người dùng đã chỉ dẫn: “đấy là tất cả data
 
 - React + TypeScript + Vite, giao diện tiếng Việt, IndexedDB, không tài khoản/backend. Triển khai ngay workspace hiện có.
 - Schema `docs/schemas/question-bank.schema.json` được duyệt phiên bản 1.0.0 trước tạo batch câu hỏi.
-- Bài thi 100 điểm/90 phút/36 câu theo blueprint đã đề xuất: Phase1 54 khách quan + 6 rubric, mỗi track Phase2 9 khách quan + 1 rubric; nhiều đáp án exact-set, tự luận tự chấm có nhãn.
+- Bản đầu dùng 36 câu, 100 điểm, 90 phút: Phase 1 có 18 câu khách quan / 54 điểm và 2 rubric / 6 điểm; mỗi Track Phase 2 có 3 khách quan / 9 điểm và 1 rubric / 1 điểm. Blueprint hiện hành đã đổi thành 60 câu ở mục điều chỉnh bên dưới. Nhiều đáp án dùng exact-set, tự luận tự chấm có nhãn.
 - Tổ chức chương trình theo thư mục do người dùng cung cấp: phase1 là Phase1; bốn track là Phase2. Day theo tên file và có khóa riêng theo Phase/Track. Đây là **quyết định tổ chức nội dung của ứng dụng**, không phải tuyên bố nhãn trên bìa luôn khớp. Metadata ngày/Phase/Track gốc và cảnh báo xung đột được giữ nguyên.
 - Không cần chờ thêm nguồn, không tạo Day9 Track2. Sử dụng toàn bộ 63 file, báo rõ trang/đối tượng không đọc được. Chỉ câu có căn cứ đã kiểm tra độc lập được phát hành.
 - OCR chạy local; nguồn không upload lên OCR service. PDF gốc không đưa vào bundle/public repository; giữ manifest/provenance và câu hỏi đã review.

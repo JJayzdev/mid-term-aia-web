@@ -1,0 +1,1610 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.22.expansion-a-009",
+  "questions": [
+    {
+      "id": "p2-t1-d10-x01",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d10",
+      "topic": "p2-t1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Stakeholder management bao gồm những người nào?",
+      "correct_answer": "c",
+      "explanation": "Quan hệ và tác động hai chiều xác định phạm vi stakeholder.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d10",
+          "sha256": "6f0195bca045e48bd23cd206c3b5d4eeca975edd4ba0b2e843b6051ef8f55a79",
+          "pdf_page": 8,
+          "title": "Con Người Trong Dự Án AI — Từ Stakeholder Đến AI Team Performance",
+          "locator": "Physical PDF page 8",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ nhân viên trong nhóm viết code"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ người có quyền phê duyệt ngân sách"
+        },
+        {
+          "id": "c",
+          "text": "Người ảnh hưởng dự án hoặc bị ảnh hưởng bởi kết quả"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d10-x02",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d10",
+      "topic": "p2-t1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một stakeholder ảnh hưởng cao nhưng chưa quan tâm nhiều cần được ưu tiên theo hướng nào?",
+      "correct_answer": "b",
+      "explanation": "Ảnh hưởng cao và quan tâm thấp có thể tạo rào cản nếu lợi ích/rủi ro chưa được giải quyết.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d10",
+          "sha256": "6f0195bca045e48bd23cd206c3b5d4eeca975edd4ba0b2e843b6051ef8f55a79",
+          "pdf_page": 9,
+          "title": "Con Người Trong Dự Án AI — Từ Stakeholder Đến AI Team Performance",
+          "locator": "Physical PDF page 9",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t1-d10",
+          "sha256": "6f0195bca045e48bd23cd206c3b5d4eeca975edd4ba0b2e843b6051ef8f55a79",
+          "pdf_page": 10,
+          "title": "Con Người Trong Dự Án AI — Từ Stakeholder Đến AI Team Performance",
+          "locator": "Physical PDF page 10",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Coi là champion đã cam kết nguồn lực"
+        },
+        {
+          "id": "b",
+          "text": "Thuyết phục bằng giá trị và giảm mối lo của họ"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ thông báo định kỳ như nhóm ít liên quan"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d10-x03",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d10",
+      "topic": "p2-t1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao sơ đồ stakeholder cần được cập nhật định kỳ?",
+      "correct_answer": "a",
+      "explanation": "Chiến lược phải thích ứng khi người liên quan chuyển nhóm hoặc có tác nhân mới.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d10",
+          "sha256": "6f0195bca045e48bd23cd206c3b5d4eeca975edd4ba0b2e843b6051ef8f55a79",
+          "pdf_page": 10,
+          "title": "Con Người Trong Dự Án AI — Từ Stakeholder Đến AI Team Performance",
+          "locator": "Physical PDF page 10",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Mức quan tâm và ảnh hưởng có thể đổi theo thời gian"
+        },
+        {
+          "id": "b",
+          "text": "Nhóm stakeholder được quyết định cố định bởi chức danh"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ người mới gia nhập team mới làm thay đổi quan hệ"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d10-x04",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d10",
+      "topic": "p2-t1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trình bày “kết luận trước” nên tổ chức thông tin thế nào?",
+      "correct_answer": "c",
+      "explanation": "Người nghe cần hiểu ý chính sớm rồi mới đánh giá cơ sở của đề xuất.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d10",
+          "sha256": "6f0195bca045e48bd23cd206c3b5d4eeca975edd4ba0b2e843b6051ef8f55a79",
+          "pdf_page": 14,
+          "title": "Con Người Trong Dự Án AI — Từ Stakeholder Đến AI Team Performance",
+          "locator": "Physical PDF page 14",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Kể toàn bộ quá trình phân tích rồi mới nói đề xuất cuối"
+        },
+        {
+          "id": "b",
+          "text": "Đưa nhiều chi tiết kỹ thuật mà chưa xác định người nghe cần gì"
+        },
+        {
+          "id": "c",
+          "text": "Đề xuất chính → lý do → số liệu/ví dụ chứng minh"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d10-x05",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d10",
+      "topic": "p2-t1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Stakeholder lo AI quá rủi ro. Phản hồi nào trực tiếp giải quyết mối lo?",
+      "correct_answer": "b",
+      "explanation": "Bằng chứng và cách giới hạn hậu quả phù hợp hơn lời khẳng định chung.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d10",
+          "sha256": "6f0195bca045e48bd23cd206c3b5d4eeca975edd4ba0b2e843b6051ef8f55a79",
+          "pdf_page": 15,
+          "title": "Con Người Trong Dự Án AI — Từ Stakeholder Đến AI Team Performance",
+          "locator": "Physical PDF page 15",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Đẩy ngay sang rollout rộng để chứng minh quyết tâm"
+        },
+        {
+          "id": "b",
+          "text": "Pilot nhỏ, dữ liệu thử thực và human review giảm rủi ro"
+        },
+        {
+          "id": "c",
+          "text": "Lặp lại rằng model rất tiên tiến mà không có phép thử"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d10-x06",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d10",
+      "topic": "p2-t1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong RACI, Consulted khác Informed ở thời điểm tham gia nào?",
+      "correct_answer": "a",
+      "explanation": "Phân biệt input trước và thông báo sau tránh nhầm vai trò khi phối hợp.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d10",
+          "sha256": "6f0195bca045e48bd23cd206c3b5d4eeca975edd4ba0b2e843b6051ef8f55a79",
+          "pdf_page": 16,
+          "title": "Con Người Trong Dự Án AI — Từ Stakeholder Đến AI Team Performance",
+          "locator": "Physical PDF page 16",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Consulted góp ý trước quyết định; Informed được thông báo sau"
+        },
+        {
+          "id": "b",
+          "text": "Consulted chỉ biết sau; Informed phải duyệt trước"
+        },
+        {
+          "id": "c",
+          "text": "Cả hai là người chịu trách nhiệm cuối cùng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d10-x07",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d10",
+      "topic": "p2-t1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một task có nhiều người Accountable dễ tạo vấn đề gì?",
+      "correct_answer": "c",
+      "explanation": "Quy tắc một A cho mỗi task làm rõ đầu mối chịu trách nhiệm cuối.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d10",
+          "sha256": "6f0195bca045e48bd23cd206c3b5d4eeca975edd4ba0b2e843b6051ef8f55a79",
+          "pdf_page": 17,
+          "title": "Con Người Trong Dự Án AI — Từ Stakeholder Đến AI Team Performance",
+          "locator": "Physical PDF page 17",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tự làm rõ ai có quyền duyệt hơn một người A"
+        },
+        {
+          "id": "b",
+          "text": "Loại bỏ nhu cầu có người Responsible"
+        },
+        {
+          "id": "c",
+          "text": "Trách nhiệm cuối bị phân tán"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d10-x08",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d10",
+      "topic": "p2-t1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Khả năng đưa AI vào hệ thống thật của khách đòi hỏi năng lực nào ngoài xây demo?",
+      "correct_answer": "b",
+      "explanation": "Triển khai cần bắc cầu giữa năng lực AI và điều kiện vận hành của khách.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d10",
+          "sha256": "6f0195bca045e48bd23cd206c3b5d4eeca975edd4ba0b2e843b6051ef8f55a79",
+          "pdf_page": 20,
+          "title": "Con Người Trong Dự Án AI — Từ Stakeholder Đến AI Team Performance",
+          "locator": "Physical PDF page 20",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ phát triển UI rồi để khách tự nối mọi dependency"
+        },
+        {
+          "id": "b",
+          "text": "Làm với dữ liệu, tích hợp và quy trình thực của khách"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ tối ưu prompt trên dữ liệu giả độc lập"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d10-x09",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d10",
+      "topic": "p2-t1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những chuyên môn advisory nào có thể hỗ trợ AI team khi cần? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "d",
+        "a",
+        "b"
+      ],
+      "explanation": "Sản phẩm cần cả chuyên môn nghiệp vụ và kiểm soát trách nhiệm ngoài năng lực kỹ thuật.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d10",
+          "sha256": "6f0195bca045e48bd23cd206c3b5d4eeca975edd4ba0b2e843b6051ef8f55a79",
+          "pdf_page": 21,
+          "title": "Con Người Trong Dự Án AI — Từ Stakeholder Đến AI Team Performance",
+          "locator": "Physical PDF page 21",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Legal/compliance"
+        },
+        {
+          "id": "b",
+          "text": "AI ethics advisor"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ nhóm viết inference code, không cần góc nhìn khác"
+        },
+        {
+          "id": "d",
+          "text": "Domain expert"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d10-x10",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d10",
+      "topic": "p2-t1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Centralized AI team có tradeoff điển hình nào?",
+      "correct_answer": "c",
+      "explanation": "Tập trung tạo chuẩn chung nhưng năng lực trung tâm có thể không theo kịp nhu cầu.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d10",
+          "sha256": "6f0195bca045e48bd23cd206c3b5d4eeca975edd4ba0b2e843b6051ef8f55a79",
+          "pdf_page": 22,
+          "title": "Con Người Trong Dự Án AI — Từ Stakeholder Đến AI Team Performance",
+          "locator": "Physical PDF page 22",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Luôn phản ứng nhanh nhất với mọi nhu cầu local"
+        },
+        {
+          "id": "b",
+          "text": "Không cần phối hợp vì mọi yêu cầu tự đồng nhất"
+        },
+        {
+          "id": "c",
+          "text": "Chia sẻ kiến thức dễ nhưng có thể thành bottleneck cho nhiều đội"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d10-x11",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d10",
+      "topic": "p2-t1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Hub-and-spoke kết hợp hai yếu tố nào?",
+      "correct_answer": "b",
+      "explanation": "Mô hình hybrid tìm cân bằng tốc độ local và tính nhất quán, với yêu cầu phối hợp tốt.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d10",
+          "sha256": "6f0195bca045e48bd23cd206c3b5d4eeca975edd4ba0b2e843b6051ef8f55a79",
+          "pdf_page": 22,
+          "title": "Con Người Trong Dự Án AI — Từ Stakeholder Đến AI Team Performance",
+          "locator": "Physical PDF page 22",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ một nhóm trung tâm nhận mọi task và không có thành viên nhúng"
+        },
+        {
+          "id": "b",
+          "text": "Hub chuẩn hóa công cụ và engineers nhúng sát từng nhóm"
+        },
+        {
+          "id": "c",
+          "text": "Mỗi nhóm tự làm độc lập mà không có chuẩn chung"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d10-x12",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d10",
+      "topic": "p2-t1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Chapter và Guild khác nhau thế nào trong mô hình squad?",
+      "correct_answer": "a",
+      "explanation": "Chapter duy trì kết nối chuyên môn, Guild kết nối chủ đề quan tâm rộng hơn.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d10",
+          "sha256": "6f0195bca045e48bd23cd206c3b5d4eeca975edd4ba0b2e843b6051ef8f55a79",
+          "pdf_page": 24,
+          "title": "Con Người Trong Dự Án AI — Từ Stakeholder Đến AI Team Performance",
+          "locator": "Physical PDF page 24",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chapter tập hợp cùng chuyên môn; Guild theo mối quan tâm tự nguyện xuyên tổ chức"
+        },
+        {
+          "id": "b",
+          "text": "Chapter là nhóm sở hữu sản phẩm; Guild là cấp phê duyệt ngân sách"
+        },
+        {
+          "id": "c",
+          "text": "Cả hai đều là squad chịu trách nhiệm một mục tiêu sản phẩm"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d10-x13",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d10",
+      "topic": "p2-t1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "“Trust but verify” khi dùng AI phát triển phần mềm nên phân bổ review thế nào?",
+      "correct_answer": "c",
+      "explanation": "Tự động hóa không thay trách nhiệm đánh giá những phần cần phán đoán chuyên sâu.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d10",
+          "sha256": "6f0195bca045e48bd23cd206c3b5d4eeca975edd4ba0b2e843b6051ef8f55a79",
+          "pdf_page": 28,
+          "title": "Con Người Trong Dự Án AI — Từ Stakeholder Đến AI Team Performance",
+          "locator": "Physical PDF page 28",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Bỏ review vì agent đã tự tạo tests"
+        },
+        {
+          "id": "b",
+          "text": "Người chỉ kiểm style còn mọi quyết định rủi ro giao AI"
+        },
+        {
+          "id": "c",
+          "text": "AI hỗ trợ việc lặp lại; người tập trung bảo mật, pháp lý và trải nghiệm cần chuyên môn"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d10-x14",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d10",
+      "topic": "p2-t1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một người đạt mức cao ở Technical nhưng thấp ở Governance nên được đánh giá thế nào?",
+      "correct_answer": "b",
+      "explanation": "Technical, Business và Governance mô tả những năng lực khác nhau.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d10",
+          "sha256": "6f0195bca045e48bd23cd206c3b5d4eeca975edd4ba0b2e843b6051ef8f55a79",
+          "pdf_page": 29,
+          "title": "Con Người Trong Dự Án AI — Từ Stakeholder Đến AI Team Performance",
+          "locator": "Physical PDF page 29",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Hạ toàn bộ năng lực về mức thấp nhất mà không chỉ rõ khoảng trống"
+        },
+        {
+          "id": "b",
+          "text": "Ghi mức từng trục độc lập và lập lộ trình bổ sung"
+        },
+        {
+          "id": "c",
+          "text": "Gán mức cao nhất cho mọi trục vì đã giỏi kỹ thuật"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d10-x15",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d10",
+      "topic": "p2-t1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Competency framework nên được nối với quyết định thực nào?",
+      "correct_answer": "a",
+      "explanation": "Framework có ích khi làm rõ khoảng trống và bước phát triển/career tiếp theo.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d10",
+          "sha256": "6f0195bca045e48bd23cd206c3b5d4eeca975edd4ba0b2e843b6051ef8f55a79",
+          "pdf_page": 30,
+          "title": "Con Người Trong Dự Án AI — Từ Stakeholder Đến AI Team Performance",
+          "locator": "Physical PDF page 30",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Lộ trình học, vai trò và phạm vi trách nhiệm"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ tạo bảng xếp hạng không dùng cho phát triển"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ ghi số năm làm việc thay cho năng lực thể hiện"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d10-x16",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d10",
+      "topic": "p2-t1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Quyết định hire, outsource hay partner nên dựa trước hết vào đâu?",
+      "correct_answer": "c",
+      "explanation": "Biết gap giúp chọn cách bổ sung nguồn lực phù hợp thay vì xây đội theo danh sách chức danh.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d10",
+          "sha256": "6f0195bca045e48bd23cd206c3b5d4eeca975edd4ba0b2e843b6051ef8f55a79",
+          "pdf_page": 31,
+          "title": "Con Người Trong Dự Án AI — Từ Stakeholder Đến AI Team Performance",
+          "locator": "Physical PDF page 31",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ xu hướng chức danh đang phổ biến"
+        },
+        {
+          "id": "b",
+          "text": "Luôn tuyển mọi chuyên môn full-time dù chưa cần"
+        },
+        {
+          "id": "c",
+          "text": "Năng lực hiện có và khoảng trống cần lấp"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d10-x17",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d10",
+      "topic": "p2-t1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Agentic SDLC cần governance rõ nhất ở điểm nào?",
+      "correct_answer": "b",
+      "explanation": "Tự chủ xuyên lifecycle cần giới hạn cho dữ liệu khách, bảo mật và tiền bạc.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d10",
+          "sha256": "6f0195bca045e48bd23cd206c3b5d4eeca975edd4ba0b2e843b6051ef8f55a79",
+          "pdf_page": 32,
+          "title": "Con Người Trong Dự Án AI — Từ Stakeholder Đến AI Team Performance",
+          "locator": "Physical PDF page 32",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ số tests tự sinh mà không xét quyền triển khai"
+        },
+        {
+          "id": "b",
+          "text": "Agent được tự quyết ở đâu và phải dừng hỏi người ở đâu"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ agent viết code nhanh đến đâu"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d11-x01",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d11",
+      "topic": "p2-t1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Đã cấp công cụ AI và được IT cho phép nhưng workflow chưa đổi phản ánh mốc nào?",
+      "correct_answer": "c",
+      "explanation": "Adoption cần thay đổi công việc, owner và handoff, vượt sự sẵn có của công cụ.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d11",
+          "sha256": "30aee39a75df1ce3cac52db0855468d0db2968ea863138b03881b46ad3f933d7",
+          "pdf_page": 6,
+          "title": "AI Adoption & Change Management",
+          "locator": "Physical PDF page 6",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Normalization vì mọi người có quyền truy cập"
+        },
+        {
+          "id": "b",
+          "text": "Adoption chỉ vì đã mua license"
+        },
+        {
+          "id": "c",
+          "text": "Deployment, chưa đủ bằng chứng adoption"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d11-x02",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d11",
+      "topic": "p2-t1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những dấu hiệu nào cho thấy AI đã được thiết kế vào công việc? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "c",
+        "d",
+        "a"
+      ],
+      "explanation": "Thiết kế workflow cần hành động, trách nhiệm và kiểm soát có thể quan sát.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d11",
+          "sha256": "30aee39a75df1ce3cac52db0855468d0db2968ea863138b03881b46ad3f933d7",
+          "pdf_page": 7,
+          "title": "AI Adoption & Change Management",
+          "locator": "Physical PDF page 7",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Người dùng biết khi nào nên và không nên dùng"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ có số license tăng mà trách nhiệm không đổi"
+        },
+        {
+          "id": "c",
+          "text": "Có bước công việc cụ thể dùng AI"
+        },
+        {
+          "id": "d",
+          "text": "Có owner kết quả cuối và cách kiểm tra khi AI sai"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d11-x03",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d11",
+      "topic": "p2-t1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Để phân biệt thiếu kỹ năng với thiếu trust khi adoption thấp, nên chẩn đoán thế nào?",
+      "correct_answer": "a",
+      "explanation": "Triệu chứng usage cần được giải thích bằng các điểm nghẽn cụ thể trong con người và quy trình.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d11",
+          "sha256": "30aee39a75df1ce3cac52db0855468d0db2968ea863138b03881b46ad3f933d7",
+          "pdf_page": 9,
+          "title": "AI Adoption & Change Management",
+          "locator": "Physical PDF page 9",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Hỏi người dùng kẹt ở động lực/khả năng và cách kiểm chứng, xử lý lỗi hiện có"
+        },
+        {
+          "id": "b",
+          "text": "Mặc định mọi ít dùng là chống đối thay đổi"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ đo thêm số lần đăng nhập để suy ra nguyên nhân"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d11-x04",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d11",
+      "topic": "p2-t1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trợ lý nội bộ ít được dùng vì không có nguồn và owner cập nhật tài liệu. Nên ưu tiên gì?",
+      "correct_answer": "c",
+      "explanation": "Nguồn không được quản lý và khó kiểm chứng làm hành vi ít dùng có cơ sở thực tế.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d11",
+          "sha256": "30aee39a75df1ce3cac52db0855468d0db2968ea863138b03881b46ad3f933d7",
+          "pdf_page": 10,
+          "title": "AI Adoption & Change Management",
+          "locator": "Physical PDF page 10",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ tổ chức cuộc thi số prompt để tăng lượt dùng"
+        },
+        {
+          "id": "b",
+          "text": "Mở rollout rộng vì nhiều người sẽ tự sửa câu trả lời"
+        },
+        {
+          "id": "c",
+          "text": "Sửa trust và quy trình dữ liệu trước khi thúc ép tăng usage"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d11-x05",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d11",
+      "topic": "p2-t1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Workflow tra cứu bằng AI cần bổ sung gì để câu trả lời được sử dụng có trách nhiệm?",
+      "correct_answer": "b",
+      "explanation": "AI tăng tốc tìm/tóm tắt nhưng phải có bước kiểm tra và xử lý bất định.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d11",
+          "sha256": "30aee39a75df1ce3cac52db0855468d0db2968ea863138b03881b46ad3f933d7",
+          "pdf_page": 11,
+          "title": "AI Adoption & Change Management",
+          "locator": "Physical PDF page 11",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tự coi mọi response là bản tài liệu chính thức"
+        },
+        {
+          "id": "b",
+          "text": "Nguồn/ngày, người kiểm chứng và cách dừng/báo lỗi"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ thay ô tìm file bằng ô chat"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d11-x06",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d11",
+      "topic": "p2-t1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Nhân viên chưa hiểu vì sao quy trình cần thay đổi. Can thiệp ADKAR nào phù hợp nhất?",
+      "correct_answer": "b",
+      "explanation": "Awareness giải quyết hiểu lý do thay đổi, khác Ability hoặc Reinforcement.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d11",
+          "sha256": "30aee39a75df1ce3cac52db0855468d0db2968ea863138b03881b46ad3f933d7",
+          "pdf_page": 12,
+          "title": "AI Adoption & Change Management",
+          "locator": "Physical PDF page 12",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ thưởng theo số lần dùng AI trước khi giải thích mục đích"
+        },
+        {
+          "id": "b",
+          "text": "Làm rõ vấn đề công việc và tác động của thay đổi"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ tổ chức thực hành thao tác mà không nói nhu cầu thay đổi"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d11-x07",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d11",
+      "topic": "p2-t1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Nhân viên đã hiểu lý do đổi nhưng còn lo ngại và chưa muốn tham gia. Cần xử lý yếu tố nào?",
+      "correct_answer": "b",
+      "explanation": "Desire là lý do muốn thay đổi; biết vì sao chưa đồng nghĩa muốn hoặc sẵn sàng thay đổi.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d11",
+          "sha256": "30aee39a75df1ce3cac52db0855468d0db2968ea863138b03881b46ad3f933d7",
+          "pdf_page": 12,
+          "title": "AI Adoption & Change Management",
+          "locator": "Physical PDF page 12",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ Knowledge: bổ sung thêm hướng dẫn thao tác bất kể động lực"
+        },
+        {
+          "id": "b",
+          "text": "Desire: giải quyết trở ngại và mối lo tạo động lực thay đổi"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ Reinforcement: đo hành vi đã ổn định rồi thưởng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d11-x08",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d11",
+      "topic": "p2-t1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong trợ lý tra cứu nội bộ, phân công nào giữ đúng trách nhiệm kết quả?",
+      "correct_answer": "b",
+      "explanation": "Tăng tốc tìm thông tin không chuyển trách nhiệm phê duyệt cuối và xử lý ngoại lệ ra khỏi người.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d11",
+          "sha256": "30aee39a75df1ce3cac52db0855468d0db2968ea863138b03881b46ad3f933d7",
+          "pdf_page": 22,
+          "title": "AI Adoption & Change Management",
+          "locator": "Physical PDF page 22",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "AI tóm tắt xong thì tự coi nội dung thành tài liệu chính thức"
+        },
+        {
+          "id": "b",
+          "text": "AI tìm/tóm tắt; người kiểm chứng, phê duyệt và xử lý ngoại lệ"
+        },
+        {
+          "id": "c",
+          "text": "Người chỉ gửi prompt còn mọi câu hỏi nhạy cảm giao AI quyết cuối"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d11-x09",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d11",
+      "topic": "p2-t1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những điều kiện readiness nào cần kiểm trước mở rộng? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "d",
+        "a",
+        "b"
+      ],
+      "explanation": "Readiness gồm nguồn lực và kiểm soát của tổ chức, không chỉ model chạy được.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d11",
+          "sha256": "30aee39a75df1ce3cac52db0855468d0db2968ea863138b03881b46ad3f933d7",
+          "pdf_page": 14,
+          "title": "AI Adoption & Change Management",
+          "locator": "Physical PDF page 14",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Quyền truy cập đúng mục đích"
+        },
+        {
+          "id": "b",
+          "text": "Phạm vi, chi phí và năng lực vận hành rõ"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ có model hoạt động trong demo"
+        },
+        {
+          "id": "d",
+          "text": "Data owner và lịch cập nhật"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d11-x10",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d11",
+      "topic": "p2-t1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Mức sử dụng tăng nhưng effort và kết quả nghiệp vụ không tốt hơn cho thấy điều gì?",
+      "correct_answer": "c",
+      "explanation": "Cần đi từ usage/hành vi đến năng suất, chất lượng và kết quả thật.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d11",
+          "sha256": "30aee39a75df1ce3cac52db0855468d0db2968ea863138b03881b46ad3f933d7",
+          "pdf_page": 15,
+          "title": "AI Adoption & Change Management",
+          "locator": "Physical PDF page 15",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Số lần dùng tự bảo đảm productivity tăng"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ cần đổi target để ghi nhận thành công"
+        },
+        {
+          "id": "c",
+          "text": "Activity chưa đủ chứng minh giá trị adoption"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d11-x11",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d11",
+      "topic": "p2-t1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Chỉ số nào có bằng chứng trực tiếp hơn tự khai thời gian tiết kiệm?",
+      "correct_answer": "b",
+      "explanation": "Task logs và rework gắn với công việc thực, giúp ra quyết định dựa dữ liệu kiểm được.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d11",
+          "sha256": "30aee39a75df1ce3cac52db0855468d0db2968ea863138b03881b46ad3f933d7",
+          "pdf_page": 16,
+          "title": "AI Adoption & Change Management",
+          "locator": "Physical PDF page 16",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tỷ lệ nội dung có nhãn “dùng AI” bất kể chất lượng"
+        },
+        {
+          "id": "b",
+          "text": "Thời gian xử lý từ log task và tỷ lệ hoàn thành không cần QA làm lại"
+        },
+        {
+          "id": "c",
+          "text": "Số người nói họ thích có AI"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d11-x12",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d11",
+      "topic": "p2-t1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Muốn làm rõ ai giữ quyết định và ai kiểm output trong workflow, framework nào phù hợp nhất?",
+      "correct_answer": "a",
+      "explanation": "Các framework giải quyết câu hỏi khác nhau; phân công người–AI cần ranh giới công việc và handoff.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d11",
+          "sha256": "30aee39a75df1ce3cac52db0855468d0db2968ea863138b03881b46ad3f933d7",
+          "pdf_page": 18,
+          "title": "AI Adoption & Change Management",
+          "locator": "Physical PDF page 18",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Mollick để chia phần việc người–AI"
+        },
+        {
+          "id": "b",
+          "text": "ADKAR chỉ để phân chia quyền phê duyệt task"
+        },
+        {
+          "id": "c",
+          "text": "Gartner-Lite chỉ để xác định format output của model"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d11-x13",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d11",
+      "topic": "p2-t1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Gartner-Lite tách Direction, Readiness và Absorption để kiểm điều gì?",
+      "correct_answer": "c",
+      "explanation": "Khả năng hấp thụ cần owner, hỗ trợ và học từ lỗi để vận hành bền.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d11",
+          "sha256": "30aee39a75df1ce3cac52db0855468d0db2968ea863138b03881b46ad3f933d7",
+          "pdf_page": 19,
+          "title": "AI Adoption & Change Management",
+          "locator": "Physical PDF page 19",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ model được chọn có benchmark cao nhất không"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ số người đã tham gia buổi giới thiệu công cụ"
+        },
+        {
+          "id": "c",
+          "text": "Hướng giá trị rõ, điều kiện đủ và khả năng duy trì cách làm mới"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d11-x14",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d11",
+      "topic": "p2-t1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Mục tiêu tra cứu rõ nhưng dữ liệu, quyền và quality owner chưa sẵn sàng. Quyết định phù hợp là gì?",
+      "correct_answer": "b",
+      "explanation": "Một hướng đúng chưa đủ điều kiện mở rộng khi hệ thống chưa có nguồn và trách nhiệm vận hành.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d11",
+          "sha256": "30aee39a75df1ce3cac52db0855468d0db2968ea863138b03881b46ad3f933d7",
+          "pdf_page": 20,
+          "title": "AI Adoption & Change Management",
+          "locator": "Physical PDF page 20",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Mua thêm license để tự giải quyết governance"
+        },
+        {
+          "id": "b",
+          "text": "Pilot nhỏ để sửa readiness trước rollout rộng"
+        },
+        {
+          "id": "c",
+          "text": "Mở rộng ngay vì Direction đã rõ"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d11-x15",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d11",
+      "topic": "p2-t1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Task nào phù hợp tự động hóa hơn trong phân chia người–AI?",
+      "correct_answer": "a",
+      "explanation": "Tự động hóa cần điều kiện rõ; quyết định cuối và xử lý ngoại lệ vẫn cần người có trách nhiệm.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d11",
+          "sha256": "30aee39a75df1ce3cac52db0855468d0db2968ea863138b03881b46ad3f933d7",
+          "pdf_page": 21,
+          "title": "AI Adoption & Change Management",
+          "locator": "Physical PDF page 21",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Task lặp lại, rủi ro thấp và có tiêu chí kiểm tra"
+        },
+        {
+          "id": "b",
+          "text": "Phê duyệt cuối các ngoại lệ rủi ro cao chưa có rule"
+        },
+        {
+          "id": "c",
+          "text": "Chịu trách nhiệm thay con người cho mọi hậu quả nghiệp vụ"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d11-x16",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d11",
+      "topic": "p2-t1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Roadmap 30–60–90 nên được dùng như thế nào?",
+      "correct_answer": "c",
+      "explanation": "Qua giai đoạn dựa trên evidence, không chỉ thời gian đã trôi.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d11",
+          "sha256": "30aee39a75df1ce3cac52db0855468d0db2968ea863138b03881b46ad3f933d7",
+          "pdf_page": 23,
+          "title": "AI Adoption & Change Management",
+          "locator": "Physical PDF page 23",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Lịch cứng buộc rollout ngày 90 bất kể kết quả"
+        },
+        {
+          "id": "b",
+          "text": "Danh sách tasks không cần owner hay tiêu chí hoàn tất"
+        },
+        {
+          "id": "c",
+          "text": "Ba cổng evidence để chứng minh vấn đề, chất lượng rồi quyết định mở rộng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t1-d11-x17",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 2,
+      "track": 1,
+      "day": "p2-t1-d11",
+      "topic": "p2-t1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một dashboard hành động cần nối metric với những thông tin nào? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "d",
+        "a",
+        "b"
+      ],
+      "explanation": "Metric hữu ích phải dẫn đến tiếp tục, sửa hoặc dừng với trách nhiệm rõ.",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d11",
+          "sha256": "30aee39a75df1ce3cac52db0855468d0db2968ea863138b03881b46ad3f933d7",
+          "pdf_page": 30,
+          "title": "AI Adoption & Change Management",
+          "locator": "Physical PDF page 30",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Nguồn dữ liệu và owner"
+        },
+        {
+          "id": "b",
+          "text": "Hành động nếu metric xấu"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ giá trị hiện tại để người xem tự suy mọi quyết định"
+        },
+        {
+          "id": "d",
+          "text": "Baseline và target"
+        }
+      ],
+      "shuffle_options": true
+    }
+  ]
+}

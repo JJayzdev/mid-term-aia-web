@@ -1,0 +1,1634 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.22.expand-b-11",
+  "questions": [
+    {
+      "id": "p2-t4-d01-x01",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Tập dữ liệu nào nên dùng để chọn thời điểm dừng và siêu tham số?",
+      "correct_answer": "c",
+      "explanation": "Validation phục vụ lựa chọn mô hình; test dành báo cáo cuối để tránh tối ưu theo tập kiểm tra.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 9,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Training set thay mọi đánh giá tổng quát hóa"
+        },
+        {
+          "id": "b",
+          "text": "Gộp test và train trước khi chọn siêu tham số"
+        },
+        {
+          "id": "c",
+          "text": "Validation set"
+        },
+        {
+          "id": "d",
+          "text": "Test set dùng lại sau mỗi lựa chọn"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d01-x02",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Lớp fully connected có 3 đầu vào và 4 nơ-ron, mỗi nơ-ron có một bias. Lớp có bao nhiêu tham số?",
+      "correct_answer": "b",
+      "explanation": "Mỗi nơ-ron có 3 weights và 1 bias; tổng là 4×(3+1)=16.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 12,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "15"
+        },
+        {
+          "id": "b",
+          "text": "16"
+        },
+        {
+          "id": "c",
+          "text": "12"
+        },
+        {
+          "id": "d",
+          "text": "7"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d01-x03",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Xếp nhiều lớp affine mà không có activation phi tuyến làm giới hạn biểu diễn thế nào?",
+      "correct_answer": "a",
+      "explanation": "Hợp của các phép affine vẫn affine; activation phi tuyến ngăn việc gộp này.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 13,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 13; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Toàn mạng vẫn gộp được thành một phép affine"
+        },
+        {
+          "id": "b",
+          "text": "Độ sâu tự sinh phi tuyến dù từng lớp chỉ affine"
+        },
+        {
+          "id": "c",
+          "text": "Bias giữa các lớp tạo mọi hàm phi tuyến cần thiết"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ cần nhiều ma trận thì mạng luôn biểu diễn được XOR"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d01-x04",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một nơ-ron sigmoid nằm ở vùng đầu ra gần 0 hoặc 1 thường học chậm vì sao?",
+      "correct_answer": "d",
+      "explanation": "Gradient nhân với đạo hàm activation; vùng phẳng truyền gradient rất yếu.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 17,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 17; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Đạo hàm sigmoid luôn lớn nhất ở hai đầu"
+        },
+        {
+          "id": "b",
+          "text": "Bias tự động bị đóng băng khi xác suất gần 1"
+        },
+        {
+          "id": "c",
+          "text": "Backprop bỏ qua mọi nơ-ron có đầu ra khác 0.5"
+        },
+        {
+          "id": "d",
+          "text": "Đạo hàm sigmoid rất nhỏ ở vùng bão hòa"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d01-x05",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Định lý xấp xỉ phổ quát có bảo đảm gradient descent tìm được mạng phù hợp không?",
+      "correct_answer": "c",
+      "explanation": "Định lý nói về năng lực biểu diễn trên miền thích hợp, không bảo đảm độ rộng thực tế hoặc tối ưu thành công.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 18,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 18; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Có; định lý cho sẵn số nơ-ron tối thiểu cho mọi dataset"
+        },
+        {
+          "id": "b",
+          "text": "Không; vì mọi hàm liên tục đều không thể được xấp xỉ bằng mạng"
+        },
+        {
+          "id": "c",
+          "text": "Không; sự tồn tại của mạng không bảo đảm quá trình tối ưu tìm được nó"
+        },
+        {
+          "id": "d",
+          "text": "Có; chỉ cần một lớp ẩn thì mọi lần huấn luyện hội tụ"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d01-x06",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Đạo hàm riêng của loss theo một weight được hiểu với điều kiện nào?",
+      "correct_answer": "b",
+      "explanation": "Đạo hàm riêng đo tác động cục bộ của một tham số khi các tham số khác cố định.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 27,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 27; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tính độ chính xác cuối cùng thay đổi sau cả epoch"
+        },
+        {
+          "id": "b",
+          "text": "Giữ các weights còn lại cố định"
+        },
+        {
+          "id": "c",
+          "text": "Thay đồng thời mọi weight với cùng một lượng"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ thay nhãn và giữ weight cố định"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d01-x07",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Giảm bước h của finite difference xuống cực nhỏ luôn cải thiện độ chính xác không?",
+      "correct_answer": "a",
+      "explanation": "Có đánh đổi truncation error khi h lớn và rounding error khi h quá nhỏ.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 33,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 33; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Không; phép trừ hai giá trị gần nhau có thể khuếch đại sai số làm tròn"
+        },
+        {
+          "id": "b",
+          "text": "Có; h càng gần 0 thì số học hữu hạn luôn chính xác hơn"
+        },
+        {
+          "id": "c",
+          "text": "Có; rounding error chỉ xuất hiện khi h quá lớn"
+        },
+        {
+          "id": "d",
+          "text": "Không; vì finite difference chỉ hợp lệ khi h bằng 1"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d01-x08",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Backprop hiệu quả hơn tính từng đạo hàm bằng finite difference chủ yếu nhờ điều gì?",
+      "correct_answer": "d",
+      "explanation": "Reverse-mode chain rule dùng lại trung gian và thừa số chung thay tính lại cho từng tham số.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 36,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 36; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Thử perturb riêng mọi weight bằng hai forward passes"
+        },
+        {
+          "id": "b",
+          "text": "Bỏ qua gradient của các lớp ẩn"
+        },
+        {
+          "id": "c",
+          "text": "Cập nhật weights mà không cần tính loss"
+        },
+        {
+          "id": "d",
+          "text": "Tái sử dụng các thừa số gradient chung từ đầu ra về đầu vào"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d01-x09",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao phương pháp Newton với Hessian đầy đủ khó áp dụng cho mạng có rất nhiều tham số?",
+      "correct_answer": "c",
+      "explanation": "Hessian chứa đạo hàm bậc hai cho các cặp tham số nên có kích thước n×n, làm chi phí lưu và xử lý quá lớn khi n tăng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 30,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 30; full Hessian n by n and large-network cost",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Newton chỉ cần một scalar learning rate nên không có thông tin độ cong"
+        },
+        {
+          "id": "b",
+          "text": "Hessian chỉ có một phần tử trên mỗi tham số và luôn rẻ hơn gradient"
+        },
+        {
+          "id": "c",
+          "text": "Hessian có số phần tử tăng theo bình phương số tham số"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d01-x10",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Autograd trả gradient hợp lệ có chứng minh loss phù hợp với bài toán không?",
+      "correct_answer": "b",
+      "explanation": "Đồ thị tính toán cho đạo hàm của loss được cung cấp; lựa chọn mục tiêu vẫn cần thiết kế và kiểm tra.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 46,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 46; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Không; vì autograd không thể tính gradient cho neural network"
+        },
+        {
+          "id": "b",
+          "text": "Không; nó vi phân biểu thức đã viết, kể cả mục tiêu được chọn sai"
+        },
+        {
+          "id": "c",
+          "text": "Có; autograd tự đổi loss theo nhãn nghiệp vụ"
+        },
+        {
+          "id": "d",
+          "text": "Có; gradient khác 0 chứng minh metric sẽ tăng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d01-x11",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một batch hồi quy có nhãn ngoại lai với sai số rất lớn. Vì sao MSE có thể bị mẫu đó chi phối?",
+      "correct_answer": "a",
+      "explanation": "Bình phương phạt outlier mạnh; gradient cũng tăng theo độ lệch dự đoán.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 51,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 51; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Sai số được bình phương nên tăng gấp đôi làm penalty tăng gấp bốn"
+        },
+        {
+          "id": "b",
+          "text": "MSE chặn mọi gradient lớn ở mức cố định"
+        },
+        {
+          "id": "c",
+          "text": "MSE chỉ tính các mẫu gần trung bình nhãn"
+        },
+        {
+          "id": "d",
+          "text": "MSE bỏ mọi mẫu có sai số lớn hơn 1"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d01-x12",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "BCEWithLogitsLoss nhận logits trực tiếp mang lợi ích số học nào?",
+      "correct_answer": "d",
+      "explanation": "Dạng loss từ logits dùng log-sum-exp ổn định thay sigmoid rồi log ngây thơ.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 52,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 52; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Bắt buộc người dùng sigmoid hai lần để tăng ổn định"
+        },
+        {
+          "id": "b",
+          "text": "Loại bỏ hoàn toàn ảnh hưởng của nhãn sai"
+        },
+        {
+          "id": "c",
+          "text": "Biến bài toán nhị phân thành hồi quy bình phương"
+        },
+        {
+          "id": "d",
+          "text": "Tính dạng ổn định tránh log của xác suất làm tròn sát 0 và tràn mũ"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d01-x13",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Smooth-L1 kết hợp hành vi nào để hồi quy hộp ổn định?",
+      "correct_answer": "c",
+      "explanation": "Smooth-L1 dùng vùng quadratic gần 0 và tuyến tính ở xa để tránh outlier gây bước quá lớn.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 58,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 58; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Gradient bằng 0 cho mọi hộp không giao nhau"
+        },
+        {
+          "id": "b",
+          "text": "Giữ gradient hằng số và không trơn tại 0 như L1 thuần"
+        },
+        {
+          "id": "c",
+          "text": "Trơn gần sai số 0 và gradient bị chặn khi sai số lớn"
+        },
+        {
+          "id": "d",
+          "text": "Bình phương mọi sai số với gradient tăng không giới hạn"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d01-x14",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Với các mẫu độc lập có cùng phân phối, tăng mini-batch gấp bốn làm độ lệch chuẩn của nhiễu trong gradient trung bình thay đổi xấp xỉ thế nào?",
+      "correct_answer": "b",
+      "explanation": "Độ nhiễu giảm theo 1/sqrt(B), nên B×4 cho độ nhiễu×1/2.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 69,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 69; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tăng gấp đôi"
+        },
+        {
+          "id": "b",
+          "text": "Giảm còn một nửa"
+        },
+        {
+          "id": "c",
+          "text": "Giảm còn một phần tư"
+        },
+        {
+          "id": "d",
+          "text": "Giữ nguyên vì batch size không ảnh hưởng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d01-x15",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Momentum giúp xử lý gradient dao động qua lại như thế nào?",
+      "correct_answer": "a",
+      "explanation": "Momentum dùng tổng gradient có suy giảm theo thời gian, giữ quán tính hướng hữu ích.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 71,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 71; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tích lũy hướng ổn định và triệt bớt các hướng đổi dấu"
+        },
+        {
+          "id": "b",
+          "text": "Bỏ toàn bộ gradient cũ ở mỗi bước"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ giữ bình phương gradient nên không có thông tin hướng"
+        },
+        {
+          "id": "d",
+          "text": "Luôn tăng learning rate bất kể lịch sử hướng đi"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d01-x16",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Early stopping nên giữ bộ weights nào để giảm overfitting?",
+      "correct_answer": "d",
+      "explanation": "Early stopping dựa cải thiện validation, không mặc định chọn trạng thái cuối cùng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 78,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 78; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Weights ở epoch cuối dù validation loss đã tăng"
+        },
+        {
+          "id": "b",
+          "text": "Weights có training loss nhỏ nhất bất kể validation"
+        },
+        {
+          "id": "c",
+          "text": "Weights tại thời điểm training accuracy cao nhất dù validation xấu đi"
+        },
+        {
+          "id": "d",
+          "text": "Weights tại thời điểm validation loss thấp nhất"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d02-x01",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d02",
+      "topic": "p2-t4-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Giữ nguyên kernel và số kênh nhưng tăng độ phân giải ảnh. Đại lượng nào của convolution tăng theo diện tích output?",
+      "correct_answer": "b",
+      "explanation": "Weight sharing làm parameters độc lập kích thước ảnh, nhưng kernel phải được áp dụng tại nhiều vị trí hơn.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d02",
+          "sha256": "58895651f776ef9fb62c9010d0c0c7b338849ea96e4a5dcbbe46b7afb77110b7",
+          "pdf_page": 9,
+          "title": "Kiến Trúc Mạng Cho Thị Giác Máy Tính",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Cả compute và parameters đều giữ nguyên"
+        },
+        {
+          "id": "b",
+          "text": "Chi phí tính toán, trong khi số weights không đổi"
+        },
+        {
+          "id": "c",
+          "text": "Số weights tăng theo mọi vị trí output"
+        },
+        {
+          "id": "d",
+          "text": "Số bias tăng theo từng pixel đầu vào"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d02-x02",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d02",
+      "topic": "p2-t4-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Convolution 1×1 chủ yếu trộn thông tin theo hướng nào?",
+      "correct_answer": "a",
+      "explanation": "1×1 là phép tuyến tính trên channel vector tại mỗi pixel, không tự trộn vị trí lân cận.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d02",
+          "sha256": "58895651f776ef9fb62c9010d0c0c7b338849ea96e4a5dcbbe46b7afb77110b7",
+          "pdf_page": 9,
+          "title": "Kiến Trúc Mạng Cho Thị Giác Máy Tính",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Giữa các kênh tại cùng vị trí"
+        },
+        {
+          "id": "b",
+          "text": "Giữa các pixel xa nhau mà bỏ kênh"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ theo hàng ngang bằng cửa sổ rộng"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ lấy cực đại trong vùng không gian"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d02-x03",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d02",
+      "topic": "p2-t4-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Translation equivariance của convolution nghĩa là gì?",
+      "correct_answer": "d",
+      "explanation": "Equivariance giữ quan hệ biến đổi đầu vào/đầu ra; invariance giữ nhãn không đổi và thường chỉ gần đúng nhờ pooling.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d02",
+          "sha256": "58895651f776ef9fb62c9010d0c0c7b338849ea96e4a5dcbbe46b7afb77110b7",
+          "pdf_page": 12,
+          "title": "Kiến Trúc Mạng Cho Thị Giác Máy Tính",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Vật dịch thì mọi feature map phải giữ nguyên tại từng pixel"
+        },
+        {
+          "id": "b",
+          "text": "Convolution luôn bỏ toàn bộ thông tin vị trí"
+        },
+        {
+          "id": "c",
+          "text": "Pooling luôn giữ tọa độ chính xác của cực đại"
+        },
+        {
+          "id": "d",
+          "text": "Vật dịch vị trí thì feature map dịch tương ứng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d02-x04",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d02",
+      "topic": "p2-t4-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Hai convolution 3×3 stride 1 có activation phi tuyến ở giữa so với một convolution 5×5 với cùng số kênh có lợi thế nào?",
+      "correct_answer": "c",
+      "explanation": "Stack small kernels tiết kiệm tham số cho cùng vùng nhìn và tăng bước phi tuyến ở giữa.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d02",
+          "sha256": "58895651f776ef9fb62c9010d0c0c7b338849ea96e4a5dcbbe46b7afb77110b7",
+          "pdf_page": 14,
+          "title": "Kiến Trúc Mạng Cho Thị Giác Máy Tính",
+          "locator": "Physical PDF page 14; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Receptive field thành 6×6 vì cộng hai kernel sizes"
+        },
+        {
+          "id": "b",
+          "text": "Không có thêm phi tuyến dù activation đặt giữa hai lớp"
+        },
+        {
+          "id": "c",
+          "text": "Cùng receptive field 5×5, ít weights hơn và thêm phi tuyến"
+        },
+        {
+          "id": "d",
+          "text": "Cùng số weights nhưng receptive field nhỏ hơn"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d02-x05",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d02",
+      "topic": "p2-t4-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "CNN phát hiện dùng mini-batch rất nhỏ cần normalization ít phụ thuộc batch. Lựa chọn nào phù hợp?",
+      "correct_answer": "b",
+      "explanation": "GroupNorm độc lập batch size, phù hợp lô nhỏ hơn BatchNorm dựa thống kê lô.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d02",
+          "sha256": "58895651f776ef9fb62c9010d0c0c7b338849ea96e4a5dcbbe46b7afb77110b7",
+          "pdf_page": 17,
+          "title": "Kiến Trúc Mạng Cho Thị Giác Máy Tính",
+          "locator": "Physical PDF page 17; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "GroupNorm lấy thống kê từ cùng kênh trên mọi mẫu thay vì nhóm kênh từng mẫu"
+        },
+        {
+          "id": "b",
+          "text": "GroupNorm tính theo nhóm kênh của từng mẫu"
+        },
+        {
+          "id": "c",
+          "text": "BatchNorm tính mean/variance từ các mẫu trong mini-batch rất nhỏ"
+        },
+        {
+          "id": "d",
+          "text": "InstanceNorm lấy một mean/variance chung từ tất cả mẫu của batch"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d02-x06",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d02",
+      "topic": "p2-t4-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "RNN dùng được chuỗi dài khác nhau mà số tham số không tăng theo số bước nhờ điều gì?",
+      "correct_answer": "a",
+      "explanation": "Recurrence áp dụng cùng phép chuyển trạng thái ở từng bước; độ dài tăng compute chứ không thêm bộ weights.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d02",
+          "sha256": "58895651f776ef9fb62c9010d0c0c7b338849ea96e4a5dcbbe46b7afb77110b7",
+          "pdf_page": 21,
+          "title": "Kiến Trúc Mạng Cho Thị Giác Máy Tính",
+          "locator": "Physical PDF page 21; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Dùng chung các ma trận weights ở mọi bước thời gian"
+        },
+        {
+          "id": "b",
+          "text": "Tạo bộ weights mới cho mỗi frame nhận được"
+        },
+        {
+          "id": "c",
+          "text": "Lưu mỗi input thành một tham số trainable mới"
+        },
+        {
+          "id": "d",
+          "text": "Bỏ hidden state khi chiều dài thay đổi"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d02-x07",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d02",
+      "topic": "p2-t4-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Gradient clipping có thể tự khôi phục gradient đã rất nhỏ do vanishing không?",
+      "correct_answer": "d",
+      "explanation": "Norm clipping giới hạn bước lớn; phụ thuộc dài cần kiến trúc có đường truyền thông tin phù hợp.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d02",
+          "sha256": "58895651f776ef9fb62c9010d0c0c7b338849ea96e4a5dcbbe46b7afb77110b7",
+          "pdf_page": 24,
+          "title": "Kiến Trúc Mạng Cho Thị Giác Máy Tính",
+          "locator": "Physical PDF page 24; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Có; mọi vector được chuẩn hóa thành cùng norm lớn"
+        },
+        {
+          "id": "b",
+          "text": "Có; clipping thay mọi activation bằng identity"
+        },
+        {
+          "id": "c",
+          "text": "Không; vì clipping chỉ dùng khi inference"
+        },
+        {
+          "id": "d",
+          "text": "Không; nó chỉ thu nhỏ gradient quá lớn, không khuếch đại gradient nhỏ"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d02-x08",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d02",
+      "topic": "p2-t4-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong LSTM, cổng quên điều khiển phần thông tin nào?",
+      "correct_answer": "c",
+      "explanation": "Forget gate nhân với cell state trước; input gate điều khiển ghi mới và output gate điều khiển đọc ra.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d02",
+          "sha256": "58895651f776ef9fb62c9010d0c0c7b338849ea96e4a5dcbbe46b7afb77110b7",
+          "pdf_page": 25,
+          "title": "Kiến Trúc Mạng Cho Thị Giác Máy Tính",
+          "locator": "Physical PDF page 25; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ nội dung ứng viên mới được ghi vào cell"
+        },
+        {
+          "id": "b",
+          "text": "Toàn bộ hidden state mới được ghi đè vào cell không qua input gate"
+        },
+        {
+          "id": "c",
+          "text": "Phần cell state cũ được giữ lại"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ phần cell state được đưa ra hidden output"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d02-x09",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d02",
+      "topic": "p2-t4-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "RNN có hạn chế song song hóa theo thời gian vì sao?",
+      "correct_answer": "b",
+      "explanation": "Phụ thuộc tuần tự h_t vào h_(t-1) tạo chuỗi tính toán theo thời gian.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d02",
+          "sha256": "58895651f776ef9fb62c9010d0c0c7b338849ea96e4a5dcbbe46b7afb77110b7",
+          "pdf_page": 28,
+          "title": "Kiến Trúc Mạng Cho Thị Giác Máy Tính",
+          "locator": "Physical PDF page 28; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Mọi sequence phải có độ dài cố định bằng hidden dimension"
+        },
+        {
+          "id": "b",
+          "text": "Bước hiện tại cần hidden state của bước trước"
+        },
+        {
+          "id": "c",
+          "text": "Mỗi timestep bắt buộc dùng model weights khác nhau"
+        },
+        {
+          "id": "d",
+          "text": "RNN không thể dùng matrix multiplication trên GPU"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d02-x10",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d02",
+      "topic": "p2-t4-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong attention, weights so khớp query–key được dùng để tổng hợp đại lượng nào?",
+      "correct_answer": "a",
+      "explanation": "Query/key xác định mức liên quan; weighted sum của values là nội dung trả về.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d02",
+          "sha256": "58895651f776ef9fb62c9010d0c0c7b338849ea96e4a5dcbbe46b7afb77110b7",
+          "pdf_page": 30,
+          "title": "Kiến Trúc Mạng Cho Thị Giác Máy Tính",
+          "locator": "Physical PDF page 30; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Các value vectors"
+        },
+        {
+          "id": "b",
+          "text": "Các token position ID thay mọi nội dung"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ query vector lặp lại nhiều lần"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ key norms mà bỏ value vectors"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d02-x11",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d02",
+      "topic": "p2-t4-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Self-attention không có positional information thiếu loại thông tin nào cho chuỗi?",
+      "correct_answer": "d",
+      "explanation": "Attention trên tập là permutation equivariant; positional encoding đưa cấu trúc vị trí vào token.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d02",
+          "sha256": "58895651f776ef9fb62c9010d0c0c7b338849ea96e4a5dcbbe46b7afb77110b7",
+          "pdf_page": 33,
+          "title": "Kiến Trúc Mạng Cho Thị Giác Máy Tính",
+          "locator": "Physical PDF page 33; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Khả năng so khớp query với key"
+        },
+        {
+          "id": "b",
+          "text": "Khả năng tổng hợp value theo weights"
+        },
+        {
+          "id": "c",
+          "text": "Mọi khả năng dùng gradient để train"
+        },
+        {
+          "id": "d",
+          "text": "Thứ tự hoặc vị trí của token"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d02-x12",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d02",
+      "topic": "p2-t4-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Cross-attention khác self-attention ở nguồn Q/K/V ra sao?",
+      "correct_answer": "c",
+      "explanation": "Cross-attention cho truy vấn đọc nội dung từ tập đặc trưng khác, như object queries đọc ảnh.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d02",
+          "sha256": "58895651f776ef9fb62c9010d0c0c7b338849ea96e4a5dcbbe46b7afb77110b7",
+          "pdf_page": 35,
+          "title": "Kiến Trúc Mạng Cho Thị Giác Máy Tính",
+          "locator": "Physical PDF page 35; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ đổi số head còn nguồn Q/K/V luôn giống self-attention"
+        },
+        {
+          "id": "b",
+          "text": "K lấy từ output tương lai chưa được tính, V không cần"
+        },
+        {
+          "id": "c",
+          "text": "Q từ một tập, K và V từ tập khác"
+        },
+        {
+          "id": "d",
+          "text": "Q/K/V đều bắt buộc từ một token duy nhất"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d02-x13",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d02",
+      "topic": "p2-t4-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Swin giảm chi phí attention trên ảnh lớn bằng cơ chế không gian nào?",
+      "correct_answer": "b",
+      "explanation": "Window attention giới hạn số cặp tương tác; shifted windows cho trao đổi qua ranh giới cửa sổ.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d02",
+          "sha256": "58895651f776ef9fb62c9010d0c0c7b338849ea96e4a5dcbbe46b7afb77110b7",
+          "pdf_page": 44,
+          "title": "Kiến Trúc Mạng Cho Thị Giác Máy Tính",
+          "locator": "Physical PDF page 44; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Giữ một cửa sổ duy nhất phủ nguyên ảnh ở mọi độ phân giải"
+        },
+        {
+          "id": "b",
+          "text": "Attention trong cửa sổ và dịch cửa sổ giữa các lớp"
+        },
+        {
+          "id": "c",
+          "text": "Global attention trên mọi pixel ở mọi lớp"
+        },
+        {
+          "id": "d",
+          "text": "Bỏ mọi kết nối giữa các token trong cùng cửa sổ"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d02-x14",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d02",
+      "topic": "p2-t4-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Lật ngang ảnh chứa nhãn làn trái/phải cần được xử lý thận trọng vì sao?",
+      "correct_answer": "a",
+      "explanation": "Augmentation là giả định về bất biến; nhãn mang hướng phải được biến đổi phù hợp hoặc tránh phép lật.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d02",
+          "sha256": "58895651f776ef9fb62c9010d0c0c7b338849ea96e4a5dcbbe46b7afb77110b7",
+          "pdf_page": 57,
+          "title": "Kiến Trúc Mạng Cho Thị Giác Máy Tính",
+          "locator": "Physical PDF page 57; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Biến đổi có thể đổi nghĩa nhãn hướng nên không còn label-preserving"
+        },
+        {
+          "id": "b",
+          "text": "Mọi augmentation hình học luôn giữ mọi nhãn nguyên vẹn"
+        },
+        {
+          "id": "c",
+          "text": "Lật ngang chỉ đổi màu nên không ảnh hưởng hình học"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ classification mới cần kiểm nhãn, robotics không cần"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d02-x15",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d02",
+      "topic": "p2-t4-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Tinh chỉnh pretrained backbone cùng head mới khởi tạo thường đặt learning rate thế nào?",
+      "correct_answer": "d",
+      "explanation": "Head mới cần học nhanh hơn; backbone dùng bước nhỏ để giữ tri thức hữu ích trong chuyển giao.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d02",
+          "sha256": "58895651f776ef9fb62c9010d0c0c7b338849ea96e4a5dcbbe46b7afb77110b7",
+          "pdf_page": 58,
+          "title": "Kiến Trúc Mạng Cho Thị Giác Máy Tính",
+          "locator": "Physical PDF page 58; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Backbone luôn cao hơn head vì đã hội tụ trước"
+        },
+        {
+          "id": "b",
+          "text": "Cả hai luôn bằng 0 để bảo toàn pretraining"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ head có weight decay thì backbone không cần learning rate"
+        },
+        {
+          "id": "d",
+          "text": "Backbone thấp hơn head để tránh phá đặc trưng đã học"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d02-x16",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d02",
+      "topic": "p2-t4-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "TTA cho detection phải làm gì trước khi gộp các hộp từ ảnh lật hoặc đổi cỡ?",
+      "correct_answer": "c",
+      "explanation": "Dự đoán không gian phải inverse-transform về cùng frame trước fusion; TTA cần nhiều lượt inference.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d02",
+          "sha256": "58895651f776ef9fb62c9010d0c0c7b338849ea96e4a5dcbbe46b7afb77110b7",
+          "pdf_page": 70,
+          "title": "Kiến Trúc Mạng Cho Thị Giác Máy Tính",
+          "locator": "Physical PDF page 70; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ lấy trung bình class logits và bỏ tọa độ"
+        },
+        {
+          "id": "b",
+          "text": "Coi hộp từ view lật là cùng tọa độ với ảnh gốc"
+        },
+        {
+          "id": "c",
+          "text": "Đưa tọa độ dự đoán về hệ quy chiếu ảnh gốc"
+        },
+        {
+          "id": "d",
+          "text": "Gộp trực tiếp mọi tọa độ của các view khác nhau"
+        }
+      ],
+      "shuffle_options": true
+    }
+  ]
+}

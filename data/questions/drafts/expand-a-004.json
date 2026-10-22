@@ -1,0 +1,2347 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.22.expansion-a-004",
+  "questions": [
+    {
+      "id": "p1-d10-x01",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d10",
+      "topic": "p1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Để đồng bộ dữ liệu vào data platform mà không gây quá tải cho operational database do các truy vấn SELECT * định kỳ, kỹ thuật nào phù hợp nhất?",
+      "correct_answer": "b",
+      "explanation": "CDC (Change Data Capture) bắt các thay đổi trực tiếp từ transaction log của DB nguồn và stream sang kho dữ liệu, tránh việc phải chạy các truy vấn full table scan gây nghẽn database vận hành.",
+      "source_reference": [
+        {
+          "document_id": "p1-d10",
+          "sha256": "80829f856297080f140ecb28adfd95f0d27179de1660b3315e38bcb4be16e694",
+          "pdf_page": 28,
+          "title": "Data Pipeline & Data Observability",
+          "locator": "Physical PDF page 28",
+          "verification": "verified"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chạy export toàn bộ bảng vào giờ cao điểm để giảm độ trễ dữ liệu"
+        },
+        {
+          "id": "b",
+          "text": "Change Data Capture (CDC) đọc trực tiếp transaction log của cơ sở dữ liệu"
+        },
+        {
+          "id": "c",
+          "text": "Tăng kích thước read-replica lên gấp 10 lần và giữ nguyên full dump mỗi giờ"
+        }
+      ],
+      "shuffle_options": true,
+      "context": "Nguồn lớn, còn logic chuẩn bị corpus có thể đổi qua nhiều lần eval."
+    },
+    {
+      "id": "p1-d10-x02",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d10",
+      "topic": "p1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "CDC giảm chi phí đồng bộ bảng lớn bằng cách nào?",
+      "correct_answer": "b",
+      "explanation": "CDC theo dõi thay đổi thay vì đọc lại toàn dataset ở mỗi lần sync.",
+      "source_reference": [
+        {
+          "document_id": "p1-d10",
+          "sha256": "80829f856297080f140ecb28adfd95f0d27179de1660b3315e38bcb4be16e694",
+          "pdf_page": 26,
+          "title": "Data Pipeline & Data Observability",
+          "locator": "Physical PDF page 26",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Bỏ mọi delete event và chỉ lấy insert mới"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ lấy phần insert/update/delete đã thay đổi"
+        },
+        {
+          "id": "c",
+          "text": "Quét lại toàn bộ bảng nhưng giảm số cột hiển thị"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d10-x03",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d10",
+      "topic": "p1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Record có timestamp cũ nhưng tới pipeline muộn có thể bị watermark làm bỏ sót vì sao?",
+      "correct_answer": "a",
+      "explanation": "Ranh giới dựa timestamp/offset cần thiết kế cho late arrival; timestamp cũ không đồng nghĩa đã xử lý.",
+      "source_reference": [
+        {
+          "document_id": "p1-d10",
+          "sha256": "80829f856297080f140ecb28adfd95f0d27179de1660b3315e38bcb4be16e694",
+          "pdf_page": 31,
+          "title": "Data Pipeline & Data Observability",
+          "locator": "Physical PDF page 31",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Record rơi sau ranh giới đã chốt dù thực tế chưa được ingest"
+        },
+        {
+          "id": "b",
+          "text": "Watermark luôn theo thời điểm pipeline nhận record nên không thể bỏ sót"
+        },
+        {
+          "id": "c",
+          "text": "Watermark tự làm mọi record có timestamp khác nhau thành duplicate"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d10-x04",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d10",
+      "topic": "p1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Hai chuỗi tiếng Việt nhìn giống nhau nhưng exact-match/dedup khác kết quả. Bước transform nào xử lý nguyên nhân Unicode?",
+      "correct_answer": "c",
+      "explanation": "NFC/NFD có thể hiển thị giống nhưng khác bytes; normalization đưa về cùng biểu diễn.",
+      "source_reference": [
+        {
+          "document_id": "p1-d10",
+          "sha256": "80829f856297080f140ecb28adfd95f0d27179de1660b3315e38bcb4be16e694",
+          "pdf_page": 35,
+          "title": "Data Pipeline & Data Observability",
+          "locator": "Physical PDF page 35",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ tăng top-k để che lỗi exact matching"
+        },
+        {
+          "id": "b",
+          "text": "Giữ nguyên bytes khác nhau và coi là hai chính sách độc lập"
+        },
+        {
+          "id": "c",
+          "text": "Chuẩn hóa về cùng dạng như NFC trước khi so sánh/index"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d10-x05",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d10",
+      "topic": "p1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Khung tuân thủ dữ liệu tại Việt Nam đối với hệ thống thông tin và dữ liệu số được cấu thành từ các văn bản pháp lý chủ đạo nào?",
+      "correct_answer": "b",
+      "explanation": "Khung pháp lý về an toàn và bảo vệ dữ liệu số tại Việt Nam gồm nhiều tầng quy định kết hợp: Luật An ninh mạng, Nghị định 147 và Luật Dữ liệu, không phải một văn bản đơn lẻ.",
+      "source_reference": [
+        {
+          "document_id": "p1-d10",
+          "sha256": "80829f856297080f140ecb28adfd95f0d27179de1660b3315e38bcb4be16e694",
+          "pdf_page": 85,
+          "title": "Data Pipeline & Data Observability",
+          "locator": "Physical PDF page 85",
+          "verification": "verified"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ một quy định duy nhất về an toàn phần mềm nguồn mở"
+        },
+        {
+          "id": "b",
+          "text": "Luật An ninh mạng, Nghị định 147 và Luật Dữ liệu"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ quy chuẩn định dạng file trao đổi giữa các doanh nghiệp"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d10-x06",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d10",
+      "topic": "p1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Dual-index cutover cho phép thay phiên bản corpus an toàn hơn bằng cơ chế nào?",
+      "correct_answer": "a",
+      "explanation": "Blue-green cho data giữ đường phục vụ cũ trong khi kiểm chứng index mới.",
+      "source_reference": [
+        {
+          "document_id": "p1-d10",
+          "sha256": "80829f856297080f140ecb28adfd95f0d27179de1660b3315e38bcb4be16e694",
+          "pdf_page": 47,
+          "title": "Data Pipeline & Data Observability",
+          "locator": "Physical PDF page 47",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Build/validate index mới song song rồi chuyển traffic đọc"
+        },
+        {
+          "id": "b",
+          "text": "Ghi đè index đang phục vụ và kiểm tra sau khi chuyển toàn traffic"
+        },
+        {
+          "id": "c",
+          "text": "Đưa query vào cả hai index rồi trộn vectors mà không phân version"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d10-x07",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d10",
+      "topic": "p1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao nên profiling dữ liệu trước khi viết quality assertions?",
+      "correct_answer": "c",
+      "explanation": "Rule đoán sai có thể báo lỗi cho giá trị hợp lệ hoặc bỏ qua đúng failure mode quan trọng.",
+      "source_reference": [
+        {
+          "document_id": "p1-d10",
+          "sha256": "80829f856297080f140ecb28adfd95f0d27179de1660b3315e38bcb4be16e694",
+          "pdf_page": 50,
+          "title": "Data Pipeline & Data Observability",
+          "locator": "Physical PDF page 50",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Để chọn rule theo ví dụ nhỏ và xem mọi giá trị khác đều là lỗi"
+        },
+        {
+          "id": "b",
+          "text": "Để thay mọi assertions bằng một báo cáo thống kê không có hành động"
+        },
+        {
+          "id": "c",
+          "text": "Để biết phân bố/null/cardinality thật, tránh rule dựa trên phỏng đoán"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d10-x08",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d10",
+      "topic": "p1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trade-off giữa quality gate sớm và muộn là gì?",
+      "correct_answer": "b",
+      "explanation": "Vị trí gate cần cân bằng chi phí xử lý với thông tin có sẵn để nhận diện lỗi.",
+      "source_reference": [
+        {
+          "document_id": "p1-d10",
+          "sha256": "80829f856297080f140ecb28adfd95f0d27179de1660b3315e38bcb4be16e694",
+          "pdf_page": 55,
+          "title": "Data Pipeline & Data Observability",
+          "locator": "Physical PDF page 55",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Gate muộn luôn rẻ hơn vì đã embed nên không cần kiểm dữ liệu nữa"
+        },
+        {
+          "id": "b",
+          "text": "Sớm tiết kiệm compute nhưng ít context; muộn tốn hơn nhưng bắt được lỗi cần đủ ngữ cảnh"
+        },
+        {
+          "id": "c",
+          "text": "Gate sớm luôn biết đủ xung đột giữa mọi tài liệu; gate muộn chỉ kiểm format"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d10-x09",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d10",
+      "topic": "p1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một lỗi quality ở policy pháp lý khiến phiên bản mới chưa đáng tin, trong khi bản cũ vẫn đúng cho phạm vi đang phục vụ. Fail-closed nên làm gì?",
+      "correct_answer": "a",
+      "explanation": "Fail-closed chặn dữ liệu mới không đạt kiểm tra; lựa chọn cần xét hậu quả stale so với sai.",
+      "source_reference": [
+        {
+          "document_id": "p1-d10",
+          "sha256": "80829f856297080f140ecb28adfd95f0d27179de1660b3315e38bcb4be16e694",
+          "pdf_page": 56,
+          "title": "Data Pipeline & Data Observability",
+          "locator": "Physical PDF page 56",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Dừng cập nhật index và tiếp tục phục vụ bản cũ phù hợp"
+        },
+        {
+          "id": "b",
+          "text": "Log lỗi nhưng vẫn publish bản mới như bình thường"
+        },
+        {
+          "id": "c",
+          "text": "Xóa index cũ ngay để buộc agent dùng bản chưa đạt gate"
+        }
+      ],
+      "shuffle_options": true,
+      "context": "Nhóm đã xác định stale có kiểm soát ít hại hơn công bố nội dung pháp lý sai."
+    },
+    {
+      "id": "p1-d10-x10",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d10",
+      "topic": "p1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những thành phần nào cần có trong data contract? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "c",
+        "d"
+      ],
+      "explanation": "Hợp đồng phải mô tả cấu trúc, nghĩa, mức phục vụ và trách nhiệm giữa producer/consumer.",
+      "source_reference": [
+        {
+          "document_id": "p1-d10",
+          "sha256": "80829f856297080f140ecb28adfd95f0d27179de1660b3315e38bcb4be16e694",
+          "pdf_page": 58,
+          "title": "Data Pipeline & Data Observability",
+          "locator": "Physical PDF page 58",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ tên bảng và định dạng file là đủ thay mọi cam kết"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ query mẫu nhưng không xác định ý nghĩa field"
+        },
+        {
+          "id": "c",
+          "text": "Schema và semantics của fields"
+        },
+        {
+          "id": "d",
+          "text": "SLA cùng ownership khi vi phạm"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d10-x11",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d10",
+      "topic": "p1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Dataset cập nhật đúng lịch nhưng các hàng đều rỗng có thể vẫn pass freshness SLI. Điều này cho thấy gì?",
+      "correct_answer": "b",
+      "explanation": "On-time và nội dung đúng là hai trục khác nhau, cần kết hợp freshness với quality.",
+      "source_reference": [
+        {
+          "document_id": "p1-d10",
+          "sha256": "80829f856297080f140ecb28adfd95f0d27179de1660b3315e38bcb4be16e694",
+          "pdf_page": 71,
+          "title": "Data Pipeline & Data Observability",
+          "locator": "Physical PDF page 71",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Có update timestamp mới là đủ bỏ qua các quality checks"
+        },
+        {
+          "id": "b",
+          "text": "Freshness đo thời điểm cập nhật, không tự chứng minh correctness/completeness"
+        },
+        {
+          "id": "c",
+          "text": "Freshness đồng nghĩa mọi content đã được validate"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d10-x12",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d10",
+      "topic": "p1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao thêm một cột metadata mới có thể là schema drift khó phát hiện hơn xóa cột đang được dùng?",
+      "correct_answer": "a",
+      "explanation": "Cột mới có thể lặng lẽ đi vào index dù chưa có assertions cho field đó.",
+      "source_reference": [
+        {
+          "document_id": "p1-d10",
+          "sha256": "80829f856297080f140ecb28adfd95f0d27179de1660b3315e38bcb4be16e694",
+          "pdf_page": 78,
+          "title": "Data Pipeline & Data Observability",
+          "locator": "Physical PDF page 78",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Downstream chưa tham chiếu cột mới nên không crash, cần schema-diff chủ động"
+        },
+        {
+          "id": "b",
+          "text": "Mọi cột mới đều gây exception trước khi ingest"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ cột bị xóa mới có khả năng làm lộ dữ liệu trong corpus"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d10-x13",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d10",
+      "topic": "p1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một detector báo quá nhiều false positive có thể làm regression thật bị bỏ qua qua cơ chế nào?",
+      "correct_answer": "c",
+      "explanation": "Alert fatigue tiêu hao chú ý và huấn luyện hành vi bỏ qua kênh quan trọng.",
+      "source_reference": [
+        {
+          "document_id": "p1-d10",
+          "sha256": "80829f856297080f140ecb28adfd95f0d27179de1660b3315e38bcb4be16e694",
+          "pdf_page": 79,
+          "title": "Data Pipeline & Data Observability",
+          "locator": "Physical PDF page 79",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Mọi false positive tự tăng độ chính xác của detector ở lượt sau"
+        },
+        {
+          "id": "b",
+          "text": "Nhiều cảnh báo bảo đảm mọi người kiểm tra kỹ hơn từng cảnh báo"
+        },
+        {
+          "id": "c",
+          "text": "Đội ngũ mất niềm tin và ngừng phản hồi kênh cảnh báo"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d10-x14",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d10",
+      "topic": "p1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Phán quyết của tòa án trong vụ kiện Air Canada Chatbot (Moffatt v. Air Canada, 2024) xác lập nguyên tắc pháp lý quan trọng nào đối với chatbot chăm sóc khách hàng của doanh nghiệp?",
+      "correct_answer": "b",
+      "explanation": "Tòa án Canada xác định chatbot là kênh đại diện của doanh nghiệp; công ty không thể phủ nhận trách nhiệm (negligent misrepresentation) khi chatbot cung cấp thông tin chính sách sai lệch gây thiệt hại cho khách hàng.",
+      "source_reference": [
+        {
+          "document_id": "p1-d10",
+          "sha256": "80829f856297080f140ecb28adfd95f0d27179de1660b3315e38bcb4be16e694",
+          "pdf_page": 115,
+          "title": "Data Pipeline & Data Observability",
+          "locator": "Physical PDF page 115",
+          "verification": "verified"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chatbot là thực thể pháp lý độc lập tự chịu trách nhiệm về lời hứa của nó"
+        },
+        {
+          "id": "b",
+          "text": "Doanh nghiệp chịu trách nhiệm về thông tin sai lệch do chatbot chính thức cung cấp (negligent misrepresentation)"
+        },
+        {
+          "id": "c",
+          "text": "Khách hàng phải tự chịu rủi ro vì mọi thông tin từ chatbot đều mặc định là khuyến cáo không ràng buộc"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d10-x15",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d10",
+      "topic": "p1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Khi vi phạm SLA cứng đang ảnh hưởng ngay tới câu trả lời production, mức alert nào phù hợp hơn dashboard định kỳ?",
+      "correct_answer": "a",
+      "explanation": "Severity theo tác động hiện tại; ownership quyết định đội chịu trách nhiệm phản ứng.",
+      "source_reference": [
+        {
+          "document_id": "p1-d10",
+          "sha256": "80829f856297080f140ecb28adfd95f0d27179de1660b3315e38bcb4be16e694",
+          "pdf_page": 92,
+          "title": "Data Pipeline & Data Observability",
+          "locator": "Physical PDF page 92",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Page người trực và route tới owner dataset"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ tạo dashboard entry để review cuối tháng"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ log ở pipeline, không route vì agent vẫn trả câu trả lời"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d10-x16",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d10",
+      "topic": "p1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Sau khi sửa root cause của data incident, điều kiện nào cần trước khi mở lại phục vụ bình thường?",
+      "correct_answer": "c",
+      "explanation": "Fix chưa đủ; quality gate phải xác minh dữ liệu đã đạt điều kiện trước khi mở lại.",
+      "source_reference": [
+        {
+          "document_id": "p1-d10",
+          "sha256": "80829f856297080f140ecb28adfd95f0d27179de1660b3315e38bcb4be16e694",
+          "pdf_page": 93,
+          "title": "Data Pipeline & Data Observability",
+          "locator": "Physical PDF page 93",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ kiểm source code đã được merge"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ thấy job chạy xanh, không đối chiếu data/output"
+        },
+        {
+          "id": "c",
+          "text": "Verify bằng cách chạy lại quality gate"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d10-x17",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d10",
+      "topic": "p1-d10",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những lựa chọn nào giúp retry/backfill tránh làm nhân đôi dữ liệu? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "d",
+        "a"
+      ],
+      "explanation": "Task có thể được chạy lại; tính xác định và idempotency giữ retry không tạo duplicate hoặc đổi tập input.",
+      "source_reference": [
+        {
+          "document_id": "p1-d10",
+          "sha256": "80829f856297080f140ecb28adfd95f0d27179de1660b3315e38bcb4be16e694",
+          "pdf_page": 103,
+          "title": "Data Pipeline & Data Observability",
+          "locator": "Physical PDF page 103",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Đọc/ghi partition cụ thể cho lần chạy"
+        },
+        {
+          "id": "b",
+          "text": "Mỗi retry dùng dữ liệu latest theo thời điểm hiện tại"
+        },
+        {
+          "id": "c",
+          "text": "Coi scheduler retry là bảo đảm exactly-once với mọi hệ ngoài"
+        },
+        {
+          "id": "d",
+          "text": "Upsert/idempotent writes thay insert lặp"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d11-x01",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d11",
+      "topic": "p1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Defense in depth giữa input, LLM và output rails đem lại lợi ích gì?",
+      "correct_answer": "c",
+      "explanation": "Tách lớp theo bề mặt rủi ro bổ sung bảo vệ thay vì giả định một detector hoàn hảo.",
+      "source_reference": [
+        {
+          "document_id": "p1-d11",
+          "sha256": "04c49100a4cb70af31bc8b7818d814c940f16ef480368339ffcbc95ec6081803",
+          "pdf_page": 30,
+          "title": "Guardrails, HITL & Responsible AI",
+          "locator": "Physical PDF page 30",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Một input classifier tốt cho phép bỏ output checks"
+        },
+        {
+          "id": "b",
+          "text": "Các lớp chỉ nhân bản cùng một regex để tăng số lần kiểm tra"
+        },
+        {
+          "id": "c",
+          "text": "Các lớp bắt các lỗi khác nhau, lớp sau có thể chặn lỗi lớp trước bỏ sót"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d11-x02",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d11",
+      "topic": "p1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một HR assistant từ chối tư vấn crypto đang áp dụng kiểm soát nào?",
+      "correct_answer": "b",
+      "explanation": "Topic filter giới hạn chủ đề phục vụ, khác kiểm định dạng hoặc bằng chứng.",
+      "source_reference": [
+        {
+          "document_id": "p1-d11",
+          "sha256": "04c49100a4cb70af31bc8b7818d814c940f16ef480368339ffcbc95ec6081803",
+          "pdf_page": 34,
+          "title": "Guardrails, HITL & Responsible AI",
+          "locator": "Physical PDF page 34",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Grounding check đối chiếu từng factual claim"
+        },
+        {
+          "id": "b",
+          "text": "Topic filtering theo phạm vi use case"
+        },
+        {
+          "id": "c",
+          "text": "Format validation của output JSON"
+        }
+      ],
+      "shuffle_options": true,
+      "context": "Input hợp lệ về độ dài/ngôn ngữ nhưng hỏi một chủ đề ngoài chức năng sản phẩm."
+    },
+    {
+      "id": "p1-d11-x03",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d11",
+      "topic": "p1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao phòng thủ prompt injection không nên chỉ dựa vào regex/classifier detection?",
+      "correct_answer": "a",
+      "explanation": "Lọc nội dung không thay thế ranh giới quyền và kiến trúc giới hạn thiệt hại.",
+      "source_reference": [
+        {
+          "document_id": "p1-d11",
+          "sha256": "04c49100a4cb70af31bc8b7818d814c940f16ef480368339ffcbc95ec6081803",
+          "pdf_page": 44,
+          "title": "Guardrails, HITL & Responsible AI",
+          "locator": "Physical PDF page 44",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Biến thể mới có thể bypass; cần giới hạn cả năng lực/hành động agent được phép làm"
+        },
+        {
+          "id": "b",
+          "text": "Có detector thì không còn cần tách dữ liệu khỏi chỉ dẫn"
+        },
+        {
+          "id": "c",
+          "text": "Detection đã đúng trên test set thì mọi kênh tool mới có thể được tin mặc định"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d11-x04",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d11",
+      "topic": "p1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Spotlighting giúp giảm indirect injection bằng cơ chế nào?",
+      "correct_answer": "c",
+      "explanation": "Delimiting/datamarking giúp phân biệt dữ liệu không tin cậy với lệnh có thẩm quyền.",
+      "source_reference": [
+        {
+          "document_id": "p1-d11",
+          "sha256": "04c49100a4cb70af31bc8b7818d814c940f16ef480368339ffcbc95ec6081803",
+          "pdf_page": 45,
+          "title": "Guardrails, HITL & Responsible AI",
+          "locator": "Physical PDF page 45",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Nâng thẩm quyền mọi retrieved document lên bằng system policy"
+        },
+        {
+          "id": "b",
+          "text": "Xóa ranh giới context/instruction để model tự chọn nguồn đáng tin"
+        },
+        {
+          "id": "c",
+          "text": "Đánh dấu/tách nội dung là data để không coi nó như instruction"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d11-x05",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d11",
+      "topic": "p1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một quy trình red teaming có ích cần nối việc phát hiện lỗ hổng với bước nào?",
+      "correct_answer": "b",
+      "explanation": "Adversarial tests tạo bằng chứng và regression checks, không chỉ danh sách exploit.",
+      "source_reference": [
+        {
+          "document_id": "p1-d11",
+          "sha256": "04c49100a4cb70af31bc8b7818d814c940f16ef480368339ffcbc95ec6081803",
+          "pdf_page": 53,
+          "title": "Guardrails, HITL & Responsible AI",
+          "locator": "Physical PDF page 53",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Thay prompt tấn công bằng happy path để kết quả cuối dễ so hơn"
+        },
+        {
+          "id": "b",
+          "text": "Ghi kết quả, sửa và kiểm thử lại; đưa ca tấn công vào regression suite"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ đếm số prompt bị từ chối trong một demo"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d11-x06",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d11",
+      "topic": "p1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Human-as-tiebreaker đặt quyền quyết định cuối ở đâu?",
+      "correct_answer": "a",
+      "explanation": "Mức này khác on-the-loop review sau và in-the-loop approve trước đề xuất của agent.",
+      "source_reference": [
+        {
+          "document_id": "p1-d11",
+          "sha256": "04c49100a4cb70af31bc8b7818d814c940f16ef480368339ffcbc95ec6081803",
+          "pdf_page": 58,
+          "title": "Guardrails, HITL & Responsible AI",
+          "locator": "Physical PDF page 58",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Con người quyết định, agent hỗ trợ cho tình huống high-stakes"
+        },
+        {
+          "id": "b",
+          "text": "Agent thực hiện trước rồi con người chỉ review sau"
+        },
+        {
+          "id": "c",
+          "text": "Agent tự duyệt nếu score vượt threshold nội bộ"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d11-x07",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d11",
+      "topic": "p1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao màn duyệt chỉ có hai nút Approve/Reject nhưng không có context dễ trở thành rubber stamp?",
+      "correct_answer": "c",
+      "explanation": "Hiệu quả phụ thuộc thông tin phục vụ quyết định, không chỉ sự tồn tại của thao tác duyệt.",
+      "source_reference": [
+        {
+          "document_id": "p1-d11",
+          "sha256": "04c49100a4cb70af31bc8b7818d814c940f16ef480368339ffcbc95ec6081803",
+          "pdf_page": 62,
+          "title": "Guardrails, HITL & Responsible AI",
+          "locator": "Physical PDF page 62",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Hai nút luôn là thiết kế không thể dùng trong bất kỳ approval flow nào"
+        },
+        {
+          "id": "b",
+          "text": "Có người bấm duyệt tự động suy ra quyết định đã được kiểm chứng"
+        },
+        {
+          "id": "c",
+          "text": "Người duyệt thiếu căn cứ hiểu hành động và hậu quả nên khó phán đoán thực chất"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d11-x08",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d11",
+      "topic": "p1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một node gửi email rồi gọi interrupt(). Khi resume node chạy lại từ đầu, thiết kế nào tránh gửi lặp?",
+      "correct_answer": "b",
+      "explanation": "Resume có thể chạy lại code của node; boundary side effect phải được đặt an toàn.",
+      "source_reference": [
+        {
+          "document_id": "p1-d11",
+          "sha256": "04c49100a4cb70af31bc8b7818d814c940f16ef480368339ffcbc95ec6081803",
+          "pdf_page": 67,
+          "title": "Guardrails, HITL & Responsible AI",
+          "locator": "Physical PDF page 67",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ thêm một dòng prompt dặn model đừng gửi email lần hai"
+        },
+        {
+          "id": "b",
+          "text": "Đưa approval trước side effect hoặc tách side effect sang node sau approval"
+        },
+        {
+          "id": "c",
+          "text": "Giữ thứ tự cũ vì checkpoint tự nhận biết mọi email đã gửi"
+        }
+      ],
+      "shuffle_options": true,
+      "context": "Agent tạm dừng chờ người duyệt và sau đó được tiếp tục từ checkpoint."
+    },
+    {
+      "id": "p1-d11-x09",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d11",
+      "topic": "p1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Approval hết hạn mà chưa có người xử lý nên được coi thế nào trong fail-closed flow?",
+      "correct_answer": "a",
+      "explanation": "Durable timer cần một đường kết thúc an toàn khi chờ duyệt quá hạn.",
+      "source_reference": [
+        {
+          "document_id": "p1-d11",
+          "sha256": "04c49100a4cb70af31bc8b7818d814c940f16ef480368339ffcbc95ec6081803",
+          "pdf_page": 70,
+          "title": "Guardrails, HITL & Responsible AI",
+          "locator": "Physical PDF page 70",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Mặc định từ chối hoặc escalation, không tự approve"
+        },
+        {
+          "id": "b",
+          "text": "Mặc định approve vì không ai phản đối"
+        },
+        {
+          "id": "c",
+          "text": "Xóa dấu vết yêu cầu rồi thử write lại không qua gate"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d11-x10",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d11",
+      "topic": "p1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Kỹ thuật Spotlighting được sử dụng nhằm mục đích chính nào để bảo vệ mô hình ngôn ngữ trước prompt injection gián tiếp?",
+      "correct_answer": "b",
+      "explanation": "Spotlighting (Microsoft 2024) tách bạch ranh giới giữa system instructions và untrusted external data (thông qua delimiters, datamarking hoặc encoding) để LLM không nhầm lẫn nội dung dữ liệu thành câu lệnh điều khiển.",
+      "source_reference": [
+        {
+          "document_id": "p1-d11",
+          "sha256": "04c49100a4cb70af31bc8b7818d814c940f16ef480368339ffcbc95ec6081803",
+          "pdf_page": 45,
+          "title": "Guardrails, HITL & Responsible AI",
+          "locator": "Physical PDF page 45",
+          "verification": "verified"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tăng số lượng tham số mô hình để ghi nhớ mọi dạng tấn công"
+        },
+        {
+          "id": "b",
+          "text": "Phân tách rõ dữ liệu ngoại vi khỏi luồng chỉ dẫn của hệ thống bằng phân cách, đánh dấu hoặc mã hóa"
+        },
+        {
+          "id": "c",
+          "text": "Xóa bỏ hoàn toàn ngữ cảnh người dùng và chỉ cho phép mô hình trả lời theo mẫu có sẵn"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d11-x11",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d11",
+      "topic": "p1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những dữ kiện nào nên nằm trong audit trail của quyết định HITL? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "b",
+        "c"
+      ],
+      "explanation": "Audit append-only liên kết đề xuất, căn cứ và người quyết định để replay/điều tra/cải thiện.",
+      "source_reference": [
+        {
+          "document_id": "p1-d11",
+          "sha256": "04c49100a4cb70af31bc8b7818d814c940f16ef480368339ffcbc95ec6081803",
+          "pdf_page": 75,
+          "title": "Guardrails, HITL & Responsible AI",
+          "locator": "Physical PDF page 75",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Ghi đè các quyết định cũ bằng quyết định mới để chỉ giữ trạng thái cuối"
+        },
+        {
+          "id": "b",
+          "text": "Trace ID, hành động đề xuất và evidence"
+        },
+        {
+          "id": "c",
+          "text": "Người duyệt, thời điểm và quyết định; bản trước/sau nếu có sửa"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ tổng approve/reject mỗi tháng, không liên kết run"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d11-x12",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d11",
+      "topic": "p1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Automation bias kiểu commission khác omission thế nào?",
+      "correct_answer": "a",
+      "explanation": "Phân biệt này chỉ ra cơ chế con người dùng máy như lối tắt thay cho tự kiểm chứng.",
+      "source_reference": [
+        {
+          "document_id": "p1-d11",
+          "sha256": "04c49100a4cb70af31bc8b7818d814c940f16ef480368339ffcbc95ec6081803",
+          "pdf_page": 78,
+          "title": "Guardrails, HITL & Responsible AI",
+          "locator": "Physical PDF page 78",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Commission làm theo gợi ý sai dù có bằng chứng ngược; omission bỏ sót khi máy không báo"
+        },
+        {
+          "id": "b",
+          "text": "Commission là máy không cảnh báo; omission là làm theo cảnh báo sai"
+        },
+        {
+          "id": "c",
+          "text": "Hai kiểu đều chỉ có nghĩa model suy luận sai, không liên quan người giám sát"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d11-x13",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d11",
+      "topic": "p1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một chatbot củng cố khuôn mẫu nghề nghiệp theo giới dù không phân bổ khoản vay hay việc làm đang tạo loại harm nào?",
+      "correct_answer": "c",
+      "explanation": "Representational harm có thể tồn tại qua mô tả/khuôn mẫu ngay cả khi không phân bổ cơ hội.",
+      "source_reference": [
+        {
+          "document_id": "p1-d11",
+          "sha256": "04c49100a4cb70af31bc8b7818d814c940f16ef480368339ffcbc95ec6081803",
+          "pdf_page": 85,
+          "title": "Guardrails, HITL & Responsible AI",
+          "locator": "Physical PDF page 85",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ allocative harm vì mọi bias đều phân bổ nguồn lực"
+        },
+        {
+          "id": "b",
+          "text": "Không có harm nếu output chưa thay đổi việc phân bổ cơ hội hay nguồn lực"
+        },
+        {
+          "id": "c",
+          "text": "Representational harm"
+        }
+      ],
+      "shuffle_options": true,
+      "context": "Sản phẩm trả lời mô tả các nhóm người theo định kiến lặp lại."
+    },
+    {
+      "id": "p1-d11-x14",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d11",
+      "topic": "p1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Counterfactual fairness test có thể bắt đầu bằng cách nào khi chưa có dataset nhãn nhóm người dùng?",
+      "correct_answer": "b",
+      "explanation": "Thay một thuộc tính kiểm tra độ nhạy kết quả mà không bắt đầu bằng thu dữ liệu cá nhân thật.",
+      "source_reference": [
+        {
+          "document_id": "p1-d11",
+          "sha256": "04c49100a4cb70af31bc8b7818d814c940f16ef480368339ffcbc95ec6081803",
+          "pdf_page": 86,
+          "title": "Guardrails, HITL & Responsible AI",
+          "locator": "Physical PDF page 86",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ đo accuracy tổng thể rồi kết luận không có chênh lệch nhóm"
+        },
+        {
+          "id": "b",
+          "text": "Tạo cặp prompt chỉ đổi một thuộc tính rồi so kết quả"
+        },
+        {
+          "id": "c",
+          "text": "Thu thêm mọi dữ liệu nhân khẩu học thật trước khi thử bất kỳ test nào"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d11-x15",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d11",
+      "topic": "p1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Sản phẩm dùng API model của bên khác vẫn cần system card riêng để làm rõ điều gì?",
+      "correct_answer": "a",
+      "explanation": "Trách nhiệm hệ thống gồm các quyết định tích hợp và kiểm soát của sản phẩm, không chỉ model gốc.",
+      "source_reference": [
+        {
+          "document_id": "p1-d11",
+          "sha256": "04c49100a4cb70af31bc8b7818d814c940f16ef480368339ffcbc95ec6081803",
+          "pdf_page": 106,
+          "title": "Guardrails, HITL & Responsible AI",
+          "locator": "Physical PDF page 106",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Model/version, guardrails, điểm human review và bằng chứng đánh giá lúc ship"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ chép tên provider là đủ vì mọi rủi ro thuộc provider"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ tài liệu pre-training của provider, không cần cấu hình sản phẩm"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d11-x16",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d11",
+      "topic": "p1-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Sau khi khắc phục root cause một safety incident, hành động nào giúp ngăn tái diễn?",
+      "correct_answer": "c",
+      "explanation": "Response plan cần detection/mitigation, đánh giá ảnh hưởng và test hồi quy cho lỗi đã gặp.",
+      "source_reference": [
+        {
+          "document_id": "p1-d11",
+          "sha256": "04c49100a4cb70af31bc8b7818d814c940f16ef480368339ffcbc95ec6081803",
+          "pdf_page": 107,
+          "title": "Guardrails, HITL & Responsible AI",
+          "locator": "Physical PDF page 107",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ đóng ticket sau khi output demo trông bình thường"
+        },
+        {
+          "id": "b",
+          "text": "Xóa các ví dụ incident khỏi test set để không lặp lại prompt tấn công"
+        },
+        {
+          "id": "c",
+          "text": "Thêm case regression vào eval gate và chuẩn bị cơ chế hạn chế thiệt hại"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d12-x01",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d12",
+      "topic": "p1-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Container giảm khác biệt môi trường chạy bằng cách nào?",
+      "correct_answer": "c",
+      "explanation": "Một đơn vị build nhất quán giúp tái lập môi trường giữa laptop và cloud.",
+      "source_reference": [
+        {
+          "document_id": "p1-d12",
+          "sha256": "eee97925592e858d63163ab40db88fb93100e35606412ade8f6a21aa2142b8aa",
+          "pdf_page": 17,
+          "title": "Deployment — Đưa Agent Lên Cloud",
+          "locator": "Physical PDF page 17",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ copy source code rồi để mỗi máy tự chọn dependency version"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ export model weights, không giữ runtime/config cần thiết"
+        },
+        {
+          "id": "c",
+          "text": "Đóng gói application, dependencies và runtime thành một đơn vị triển khai"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d12-x02",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d12",
+      "topic": "p1-d12",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những thực hành nào giúp harden container image? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "c",
+        "d"
+      ],
+      "explanation": "Giảm đặc quyền, tái lập image và inventory/scan là các kiểm soát bổ sung, cần lặp lại khi thay đổi.",
+      "source_reference": [
+        {
+          "document_id": "p1-d12",
+          "sha256": "eee97925592e858d63163ab40db88fb93100e35606412ade8f6a21aa2142b8aa",
+          "pdf_page": 20,
+          "title": "Deployment — Đưa Agent Lên Cloud",
+          "locator": "Physical PDF page 20",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Dùng tag latest rồi coi lần scan ban đầu có hiệu lực vĩnh viễn"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ chọn base image nhỏ và bỏ dependency inventory"
+        },
+        {
+          "id": "c",
+          "text": "Scan CVE và chạy non-root"
+        },
+        {
+          "id": "d",
+          "text": "Pin image digest và lưu SBOM thành phần"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d12-x03",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d12",
+      "topic": "p1-d12",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Agent hoàn thành sau gateway timeout. Hai hướng kiến trúc nào có thể giảm nguy cơ request bị cắt giữa chừng? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "b",
+        "c"
+      ],
+      "explanation": "Streaming/async thay hình dạng request; không chỉ tăng thời gian suy luận trong một request bị giới hạn.",
+      "source_reference": [
+        {
+          "document_id": "p1-d12",
+          "sha256": "eee97925592e858d63163ab40db88fb93100e35606412ade8f6a21aa2142b8aa",
+          "pdf_page": 24,
+          "title": "Deployment — Đưa Agent Lên Cloud",
+          "locator": "Physical PDF page 24",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Retry toàn bộ tác vụ có side effect mà không quản lý idempotency"
+        },
+        {
+          "id": "b",
+          "text": "Streaming có dữ liệu/heartbeat phù hợp với idle timeout"
+        },
+        {
+          "id": "c",
+          "text": "Chuyển sang async job hoặc đường không bị cùng giới hạn request"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ tăng max_tokens để model nói lâu hơn trong cùng request"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d12-x04",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d12",
+      "topic": "p1-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "SSE phù hợp token streaming theo đặc điểm nào?",
+      "correct_answer": "c",
+      "explanation": "Token streaming chủ yếu gửi output từ server; EventSource hỗ trợ reconnect theo event stream.",
+      "source_reference": [
+        {
+          "document_id": "p1-d12",
+          "sha256": "eee97925592e858d63163ab40db88fb93100e35606412ade8f6a21aa2142b8aa",
+          "pdf_page": 25,
+          "title": "Deployment — Đưa Agent Lên Cloud",
+          "locator": "Physical PDF page 25",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Một kênh hai chiều bắt buộc mọi message client/server dùng cùng socket protocol"
+        },
+        {
+          "id": "b",
+          "text": "Một response batch chỉ được trả khi toàn bộ token hoàn tất"
+        },
+        {
+          "id": "c",
+          "text": "Dòng event một chiều server→client qua HTTP"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d12-x05",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d12",
+      "topic": "p1-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Với tác vụ dài hơn một request thông thường, submit-and-poll tách việc nhận và xử lý thế nào?",
+      "correct_answer": "b",
+      "explanation": "Job queue/worker giữ công việc ngoài vòng request-response ngắn.",
+      "source_reference": [
+        {
+          "document_id": "p1-d12",
+          "sha256": "eee97925592e858d63163ab40db88fb93100e35606412ade8f6a21aa2142b8aa",
+          "pdf_page": 26,
+          "title": "Deployment — Đưa Agent Lên Cloud",
+          "locator": "Physical PDF page 26",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chạy lại toàn bộ tác vụ mỗi lần client poll để có kết quả mới"
+        },
+        {
+          "id": "b",
+          "text": "API trả job_id sớm, worker chạy và client lấy kết quả sau"
+        },
+        {
+          "id": "c",
+          "text": "Giữ HTTP request mở nhưng không gửi dữ liệu tới khi mọi việc xong"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d12-x06",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d12",
+      "topic": "p1-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một hàm async def chứa blocking I/O vẫn có thể gây vấn đề nào?",
+      "correct_answer": "a",
+      "explanation": "Async có hiệu quả khi await I/O không block; khai báo async không tự biến code blocking thành non-blocking.",
+      "source_reference": [
+        {
+          "document_id": "p1-d12",
+          "sha256": "eee97925592e858d63163ab40db88fb93100e35606412ade8f6a21aa2142b8aa",
+          "pdf_page": 28,
+          "title": "Deployment — Đưa Agent Lên Cloud",
+          "locator": "Physical PDF page 28",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chặn event loop, làm các request cùng worker bị nghẽn"
+        },
+        {
+          "id": "b",
+          "text": "Tự được chuyển sang background worker nên không ảnh hưởng concurrency"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ chậm request đó, không thể tác động request khác"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d12-x07",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d12",
+      "topic": "p1-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao không đặt provider API key trong biến NEXT_PUBLIC_/VITE_ của frontend?",
+      "correct_answer": "c",
+      "explanation": "Client-side UI không đồng nghĩa keyless; secret phải nằm phía server khi dùng hosted provider.",
+      "source_reference": [
+        {
+          "document_id": "p1-d12",
+          "sha256": "eee97925592e858d63163ab40db88fb93100e35606412ade8f6a21aa2142b8aa",
+          "pdf_page": 31,
+          "title": "Deployment — Đưa Agent Lên Cloud",
+          "locator": "Physical PDF page 31",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tên biến public chỉ là quy ước, bundle tự mã hóa key bằng quyền backend"
+        },
+        {
+          "id": "b",
+          "text": "Browser gọi provider trực tiếp sẽ tự che key khỏi người dùng cuối"
+        },
+        {
+          "id": "c",
+          "text": "Build có thể nhúng key vào JS bundle phía browser, nên cần backend proxy giữ secret"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d12-x08",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d12",
+      "topic": "p1-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Spend alert và pre-call admission control khác nhau về tác dụng thế nào?",
+      "correct_answer": "b",
+      "explanation": "Bảo vệ chi phí cần kiểm trước request, không nhầm thông báo với hard cap.",
+      "source_reference": [
+        {
+          "document_id": "p1-d12",
+          "sha256": "eee97925592e858d63163ab40db88fb93100e35606412ade8f6a21aa2142b8aa",
+          "pdf_page": 58,
+          "title": "Deployment — Đưa Agent Lên Cloud",
+          "locator": "Physical PDF page 58",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Admission control chỉ ghi log sau khi call hoàn tất"
+        },
+        {
+          "id": "b",
+          "text": "Alert thông báo sau sự kiện; admission control kiểm budget trước và có thể từ chối call"
+        },
+        {
+          "id": "c",
+          "text": "Alert tự chặn mọi request ngay khi chạm ngưỡng nên không cần enforcement"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d12-x09",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d12",
+      "topic": "p1-d12",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "CPU thấp nhưng nhiều request đang chờ LLM. Autoscaling nên ưu tiên tín hiệu nào?",
+      "correct_answer": "a",
+      "explanation": "Agent I/O-bound có thể bão hòa request capacity dù CPU không cao.",
+      "source_reference": [
+        {
+          "document_id": "p1-d12",
+          "sha256": "eee97925592e858d63163ab40db88fb93100e35606412ade8f6a21aa2142b8aa",
+          "pdf_page": 63,
+          "title": "Deployment — Đưa Agent Lên Cloud",
+          "locator": "Physical PDF page 63",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Concurrency hoặc queue depth"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ CPU utilization"
+        },
+        {
+          "id": "c",
+          "text": "Số replica cố định theo cấu hình ban đầu, không xét request đang chờ"
+        }
+      ],
+      "shuffle_options": true,
+      "context": "Instance giữ nhiều request dài, thời gian chờ và backlog tăng nhưng CPU vẫn thấp."
+    },
+    {
+      "id": "p1-d12-x10",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d12",
+      "topic": "p1-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Readiness failure khác liveness failure ở phản ứng vận hành nào?",
+      "correct_answer": "c",
+      "explanation": "Phân biệt khả năng nhận việc với tiến trình còn sống giúp tránh restart loop vô ích.",
+      "source_reference": [
+        {
+          "document_id": "p1-d12",
+          "sha256": "eee97925592e858d63163ab40db88fb93100e35606412ade8f6a21aa2142b8aa",
+          "pdf_page": 64,
+          "title": "Deployment — Đưa Agent Lên Cloud",
+          "locator": "Physical PDF page 64",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Readiness luôn restart; liveness chỉ gỡ traffic"
+        },
+        {
+          "id": "b",
+          "text": "Cả hai đều nên restart ngay khi dependency chậm tạm thời"
+        },
+        {
+          "id": "c",
+          "text": "Readiness ngắt traffic khỏi load balancer; liveness có thể restart container"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d12-x11",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d12",
+      "topic": "p1-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong kiến trúc phục vụ mô hình ngôn ngữ lớn (LLM Serving), vì sao việc tách biệt nhóm máy chủ Prefill và Decode (Disaggregated Prefill/Decode) đem lại hiệu quả cao?",
+      "correct_answer": "b",
+      "explanation": "Prefill xử lý toàn bộ prompt song song nên compute-bound, trong khi Decode sinh từng token tuần tự theo autoregression nên memory-bandwidth bound. Tách riêng hai pool giúp tối ưu hóa tài nguyên phần cứng và tránh hiện tượng prefill dài làm nghẽn decode.",
+      "source_reference": [
+        {
+          "document_id": "p1-d12",
+          "sha256": "eee97925592e858d63163ab40db88fb93100e35606412ade8f6a21aa2142b8aa",
+          "pdf_page": 75,
+          "title": "Deployment — Đưa Agent Lên Cloud",
+          "locator": "Physical PDF page 75",
+          "verification": "verified"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Prefill và Decode đều cùng yêu cầu tài nguyên mạng giống nhau"
+        },
+        {
+          "id": "b",
+          "text": "Prefill thiên về tính toán (compute-bound) khi xử lý prompt, còn Decode thiên về băng thông bộ nhớ (memory-bound) khi sinh token tuần tự"
+        },
+        {
+          "id": "c",
+          "text": "Prefill không cần dùng GPU mà chỉ chạy trên CPU thông thường"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d12-x12",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d12",
+      "topic": "p1-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Prompt cache và semantic response cache khác nhau ở thứ được tái sử dụng thế nào?",
+      "correct_answer": "a",
+      "explanation": "Response cache bỏ call lặp nhưng phải xử lý freshness, khác caching phần tính prefix của model.",
+      "source_reference": [
+        {
+          "document_id": "p1-d12",
+          "sha256": "eee97925592e858d63163ab40db88fb93100e35606412ade8f6a21aa2142b8aa",
+          "pdf_page": 67,
+          "title": "Deployment — Đưa Agent Lên Cloud",
+          "locator": "Physical PDF page 67",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Prompt cache tái dùng prefix computation; semantic cache tái dùng câu trả lời cho query tương tự"
+        },
+        {
+          "id": "b",
+          "text": "Cả hai chỉ lưu final answer theo exact bytes của query"
+        },
+        {
+          "id": "c",
+          "text": "Semantic cache chỉ chia sẻ KV prefix, không có rủi ro stale answer"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d12-x13",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d12",
+      "topic": "p1-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Shadow traffic của agent cần chặn side effect vì sao dù không đưa output tới user?",
+      "correct_answer": "c",
+      "explanation": "Không trả answer không đồng nghĩa không có tác động lên hệ ngoài.",
+      "source_reference": [
+        {
+          "document_id": "p1-d12",
+          "sha256": "eee97925592e858d63163ab40db88fb93100e35606412ade8f6a21aa2142b8aa",
+          "pdf_page": 79,
+          "title": "Deployment — Đưa Agent Lên Cloud",
+          "locator": "Physical PDF page 79",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Output không hiển thị tự động ngăn mọi tool call"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ canary mới có khả năng tạo write action, shadow thì không"
+        },
+        {
+          "id": "c",
+          "text": "Bản shadow vẫn có thể gửi mail/ghi dữ liệu/trừ tiền nếu tool được thực thi thật"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d12-x14",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d12",
+      "topic": "p1-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao rollback prompt/model có thể không cần một lần deploy container mới?",
+      "correct_answer": "b",
+      "explanation": "Tách artifact cấu hình bất biến và label di động cho phép rollback độc lập với code image.",
+      "source_reference": [
+        {
+          "document_id": "p1-d12",
+          "sha256": "eee97925592e858d63163ab40db88fb93100e35606412ade8f6a21aa2142b8aa",
+          "pdf_page": 80,
+          "title": "Deployment — Đưa Agent Lên Cloud",
+          "locator": "Physical PDF page 80",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Rollback luôn chỉ là thay tag image dù lỗi nằm ở prompt registry"
+        },
+        {
+          "id": "b",
+          "text": "Prompt/model config có vòng đời riêng và có thể chuyển label về bản trước"
+        },
+        {
+          "id": "c",
+          "text": "Mọi prompt thay đổi đều được tự động cập nhật trong image cũ"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d12-x15",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d12",
+      "topic": "p1-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao hash raw arguments có thể chưa đủ để deduplicate ý định write của LLM agent?",
+      "correct_answer": "a",
+      "explanation": "Key ổn định như order_id cần gắn intent/action, không chỉ ngẫu nhiên theo chuỗi model sinh.",
+      "source_reference": [
+        {
+          "document_id": "p1-d12",
+          "sha256": "eee97925592e858d63163ab40db88fb93100e35606412ade8f6a21aa2142b8aa",
+          "pdf_page": 85,
+          "title": "Deployment — Đưa Agent Lên Cloud",
+          "locator": "Physical PDF page 85",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Cùng ý định có thể được model biểu diễn bằng args khác bytes; cần key ổn định theo hành động nghiệp vụ"
+        },
+        {
+          "id": "b",
+          "text": "Các arguments khác bytes luôn là hai ý định hoàn toàn khác"
+        },
+        {
+          "id": "c",
+          "text": "Mỗi lần retry nên sinh idempotency key mới để bảo đảm thực thi"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d12-x16",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d12",
+      "topic": "p1-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Journal-and-replay giảm chi phí/rủi ro sau crash bằng cách nào?",
+      "correct_answer": "c",
+      "explanation": "Memoize/replay các quyết định giảm nondeterministic re-execution; hệ ngoài vẫn cần idempotency.",
+      "source_reference": [
+        {
+          "document_id": "p1-d12",
+          "sha256": "eee97925592e858d63163ab40db88fb93100e35606412ade8f6a21aa2142b8aa",
+          "pdf_page": 86,
+          "title": "Deployment — Đưa Agent Lên Cloud",
+          "locator": "Physical PDF page 86",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Gọi lại toàn bộ model/tool từ đầu để tạo câu trả lời giống nhất"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ lưu final answer, bỏ mọi bước trung gian đã có side effect"
+        },
+        {
+          "id": "c",
+          "text": "Đọc lại output/decision đã ghi thay vì gọi lại model và lặp bước đã hoàn tất"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d12-x17",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d12",
+      "topic": "p1-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Per-agent identity và token scope hẹp cải thiện gì so với một god-key chung?",
+      "correct_answer": "b",
+      "explanation": "Least privilege cần danh tính/scope phù hợp task, không chia sẻ credential có quyền quá rộng.",
+      "source_reference": [
+        {
+          "document_id": "p1-d12",
+          "sha256": "eee97925592e858d63163ab40db88fb93100e35606412ade8f6a21aa2142b8aa",
+          "pdf_page": 90,
+          "title": "Deployment — Đưa Agent Lên Cloud",
+          "locator": "Physical PDF page 90",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Một lần login của bất kỳ agent nào cấp quyền vô hạn cho toàn graph"
+        },
+        {
+          "id": "b",
+          "text": "Giới hạn quyền/tác động mỗi agent và giảm việc lạm dụng quyền thay agent khác"
+        },
+        {
+          "id": "c",
+          "text": "Mọi agent tự kế thừa toàn quyền của supervisor để giảm kiểm tra"
+        }
+      ],
+      "shuffle_options": true
+    }
+  ]
+}

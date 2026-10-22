@@ -1,0 +1,771 @@
+{
+  "batch_file": "data/questions/drafts/expand-b-02.json",
+  "reviewer_id": "peer-reviewer-a",
+  "reviewed_at": "2026-10-22T14:22:40.679544+00:00",
+  "results": [
+    {
+      "id": "p2-t2-d04-x01",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d04",
+          "pdf_page": 8
+        }
+      ],
+      "notes": [
+        "Embedding spaces require corpus re-index on model change.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d04-x02",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d04",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "Domain golden set is final evidence, not broad benchmark rank.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d04-x03",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d04",
+          "pdf_page": 14
+        }
+      ],
+      "notes": [
+        "Low-query large corpus storage tradeoff matches source table.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d04-x04",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d04",
+          "pdf_page": 18
+        }
+      ],
+      "notes": [
+        "RRF uses ranks across incompatible score scales.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d04-x05",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d04",
+          "pdf_page": 19
+        }
+      ],
+      "notes": [
+        "Post-filter selectivity reduces remaining candidates; fix word spacing.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d04-x06",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d04",
+          "pdf_page": 20
+        }
+      ],
+      "notes": [
+        "Late interaction preserves token/patch vectors with storage cost.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d04-x07",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d04",
+          "pdf_page": 22
+        }
+      ],
+      "notes": [
+        "Child retrieval and parent return supported.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d04-x08",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d04",
+          "pdf_page": 24
+        }
+      ],
+      "notes": [
+        "Cross-encoder jointly scores candidate pairs.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d04-x09",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d04",
+          "pdf_page": 26
+        }
+      ],
+      "notes": [
+        "Multi-hop entity relations support graph traversal.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d04-x10",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d04",
+          "pdf_page": 28
+        }
+      ],
+      "notes": [
+        "Agent chooses source/decomposition and repeats only if evidence missing.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d04-x11",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d04",
+          "pdf_page": 30
+        }
+      ],
+      "notes": [
+        "Tool response citation and score support traceability.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d04-x12",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d04",
+          "pdf_page": 32
+        }
+      ],
+      "notes": [
+        "Missing tenant namespace leaks cached answers.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d04-x13",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d04",
+          "pdf_page": 33
+        }
+      ],
+      "notes": [
+        "Retrieved content is data, not authority for tools.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d04-x14",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d04",
+          "pdf_page": 35
+        }
+      ],
+      "notes": [
+        "Timestamp supports point-in-time feature join.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d04-x15",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d04",
+          "pdf_page": 36
+        }
+      ],
+      "notes": [
+        "Request-time feature combines amount with stored average.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d04-x16",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d04",
+          "pdf_page": 42
+        }
+      ],
+      "notes": [
+        "UTC/local parser difference produces serving skew.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d04-x17",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d04",
+          "pdf_page": 54
+        }
+      ],
+      "notes": [
+        "AST boundaries retain syntactic scope and signature.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d05-x01",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d05",
+          "pdf_page": 7
+        }
+      ],
+      "notes": [
+        "Continuous batching removes whole-batch waiting.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d05-x02",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d05",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "CPU GGUF choice matches source runtime/format table.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d05-x03",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d05",
+          "pdf_page": 10
+        }
+      ],
+      "notes": [
+        "Paged KV avoids contiguous maximum allocation.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d05-x04",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d05",
+          "pdf_page": 11
+        }
+      ],
+      "notes": [
+        "Latent attention compression reduces KV footprint.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d05-x05",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d05",
+          "pdf_page": 13
+        }
+      ],
+      "notes": [
+        "SRAM tiling and online softmax reduce HBM traffic.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d05-x06",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d05",
+          "pdf_page": 14
+        }
+      ],
+      "notes": [
+        "Graph replay removes repeated Python/launch overhead.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d05-x07",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d05",
+          "pdf_page": 15
+        }
+      ],
+      "notes": [
+        "llama.cpp supports local CPU/GPU offload.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d05-x08",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d05",
+          "pdf_page": 18
+        }
+      ],
+      "notes": [
+        "Shared prefix KV avoids that prefix prefill.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d05-x09",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d05",
+          "pdf_page": 20
+        }
+      ],
+      "notes": [
+        "Grammar controls output form, not factual correctness.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d05-x10",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d05",
+          "pdf_page": 21
+        }
+      ],
+      "notes": [
+        "Prefill chunk-size reduction directly addresses prefill OOM.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d05-x11",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d05",
+          "pdf_page": 22
+        }
+      ],
+      "notes": [
+        "Heavy prefill benefits require accounting for KV transfer.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d05-x12",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d05",
+          "pdf_page": 23
+        }
+      ],
+      "notes": [
+        "Shared base and per-request adapters distinguish Multi-LoRA.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d05-x13",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d05",
+          "pdf_page": 26
+        }
+      ],
+      "notes": [
+        "TP splits weights within layers, unlike PP/DP/EP.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d05-x14",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d05",
+          "pdf_page": 29
+        }
+      ],
+      "notes": [
+        "Embedding/reranking single forward pass has no generation loop.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d05-x15",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d05",
+          "pdf_page": 30
+        }
+      ],
+      "notes": [
+        "Semantic answers versus exact-prefix KV reuse distinguished.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d05-x16",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d05",
+          "pdf_page": 31
+        }
+      ],
+      "notes": [
+        "Pre-generation route versus post-cheap-generation defer distinguished.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d05-x17",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d05",
+          "pdf_page": 39
+        }
+      ],
+      "notes": [
+        "Cached/shorter/smaller-model fallbacks source supported.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d06-x01",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d06",
+          "pdf_page": 7
+        }
+      ],
+      "notes": [
+        "Models packaging distinguished from Projects/Tracking/Registry.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d06-x02",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d06",
+          "pdf_page": 8
+        }
+      ],
+      "notes": [
+        "Confusion matrix is artifact rather than scalar or parameter.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d06-x03",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d06",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "Revision3 re-read: alternatives now accuracy-only, latency-only and ignoring tradeoff. Correct joint quality/speed evaluation uniquely fits stem and source physical9.",
+        "Targeted semantic/source retest; removes superseded distractor rejection, not a revision-only carry-forward."
+      ]
+    },
+    {
+      "id": "p2-t2-d06-x04",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d06",
+          "pdf_page": 10
+        }
+      ],
+      "notes": [
+        "Champion/challenger alias supported by registry source.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d06-x05",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d06",
+          "pdf_page": 11
+        }
+      ],
+      "notes": [
+        "Data/code/eval tags source supported; extends legacy data-version failure into incident lineage.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d06-x06",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d06",
+          "pdf_page": 36
+        }
+      ],
+      "notes": [
+        "User hash assignment preserves variant consistency.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d06-x07",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d06",
+          "pdf_page": 14
+        }
+      ],
+      "notes": [
+        "DVC pointer in Git is distinguished from raw data in remote.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d06-x08",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d06",
+          "pdf_page": 15
+        }
+      ],
+      "notes": [
+        "Local credentials and no hardcoded shared key supported.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d06-x09",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d06",
+          "pdf_page": 16
+        }
+      ],
+      "notes": [
+        "Revision3 re-read: alternatives now filename-only, unconditional rerun and code-only ignoring data deps. Dependency staleness correct per source physical16.",
+        "Targeted semantic/source retest; removes superseded distractor rejection, not a revision-only carry-forward."
+      ]
+    },
+    {
+      "id": "p2-t2-d06-x10",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d06",
+          "pdf_page": 17
+        }
+      ],
+      "notes": [
+        "DVC data/pipeline plus MLflow metrics/registry complementary.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d06-x11",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d06",
+          "pdf_page": 19
+        }
+      ],
+      "notes": [
+        "AI eval gate checks behavior beyond successful software tests.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d06-x12",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d06",
+          "pdf_page": 20
+        }
+      ],
+      "notes": [
+        "Validation failure stops before costly train.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d06-x13",
+      "revision": 4,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d06",
+          "pdf_page": 21
+        }
+      ],
+      "notes": [
+        "Re-read revised full item against previously inspected source. Credible same-concept distractors and unique answer confirmed; OIDC mechanism stem revision4 resolves multiple-equivalent-credential ambiguity."
+      ]
+    },
+    {
+      "id": "p2-t2-d06-x14",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d06",
+          "pdf_page": 23
+        }
+      ],
+      "notes": [
+        "Fixed held-out reference keeps candidate/baseline comparison stable.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d06-x15",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d06",
+          "pdf_page": 26
+        }
+      ],
+      "notes": [
+        "Shadow duplicated requests do not return candidate output; fix spacing.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d06-x16",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d06",
+          "pdf_page": 28
+        }
+      ],
+      "notes": [
+        "Keep old blue environment for rollback; fix spacing.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    },
+    {
+      "id": "p2-t2-d06-x17",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d06",
+          "pdf_page": 33
+        }
+      ],
+      "notes": [
+        "Soak duration distinguishes spike/stress/unit tests.",
+        "Independently read final question/options/answer/explanation and all 51 cited rendered PDF pages; evidence tmp/root-review/expand-b-02/pages-01..13.png. Legacy three items/document checked; no duplicate objective requiring removal identified."
+      ]
+    }
+  ]
+}

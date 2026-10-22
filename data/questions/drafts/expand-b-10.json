@@ -1,0 +1,2563 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.22.expand-b-10",
+  "questions": [
+    {
+      "id": "p2-t3-d11-x01",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d11",
+      "topic": "p2-t3-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một host kết nối hai MCP server độc lập. Thành phần nào duy trì từng kết nối với server?",
+      "correct_answer": "a",
+      "explanation": "Host quản lý các client; mỗi client duy trì kết nối chuyên biệt đến server tương ứng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d11",
+          "sha256": "566680634b00ed5a187c0fb5d63a903e97fa376587d96bdcc87ca3909bc6e61a",
+          "pdf_page": 9,
+          "title": "Model Context Protocol (MCP)",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Một MCP client tương ứng mỗi server"
+        },
+        {
+          "id": "b",
+          "text": "Một client duy nhất dùng chung kết nối cho mọi server bất kể vòng đời riêng"
+        },
+        {
+          "id": "c",
+          "text": "Mỗi server tự quản lý toàn bộ các kết nối của host tới server khác"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d11-x02",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d11",
+      "topic": "p2-t3-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Hai tool có schema hợp lệ nhưng agent thường chọn sai công cụ. Thông tin nào nên cải thiện trước?",
+      "correct_answer": "c",
+      "explanation": "Agent dựa tên và description để chọn tool; schema đúng kiểu chưa bảo đảm đúng ý định sử dụng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d11",
+          "sha256": "566680634b00ed5a187c0fb5d63a903e97fa376587d96bdcc87ca3909bc6e61a",
+          "pdf_page": 11,
+          "title": "Model Context Protocol (MCP)",
+          "locator": "Physical PDF page 11; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ mở rộng enum của args mà vẫn giữ hai mô tả mơ hồ giống nhau"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ làm JSON hợp lệ hơn dù schema hiện đã hợp lệ và không làm rõ ý định"
+        },
+        {
+          "id": "c",
+          "text": "Tên và mô tả công cụ thể hiện rõ khi nào dùng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d11-x03",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d11",
+      "topic": "p2-t3-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "MCP tool gặp lỗi có thể khắc phục bằng tham số khác. Kết quả lỗi nên hỗ trợ agent thế nào?",
+      "correct_answer": "c",
+      "explanation": "Structured errors cho phép phía gọi hiểu lỗi và chọn hành động phục hồi thích hợp.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d11",
+          "sha256": "566680634b00ed5a187c0fb5d63a903e97fa376587d96bdcc87ca3909bc6e61a",
+          "pdf_page": 13,
+          "title": "Model Context Protocol (MCP)",
+          "locator": "Physical PDF page 13; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Trả cùng payload thành công nhưng không đánh dấu lỗi"
+        },
+        {
+          "id": "b",
+          "text": "Giữ request treo vô hạn thay vì báo trạng thái"
+        },
+        {
+          "id": "c",
+          "text": "Trả lỗi có cấu trúc đủ để quyết định retry hoặc fallback"
+        },
+        {
+          "id": "d",
+          "text": "Trả chuỗi rỗng như thể đã thành công"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d11-x04",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d11",
+      "topic": "p2-t3-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Muốn kiểm tool schema và error response trước khi thêm LLM vào hệ thống, nên dùng gì?",
+      "correct_answer": "b",
+      "explanation": "Inspector tách việc kiểm server khỏi hành vi LLM, giúp khoanh vùng schema, output và lỗi.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d11",
+          "sha256": "566680634b00ed5a187c0fb5d63a903e97fa376587d96bdcc87ca3909bc6e61a",
+          "pdf_page": 14,
+          "title": "Model Context Protocol (MCP)",
+          "locator": "Physical PDF page 14; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ kiểm UI host mà không gọi server"
+        },
+        {
+          "id": "b",
+          "text": "MCP Inspector gọi và kiểm server trực tiếp"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ đọc câu trả lời tự nhiên của chatbot cuối cùng"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ thử prompt mới cho đến khi agent chọn đúng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d11-x05",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d11",
+      "topic": "p2-t3-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Tool đổi định dạng output khiến consumer cũ không đọc được. Semantic version nên phản ánh thay đổi này thế nào?",
+      "correct_answer": "a",
+      "explanation": "Breaking change thuộc major version; contract output cũng là phần tương thích của tool.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d11",
+          "sha256": "566680634b00ed5a187c0fb5d63a903e97fa376587d96bdcc87ca3909bc6e61a",
+          "pdf_page": 17,
+          "title": "Model Context Protocol (MCP)",
+          "locator": "Physical PDF page 17; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tăng major version vì phá tương thích"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ tăng patch vì tool name chưa đổi"
+        },
+        {
+          "id": "c",
+          "text": "Giữ version vì schema đầu vào giống cũ"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ sửa description và coi consumer tự thích nghi"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d11-x06",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d11",
+      "topic": "p2-t3-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Khi thay thế một MCP tool đang có consumer dùng, kế hoạch deprecation nào giúp migration?",
+      "correct_answer": "d",
+      "explanation": "Deprecation cần cảnh báo và thời gian chuyển đổi thay vì đột ngột phá contract đang dùng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d11",
+          "sha256": "566680634b00ed5a187c0fb5d63a903e97fa376587d96bdcc87ca3909bc6e61a",
+          "pdf_page": 17,
+          "title": "Model Context Protocol (MCP)",
+          "locator": "Physical PDF page 17; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Xóa tool cũ ngay khi thêm tool mới mà không thông báo"
+        },
+        {
+          "id": "b",
+          "text": "Giữ tên cũ nhưng âm thầm đổi mọi semantics"
+        },
+        {
+          "id": "c",
+          "text": "Đổi tool name mỗi lần gọi để tránh consumer cache"
+        },
+        {
+          "id": "d",
+          "text": "Thông báo tool cũ và dành giai đoạn chuyển sang tool mới"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d11-x07",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d11",
+      "topic": "p2-t3-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Workflow phân tích doanh thu rồi mở GitHub issue cần phối hợp dữ liệu và hành động ra sao?",
+      "correct_answer": "c",
+      "explanation": "Host có thể phối hợp nhiều server: lấy dữ liệu, phân tích rồi gọi hành động phù hợp.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d11",
+          "sha256": "566680634b00ed5a187c0fb5d63a903e97fa376587d96bdcc87ca3909bc6e61a",
+          "pdf_page": 19,
+          "title": "Model Context Protocol (MCP)",
+          "locator": "Physical PDF page 19; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Buộc GitHub issue tool tự thay thế database query"
+        },
+        {
+          "id": "b",
+          "text": "Gộp mọi server thành một tool không phân biệt đọc và ghi"
+        },
+        {
+          "id": "c",
+          "text": "Dùng kết quả truy vấn database làm đầu vào cho bước tạo issue"
+        },
+        {
+          "id": "d",
+          "text": "Tạo issue trước rồi xem issue như nguồn số liệu doanh thu"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d11-x08",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d11",
+      "topic": "p2-t3-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Schema database thay đổi theo môi trường. Vì sao cung cấp schema như dynamic context hữu ích cho truy vấn?",
+      "correct_answer": "b",
+      "explanation": "Dynamic schema context giảm việc suy đoán cấu trúc dữ liệu và giúp query dựa cấu trúc hiện hành.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d11",
+          "sha256": "566680634b00ed5a187c0fb5d63a903e97fa376587d96bdcc87ca3909bc6e61a",
+          "pdf_page": 22,
+          "title": "Model Context Protocol (MCP)",
+          "locator": "Physical PDF page 22; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Schema context biến mọi câu hỏi thành truy vấn hợp lệ mà không cần kiểm"
+        },
+        {
+          "id": "b",
+          "text": "Agent biết cấu trúc bảng và cột thực tế trước khi viết query"
+        },
+        {
+          "id": "c",
+          "text": "Agent có thể bỏ kiểm tra tên cột vì mọi môi trường giống nhau"
+        },
+        {
+          "id": "d",
+          "text": "Schema context tự cấp quyền ghi cho mọi bảng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d11-x09",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d11",
+      "topic": "p2-t3-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một client muốn dùng tính năng không được server hỗ trợ. Bước giao thức nào giúp phát hiện giới hạn trước khi dùng?",
+      "correct_answer": "a",
+      "explanation": "Capability negotiation xác định các khả năng hai phía thực sự hỗ trợ.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d11",
+          "sha256": "566680634b00ed5a187c0fb5d63a903e97fa376587d96bdcc87ca3909bc6e61a",
+          "pdf_page": 25,
+          "title": "Model Context Protocol (MCP)",
+          "locator": "Physical PDF page 25; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Thương lượng capabilities giữa hai phía"
+        },
+        {
+          "id": "b",
+          "text": "Đoán hỗ trợ từ tên công cụ bất kỳ"
+        },
+        {
+          "id": "c",
+          "text": "Gọi mọi tính năng và coi timeout là kết quả rỗng"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ dựa vào version của model thay server"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d11-x10",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d11",
+      "topic": "p2-t3-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Agent cần tìm stack trace và release liên quan một lỗi production trước khi sửa code. Server chuyên biệt nào phù hợp?",
+      "correct_answer": "d",
+      "explanation": "Sentry cung cấp lỗi, stack và release; kết hợp repository context để điều tra và sửa lỗi.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d11",
+          "sha256": "566680634b00ed5a187c0fb5d63a903e97fa376587d96bdcc87ca3909bc6e61a",
+          "pdf_page": 28,
+          "title": "Model Context Protocol (MCP)",
+          "locator": "Physical PDF page 28; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Playwright MCP thay thế hoàn toàn error event và release metadata"
+        },
+        {
+          "id": "b",
+          "text": "Docs MCP chỉ tìm API reference thay mọi runtime evidence"
+        },
+        {
+          "id": "c",
+          "text": "GitHub issue title duy nhất đủ thay stack trace thực tế"
+        },
+        {
+          "id": "d",
+          "text": "Sentry MCP cho error context rồi GitHub MCP cho code liên quan"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d11-x11",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d11",
+      "topic": "p2-t3-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Agent nâng cấp thư viện cần kiểm API đúng phiên bản thay vì đoán theo kiến thức cũ. Nguồn MCP nào sát nhu cầu?",
+      "correct_answer": "c",
+      "explanation": "Context7/docs cung cấp reference theo phiên bản, giảm nhầm API giữa các release.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d11",
+          "sha256": "566680634b00ed5a187c0fb5d63a903e97fa376587d96bdcc87ca3909bc6e61a",
+          "pdf_page": 28,
+          "title": "Model Context Protocol (MCP)",
+          "locator": "Physical PDF page 28; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "GitHub issue mới nhất bất kể phiên bản đang dùng"
+        },
+        {
+          "id": "b",
+          "text": "Playwright screenshot thay tài liệu API"
+        },
+        {
+          "id": "c",
+          "text": "Context7 hoặc docs theo phiên bản thư viện"
+        },
+        {
+          "id": "d",
+          "text": "Sentry error count mà không có API reference"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d11-x12",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d11",
+      "topic": "p2-t3-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một MCP service được nhiều nhóm dùng chung và cần quản lý authentication tập trung nên chọn transport theo hướng nào?",
+      "correct_answer": "b",
+      "explanation": "HTTP phù hợp shared service có endpoint và quản lý auth; stdio thường gắn local process.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d11",
+          "sha256": "566680634b00ed5a187c0fb5d63a903e97fa376587d96bdcc87ca3909bc6e61a",
+          "pdf_page": 29,
+          "title": "Model Context Protocol (MCP)",
+          "locator": "Physical PDF page 29; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Kết nối process-local không có endpoint chung nhưng coi auth từng máy là auth tập trung"
+        },
+        {
+          "id": "b",
+          "text": "HTTP endpoint dùng chung cho remote service"
+        },
+        {
+          "id": "c",
+          "text": "stdio khởi tạo process riêng trên từng máy rồi coi đó là shared remote endpoint"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d11-x13",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d11",
+      "topic": "p2-t3-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong Claude Code, cấu hình MCP cần chia sẻ cùng repository cho nhóm phát triển. Scope nào phù hợp?",
+      "correct_answer": "a",
+      "explanation": "Project scope đưa cấu hình theo repository; user scope phục vụ mặc định cá nhân xuyên nhiều repo.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d11",
+          "sha256": "566680634b00ed5a187c0fb5d63a903e97fa376587d96bdcc87ca3909bc6e61a",
+          "pdf_page": 31,
+          "title": "Model Context Protocol (MCP)",
+          "locator": "Physical PDF page 31; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Project scope qua .mcp.json"
+        },
+        {
+          "id": "b",
+          "text": "User scope toàn bộ các repository của một người"
+        },
+        {
+          "id": "c",
+          "text": "Local thử nghiệm riêng trên một máy không chia sẻ"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ cấu hình trong một cuộc hội thoại tạm thời"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d11-x14",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d11",
+      "topic": "p2-t3-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một MCP tool có thể trả payload rất lớn nhưng agent ban đầu chỉ cần kết quả tổng quát. Thiết kế output nào tiết kiệm context?",
+      "correct_answer": "d",
+      "explanation": "Summary cộng tham chiếu giữ context gọn mà vẫn cho phép truy cập bằng chứng chi tiết.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d11",
+          "sha256": "566680634b00ed5a187c0fb5d63a903e97fa376587d96bdcc87ca3909bc6e61a",
+          "pdf_page": 31,
+          "title": "Model Context Protocol (MCP)",
+          "locator": "Physical PDF page 31; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Luôn dump toàn raw payload vào mọi tool response"
+        },
+        {
+          "id": "b",
+          "text": "Bỏ mọi ID để agent không thể lấy chi tiết tiếp"
+        },
+        {
+          "id": "c",
+          "text": "Cắt payload ngẫu nhiên giữa trường dữ liệu mà không báo"
+        },
+        {
+          "id": "d",
+          "text": "Trả summary và ID/URI để fetch chi tiết khi cần"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d11-x15",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d11",
+      "topic": "p2-t3-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Search tool tìm được một tài liệu liên quan nhưng chỉ trả snippet. Vì sao cần thêm fetch tool?",
+      "correct_answer": "b",
+      "explanation": "Search giúp tìm ứng viên; fetch cung cấp nội dung gốc cần dùng cho công việc tiếp theo.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d11",
+          "sha256": "566680634b00ed5a187c0fb5d63a903e97fa376587d96bdcc87ca3909bc6e61a",
+          "pdf_page": 32,
+          "title": "Model Context Protocol (MCP)",
+          "locator": "Physical PDF page 32; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Để dùng ranking score như bản thay thế nội dung nguồn"
+        },
+        {
+          "id": "b",
+          "text": "Để đọc nội dung đầy đủ của kết quả đã xác định"
+        },
+        {
+          "id": "c",
+          "text": "Để search lại cùng query và chỉ nhận snippet lần nữa"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d11-x16",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d11",
+      "topic": "p2-t3-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một MCP server chỉ cung cấp thao tác đọc. Vì sao vẫn phải kiểm phạm vi dữ liệu được phép truy cập?",
+      "correct_answer": "b",
+      "explanation": "Read-only hạn chế sửa dữ liệu nhưng không ngăn rò rỉ dữ liệu từ kết quả đọc.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d11",
+          "sha256": "566680634b00ed5a187c0fb5d63a903e97fa376587d96bdcc87ca3909bc6e61a",
+          "pdf_page": 34,
+          "title": "Model Context Protocol (MCP)",
+          "locator": "Physical PDF page 34; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Quyền đọc luôn tương đương quyền chia sẻ ra mọi hệ thống"
+        },
+        {
+          "id": "b",
+          "text": "Đọc dữ liệu nhạy cảm vẫn có thể dẫn tới exfiltration"
+        },
+        {
+          "id": "c",
+          "text": "Read-only tự động làm mọi dữ liệu trở thành công khai"
+        },
+        {
+          "id": "d",
+          "text": "Không ghi database thì không thể làm lộ thông tin"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d11-x17",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d11",
+      "topic": "p2-t3-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Dùng cùng credentials cho MCP sandbox và production gây vấn đề gì?",
+      "correct_answer": "a",
+      "explanation": "Tách credentials và môi trường là ranh giới vận hành, tránh thử nghiệm mang quyền production.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d11",
+          "sha256": "566680634b00ed5a187c0fb5d63a903e97fa376587d96bdcc87ca3909bc6e61a",
+          "pdf_page": 34,
+          "title": "Model Context Protocol (MCP)",
+          "locator": "Physical PDF page 34; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Thao tác thử nghiệm có thể chạm dữ liệu hoặc quyền production"
+        },
+        {
+          "id": "b",
+          "text": "Server sandbox tự giới hạn quyền dù credentials có quyền production"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ làm thay đổi tool descriptions, không ảnh hưởng quyền thực thi"
+        },
+        {
+          "id": "d",
+          "text": "Mọi write sandbox được tự động rollback trên production"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d12-x01",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d12",
+      "topic": "p2-t3-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một agent tự báo confidence 0.99. Vì sao chưa thể coi đó là xác suất quyết định đúng trong nghiệp vụ?",
+      "correct_answer": "d",
+      "explanation": "Overconfidence và thiếu business context làm raw confidence khác độ đúng được kiểm chứng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d12",
+          "sha256": "bc1b321eaa2bc75a332d63b7ed39335f7873c53e50fbf9d9b9d1cb14b3db53d3",
+          "pdf_page": 7,
+          "title": "Human-in-the-Loop UX — Khi Nào Agent Cần Xin Phép?",
+          "locator": "Physical PDF page 7; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Confidence càng nhiều chữ số thì luôn càng chính xác"
+        },
+        {
+          "id": "b",
+          "text": "Confidence 0.99 loại bỏ nhu cầu kiểm business context"
+        },
+        {
+          "id": "c",
+          "text": "Mọi model đều dùng cùng thang xác suất đã được kiểm định cho mọi domain"
+        },
+        {
+          "id": "d",
+          "text": "Confidence tự báo có thể chưa được calibration với độ chính xác thực tế"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d12-x02",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d12",
+      "topic": "p2-t3-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Bước nào có thể chạy tự động trước một approval gate mà chưa tạo tác động gửi ra bên ngoài?",
+      "correct_answer": "c",
+      "explanation": "Draft là bước chuẩn bị dễ sửa; gửi, xóa hay hủy tài khoản tạo tác động cần kiểm soát.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d12",
+          "sha256": "bc1b321eaa2bc75a332d63b7ed39335f7873c53e50fbf9d9b9d1cb14b3db53d3",
+          "pdf_page": 11,
+          "title": "Human-in-the-Loop UX — Khi Nào Agent Cần Xin Phép?",
+          "locator": "Physical PDF page 11; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Xóa record khách hàng theo nội dung email"
+        },
+        {
+          "id": "b",
+          "text": "Hủy tài khoản được nhắc đến trong email"
+        },
+        {
+          "id": "c",
+          "text": "Soạn bản nháp email"
+        },
+        {
+          "id": "d",
+          "text": "Gửi email đã soạn cho khách hàng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d12-x03",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d12",
+      "topic": "p2-t3-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Human-on-the-Loop khác blocking approval ở thời điểm con người tham gia ra sao?",
+      "correct_answer": "b",
+      "explanation": "HOTL là giám sát có khả năng can thiệp; HITL blocking dừng hành động trước khi được duyệt.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d12",
+          "sha256": "bc1b321eaa2bc75a332d63b7ed39335f7873c53e50fbf9d9b9d1cb14b3db53d3",
+          "pdf_page": 17,
+          "title": "Human-in-the-Loop UX — Khi Nào Agent Cần Xin Phép?",
+          "locator": "Physical PDF page 17; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Con người chỉ được sửa prompt trước khi hệ thống khởi chạy"
+        },
+        {
+          "id": "b",
+          "text": "Agent thực thi trong khi người giám sát có thể can thiệp"
+        },
+        {
+          "id": "c",
+          "text": "Agent phải chờ approve trước từng hành động"
+        },
+        {
+          "id": "d",
+          "text": "Người duyệt phải tự thực thi mọi bước thay agent"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d12-x04",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d12",
+      "topic": "p2-t3-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Yêu cầu “báo cáo doanh thu Q1” thiếu khối Retail hay Corporate. Pattern nào giảm nguy cơ chạy query nặng trên sai tập dữ liệu?",
+      "correct_answer": "a",
+      "explanation": "Clarification hỏi phần input thiếu trước khi chọn và thực thi truy vấn.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d12",
+          "sha256": "bc1b321eaa2bc75a332d63b7ed39335f7873c53e50fbf9d9b9d1cb14b3db53d3",
+          "pdf_page": 20,
+          "title": "Human-in-the-Loop UX — Khi Nào Agent Cần Xin Phép?",
+          "locator": "Physical PDF page 20; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Clarification trước thực thi"
+        },
+        {
+          "id": "b",
+          "text": "Approval cho một query đã tự đoán khối"
+        },
+        {
+          "id": "c",
+          "text": "Review kết quả sau khi đã phát hành báo cáo sai"
+        },
+        {
+          "id": "d",
+          "text": "Escalation mọi request doanh thu dù chỉ thiếu một trường"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d12-x05",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d12",
+      "topic": "p2-t3-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Agent gặp yêu cầu vượt phạm vi chuyên môn được phép xử lý. Pattern nào chuyển quyền giải quyết cho người phù hợp?",
+      "correct_answer": "d",
+      "explanation": "Escalation chuyển quyền kiểm soát khi case khó hoặc ngoài domain/phạm vi cho phép.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d12",
+          "sha256": "bc1b321eaa2bc75a332d63b7ed39335f7873c53e50fbf9d9b9d1cb14b3db53d3",
+          "pdf_page": 21,
+          "title": "Human-in-the-Loop UX — Khi Nào Agent Cần Xin Phép?",
+          "locator": "Physical PDF page 21; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ yêu cầu approve câu trả lời mà agent chưa đủ cơ sở"
+        },
+        {
+          "id": "b",
+          "text": "Tự tăng confidence để tiếp tục cùng luồng"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ sửa định dạng draft mà giữ nguyên quyết định ngoài phạm vi"
+        },
+        {
+          "id": "d",
+          "text": "Escalation/handoff cho chuyên gia"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d12-x06",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d12",
+      "topic": "p2-t3-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Policy ứng dụng quy định một loại thao tác luôn phải duyệt. Agent báo confidence rất cao thì router nên làm gì?",
+      "correct_answer": "c",
+      "explanation": "Hard rules ở application layer có quyền ưu tiên hơn confidence do model tự đánh giá.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d12",
+          "sha256": "bc1b321eaa2bc75a332d63b7ed39335f7873c53e50fbf9d9b9d1cb14b3db53d3",
+          "pdf_page": 24,
+          "title": "Human-in-the-Loop UX — Khi Nào Agent Cần Xin Phép?",
+          "locator": "Physical PDF page 24; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ duyệt khi confidence thấp hơn ngưỡng chung"
+        },
+        {
+          "id": "b",
+          "text": "Tăng confidence threshold là đủ thay hard rule"
+        },
+        {
+          "id": "c",
+          "text": "Vẫn đưa qua gate theo hard rule"
+        },
+        {
+          "id": "d",
+          "text": "Cho model tự quyết có bypass gate hay không"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d12-x07",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d12",
+      "topic": "p2-t3-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một hệ thống dựa vào logprobs để định lượng uncertainty gặp giới hạn nào?",
+      "correct_answer": "b",
+      "explanation": "Logprobs đo ở mức token; business correctness cần kiểm chứng và một số API không cung cấp đầy đủ.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d12",
+          "sha256": "bc1b321eaa2bc75a332d63b7ed39335f7873c53e50fbf9d9b9d1cb14b3db53d3",
+          "pdf_page": 28,
+          "title": "Human-in-the-Loop UX — Khi Nào Agent Cần Xin Phép?",
+          "locator": "Physical PDF page 28; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Mọi API đều cung cấp logprobs đầy đủ và giống nhau"
+        },
+        {
+          "id": "b",
+          "text": "Xác suất token khó ánh xạ trực tiếp sang mức đúng nghiệp vụ"
+        },
+        {
+          "id": "c",
+          "text": "Logprobs luôn giải thích đầy đủ nguyên nhân quyết định nghiệp vụ"
+        },
+        {
+          "id": "d",
+          "text": "Token probability cao chứng minh action đúng chính sách"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d12-x08",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d12",
+      "topic": "p2-t3-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Năm lần suy luận độc lập cho cùng input đưa ra nhiều hành động khác nhau. Tín hiệu này gợi ý gì cho routing?",
+      "correct_answer": "a",
+      "explanation": "Self-consistency dùng mức đồng thuận giữa các reasoning paths để phát hiện uncertainty.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d12",
+          "sha256": "bc1b321eaa2bc75a332d63b7ed39335f7873c53e50fbf9d9b9d1cb14b3db53d3",
+          "pdf_page": 31,
+          "title": "Human-in-the-Loop UX — Khi Nào Agent Cần Xin Phép?",
+          "locator": "Physical PDF page 31; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Độ nhất quán thấp nên cần thêm kiểm tra hoặc người hỗ trợ"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ cần lấy lần đầu vì disagreement chứng minh lần đầu đúng"
+        },
+        {
+          "id": "c",
+          "text": "Tăng raw confidence của mọi phương án để tránh interrupt"
+        },
+        {
+          "id": "d",
+          "text": "Chọn phương án có chuỗi text dài nhất thay vì đánh giá bất định"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d12-x09",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d12",
+      "topic": "p2-t3-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Cùng ngưỡng confidence 0.85 có nên mặc định dùng cho phân loại email nội bộ và quyết định ảnh hưởng khách VIP?",
+      "correct_answer": "d",
+      "explanation": "Threshold phụ thuộc lịch sử hiệu năng và risk appetite của từng ứng dụng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d12",
+          "sha256": "bc1b321eaa2bc75a332d63b7ed39335f7873c53e50fbf9d9b9d1cb14b3db53d3",
+          "pdf_page": 35,
+          "title": "Human-in-the-Loop UX — Khi Nào Agent Cần Xin Phép?",
+          "locator": "Physical PDF page 35; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Có; một ngưỡng luôn giữ cùng cost of error giữa các domain"
+        },
+        {
+          "id": "b",
+          "text": "Có; confidence score tự mã hóa đầy đủ tác động kinh doanh"
+        },
+        {
+          "id": "c",
+          "text": "Không; chỉ cần dùng model lớn hơn thì bỏ hoàn toàn ngưỡng"
+        },
+        {
+          "id": "d",
+          "text": "Không; cần tune theo dữ liệu và mức chấp nhận rủi ro"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d12-x10",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d12",
+      "topic": "p2-t3-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Shadow mode giúp thu dữ liệu calibration theo cách nào?",
+      "correct_answer": "c",
+      "explanation": "Shadow mode cho phép so proposal và confidence với độ đúng do người xác minh trước rollout.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d12",
+          "sha256": "bc1b321eaa2bc75a332d63b7ed39335f7873c53e50fbf9d9b9d1cb14b3db53d3",
+          "pdf_page": 36,
+          "title": "Human-in-the-Loop UX — Khi Nào Agent Cần Xin Phép?",
+          "locator": "Physical PDF page 36; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ đo raw confidence mà không đối chiếu người chấm"
+        },
+        {
+          "id": "b",
+          "text": "Ẩn mọi output để không thể so với quyết định con người"
+        },
+        {
+          "id": "c",
+          "text": "Chạy song song và ghi đề xuất mà chưa tạo tác động thật"
+        },
+        {
+          "id": "d",
+          "text": "Tự thực thi mọi action rồi chỉ log các action thất bại"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d12-x11",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d12",
+      "topic": "p2-t3-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "UI gọi graph.get_state(config) khi workflow đang dừng duyệt. Thuộc tính next cho biết thông tin nào?",
+      "correct_answer": "b",
+      "explanation": "Snapshot.next xác định bước tiếp theo đang chờ; state.values chứa dữ liệu của workflow, là thông tin khác.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d12",
+          "sha256": "bc1b321eaa2bc75a332d63b7ed39335f7873c53e50fbf9d9b9d1cb14b3db53d3",
+          "pdf_page": 46,
+          "title": "Human-in-the-Loop UX — Khi Nào Agent Cần Xin Phép?",
+          "locator": "Physical PDF page 46; replacement objective independently review required",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Toàn bộ các node đã hoàn tất, không gồm node đang chờ"
+        },
+        {
+          "id": "b",
+          "text": "Node tiếp theo đang chờ được thực thi"
+        },
+        {
+          "id": "c",
+          "text": "Các giá trị dữ liệu đề xuất nằm trong state.values"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d12-x12",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d12",
+      "topic": "p2-t3-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Sau graph.update_state(config, {human_approved: True}), vì sao tiếp tục bằng graph.invoke(None, config) với config của phiên đang dừng?",
+      "correct_answer": "a",
+      "explanation": "Quyết định được ghi vào state của phiên cũ; invoke None cùng config tiếp tục từ điểm đã dừng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d12",
+          "sha256": "bc1b321eaa2bc75a332d63b7ed39335f7873c53e50fbf9d9b9d1cb14b3db53d3",
+          "pdf_page": 48,
+          "title": "Human-in-the-Loop UX — Khi Nào Agent Cần Xin Phép?",
+          "locator": "Physical PDF page 48; replacement objective independently review required",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Để tiếp tục workflow đã lưu thay bắt đầu một yêu cầu mới từ đầu"
+        },
+        {
+          "id": "b",
+          "text": "Để khởi tạo state rỗng và bỏ bản đề xuất vừa duyệt"
+        },
+        {
+          "id": "c",
+          "text": "Để thay thread bằng một phiên mới không có checkpoint cũ"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d12-x13",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d12",
+      "topic": "p2-t3-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Agent đã tạo báo cáo nháp an toàn nhưng chưa được phép gửi. Nên đặt điểm dừng ở đâu?",
+      "correct_answer": "d",
+      "explanation": "interrupt_after cho draft cho phép review kết quả trước bước phân phối có rủi ro.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d12",
+          "sha256": "bc1b321eaa2bc75a332d63b7ed39335f7873c53e50fbf9d9b9d1cb14b3db53d3",
+          "pdf_page": 41,
+          "title": "Human-in-the-Loop UX — Khi Nào Agent Cần Xin Phép?",
+          "locator": "Physical PDF page 41; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Sau khi gửi xong để người duyệt xác nhận tác động"
+        },
+        {
+          "id": "b",
+          "text": "Trước mọi truy vấn dữ liệu dù chỉ cần review bản nháp"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ ở cuối toàn bộ graph sau mọi side effect"
+        },
+        {
+          "id": "d",
+          "text": "Sau node tạo nháp và trước bước phát hành"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d12-x14",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d12",
+      "topic": "p2-t3-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một action có TTL 15 phút được duyệt sau 2 giờ. Backend nên xử lý thế nào?",
+      "correct_answer": "c",
+      "explanation": "TTL ngăn quyết định dựa context lỗi thời; kiểm tuổi action khi resume.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d12",
+          "sha256": "bc1b321eaa2bc75a332d63b7ed39335f7873c53e50fbf9d9b9d1cb14b3db53d3",
+          "pdf_page": 50,
+          "title": "Human-in-the-Loop UX — Khi Nào Agent Cần Xin Phép?",
+          "locator": "Physical PDF page 50; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ thay timestamp_generated bằng thời điểm approve"
+        },
+        {
+          "id": "b",
+          "text": "Giữ nguyên action và tăng confidence để bù độ cũ"
+        },
+        {
+          "id": "c",
+          "text": "Đánh expired và yêu cầu chạy lại thay resume proposal cũ"
+        },
+        {
+          "id": "d",
+          "text": "Resume vì nút Approve luôn vô hiệu hóa TTL"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d12-x15",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d12",
+      "topic": "p2-t3-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Giao diện duyệt thay đổi nhiều trường dữ liệu nên hiển thị diff để hỗ trợ điều gì?",
+      "correct_answer": "b",
+      "explanation": "Diff làm rõ delta cần quyết định, giảm approve theo thói quen thiếu hiểu biết.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d12",
+          "sha256": "bc1b321eaa2bc75a332d63b7ed39335f7873c53e50fbf9d9b9d1cb14b3db53d3",
+          "pdf_page": 56,
+          "title": "Human-in-the-Loop UX — Khi Nào Agent Cần Xin Phép?",
+          "locator": "Physical PDF page 56; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Giấu trường đổi để người duyệt không bị phân tâm"
+        },
+        {
+          "id": "b",
+          "text": "Cho người duyệt thấy giá trị trước/sau và hệ quả thay đổi"
+        },
+        {
+          "id": "c",
+          "text": "Thay thế toàn bộ bằng một confidence score tổng"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ hiển thị tên agent mà không có target record"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d12-x16",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d12",
+      "topic": "p2-t3-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một batch approval gồm nhiều giao dịch nhỏ và một giao dịch bất thường rất lớn. Thiết kế nào phù hợp?",
+      "correct_answer": "a",
+      "explanation": "Batching giảm tải nhưng không được che high-risk action giữa các case rủi ro thấp.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d12",
+          "sha256": "bc1b321eaa2bc75a332d63b7ed39335f7873c53e50fbf9d9b9d1cb14b3db53d3",
+          "pdf_page": 62,
+          "title": "Human-in-the-Loop UX — Khi Nào Agent Cần Xin Phép?",
+          "locator": "Physical PDF page 62; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tách hoặc làm nổi bật outlier thay trộn vào phê duyệt hàng loạt"
+        },
+        {
+          "id": "b",
+          "text": "Đặt outlier giữa các dòng giống nhau và approve cả batch"
+        },
+        {
+          "id": "c",
+          "text": "Bỏ số tiền khỏi UI để mọi hàng có cùng độ dài"
+        },
+        {
+          "id": "d",
+          "text": "Dùng confidence trung bình batch thay risk từng action"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d12-x17",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d12",
+      "topic": "p2-t3-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Approval rate rất cao có đủ chứng minh agent tốt không?",
+      "correct_answer": "d",
+      "explanation": "Cùng một tỷ lệ cao có thể do chất lượng tốt hoặc duyệt máy móc; cần diễn giải cùng hành vi và metrics liên quan.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d12",
+          "sha256": "bc1b321eaa2bc75a332d63b7ed39335f7873c53e50fbf9d9b9d1cb14b3db53d3",
+          "pdf_page": 69,
+          "title": "Human-in-the-Loop UX — Khi Nào Agent Cần Xin Phép?",
+          "locator": "Physical PDF page 69; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Có; approve là ground truth độc lập dù người duyệt không đọc"
+        },
+        {
+          "id": "b",
+          "text": "Có; nên bỏ audit ngay khi tỷ lệ approve vượt một ngưỡng"
+        },
+        {
+          "id": "c",
+          "text": "Không; approval rate cao luôn chứng minh agent kém"
+        },
+        {
+          "id": "d",
+          "text": "Không; có thể phản ánh rubber-stamping nên cần xem thêm override và response time"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d13-x01",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d13",
+      "topic": "p2-t3-d13",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "analyze",
+      "question": "Mỗi component chạy riêng đều đạt kiểm thử nhưng hệ agent end-to-end vẫn lỗi. Điểm nào nên kiểm trước?",
+      "correct_answer": "b",
+      "explanation": "Integration bugs thường nằm ở seams: format mismatch, thiếu xử lý lỗi và timeout không đồng bộ.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d13",
+          "sha256": "6a22af53d1a77046e98dfbd51b270eff5ce7b68d6003e61bb27ba0e5aac125d3",
+          "pdf_page": 6,
+          "title": "Workshop Tổng Hợp — Full Production Agent System",
+          "locator": "Physical PDF page 6; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ kiểm từng component đúng kiểu nội bộ dù output/input giữa chúng không khớp"
+        },
+        {
+          "id": "b",
+          "text": "Interface format, error propagation và timeout tại ranh giới components"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ tăng unit-test coverage bên trong components mà không kiểm interface chung"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d13-x02",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d13",
+      "topic": "p2-t3-d13",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một agent chỉ được kiểm happy path. Bộ kiểm thử chức năng còn thiếu phạm vi nào?",
+      "correct_answer": "b",
+      "explanation": "Functional readiness cần cả happy và edge cases, không chỉ một demo trơn tru.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d13",
+          "sha256": "6a22af53d1a77046e98dfbd51b270eff5ce7b68d6003e61bb27ba0e5aac125d3",
+          "pdf_page": 9,
+          "title": "Workshop Tổng Hợp — Full Production Agent System",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ đọc schema mà không thực thi request"
+        },
+        {
+          "id": "b",
+          "text": "Edge cases trong các user scenarios"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ thêm nhiều lần lặp cùng happy path"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ đo token cost thay hành vi người dùng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d13-x03",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d13",
+      "topic": "p2-t3-d13",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một pipeline multi-agent có từng agent chạy đúng độc lập. Kiểm thử handoff cần xác nhận gì tại ranh giới dữ liệu giữa hai agent?",
+      "correct_answer": "c",
+      "explanation": "Handoff cần truyền output/state đúng sang agent tiếp theo; từng agent chạy đúng riêng lẻ chưa xác minh format và nội dung tại ranh giới tích hợp.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d13",
+          "sha256": "6a22af53d1a77046e98dfbd51b270eff5ce7b68d6003e61bb27ba0e5aac125d3",
+          "pdf_page": 9,
+          "title": "Workshop Tổng Hợp — Full Production Agent System",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ xác nhận hai agents cùng truy cập được một LLM endpoint"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ kiểm response cuối có đúng format dù dữ liệu handoff bị bỏ mất"
+        },
+        {
+          "id": "c",
+          "text": "Output và trạng thái của agent trước đến đúng input contract của agent sau"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d13-x04",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d13",
+      "topic": "p2-t3-d13",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một service xử lý tốt từng query nối tiếp nhưng dự kiến có nhiều người dùng đồng thời. Phép thử nào còn cần?",
+      "correct_answer": "d",
+      "explanation": "Concurrency tạo áp lực tài nguyên và điều phối khác với thử tuần tự.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d13",
+          "sha256": "6a22af53d1a77046e98dfbd51b270eff5ce7b68d6003e61bb27ba0e5aac125d3",
+          "pdf_page": 9,
+          "title": "Workshop Tổng Hợp — Full Production Agent System",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ tăng số câu hỏi chạy tuần tự"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ so RAGAS trên một câu hỏi cố định"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ kiểm semantic cache của một request lặp lại"
+        },
+        {
+          "id": "d",
+          "text": "Stress test các query đồng thời"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d13-x05",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d13",
+      "topic": "p2-t3-d13",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Đội công bố có fallback provider. Bằng chứng nào xác minh khả năng này tốt hơn cấu hình đơn thuần?",
+      "correct_answer": "a",
+      "explanation": "Reliability cần fallback được kiểm trong failure thật hoặc mô phỏng, không chỉ khai báo.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d13",
+          "sha256": "6a22af53d1a77046e98dfbd51b270eff5ce7b68d6003e61bb27ba0e5aac125d3",
+          "pdf_page": 9,
+          "title": "Workshop Tổng Hợp — Full Production Agent System",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Thử provider chính hỏng và kiểm hệ chuyển sang provider dự phòng"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ ping provider dự phòng riêng mà không chạy đường fallback"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ chạy provider chính thành công nhiều lần rồi suy khả năng chuyển provider"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d13-x06",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d13",
+      "topic": "p2-t3-d13",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Muốn điều tra đầy đủ một lần agent chạy sai, coverage traces cần đạt mức nào?",
+      "correct_answer": "b",
+      "explanation": "Observability checklist yêu cầu trace mọi run để điều tra hành vi hệ thống.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d13",
+          "sha256": "6a22af53d1a77046e98dfbd51b270eff5ce7b68d6003e61bb27ba0e5aac125d3",
+          "pdf_page": 10,
+          "title": "Workshop Tổng Hợp — Full Production Agent System",
+          "locator": "Physical PDF page 10; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ lưu final answer mà không có run context"
+        },
+        {
+          "id": "b",
+          "text": "Có trace cho mỗi agent run"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ trace các request được chọn để demo"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ log tổng số request theo ngày"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d13-x07",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d13",
+      "topic": "p2-t3-d13",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Metrics latency và error rate tăng trong vận hành. Thành phần nào biến số đo thành tín hiệu cần phản ứng?",
+      "correct_answer": "a",
+      "explanation": "Metrics và dashboard cần alert rules để phát hiện bất thường vận hành, như P95 và error rate vượt ngưỡng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d13",
+          "sha256": "6a22af53d1a77046e98dfbd51b270eff5ce7b68d6003e61bb27ba0e5aac125d3",
+          "pdf_page": 10,
+          "title": "Workshop Tổng Hợp — Full Production Agent System",
+          "locator": "Physical PDF page 10; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Alert rules trên metrics"
+        },
+        {
+          "id": "b",
+          "text": "ADRs mô tả quyết định kiến trúc cũ"
+        },
+        {
+          "id": "c",
+          "text": "Tool schema mô tả tham số input"
+        },
+        {
+          "id": "d",
+          "text": "Benchmark target không có actual measurements"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d13-x08",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d13",
+      "topic": "p2-t3-d13",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Muốn lượng hóa semantic cache tiết kiệm chi phí bao nhiêu, thiết kế đo nào phù hợp?",
+      "correct_answer": "d",
+      "explanation": "Đối chứng with/without cache trên workload cho phép tính cost reduction và tránh suy từ cache size.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d13",
+          "sha256": "6a22af53d1a77046e98dfbd51b270eff5ce7b68d6003e61bb27ba0e5aac125d3",
+          "pdf_page": 12,
+          "title": "Workshop Tổng Hợp — Full Production Agent System",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ đếm số entry cache mà không đo token cost"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ dùng giá API danh nghĩa mà không chạy workload"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ đo latency rồi coi phần giảm là token savings"
+        },
+        {
+          "id": "d",
+          "text": "So chi phí cùng workload có và không có cache"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d13-x09",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d13",
+      "topic": "p2-t3-d13",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "analyze",
+      "question": "End-to-end latency cao nhưng chưa rõ component nào gây ra. Nên đo gì tiếp?",
+      "correct_answer": "c",
+      "explanation": "Component profiling xác định thời gian nằm ở retrieval, model hay bước khác để tối ưu đúng chỗ.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d13",
+          "sha256": "6a22af53d1a77046e98dfbd51b270eff5ce7b68d6003e61bb27ba0e5aac125d3",
+          "pdf_page": 12,
+          "title": "Workshop Tổng Hợp — Full Production Agent System",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ tăng cache TTL bất kể đoạn nào chậm"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ giảm output tokens dù chưa biết bottleneck"
+        },
+        {
+          "id": "c",
+          "text": "Trace latency từng component trong flow"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ lấy thêm trung bình end-to-end của cùng request"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d13-x10",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d13",
+      "topic": "p2-t3-d13",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Benchmark report ghi target nhưng Actual đều là TBD. Thiếu sót chính là gì?",
+      "correct_answer": "b",
+      "explanation": "Benchmark là bằng chứng bằng actual metrics, không chỉ danh sách mục tiêu mong muốn.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d13",
+          "sha256": "6a22af53d1a77046e98dfbd51b270eff5ce7b68d6003e61bb27ba0e5aac125d3",
+          "pdf_page": 13,
+          "title": "Workshop Tổng Hợp — Full Production Agent System",
+          "locator": "Physical PDF page 13; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ cần bỏ cột Status để report hoàn chỉnh"
+        },
+        {
+          "id": "b",
+          "text": "Chưa có số đo thực chứng minh hệ thống đạt hay không đạt"
+        },
+        {
+          "id": "c",
+          "text": "Target càng nhiều thì tự thay thế actual measurements"
+        },
+        {
+          "id": "d",
+          "text": "TBD tương đương pass nếu demo chạy được"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d13-x11",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d13",
+      "topic": "p2-t3-d13",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "analyze",
+      "question": "Một hệ có faithfulness tốt nhưng P95 vượt target. Cách kết luận benchmark nào hợp lý?",
+      "correct_answer": "a",
+      "explanation": "Mỗi metric đánh giá một yêu cầu khác; quality cao không chứng minh đáp ứng latency target.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d13",
+          "sha256": "6a22af53d1a77046e98dfbd51b270eff5ce7b68d6003e61bb27ba0e5aac125d3",
+          "pdf_page": 13,
+          "title": "Workshop Tổng Hợp — Full Production Agent System",
+          "locator": "Physical PDF page 13; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Ghi riêng chất lượng đạt và latency chưa đạt"
+        },
+        {
+          "id": "b",
+          "text": "Gộp hai metric và tuyên bố mọi mặt đều pass"
+        },
+        {
+          "id": "c",
+          "text": "Bỏ metric latency vì quality score cao"
+        },
+        {
+          "id": "d",
+          "text": "Đổi actual P95 thành target để giữ report thống nhất"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d13-x12",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d13",
+      "topic": "p2-t3-d13",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Consumer mới muốn tự tích hợp API mà không hỏi đội phát triển từng trường input/output. Tài liệu cần cung cấp gì?",
+      "correct_answer": "d",
+      "explanation": "API specs mô tả interface và ví dụ cụ thể giúp consumer tự sử dụng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d13",
+          "sha256": "6a22af53d1a77046e98dfbd51b270eff5ce7b68d6003e61bb27ba0e5aac125d3",
+          "pdf_page": 15,
+          "title": "Workshop Tổng Hợp — Full Production Agent System",
+          "locator": "Physical PDF page 15; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ lịch sử quyết định chọn thuật toán"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ checklist xử lý incident của on-call"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ screenshot dashboard mà không contract"
+        },
+        {
+          "id": "d",
+          "text": "OpenAPI/tool schemas cùng example requests và responses"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d13-x13",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d13",
+      "topic": "p2-t3-d13",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Feedback peer review nào có tính actionable cao nhất?",
+      "correct_answer": "c",
+      "explanation": "Structured feedback cần cụ thể, có ví dụ và hướng cải thiện để người nhận có thể hành động.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d13",
+          "sha256": "6a22af53d1a77046e98dfbd51b270eff5ce7b68d6003e61bb27ba0e5aac125d3",
+          "pdf_page": 17,
+          "title": "Workshop Tổng Hợp — Full Production Agent System",
+          "locator": "Physical PDF page 17; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ chấm điểm tổng mà không giải thích"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ ghi cảm nhận về tác giả thay hành vi hệ thống"
+        },
+        {
+          "id": "c",
+          "text": "Nêu lỗi cụ thể, bằng chứng và thay đổi đề xuất"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ viết “cần code tốt hơn” không chỉ vị trí"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d13-x14",
+      "revision": 3,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d13",
+      "topic": "p2-t3-d13",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một semantic cache xử lý 400 requests, trong đó 120 requests dùng lại answer đã cache và 280 requests bị miss. Cache hit rate là bao nhiêu?",
+      "correct_answer": "a",
+      "explanation": "Hit rate là tỷ lệ requests được cache phục vụ: 120/400=30%; misses không phải mẫu số độc lập của hit rate.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d13",
+          "sha256": "6a22af53d1a77046e98dfbd51b270eff5ce7b68d6003e61bb27ba0e5aac125d3",
+          "pdf_page": 13,
+          "title": "Workshop Tổng Hợp — Full Production Agent System",
+          "locator": "Physical PDF page 13; benchmark metric application with supplied counts",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "30%"
+        },
+        {
+          "id": "b",
+          "text": "Khoảng 42,9% vì lấy hits chia misses"
+        },
+        {
+          "id": "c",
+          "text": "70% vì lấy misses chia tổng requests"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d13-x15",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d13",
+      "topic": "p2-t3-d13",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trước khi chạy E2E cho pipeline vừa ghép, bước nào giúp khoanh vùng lỗi tích hợp sớm?",
+      "correct_answer": "a",
+      "explanation": "Contract validation giảm lỗi format mismatch tại seams trước khi chúng lan thành lỗi E2E khó truy vết.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d13",
+          "sha256": "6a22af53d1a77046e98dfbd51b270eff5ce7b68d6003e61bb27ba0e5aac125d3",
+          "pdf_page": 20,
+          "title": "Workshop Tổng Hợp — Full Production Agent System",
+          "locator": "Physical PDF page 20; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Validate interface contracts giữa các components"
+        },
+        {
+          "id": "b",
+          "text": "Đổi toàn bộ component cùng lúc khi chưa đo lỗi"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ xác nhận từng file code import được"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ thử UI cuối cùng mà không kiểm data format"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d13-x16",
+      "revision": 3,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d13",
+      "topic": "p2-t3-d13",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một bộ kiểm có 100 input thực sự nguy hiểm. Guardrail chặn đúng 96 input và bỏ sót 4 input. Với true positive rate bằng số bị chặn đúng chia tổng input nguy hiểm, kết quả có đạt yêu cầu trên 95% không?",
+      "correct_answer": "b",
+      "explanation": "True positive rate đo phần nguy hiểm được phát hiện: 96/100=96%, đạt điều kiện lớn hơn 95%; 4% là tỷ lệ bỏ sót trong bộ này.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d13",
+          "sha256": "6a22af53d1a77046e98dfbd51b270eff5ce7b68d6003e61bb27ba0e5aac125d3",
+          "pdf_page": 9,
+          "title": "Workshop Tổng Hợp — Full Production Agent System",
+          "locator": "Physical PDF page 9; benchmark metric application with supplied counts",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Có: 100% vì chỉ đếm các input đã bị chặn"
+        },
+        {
+          "id": "b",
+          "text": "Có: 96%, cao hơn 95%"
+        },
+        {
+          "id": "c",
+          "text": "Không: 4% vì tỷ lệ bỏ sót chính là true positive rate"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d13-x17",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d13",
+      "topic": "p2-t3-d13",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Peer review đã nêu ba lỗi ưu tiên cao. Bằng chứng nào thể hiện vòng phản hồi được khép lại?",
+      "correct_answer": "c",
+      "explanation": "Review có giá trị khi feedback dẫn đến cải thiện và được xác minh trong hệ thống.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d13",
+          "sha256": "6a22af53d1a77046e98dfbd51b270eff5ce7b68d6003e61bb27ba0e5aac125d3",
+          "pdf_page": 23,
+          "title": "Workshop Tổng Hợp — Full Production Agent System",
+          "locator": "Physical PDF page 23; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ cảm ơn reviewer và giữ mọi lỗi như cũ"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ tăng số dòng tài liệu mà không liên quan lỗi"
+        },
+        {
+          "id": "c",
+          "text": "Đưa các cải thiện ưu tiên vào code rồi kiểm lại"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ lưu feedback trong thư mục mà không xử lý"
+        }
+      ],
+      "shuffle_options": true
+    }
+  ]
+}

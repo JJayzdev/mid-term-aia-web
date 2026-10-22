@@ -1283,7 +1283,7 @@
     },
     {
       "id": "p2-t2-d10-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 2,
@@ -1294,7 +1294,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Trong mô hình phi trạng thái trình bày ở đây, mỗi request cần mang danh tính để kiểm tra lại từng lời gọi.",
+      "question": "Với API phi trạng thái có xác thực, mỗi request cần mang thông tin xác thực để hệ thống kiểm tra danh tính cho từng lời gọi.",
       "correct_answer": true,
       "explanation": "Slide nêu không còn dựa vào xác thực đầu session; kiểm tra per-call.",
       "source_reference": [
@@ -1310,7 +1310,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ]
     },
     {
@@ -1453,7 +1454,7 @@
     },
     {
       "id": "p2-t2-d12-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 2,
@@ -1464,7 +1465,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Nguồn dữ liệu cập nhật trễ so vớiSLA nhưng schema vẫn đúng. Trụ cột nào trực tiếp phát hiện vấn đề này?",
+      "question": "Nguồn dữ liệu cập nhật trễ so với SLA nhưng schema vẫn đúng. Trụ cột nào trực tiếp phát hiện vấn đề này?",
       "correct_answer": "d",
       "explanation": "Freshness đo thời gian từ cập nhật gần nhất và độ trễ so SLA.",
       "source_reference": [
@@ -1480,7 +1481,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -1591,7 +1593,7 @@
     },
     {
       "id": "p2-t2-d13-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 2,
@@ -1602,7 +1604,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những thành phần nào được liệt kê trong request audit trail? (Chọn tất cả đáp án đúng.)",
+      "question": "Những thông tin nào cần ghi trong audit trail của request để truy vết phiên bản mô hình và chi phí? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "c",
         "a"
@@ -1621,7 +1623,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {

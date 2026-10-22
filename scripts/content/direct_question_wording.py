@@ -92,6 +92,35 @@ STEMS = {
     'p2-t4-d12-q03': 'Khoảng cách tới vật cản là 12 m và tốc độ tiến gần không đổi là 5 m/s. Time to Collision (TTC) bằng bao nhiêu?',
     'p2-t4-d12-q01': 'Cần lưu những thông tin nào để tái tạo một lần chạy log replay?',
 }
+STEMS.update({
+    'p1-d04-q03': 'Trong mô hình bốn lớp của hệ thống agent, những nội dung nào thuộc harness engineering? (Chọn tất cả đáp án đúng.)',
+    'p1-d11-q02': 'Để kiểm chứng guardrails và cơ chế chuyển xử lý cho con người, cần chuẩn bị những bằng chứng nào? (Chọn tất cả đáp án đúng.)',
+    'p1-d14-q03': 'Offline evaluation dùng batch test trên golden dataset, phù hợp khi phát hành phiên bản hoặc thay đổi prompt.',
+    'p2-t4-d05-q01': 'Hai bước lặp của Kalman filter được thực hiện theo thứ tự nào?',
+    'p2-t4-d07-q02': 'Trong ByteTrack, box score thấp được dùng để tạo track mới ngay lập tức.',
+    'p2-t4-d11-q03': 'Một quy trình tạo ảnh có điều kiện dùng IoU để kiểm tra vật sinh có nằm đúng vị trí yêu cầu. Hai box nào cần được đối chiếu?',
+    'p2-t1-d10-q02': 'Trong ma trận ảnh hưởng–quan tâm, Champions có ảnh hưởng cao và quan tâm cao.',
+    'p2-t1-d10-q03': 'Những câu hỏi nào giúp phân loại stakeholder theo hai trục ảnh hưởng và quan tâm? (Chọn tất cả đáp án đúng.)',
+    'p2-t2-d12-q01': 'Nguồn dữ liệu cập nhật trễ so với SLA nhưng schema vẫn đúng. Trụ cột nào trực tiếp phát hiện vấn đề này?',
+    'p2-t2-d13-q01': 'Những thông tin nào cần ghi trong audit trail của request để truy vết phiên bản mô hình và chi phí? (Chọn tất cả đáp án đúng.)',
+    'p2-t3-d04-q01': 'Một triple trong knowledge graph có cấu trúc nào?',
+    'p2-t3-d04-q03': 'Trong hệ thống RAG dùng knowledge graph, retrieval có thể duyệt entities và relations thay vì chỉ tìm chunk văn bản.',
+    'p2-t3-d07-q01': 'DPO không cần huấn luyện riêng thành phần nào vốn được dùng để chấm reward trong pipeline RLHF truyền thống?',
+    'p2-t3-d07-q02': 'Những ghép nối nào đúng giữa nguồn tín hiệu đánh giá tốt/xấu và phương pháp alignment? (Chọn tất cả đáp án đúng.)',
+    'p2-t3-d07-q03': 'Single-stage alignment có thể kết hợp việc học từ demonstration và preference trong một giai đoạn, thay cho một bước SFT riêng biệt.',
+    'p2-t3-d08-q02': 'Những nguyên tắc nào giúp node function an toàn khi retry và cập nhật state? (Chọn tất cả đáp án đúng.)',
+    'p2-t3-d11-q01': 'Primitive MCP nào cung cấp dữ liệu chỉ đọc theo URI để ứng dụng dùng làm context?',
+    'p2-t1-d02-q03': 'Một dịch vụ gọi xe muốn cải thiện việc tài xế và hành khách tìm thấy nhau tại điểm đón. Những kết quả nào thể hiện outcome mong muốn? (Chọn tất cả đáp án đúng.)',
+    'p2-t1-d05-q01': 'Responsible AI chuyển các giá trị đạo đức thành những yếu tố vận hành nào?',
+    'p2-t1-d05-q02': 'AI Safety Evaluation xem xét các dạng thất bại, tác hại và ngưỡng chặn triển khai.',
+    'p2-t1-d05-q03': 'Những giá trị nào thuộc AI Ethics? (Chọn tất cả đáp án đúng.)',
+    'p2-t1-d10-q01': 'Trong mô hình phân nhóm stakeholder Champions–Blockers–Supporters–Bystanders theo ảnh hưởng và quan tâm, stakeholder có ảnh hưởng cao nhưng quan tâm thấp thuộc nhóm nào?',
+    'p2-t3-d01-q03': 'Reflexion dùng text feedback để cải thiện vòng thử, không cập nhật gradient của model trong mỗi vòng.',
+    'p2-t3-d06-q01': 'Few-shot prompt chưa đạt ngưỡng vì thiếu tri thức riêng, không phải thiếu hành vi. Nên đánh giá hướng xử lý nào trước?',
+    'p2-t3-d06-q03': 'Với ma trận trọng số kích thước d × k, LoRA rank r dùng hai ma trận adapter có tổng r(d+k) tham số trainable, thay vì cập nhật toàn bộ dk tham số gốc.',
+    'p2-t3-d10-q01': 'Circuit breaker ở trạng thái OPEN xử lý lời gọi đến dependency như thế nào?',
+    'p2-t2-d10-q03': 'Với API phi trạng thái có xác thực, mỗi request cần mang thông tin xác thực để hệ thống kiểm tra danh tính cho từng lời gọi.',
+})
 
 def main():
     changes = []

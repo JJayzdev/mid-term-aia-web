@@ -12,6 +12,7 @@ Tài liệu này xác định tiêu chí từ Discovery. Sau chỉ dẫn triển
 | C2 | Không trùng ID/option, đáp án thuộc options, rubric tổng 1, trang/hash/catalog hợp lệ | Validator report và fixture lỗi |
 | C3 | Tất cả câu phát hành được review độc lập đúng revision; không có lỗi chưa xử lý | Audit từng batch, phát hiện reviewer=author và approval cũ, retest câu sửa |
 | C4 | Trùng exact bị chặn, gần trùng được audit | Báo cáo duplicate/near-duplicate cùng quyết định reviewer |
+| C5 | Mỗi trong 63 PDF có ít nhất 20 câu đã duyệt; câu hỏi tự đủ dữ kiện, hỏi kiến thức/ứng dụng thay vì nhớ nội dung hay vị trí slide | Validator `--verify-sources --min-per-document 20 --standalone-stems`, đếm ID duy nhất mỗi PDF, semantic review từng câu |
 | E1 | Đề mới đúng 60 câu, Phase1=36/Phase2=24 (6 mỗi Track); tổng 100 điểm, Phase1=60/Phase2=40; tự luận=10 (P1=6/P2=4), khách quan=90; mọi slot nguyên theo 0,01 điểm | Unit/invariant tests trên nhiều seed, weights, quotient/remainder; scenario rubric được tính là tự luận; đề cũ giữ snapshot |
 | E2 | Track1–4 mặc định mỗi track 10 điểm; trọng số hợp lệ đổi được, không làm tròn âm thầm | Test equal/unequal weights, zero/negative/NaN/tổng sai/precision không khả thi |
 | E3 | Chỉ approved đúng review revision được lấy; không lặp ID | Test trộn tất cả status, revision cũ; lặp seed/bank/config/version cho cùng đề |
@@ -37,7 +38,7 @@ Tài liệu này xác định tiêu chí từ Discovery. Sau chỉ dẫn triển
 
 Đề xuất Vitest cho domain và integration, Playwright cho E2E sau khi duyệt stack; validator schema có thể dùng Ajv 2020-12, phiên bản chốt lúc scaffold. Chỉ viết script package khi triển khai. Test cần tập trung quota theo điểm, slot feasibility, thời gian, transaction và grade; không chỉ kiểm tra snapshot cấu trúc implementation.
 
-E2E dùng ngân hàng fixture được ghi rõ là dữ liệu kiểm thử, tuyệt đối không lẫn vào release học thuật. Nội dung nguồn thật được kiểm định riêng, không dùng test code để “chứng minh” kiến thức đúng. Kiểm tra đáp án ẩn áp dụng UI, không phải bảo mật đáp án trước người có DevTools.
+Unit/integration dùng fixture riêng, tuyệt đối không lẫn vào release học thuật. E2E triển khai dùng ngân hàng phát hành thực trong browser context mới để kiểm cả dữ liệu tích hợp và luồng UI; câu trả lời thử nằm trong context kiểm thử. Nội dung nguồn thật được kiểm định riêng, không dùng test code để “chứng minh” kiến thức đúng. Kiểm tra đáp án ẩn áp dụng UI, không phải bảo mật đáp án trước người có DevTools.
 
 ## Báo cáo QA bắt buộc
 

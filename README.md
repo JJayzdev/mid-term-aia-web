@@ -40,7 +40,7 @@ npx playwright test --config scripts/qa/playwright.config.ts
 
 Bộ đầu vào gồm **63 PDF / 3.589 trang**. Pipeline xử lý toàn bộ file, giữ hash SHA-256 và số trang vật lý (trang đầu PDF là 1). PDF gốc và cache OCR nằm cục bộ, không đưa lên website/repository. Ba trang không trích được chữ đã được xem ảnh: QR, trang gần trống/logo, và thẻ Q&A; không câu hỏi nào dựa trên ba trang đó.
 
-Ngân hàng v1 có **204 câu đã duyệt độc lập**, gồm 48 câu Phase 1 và 33/36/39/48 câu ở Track 1/2/3/4. Cả 63 tài liệu đều có câu đại diện, dẫn từ 124 trang khác nhau; **không đồng nghĩa bao phủ mọi khái niệm trên 3.589 trang**. Kiểm tra học thuật theo từng câu/revision nằm trong `reports/content/`; thống kê phát hành trong `public/data/coverage.json`. Mỗi câu có tài liệu nguồn và trang vật lý trong phần giải thích.
+Ngân hàng câu hỏi hiện có **1.260 câu đã duyệt độc lập**, đảm bảo **tối thiểu 20 câu cho mỗi file PDF** trong 63 tài liệu bài giảng. Cả 63 tài liệu đều được bao phủ đầy đủ; toàn bộ câu hỏi được biên soạn độc lập, hỏi trực tiếp kiến thức/tình huống và không phụ thuộc ngữ cảnh slide. Kiểm tra học thuật theo từng câu/revision nằm trong `reports/content/`; thống kê phát hành trong `public/data/coverage.json`. Mỗi câu có tài liệu nguồn và trang vật lý trong phần giải thích.
 
 Phase/Track được tổ chức theo thư mục người dùng cung cấp, Day theo tên file với khóa riêng từng Phase/Track. Nhãn trên một số bìa không khớp tên thư mục; xung đột được giữ trong catalog và báo cáo. Không tạo thêm Day 9 của Track 2.
 

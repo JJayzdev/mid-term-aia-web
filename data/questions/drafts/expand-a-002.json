@@ -1,0 +1,2407 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.22.expansion-a-002",
+  "questions": [
+    {
+      "id": "p1-d04-x01",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d04",
+      "topic": "p1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Context engineering khác việc chỉ viết prompt ở điểm nào?",
+      "correct_answer": "c",
+      "explanation": "Context được lắp lại từ nhiều nguồn qua từng lượt, không chỉ là một message chỉ dẫn.",
+      "source_reference": [
+        {
+          "document_id": "p1-d04",
+          "sha256": "1990fcdcf2ff0da294e52c1ca445ab8858a1922411c9cb1e380c683c2d4985af",
+          "pdf_page": 13,
+          "title": "Context · Loop · Harness Engineering",
+          "locator": "Physical PDF page 13",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ viết lại system instructions một lần, không xét context của các lượt sau"
+        },
+        {
+          "id": "b",
+          "text": "Lưu toàn bộ lịch sử nguyên vẹn và coi mọi token đều cần thiết như nhau"
+        },
+        {
+          "id": "c",
+          "text": "Lặp lại việc chọn tập token phù hợp ở mỗi lần gọi"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d04-x02",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d04",
+      "topic": "p1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một context packet cần giữ riêng tool schema và tool result vì lý do nào?",
+      "correct_answer": "b",
+      "explanation": "Tool schema cho biết khi nào dùng, tham số/output; tool result cần nguồn và thời điểm.",
+      "source_reference": [
+        {
+          "document_id": "p1-d04",
+          "sha256": "1990fcdcf2ff0da294e52c1ca445ab8858a1922411c9cb1e380c683c2d4985af",
+          "pdf_page": 14,
+          "title": "Context · Loop · Harness Engineering",
+          "locator": "Physical PDF page 14",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Hai loại đều là bằng chứng đầu ra nên không cần phân biệt hướng dẫn sử dụng với dữ liệu"
+        },
+        {
+          "id": "b",
+          "text": "Schema mô tả cách dùng tool; result cung cấp dữ liệu/quan sát mới"
+        },
+        {
+          "id": "c",
+          "text": "Schema chứa observation mới; result mô tả các tham số và điều kiện gọi"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d04-x03",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d04",
+      "topic": "p1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Agent đẩy ghi chú trạng thái ra file hoặc DB để chỉ lấy lại khi cần đang thực hiện phép toán context nào?",
+      "correct_answer": "a",
+      "explanation": "Write đẩy state ra ngoài context, khác select kéo thông tin vào và compress nén nội dung.",
+      "source_reference": [
+        {
+          "document_id": "p1-d04",
+          "sha256": "1990fcdcf2ff0da294e52c1ca445ab8858a1922411c9cb1e380c683c2d4985af",
+          "pdf_page": 17,
+          "title": "Context · Loop · Harness Engineering",
+          "locator": "Physical PDF page 17",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Write"
+        },
+        {
+          "id": "b",
+          "text": "Compress: tóm tắt ngay trong context hiện tại mà không tạo state bên ngoài"
+        },
+        {
+          "id": "c",
+          "text": "Select: chỉ kéo ghi chú có sẵn vào context của lượt này"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d04-x04",
+      "revision": 3,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d04",
+      "topic": "p1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những thông tin nào cần sống sót qua compaction? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation": "Compaction lossy nên phải bảo toàn các dữ kiện quyết định trạng thái công việc.",
+      "source_reference": [
+        {
+          "document_id": "p1-d04",
+          "sha256": "1990fcdcf2ff0da294e52c1ca445ab8858a1922411c9cb1e380c683c2d4985af",
+          "pdf_page": 18,
+          "title": "Context · Loop · Harness Engineering",
+          "locator": "Physical PDF page 18",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Quyết định đã chốt và ràng buộc"
+        },
+        {
+          "id": "b",
+          "text": "Nguồn/thời điểm, câu hỏi chưa trả lời và bản cập nhật mới nhất"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ giữ kết luận cuối, bỏ ràng buộc và những câu hỏi còn mở"
+        },
+        {
+          "id": "d",
+          "text": "Giữ nguyên raw tool dumps thay vì chọn nguồn/thời điểm và trạng thái cần bảo toàn"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d04-x05",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d04",
+      "topic": "p1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một giá vé có con số nhưng thiếu nguồn và thời hạn báo giá chưa đủ làm dữ kiện live đáng tin cậy.",
+      "correct_answer": true,
+      "explanation": "Dữ kiện thay đổi theo thời gian cần source, fetched_at, validity/expiry cùng phạm vi áp dụng.",
+      "source_reference": [
+        {
+          "document_id": "p1-d04",
+          "sha256": "1990fcdcf2ff0da294e52c1ca445ab8858a1922411c9cb1e380c683c2d4985af",
+          "pdf_page": 19,
+          "title": "Context · Loop · Harness Engineering",
+          "locator": "Physical PDF page 19",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ]
+    },
+    {
+      "id": "p1-d04-x06",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d04",
+      "topic": "p1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Progressive disclosure cho tool giúp giảm overhead bằng cách nào?",
+      "correct_answer": "a",
+      "explanation": "Cơ chế cốt lõi là có cách lấy tài nguyên khi cần thay vì nạp hết phía trước.",
+      "source_reference": [
+        {
+          "document_id": "p1-d04",
+          "sha256": "1990fcdcf2ff0da294e52c1ca445ab8858a1922411c9cb1e380c683c2d4985af",
+          "pdf_page": 22,
+          "title": "Context · Loop · Harness Engineering",
+          "locator": "Physical PDF page 22",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Cho agent khám phá và nạp định nghĩa phù hợp khi cần"
+        },
+        {
+          "id": "b",
+          "text": "Nạp mọi tool definition trước rồi chỉ rút ngắn question của user"
+        },
+        {
+          "id": "c",
+          "text": "Xóa toàn bộ tool descriptions nhưng vẫn cho agent chọn tool từ tên mơ hồ"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d04-x07",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d04",
+      "topic": "p1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Sau khi model trả tool_call JSON, thành phần nào thực sự chạy code/API của tool?",
+      "correct_answer": "c",
+      "explanation": "Model đề xuất tool call; application thực thi và đưa result quay lại model.",
+      "source_reference": [
+        {
+          "document_id": "p1-d04",
+          "sha256": "1990fcdcf2ff0da294e52c1ca445ab8858a1922411c9cb1e380c683c2d4985af",
+          "pdf_page": 25,
+          "title": "Context · Loop · Harness Engineering",
+          "locator": "Physical PDF page 25",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Model vừa chọn tool vừa tự chạy API, ứng dụng chỉ hiển thị kết quả"
+        },
+        {
+          "id": "b",
+          "text": "Ứng dụng chỉ lưu tool_call JSON rồi gửi lại model như thể đó là result thực thi"
+        },
+        {
+          "id": "c",
+          "text": "Ứng dụng nhận request, thực thi tool và gửi result lại model"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d04-x08",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d04",
+      "topic": "p1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao nên tách read_email và send_slack_message thay cho hai tên tool chung gmail/slack?",
+      "correct_answer": "b",
+      "explanation": "Tên hành động cụ thể giúp không lẫn đọc dữ liệu với gửi ra ngoài.",
+      "source_reference": [
+        {
+          "document_id": "p1-d04",
+          "sha256": "1990fcdcf2ff0da294e52c1ca445ab8858a1922411c9cb1e380c683c2d4985af",
+          "pdf_page": 28,
+          "title": "Context · Loop · Harness Engineering",
+          "locator": "Physical PDF page 28",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tách tên tool nhưng vẫn bỏ time_range và approval_status khỏi contract"
+        },
+        {
+          "id": "b",
+          "text": "Để phân biệt hành động đọc/ghi và gắn rủi ro, approval vào hành động cụ thể"
+        },
+        {
+          "id": "c",
+          "text": "Dùng chung tên connector và gắn cùng một quyền cho cả đọc lẫn gửi"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d04-x09",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d04",
+      "topic": "p1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Idempotency và kiểm soát side effect đặc biệt quan trọng trong tình huống nào?",
+      "correct_answer": "a",
+      "explanation": "Vi phạm idempotency khiến retry sinh tác động phụ hoặc thực hiện hành động lặp.",
+      "source_reference": [
+        {
+          "document_id": "p1-d04",
+          "sha256": "1990fcdcf2ff0da294e52c1ca445ab8858a1922411c9cb1e380c683c2d4985af",
+          "pdf_page": 29,
+          "title": "Context · Loop · Harness Engineering",
+          "locator": "Physical PDF page 29",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Khi retry tool có thể lặp lại tác động không mong muốn"
+        },
+        {
+          "id": "b",
+          "text": "Khi muốn giảm kích thước context của tool schema dù tool không được retry"
+        },
+        {
+          "id": "c",
+          "text": "Khi cần đổi tên function cho dễ nhớ nhưng tác động thực thi không thay đổi"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d04-x10",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d04",
+      "topic": "p1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trade-off nào xuất hiện khi tool granularity quá nhỏ hoặc quá lớn?",
+      "correct_answer": "c",
+      "explanation": "Tool nên quanh một hành động nghiệp vụ rõ ràng, tránh quá vụn hoặc ôm mọi việc.",
+      "source_reference": [
+        {
+          "document_id": "p1-d04",
+          "sha256": "1990fcdcf2ff0da294e52c1ca445ab8858a1922411c9cb1e380c683c2d4985af",
+          "pdf_page": 30,
+          "title": "Context · Loop · Harness Engineering",
+          "locator": "Physical PDF page 30",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tool càng vụn càng ít overhead vì mỗi lần chỉ làm một bước"
+        },
+        {
+          "id": "b",
+          "text": "Một tool bao trọn mọi customer operations luôn dễ xác định ranh giới hơn nhiều tool nghiệp vụ"
+        },
+        {
+          "id": "c",
+          "text": "Quá nhỏ tăng calls/overhead; quá lớn làm boundary khó hiểu và khó debug/reuse"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d04-x11",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d04",
+      "topic": "p1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Hai tool độc lập được gọi song song vẫn cần kiểm soát những rủi ro nào? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "b",
+        "c"
+      ],
+      "explanation": "Song song không xóa rủi ro rate limit/race condition và vẫn cần cap.",
+      "source_reference": [
+        {
+          "document_id": "p1-d04",
+          "sha256": "1990fcdcf2ff0da294e52c1ca445ab8858a1922411c9cb1e380c683c2d4985af",
+          "pdf_page": 31,
+          "title": "Context · Loop · Harness Engineering",
+          "locator": "Physical PDF page 31",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Rate limit được giải quyết bằng cách tăng đồng thời vô hạn, không cần cap"
+        },
+        {
+          "id": "b",
+          "text": "Rate limit"
+        },
+        {
+          "id": "c",
+          "text": "Race condition"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d04-x12",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d04",
+      "topic": "p1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Tool thiếu tham số bắt buộc và chưa có quyền ghi. Cách xử lý nào phù hợp?",
+      "correct_answer": "a",
+      "explanation": "Thiếu required args thì hỏi lại; thiếu quyền thì xin trước, không tự đoán.",
+      "source_reference": [
+        {
+          "document_id": "p1-d04",
+          "sha256": "1990fcdcf2ff0da294e52c1ca445ab8858a1922411c9cb1e380c683c2d4985af",
+          "pdf_page": 32,
+          "title": "Context · Loop · Harness Engineering",
+          "locator": "Physical PDF page 32",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Hỏi bổ sung và xin quyền trước khi gọi"
+        },
+        {
+          "id": "b",
+          "text": "Điền giá trị mặc định cho các required fields chưa rõ rồi xin xác nhận sau"
+        },
+        {
+          "id": "c",
+          "text": "Có quyền đọc dữ liệu booking thì coi như đã được quyền ghi booking"
+        }
+      ],
+      "shuffle_options": true,
+      "context": "Agent chuẩn bị tạo booking nhưng ngày đi chưa rõ và người dùng chưa phê duyệt."
+    },
+    {
+      "id": "p1-d04-x13",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d04",
+      "topic": "p1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao pha verify cần nằm sau take action trong một vòng agent?",
+      "correct_answer": "c",
+      "explanation": "Không verify thì hệ thống không có tín hiệu biết sai để tự sửa.",
+      "source_reference": [
+        {
+          "document_id": "p1-d04",
+          "sha256": "1990fcdcf2ff0da294e52c1ca445ab8858a1922411c9cb1e380c683c2d4985af",
+          "pdf_page": 37,
+          "title": "Context · Loop · Harness Engineering",
+          "locator": "Physical PDF page 37",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ kiểm xem model đã tạo final_answer chưa, không đối chiếu kết quả công việc"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ kiểm trước action, sau thực thi giữ nguyên giả định rằng hành động đã thành công"
+        },
+        {
+          "id": "c",
+          "text": "Để kiểm tra công việc có đạt tiêu chí và phát hiện sai trước khi tiếp tục"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d04-x14",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d04",
+      "topic": "p1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Success predicate đủ chặt nên được biểu diễn thế nào?",
+      "correct_answer": "b",
+      "explanation": "Predicate cần có thể thực thi, thay vì tin model nói xong.",
+      "source_reference": [
+        {
+          "document_id": "p1-d04",
+          "sha256": "1990fcdcf2ff0da294e52c1ca445ab8858a1922411c9cb1e380c683c2d4985af",
+          "pdf_page": 38,
+          "title": "Context · Loop · Harness Engineering",
+          "locator": "Physical PDF page 38",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ điều kiện đã chạm max_turns, xem đó là tín hiệu công việc hoàn tất"
+        },
+        {
+          "id": "b",
+          "text": "Một kiểm tra chạy được như test pass hoặc JSON đúng schema"
+        },
+        {
+          "id": "c",
+          "text": "Một câu model tự đánh giá kết quả của chính nó là đủ tốt"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d04-x15",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d04",
+      "topic": "p1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Agent không gọi tool nào nhưng tự khẳng định dữ liệu thời tiết là thật. Cơ chế nào trực tiếp bắt lỗi này tốt hơn chỉ budget cap?",
+      "correct_answer": "a",
+      "explanation": "Lazy hallucination có thể rất rẻ và không lặp nên cần verifier, không chỉ cap hoặc duplicate detector.",
+      "source_reference": [
+        {
+          "document_id": "p1-d04",
+          "sha256": "1990fcdcf2ff0da294e52c1ca445ab8858a1922411c9cb1e380c683c2d4985af",
+          "pdf_page": 39,
+          "title": "Context · Loop · Harness Engineering",
+          "locator": "Physical PDF page 39",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Verifier kiểm tra grounding/evidence"
+        },
+        {
+          "id": "b",
+          "text": "No-progress detector chỉ kiểm lời gọi tool có bị lặp nguyên args không"
+        },
+        {
+          "id": "c",
+          "text": "Budget cap chỉ kiểm tổng token/cost mà không kiểm bằng chứng của câu trả lời"
+        }
+      ],
+      "shuffle_options": true,
+      "context": "Final answer có thông tin live nhưng trace không có observation hỗ trợ."
+    },
+    {
+      "id": "p1-d04-x16",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d04",
+      "topic": "p1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Approval gate chạy trong harness khác lời dặn trong prompt ở điểm nào?",
+      "correct_answer": "c",
+      "explanation": "Điều kiện if/hook trong harness chặn thực thi độc lập với việc model tuân thủ lời nhắc.",
+      "source_reference": [
+        {
+          "document_id": "p1-d04",
+          "sha256": "1990fcdcf2ff0da294e52c1ca445ab8858a1922411c9cb1e380c683c2d4985af",
+          "pdf_page": 48,
+          "title": "Context · Loop · Harness Engineering",
+          "locator": "Physical PDF page 48",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Hook chỉ thêm instruction vào context nên có mức bảo đảm giống lời nhắc trong prompt"
+        },
+        {
+          "id": "b",
+          "text": "Gate kiểm sau khi write action đã thực thi rồi mới hỏi người dùng"
+        },
+        {
+          "id": "c",
+          "text": "Gate kiểm tra/cưỡng chế trong process trước hành động thay vì chỉ hướng dẫn xác suất"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d04-x17",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d04",
+      "topic": "p1-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao approval nên gắn với tool và exact arguments thay vì chỉ tên tool?",
+      "correct_answer": "b",
+      "explanation": "Chữ ký tool+arguments ràng buộc đúng hành động đã được người dùng duyệt.",
+      "source_reference": [
+        {
+          "document_id": "p1-d04",
+          "sha256": "1990fcdcf2ff0da294e52c1ca445ab8858a1922411c9cb1e380c683c2d4985af",
+          "pdf_page": 50,
+          "title": "Context · Loop · Harness Engineering",
+          "locator": "Physical PDF page 50",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Duyệt theo nhóm write tools để booking đã duyệt mở quyền cho cả hủy/hoàn tiền"
+        },
+        {
+          "id": "b",
+          "text": "Để duyệt một booking không trở thành quyền giữ bất kỳ phòng/số đêm nào"
+        },
+        {
+          "id": "c",
+          "text": "Duyệt theo tên tool để lần sau đổi arguments không phải hỏi lại"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d05-x01",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d05",
+      "topic": "p1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Hai thất bại build the wrong thing và build the thing wrong khác nhau ở trọng tâm nào?",
+      "correct_answer": "c",
+      "explanation": "Product thinking phân biệt chọn sai việc cần xây với chất lượng thực thi khi đã chọn việc.",
+      "source_reference": [
+        {
+          "document_id": "p1-d05",
+          "sha256": "4054831253c34ed1a3e8ab6a0a2437f5bb7be28bae0d395852831ae737b5353e",
+          "pdf_page": 7,
+          "title": "AI Product Thinking & Requirements",
+          "locator": "Physical PDF page 7",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Cả hai đều là lỗi chọn model, không cần tách user value khỏi requirement quality"
+        },
+        {
+          "id": "b",
+          "text": "Chọn đúng persona đã đủ chứng minh cả problem và implementation đều đúng"
+        },
+        {
+          "id": "c",
+          "text": "Sai vấn đề/người dùng so với sai cách thực hiện giải pháp"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d05-x02",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d05",
+      "topic": "p1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Support agent nên dùng metric nào gần với giá trị giải quyết vấn đề hơn chỉ đếm số câu trả lời?",
+      "correct_answer": "b",
+      "explanation": "Metric gợi ý cho support là giải quyết ngay phản hồi đầu, tránh chỉ đếm số câu.",
+      "source_reference": [
+        {
+          "document_id": "p1-d05",
+          "sha256": "4054831253c34ed1a3e8ab6a0a2437f5bb7be28bae0d395852831ae737b5353e",
+          "pdf_page": 11,
+          "title": "AI Product Thinking & Requirements",
+          "locator": "Physical PDF page 11",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tốc độ sinh token trung bình, dù vẫn phải chuyển toàn bộ case cho người"
+        },
+        {
+          "id": "b",
+          "text": "First-response resolution rate"
+        },
+        {
+          "id": "c",
+          "text": "Số câu trả lời agent tạo ra, dù ticket chưa được giải quyết"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d05-x03",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d05",
+      "topic": "p1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những requirement nào đáp ứng trực tiếp yêu cầu privacy? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation": "Privacy được chuyển thành giảm dữ liệu, che thông tin và chính sách lưu giữ.",
+      "source_reference": [
+        {
+          "document_id": "p1-d05",
+          "sha256": "4054831253c34ed1a3e8ab6a0a2437f5bb7be28bae0d395852831ae737b5353e",
+          "pdf_page": 15,
+          "title": "AI Product Thinking & Requirements",
+          "locator": "Physical PDF page 15",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Data minimization và masking"
+        },
+        {
+          "id": "b",
+          "text": "Retention policy"
+        },
+        {
+          "id": "c",
+          "text": "Thu thập thêm PII dự phòng cho mọi use case rồi mới quyết định mục đích sử dụng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d05-x04",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d05",
+      "topic": "p1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Transparency trong một AI product cần giúp người dùng biết điều gì?",
+      "correct_answer": "c",
+      "explanation": "Discovery hỏi user có biết là AI và khi nào nên override, dẫn tới disclosure/citation/escalation.",
+      "source_reference": [
+        {
+          "document_id": "p1-d05",
+          "sha256": "4054831253c34ed1a3e8ab6a0a2437f5bb7be28bae0d395852831ae737b5353e",
+          "pdf_page": 15,
+          "title": "AI Product Thinking & Requirements",
+          "locator": "Physical PDF page 15",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ công bố tên model mà không giải thích giới hạn hoặc quyền kiểm soát của user"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ hiển thị một confidence score để thay cho disclosure và escalation path"
+        },
+        {
+          "id": "c",
+          "text": "Đây là AI, giới hạn ở đâu và khi nào có thể override/escalate"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d05-x05",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d05",
+      "topic": "p1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao không nên mặc định người dùng muốn full automation?",
+      "correct_answer": "b",
+      "explanation": "Research cần hỏi mức tự chủ mong muốn, cơ sở tin, fallback và kỳ vọng vai trò AI.",
+      "source_reference": [
+        {
+          "document_id": "p1-d05",
+          "sha256": "4054831253c34ed1a3e8ab6a0a2437f5bb7be28bae0d395852831ae737b5353e",
+          "pdf_page": 18,
+          "title": "AI Product Thinking & Requirements",
+          "locator": "Physical PDF page 18",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Có human review ở một bước đồng nghĩa toàn workflow không thể có tự động hóa"
+        },
+        {
+          "id": "b",
+          "text": "Họ có thể chỉ cần decision support và muốn giữ quyền ở một số bước"
+        },
+        {
+          "id": "c",
+          "text": "Việc user chấp nhận dùng AI đồng nghĩa chấp nhận AI tự quyết mọi bước"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d05-x06",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d05",
+      "topic": "p1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Persona cho AI cần bổ sung những chiều nào ngoài vai trò và pain points? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "c",
+        "d"
+      ],
+      "explanation": "Các chiều này định hình trust/control/expectation và requirement.",
+      "source_reference": [
+        {
+          "document_id": "p1-d05",
+          "sha256": "4054831253c34ed1a3e8ab6a0a2437f5bb7be28bae0d395852831ae737b5353e",
+          "pdf_page": 19,
+          "title": "AI Product Thinking & Requirements",
+          "locator": "Physical PDF page 19",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ vai trò và pain point đã đủ suy ra literacy, trust và ngưỡng chấp nhận sai"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ mức độ dùng app thường xuyên, không xét willingness to trust automation"
+        },
+        {
+          "id": "c",
+          "text": "AI literacy và mức sẵn sàng tin automation"
+        },
+        {
+          "id": "d",
+          "text": "Ngưỡng chấp nhận sai và mong muốn explainability"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d05-x07",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d05",
+      "topic": "p1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Người dùng thường xuyên sửa câu hỏi hoặc bỏ dở flow cung cấp loại feedback nào?",
+      "correct_answer": "c",
+      "explanation": "Rephrase/override/abandon là tín hiệu hành vi giúp tìm friction và trust issue.",
+      "source_reference": [
+        {
+          "document_id": "p1-d05",
+          "sha256": "4054831253c34ed1a3e8ab6a0a2437f5bb7be28bae0d395852831ae737b5353e",
+          "pdf_page": 20,
+          "title": "AI Product Thinking & Requirements",
+          "locator": "Physical PDF page 20",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Explicit feedback như rating hoặc thumbs-up được user chủ động gửi"
+        },
+        {
+          "id": "b",
+          "text": "Outcome signal như ticket được resolve hoặc booking hoàn tất"
+        },
+        {
+          "id": "c",
+          "text": "Behavioral signal"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d05-x08",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d05",
+      "topic": "p1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Requirement nào có thể kiểm thử rõ hơn?",
+      "correct_answer": "b",
+      "explanation": "Requirement đo được kết hợp latency percentile, nguồn và hành vi khi không chắc.",
+      "source_reference": [
+        {
+          "document_id": "p1-d05",
+          "sha256": "4054831253c34ed1a3e8ab6a0a2437f5bb7be28bae0d395852831ae737b5353e",
+          "pdf_page": 23,
+          "title": "AI Product Thinking & Requirements",
+          "locator": "Physical PDF page 23",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Agent đạt latency trung bình tốt, không cần nêu hành vi khi thiếu nguồn"
+        },
+        {
+          "id": "b",
+          "text": "Agent trả lời dưới5giây tại p95, có nguồn và escalation khi không đủ tin cậy"
+        },
+        {
+          "id": "c",
+          "text": "Agent trả lời nhanh và chính xác hơn, nhưng không có percentile hoặc điều kiện kiểm thử"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d05-x09",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d05",
+      "topic": "p1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Latency SLA, uptime và cost budget thuộc nhóm requirement nào?",
+      "correct_answer": "a",
+      "explanation": "Functional mô tả làm gì; non-functional bảo vệ vận hành/trải nghiệm; AI-specific bao phủ rủi ro AI.",
+      "source_reference": [
+        {
+          "document_id": "p1-d05",
+          "sha256": "4054831253c34ed1a3e8ab6a0a2437f5bb7be28bae0d395852831ae737b5353e",
+          "pdf_page": 24,
+          "title": "AI Product Thinking & Requirements",
+          "locator": "Physical PDF page 24",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Non-functional"
+        },
+        {
+          "id": "b",
+          "text": "Functional: mô tả loại công việc như tóm tắt hoặc phân loại"
+        },
+        {
+          "id": "c",
+          "text": "AI-specific: chỉ mô tả hallucination/explainability/fallback"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d05-x10",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d05",
+      "topic": "p1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Acceptance criteria cho trường hợp không tìm thấy nguồn phù hợp cần bổ sung gì?",
+      "correct_answer": "c",
+      "explanation": "AC phải có failure handling, không chỉ trigger và hành vi thành công.",
+      "source_reference": [
+        {
+          "document_id": "p1-d05",
+          "sha256": "4054831253c34ed1a3e8ab6a0a2437f5bb7be28bae0d395852831ae737b5353e",
+          "pdf_page": 25,
+          "title": "AI Product Thinking & Requirements",
+          "locator": "Physical PDF page 25",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Giữ cùng câu trả lời như happy path, chỉ gắn cảnh báo nguồn ở cuối"
+        },
+        {
+          "id": "b",
+          "text": "Retry retrieval vô hạn thay cho quy định giới hạn và hành vi chuyển tiếp"
+        },
+        {
+          "id": "c",
+          "text": "Nói rõ giới hạn và hành vi fallback/chuyển hướng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d05-x11",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d05",
+      "topic": "p1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Bộ test AC chỉ chứa happy path có thể dẫn đến vấn đề nào?",
+      "correct_answer": "b",
+      "explanation": "Distribution test cần messy/edge/ambiguous và failure modes, không chỉ case thuận lợi.",
+      "source_reference": [
+        {
+          "document_id": "p1-d05",
+          "sha256": "4054831253c34ed1a3e8ab6a0a2437f5bb7be28bae0d395852831ae737b5353e",
+          "pdf_page": 26,
+          "title": "AI Product Thinking & Requirements",
+          "locator": "Physical PDF page 26",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ kiểm negative case, bỏ kiểm kết quả mong muốn khi đủ dữ kiện"
+        },
+        {
+          "id": "b",
+          "text": "Ảo tưởng coverage, bỏ sót input messy/ambiguous và lỗi tool"
+        },
+        {
+          "id": "c",
+          "text": "Đạt happy path đồng nghĩa đã cover input thiếu dữ liệu và lỗi tool"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d05-x12",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d05",
+      "topic": "p1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "PRD được dùng hiệu quả khi mỗi phần giúp team làm gì?",
+      "correct_answer": "a",
+      "explanation": "PRD là contract giảm mơ hồ giữa các vai trò, không phải điền biểu mẫu cho đủ.",
+      "source_reference": [
+        {
+          "document_id": "p1-d05",
+          "sha256": "4054831253c34ed1a3e8ab6a0a2437f5bb7be28bae0d395852831ae737b5353e",
+          "pdf_page": 28,
+          "title": "AI Product Thinking & Requirements",
+          "locator": "Physical PDF page 28",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Làm rõ quyết định, metric, risk và thế nào là done"
+        },
+        {
+          "id": "b",
+          "text": "Ghi chi tiết tính năng nhưng để ngưỡng done và risk owner cho engineer tự suy ra"
+        },
+        {
+          "id": "c",
+          "text": "Chốt giải pháp trước rồi dùng các phần PRD để hợp thức hóa quyết định đã có"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d05-x13",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d05",
+      "topic": "p1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Task completion và repeat usage khác accuracy/citation rate ở tầng metric nào?",
+      "correct_answer": "c",
+      "explanation": "Hierarchy tách business value, hành vi hoàn thành công việc và khả năng vận hành của AI.",
+      "source_reference": [
+        {
+          "document_id": "p1-d05",
+          "sha256": "4054831253c34ed1a3e8ab6a0a2437f5bb7be28bae0d395852831ae737b5353e",
+          "pdf_page": 29,
+          "title": "AI Product Thinking & Requirements",
+          "locator": "Physical PDF page 29",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "AI metric vì task completion và repeat usage chỉ đo độ chính xác model"
+        },
+        {
+          "id": "b",
+          "text": "Business KPI vì không cần nối các hành vi này với giá trị người dùng"
+        },
+        {
+          "id": "c",
+          "text": "Product metric thay vì AI metric"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d05-x14",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d05",
+      "topic": "p1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong user story As… I want… so that…, phần so that nên thể hiện gì?",
+      "correct_answer": "b",
+      "explanation": "Persona là người dùng thật, capability là hành vi, business value liên hệ nhu cầu/KPI.",
+      "source_reference": [
+        {
+          "document_id": "p1-d05",
+          "sha256": "4054831253c34ed1a3e8ab6a0a2437f5bb7be28bae0d395852831ae737b5353e",
+          "pdf_page": 33,
+          "title": "AI Product Thinking & Requirements",
+          "locator": "Physical PDF page 33",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Một danh sách task kỹ thuật thay vì lý do người dùng cần capability"
+        },
+        {
+          "id": "b",
+          "text": "Business value nối với KPI hoặc pain point"
+        },
+        {
+          "id": "c",
+          "text": "Tên model hoặc framework sẽ implement capability"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d05-x15",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d05",
+      "topic": "p1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những tình huống nào cần nằm trong error-state acceptance criteria? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation": "Error state buộc thiết kế fallback/escalation, khác happy path và edge ambiguity.",
+      "source_reference": [
+        {
+          "document_id": "p1-d05",
+          "sha256": "4054831253c34ed1a3e8ab6a0a2437f5bb7be28bae0d395852831ae737b5353e",
+          "pdf_page": 35,
+          "title": "AI Product Thinking & Requirements",
+          "locator": "Physical PDF page 35",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tool timeout"
+        },
+        {
+          "id": "b",
+          "text": "Không có nguồn phù hợp hoặc confidence thấp"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ các request đủ dữ liệu và có nguồn phù hợp vì đó là expected behavior"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d05-x16",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d05",
+      "topic": "p1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Adoption thấp và workflow fit không rõ thuộc nhóm rủi ro nào?",
+      "correct_answer": "c",
+      "explanation": "Taxonomy đặt adoption/ROI/workflow fit vào business risk, mitigation gồm pilot/metrics/JTBD.",
+      "source_reference": [
+        {
+          "document_id": "p1-d05",
+          "sha256": "4054831253c34ed1a3e8ab6a0a2437f5bb7be28bae0d395852831ae737b5353e",
+          "pdf_page": 38,
+          "title": "AI Product Thinking & Requirements",
+          "locator": "Physical PDF page 38",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Technical risk như tool timeout hoặc latency spike"
+        },
+        {
+          "id": "b",
+          "text": "Data risk như stale source, PII leak hoặc bad labeling"
+        },
+        {
+          "id": "c",
+          "text": "Business risk"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d05-x17",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d05",
+      "topic": "p1-d05",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Privacy risk lớn chưa xử lý, không có fallback và user value chưa chứng minh. Quyết định nào phù hợp?",
+      "correct_answer": "b",
+      "explanation": "No-go áp dụng khi privacy/compliance lớn chưa xử lý, không fallback hoặc chưa chứng minh value.",
+      "source_reference": [
+        {
+          "document_id": "p1-d05",
+          "sha256": "4054831253c34ed1a3e8ab6a0a2437f5bb7be28bae0d395852831ae737b5353e",
+          "pdf_page": 40,
+          "title": "AI Product Thinking & Requirements",
+          "locator": "Physical PDF page 40",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Go vì prototype chạy được, hoãn việc chứng minh user value sang sau rollout"
+        },
+        {
+          "id": "b",
+          "text": "No-go cho đến khi các rào cản được xử lý"
+        },
+        {
+          "id": "c",
+          "text": "Conditional go bằng cách mở rộng pilot dù chưa có fallback hay xử lý privacy risk"
+        }
+      ],
+      "shuffle_options": true,
+      "context": "Sponsor hỏi có nên phát hành rộng dù các vấn đề trên vẫn mở."
+    },
+    {
+      "id": "p1-d06-x01",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d06",
+      "topic": "p1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao requirement AI thường cần calibration qua prototype/eval thay vì chỉ implementation?",
+      "correct_answer": "c",
+      "explanation": "Nhiều giả định chỉ kiểm chứng được sau prototype hoặc nhiều vòng eval thực tế.",
+      "source_reference": [
+        {
+          "document_id": "p1-d06",
+          "sha256": "3b0f60cc5e7d6de13102842d2c1e4d0ac7ea513fbad0bea862b48b32f3a3bc95",
+          "pdf_page": 7,
+          "title": "AI Product & Project Management",
+          "locator": "Physical PDF page 7",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Requirement đã viết rõ thì không cần kiểm chứng giả định về data và user behavior"
+        },
+        {
+          "id": "b",
+          "text": "Calibration chỉ là chỉnh threshold một lần, không liên quan việc học từ prototype/eval"
+        },
+        {
+          "id": "c",
+          "text": "Chất lượng phụ thuộc data, prompt, tool reliability và user behavior còn nhiều unknowns"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d06-x02",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d06",
+      "topic": "p1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một AI sprint cần tạo ra loại kết quả học tập nào ngoài code đã viết?",
+      "correct_answer": "b",
+      "explanation": "Research→hypothesis→spike→build→eval→iterate là vòng học để chỉnh scope/prompt/data.",
+      "source_reference": [
+        {
+          "document_id": "p1-d06",
+          "sha256": "3b0f60cc5e7d6de13102842d2c1e4d0ac7ea513fbad0bea862b48b32f3a3bc95",
+          "pdf_page": 8,
+          "title": "AI Product & Project Management",
+          "locator": "Physical PDF page 8",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Giữ nguyên mọi giả định để kết quả sprint có thể so theo scope ban đầu"
+        },
+        {
+          "id": "b",
+          "text": "Giả định nào được kiểm chứng/bác bỏ và nên đầu tư tiếp hay dừng"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ số task đóng trong backlog là đủ kết luận giá trị đã được kiểm chứng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d06-x03",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d06",
+      "topic": "p1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Ước lượng tool integration chỉ tính phần code đã bỏ sót những việc nào? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation": "Ước lượng thực dụng phải tính xử lý lỗi/retry, không chỉ viết đường thành công.",
+      "source_reference": [
+        {
+          "document_id": "p1-d06",
+          "sha256": "3b0f60cc5e7d6de13102842d2c1e4d0ac7ea513fbad0bea862b48b32f3a3bc95",
+          "pdf_page": 9,
+          "title": "AI Product & Project Management",
+          "locator": "Physical PDF page 9",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Error handling"
+        },
+        {
+          "id": "b",
+          "text": "Retries"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ cấu hình happy-path connection, không ước lượng xử lý lỗi/retry"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d06-x04",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d06",
+      "topic": "p1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Data/retrieval work nên được ước lượng ngoài setup ban đầu như thế nào?",
+      "correct_answer": "c",
+      "explanation": "Unknowns cần được priced in cho data/retrieval và kiểm thử với data thật.",
+      "source_reference": [
+        {
+          "document_id": "p1-d06",
+          "sha256": "3b0f60cc5e7d6de13102842d2c1e4d0ac7ea513fbad0bea862b48b32f3a3bc95",
+          "pdf_page": 9,
+          "title": "AI Product & Project Management",
+          "locator": "Physical PDF page 9",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ tính tạo index lần đầu, coi cleaning và edge cases là ngoài phạm vi task"
+        },
+        {
+          "id": "b",
+          "text": "Dùng một mức effort cố định vì mọi dataset có cùng độ sạch và coverage"
+        },
+        {
+          "id": "c",
+          "text": "Tính cả cleaning, coverage và edge cases"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d06-x05",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d06",
+      "topic": "p1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Nhóm cần kiểm tra nhanh người dùng có thật sự muốn giá trị này trước khi đầu tư tích hợp. Nên ưu tiên gì?",
+      "correct_answer": "b",
+      "explanation": "MVE kiểm giả định giá trị nhanh nhất, khác MVP dùng được và PoC giảm bất định cho sponsor.",
+      "source_reference": [
+        {
+          "document_id": "p1-d06",
+          "sha256": "3b0f60cc5e7d6de13102842d2c1e4d0ac7ea513fbad0bea862b48b32f3a3bc95",
+          "pdf_page": 12,
+          "title": "AI Product & Project Management",
+          "locator": "Physical PDF page 12",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "PoC: ưu tiên xin sponsor phê duyệt đầu tư thay vì trả lời user có muốn giá trị không"
+        },
+        {
+          "id": "b",
+          "text": "MVE"
+        },
+        {
+          "id": "c",
+          "text": "MVP: ship phiên bản nhỏ dùng được trước khi kiểm giả định giá trị"
+        }
+      ],
+      "shuffle_options": true,
+      "context": "Value chưa chắc có thật, ngân sách thí nghiệm nhỏ và mục tiêu chính là học nhanh."
+    },
+    {
+      "id": "p1-d06-x06",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d06",
+      "topic": "p1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "MVP khác MVE ở mục tiêu nào?",
+      "correct_answer": "a",
+      "explanation": "Bảng tách test giá trị nhanh của MVE với ship phiên bản dùng được của MVP.",
+      "source_reference": [
+        {
+          "document_id": "p1-d06",
+          "sha256": "3b0f60cc5e7d6de13102842d2c1e4d0ac7ea513fbad0bea862b48b32f3a3bc95",
+          "pdf_page": 12,
+          "title": "AI Product & Project Management",
+          "locator": "Physical PDF page 12",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "MVP là phiên bản nhỏ dùng được để kiểm workflow vận hành"
+        },
+        {
+          "id": "b",
+          "text": "MVP chỉ hỏi ý kiến người dùng về ý tưởng, chưa cần một workflow dùng được"
+        },
+        {
+          "id": "c",
+          "text": "MVE bắt buộc xây toàn bộ tích hợp production trước khi kiểm nhu cầu"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d06-x07",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d06",
+      "topic": "p1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Wizard of Oz testing phù hợp khi nào?",
+      "correct_answer": "c",
+      "explanation": "Backend human có thể mô phỏng để kiểm nhu cầu/adoption trước đầu tư sâu.",
+      "source_reference": [
+        {
+          "document_id": "p1-d06",
+          "sha256": "3b0f60cc5e7d6de13102842d2c1e4d0ac7ea513fbad0bea862b48b32f3a3bc95",
+          "pdf_page": 13,
+          "title": "AI Product & Project Management",
+          "locator": "Physical PDF page 13",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Cần đo throughput và độ tin cậy thực của infrastructure production"
+        },
+        {
+          "id": "b",
+          "text": "Cần chứng minh mọi kết quả AI tự động đều đúng bằng cách thay người tạo đáp án phía sau"
+        },
+        {
+          "id": "c",
+          "text": "Cần kiểm value/workflow trước khi đầu tư sâu model hoặc integration"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d06-x08",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d06",
+      "topic": "p1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một thí nghiệm có kỷ luật ngân sách cần những gì? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "b",
+        "c"
+      ],
+      "explanation": "Time-box experiment cần đủ giả định, thời hạn, trần ngân sách và stop criteria.",
+      "source_reference": [
+        {
+          "document_id": "p1-d06",
+          "sha256": "3b0f60cc5e7d6de13102842d2c1e4d0ac7ea513fbad0bea862b48b32f3a3bc95",
+          "pdf_page": 14,
+          "title": "AI Product & Project Management",
+          "locator": "Physical PDF page 14",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ timebox và deadline, để budget và quyết định dừng mở trong lúc chạy"
+        },
+        {
+          "id": "b",
+          "text": "Giả định và timebox"
+        },
+        {
+          "id": "c",
+          "text": "Budget ceiling và tiêu chí dừng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d06-x09",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d06",
+      "topic": "p1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Demo bằng low-code giúp kiểm workflow nhưng không tự thay thế điều gì?",
+      "correct_answer": "a",
+      "explanation": "Low-code dùng để demo/PoC, không giải hết kiến trúc enterprise hay discovery.",
+      "source_reference": [
+        {
+          "document_id": "p1-d06",
+          "sha256": "3b0f60cc5e7d6de13102842d2c1e4d0ac7ea513fbad0bea862b48b32f3a3bc95",
+          "pdf_page": 16,
+          "title": "AI Product & Project Management",
+          "locator": "Physical PDF page 16",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Product discovery và production planning"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ dùng low-code đã đủ chứng minh production architecture và user value"
+        },
+        {
+          "id": "c",
+          "text": "Flow trực quan thay thế được việc định nghĩa PRD, risks và success metrics"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d06-x10",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d06",
+      "topic": "p1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "PoC canvas nên giới hạn scope như thế nào để giảm bất định chính?",
+      "correct_answer": "c",
+      "explanation": "Canvas gắn scope hẹp với hypothesis, success criteria, timebox và next decision.",
+      "source_reference": [
+        {
+          "document_id": "p1-d06",
+          "sha256": "3b0f60cc5e7d6de13102842d2c1e4d0ac7ea513fbad0bea862b48b32f3a3bc95",
+          "pdf_page": 19,
+          "title": "AI Product & Project Management",
+          "locator": "Physical PDF page 19",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Mở nhiều workflow và persona cùng lúc để một PoC đủ chứng minh toàn roadmap"
+        },
+        {
+          "id": "b",
+          "text": "Giữ scope rộng nhưng không chốt success criteria trước với stakeholder"
+        },
+        {
+          "id": "c",
+          "text": "Một workflow hẹp, nhóm user hẹp và bộ dữ liệu hẹp"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d06-x11",
+      "revision": 1,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d06",
+      "topic": "p1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "true_false",
+      "answer_format": "boolean",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một PoC thành công tự động chứng minh hệ thống đã production-ready ở mọi quy mô.",
+      "correct_answer": false,
+      "explanation": "PoC giảm bất định và kiểm workflow hẹp; không nên hứa production readiness.",
+      "source_reference": [
+        {
+          "document_id": "p1-d06",
+          "sha256": "3b0f60cc5e7d6de13102842d2c1e4d0ac7ea513fbad0bea862b48b32f3a3bc95",
+          "pdf_page": 20,
+          "title": "AI Product & Project Management",
+          "locator": "Physical PDF page 20",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy."
+      ]
+    },
+    {
+      "id": "p1-d06-x12",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d06",
+      "topic": "p1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Human review, monitoring và maintenance nên được đặt vào nhóm chi phí nào trong ROI anatomy?",
+      "correct_answer": "a",
+      "explanation": "Build gồm dev/setup/integration; Run gồm API/compute/storage; Operate gồm review/monitoring/maintenance.",
+      "source_reference": [
+        {
+          "document_id": "p1-d06",
+          "sha256": "3b0f60cc5e7d6de13102842d2c1e4d0ac7ea513fbad0bea862b48b32f3a3bc95",
+          "pdf_page": 22,
+          "title": "AI Product & Project Management",
+          "locator": "Physical PDF page 22",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Operate"
+        },
+        {
+          "id": "b",
+          "text": "Build: chỉ tính phần viết code và setup ban đầu"
+        },
+        {
+          "id": "c",
+          "text": "Run: chỉ tính API/compute/storage khi request thực thi"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d06-x13",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d06",
+      "topic": "p1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao nên trình bày ROI conservative/realistic/optimistic thay một con số đẹp duy nhất?",
+      "correct_answer": "c",
+      "explanation": "Ba scenario làm rõ uncertainty và sensitivity thay vì che chúng bằng một estimate.",
+      "source_reference": [
+        {
+          "document_id": "p1-d06",
+          "sha256": "3b0f60cc5e7d6de13102842d2c1e4d0ac7ea513fbad0bea862b48b32f3a3bc95",
+          "pdf_page": 23,
+          "title": "AI Product & Project Management",
+          "locator": "Physical PDF page 23",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chọn estimate lạc quan nhất rồi giữ cố định cost và adoption trong mọi scenario"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ dùng ba tên scenario cho cùng một bộ giả định và cùng kết quả ROI"
+        },
+        {
+          "id": "c",
+          "text": "Để thể hiện phạm vi kết quả có thể xảy ra khi adoption/cost/workflow fit thay đổi"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d06-x14",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d06",
+      "topic": "p1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Khi đánh giá break-even, cần hỏi thêm điều gì ngoài tháng hòa vốn?",
+      "correct_answer": "b",
+      "explanation": "Break-even gắn với scenario và assumption, không phải một mốc chắc chắn bất biến.",
+      "source_reference": [
+        {
+          "document_id": "p1-d06",
+          "sha256": "3b0f60cc5e7d6de13102842d2c1e4d0ac7ea513fbad0bea862b48b32f3a3bc95",
+          "pdf_page": 24,
+          "title": "AI Product & Project Management",
+          "locator": "Physical PDF page 24",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ lấy tháng hòa vốn của optimistic scenario làm cam kết chung"
+        },
+        {
+          "id": "b",
+          "text": "Kịch bản và giả định nào có thể đẩy mốc này xa hơn"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ dùng tổng benefit dự kiến, không xét dòng cost theo thời gian"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d06-x15",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d06",
+      "topic": "p1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "multiple_choice",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Những giả định nào nên được nói rõ khi trình ROI cho sponsor? (Chọn tất cả đáp án đúng.)",
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation": "ROI cần baseline→giả định thay đổi→giá trị theo thời gian→điều kiện xảy ra.",
+      "source_reference": [
+        {
+          "document_id": "p1-d06",
+          "sha256": "3b0f60cc5e7d6de13102842d2c1e4d0ac7ea513fbad0bea862b48b32f3a3bc95",
+          "pdf_page": 25,
+          "title": "AI Product & Project Management",
+          "locator": "Physical PDF page 25",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Adoption rate"
+        },
+        {
+          "id": "b",
+          "text": "Review cost, API cost và error-handling cost"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ time saved lý thuyết, không điều chỉnh theo adoption hoặc human review"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d06-x16",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d06",
+      "topic": "p1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Executive sponsor cần trọng tâm nào khác technical team?",
+      "correct_answer": "c",
+      "explanation": "Technical audience quan tâm architecture/eval/dependencies; executive quan tâm ROI/timeline/adoption/risk.",
+      "source_reference": [
+        {
+          "document_id": "p1-d06",
+          "sha256": "3b0f60cc5e7d6de13102842d2c1e4d0ac7ea513fbad0bea862b48b32f3a3bc95",
+          "pdf_page": 27,
+          "title": "AI Product & Project Management",
+          "locator": "Physical PDF page 27",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chi tiết schema arguments và cách cài dependency thay cho ROI và decision ask"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ benchmark kỹ thuật, để sponsor tự suy ra tác động kinh doanh và điều kiện đầu tư"
+        },
+        {
+          "id": "c",
+          "text": "Business value, scenario và decision ask"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d06-x17",
+      "revision": 2,
+      "author_id": "question-engineer-a",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d06",
+      "topic": "p1-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Expectation setting cần nói rõ điều gì để tránh scope không thực tế?",
+      "correct_answer": "b",
+      "explanation": "Giải thích capability và giới hạn giúp giảm scope phi thực tế và hiểu nhầm sau này.",
+      "source_reference": [
+        {
+          "document_id": "p1-d06",
+          "sha256": "3b0f60cc5e7d6de13102842d2c1e4d0ac7ea513fbad0bea862b48b32f3a3bc95",
+          "pdf_page": 28,
+          "title": "AI Product & Project Management",
+          "locator": "Physical PDF page 28",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New expansion item; requires independent review against cited original PDF page. Curricular grouping follows root folder/filename policy.",
+        "Distractors explicitly revised to neighboring misconceptions in the same concept; three options avoid unrelated filler."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Nói AI xử lý trọn workflow rồi bổ sung giới hạn khi người dùng gặp lỗi"
+        },
+        {
+          "id": "b",
+          "text": "AI làm tốt/chưa tốt gì và cần human review ở đâu"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ trình bày các case demo thành công để tránh làm stakeholder nghi ngờ"
+        }
+      ],
+      "shuffle_options": true
+    }
+  ]
+}

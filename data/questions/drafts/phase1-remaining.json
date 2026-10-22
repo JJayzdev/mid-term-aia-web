@@ -226,7 +226,7 @@
     },
     {
       "id": "p1-d04-q03",
-      "revision": 2,
+      "revision": 3,
       "author_id": "a1-question-engineer",
       "phase": 1,
       "track": null,
@@ -237,7 +237,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những nội dung nào thuộc harness engineering trên bản đồ bốn lớp? (Chọn tất cả đáp án đúng.)",
+      "question": "Trong mô hình bốn lớp của hệ thống agent, những nội dung nào thuộc harness engineering? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "a",
         "b"
@@ -256,7 +256,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {

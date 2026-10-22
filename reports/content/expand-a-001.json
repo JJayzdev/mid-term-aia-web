@@ -1,0 +1,707 @@
+{
+  "batch_file": "data/questions/drafts/expand-a-001.json",
+  "reviewer_id": "reviewer",
+  "reviewed_at": "2026-10-22T09:45:52.426411+00:00",
+  "results": [
+    {
+      "id": "p1-d01-x01",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d01",
+          "pdf_page": 6
+        }
+      ],
+      "notes": [
+        "p6: Foundation nhiều modality/tasks,LLM chuyênngônngữ;cđúng,hai distractor đảo taxonomy. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d01-x02",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d01",
+          "pdf_page": 10
+        }
+      ],
+      "notes": [
+        "p10: STT speechtext,TTStextspeech;bđúng,đảochiều/intent khôngchức năngSTT. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d01-x03",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d01",
+          "pdf_page": 11
+        }
+      ],
+      "notes": [
+        "p11: Bargein dừngTTSngay;ađúng,queueđợihết/bỏlờichen khôngđápứngsửasốtàikhoản. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d01-x04",
+      "revision": 4,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d01",
+          "pdf_page": 11
+        }
+      ],
+      "notes": [
+        "p11: Streammọikhâu beforefulloutput;cđúng,haiphươngánbatchwait khôngcơchếgiảmđộtrễ này. Retestrev4positivestemđóngmơhồ. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d01-x05",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d01",
+          "pdf_page": 13
+        }
+      ],
+      "notes": [
+        "p13: Tool→observe→nextdecision;bđúng,actionlặptrướcresult/finalwithoutresult sai thứtự. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d01-x06",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d01",
+          "pdf_page": 15
+        }
+      ],
+      "notes": [
+        "p15: Progressive disclosure xửlýcontextlimit,descriptiontrướcnạpphầnđầyđủkhicần;ađúng. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d01-x07",
+      "revision": 4,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d01",
+          "pdf_page": 15
+        }
+      ],
+      "notes": [
+        "p15: SKILL.md/script/template,b/cđúng;descriptiononly/schemanoinstruction thiếuworkflow. Retestdirectstemr4. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d01-x08",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d01",
+          "pdf_page": 16
+        }
+      ],
+      "notes": [
+        "p16: MCP connectionexternalCRM/DB;bđúng;toolcallingfunction/skillknowhow khácvai trò. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d01-x09",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d01",
+          "pdf_page": 20
+        }
+      ],
+      "notes": [
+        "p20: Nexttokenprediction;ađúng,nearestcopiedanswer/fixedlabel khôngcơchếgenerative. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d01-x10",
+      "revision": 4,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d01",
+          "pdf_page": 23
+        }
+      ],
+      "notes": [
+        "p23: Attentionquan hệđạitừcontext;cđúng,uniform/prevtokenonly sai;đãcungcấpcâuđầyđủr4. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d01-x11",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d01",
+          "pdf_page": 24
+        }
+      ],
+      "notes": [
+        "p24: Subwordunit khôngonewordforalllanguage;falseđúng. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d01-x12",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d01",
+          "pdf_page": 25
+        }
+      ],
+      "notes": [
+        "p25: Outputtoken thànhinputtiếp;ađúng,independentalltokens khôngautoregressive. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d01-x13",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d01",
+          "pdf_page": 26
+        }
+      ],
+      "notes": [
+        "p26: Pretrainlanguageknowledge,SFTexamples,alignmentpreferences;cđúng,khôngđánhtráoretrieval/context. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d01-x14",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d01",
+          "pdf_page": 27
+        }
+      ],
+      "notes": [
+        "p27: Knowledgecutoff;bđúng,hallucination/contextwindow khácthuộc tính. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d01-x15",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d01",
+          "pdf_page": 36
+        }
+      ],
+      "notes": [
+        "p36: APIquality/latency/cost đồngthời;b/c/dđúng,qualityonlysai. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d01-x16",
+      "revision": 4,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d01",
+          "pdf_page": 39
+        }
+      ],
+      "notes": [
+        "p39: Usageinputoutput+stopreason;a/cđúng,contentcharonly khôngusage. Retestr4qualifiesexplicitresponseschema khôngkháiquátmọiprovider. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d02-x01",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d02",
+          "pdf_page": 8
+        }
+      ],
+      "notes": [
+        "p8: Usergroups đổiworkflow/metric/risk;cđúng,model/kênhchatkhôngsuyđượctấtcả. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d02-x02",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d02",
+          "pdf_page": 13
+        }
+      ],
+      "notes": [
+        "p13: PAIRproblemfirst AIsecond;bđúng,architecture/autolevelfirst tráinguyêntắc. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d02-x03",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d02",
+          "pdf_page": 16
+        }
+      ],
+      "notes": [
+        "p16: DiscoverDefinefindrightproblem;ađúng,solutionvalidation thuộcdiamondsau. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d02-x04",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d02",
+          "pdf_page": 16
+        }
+      ],
+      "notes": [
+        "p16: Developdiverge,Deliverconverge;falseđúng. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d02-x05",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d02",
+          "pdf_page": 18
+        }
+      ],
+      "notes": [
+        "p18: Observation/interview/diary/analytics a/ddiverge;dotvoting/problemstatementonly làhộitụ. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d02-x06",
+      "revision": 5,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d02",
+          "pdf_page": 23
+        }
+      ],
+      "notes": [
+        "p23: BoundaryAIkhôngchấmđiểm,vàTAduyệtchuyênsâu;ađúng;retastr5learningassistantcontextbảo toànscope. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d02-x07",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d02",
+          "pdf_page": 25
+        }
+      ],
+      "notes": [
+        "p25: Metricthresholdwithtimeaction;cđúng;thiếutrigger/action khônghànhđộngđược. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d02-x08",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d02",
+          "pdf_page": 28
+        }
+      ],
+      "notes": [
+        "p28: AutomateaugmentAIthay/hỗtrợngười;bđúng,sequencing/technicalcomplexity trụckhác. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d02-x09",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d02",
+          "pdf_page": 29
+        }
+      ],
+      "notes": [
+        "p29: Finiteinputuniqueanswerhighcost ưu tiênrule;ađúng,modelselfconfidence khôngdeterministicguarantee. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d02-x10",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d02",
+          "pdf_page": 30
+        }
+      ],
+      "notes": [
+        "p30: Highstakes/personalresponsibility augment;truecóqualifierxuhướng. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d02-x11",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d02",
+          "pdf_page": 31
+        }
+      ],
+      "notes": [
+        "p31: Automateincreaseevaluationallowsandprovenquality;bđúng,demo/camkếtcứngkhôngbằngchứng. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d02-x12",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d02",
+          "pdf_page": 32
+        }
+      ],
+      "notes": [
+        "p32: Technicallevel/humanrole độc lập;ađúng,cáccặpworkflowauto/agentaugment khôngtấtyếu. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d02-x13",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d02",
+          "pdf_page": 34
+        }
+      ],
+      "notes": [
+        "p34: Codefixedroute/gates workflow;cđúng,model/peerreplan khôngfixedflow. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d02-x14",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d02",
+          "pdf_page": 35
+        }
+      ],
+      "notes": [
+        "p35: Dynamicplan/tools+stopoversight,b/cđúng;unknownstepskhôngmiễnstop. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d02-x15",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d02",
+          "pdf_page": 36
+        }
+      ],
+      "notes": [
+        "p36: Generator-evaluatorfeedback evaluatoroptimizer;ađúng,routing/chainingkhôngvòngsửa. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d02-x16",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d02",
+          "pdf_page": 45
+        }
+      ],
+      "notes": [
+        "p45: Inputlever/outputendresult;cđúng,địnhnghĩađảochiềusai. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d02-x17",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d02",
+          "pdf_page": 50
+        }
+      ],
+      "notes": [
+        "p50: Automationfailuregivescontrolandinform;bđúng,genericerror/retrywithoutcontrol khônggraceful. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d03-x01",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d03",
+          "pdf_page": 26
+        }
+      ],
+      "notes": [
+        "p26: Toolbridgereasoningexternalaction;cđúng,weights/finalstyle khôngtoolinteraction. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d03-x02",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d03",
+          "pdf_page": 30
+        }
+      ],
+      "notes": [
+        "p30: Returnformat/errors understandresultfailure;bđúng,policyonly/paramcount khôngbùthiếu. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d03-x03",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d03",
+          "pdf_page": 30
+        }
+      ],
+      "notes": [
+        "p30: Type/required/constraints b/cđúng;exampleonly/any khôngschema rõ. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d03-x04",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d03",
+          "pdf_page": 34
+        }
+      ],
+      "notes": [
+        "p34: Observation=tool/environmentresult;cđúng,Thought/Actionkhácpha. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d03-x05",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d03",
+          "pdf_page": 37
+        }
+      ],
+      "notes": [
+        "p37: Traceactionreasons+observations;bđúng,Thoughtonly/finalonly khôngđủ. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d03-x06",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d03",
+          "pdf_page": 41
+        }
+      ],
+      "notes": [
+        "p41: Independenttoolscanparallel/reorder;ađúng,bắtdependencygiả/bỏtool khôngcần. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d03-x07",
+      "revision": 4,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d03",
+          "pdf_page": 42
+        }
+      ],
+      "notes": [
+        "p42: Retryoncefailagaininform/manualfallback;cđúng,noinvent/noinfinite. Retestcontextnotoolprice phùhợp. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d03-x08",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d03",
+          "pdf_page": 45
+        }
+      ],
+      "notes": [
+        "p45: Tokenlatency/loopmisuse b/cđúng,finalonlyevaluation bịbácbỏ. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d03-x09",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d03",
+          "pdf_page": 47
+        }
+      ],
+      "notes": [
+        "p47: ReActconcept/FCstructuredmechanism;ađúng,JSONvsconceptđảo/loạitrừsai. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d03-x10",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d03",
+          "pdf_page": 48
+        }
+      ],
+      "notes": [
+        "p48: HybridnativeFC+trace,trueđúng;retastr2completeproposition. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d03-x11",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d03",
+          "pdf_page": 56
+        }
+      ],
+      "notes": [
+        "p56: Constraints+outputformat production,b/cđúng,demosuccessonly khônggiớihạn/format. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d03-x12",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d03",
+          "pdf_page": 59
+        }
+      ],
+      "notes": [
+        "p59: Unchangedobservation/no progress stopfallback+a limits;ađúng,resetobs/retryforever sai. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d03-x13",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d03",
+          "pdf_page": 60
+        }
+      ],
+      "notes": [
+        "p60: Graphstate/nodes/edges/routingclarity;cđúng,hiddenprompt/whilewithoutstatekhônggiảiquyết. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d03-x14",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d03",
+          "pdf_page": 64
+        }
+      ],
+      "notes": [
+        "p64: Accuracygainvsincreasedcost+wronganswercost;bđúng,accuracyonly/tokenpriceonly thiếutradeoff. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d03-x15",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d03",
+          "pdf_page": 66
+        }
+      ],
+      "notes": [
+        "p66: Untrustedtooloutput tăngattacksurface;ađúng,APIorigin khôngsysteminstructiontrust. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d03-x16",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d03",
+          "pdf_page": 77
+        }
+      ],
+      "notes": [
+        "p77: Toolchoice/argcorrectness/stopping a/cđúng,proseonly khôngtraceeval. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    },
+    {
+      "id": "p1-d03-x17",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d03",
+          "pdf_page": 80
+        }
+      ],
+      "notes": [
+        "p80: TriageFAQsimple/multistepagent/escalation;bđúng,allchat/allagent khôngoverheadtradeoff. Stem/options/answer/explanation verified against rendered physical source."
+      ]
+    }
+  ]
+}

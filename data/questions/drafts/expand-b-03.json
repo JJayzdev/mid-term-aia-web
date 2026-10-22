@@ -1,0 +1,1740 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.22.expand-b-03",
+  "questions": [
+    {
+      "id": "p2-t2-d07-x01",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d07",
+      "topic": "p2-t2-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "LLMOps mở rộng loại drift cần quản lý sang những gì?",
+      "correct_answer": "a",
+      "explanation": "Ngoài data/concept drift, LLMOps quản lý biến đổi prompt, embedding và model version ảnh hưởng hành vi.",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d07",
+          "sha256": "4cef91986bf420b28ac78af115a4d474dd649ab7e2b2823b02189f21aca374e5",
+          "pdf_page": 7,
+          "title": "LLMOps & Prompt Versioning",
+          "locator": "Physical PDF page 7; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Prompt, embedding và model-version drift"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ data/concept drift dù prompt và model snapshot thay đổi"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ chất lượng dataset training mà bỏ embedding version"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ weight drift vì application prompt không ảnh hưởng hành vi"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t2-d07-x02",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d07",
+      "topic": "p2-t2-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một compound AI system có retriever, tool và nhiều lần gọi model cần version/rollback ở đơn vị nào?",
+      "correct_answer": "d",
+      "explanation": "Đơn vị vận hành là toàn hệ thống: prompt, model snapshot, index và tool schema cùng tác động kết quả.",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d07",
+          "sha256": "4cef91986bf420b28ac78af115a4d474dd649ab7e2b2823b02189f21aca374e5",
+          "pdf_page": 8,
+          "title": "LLMOps & Prompt Versioning",
+          "locator": "Physical PDF page 8; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ một model snapshot dù index/tool schema thay đổi"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ git SHA code mà không gắn prompt/model/index"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ prompt text và bỏ retrieval configuration"
+        },
+        {
+          "id": "d",
+          "text": "Cả pipeline cùng các thành phần cấu hình liên quan"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t2-d07-x03",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d07",
+      "topic": "p2-t2-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao test output bằng so khớp chuỗi vẫn dễ chập chờn khi temperature=0?",
+      "correct_answer": "c",
+      "explanation": "Temperature=0 không bảo đảm output identical; gate nên dựa tỷ lệ pass cùng độ tin cậy thay string equality.",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d07",
+          "sha256": "4cef91986bf420b28ac78af115a4d474dd649ab7e2b2823b02189f21aca374e5",
+          "pdf_page": 9,
+          "title": "LLMOps & Prompt Versioning",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ cần seed cố định để loại mọi nondeterminism hệ thống"
+        },
+        {
+          "id": "b",
+          "text": "String equality luôn bền hơn pass-rate gate trên output mở"
+        },
+        {
+          "id": "c",
+          "text": "Thay đổi batching và thứ tự phép cộng floating-point có thể đổi output"
+        },
+        {
+          "id": "d",
+          "text": "Temperature 0 bảo đảm bitwise identical output bất kể batching"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t2-d07-x04",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d07",
+      "topic": "p2-t2-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Kết quả eval của prompt version chỉ có ý nghĩa đầy đủ khi gắn với điều gì?",
+      "correct_answer": "b",
+      "explanation": "Prompt được tune cho model cụ thể; cặp prompt_version và model_snapshot là đơn vị có ý nghĩa.",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d07",
+          "sha256": "4cef91986bf420b28ac78af115a4d474dd649ab7e2b2823b02189f21aca374e5",
+          "pdf_page": 13,
+          "title": "LLMOps & Prompt Versioning",
+          "locator": "Physical PDF page 13; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ text diff của prompt mà không ghi model"
+        },
+        {
+          "id": "b",
+          "text": "Model snapshot đã chạy eval"
+        },
+        {
+          "id": "c",
+          "text": "Alias latest có thể đổi mà không lưu snapshot"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ model family name chung không có snapshot"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t2-d07-x05",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d07",
+      "topic": "p2-t2-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Commit message prompt nào cung cấp thông tin hữu ích cho review sau này?",
+      "correct_answer": "a",
+      "explanation": "Khuôn ba phần là đổi gì, vì sao/bằng chứng nào và đánh đổi đo được, giúp hiểu ý định ngoài text diff.",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d07",
+          "sha256": "4cef91986bf420b28ac78af115a4d474dd649ab7e2b2823b02189f21aca374e5",
+          "pdf_page": 17,
+          "title": "LLMOps & Prompt Versioning",
+          "locator": "Physical PDF page 17; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Nêu thay đổi, bằng chứng lý do và đánh đổi đo được"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ ghi update prompt mà không lý do"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ ghi try again mà không metric"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ log thời gian mà không thay đổi/bằng chứng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t2-d07-x06",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d07",
+      "topic": "p2-t2-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Registry cho PM sửa nhanh nhưng đội muốn giữ đường thoát và CI đọc được artifact. Cách kết hợp nào phù hợp?",
+      "correct_answer": "d",
+      "explanation": "Mô hình lai giữ tốc độ registry cùng bản sao git để backup và CI, giảm lệ thuộc vendor.",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d07",
+          "sha256": "4cef91986bf420b28ac78af115a4d474dd649ab7e2b2823b02189f21aca374e5",
+          "pdf_page": 19,
+          "title": "LLMOps & Prompt Versioning",
+          "locator": "Physical PDF page 19; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ giữ artifact trong UI không có export"
+        },
+        {
+          "id": "b",
+          "text": "Giữ git copy nhưng không sync khi registry đổi"
+        },
+        {
+          "id": "c",
+          "text": "Bỏ CI vì registry có version tức là đã pass quality"
+        },
+        {
+          "id": "d",
+          "text": "Sync prompt từ registry về git qua webhook"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t2-d07-x07",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d07",
+      "topic": "p2-t2-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Local prompt cache kết hợp stale-while-revalidate giúp ích gì khi TTL hết?",
+      "correct_answer": "c",
+      "explanation": "Stale-while-revalidate tránh registry nằm trên critical path; fallback và prefetch bổ sung độ bền.",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d07",
+          "sha256": "4cef91986bf420b28ac78af115a4d474dd649ab7e2b2823b02189f21aca374e5",
+          "pdf_page": 23,
+          "title": "LLMOps & Prompt Versioning",
+          "locator": "Physical PDF page 23; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Xóa bản cache ngay khi registry chậm dù có bản tốt"
+        },
+        {
+          "id": "b",
+          "text": "Tắt fallback vì cache sẽ không bao giờ rỗng"
+        },
+        {
+          "id": "c",
+          "text": "Trả bản cũ ngay và cập nhật nền để request không chờ registry"
+        },
+        {
+          "id": "d",
+          "text": "Bắt request đợi network fetch mỗi lần TTL hết"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t2-d07-x08",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d07",
+      "topic": "p2-t2-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Tăng TTL local prompt cache có đánh đổi vận hành nào?",
+      "correct_answer": "b",
+      "explanation": "TTL dài giảm fetch nhưng làm chậm propagation; chọn TTL liên quan RTO rollback toàn cụm.",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d07",
+          "sha256": "4cef91986bf420b28ac78af115a4d474dd649ab7e2b2823b02189f21aca374e5",
+          "pdf_page": 23,
+          "title": "LLMOps & Prompt Versioning",
+          "locator": "Physical PDF page 23; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Không cần drill rollback vì đổi label là đủ"
+        },
+        {
+          "id": "b",
+          "text": "Version mới và rollback có thể lan ra toàn cụm chậm hơn"
+        },
+        {
+          "id": "c",
+          "text": "Rollback có hiệu lực toàn cụm ngay bất kể TTL"
+        },
+        {
+          "id": "d",
+          "text": "TTL dài luôn làm propagation version mới nhanh hơn"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t2-d07-x09",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d07",
+      "topic": "p2-t2-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Bất kỳ user registry nào cũng đổi được label production tạo rủi ro gì?",
+      "correct_answer": "a",
+      "explanation": "Production label cần role được cấp, eval gate, audit và cảnh báo vì thay prompt không cần app deployment.",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d07",
+          "sha256": "4cef91986bf420b28ac78af115a4d474dd649ab7e2b2823b02189f21aca374e5",
+          "pdf_page": 26,
+          "title": "LLMOps & Prompt Versioning",
+          "locator": "Physical PDF page 26; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Đường thay đổi hành vi production bỏ qua kiểm soát release"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ ảnh hưởng tốc độ release, không ảnh hưởng quyền"
+        },
+        {
+          "id": "c",
+          "text": "Version bất biến tự thay approval workflow"
+        },
+        {
+          "id": "d",
+          "text": "Audit log đủ dù mọi người vẫn được đổi label prod"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t2-d07-x10",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d07",
+      "topic": "p2-t2-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Regression gate nên chạy khi PR chạm những thành phần nào?",
+      "correct_answer": "d",
+      "explanation": "Thay prompt, model hay retrieval đều đổi hành vi nên cần eval trên golden set và so baseline trước merge.",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d07",
+          "sha256": "4cef91986bf420b28ac78af115a4d474dd649ab7e2b2823b02189f21aca374e5",
+          "pdf_page": 28,
+          "title": "LLMOps & Prompt Versioning",
+          "locator": "Physical PDF page 28; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ khi code Python đổi còn prompt/config thì bỏ"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ khi prompt text đổi, model/index đổi không cần gate"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ khi người sửa tự chọn chạy thủ công"
+        },
+        {
+          "id": "d",
+          "text": "Prompt, model hoặc retrieval config"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t2-d07-x11",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d07",
+      "topic": "p2-t2-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Suite regression khai báo dạng YAML tạo thuận lợi nào cho PM/SME?",
+      "correct_answer": "c",
+      "explanation": "Dạng khai báo giúp PM review test và chạy nhiều provider, đồng thời gắn GitHub Action fail khi regression.",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d07",
+          "sha256": "4cef91986bf420b28ac78af115a4d474dd649ab7e2b2823b02189f21aca374e5",
+          "pdf_page": 29,
+          "title": "LLMOps & Prompt Versioning",
+          "locator": "Physical PDF page 29; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Test không cần metric threshold vì đã khai báo"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ một provider đủ để kiểm mọi lần model migration"
+        },
+        {
+          "id": "c",
+          "text": "Test là dữ liệu nên có thể review mà không phải đọc test code phức tạp"
+        },
+        {
+          "id": "d",
+          "text": "YAML tự bảo đảm expected behavior đúng mà không review"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t2-d07-x12",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d07",
+      "topic": "p2-t2-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Để tối đa prefix-cache reuse, nội dung prompt nên sắp xếp ra sao?",
+      "correct_answer": "b",
+      "explanation": "Prefix cache bị phá từ vị trí thay đổi trở đi; phần ổn định trước giữ tiền tố dùng lại.",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d07",
+          "sha256": "4cef91986bf420b28ac78af115a4d474dd649ab7e2b2823b02189f21aca374e5",
+          "pdf_page": 41,
+          "title": "LLMOps & Prompt Versioning",
+          "locator": "Physical PDF page 41; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Đặt tất cả user-specific text đầu prefix chung"
+        },
+        {
+          "id": "b",
+          "text": "Phần ổn định trước, phần biến động sau"
+        },
+        {
+          "id": "c",
+          "text": "Timestamp/request UUID đặt trước phần chỉ dẫn ổn định"
+        },
+        {
+          "id": "d",
+          "text": "Tool order tạo ngẫu nhiên mỗi request"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t2-d07-x13",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d07",
+      "topic": "p2-t2-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Cache read bằng 0 qua nhiều request dự kiến cùng prefix. Nên kiểm tra điều gì?",
+      "correct_answer": "a",
+      "explanation": "Silent invalidators gồm timestamp, UUID, nondeterministic dump và tool set biến đổi; cần deterministic render hoặc chuyển phần động về sau.",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d07",
+          "sha256": "4cef91986bf420b28ac78af115a4d474dd649ab7e2b2823b02189f21aca374e5",
+          "pdf_page": 45,
+          "title": "LLMOps & Prompt Versioning",
+          "locator": "Physical PDF page 45; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Timestamp/UUID hoặc serialization/tool order không xác định ở prefix"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ tăng TTL mà không sửa prefix biến động"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ tăng max_output_tokens để ép cache hit"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ giảm output length dù cache input vẫn miss"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t2-d07-x14",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d07",
+      "topic": "p2-t2-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao bảng giá dùng tính cost lịch sử cần có version?",
+      "correct_answer": "d",
+      "explanation": "Giá thay đổi theo thời gian; version bảng giá giữ attribution và so sánh cost lịch sử đúng ngữ cảnh.",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d07",
+          "sha256": "4cef91986bf420b28ac78af115a4d474dd649ab7e2b2823b02189f21aca374e5",
+          "pdf_page": 49,
+          "title": "LLMOps & Prompt Versioning",
+          "locator": "Physical PDF page 49; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Luôn áp giá bảng hôm nay cho toàn bộ lịch sử"
+        },
+        {
+          "id": "b",
+          "text": "Không cần phân biệt thời điểm giá thay đổi"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ so tổng bill mà bỏ giá/token và usage"
+        },
+        {
+          "id": "d",
+          "text": "Không được định giá lại quá khứ bằng giá hôm nay khi so sánh theo thời gian"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t2-d07-x15",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d07",
+      "topic": "p2-t2-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Cost/request tăng nhưng prompt không dài hơn. Metric nào giúp phân biệt nguyên nhân do cache?",
+      "correct_answer": "c",
+      "explanation": "Cache hit giảm có thể làm cost tăng độc lập độ dài; cần theo dõi cost, token và cache cùng version.",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d07",
+          "sha256": "4cef91986bf420b28ac78af115a4d474dd649ab7e2b2823b02189f21aca374e5",
+          "pdf_page": 50,
+          "title": "LLMOps & Prompt Versioning",
+          "locator": "Physical PDF page 50; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ số PR thay prompt mà không trace usage"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ model parameters mà không version cost"
+        },
+        {
+          "id": "c",
+          "text": "Cache read/hit rate theo prompt_version"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ tổng input token mà không biết cached read"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t2-d07-x16",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d07",
+      "topic": "p2-t2-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Thay ngưỡng guardrail mà giữ nguyên prompt text nên được quản lý thế nào?",
+      "correct_answer": "b",
+      "explanation": "Guardrail threshold quyết định hành vi an toàn; tách version khỏi prompt làm bundle không tái hiện đúng hệ thống.",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d07",
+          "sha256": "4cef91986bf420b28ac78af115a4d474dd649ab7e2b2823b02189f21aca374e5",
+          "pdf_page": 52,
+          "title": "LLMOps & Prompt Versioning",
+          "locator": "Physical PDF page 52; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ ghi chú thủ công, không eval/rollback"
+        },
+        {
+          "id": "b",
+          "text": "Version, review, eval và audit như thay đổi hành vi trong cùng context bundle"
+        },
+        {
+          "id": "c",
+          "text": "Sửa trực tiếp production vì text prompt không đổi"
+        },
+        {
+          "id": "d",
+          "text": "Version prompt nhưng cho guardrail config trôi tự do"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t2-d07-x17",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d07",
+      "topic": "p2-t2-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một quy trình chỉ dùng cho một loại việc nên được đặt ở tầng context nào?",
+      "correct_answer": "a",
+      "explanation": "Facts luôn liên quan thuộc tầng luôn nạp; procedures chỉ phục vụ một loại việc nên lazy-load để tiết kiệm token và ổn định prefix.",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d07",
+          "sha256": "4cef91986bf420b28ac78af115a4d474dd649ab7e2b2823b02189f21aca374e5",
+          "pdf_page": 62,
+          "title": "LLMOps & Prompt Versioning",
+          "locator": "Physical PDF page 62; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Nạp khi cần thay vì luôn nằm trong mọi request"
+        },
+        {
+          "id": "b",
+          "text": "Luôn nạp mọi procedure đầu system prompt cho mọi query"
+        },
+        {
+          "id": "c",
+          "text": "Nhân bản procedure vào mọi tool result"
+        },
+        {
+          "id": "d",
+          "text": "Đưa mọi reference dài thành prefix cố định dù ít dùng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t2-d08-x01",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d08",
+      "topic": "p2-t2-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "DR cho AI cần tính riêng yếu tố nào so với web app CPU thông thường?",
+      "correct_answer": "d",
+      "explanation": "Model weights GB–TB, cold-start GPU và freshness vector/feature store làm DR khác web app thường.",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d08",
+          "sha256": "5a6d46fb1e8e04560f76755a26c2588f83fa3fe86a9e2dbf8895c6383341d352",
+          "pdf_page": 7,
+          "title": "Disaster Recovery & High Availability cho AI Infrastructure",
+          "locator": "Physical PDF page 7; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ DNS failover, không tính thời gian load weights"
+        },
+        {
+          "id": "b",
+          "text": "Giả định GPU cold start nhanh như CPU web app"
+        },
+        {
+          "id": "c",
+          "text": "Bỏ freshness vector/feature store vì chỉ serving API quan trọng"
+        },
+        {
+          "id": "d",
+          "text": "Thời gian nạp weights lớn và chi phí GPU standby"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t2-d08-x02",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d08",
+      "topic": "p2-t2-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Monitoring nằm cùng region với workload có nhược điểm gì khi region down?",
+      "correct_answer": "c",
+      "explanation": "Observability cần sống ở region khác để không cùng mất với workload cần theo dõi.",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d08",
+          "sha256": "5a6d46fb1e8e04560f76755a26c2588f83fa3fe86a9e2dbf8895c6383341d352",
+          "pdf_page": 8,
+          "title": "Disaster Recovery & High Availability cho AI Infrastructure",
+          "locator": "Physical PDF page 8; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ cần status page cloud thay mọi observability"
+        },
+        {
+          "id": "b",
+          "text": "DNS record đã cấu hình đồng nghĩa failover đã test"
+        },
+        {
+          "id": "c",
+          "text": "Có thể mất luôn khả năng quan sát sự cố"
+        },
+        {
+          "id": "d",
+          "text": "Monitoring cùng region bảo đảm vẫn đọc được khi outage"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t2-d08-x03",
+      "revision": 3,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d08",
+      "topic": "p2-t2-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "RTO đo khoảng thời gian nào?",
+      "correct_answer": "b",
+      "explanation": "RTO là downtime tối đa chấp nhận, đo outage tới khôi phục phục vụ; RPO đo lượng dữ liệu có thể mất.",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d08",
+          "sha256": "5a6d46fb1e8e04560f76755a26c2588f83fa3fe86a9e2dbf8895c6383341d352",
+          "pdf_page": 9,
+          "title": "Disaster Recovery & High Availability cho AI Infrastructure",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Thời gian từ alert đến khi người trực xác nhận, chưa gồm restore"
+        },
+        {
+          "id": "b",
+          "text": "Từ khi outage bắt đầu đến khi service phục vụ lại"
+        },
+        {
+          "id": "c",
+          "text": "Thời gian từ outage đến khi phát hiện lỗi, chưa gồm khôi phục"
+        },
+        {
+          "id": "d",
+          "text": "Cửa sổ dữ liệu có thể mất tính ngược từ outage"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t2-d08-x04",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d08",
+      "topic": "p2-t2-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Active-active cần giải quyết vấn đề state nào ngoài việc chia traffic?",
+      "correct_answer": "a",
+      "explanation": "Hai region active có thể cùng ghi nên cần chiến lược conflict resolution, đổi lại RTO thấp và chi phí cao.",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d08",
+          "sha256": "5a6d46fb1e8e04560f76755a26c2588f83fa3fe86a9e2dbf8895c6383341d352",
+          "pdf_page": 13,
+          "title": "Disaster Recovery & High Availability cho AI Infrastructure",
+          "locator": "Physical PDF page 13; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Conflict resolution giữa các region cùng hoạt động"
+        },
+        {
+          "id": "b",
+          "text": "Cùng ghi ở hai region nhưng không cần conflict resolution"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ chia HTTP traffic là đủ cho stateful components"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ đồng bộ weights và bỏ vector/feature store state"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t2-d08-x05",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d08",
+      "topic": "p2-t2-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao DNS failover không bảo đảm cutover tức thì cho mọi user?",
+      "correct_answer": "d",
+      "explanation": "DNS cache thực tế có thể làm một số user vẫn truy cập region cũ; cần tính thêm vào RTO.",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d08",
+          "sha256": "5a6d46fb1e8e04560f76755a26c2588f83fa3fe86a9e2dbf8895c6383341d352",
+          "pdf_page": 14,
+          "title": "Disaster Recovery & High Availability cho AI Infrastructure",
+          "locator": "Physical PDF page 14; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "TTL thấp bảo đảm mọi client cutover ngay lập tức"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ health check interval quyết định toàn bộ RTO"
+        },
+        {
+          "id": "c",
+          "text": "Đổi DNS luôn nhanh hơn global load balancer"
+        },
+        {
+          "id": "d",
+          "text": "DNS cache client/ISP có thể không tôn trọng TTL"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t2-d08-x06",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d08",
+      "topic": "p2-t2-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Sau khi replicate model weights sang region phụ, kiểm tra nào giúp phát hiện corruption âm thầm?",
+      "correct_answer": "c",
+      "explanation": "Checksum sau replication xác nhận nội dung weights; versioning hỗ trợ rollback checkpoint.",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d08",
+          "sha256": "5a6d46fb1e8e04560f76755a26c2588f83fa3fe86a9e2dbf8895c6383341d352",
+          "pdf_page": 15,
+          "title": "Disaster Recovery & High Availability cho AI Infrastructure",
+          "locator": "Physical PDF page 15; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ kiểm số bucket bằng nhau"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ kiểm registry trỏ tới file nhưng không kiểm nội dung"
+        },
+        {
+          "id": "c",
+          "text": "Checksum verification"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ so tên file/path giống nhau là đủ"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t2-d08-x07",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d08",
+      "topic": "p2-t2-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Failover hoàn chỉnh phải xem riêng ba lớp nào?",
+      "correct_answer": "b",
+      "explanation": "Thiếu bất kỳ lớp routing, compute hay state replicated đều khiến failover không hoàn chỉnh.",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d08",
+          "sha256": "5a6d46fb1e8e04560f76755a26c2588f83fa3fe86a9e2dbf8895c6383341d352",
+          "pdf_page": 17,
+          "title": "Disaster Recovery & High Availability cho AI Infrastructure",
+          "locator": "Physical PDF page 17; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ DNS record, bỏ khả năng serve ở region phụ"
+        },
+        {
+          "id": "b",
+          "text": "DNS/LB, compute và state"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ routing và GPU, bỏ state vì load balancer phục hồi hết"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ state backup, không cần compute sẵn"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t2-d08-x08",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d08",
+      "topic": "p2-t2-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Backup vector index nhưng quên embedding model version có thể gây lỗi gì khi restore?",
+      "correct_answer": "a",
+      "explanation": "Cần backup embedding model version cùng index; re-index raw docs là fallback nhưng có thể mất hàng giờ.",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d08",
+          "sha256": "5a6d46fb1e8e04560f76755a26c2588f83fa3fe86a9e2dbf8895c6383341d352",
+          "pdf_page": 19,
+          "title": "Disaster Recovery & High Availability cho AI Infrastructure",
+          "locator": "Physical PDF page 19; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Index không tương thích với embedding được dùng sau restore"
+        },
+        {
+          "id": "b",
+          "text": "Embedding model version mới luôn tương thích mọi index cũ"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ đổi tên collection là chuyển được không gian vector"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ tăng top-k để bù model version khác nhau"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t2-d08-x09",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d08",
+      "topic": "p2-t2-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao registry metadata và model artifacts phải backup đồng bộ?",
+      "correct_answer": "d",
+      "explanation": "Registry và S3 artifact không đồng bộ thường tạo pointer tới path mất sau restore.",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d08",
+          "sha256": "5a6d46fb1e8e04560f76755a26c2588f83fa3fe86a9e2dbf8895c6383341d352",
+          "pdf_page": 20,
+          "title": "Disaster Recovery & High Availability cho AI Infrastructure",
+          "locator": "Physical PDF page 20; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Metadata đủ để tự tạo lại weights bất kỳ"
+        },
+        {
+          "id": "b",
+          "text": "Artifact backup đủ dù registry metadata đã mất"
+        },
+        {
+          "id": "c",
+          "text": "Path không tồn tại vẫn là restore thành công nếu registry chạy"
+        },
+        {
+          "id": "d",
+          "text": "Tránh registry trỏ tới đường dẫn artifact không tồn tại"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t2-d08-x10",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d08",
+      "topic": "p2-t2-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Logical corruption từ migration sai vẫn lan sang replica DR. Cơ chế nào cần thêm?",
+      "correct_answer": "c",
+      "explanation": "Replica có thể sao chép cả corruption; PITR/backup lịch sử cho điểm khôi phục trước lỗi.",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d08",
+          "sha256": "5a6d46fb1e8e04560f76755a26c2588f83fa3fe86a9e2dbf8895c6383341d352",
+          "pdf_page": 21,
+          "title": "Disaster Recovery & High Availability cho AI Infrastructure",
+          "locator": "Physical PDF page 21; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ tăng tần suất replication để corruption lan nhanh hơn"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ đổi region mà không giữ recovery point cũ"
+        },
+        {
+          "id": "c",
+          "text": "Backup point-in-time riêng"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ thêm replicas đồng bộ vì replication tự phân biệt lỗi logic"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t2-d08-x11",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d08",
+      "topic": "p2-t2-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Tần suất backup từng component nên được điều chỉnh theo yếu tố nào?",
+      "correct_answer": "b",
+      "explanation": "Backup frequency cần phù hợp mức dữ liệu mất tối đa chấp nhận cho mỗi component.",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d08",
+          "sha256": "5a6d46fb1e8e04560f76755a26c2588f83fa3fe86a9e2dbf8895c6383341d352",
+          "pdf_page": 22,
+          "title": "Disaster Recovery & High Availability cho AI Infrastructure",
+          "locator": "Physical PDF page 22; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ backup khi user báo mất dữ liệu"
+        },
+        {
+          "id": "b",
+          "text": "RPO mục tiêu của component đó"
+        },
+        {
+          "id": "c",
+          "text": "Một lịch backup chung bất kể RPO khác nhau"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ theo kích thước file mà bỏ freshness requirement"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t2-d08-x12",
+      "revision": 3,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d08",
+      "topic": "p2-t2-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Failover mới triển khai nên bắt đầu bán tự động với bước confirm nhằm giảm rủi ro gì?",
+      "correct_answer": "a",
+      "explanation": "Alert và one-click confirm ban đầu hạn chế failover hai chiều liên tục vì health signal chưa ổn định.",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d08",
+          "sha256": "5a6d46fb1e8e04560f76755a26c2588f83fa3fe86a9e2dbf8895c6383341d352",
+          "pdf_page": 24,
+          "title": "Disaster Recovery & High Availability cho AI Infrastructure",
+          "locator": "Physical PDF page 24; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Flapping chuyển qua lại giữa hai region khi health check bất ổn"
+        },
+        {
+          "id": "b",
+          "text": "Xác nhận thủ công tự khử mọi lỗi đồng bộ state giữa hai region"
+        },
+        {
+          "id": "c",
+          "text": "Bước confirm bảo đảm failover không còn mất thời gian khôi phục"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ tăng độ nhạy health check mà không cần xác minh tín hiệu lỗi"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t2-d08-x13",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d08",
+      "topic": "p2-t2-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Warm standby giảm RTO bằng biện pháp nào?",
+      "correct_answer": "d",
+      "explanation": "Provision GPU và load weights làm cold-start dài; warm node/preload giảm phần này.",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d08",
+          "sha256": "5a6d46fb1e8e04560f76755a26c2588f83fa3fe86a9e2dbf8895c6383341d352",
+          "pdf_page": 25,
+          "title": "Disaster Recovery & High Availability cho AI Infrastructure",
+          "locator": "Physical PDF page 25; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ giữ metadata/config rồi mới provision GPU khi outage"
+        },
+        {
+          "id": "b",
+          "text": "Đợi failover rồi mới pull image và load weights"
+        },
+        {
+          "id": "c",
+          "text": "Xóa cache node trước cutover để đảm bảo clean state"
+        },
+        {
+          "id": "d",
+          "text": "Giữ sẵn ít node GPU ấm và preload weights vào cache"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t2-d08-x14",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d08",
+      "topic": "p2-t2-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Sau DNS/LB cutover, điều gì xác nhận dịch vụ region phụ thực sự phục hồi?",
+      "correct_answer": "c",
+      "explanation": "Runbook yêu cầu verify latency/error rate ở region phụ ổn định trước kết thúc phục hồi và đo RTO thực tế.",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d08",
+          "sha256": "5a6d46fb1e8e04560f76755a26c2588f83fa3fe86a9e2dbf8895c6383341d352",
+          "pdf_page": 26,
+          "title": "Disaster Recovery & High Availability cho AI Infrastructure",
+          "locator": "Physical PDF page 26; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ instance GPU có trạng thái running dù model chưa load"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ alert được ack dù request vẫn lỗi"
+        },
+        {
+          "id": "c",
+          "text": "Golden signals như latency và error rate ổn định"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ thấy DNS record đã lưu là đủ"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t2-d08-x15",
+      "revision": 3,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d08",
+      "topic": "p2-t2-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Hai region dùng cùng account và credentials vẫn có điểm lỗi chung nào?",
+      "correct_answer": "b",
+      "explanation": "DR cùng account/credential có thể cùng bị ảnh hưởng bởi IAM hoặc billing, dù khác region.",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d08",
+          "sha256": "5a6d46fb1e8e04560f76755a26c2588f83fa3fe86a9e2dbf8895c6383341d352",
+          "pdf_page": 27,
+          "title": "Disaster Recovery & High Availability cho AI Infrastructure",
+          "locator": "Physical PDF page 27; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Bản sao credentials ở hai region tự tạo hai miền quyền độc lập"
+        },
+        {
+          "id": "b",
+          "text": "Sự cố IAM/billing có thể làm cả hai region ngừng"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ mất điện hoặc mạng của một region là điểm lỗi chung còn lại"
+        },
+        {
+          "id": "d",
+          "text": "Tách region tự cách ly mọi lỗi ở account control plane"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t2-d08-x16",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d08",
+      "topic": "p2-t2-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Postmortem hữu ích nên tạo action item thế nào?",
+      "correct_answer": "a",
+      "explanation": "Blameless postmortem dùng timeline, RTO gap, root cause và action có owner/deadline để sửa runbook/process.",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d08",
+          "sha256": "5a6d46fb1e8e04560f76755a26c2588f83fa3fe86a9e2dbf8895c6383341d352",
+          "pdf_page": 28,
+          "title": "Disaster Recovery & High Availability cho AI Infrastructure",
+          "locator": "Physical PDF page 28; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Có owner và deadline cụ thể, gắn với lỗi hệ thống/process"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ quy trách nhiệm cá nhân rồi đóng incident"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ ghi improve monitoring không owner/deadline"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ lưu downtime và bỏ gap từng bước runbook"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t2-d08-x17",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 2,
+      "day": "p2-t2-d08",
+      "topic": "p2-t2-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Fault injection cho AI infrastructure nên có điều kiện vận hành nào?",
+      "correct_answer": "d",
+      "explanation": "Chaos nhẹ cần staging trước, kill switch và on-call biết; game day không nên là bất ngờ với người trực.",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d08",
+          "sha256": "5a6d46fb1e8e04560f76755a26c2588f83fa3fe86a9e2dbf8895c6383341d352",
+          "pdf_page": 35,
+          "title": "Disaster Recovery & High Availability cho AI Infrastructure",
+          "locator": "Physical PDF page 35; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Bắt đầu production không báo on-call để test bất ngờ"
+        },
+        {
+          "id": "b",
+          "text": "Không có kill switch để tránh người dừng thử nghiệm"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ đo RTO lý thuyết mà không inject failure"
+        },
+        {
+          "id": "d",
+          "text": "Thử staging trước, có kill switch và thông báo on-call"
+        }
+      ],
+      "shuffle_options": true
+    }
+  ]
+}

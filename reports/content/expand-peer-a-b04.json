@@ -1,0 +1,1027 @@
+{
+  "batch_file": "data/questions/drafts/expand-b-04.json",
+  "reviewer_id": "peer-reviewer-a",
+  "reviewed_at": "2026-10-22T12:20:52.918267+00:00",
+  "results": [
+    {
+      "id": "p2-t2-d10-x01",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d10",
+          "pdf_page": 11
+        }
+      ],
+      "notes": [
+        "Retry side effects/idempotency",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d10-x02",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d10",
+          "pdf_page": 47
+        }
+      ],
+      "notes": [
+        "Editing deletes versus compaction summarizes",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d10-x03",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d10",
+          "pdf_page": 13
+        }
+      ],
+      "notes": [
+        "Protocol health via discovery/version/capability/identity; replacement source13 visually checked",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d10-x04",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d10",
+          "pdf_page": 18
+        }
+      ],
+      "notes": [
+        "Stale discovery URI versus absent agent",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d10-x05",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d10",
+          "pdf_page": 19
+        }
+      ],
+      "notes": [
+        "Namespace ownership does not audit code",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d10-x06",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d10",
+          "pdf_page": 23
+        }
+      ],
+      "notes": [
+        "AUTH_REQUIRED is resumable permission wait",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d10-x07",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d10",
+          "pdf_page": 24
+        }
+      ],
+      "notes": [
+        "Card contains security contract",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d10-x08",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d10",
+          "pdf_page": 28
+        }
+      ],
+      "notes": [
+        "Capability agent routing versus model cost-quality routing",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d10-x09",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d10",
+          "pdf_page": 30
+        }
+      ],
+      "notes": [
+        "Workload identity plus resource authorization",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d10-x10",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d10",
+          "pdf_page": 31
+        }
+      ],
+      "notes": [
+        "Rug pull after approval",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d10-x11",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d10",
+          "pdf_page": 48
+        }
+      ],
+      "notes": [
+        "Preserve compaction response blocks",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d10-x12",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d10",
+          "pdf_page": 35
+        }
+      ],
+      "notes": [
+        "Intermediate execution data outside model context",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d10-x13",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d10",
+          "pdf_page": 36
+        }
+      ],
+      "notes": [
+        "Tool-search bootstrap cannot defer itself",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d10-x14",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d10",
+          "pdf_page": 38
+        }
+      ],
+      "notes": [
+        "Harness independent of deployment",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d10-x15",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d10",
+          "pdf_page": 42
+        }
+      ],
+      "notes": [
+        "Sandbox filesystem part of checkpoint",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d10-x16",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d10",
+          "pdf_page": 44
+        }
+      ],
+      "notes": [
+        "Waiting sessions retain sandbox inventory",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d10-x17",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d10",
+          "pdf_page": 49
+        }
+      ],
+      "notes": [
+        "Guardrail pinned outside compaction",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d11-x01",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d11",
+          "pdf_page": 6
+        }
+      ],
+      "notes": [
+        "Network service costs in TCO",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d11-x02",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d11",
+          "pdf_page": 7
+        }
+      ],
+      "notes": [
+        "Completed training still billed while VM idle",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d11-x03",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d11",
+          "pdf_page": 31
+        }
+      ],
+      "notes": [
+        "Separate compute/memory bottlenecks; distinct from B02 workload suitability",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d11-x04",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d11",
+          "pdf_page": 10
+        }
+      ],
+      "notes": [
+        "Own workload benchmark and silicon lock-in",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d11-x05",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d11",
+          "pdf_page": 12
+        }
+      ],
+      "notes": [
+        "Low duty-cycle API purchase",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d11-x06",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d11",
+          "pdf_page": 14
+        }
+      ],
+      "notes": [
+        "Unused reserved commitment",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d11-x07",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d11",
+          "pdf_page": 15
+        }
+      ],
+      "notes": [
+        "Spot AZ/type diversification",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d11-x08",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d11",
+          "pdf_page": 33
+        }
+      ],
+      "notes": [
+        "Optimization ROI depends load/acceptance",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d11-x09",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d11",
+          "pdf_page": 19
+        }
+      ],
+      "notes": [
+        "GPU time-active not achieved compute",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d11-x10",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d11",
+          "pdf_page": 20
+        }
+      ],
+      "notes": [
+        "Decode bandwidth hardware requirement",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d11-x11",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d11",
+          "pdf_page": 21
+        }
+      ],
+      "notes": [
+        "Concrete goodput calculation 3/s",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d11-x12",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d11",
+          "pdf_page": 23
+        }
+      ],
+      "notes": [
+        "Cold initialization billing",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d11-x13",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d11",
+          "pdf_page": 24
+        }
+      ],
+      "notes": [
+        "MIG hardware memory isolation",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d11-x14",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d11",
+          "pdf_page": 25
+        }
+      ],
+      "notes": [
+        "Node consolidation distinct from in-card partition",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d11-x15",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d11",
+          "pdf_page": 28
+        }
+      ],
+      "notes": [
+        "Thinking tokens affect task economics",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d11-x16",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d11",
+          "pdf_page": 36
+        }
+      ],
+      "notes": [
+        "Common billing schema; revised credible alternatives",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d11-x17",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d11",
+          "pdf_page": 39
+        }
+      ],
+      "notes": [
+        "Showback validates tags before chargeback",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d12-x01",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d12",
+          "pdf_page": 3
+        }
+      ],
+      "notes": [
+        "Successful process not semantic data correctness",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d12-x02",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d12",
+          "pdf_page": 7
+        }
+      ],
+      "notes": [
+        "Freshness at serving rather than raw ingest",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d12-x03",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d12",
+          "pdf_page": 8
+        }
+      ],
+      "notes": [
+        "Volume catches partial ingestion",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d12-x04",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d12",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "Valid business distribution changes",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d12-x05",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d12",
+          "pdf_page": 10
+        }
+      ],
+      "notes": [
+        "Rename/delete required breaks contract",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d12-x06",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d12",
+          "pdf_page": 12
+        }
+      ],
+      "notes": [
+        "Contract semantics/quality/owner/SLA",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d12-x07",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d12",
+          "pdf_page": 20
+        }
+      ],
+      "notes": [
+        "Z-score stable approximately normal history",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d12-x08",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d12",
+          "pdf_page": 14
+        }
+      ],
+      "notes": [
+        "Validation Definition joins asset/suite",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d12-x09",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d12",
+          "pdf_page": 16
+        }
+      ],
+      "notes": [
+        "Critical severity stops publish",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d12-x10",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d12",
+          "pdf_page": 18
+        }
+      ],
+      "notes": [
+        "dbt mock-input logic versus real-table tests",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d12-x11",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d12",
+          "pdf_page": 21
+        }
+      ],
+      "notes": [
+        "Weekly seasonality baseline",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d12-x12",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d12",
+          "pdf_page": 22
+        }
+      ],
+      "notes": [
+        "Measurable corpus features detect parser failures",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d12-x13",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d12",
+          "pdf_page": 23
+        }
+      ],
+      "notes": [
+        "RAG source-to-answer version chain",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d12-x14",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d12",
+          "pdf_page": 24
+        }
+      ],
+      "notes": [
+        "Field-level lineage distinguished from model dataset provenance",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d12-x15",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d12",
+          "pdf_page": 25
+        }
+      ],
+      "notes": [
+        "OpenLineage Run/Job/Dataset",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d12-x16",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d12",
+          "pdf_page": 29
+        }
+      ],
+      "notes": [
+        "Actionable SLO owner/runbook",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d12-x17",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d12",
+          "pdf_page": 34
+        }
+      ],
+      "notes": [
+        "Low alert precision causes fatigue",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d13-x01",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d13",
+          "pdf_page": 6
+        }
+      ],
+      "notes": [
+        "ML layer platform components",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d13-x02",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d13",
+          "pdf_page": 7
+        }
+      ],
+      "notes": [
+        "Immutable event sourcing versus concurrent stale writes",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d13-x03",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d13",
+          "pdf_page": 7
+        }
+      ],
+      "notes": [
+        "Bulkhead isolates critical inference",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d13-x04",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d13",
+          "pdf_page": 8
+        }
+      ],
+      "notes": [
+        "Decoupled event consumer integration",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d13-x05",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d13",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "Integration call traces locate component latency",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d13-x06",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d13",
+          "pdf_page": 15
+        }
+      ],
+      "notes": [
+        "Restore test proves recoverability",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d13-x07",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d13",
+          "pdf_page": 15
+        }
+      ],
+      "notes": [
+        "Structured fields aid log filtering",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d13-x08",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d13",
+          "pdf_page": 15
+        }
+      ],
+      "notes": [
+        "Exponential retry spacing; revised alternatives",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d13-x09",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d13",
+          "pdf_page": 11
+        }
+      ],
+      "notes": [
+        "Real dependency containers",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d13-x10",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d13",
+          "pdf_page": 13
+        }
+      ],
+      "notes": [
+        "Hot-path DB/pool waits require profiling",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d13-x11",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d13",
+          "pdf_page": 12
+        }
+      ],
+      "notes": [
+        "CPU function profiler",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d13-x12",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d13",
+          "pdf_page": 12
+        }
+      ],
+      "notes": [
+        "Allocation profiler for leak",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d13-x13",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d13",
+          "pdf_page": 12
+        }
+      ],
+      "notes": [
+        "SQL execution-plan analysis",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d13-x14",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d13",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "Parallel branch critical path; replacement removes percentile duplicate",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d13-x15",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d13",
+          "pdf_page": 14
+        }
+      ],
+      "notes": [
+        "Automate readiness gate",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d13-x16",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d13",
+          "pdf_page": 15
+        }
+      ],
+      "notes": [
+        "Graceful shutdown handles in-flight",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    },
+    {
+      "id": "p2-t2-d13-x17",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t2-d13",
+          "pdf_page": 20
+        }
+      ],
+      "notes": [
+        "External contracts/docs/SLA make usable platform",
+        "Full final stem/options/answer/explanation independently read; all61 final cited physical pages plus replaced page inspected visually in tmp/root-review/expand-b-04/pages-01..16.png. Eleven author revisions independently re-read. Twelve legacy objectives compared."
+      ]
+    }
+  ]
+}

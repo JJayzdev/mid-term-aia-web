@@ -1,0 +1,1748 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.22.expand-b-05",
+  "questions": [
+    {
+      "id": "p2-t3-d01-x01",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d01",
+      "topic": "p2-t3-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một agent chọn sai entity ở bước đầu rồi dùng mọi tool tiếp theo trên entity đó. Failure mode nào mô tả đúng?",
+      "correct_answer": "c",
+      "explanation": "Giả định sai ban đầu định hướng các hành động tiếp theo, tạo chuỗi bằng chứng sai mà agent vẫn có thể kết luận tự tin.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d01",
+          "sha256": "1352af02371ea4f5e189e00b925ba94b55c176646e671eb5a6bcf81dc9955542",
+          "pdf_page": 6,
+          "title": "Advanced Agent Architectures",
+          "locator": "Physical PDF page 6; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ lỗi format cuối dù evidence đúng"
+        },
+        {
+          "id": "b",
+          "text": "Một loại thành công nhờ nhiều tool call"
+        },
+        {
+          "id": "c",
+          "text": "Lỗi lan tỏa qua chuỗi hành động"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ thiếu long-term memory giữa các phiên"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d01-x02",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d01",
+      "topic": "p2-t3-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "analyze",
+      "question": "Evaluator nhận luôn lời biện minh của Actor trước khi chấm. Rủi ro thiết kế chính là gì?",
+      "correct_answer": "b",
+      "explanation": "Evaluator cần context tách Actor để tránh bị thuyết phục; rubric cụ thể và trích evidence giúp kiểm độc lập.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d01",
+          "sha256": "1352af02371ea4f5e189e00b925ba94b55c176646e671eb5a6bcf81dc9955542",
+          "pdf_page": 15,
+          "title": "Advanced Agent Architectures",
+          "locator": "Physical PDF page 15; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ làm JSON verdict ngắn hơn"
+        },
+        {
+          "id": "b",
+          "text": "Mất độc lập, dễ đồng ý với Actor thay vì kiểm bằng chứng"
+        },
+        {
+          "id": "c",
+          "text": "Tự tăng độ tin cậy vì Actor đã giải thích kỹ"
+        },
+        {
+          "id": "d",
+          "text": "Không cần rubric vì đã có reasoning của Actor"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d01-x03",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d01",
+      "topic": "p2-t3-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Reflection chỉ viết “thiếu thông tin” nhưng không đề xuất hướng thử khác. Lượt retry dễ gặp điều gì?",
+      "correct_answer": "a",
+      "explanation": "Reflection phải làm đổi chiến lược cụ thể; chỉ diễn đạt lại lỗi không tạo tín hiệu sửa cách hành động.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d01",
+          "sha256": "1352af02371ea4f5e189e00b925ba94b55c176646e671eb5a6bcf81dc9955542",
+          "pdf_page": 17,
+          "title": "Advanced Agent Architectures",
+          "locator": "Physical PDF page 17; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Lặp lại chiến lược đã thất bại"
+        },
+        {
+          "id": "b",
+          "text": "Tự tối ưu gradient của model"
+        },
+        {
+          "id": "c",
+          "text": "Bảo đảm tìm ra tool mới phù hợp"
+        },
+        {
+          "id": "d",
+          "text": "Tự kết thúc vì đã có phản tỉnh"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d01-x04",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d01",
+      "topic": "p2-t3-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "analyze",
+      "question": "LATS có lý do hạn chế trong môi trường không thể undo vì sao?",
+      "correct_answer": "d",
+      "explanation": "Search layer cần môi trường cho phép undo và compute thêm; phù hợp hơn với task giá trị cao có thể rollback.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d01",
+          "sha256": "1352af02371ea4f5e189e00b925ba94b55c176646e671eb5a6bcf81dc9955542",
+          "pdf_page": 20,
+          "title": "Advanced Agent Architectures",
+          "locator": "Physical PDF page 20; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "LATS không bao giờ dùng tool"
+        },
+        {
+          "id": "b",
+          "text": "MCTS chỉ chấm final answer nên không cần môi trường"
+        },
+        {
+          "id": "c",
+          "text": "Search luôn có chi phí thấp hơn một agent đơn"
+        },
+        {
+          "id": "d",
+          "text": "Tree search cần thử nhánh và quay lại trạng thái trước"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d01-x05",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d01",
+      "topic": "p2-t3-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Process reward model giúp khác outcome reward model ở thời điểm bắt lỗi nào?",
+      "correct_answer": "c",
+      "explanation": "ORM đánh giá outcome cuối; PRM đánh giá các bước trung gian nên có thể phát hiện lỗi sớm.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d01",
+          "sha256": "1352af02371ea4f5e189e00b925ba94b55c176646e671eb5a6bcf81dc9955542",
+          "pdf_page": 21,
+          "title": "Advanced Agent Architectures",
+          "locator": "Physical PDF page 21; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ chấm giá token thay chất lượng suy luận"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ chọn model ban đầu rồi không quan sát quá trình"
+        },
+        {
+          "id": "c",
+          "text": "Chấm từng bước để bắt lỗi trước khi lan sang bước sau"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ chấm đáp án cuối sau toàn bộ trajectory"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d01-x06",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d01",
+      "topic": "p2-t3-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Skill file on-demand khác persistent instruction file ở thời điểm nạp nào?",
+      "correct_answer": "b",
+      "explanation": "Skill library cung cấp kiến thức domain theo yêu cầu; persistent instructions áp dụng thường trực từ lúc khởi động.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d01",
+          "sha256": "1352af02371ea4f5e189e00b925ba94b55c176646e671eb5a6bcf81dc9955542",
+          "pdf_page": 26,
+          "title": "Advanced Agent Architectures",
+          "locator": "Physical PDF page 26; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Không bao giờ được đọc lại sau session đầu"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ nạp kỹ năng chi tiết khi task liên quan, thay vì luôn nạp lúc khởi động"
+        },
+        {
+          "id": "c",
+          "text": "Luôn nạp mọi skill vào mọi request trước task"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ nạp sau khi agent đã hoàn tất mọi hành động"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d01-x07",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d01",
+      "topic": "p2-t3-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Thay đổi nào thể hiện cải tiến sống qua ranh giới episode?",
+      "correct_answer": "a",
+      "explanation": "Self-evolution đòi thay đổi còn tồn tại sau task; skill library là artifact ngoại vi được tái sử dụng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d01",
+          "sha256": "1352af02371ea4f5e189e00b925ba94b55c176646e671eb5a6bcf81dc9955542",
+          "pdf_page": 28,
+          "title": "Advanced Agent Architectures",
+          "locator": "Physical PDF page 28; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Skill đã xác minh được ghi ra library để task sau dùng lại"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ một nhánh search bị bỏ khi chọn xong đáp án"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ một reflection trong context rồi xóa khi task kết thúc"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ tăng số lần retry trong cùng episode"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d01-x08",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d01",
+      "topic": "p2-t3-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một biến thể agent tăng điểm trên một benchmark nhưng phá các task cũ. Nó thiếu gate nào?",
+      "correct_answer": "d",
+      "explanation": "Performance preservation yêu cầu năng lực cũ không bị phá; cần regression và kiểm transfer để phân biệt cải tiến với overfit.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d01",
+          "sha256": "1352af02371ea4f5e189e00b925ba94b55c176646e671eb5a6bcf81dc9955542",
+          "pdf_page": 31,
+          "title": "Advanced Agent Architectures",
+          "locator": "Physical PDF page 31; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ kiểm source code có parse được"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ so token count thấp hơn"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ xem tác giả có tự đánh giá tốt hơn"
+        },
+        {
+          "id": "d",
+          "text": "Regression set bảo toàn năng lực cũ"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d01-x09",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d01",
+      "topic": "p2-t3-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Agent có quyền tự sửa source của chính nó. Guardrail/budget breaker nên đặt ở đâu?",
+      "correct_answer": "c",
+      "explanation": "Safety boundary cần tách vùng tự sửa khỏi allowlist/capability/budget controls; nếu cùng vùng ghi, agent có thể sửa luôn guardrail.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d01",
+          "sha256": "1352af02371ea4f5e189e00b925ba94b55c176646e671eb5a6bcf81dc9955542",
+          "pdf_page": 32,
+          "title": "Advanced Agent Architectures",
+          "locator": "Physical PDF page 32; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ trong prompt nhắc agent đừng sửa luật"
+        },
+        {
+          "id": "b",
+          "text": "Trong reflection memory có thể bị ghi đè sau mỗi lượt"
+        },
+        {
+          "id": "c",
+          "text": "Tầng infrastructure mà vòng tự cải tiến không có quyền ghi"
+        },
+        {
+          "id": "d",
+          "text": "Trong cùng vùng source agent được sửa tùy ý"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d01-x10",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d01",
+      "topic": "p2-t3-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Tách Plan–Act–Verify tạo lợi ích chẩn đoán nào?",
+      "correct_answer": "b",
+      "explanation": "Mỗi pha có prompt, budget và failure signal riêng; đổi thêm latency để dễ xác định pha gây lỗi.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d01",
+          "sha256": "1352af02371ea4f5e189e00b925ba94b55c176646e671eb5a6bcf81dc9955542",
+          "pdf_page": 35,
+          "title": "Advanced Agent Architectures",
+          "locator": "Physical PDF page 35; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Loại bỏ nhu cầu dành budget riêng cho từng pha"
+        },
+        {
+          "id": "b",
+          "text": "Phân biệt mục tiêu sai, tool lỗi và không đạt tiêu chí kiểm chứng"
+        },
+        {
+          "id": "c",
+          "text": "Gộp mọi lỗi thành một transcript không phân pha"
+        },
+        {
+          "id": "d",
+          "text": "Luôn giảm số model call so với một loop"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d01-x11",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d01",
+      "topic": "p2-t3-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Plan file trên đĩa có ưu thế gì so với plan liên tục được viết lại trong context?",
+      "correct_answer": "a",
+      "explanation": "Artifact ngoài context có địa chỉ, diff được và sống qua compaction; patch tiến độ tránh drift do viết lại toàn bộ.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d01",
+          "sha256": "1352af02371ea4f5e189e00b925ba94b55c176646e671eb5a6bcf81dc9955542",
+          "pdf_page": 37,
+          "title": "Advanced Agent Architectures",
+          "locator": "Physical PDF page 37; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Có thể diff và còn nguyên qua compaction"
+        },
+        {
+          "id": "b",
+          "text": "Tự giải mọi subtask mà không cần cập nhật"
+        },
+        {
+          "id": "c",
+          "text": "Không cần schema/todo state vì chỉ là text"
+        },
+        {
+          "id": "d",
+          "text": "Bắt buộc viết lại toàn bộ file ở mỗi turn"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d01-x12",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d01",
+      "topic": "p2-t3-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một bước sắp gọi model cần chèn skill liên quan và trạng thái todo mới nhất. Hook nào phù hợp?",
+      "correct_answer": "d",
+      "explanation": "before_model chạy trước mỗi model call sau khi state cập nhật, cho phép quyết định model sẽ thấy ngữ cảnh nào.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d01",
+          "sha256": "1352af02371ea4f5e189e00b925ba94b55c176646e671eb5a6bcf81dc9955542",
+          "pdf_page": 43,
+          "title": "Advanced Agent Architectures",
+          "locator": "Physical PDF page 43; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "before_agent"
+        },
+        {
+          "id": "b",
+          "text": "after_model"
+        },
+        {
+          "id": "c",
+          "text": "after_agent"
+        },
+        {
+          "id": "d",
+          "text": "before_model"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d01-x13",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d01",
+      "topic": "p2-t3-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Critic đánh giá output vừa sinh và yêu cầu retry nên đặt ở hook nội dung nào?",
+      "correct_answer": "c",
+      "explanation": "after_model chấm nội dung output, ghi reflection và có thể từ chối chấp nhận để model thử lại.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d01",
+          "sha256": "1352af02371ea4f5e189e00b925ba94b55c176646e671eb5a6bcf81dc9955542",
+          "pdf_page": 44,
+          "title": "Advanced Agent Architectures",
+          "locator": "Physical PDF page 44; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "wrap_model_call"
+        },
+        {
+          "id": "b",
+          "text": "wrap_tool_call"
+        },
+        {
+          "id": "c",
+          "text": "after_model"
+        },
+        {
+          "id": "d",
+          "text": "before_model"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d01-x14",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d01",
+      "topic": "p2-t3-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Một root trace span và budget cho cả lần chạy nên được mở/chốt ở cặp hook nào?",
+      "correct_answer": "b",
+      "explanation": "before_agent khởi tạo hạn mức/root span, after_agent chốt tổng token/cost và kết quả phiên.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d01",
+          "sha256": "1352af02371ea4f5e189e00b925ba94b55c176646e671eb5a6bcf81dc9955542",
+          "pdf_page": 45,
+          "title": "Advanced Agent Architectures",
+          "locator": "Physical PDF page 45; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ after_model cho từng output riêng"
+        },
+        {
+          "id": "b",
+          "text": "before_agent và after_agent"
+        },
+        {
+          "id": "c",
+          "text": "before_model và before_model lần kế tiếp"
+        },
+        {
+          "id": "d",
+          "text": "wrap_tool_call và một tool bất kỳ cuối"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d01-x15",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d01",
+      "topic": "p2-t3-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Structured eviction có đánh đổi nào so với LLM compaction?",
+      "correct_answer": "a",
+      "explanation": "Eviction xóa theo rule cố định không gọi model; compaction lossy nhưng tổng hợp semantic relevance, có chi phí riêng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d01",
+          "sha256": "1352af02371ea4f5e189e00b925ba94b55c176646e671eb5a6bcf81dc9955542",
+          "pdf_page": 51,
+          "title": "Advanced Agent Architectures",
+          "locator": "Physical PDF page 51; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Rẻ và dự đoán được phần bị xóa, nhưng không tổng hợp ngữ nghĩa rải rác"
+        },
+        {
+          "id": "b",
+          "text": "Luôn giữ đầy đủ mọi ý nghĩa như summary hoàn hảo"
+        },
+        {
+          "id": "c",
+          "text": "Đòi thêm một LLM call để áp mỗi rule xóa"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ đổi tên block mà không giảm context"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d01-x16",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d01",
+      "topic": "p2-t3-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Worker nên trả gì cho orchestrator để duy trì context isolation?",
+      "correct_answer": "d",
+      "explanation": "Worker có context riêng và trả summary ngắn; dump transcript làm mất lợi ích giữ main context sạch.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d01",
+          "sha256": "1352af02371ea4f5e189e00b925ba94b55c176646e671eb5a6bcf81dc9955542",
+          "pdf_page": 54,
+          "title": "Advanced Agent Architectures",
+          "locator": "Physical PDF page 54; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Toàn bộ transcript cùng mọi tool dump mặc định"
+        },
+        {
+          "id": "b",
+          "text": "Context của các worker khác để tự hòa giải"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ một thông báo đã xong không có kết quả"
+        },
+        {
+          "id": "d",
+          "text": "Bản tóm tắt kết quả cô đọng thay nguyên transcript"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d01-x17",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d01",
+      "topic": "p2-t3-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Nguồn được trích là thật nhưng đoạn nguồn không hỗ trợ claim thuộc lỗi nào?",
+      "correct_answer": "c",
+      "explanation": "Xác minh source tồn tại chưa đủ; phải đối chiếu nội dung với claim để bắt misattribution.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d01",
+          "sha256": "1352af02371ea4f5e189e00b925ba94b55c176646e671eb5a6bcf81dc9955542",
+          "pdf_page": 64,
+          "title": "Advanced Agent Architectures",
+          "locator": "Physical PDF page 64; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Fabricated source không tồn tại"
+        },
+        {
+          "id": "b",
+          "text": "Một citation đúng chỉ vì URL truy cập được"
+        },
+        {
+          "id": "c",
+          "text": "Misattributed claim"
+        },
+        {
+          "id": "d",
+          "text": "Unsupported claim không có citation đi kèm"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d02-x01",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d02",
+      "topic": "p2-t3-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "User đã nêu preference ở phiên trước nhưng phiên mới không nhận lại state nào. Vì sao model không tự nhớ?",
+      "correct_answer": "b",
+      "explanation": "Persistence cần external store/retrieval; nội dung phiên trước không tự đi vào request mới.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d02",
+          "sha256": "70e5349ebe96578fa34667a55b45d1bd70b92474684c27c0ad141d68dbba2735",
+          "pdf_page": 5,
+          "title": "Memory Systems for Agents",
+          "locator": "Physical PDF page 5; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Temperature thấp sẽ phục hồi lịch sử chưa được gửi"
+        },
+        {
+          "id": "b",
+          "text": "API call độc lập không tự có persistent state giữa phiên"
+        },
+        {
+          "id": "c",
+          "text": "Trọng số model tự cập nhật mọi preference nhưng cần thêm turn"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ cần tăng max_output_tokens để đọc được phiên cũ"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d02-x02",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d02",
+      "topic": "p2-t3-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "User preference mâu thuẫn policy constraint. Quy tắc ưu tiên nào phù hợp?",
+      "correct_answer": "a",
+      "explanation": "Policy context giữ ràng buộc an toàn; preference không thể tự cấp quyền vượt policy.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d02",
+          "sha256": "70e5349ebe96578fa34667a55b45d1bd70b92474684c27c0ad141d68dbba2735",
+          "pdf_page": 8,
+          "title": "Memory Systems for Agents",
+          "locator": "Physical PDF page 8; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Policy thắng và cần được thiết kế rõ trong hệ thống"
+        },
+        {
+          "id": "b",
+          "text": "Preference mới nhất luôn ghi đè policy"
+        },
+        {
+          "id": "c",
+          "text": "Memory semantic gần query nhất được quyền bỏ policy"
+        },
+        {
+          "id": "d",
+          "text": "Cắt policy trước vì nó chiếm token"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d02-x03",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d02",
+      "topic": "p2-t3-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Sliding context kết hợp system, summary và K turn gần nhất nhằm cân bằng điều gì?",
+      "correct_answer": "d",
+      "explanation": "Summary giữ phần cũ quan trọng, recent turns giữ chi tiết đang nóng; buffer toàn bộ dễ chạm limit.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d02",
+          "sha256": "70e5349ebe96578fa34667a55b45d1bd70b92474684c27c0ad141d68dbba2735",
+          "pdf_page": 12,
+          "title": "Memory Systems for Agents",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Giữ nguyên mọi turn vô hạn không tốn token"
+        },
+        {
+          "id": "b",
+          "text": "Loại toàn bộ summary và chỉ giữ final answer đầu tiên"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ nạp long-term profile mà bỏ cuộc hội thoại hiện tại"
+        },
+        {
+          "id": "d",
+          "text": "Giữ trạng thái tổng quát cùng chi tiết mới mà không mang toàn transcript"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d02-x04",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d02",
+      "topic": "p2-t3-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Redis Hash phù hợp lưu nhóm memory nào trong profile?",
+      "correct_answer": "c",
+      "explanation": "Profile dùng Hash cho preference, Set cho facts và List cho lịch sử gần; TTL khác nhau theo loại.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d02",
+          "sha256": "70e5349ebe96578fa34667a55b45d1bd70b92474684c27c0ad141d68dbba2735",
+          "pdf_page": 13,
+          "title": "Memory Systems for Agents",
+          "locator": "Physical PDF page 13; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chuỗi session history gần nhất phù hợp Redis List"
+        },
+        {
+          "id": "b",
+          "text": "Semantic embeddings cần tìm theo độ tương đồng"
+        },
+        {
+          "id": "c",
+          "text": "Preferences như ngôn ngữ và phong cách"
+        },
+        {
+          "id": "d",
+          "text": "Tập facts không trùng lặp phù hợp Redis Set"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d02-x05",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d02",
+      "topic": "p2-t3-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Trong MemoryState, memory_budget biểu thị thông tin nào để kiểm soát context còn có thể nạp?",
+      "correct_answer": "b",
+      "explanation": "memory_budget được chú thích là tokens left; nó khác profile data, episodes và semantic hits, hỗ trợ giới hạn context.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d02",
+          "sha256": "70e5349ebe96578fa34667a55b45d1bd70b92474684c27c0ad141d68dbba2735",
+          "pdf_page": 16,
+          "title": "Memory Systems for Agents",
+          "locator": "Physical PDF page 16; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Ngưỡng cosine cố định cho semantic search"
+        },
+        {
+          "id": "b",
+          "text": "Số token còn lại dành cho memory/context theo ngân sách"
+        },
+        {
+          "id": "c",
+          "text": "Tổng số episode đã lưu trong toàn bộ lịch sử"
+        },
+        {
+          "id": "d",
+          "text": "TTL tính bằng ngày cho mọi entry của Redis"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d02-x06",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d02",
+      "topic": "p2-t3-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Episodic memory lưu trajectory và outcome giúp tác vụ tương tự thế nào?",
+      "correct_answer": "a",
+      "explanation": "Episode tuple gồm task, trajectory, outcome, reflection; dùng kinh nghiệm đã có khi tìm task tương tự.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d02",
+          "sha256": "70e5349ebe96578fa34667a55b45d1bd70b92474684c27c0ad141d68dbba2735",
+          "pdf_page": 17,
+          "title": "Memory Systems for Agents",
+          "locator": "Physical PDF page 17; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Biết hướng từng thất bại/thành công để chọn lại chiến lược"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ nhớ một fact domain không liên quan kinh nghiệm"
+        },
+        {
+          "id": "c",
+          "text": "Luôn replay nguyên mọi action bất kể điều kiện mới"
+        },
+        {
+          "id": "d",
+          "text": "Thay thế hoàn toàn current task objective"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d02-x07",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d02",
+      "topic": "p2-t3-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Unified retrieve(query) nên xử lý kết quả nhiều loại memory thế nào?",
+      "correct_answer": "d",
+      "explanation": "Một giao diện retrieval gộp bốn loại memory nhưng cần budget và priority để tránh context nhiễu.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d02",
+          "sha256": "70e5349ebe96578fa34667a55b45d1bd70b92474684c27c0ad141d68dbba2735",
+          "pdf_page": 19,
+          "title": "Memory Systems for Agents",
+          "locator": "Physical PDF page 19; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Luôn trả toàn bộ store bất kể relevance"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ lấy loại memory nhanh nhất rồi bỏ mọi loại khác"
+        },
+        {
+          "id": "c",
+          "text": "Tăng số kết quả vô hạn vì context retrieval không có phí"
+        },
+        {
+          "id": "d",
+          "text": "Merge context liên quan và trim theo token budget"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d02-x08",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d02",
+      "topic": "p2-t3-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "analyze",
+      "question": "MVP cần nhanh nhưng đội production sau này cần toàn quyền logic memory đặc thù. Đánh đổi managed layer với custom Redis/Chroma là gì?",
+      "correct_answer": "c",
+      "explanation": "Framework API giúp go-to-market nhanh; custom cần xây từ đầu nhưng cho full control ở domain đặc thù.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d02",
+          "sha256": "70e5349ebe96578fa34667a55b45d1bd70b92474684c27c0ad141d68dbba2735",
+          "pdf_page": 21,
+          "title": "Memory Systems for Agents",
+          "locator": "Physical PDF page 21; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Managed luôn cho full control mọi policy nội bộ"
+        },
+        {
+          "id": "b",
+          "text": "Hai lựa chọn không có khác biệt vận hành"
+        },
+        {
+          "id": "c",
+          "text": "Managed setup nhanh hơn; custom chậm xây hơn nhưng kiểm soát đầy đủ"
+        },
+        {
+          "id": "d",
+          "text": "Custom luôn nhanh triển khai hơn vì không cần code"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d02-x09",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d02",
+      "topic": "p2-t3-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "User yêu cầu xóa memory trong hệ nhiều agent có bản sao. Điều gì cần xảy ra?",
+      "correct_answer": "b",
+      "explanation": "Federated forgetting đòi xóa tất cả memory copy liên quan và confirm; deletion không dừng ở store chính.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d02",
+          "sha256": "70e5349ebe96578fa34667a55b45d1bd70b92474684c27c0ad141d68dbba2735",
+          "pdf_page": 22,
+          "title": "Memory Systems for Agents",
+          "locator": "Physical PDF page 22; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ chờ TTL mọi bản sao tự hết mà không xử lý yêu cầu"
+        },
+        {
+          "id": "b",
+          "text": "Propagate xóa tới mọi agent/store liên quan và xác minh deletion"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ xóa entry của agent nhận request đầu tiên"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ đánh dấu hidden ở UI còn các copy vẫn dùng"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d02-x10",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d02",
+      "topic": "p2-t3-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Cross-session memory nên tổ chức scope chủ yếu theo hướng nào?",
+      "correct_answer": "a",
+      "explanation": "User-scoped structured facts/open loops duy trì liên tục, còn thread state tạm phục vụ phiên hiện tại.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d02",
+          "sha256": "70e5349ebe96578fa34667a55b45d1bd70b92474684c27c0ad141d68dbba2735",
+          "pdf_page": 25,
+          "title": "Memory Systems for Agents",
+          "locator": "Physical PDF page 25; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t3-d02",
+          "sha256": "70e5349ebe96578fa34667a55b45d1bd70b92474684c27c0ad141d68dbba2735",
+          "pdf_page": 26,
+          "title": "Memory Systems for Agents",
+          "locator": "Physical PDF page 26; thread-scoped short-term and user/org-scoped long-term",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "User/org scope cho facts bền, short-term vẫn theo thread"
+        },
+        {
+          "id": "b",
+          "text": "Mọi user dùng chung một namespace để tăng recall"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ thread scope cho preference cần dùng nhiều phiên"
+        },
+        {
+          "id": "d",
+          "text": "Gộp raw transcript mọi thread vào một chuỗi không provenance"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d02-x11",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d02",
+      "topic": "p2-t3-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Memory record bền nên mang metadata nào để kiểm tra độ tin cậy và tuổi?",
+      "correct_answer": "d",
+      "explanation": "Provenance và thời hạn giúp quản trị recall, expiry, conflict và isolation; gán nhầm user là lỗi nghiêm trọng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d02",
+          "sha256": "70e5349ebe96578fa34667a55b45d1bd70b92474684c27c0ad141d68dbba2735",
+          "pdf_page": 26,
+          "title": "Memory Systems for Agents",
+          "locator": "Physical PDF page 26; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ nội dung fact không có nơi phát sinh"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ tên model chung và bỏ thời điểm"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ số thứ tự turn mà không user scope"
+        },
+        {
+          "id": "d",
+          "text": "Source, timestamp, confidence và TTL"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d02-x12",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d02",
+      "topic": "p2-t3-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Sau compaction, context nên giữ ba lớp thông tin nào?",
+      "correct_answer": "c",
+      "explanation": "Ba lớp giữ chi tiết nóng, tóm tắt quyết định/blocker và facts/tasks đủ quan trọng để bền qua phiên.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d02",
+          "sha256": "70e5349ebe96578fa34667a55b45d1bd70b92474684c27c0ad141d68dbba2735",
+          "pdf_page": 27,
+          "title": "Memory Systems for Agents",
+          "locator": "Physical PDF page 27; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ final answer gần nhất không blockers/next steps"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ long-term facts và bỏ toàn bộ trạng thái task"
+        },
+        {
+          "id": "c",
+          "text": "Recent turns, session summary và durable notes"
+        },
+        {
+          "id": "d",
+          "text": "Mọi raw transcript, mọi tool dump và mọi log đầy đủ"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d02-x13",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d02",
+      "topic": "p2-t3-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Khi nào nên kích hoạt compaction thay vì chạy liên tục mọi turn?",
+      "correct_answer": "b",
+      "explanation": "Compaction theo pressure/chuyển pha giúp tiết kiệm overhead; notes phải giữ decisions, TODO, constraints cụ thể.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d02",
+          "sha256": "70e5349ebe96578fa34667a55b45d1bd70b92474684c27c0ad141d68dbba2735",
+          "pdf_page": 28,
+          "title": "Memory Systems for Agents",
+          "locator": "Physical PDF page 28; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ khi user tự gõ lệnh compact dù latency tăng"
+        },
+        {
+          "id": "b",
+          "text": "Gần token limit, session dài hoặc chuyển pha từ thảo luận sang thực thi"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ sau khi request đã vượt hard context limit và fail"
+        },
+        {
+          "id": "d",
+          "text": "Mỗi token mới đều cần một full summary"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d02-x14",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d02",
+      "topic": "p2-t3-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao instruction file như AGENTS.md không thể thay thế một retrieval engine?",
+      "correct_answer": "a",
+      "explanation": "Instruction files là control plane bootstrap hành vi; retrieval/governance memory vẫn cần cơ chế riêng.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d02",
+          "sha256": "70e5349ebe96578fa34667a55b45d1bd70b92474684c27c0ad141d68dbba2735",
+          "pdf_page": 29,
+          "title": "Memory Systems for Agents",
+          "locator": "Physical PDF page 29; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Không tự re-rank, TTL, conflict resolution hay provenance"
+        },
+        {
+          "id": "b",
+          "text": "Tự tìm mọi preference liên quan bằng semantic ranking"
+        },
+        {
+          "id": "c",
+          "text": "Tự xóa memory hết hạn dù không có backend"
+        },
+        {
+          "id": "d",
+          "text": "Tự chứng minh mọi note là fact đã xác minh"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d02-x15",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d02",
+      "topic": "p2-t3-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Vì sao kết hợp instruction files với structured memory backend?",
+      "correct_answer": "d",
+      "explanation": "Instruction trả lời hành vi/default; backend recall theo scope/relevance cho preference, open loops, episode, knowledge.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d02",
+          "sha256": "70e5349ebe96578fa34667a55b45d1bd70b92474684c27c0ad141d68dbba2735",
+          "pdf_page": 30,
+          "title": "Memory Systems for Agents",
+          "locator": "Physical PDF page 30; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Files thay hết nhu cầu recall vì chứa mọi lịch sử"
+        },
+        {
+          "id": "b",
+          "text": "Memory backend tự đặt persona mà không policy"
+        },
+        {
+          "id": "c",
+          "text": "Hai hệ cùng giữ raw transcript vô hạn để chắc chắn nhớ"
+        },
+        {
+          "id": "d",
+          "text": "Files định hướng cách cư xử; retrieval chọn điều cần nhớ lúc hiện tại"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d02-x16",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d02",
+      "topic": "p2-t3-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Heartbeat background pass có use case phù hợp nào?",
+      "correct_answer": "c",
+      "explanation": "Heartbeat duy trì state và backlog qua ngày, giảm áp lực làm mọi consolidation ở cuối chat.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d02",
+          "sha256": "70e5349ebe96578fa34667a55b45d1bd70b92474684c27c0ad141d68dbba2735",
+          "pdf_page": 31,
+          "title": "Memory Systems for Agents",
+          "locator": "Physical PDF page 31; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Viết mọi instruction mới từ nội dung untrusted mà không kiểm"
+        },
+        {
+          "id": "b",
+          "text": "Gọi lại toàn bộ tool tác vụ cũ bất kể thay đổi state"
+        },
+        {
+          "id": "c",
+          "text": "Deduplicate notes, refresh backlog và expire task cũ"
+        },
+        {
+          "id": "d",
+          "text": "Tự nâng quyền để hoàn tất task bị policy chặn"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t3-d02-x17",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d02",
+      "topic": "p2-t3-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một heartbeat định ghi preference nhạy cảm từ đoạn text bên ngoài. Kiểm soát nào cần trước durable write?",
+      "correct_answer": "b",
+      "explanation": "Persistent injection có thể thành memory/backlog poisoning; allowlist loại ghi, provenance và review high-impact write là guardrail.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d02",
+          "sha256": "70e5349ebe96578fa34667a55b45d1bd70b92474684c27c0ad141d68dbba2735",
+          "pdf_page": 32,
+          "title": "Memory Systems for Agents",
+          "locator": "Physical PDF page 32; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Bỏ source metadata để note ngắn hơn"
+        },
+        {
+          "id": "b",
+          "text": "Policy/human check theo tác động và ghi provenance rõ"
+        },
+        {
+          "id": "c",
+          "text": "Coi mọi inference của agent như user instruction đã đồng ý"
+        },
+        {
+          "id": "d",
+          "text": "Cho heartbeat tự cấp quyền vì nó chạy nền"
+        }
+      ],
+      "shuffle_options": true
+    }
+  ]
+}

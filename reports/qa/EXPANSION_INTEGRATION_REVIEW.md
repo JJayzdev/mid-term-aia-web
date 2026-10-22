@@ -1,0 +1,14 @@
+# Expansion integration review
+
+Reviewer: peer-reviewer-b. Reviewed 2026-10-22.
+
+No blocking regression found in the requested integration changes after the validator hardening. This is a code review, not a claim that final 1,260-item build or browser tests have run.
+
+- `validate_release.py`: duplicate IDs are rejected; each question contributes at most once to each referenced document through a set, and all catalog documents participate in the minimum check. `--min-per-document 20` therefore checks the requested document coverage without counting repeated references twice. Standalone-stem matching is a useful lexical gate; independent review remains necessary for semantic duplicates and unlisted source-dependent phrasing.
+- The final validator now checks the latest exact-revision decision, matching report identity/timestamp, reviewer independence, and approval coverage of all referenced physical pages. These checks align with `release_bank.py`, which chooses the latest decision for each exact revision, omits rejected/pending revisions, rejects self-approval and uncovered references, and copies approved questions before marking sources verified. The earlier stale-approval/source-coverage gap is resolved in the reviewed version.
+- `App.tsx`: the 5/10/15/20/30/60 choices are filtered to available questions. The effective target is clamped before launch, and a temporary option represents a nonstandard clamped count. Wrong/bookmarked modes continue to use their full filtered lists. No exam-selection behavior was changed in this scope.
+- `scripts/qa/browser.spec.ts`: `startDaily` selects the last available count option after choosing the day. With a fresh page's default count of 10 and the intended 20-question day pool, this selects 20, allowing the persistence/rubric tests to cover the expanded day. This helper does not independently prove arbitrary persisted/custom counts choose the mathematical maximum; it currently starts with fresh component state.
+
+Reviewed `scripts/qa/test_release_gate.py` as well: its temporary-directory fixtures cover a valid release, newer rejection, missing page coverage, self-approval, timestamp mismatch, one-document underfill, repeated-page counting, and source-dependent wording. These exercise meaningful negative boundaries without changing production approvals. No blocking test-design issue found; execution results are Root's reported eight passing cases.
+
+Limitations: review artifacts bind IDs/revisions/pages rather than a content digest, so authors must increment revisions for edits. Difficulty labels are author estimates and have not been empirically calibrated; the mostly-medium distribution is not evidence of measured item difficulty. No mass relabeling was performed. Final aggregate validation, unit tests, build and browser run remain Root's release checks.

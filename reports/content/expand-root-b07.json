@@ -1,0 +1,517 @@
+{
+  "batch_file": "data/questions/drafts/expand-b-07.json",
+  "reviewer_id": "root-independent-review",
+  "reviewed_at": "2026-10-22T11:15:36.701398+00:00",
+  "results": [
+    {
+      "id": "p2-t3-d05-x01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d05",
+          "pdf_page": 6
+        }
+      ],
+      "notes": [
+        "Unclear task decomposition causes miscoordination.",
+        "Root independently read all final fields, verified PDF hash and inspected all cited page renders in tmp/root-review/expand-b-07; new p14 also inspected full-page render."
+      ]
+    },
+    {
+      "id": "p2-t3-d05-x02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d05",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "Roles, stopping and rubric address specification/termination failures.",
+        "Root independently read all final fields, verified PDF hash and inspected all cited page renders in tmp/root-review/expand-b-07; new p14 also inspected full-page render."
+      ]
+    },
+    {
+      "id": "p2-t3-d05-x03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d05",
+          "pdf_page": 11
+        }
+      ],
+      "notes": [
+        "Sectioning divides work; voting aggregates solutions to same task.",
+        "Root independently read all final fields, verified PDF hash and inspected all cited page renders in tmp/root-review/expand-b-07; new p14 also inspected full-page render."
+      ]
+    },
+    {
+      "id": "p2-t3-d05-x04",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d05",
+          "pdf_page": 11
+        }
+      ],
+      "notes": [
+        "Evaluator-optimizer feedback changes next generation.",
+        "Root independently read all final fields, verified PDF hash and inspected all cited page renders in tmp/root-review/expand-b-07; new p14 also inspected full-page render."
+      ]
+    },
+    {
+      "id": "p2-t3-d05-x05",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d05",
+          "pdf_page": 15
+        }
+      ],
+      "notes": [
+        "Router task may need less compute than specialist; still evaluate.",
+        "Root independently read all final fields, verified PDF hash and inspected all cited page renders in tmp/root-review/expand-b-07; new p14 also inspected full-page render."
+      ]
+    },
+    {
+      "id": "p2-t3-d05-x06",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d05",
+          "pdf_page": 16
+        }
+      ],
+      "notes": [
+        "Iteration cap bounds A/B routing loop.",
+        "Root independently read all final fields, verified PDF hash and inspected all cited page renders in tmp/root-review/expand-b-07; new p14 also inspected full-page render."
+      ]
+    },
+    {
+      "id": "p2-t3-d05-x07",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d05",
+          "pdf_page": 18
+        }
+      ],
+      "notes": [
+        "Revision2 collective delusion is correlated agreement, distinct from disagreement.",
+        "Root independently read all final fields, verified PDF hash and inspected all cited page renders in tmp/root-review/expand-b-07; new p14 also inspected full-page render."
+      ]
+    },
+    {
+      "id": "p2-t3-d05-x08",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d05",
+          "pdf_page": 19
+        }
+      ],
+      "notes": [
+        "Diverse blind spots improve coverage but add latency/cost.",
+        "Root independently read all final fields, verified PDF hash and inspected all cited page renders in tmp/root-review/expand-b-07; new p14 also inspected full-page render."
+      ]
+    },
+    {
+      "id": "p2-t3-d05-x09",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d05",
+          "pdf_page": 21
+        }
+      ],
+      "notes": [
+        "Dependencies, locks and merge overhead can erase parallel speedup.",
+        "Root independently read all final fields, verified PDF hash and inspected all cited page renders in tmp/root-review/expand-b-07; new p14 also inspected full-page render."
+      ]
+    },
+    {
+      "id": "p2-t3-d05-x10",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d05",
+          "pdf_page": 22
+        }
+      ],
+      "notes": [
+        "Blackboard concurrency protection versus queue decoupling/network overhead.",
+        "Root independently read all final fields, verified PDF hash and inspected all cited page renders in tmp/root-review/expand-b-07; new p14 also inspected full-page render."
+      ]
+    },
+    {
+      "id": "p2-t3-d05-x11",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d05",
+          "pdf_page": 22
+        }
+      ],
+      "notes": [
+        "Incomplete handoff loses objectives/constraints.",
+        "Root independently read all final fields, verified PDF hash and inspected all cited page renders in tmp/root-review/expand-b-07; new p14 also inspected full-page render."
+      ]
+    },
+    {
+      "id": "p2-t3-d05-x12",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d05",
+          "pdf_page": 22
+        }
+      ],
+      "notes": [
+        "Timeout recovery routes retry/fallback rather than fabricated result.",
+        "Root independently read all final fields, verified PDF hash and inspected all cited page renders in tmp/root-review/expand-b-07; new p14 also inspected full-page render."
+      ]
+    },
+    {
+      "id": "p2-t3-d05-x13",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d05",
+          "pdf_page": 23
+        }
+      ],
+      "notes": [
+        "Revision2 pool reuse amortizes startup and caps concurrency.",
+        "Root independently read all final fields, verified PDF hash and inspected all cited page renders in tmp/root-review/expand-b-07; new p14 also inspected full-page render."
+      ]
+    },
+    {
+      "id": "p2-t3-d05-x14",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d05",
+          "pdf_page": 23
+        }
+      ],
+      "notes": [
+        "Revision2 explicit simultaneous-call cap, distinct from TPM/RPM/context length.",
+        "Root independently read all final fields, verified PDF hash and inspected all cited page renders in tmp/root-review/expand-b-07; new p14 also inspected full-page render."
+      ]
+    },
+    {
+      "id": "p2-t3-d05-x15",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d05",
+          "pdf_page": 23
+        }
+      ],
+      "notes": [
+        "DLQ preserves failed-task evidence for investigation.",
+        "Root independently read all final fields, verified PDF hash and inspected all cited page renders in tmp/root-review/expand-b-07; new p14 also inspected full-page render."
+      ]
+    },
+    {
+      "id": "p2-t3-d05-x16",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d05",
+          "pdf_page": 25
+        }
+      ],
+      "notes": [
+        "State machine/routing/debug control matches production requirement.",
+        "Root independently read all final fields, verified PDF hash and inspected all cited page renders in tmp/root-review/expand-b-07; new p14 also inspected full-page render."
+      ]
+    },
+    {
+      "id": "p2-t3-d05-x17",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d05",
+          "pdf_page": 31
+        }
+      ],
+      "notes": [
+        "Role overlap requires clarified ownership, not merely more compute.",
+        "Root independently read all final fields, verified PDF hash and inspected all cited page renders in tmp/root-review/expand-b-07; new p14 also inspected full-page render."
+      ]
+    },
+    {
+      "id": "p2-t3-d06-x01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d06",
+          "pdf_page": 7
+        }
+      ],
+      "notes": [
+        "Small style SFT cannot supply missing pretrained domain capability.",
+        "Root independently read all final fields, verified PDF hash and inspected all cited page renders in tmp/root-review/expand-b-07; new p14 also inspected full-page render."
+      ]
+    },
+    {
+      "id": "p2-t3-d06-x02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d06",
+          "pdf_page": 10
+        }
+      ],
+      "notes": [
+        "Pretraining optimizer ranking need not transfer to fine-tuning; mismatch can regress.",
+        "Root independently read all final fields, verified PDF hash and inspected all cited page renders in tmp/root-review/expand-b-07; new p14 also inspected full-page render."
+      ]
+    },
+    {
+      "id": "p2-t3-d06-x03",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d06",
+          "pdf_page": 12
+        }
+      ],
+      "notes": [
+        "Measured expert routing usage guides adapter placement.",
+        "Root independently read all final fields, verified PDF hash and inspected all cited page renders in tmp/root-review/expand-b-07; new p14 also inspected full-page render."
+      ]
+    },
+    {
+      "id": "p2-t3-d06-x04",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d06",
+          "pdf_page": 15
+        }
+      ],
+      "notes": [
+        "Large domain shift/CPT may warrant full updates versus narrow PEFT.",
+        "Root independently read all final fields, verified PDF hash and inspected all cited page renders in tmp/root-review/expand-b-07; new p14 also inspected full-page render."
+      ]
+    },
+    {
+      "id": "p2-t3-d06-x05",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d06",
+          "pdf_page": 16
+        }
+      ],
+      "notes": [
+        "Architecture surgery has runtime implications beyond adapter initialization.",
+        "Root independently read all final fields, verified PDF hash and inspected all cited page renders in tmp/root-review/expand-b-07; new p14 also inspected full-page render."
+      ]
+    },
+    {
+      "id": "p2-t3-d06-x06",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d06",
+          "pdf_page": 19
+        }
+      ],
+      "notes": [
+        "Adapter coverage/location versus merely increasing attention rank.",
+        "Root independently read all final fields, verified PDF hash and inspected all cited page renders in tmp/root-review/expand-b-07; new p14 also inspected full-page render."
+      ]
+    },
+    {
+      "id": "p2-t3-d06-x07",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d06",
+          "pdf_page": 20
+        }
+      ],
+      "notes": [
+        "Search LoRA learning-rate scale before dismissing method.",
+        "Root independently read all final fields, verified PDF hash and inspected all cited page renders in tmp/root-review/expand-b-07; new p14 also inspected full-page render."
+      ]
+    },
+    {
+      "id": "p2-t3-d06-x08",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d06",
+          "pdf_page": 21
+        }
+      ],
+      "notes": [
+        "Batch-size quality effect not guaranteed fixed by rank.",
+        "Root independently read all final fields, verified PDF hash and inspected all cited page renders in tmp/root-review/expand-b-07; new p14 also inspected full-page render."
+      ]
+    },
+    {
+      "id": "p2-t3-d06-x09",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d06",
+          "pdf_page": 23
+        }
+      ],
+      "notes": [
+        "Method-specific LR/scaling tuning avoids misleading comparison.",
+        "Root independently read all final fields, verified PDF hash and inspected all cited page renders in tmp/root-review/expand-b-07; new p14 also inspected full-page render."
+      ]
+    },
+    {
+      "id": "p2-t3-d06-x10",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d06",
+          "pdf_page": 25
+        }
+      ],
+      "notes": [
+        "Frozen 4-bit base participates in gradient path but is not updated.",
+        "Root independently read all final fields, verified PDF hash and inspected all cited page renders in tmp/root-review/expand-b-07; new p14 also inspected full-page render."
+      ]
+    },
+    {
+      "id": "p2-t3-d06-x11",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d06",
+          "pdf_page": 26
+        }
+      ],
+      "notes": [
+        "Training support does not guarantee merged export support.",
+        "Root independently read all final fields, verified PDF hash and inspected all cited page renders in tmp/root-review/expand-b-07; new p14 also inspected full-page render."
+      ]
+    },
+    {
+      "id": "p2-t3-d06-x12",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d06",
+          "pdf_page": 27
+        }
+      ],
+      "notes": [
+        "Decontamination prevents evaluation leakage.",
+        "Root independently read all final fields, verified PDF hash and inspected all cited page renders in tmp/root-review/expand-b-07; new p14 also inspected full-page render."
+      ]
+    },
+    {
+      "id": "p2-t3-d06-x13",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d06",
+          "pdf_page": 28
+        }
+      ],
+      "notes": [
+        "Revision2 decode supervised tokens to verify assistant loss mask.",
+        "Root independently read all final fields, verified PDF hash and inspected all cited page renders in tmp/root-review/expand-b-07; new p14 also inspected full-page render."
+      ]
+    },
+    {
+      "id": "p2-t3-d06-x14",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d06",
+          "pdf_page": 29
+        }
+      ],
+      "notes": [
+        "Revision2 attention boundary prevents cross-example contamination; position/EOS alone not universal isolation.",
+        "Root independently read all final fields, verified PDF hash and inspected all cited page renders in tmp/root-review/expand-b-07; new p14 also inspected full-page render."
+      ]
+    },
+    {
+      "id": "p2-t3-d06-x15",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d06",
+          "pdf_page": 33
+        }
+      ],
+      "notes": [
+        "Revision2 train/eval divergence indicates overfitting versus unstable spikes/underfitting.",
+        "Root independently read all final fields, verified PDF hash and inspected all cited page renders in tmp/root-review/expand-b-07; new p14 also inspected full-page render."
+      ]
+    },
+    {
+      "id": "p2-t3-d06-x16",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d06",
+          "pdf_page": 37
+        }
+      ],
+      "notes": [
+        "Template and tokenizer end-of-turn semantics must agree.",
+        "Root independently read all final fields, verified PDF hash and inspected all cited page renders in tmp/root-review/expand-b-07; new p14 also inspected full-page render."
+      ]
+    },
+    {
+      "id": "p2-t3-d06-x17",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t3-d06",
+          "pdf_page": 38
+        }
+      ],
+      "notes": [
+        "General capability regression gate can block deployment despite good target PPL.",
+        "Root independently read all final fields, verified PDF hash and inspected all cited page renders in tmp/root-review/expand-b-07; new p14 also inspected full-page render."
+      ]
+    }
+  ]
+}
