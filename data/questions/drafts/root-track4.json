@@ -96,7 +96,7 @@
     },
     {
       "id": "p2-t4-d01-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -107,7 +107,7 @@
       "answer_format": "single_choice",
       "difficulty": "easy",
       "cognitive_level": "understand",
-      "question": "Theo slide, kỹ thuật nào phù hợp để xử lý gradient bùng nổ?",
+      "question": "Kỹ thuật nào phù hợp để xử lý gradient bùng nổ?",
       "correct_answer": "a",
       "explanation": "Slide phân biệt gradient biến mất và bùng nổ; gradient clipping được nêu cho trường hợp bùng nổ.",
       "source_reference": [
@@ -138,11 +138,14 @@
           "text": "Chỉ giảm độ rộng hidden layer mà không kiểm soát chuẩn gradient."
         }
       ],
-      "shuffle_options": true
+      "shuffle_options": true,
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ]
     },
     {
       "id": "p2-t4-d01-q04",
-      "revision": 1,
+      "revision": 3,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -153,7 +156,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Theo phần tổng kết, AdamW tách weight decay khỏi gradient thay vì gộp L2 trực tiếp vào gradient như Adam(weight_decay) trong ví dụ PyTorch.",
+      "question": "Trong AdamW, weight decay được tách khỏi bước cập nhật theo gradient, thay vì cộng hạng L2 vào gradient.",
       "correct_answer": true,
       "explanation": "Đây là điểm khác biệt được ghi trong tổng kết Chương 4 của tài liệu.",
       "source_reference": [
@@ -165,7 +168,11 @@
           "verification": "needs_review"
         }
       ],
-      "status": "pending_review"
+      "status": "pending_review",
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ]
     },
     {
       "id": "p2-t4-d02-q01",
@@ -261,7 +268,7 @@
     },
     {
       "id": "p2-t4-d02-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -272,7 +279,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Chọn các mô tả đúng về multi-head attention trong slide.",
+      "question": "Chọn các mô tả đúng về multi-head attention.",
       "correct_answer": [
         "d",
         "a"
@@ -306,7 +313,10 @@
           "text": "Mỗi head có bộ chiếu Q, K, V riêng."
         }
       ],
-      "shuffle_options": true
+      "shuffle_options": true,
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ]
     },
     {
       "id": "p2-t4-d02-q04",
@@ -429,7 +439,7 @@
     },
     {
       "id": "p2-t4-d03-q03",
-      "revision": 2,
+      "revision": 3,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -440,7 +450,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Slide nêu những vai trò nào của IoU? Chọn tất cả đáp án đúng.",
+      "question": "IoU có những vai trò nào trong phát hiện đối tượng? Chọn tất cả đáp án đúng.",
       "correct_answer": [
         "c",
         "d",
@@ -475,11 +485,14 @@
           "text": "Ngưỡng trong NMS."
         }
       ],
-      "shuffle_options": true
+      "shuffle_options": true,
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ]
     },
     {
       "id": "p2-t4-d03-q04",
-      "revision": 1,
+      "revision": 2,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -490,7 +503,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Trong kiến trúc YOLO26 minh họa trên slide, head one-to-one có thể suy luận không cần NMS.",
+      "question": "Trong kiến trúc YOLO26, head one-to-one có thể suy luận không cần NMS.",
       "correct_answer": true,
       "explanation": "Sơ đồ phân biệt head one-to-many đi qua NMS và head one-to-one không NMS. Câu hỏi bám cấu hình minh họa của tài liệu, không khái quát cho mọi detector.",
       "source_reference": [
@@ -502,7 +515,10 @@
           "verification": "needs_review"
         }
       ],
-      "status": "pending_review"
+      "status": "pending_review",
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ]
     },
     {
       "id": "p2-t4-d04-q01",
@@ -820,7 +836,7 @@
     },
     {
       "id": "p2-t4-d05-q04",
-      "revision": 1,
+      "revision": 2,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -831,7 +847,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Theo slide, khi hàm cong mạnh hoặc độ bất định lớn, xấp xỉ của EKF có thể lệch cả trung bình lẫn độ rộng phân phối.",
+      "question": "Khi hàm cong mạnh hoặc độ bất định lớn, xấp xỉ của EKF có thể lệch cả trung bình lẫn độ rộng phân phối.",
       "correct_answer": true,
       "explanation": "Slide minh họa sự khác biệt của phân phối thật và xấp xỉ EKF, đồng thời nêu các điều kiện làm xấp xỉ kém.",
       "source_reference": [
@@ -843,7 +859,10 @@
           "verification": "needs_review"
         }
       ],
-      "status": "pending_review"
+      "status": "pending_review",
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ]
     },
     {
       "id": "p2-t4-d06-q01",
@@ -1228,7 +1247,7 @@
     },
     {
       "id": "p2-t4-d08-q02",
-      "revision": 2,
+      "revision": 3,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -1239,7 +1258,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Chọn mô tả phù hợp với nhánh top-down/query attention trên slide.",
+      "question": "Chọn mô tả phù hợp với nhánh top-down sử dụng query attention để tạo đặc trưng BEV.",
       "correct_answer": [
         "c",
         "d"
@@ -1273,11 +1292,14 @@
           "text": "DETR3D dùng object query dự đoán tọa độ 3D rồi lấy đặc trưng ảnh."
         }
       ],
-      "shuffle_options": true
+      "shuffle_options": true,
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ]
     },
     {
       "id": "p2-t4-d08-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -1288,7 +1310,7 @@
       "answer_format": "single_choice",
       "difficulty": "hard",
       "cognitive_level": "apply",
-      "question": "Với tọa độ ảnh (u,v), depth z và ma trận nội tại K, công thức giải mã tọa độ camera trên slide là gì?",
+      "question": "Với tọa độ ảnh (u,v), depth z và ma trận nội tại K, công thức khôi phục tọa độ camera là gì?",
       "correct_answer": "b",
       "explanation": "Slide nêu phép đi ngược từ pixel cùng depth sang tọa độ 3D bằng nghịch đảo camera intrinsics.",
       "source_reference": [
@@ -1319,11 +1341,14 @@
           "text": "[x,y,z]ᵀ = [u,v,z]ᵀ không cần K"
         }
       ],
-      "shuffle_options": true
+      "shuffle_options": true,
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ]
     },
     {
       "id": "p2-t4-d08-q04",
-      "revision": 1,
+      "revision": 2,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -1334,7 +1359,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Có thể coi biểu đồ NDS camera/LiDAR trên slide là bảng xếp hạng công bằng tuyệt đối giữa mọi model dù backbone và dữ liệu bổ sung khác nhau.",
+      "question": "Có thể coi việc so sánh NDS giữa các model camera và LiDAR là một bảng xếp hạng công bằng tuyệt đối, dù backbone và dữ liệu bổ sung khác nhau.",
       "correct_answer": false,
       "explanation": "Slide yêu cầu đọc như xu hướng vì backbone và dữ liệu bổ sung khác nhau, không coi là xếp hạng công bằng.",
       "source_reference": [
@@ -1346,7 +1371,10 @@
           "verification": "needs_review"
         }
       ],
-      "status": "pending_review"
+      "status": "pending_review",
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ]
     },
     {
       "id": "p2-t4-d09-q01",
@@ -1514,7 +1542,7 @@
     },
     {
       "id": "p2-t4-d10-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -1525,7 +1553,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Đầu ra đặc trưng của VLA cho robot trong sơ đồ slide là gì?",
+      "question": "Đầu ra đặc trưng của mô hình VLA dành cho robot là gì?",
       "correct_answer": "b",
       "explanation": "VLA được minh họa là VLM đã pretrain được bổ sung đầu ra hành động, phục vụ điều khiển robot.",
       "source_reference": [
@@ -1556,11 +1584,14 @@
           "text": "Chỉ bounding box và class của vật thể."
         }
       ],
-      "shuffle_options": true
+      "shuffle_options": true,
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ]
     },
     {
       "id": "p2-t4-d10-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -1571,7 +1602,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Ở giai đoạn alignment Qwen3-VL được minh họa, thành phần nào được cập nhật trong khi ViT và LLM đóng băng?",
+      "question": "Trong giai đoạn alignment của Qwen3-VL khi ViT và LLM được đóng băng, thành phần nào được cập nhật?",
       "correct_answer": "a",
       "explanation": "Câu hỏi chỉ áp dụng ví dụ Qwen3-VL trong slide: giai đoạn đầu chỉ cập nhật projector/merger. Slide cũng chỉ ra mô hình khác có thể cập nhật khác.",
       "source_reference": [
@@ -1602,11 +1633,14 @@
           "text": "Toàn bộ ViT và LLM, projector đóng băng."
         }
       ],
-      "shuffle_options": true
+      "shuffle_options": true,
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ]
     },
     {
       "id": "p2-t4-d10-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -1617,7 +1651,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Theo slide, những yếu tố nào quyết định số token ảnh?",
+      "question": "Những yếu tố nào quyết định số token ảnh khi mã hóa đầu vào cho mô hình thị giác–ngôn ngữ?",
       "correct_answer": [
         "d",
         "a",
@@ -1652,11 +1686,14 @@
           "text": "Độ phân giải ảnh."
         }
       ],
-      "shuffle_options": true
+      "shuffle_options": true,
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ]
     },
     {
       "id": "p2-t4-d10-q04",
-      "revision": 1,
+      "revision": 2,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -1667,7 +1704,7 @@
       "answer_format": "boolean",
       "difficulty": "easy",
       "cognitive_level": "understand",
-      "question": "CLIP được slide mô tả là học tương phản trên cặp ảnh–văn bản.",
+      "question": "CLIP học tương phản trên các cặp ảnh–văn bản.",
       "correct_answer": true,
       "explanation": "Phần lịch sử vision encoder ghi rõ CLIP dùng contrastive learning trên cặp ảnh và văn bản.",
       "source_reference": [
@@ -1679,11 +1716,14 @@
           "verification": "needs_review"
         }
       ],
-      "status": "pending_review"
+      "status": "pending_review",
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ]
     },
     {
       "id": "p2-t4-d11-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -1694,7 +1734,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Slide tách sim2real gap thành những nhóm nào?",
+      "question": "Những nhóm sai khác nào có thể gây ra sim2real gap?",
       "correct_answer": [
         "a",
         "b",
@@ -1729,11 +1769,14 @@
           "text": "Chỉ số lượng epoch; các sai khác của cảnh/cảm biến không liên quan."
         }
       ],
-      "shuffle_options": true
+      "shuffle_options": true,
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ]
     },
     {
       "id": "p2-t4-d11-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -1744,7 +1787,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Nhận xét nào đúng về phạm vi domain randomization theo phần tổng kết?",
+      "question": "Nhận xét nào đúng về phạm vi của domain randomization?",
       "correct_answer": "d",
       "explanation": "Slide nhấn mạnh cân bằng coverage và hiệu quả lấy mẫu, đồng thời ưu tiên randomization có cấu trúc.",
       "source_reference": [
@@ -1775,7 +1818,10 @@
           "text": "Quá hẹp thì không phủ thế giới thật; quá rộng có thể lãng phí mẫu."
         }
       ],
-      "shuffle_options": true
+      "shuffle_options": true,
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ]
     },
     {
       "id": "p2-t4-d11-q03",
@@ -1852,7 +1898,7 @@
     },
     {
       "id": "p2-t4-d12-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -1863,7 +1909,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những thông tin nào được nêu trong thẻ lần chạy để tái tạo log replay?",
+      "question": "Cần lưu những thông tin nào để tái tạo một lần chạy log replay?",
       "correct_answer": [
         "d",
         "a",
@@ -1898,7 +1944,10 @@
           "text": "Nhật ký và revision mã phần mềm."
         }
       ],
-      "shuffle_options": true
+      "shuffle_options": true,
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ]
     },
     {
       "id": "p2-t4-d12-q02",
@@ -1929,7 +1978,7 @@
     },
     {
       "id": "p2-t4-d12-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -1940,7 +1989,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "apply",
-      "question": "Theo ví dụ TTC của slide, khoảng cách 12 m và tốc độ tiến gần 5 m/s cho TTC bằng bao nhiêu?",
+      "question": "Khoảng cách tới vật cản là 12 m và tốc độ tiến gần không đổi là 5 m/s. Time to Collision (TTC) bằng bao nhiêu?",
       "correct_answer": "b",
       "explanation": "TTC = khoảng cách / tốc độ tiến gần = 12/5 = 2,4 giây. Đây là độ đo đơn giản trong ví dụ, không đủ một mình để kết luận an toàn của toàn hệ thống.",
       "source_reference": [
@@ -1971,7 +2020,10 @@
           "text": "60 giây"
         }
       ],
-      "shuffle_options": true
+      "shuffle_options": true,
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ]
     },
     {
       "id": "p2-t4-d12-q04",

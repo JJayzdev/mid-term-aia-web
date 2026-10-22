@@ -10,4 +10,4 @@ Thay đổi theo yêu cầu người dùng: đề mới 60 câu / 90 phút, 36 c
 
 Điểm từng bucket được chia theo đơn vị 0,01 bằng thương/phần dư; không thay đổi tổng quota. Lịch sử sử dụng snapshot nên không bị đổi sang 60 câu.
 
-Deploy và kiểm thử live được cập nhật sau khi publish.
+Đã deploy: source `58b0e582ea9f802268dafd4fdd74cca8a96fd0d3`, Pages `9e6917f6a83a5f2f7e1e7730b660992ea8dc0124`. GitHub Pages báo built; HTML/assets/data HTTP200, JSON khớp bản đã duyệt. Root chạy lại cùng 12 E2E trên URL công khai: 12/12 PASS, 0 skipped/flaky, 29,1 giây. Bằng chứng local `tmp/qa/exam60-live-browser-results.json`, `tmp/qa/exam60-live-http-verification.json`. Website: https://jjayzdev.github.io/mid-term-aia-web/.

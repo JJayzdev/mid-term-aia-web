@@ -1,6 +1,14 @@
 # Quy tắc nội dung và trích xuất
 
-Trạng thái: đề xuất chờ duyệt. Không có ngân hàng câu hỏi đã tạo/approved trong Discovery.
+Tài liệu ban đầu được lập trong Discovery; quyết định triển khai mới hơn ở `IMPLEMENTATION_DECISIONS.md` thay thế các trạng thái chờ duyệt lịch sử bên dưới.
+
+## Yêu cầu bổ sung đã xác nhận — 2026-10-22
+
+- Tối thiểu 20 câu cho mỗi file PDF trong 63 file, không phải mỗi trang. Mỗi câu có mục tiêu học tập riêng, khai thác nhiều phần nội dung; không tăng số lượng bằng các biến thể diễn đạt cùng một câu.
+- Câu hỏi hỏi trực tiếp kiến thức, cơ chế, tính toán hoặc tình huống ứng dụng từ PDF. Không viết “trong slide”, “theo tài liệu”, “bài giảng nêu”, hoặc yêu cầu nhớ vị trí/cách diễn đạt của slide. File/trang nguồn nằm ở `source_reference`.
+- Tài liệu là nguồn học thuật; không bổ sung đáp án bằng kiến thức ngoài để đạt số lượng. Reviewer kiểm tra tính đúng, phương án nhiễu, khả năng tự hiểu câu hỏi, trùng ý và chính xác trang/hash.
+- Chỉnh sửa câu đã duyệt phải tăng revision và duyệt lại độc lập. Chỉ kết quả approved đúng revision mới được đưa vào website.
+- Gate mở rộng: `python scripts/validate_release.py --verify-sources --min-per-document 20 --standalone-stems`. Bộ đếm mỗi PDF dùng ID câu duy nhất, không đếm nhiều lần khi một câu dẫn nhiều trang cùng file.
 
 ## Nguồn và provenance
 

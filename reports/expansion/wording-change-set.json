@@ -1,0 +1,1554 @@
+{
+  "editor": "root-content",
+  "changes": [
+    {
+      "id": "p1-d01-q01",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Đặc điểm nào phân biệt Agentic AI với Generative AI trong bảng ba nhóm AI?",
+      "after": "Đặc điểm nào phân biệt Agentic AI với Generative AI?",
+      "draft_path": "data/questions/drafts/pilot-001.json",
+      "source_reference": [
+        {
+          "document_id": "p1-d01",
+          "sha256": "7623057fe66b2a3ef217ace5962109059d94e3d65ae58d4bb4a8d5c7e8c983a8",
+          "pdf_page": 7,
+          "title": "AI & LLM Foundation",
+          "locator": "Physical PDF page 7; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p1-d01-q02",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Những thành phần nào thuộc agent harness theo slide? (Chọn tất cả đáp án đúng.)",
+      "after": "Những thành phần nào thuộc agent harness? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/pilot-001.json",
+      "source_reference": [
+        {
+          "document_id": "p1-d01",
+          "sha256": "7623057fe66b2a3ef217ace5962109059d94e3d65ae58d4bb4a8d5c7e8c983a8",
+          "pdf_page": 14,
+          "title": "AI & LLM Foundation",
+          "locator": "Physical PDF page 14; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p1-d02-q01",
+      "previous_revision": 2,
+      "revision": 3,
+      "before": "Trước khi đề xuất một chatbot, câu hỏi nào bám đúng bước chẩn đoán của slide?",
+      "after": "Trước khi đề xuất một chatbot, câu hỏi nào giúp chẩn đoán đúng vấn đề cần giải quyết?",
+      "draft_path": "data/questions/drafts/phase1-remaining.json",
+      "source_reference": [
+        {
+          "document_id": "p1-d02",
+          "sha256": "2ad31138952bf7b032765e29a904c9f3b43e6130896a72f4339fd56d17f37aea",
+          "pdf_page": 12,
+          "title": "Xác định bài toán cho AI",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p1-d02-q02",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Theo slide, chỉ cần thấy một công việc lặp lại là có thể đề xuất giải pháp ngay, dù chưa hiểu điểm đau.",
+      "after": "Chỉ cần thấy một công việc lặp lại là có thể đề xuất giải pháp ngay, dù chưa hiểu điểm đau của người dùng.",
+      "draft_path": "data/questions/drafts/phase1-remaining.json",
+      "source_reference": [
+        {
+          "document_id": "p1-d02",
+          "sha256": "2ad31138952bf7b032765e29a904c9f3b43e6130896a72f4339fd56d17f37aea",
+          "pdf_page": 12,
+          "title": "Xác định bài toán cho AI",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p1-d05-q02",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Mong muốn cảm thấy tự tin hơn, ít sợ sai hơn thuộc nhu cầu được slide đưa vào JTBD.",
+      "after": "Mong muốn cảm thấy tự tin hơn và ít sợ sai hơn thuộc nhu cầu cảm xúc trong JTBD.",
+      "draft_path": "data/questions/drafts/phase1-remaining.json",
+      "source_reference": [
+        {
+          "document_id": "p1-d05",
+          "sha256": "4054831253c34ed1a3e8ab6a0a2437f5bb7be28bae0d395852831ae737b5353e",
+          "pdf_page": 9,
+          "title": "AI Product Thinking & Requirements",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p1-d05-q03",
+      "previous_revision": 2,
+      "revision": 3,
+      "before": "Những câu hỏi nào thuộc JTBD trên slide? (Chọn tất cả đáp án đúng.)",
+      "after": "Những câu hỏi nào giúp làm rõ Jobs to Be Done? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/phase1-remaining.json",
+      "source_reference": [
+        {
+          "document_id": "p1-d05",
+          "sha256": "4054831253c34ed1a3e8ab6a0a2437f5bb7be28bae0d395852831ae737b5353e",
+          "pdf_page": 9,
+          "title": "AI Product Thinking & Requirements",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p1-d06-q03",
+      "previous_revision": 2,
+      "revision": 3,
+      "before": "Những điều kiện nào được dùng trong ví dụ support agent đã done? (Chọn tất cả đáp án đúng.)",
+      "after": "Những điều kiện nào giúp xác định một support agent đã đáp ứng Definition of Done? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/phase1-remaining.json",
+      "source_reference": [
+        {
+          "document_id": "p1-d06",
+          "sha256": "3b0f60cc5e7d6de13102842d2c1e4d0ac7ea513fbad0bea862b48b32f3a3bc95",
+          "pdf_page": 10,
+          "title": "AI Product & Project Management",
+          "locator": "Physical PDF page 10; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p1-d07-q01",
+      "previous_revision": 2,
+      "revision": 3,
+      "before": "Tài liệu có heading và section tốt; cần chunk trọn ý và metadata section rõ. Strategy nào phù hợp nhất trong bảng?",
+      "after": "Một tài liệu có heading và section tốt; cần chia chunk trọn ý và giữ metadata section rõ ràng. Chiến lược chunking nào phù hợp nhất?",
+      "draft_path": "data/questions/drafts/phase1-remaining.json",
+      "source_reference": [
+        {
+          "document_id": "p1-d07",
+          "sha256": "ad1669dd5385de460caa68a4b378120c8de3105b1e6c8c7bee296bd5398f7bc5",
+          "pdf_page": 13,
+          "title": "Data Foundations",
+          "locator": "Physical PDF page 13; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p1-d07-q03",
+      "previous_revision": 2,
+      "revision": 3,
+      "before": "Những nhận định nào đúng về recursive chunking trong bảng? (Chọn tất cả đáp án đúng.)",
+      "after": "Những nhận định nào đúng về recursive chunking? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/phase1-remaining.json",
+      "source_reference": [
+        {
+          "document_id": "p1-d07",
+          "sha256": "ad1669dd5385de460caa68a4b378120c8de3105b1e6c8c7bee296bd5398f7bc5",
+          "pdf_page": 13,
+          "title": "Data Foundations",
+          "locator": "Physical PDF page 13; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p1-d08-q01",
+      "previous_revision": 2,
+      "revision": 3,
+      "before": "Trường hợp nào có lý do rõ để dùng RAG theo slide?",
+      "after": "Trường hợp nào có lý do rõ ràng để dùng RAG?",
+      "draft_path": "data/questions/drafts/phase1-remaining.json",
+      "source_reference": [
+        {
+          "document_id": "p1-d08",
+          "sha256": "dad417681be6c8505f3029334b74c364c1c5345fef9a106cbdbf9ac95daba665",
+          "pdf_page": 14,
+          "title": "RAG Pipeline",
+          "locator": "Physical PDF page 14; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p1-d08-q02",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Slide cho rằng mọi câu hỏi kiến thức chung đều bắt buộc phải dùng RAG.",
+      "after": "Mọi câu hỏi kiến thức chung đều bắt buộc phải dùng RAG.",
+      "draft_path": "data/questions/drafts/phase1-remaining.json",
+      "source_reference": [
+        {
+          "document_id": "p1-d08",
+          "sha256": "dad417681be6c8505f3029334b74c364c1c5345fef9a106cbdbf9ac95daba665",
+          "pdf_page": 14,
+          "title": "RAG Pipeline",
+          "locator": "Physical PDF page 14; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p1-d08-q03",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Những trường hợp nào được slide xếp vào nhóm chưa cần RAG? (Chọn tất cả đáp án đúng.)",
+      "after": "Những trường hợp nào chưa cần dùng RAG? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/phase1-remaining.json",
+      "source_reference": [
+        {
+          "document_id": "p1-d08",
+          "sha256": "dad417681be6c8505f3029334b74c364c1c5345fef9a106cbdbf9ac95daba665",
+          "pdf_page": 14,
+          "title": "RAG Pipeline",
+          "locator": "Physical PDF page 14; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p1-d09-q01",
+      "previous_revision": 2,
+      "revision": 3,
+      "before": "Hai subagent khám phá hai hướng độc lập, còn kết quả cuối là một sản phẩm chung. Cách tổ chức nào phù hợp nguyên tắc slide?",
+      "after": "Hai subagent khám phá hai hướng độc lập, còn kết quả cuối là một sản phẩm chung. Cách tổ chức nào giúp tránh xung đột khi tích hợp?",
+      "draft_path": "data/questions/drafts/phase1-remaining.json",
+      "source_reference": [
+        {
+          "document_id": "p1-d09",
+          "sha256": "c5d8e34aaa138debbd52718465cd05696de18fd47eb26ef57caacb57f2bd38fb",
+          "pdf_page": 11,
+          "title": "Multi-Agent & Kết Nối Hệ Thống",
+          "locator": "Physical PDF page 11; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p1-d09-q02",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Nguyên tắc trên slide khuyên nhiều subagent đồng thời ghi vào một sản phẩm chung mà không điều phối.",
+      "after": "Để tránh xung đột, nên cho nhiều subagent đồng thời ghi vào một sản phẩm chung mà không điều phối.",
+      "draft_path": "data/questions/drafts/phase1-remaining.json",
+      "source_reference": [
+        {
+          "document_id": "p1-d09",
+          "sha256": "c5d8e34aaa138debbd52718465cd05696de18fd47eb26ef57caacb57f2bd38fb",
+          "pdf_page": 11,
+          "title": "Multi-Agent & Kết Nối Hệ Thống",
+          "locator": "Physical PDF page 11; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p1-d10-q03",
+      "previous_revision": 2,
+      "revision": 3,
+      "before": "Những tín hiệu nào cần xét cho chunk được truy xuất theo slide? (Chọn tất cả đáp án đúng.)",
+      "after": "Những tín hiệu nào cần xét khi đánh giá một chunk được truy xuất? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/phase1-remaining.json",
+      "source_reference": [
+        {
+          "document_id": "p1-d10",
+          "sha256": "80829f856297080f140ecb28adfd95f0d27179de1660b3315e38bcb4be16e694",
+          "pdf_page": 5,
+          "title": "Data Pipeline & Data Observability",
+          "locator": "Physical PDF page 5; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p1-d11-q01",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Cặp kiểm soát nào được slide đặt trong output guardrail pipeline?",
+      "after": "Cặp kiểm soát nào giúp lọc nội dung và kiểm chứng căn cứ của đầu ra trong output guardrail pipeline?",
+      "draft_path": "data/questions/drafts/pilot-001.json",
+      "source_reference": [
+        {
+          "document_id": "p1-d11",
+          "sha256": "04c49100a4cb70af31bc8b7818d814c940f16ef480368339ffcbc95ec6081803",
+          "pdf_page": 5,
+          "title": "Guardrails, HITL & Responsible AI",
+          "locator": "Physical PDF page 5; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p1-d11-q03",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Slide đề xuất chọn điểm escalation chỉ từ confidence score của model, không cần xét rủi ro và khả năng hoàn tác.",
+      "after": "Có thể chọn điểm chuyển xử lý cho con người chỉ từ confidence score của model, không cần xét rủi ro và khả năng hoàn tác.",
+      "draft_path": "data/questions/drafts/pilot-001.json",
+      "source_reference": [
+        {
+          "document_id": "p1-d11",
+          "sha256": "04c49100a4cb70af31bc8b7818d814c940f16ef480368339ffcbc95ec6081803",
+          "pdf_page": 4,
+          "title": "Guardrails, HITL & Responsible AI",
+          "locator": "Physical PDF page 4; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p1-d12-q03",
+      "previous_revision": 2,
+      "revision": 3,
+      "before": "Những mục nào nằm trong deployment checklist của slide? (Chọn tất cả đáp án đúng.)",
+      "after": "Những mục nào cần kiểm tra trước khi triển khai ứng dụng AI? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/phase1-remaining.json",
+      "source_reference": [
+        {
+          "document_id": "p1-d12",
+          "sha256": "eee97925592e858d63163ab40db88fb93100e35606412ade8f6a21aa2142b8aa",
+          "pdf_page": 10,
+          "title": "Deployment — Đưa Agent Lên Cloud",
+          "locator": "Physical PDF page 10; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p1-d13-q02",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Monitoring được slide mô tả là theo dõi các câu hỏi và failure mode đã biết trước.",
+      "after": "Monitoring tập trung theo dõi các câu hỏi và failure mode đã biết trước.",
+      "draft_path": "data/questions/drafts/phase1-remaining.json",
+      "source_reference": [
+        {
+          "document_id": "p1-d13",
+          "sha256": "8995a58726b43d4f4c0f67c660087205328c5d654d7a6a894c8bcfb1003ae96f",
+          "pdf_page": 9,
+          "title": "Monitoring, Logging & Observability",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p1-d13-q03",
+      "previous_revision": 2,
+      "revision": 3,
+      "before": "Những loại telemetry nào được nêu để hỗ trợ observability? (Chọn tất cả đáp án đúng.)",
+      "after": "Những loại telemetry nào hỗ trợ observability? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/phase1-remaining.json",
+      "source_reference": [
+        {
+          "document_id": "p1-d13",
+          "sha256": "8995a58726b43d4f4c0f67c660087205328c5d654d7a6a894c8bcfb1003ae96f",
+          "pdf_page": 9,
+          "title": "Monitoring, Logging & Observability",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p1-d14-q01",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Vì sao accuracy đơn lẻ chưa đủ để đánh giá LLM/agent theo slide?",
+      "after": "Vì sao accuracy đơn lẻ chưa đủ để đánh giá LLM hoặc agent?",
+      "draft_path": "data/questions/drafts/pilot-001.json",
+      "source_reference": [
+        {
+          "document_id": "p1-d14",
+          "sha256": "289c3c8ca8e63d8f0eb71be1822bd1149213ac29ff648f0722439ff1dcfd53af",
+          "pdf_page": 6,
+          "title": "AI Evaluation & Benchmarking",
+          "locator": "Physical PDF page 6; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p1-d14-q02",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Nguyên tắc nào của evaluation được slide nhấn mạnh? (Chọn tất cả đáp án đúng.)",
+      "after": "Những nguyên tắc nào giúp thiết kế evaluation có ích cho hệ thống AI? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/pilot-001.json",
+      "source_reference": [
+        {
+          "document_id": "p1-d14",
+          "sha256": "289c3c8ca8e63d8f0eb71be1822bd1149213ac29ff648f0722439ff1dcfd53af",
+          "pdf_page": 7,
+          "title": "AI Evaluation & Benchmarking",
+          "locator": "Physical PDF page 7; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p1-d15-q01",
+      "previous_revision": 2,
+      "revision": 3,
+      "before": "Nhóm có GPU server và ưu tiên inference throughput cao. Công cụ nào được slide gợi ý?",
+      "after": "Một nhóm có GPU server và ưu tiên inference throughput cao. Công cụ serving nào phù hợp?",
+      "draft_path": "data/questions/drafts/phase1-remaining.json",
+      "source_reference": [
+        {
+          "document_id": "p1-d15",
+          "sha256": "58007c609954673decc7bdb3a0c7f5dc0cbeabb57c7dd27e7c3806f2c469b694",
+          "pdf_page": 11,
+          "title": "Triển Khai Thực Tế, Chi Phí Vận Hành & Định Hướng Chuyên Sâu",
+          "locator": "Physical PDF page 11; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p1-d15-q02",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Slide mô tả Ollama phù hợp cho dev, demo và edge deployment với thiết lập đơn giản.",
+      "after": "Ollama phù hợp cho phát triển, demo và triển khai ở edge nhờ thiết lập đơn giản.",
+      "draft_path": "data/questions/drafts/phase1-remaining.json",
+      "source_reference": [
+        {
+          "document_id": "p1-d15",
+          "sha256": "58007c609954673decc7bdb3a0c7f5dc0cbeabb57c7dd27e7c3806f2c469b694",
+          "pdf_page": 11,
+          "title": "Triển Khai Thực Tế, Chi Phí Vận Hành & Định Hướng Chuyên Sâu",
+          "locator": "Physical PDF page 11; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t1-d01-q01",
+      "previous_revision": 2,
+      "revision": 3,
+      "before": "Slide so sánh AI PM với ship-and-forget. Sau khi ship sản phẩm AI, chu trình nào cần tiếp tục?",
+      "after": "Sau khi phát hành sản phẩm AI, chu trình nào cần tiếp tục để duy trì chất lượng?",
+      "draft_path": "data/questions/drafts/track1.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d01",
+          "sha256": "b27cad14297b4df6a5302360dbf4d2fe3b835b5fc48cdc14ab24511ffde0cc80",
+          "pdf_page": 28,
+          "title": "AI Product Manager",
+          "locator": "Physical PDF page 28; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t1-d01-q02",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Theo slide, một sản phẩm AI sẽ chạy đúng thiết kế mãi mãi sau lần ship đầu tiên.",
+      "after": "Một sản phẩm AI sẽ chạy đúng thiết kế mãi mãi sau lần phát hành đầu tiên.",
+      "draft_path": "data/questions/drafts/track1.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d01",
+          "sha256": "b27cad14297b4df6a5302360dbf4d2fe3b835b5fc48cdc14ab24511ffde0cc80",
+          "pdf_page": 28,
+          "title": "AI Product Manager",
+          "locator": "Physical PDF page 28; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t1-d01-q03",
+      "previous_revision": 2,
+      "revision": 3,
+      "before": "Những hoạt động nào được nêu trong vòng lặp sau ship? (Chọn tất cả đáp án đúng.)",
+      "after": "Những hoạt động nào cần tiếp tục trong vòng lặp cải tiến sau khi phát hành sản phẩm AI? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/track1.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d01",
+          "sha256": "b27cad14297b4df6a5302360dbf4d2fe3b835b5fc48cdc14ab24511ffde0cc80",
+          "pdf_page": 28,
+          "title": "AI Product Manager",
+          "locator": "Physical PDF page 28; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t1-d02-q01",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Trong ví dụ Grab giả định, push notification khi tài xế đến thuộc loại nào?",
+      "after": "Một ứng dụng gọi xe gửi push notification khi tài xế đến điểm đón. Push notification này là output hay outcome của sản phẩm?",
+      "draft_path": "data/questions/drafts/track1.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d02",
+          "sha256": "fa4ca552c4891545ba2b950767e104db3af401b39ddd7252da5e181c40dbc1de",
+          "pdf_page": 9,
+          "title": "Product Discovery",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t1-d02-q02",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Theo slide, tạo được push notification đồng nghĩa đã đo được tài xế chờ ít hơn.",
+      "after": "Tạo được push notification đồng nghĩa đã đo được kết quả tài xế chờ ít hơn.",
+      "draft_path": "data/questions/drafts/track1.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d02",
+          "sha256": "fa4ca552c4891545ba2b950767e104db3af401b39ddd7252da5e181c40dbc1de",
+          "pdf_page": 9,
+          "title": "Product Discovery",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t1-d03-q02",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Slide khuyên đưa cả nhắc AI, thanh tiến độ và huy hiệu vào một thử nghiệm để biết chính xác tác động từng phần.",
+      "after": "Đưa cả nhắc AI, thanh tiến độ và huy hiệu vào cùng một biến thể thử nghiệm sẽ cho biết chính xác tác động riêng của từng thành phần.",
+      "draft_path": "data/questions/drafts/track1.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d03",
+          "sha256": "30520c1451934d8353c7c56e6dbff101859998742b1ce2b59e57ba77e9e5274c",
+          "pdf_page": 10,
+          "title": "Design the Experiment",
+          "locator": "Physical PDF page 10; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t1-d04-q01",
+      "previous_revision": 3,
+      "revision": 4,
+      "before": "Khi bắt đầu quy trình evaluation cho một sản phẩm AI, dữ liệu nên lấy từ đâu?",
+      "after": "Một sản phẩm AI đã có lưu lượng sử dụng thực tế và phản hồi của người dùng. Khi bắt đầu evaluation để tìm lỗi, dữ liệu nên lấy từ đâu?",
+      "draft_path": "data/questions/drafts/track1.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d04",
+          "sha256": "031f06753bd77508a5dfb3d84c799dd5928678a8b7e8b689b0d9a3518eb7d6e5",
+          "pdf_page": 10,
+          "title": "AI Evaluation",
+          "locator": "Physical PDF page 10; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t1-d04-q02",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Slide ưu tiên quality hơn quantity khi human label failures.",
+      "after": "Khi con người gán nhãn các trường hợp thất bại để cải thiện AI, nên ưu tiên chất lượng nhãn hơn số lượng.",
+      "draft_path": "data/questions/drafts/track1.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d04",
+          "sha256": "031f06753bd77508a5dfb3d84c799dd5928678a8b7e8b689b0d9a3518eb7d6e5",
+          "pdf_page": 10,
+          "title": "AI Evaluation",
+          "locator": "Physical PDF page 10; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t1-d04-q03",
+      "previous_revision": 2,
+      "revision": 3,
+      "before": "Những việc nào thuộc vòng lặp eval được nêu? (Chọn tất cả đáp án đúng.)",
+      "after": "Những việc nào thuộc vòng lặp evaluation và cải tiến chất lượng AI? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/track1.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d04",
+          "sha256": "031f06753bd77508a5dfb3d84c799dd5928678a8b7e8b689b0d9a3518eb7d6e5",
+          "pdf_page": 10,
+          "title": "AI Evaluation",
+          "locator": "Physical PDF page 10; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t1-d07-q02",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Mô hình hybrid trong slide gồm phí gói cơ bản và trả thêm khi vượt usage cho phép.",
+      "after": "Một mô hình định giá hybrid có thể gồm phí gói cơ bản và khoản trả thêm khi vượt mức sử dụng cho phép.",
+      "draft_path": "data/questions/drafts/track1.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d07",
+          "sha256": "81f32bf83172309a847edc5fea6e48957435d617ceeaef46aef13dee3ee5e3fc",
+          "pdf_page": 12,
+          "title": "AI Financial Modeling & ROI",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t1-d07-q03",
+      "previous_revision": 2,
+      "revision": 3,
+      "before": "Những mục tiêu nào của hybrid pricing được slide nêu? (Chọn tất cả đáp án đúng.)",
+      "after": "Định giá hybrid kết hợp phí gói và phí vượt mức sử dụng nhằm những mục tiêu nào? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/track1.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d07",
+          "sha256": "81f32bf83172309a847edc5fea6e48957435d617ceeaef46aef13dee3ee5e3fc",
+          "pdf_page": 12,
+          "title": "AI Financial Modeling & ROI",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t1-d08-q01",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Cost/Job trong slide là gì?",
+      "after": "Chỉ số Cost/Job dùng để đo điều gì?",
+      "draft_path": "data/questions/drafts/track1.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d08",
+          "sha256": "878a68770e5b3b9f4353c2d16cb0a0c2245d42535f950773b405986950364731",
+          "pdf_page": 9,
+          "title": "Từ sản phẩm chạy được đến sản phẩm bán được",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t1-d08-q03",
+      "previous_revision": 2,
+      "revision": 3,
+      "before": "Những khoản nào được đưa vào Cost/Job trên slide? (Chọn tất cả đáp án đúng.)",
+      "after": "Những khoản nào cần tính khi xác định Cost/Job của ứng dụng AI? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/track1.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d08",
+          "sha256": "878a68770e5b3b9f4353c2d16cb0a0c2245d42535f950773b405986950364731",
+          "pdf_page": 9,
+          "title": "Từ sản phẩm chạy được đến sản phẩm bán được",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t1-d09-q01",
+      "previous_revision": 3,
+      "revision": 4,
+      "before": "Luật xử lý chỉ số nào đủ cụ thể theo khuôn của slide?",
+      "after": "Quy tắc phản ứng với chỉ số nào đủ cụ thể để đội vận hành thực thi?",
+      "draft_path": "data/questions/drafts/track1.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d09",
+          "sha256": "49deccce776f13846f1a85b32ba2e0c575df17a1be7463296b22fe1afecd25f6",
+          "pdf_page": 12,
+          "title": "Đèn nào bật trước?",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t1-d11-q03",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Những ghép nối nào đúng theo slide ADKAR? (Chọn tất cả đáp án đúng.)",
+      "after": "Những ghép nối nào đúng với mô hình ADKAR? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/track1.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t1-d11",
+          "sha256": "30aee39a75df1ce3cac52db0855468d0db2968ea863138b03881b46ad3f933d7",
+          "pdf_page": 12,
+          "title": "AI Adoption & Change Management",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t2-d01-q01",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Theo bảng cloud workload, nhóm muốn prototype nhanh bằng pay-per-token và không quản trị hạ tầng nên chọn lớp nào?",
+      "after": "Một nhóm muốn làm prototype nhanh với cách tính phí theo token và không quản trị hạ tầng. Nên chọn lớp dịch vụ cloud nào?",
+      "draft_path": "data/questions/drafts/track2.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d01",
+          "sha256": "08e687db8c13d158e5ece9eabc7686b27328450e91f47a2b0548d6900d02fd0d",
+          "pdf_page": 11,
+          "title": "Cloud Infrastructure for AI",
+          "locator": "Physical PDF page 11; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t2-d01-q02",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Trong shared responsibility của slide, những việc nào thuộc team triển khai? (Chọn tất cả đáp án đúng.)",
+      "after": "Trong mô hình trách nhiệm chia sẻ khi triển khai AI trên cloud, những việc nào thuộc đội triển khai? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/track2.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d01",
+          "sha256": "08e687db8c13d158e5ece9eabc7686b27328450e91f47a2b0548d6900d02fd0d",
+          "pdf_page": 12,
+          "title": "Cloud Infrastructure for AI",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t2-d01-q03",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Training bằng IaaS, serving bằng PaaS và prototype bằng AI-aaS có thể cùng tồn tại trong cách tiếp cận hybrid của slide.",
+      "after": "Một hệ thống có thể kết hợp training bằng IaaS, serving bằng PaaS và làm prototype bằng AI-aaS.",
+      "draft_path": "data/questions/drafts/track2.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d01",
+          "sha256": "08e687db8c13d158e5ece9eabc7686b27328450e91f47a2b0548d6900d02fd0d",
+          "pdf_page": 11,
+          "title": "Cloud Infrastructure for AI",
+          "locator": "Physical PDF page 11; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t2-d03-q01",
+      "previous_revision": 2,
+      "revision": 3,
+      "before": "Một use case được chấm đa số tiêu chí Agentic Fit chỉ ở mức 1–2/5. Theo slide nên bắt đầu thế nào?",
+      "after": "Một use case được chấm đa số tiêu chí Agentic Fit chỉ ở mức 1–2/5. Nên bắt đầu triển khai thế nào?",
+      "draft_path": "data/questions/drafts/track2.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d03",
+          "sha256": "1310041948b937027486fc2b38b214f215135c081bba46a81e51a66aaf16b4f4",
+          "pdf_page": 11,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 11; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t2-d03-q02",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Những tình huống nào là dấu hiệu chưa nên mở agent loop theo slide? (Chọn tất cả đáp án đúng.)",
+      "after": "Những tình huống nào là dấu hiệu chưa nên sử dụng agent loop? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/track2.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d03",
+          "sha256": "1310041948b937027486fc2b38b214f215135c081bba46a81e51a66aaf16b4f4",
+          "pdf_page": 13,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 13; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t2-d03-q03",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Nguyên tắc của slide là benchmark rule/workflow/chatbot trước khi chọn agent loop.",
+      "after": "Trước khi chọn agent loop, nên benchmark các giải pháp rule, workflow hoặc chatbot đơn giản hơn.",
+      "draft_path": "data/questions/drafts/track2.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d03",
+          "sha256": "1310041948b937027486fc2b38b214f215135c081bba46a81e51a66aaf16b4f4",
+          "pdf_page": 13,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 13; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t2-d04-q01",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Phát biểu nào mô tả đúng FAISS theo slide?",
+      "after": "Phát biểu nào mô tả đúng FAISS?",
+      "draft_path": "data/questions/drafts/track2.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d04",
+          "sha256": "ab1addcbb57bccdaec49531fbe6ffdbd47c7676feb7ec2d142a4294af39603b5",
+          "pdf_page": 13,
+          "title": "Vector Store & Feature Store",
+          "locator": "Physical PDF page 13; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t2-d04-q02",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Những ghép nối index–đặc tính nào đúng theo bảng? (Chọn tất cả đáp án đúng.)",
+      "after": "Những ghép nối giữa loại vector index và đặc tính nào là đúng? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/track2.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d04",
+          "sha256": "ab1addcbb57bccdaec49531fbe6ffdbd47c7676feb7ec2d142a4294af39603b5",
+          "pdf_page": 16,
+          "title": "Vector Store & Feature Store",
+          "locator": "Physical PDF page 16; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t2-d04-q03",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Theo bảng, lựa chọn nào đáng đánh giá đầu tiên và vì sao?",
+      "after": "Lựa chọn vector index nào đáng đánh giá đầu tiên cho hệ thống này và vì sao?",
+      "draft_path": "data/questions/drafts/track2.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d04",
+          "sha256": "ab1addcbb57bccdaec49531fbe6ffdbd47c7676feb7ec2d142a4294af39603b5",
+          "pdf_page": 16,
+          "title": "Vector Store & Feature Store",
+          "locator": "Physical PDF page 16; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t2-d05-q02",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Những mô tả nào đúng theo slide speculative decoding/batching? (Chọn tất cả đáp án đúng.)",
+      "after": "Những mô tả nào đúng về speculative decoding và batching? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/track2.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d05",
+          "sha256": "b79a2890992731b7b4992f8f3f0d9ca1c495a71a11958ea93302021c8bdb174f",
+          "pdf_page": 12,
+          "title": "Model Serving & Inference Optimization",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t2-d07-q01",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Những thành phần nào nằm trong prompt artifact/context bundle theo slide? (Chọn tất cả đáp án đúng.)",
+      "after": "Những thành phần nào cần quản lý trong prompt artifact và context bundle? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/track2.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d07",
+          "sha256": "4cef91986bf420b28ac78af115a4d474dd649ab7e2b2823b02189f21aca374e5",
+          "pdf_page": 12,
+          "title": "LLMOps & Prompt Versioning",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t2-d08-q02",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Những điều kiện nào phù hợp hướng active-passive trong bảng? (Chọn tất cả đáp án đúng.)",
+      "after": "Những điều kiện nào phù hợp để chọn kiến trúc active-passive? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/track2.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d08",
+          "sha256": "5a6d46fb1e8e04560f76755a26c2588f83fa3fe86a9e2dbf8895c6383341d352",
+          "pdf_page": 16,
+          "title": "Disaster Recovery & High Availability cho AI Infrastructure",
+          "locator": "Physical PDF page 16; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t2-d10-q01",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Theo thiết kế proxy trong tài liệu, đưa method/tool name ra header giúp gateway làm gì?",
+      "after": "Một proxy đưa method hoặc tool name vào HTTP header. Thiết kế này giúp gateway thực hiện việc gì?",
+      "draft_path": "data/questions/drafts/track2.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d10",
+          "sha256": "fb0704ab555d61d3087352c077ef9abd3e28f00eb0744b46f00e7a316b84f35f",
+          "pdf_page": 14,
+          "title": "MCP/A2A Infrastructure & Agentic Routing",
+          "locator": "Physical PDF page 14; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t2-d10-q02",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Những năng lực vận hành nào được tài liệu nêu cho lớp gateway MCP? (Chọn tất cả đáp án đúng.)",
+      "after": "Lớp gateway MCP có thể cung cấp những năng lực vận hành nào? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/track2.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d10",
+          "sha256": "fb0704ab555d61d3087352c077ef9abd3e28f00eb0744b46f00e7a316b84f35f",
+          "pdf_page": 15,
+          "title": "MCP/A2A Infrastructure & Agentic Routing",
+          "locator": "Physical PDF page 15; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t2-d11-q03",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Theo quy tắc của slide, training nên chuẩn hóa so sánh chi phí theo$/job thay vì chỉ$/GPU-hour.",
+      "after": "Khi so sánh chi phí training giữa các cấu hình, nên dùng chi phí mỗi job thay vì chỉ nhìn chi phí mỗi GPU-hour.",
+      "draft_path": "data/questions/drafts/track2.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d11",
+          "sha256": "e5a955292e747e74a3a788a06aa5851a81ccc4e07222b89e19e38afa99b5c550",
+          "pdf_page": 9,
+          "title": "GPU FinOps & Cost Optimization",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t2-d12-q02",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Những ghép nối nào đúng trong bảng Rules vs Anomaly Detection? (Chọn tất cả đáp án đúng.)",
+      "after": "Những ghép nối nào đúng khi so sánh rules với anomaly detection trong kiểm tra chất lượng dữ liệu? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/track2.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t2-d12",
+          "sha256": "077bbb140ad732c33cee87382d0b0cc93d22f9d7070775b0c84589d44617854f",
+          "pdf_page": 13,
+          "title": "Data Observability & Lineage cho hệ thống Data/AI",
+          "locator": "Physical PDF page 13; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t3-d01-q02",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Những nội dung nào nên lưu trong reflection memory theo slide? (Chọn tất cả đáp án đúng.)",
+      "after": "Những nội dung nào nên lưu trong reflection memory? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/track3.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d01",
+          "sha256": "1352af02371ea4f5e189e00b925ba94b55c176646e671eb5a6bcf81dc9955542",
+          "pdf_page": 16,
+          "title": "Advanced Agent Architectures",
+          "locator": "Physical PDF page 16; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t3-d02-q01",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Agent cần truy xuất tri thức domain qua embeddings/vector DB. Loại memory nào khớp mô hình trong slide?",
+      "after": "Agent cần truy xuất tri thức domain qua embeddings và vector database. Loại memory nào phù hợp?",
+      "draft_path": "data/questions/drafts/track3.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d02",
+          "sha256": "70e5349ebe96578fa34667a55b45d1bd70b92474684c27c0ad141d68dbba2735",
+          "pdf_page": 11,
+          "title": "Memory Systems for Agents",
+          "locator": "Physical PDF page 11; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t3-d02-q02",
+      "previous_revision": 2,
+      "revision": 3,
+      "before": "Những bước nào thuộc quy trình quản lý memory của agent? (Chọn tất cả đáp án đúng.)",
+      "after": "Một agent quản lý memory với giới hạn token và chỉ ghi dữ liệu dài hạn sau khi task hoàn tất. Những bước nào phù hợp với quy trình này? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/track3.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d02",
+          "sha256": "70e5349ebe96578fa34667a55b45d1bd70b92474684c27c0ad141d68dbba2735",
+          "pdf_page": 14,
+          "title": "Memory Systems for Agents",
+          "locator": "Physical PDF page 14; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t3-d02-q03",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Khi long-term fact mâu thuẫn thông tin short-term mới hơn, lưu ý của slide là ưu tiên recency và flag để review.",
+      "after": "Khi thông tin dài hạn mâu thuẫn với thông tin ngắn hạn mới hơn, có thể ưu tiên tính mới và đánh dấu xung đột để review.",
+      "draft_path": "data/questions/drafts/track3.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d02",
+          "sha256": "70e5349ebe96578fa34667a55b45d1bd70b92474684c27c0ad141d68dbba2735",
+          "pdf_page": 14,
+          "title": "Memory Systems for Agents",
+          "locator": "Physical PDF page 14; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t3-d03-q01",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Hierarchical retrieval trong ví dụ xử lý trade-off chunk nhỏ/chunk lớn thế nào?",
+      "after": "Hierarchical retrieval giải quyết sự đánh đổi giữa chunk nhỏ và chunk lớn như thế nào?",
+      "draft_path": "data/questions/drafts/track3.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d03",
+          "sha256": "7257c0aa57a2b625e17ab2e588105428045d79ded9c763b7c3b4c6e8809982d8",
+          "pdf_page": 13,
+          "title": "Production RAG",
+          "locator": "Physical PDF page 13; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t3-d03-q02",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Những mô tả nào đúng về late chunking trong slide? (Chọn tất cả đáp án đúng.)",
+      "after": "Những mô tả nào đúng về late chunking? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/track3.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d03",
+          "sha256": "7257c0aa57a2b625e17ab2e588105428045d79ded9c763b7c3b4c6e8809982d8",
+          "pdf_page": 14,
+          "title": "Production RAG",
+          "locator": "Physical PDF page 14; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t3-d04-q02",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Những mô tả nào khớp bảng property graph/RDF? (Chọn tất cả đáp án đúng.)",
+      "after": "Những mô tả nào đúng khi so sánh property graph với RDF? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/track3.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d04",
+          "sha256": "d5bc2aee10e46b2073e1cb2dac8cd2bb00590e2019a90cacd40b4505181b9c1b",
+          "pdf_page": 17,
+          "title": "GraphRAG & Knowledge Graphs",
+          "locator": "Physical PDF page 17; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t3-d05-q01",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Routing có thể tiết kiệm cost nhưng điểm dễ làm giảm chất lượng nào được slide cảnh báo?",
+      "after": "Routing có thể tiết kiệm chi phí, nhưng sai sót nào trong routing dễ làm giảm chất lượng kết quả?",
+      "draft_path": "data/questions/drafts/track3.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d05",
+          "sha256": "371dcc7e89175afc6aa4190f3fe17cddae14a1cd5f207ac766e272758e933c07",
+          "pdf_page": 13,
+          "title": "Multi-Agent Systems",
+          "locator": "Physical PDF page 13; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t3-d05-q03",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Kiến trúc supervisor trên slide cho mỗi worker một node riêng với tools riêng.",
+      "after": "Trong kiến trúc supervisor dạng graph, mỗi worker có thể được tổ chức thành một node với bộ tools riêng.",
+      "draft_path": "data/questions/drafts/track3.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d05",
+          "sha256": "371dcc7e89175afc6aa4190f3fe17cddae14a1cd5f207ac766e272758e933c07",
+          "pdf_page": 15,
+          "title": "Multi-Agent Systems",
+          "locator": "Physical PDF page 15; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t3-d06-q02",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Những mô tả nào đúng về LoRA theo hình trên slide? (Chọn tất cả đáp án đúng.)",
+      "after": "Những mô tả nào đúng về cơ chế LoRA? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/track3.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d06",
+          "sha256": "26756bbc02660c63316074dd86a606aa14e2b560af188fca206a8b7c623a8553",
+          "pdf_page": 17,
+          "title": "Fine-tuning LLMs — Từ Full Fine-tune đến LoRA/QLoRA",
+          "locator": "Physical PDF page 17; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t3-d09-q02",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Những bước nào thuộc cơ chế Faithfulness trên slide? (Chọn tất cả đáp án đúng.)",
+      "after": "Những bước nào dùng để tính Faithfulness dựa trên các factual claim và context? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/track3.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d09",
+          "sha256": "4ce70cfb527b720e420f8b4798b8bdf06594c8c44dffd14c68be38bf7351e909",
+          "pdf_page": 17,
+          "title": "RAGAS, LLM-as-Judge & Guardrails",
+          "locator": "Physical PDF page 17; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t3-d09-q03",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Tính Faithfulness theo cơ chế slide và giải thích giới hạn của kết luận.",
+      "after": "Tính Faithfulness bằng tỷ lệ factual claim được context hỗ trợ và giải thích giới hạn của kết luận.",
+      "draft_path": "data/questions/drafts/track3.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d09",
+          "sha256": "4ce70cfb527b720e420f8b4798b8bdf06594c8c44dffd14c68be38bf7351e909",
+          "pdf_page": 17,
+          "title": "RAGAS, LLM-as-Judge & Guardrails",
+          "locator": "Physical PDF page 17; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t3-d10-q02",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Những kiểm soát nào cần cho semantic response cache theo slide? (Chọn tất cả đáp án đúng.)",
+      "after": "Những kiểm soát nào cần cho semantic response cache? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/track3.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d10",
+          "sha256": "8eedb050729d509fcba099e1b5bba2b1c837f82af5531c976ecdc2bf2df5982a",
+          "pdf_page": 17,
+          "title": "Circuit Breakers, Caching & Reliability for Production Agents",
+          "locator": "Physical PDF page 17; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t3-d11-q03",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Trong bảng primitives, Prompt là template tái sử dụng do user chọn, khác Tool là function mà LLM quyết định gọi.",
+      "after": "Trong MCP, Prompt là template tái sử dụng do người dùng chọn, khác Tool là function mà LLM quyết định gọi.",
+      "draft_path": "data/questions/drafts/track3.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d11",
+          "sha256": "566680634b00ed5a187c0fb5d63a903e97fa376587d96bdcc87ca3909bc6e61a",
+          "pdf_page": 10,
+          "title": "Model Context Protocol (MCP)",
+          "locator": "Physical PDF page 10; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t3-d13-q01",
+      "previous_revision": 2,
+      "revision": 3,
+      "before": "Những chiều nào thuộc holistic system evaluation của slide? (Chọn tất cả đáp án đúng.)",
+      "after": "Những chiều nào cần xét khi đánh giá toàn diện một hệ thống agent? (Chọn tất cả đáp án đúng.)",
+      "draft_path": "data/questions/drafts/track3.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d13",
+          "sha256": "6a22af53d1a77046e98dfbd51b270eff5ce7b68d6003e61bb27ba0e5aac125d3",
+          "pdf_page": 12,
+          "title": "Workshop Tổng Hợp — Full Production Agent System",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d01-q03",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Theo slide, kỹ thuật nào phù hợp để xử lý gradient bùng nổ?",
+      "after": "Kỹ thuật nào phù hợp để xử lý gradient bùng nổ?",
+      "draft_path": "data/questions/drafts/root-track4.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 45,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d01-q04",
+      "previous_revision": 2,
+      "revision": 3,
+      "before": "AdamW tách weight decay khỏi gradient, khác cách cộng L2 vào gradient trong Adam khi không bật decoupled weight decay.",
+      "after": "Trong AdamW, weight decay được tách khỏi bước cập nhật theo gradient, thay vì cộng hạng L2 vào gradient.",
+      "draft_path": "data/questions/drafts/root-track4.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 81,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d02-q03",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Chọn các mô tả đúng về multi-head attention trong slide.",
+      "after": "Chọn các mô tả đúng về multi-head attention.",
+      "draft_path": "data/questions/drafts/root-track4.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d02",
+          "sha256": "58895651f776ef9fb62c9010d0c0c7b338849ea96e4a5dcbbe46b7afb77110b7",
+          "pdf_page": 32,
+          "title": "Kiến Trúc Mạng Cho Thị Giác Máy Tính",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d03-q03",
+      "previous_revision": 2,
+      "revision": 3,
+      "before": "Slide nêu những vai trò nào của IoU? Chọn tất cả đáp án đúng.",
+      "after": "IoU có những vai trò nào trong phát hiện đối tượng? Chọn tất cả đáp án đúng.",
+      "draft_path": "data/questions/drafts/root-track4.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d03",
+          "sha256": "bbc8de22523a77f295328ce15328e0d811a078152b75e9d6cedd159dc45e739e",
+          "pdf_page": 14,
+          "title": "2D Perception: Detection · Segmentation · Keypoints",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d03-q04",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Trong kiến trúc YOLO26 minh họa trên slide, head one-to-one có thể suy luận không cần NMS.",
+      "after": "Trong kiến trúc YOLO26, head one-to-one có thể suy luận không cần NMS.",
+      "draft_path": "data/questions/drafts/root-track4.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d03",
+          "sha256": "bbc8de22523a77f295328ce15328e0d811a078152b75e9d6cedd159dc45e739e",
+          "pdf_page": 24,
+          "title": "2D Perception: Detection · Segmentation · Keypoints",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d05-q04",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Theo slide, khi hàm cong mạnh hoặc độ bất định lớn, xấp xỉ của EKF có thể lệch cả trung bình lẫn độ rộng phân phối.",
+      "after": "Khi hàm cong mạnh hoặc độ bất định lớn, xấp xỉ của EKF có thể lệch cả trung bình lẫn độ rộng phân phối.",
+      "draft_path": "data/questions/drafts/root-track4.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 31,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d08-q02",
+      "previous_revision": 2,
+      "revision": 3,
+      "before": "Chọn mô tả phù hợp với nhánh top-down/query attention trên slide.",
+      "after": "Chọn mô tả phù hợp với nhánh top-down sử dụng query attention để tạo đặc trưng BEV.",
+      "draft_path": "data/questions/drafts/root-track4.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d08",
+          "sha256": "0717147c9cedbe8d638ac82013e9c382ecaf338ccb6f379dd907591722d9cef7",
+          "pdf_page": 16,
+          "title": "3D từ Camera, BEV & Sensor Fusion",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d08-q03",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Với tọa độ ảnh (u,v), depth z và ma trận nội tại K, công thức giải mã tọa độ camera trên slide là gì?",
+      "after": "Với tọa độ ảnh (u,v), depth z và ma trận nội tại K, công thức khôi phục tọa độ camera là gì?",
+      "draft_path": "data/questions/drafts/root-track4.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d08",
+          "sha256": "0717147c9cedbe8d638ac82013e9c382ecaf338ccb6f379dd907591722d9cef7",
+          "pdf_page": 9,
+          "title": "3D từ Camera, BEV & Sensor Fusion",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d08-q04",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Có thể coi biểu đồ NDS camera/LiDAR trên slide là bảng xếp hạng công bằng tuyệt đối giữa mọi model dù backbone và dữ liệu bổ sung khác nhau.",
+      "after": "Có thể coi việc so sánh NDS giữa các model camera và LiDAR là một bảng xếp hạng công bằng tuyệt đối, dù backbone và dữ liệu bổ sung khác nhau.",
+      "draft_path": "data/questions/drafts/root-track4.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d08",
+          "sha256": "0717147c9cedbe8d638ac82013e9c382ecaf338ccb6f379dd907591722d9cef7",
+          "pdf_page": 19,
+          "title": "3D từ Camera, BEV & Sensor Fusion",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d10-q01",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Đầu ra đặc trưng của VLA cho robot trong sơ đồ slide là gì?",
+      "after": "Đầu ra đặc trưng của mô hình VLA dành cho robot là gì?",
+      "draft_path": "data/questions/drafts/root-track4.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d10",
+          "sha256": "763149a983add6ef60fee2fafb6f2caec98576b6afb2e1eca01f5c532cf78e2e",
+          "pdf_page": 39,
+          "title": "Vision–Language Model và VLA",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d10-q02",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Ở giai đoạn alignment Qwen3-VL được minh họa, thành phần nào được cập nhật trong khi ViT và LLM đóng băng?",
+      "after": "Trong giai đoạn alignment của Qwen3-VL khi ViT và LLM được đóng băng, thành phần nào được cập nhật?",
+      "draft_path": "data/questions/drafts/root-track4.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d10",
+          "sha256": "763149a983add6ef60fee2fafb6f2caec98576b6afb2e1eca01f5c532cf78e2e",
+          "pdf_page": 19,
+          "title": "Vision–Language Model và VLA",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d10-q03",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Theo slide, những yếu tố nào quyết định số token ảnh?",
+      "after": "Những yếu tố nào quyết định số token ảnh khi mã hóa đầu vào cho mô hình thị giác–ngôn ngữ?",
+      "draft_path": "data/questions/drafts/root-track4.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d10",
+          "sha256": "763149a983add6ef60fee2fafb6f2caec98576b6afb2e1eca01f5c532cf78e2e",
+          "pdf_page": 8,
+          "title": "Vision–Language Model và VLA",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d10-q04",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "CLIP được slide mô tả là học tương phản trên cặp ảnh–văn bản.",
+      "after": "CLIP học tương phản trên các cặp ảnh–văn bản.",
+      "draft_path": "data/questions/drafts/root-track4.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d10",
+          "sha256": "763149a983add6ef60fee2fafb6f2caec98576b6afb2e1eca01f5c532cf78e2e",
+          "pdf_page": 7,
+          "title": "Vision–Language Model và VLA",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d11-q01",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Slide tách sim2real gap thành những nhóm nào?",
+      "after": "Những nhóm sai khác nào có thể gây ra sim2real gap?",
+      "draft_path": "data/questions/drafts/root-track4.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d11",
+          "sha256": "9f2b8b0d84e67d71598eaa2f2a7d0d186567c3ee10171dcf5213e4d62a492b46",
+          "pdf_page": 15,
+          "title": "Synthetic, Simulated & Trajectory Data",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d11-q02",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Nhận xét nào đúng về phạm vi domain randomization theo phần tổng kết?",
+      "after": "Nhận xét nào đúng về phạm vi của domain randomization?",
+      "draft_path": "data/questions/drafts/root-track4.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d11",
+          "sha256": "9f2b8b0d84e67d71598eaa2f2a7d0d186567c3ee10171dcf5213e4d62a492b46",
+          "pdf_page": 23,
+          "title": "Synthetic, Simulated & Trajectory Data",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d12-q01",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Những thông tin nào được nêu trong thẻ lần chạy để tái tạo log replay?",
+      "after": "Cần lưu những thông tin nào để tái tạo một lần chạy log replay?",
+      "draft_path": "data/questions/drafts/root-track4.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 17,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "verification": "needs_review"
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d12-q03",
+      "previous_revision": 1,
+      "revision": 2,
+      "before": "Theo ví dụ TTC của slide, khoảng cách 12 m và tốc độ tiến gần 5 m/s cho TTC bằng bao nhiêu?",
+      "after": "Khoảng cách tới vật cản là 12 m và tốc độ tiến gần không đổi là 5 m/s. Time to Collision (TTC) bằng bao nhiêu?",
+      "draft_path": "data/questions/drafts/root-track4.json",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 43,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "verification": "needs_review"
+        }
+      ]
+    }
+  ]
+}

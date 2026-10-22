@@ -4,7 +4,7 @@
   "questions": [
     {
       "id": "p2-t2-d01-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 2,
@@ -15,7 +15,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Theo bảng cloud workload, nhóm muốn prototype nhanh bằng pay-per-token và không quản trị hạ tầng nên chọn lớp nào?",
+      "question": "Một nhóm muốn làm prototype nhanh với cách tính phí theo token và không quản trị hạ tầng. Nên chọn lớp dịch vụ cloud nào?",
       "correct_answer": "a",
       "explanation": "AI-aaS cung cấp API model, nhanh để prototype; IaaS cho quyền kiểm soát GPU nhưng cần ops.",
       "source_reference": [
@@ -31,7 +31,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -55,7 +56,7 @@
     },
     {
       "id": "p2-t2-d01-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 2,
@@ -66,7 +67,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Trong shared responsibility của slide, những việc nào thuộc team triển khai? (Chọn tất cả đáp án đúng.)",
+      "question": "Trong mô hình trách nhiệm chia sẻ khi triển khai AI trên cloud, những việc nào thuộc đội triển khai? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "c",
         "a"
@@ -85,7 +86,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -109,7 +111,7 @@
     },
     {
       "id": "p2-t2-d01-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 2,
@@ -120,7 +122,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Training bằng IaaS, serving bằng PaaS và prototype bằng AI-aaS có thể cùng tồn tại trong cách tiếp cận hybrid của slide.",
+      "question": "Một hệ thống có thể kết hợp training bằng IaaS, serving bằng PaaS và làm prototype bằng AI-aaS.",
       "correct_answer": true,
       "explanation": "Nguồn nêu trực tiếp ví dụ hybrid theo từng workload.",
       "source_reference": [
@@ -136,7 +138,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ]
     },
     {
@@ -298,7 +301,7 @@
     },
     {
       "id": "p2-t2-d03-q01",
-      "revision": 2,
+      "revision": 3,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 2,
@@ -309,7 +312,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Một use case được chấm đa số tiêu chí Agentic Fit chỉ ở mức 1–2/5. Theo slide nên bắt đầu thế nào?",
+      "question": "Một use case được chấm đa số tiêu chí Agentic Fit chỉ ở mức 1–2/5. Nên bắt đầu triển khai thế nào?",
       "correct_answer": "d",
       "explanation": "Lưu ý cuối trang 11 khuyên bắt đầu bằng chatbot hoặc workflow đơn giản khi đa số tiêu chí ở mức thấp.",
       "source_reference": [
@@ -325,7 +328,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -349,7 +353,7 @@
     },
     {
       "id": "p2-t2-d03-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 2,
@@ -360,7 +364,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những tình huống nào là dấu hiệu chưa nên mở agent loop theo slide? (Chọn tất cả đáp án đúng.)",
+      "question": "Những tình huống nào là dấu hiệu chưa nên sử dụng agent loop? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "d",
         "b"
@@ -379,7 +383,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -403,7 +408,7 @@
     },
     {
       "id": "p2-t2-d03-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 2,
@@ -414,7 +419,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Nguyên tắc của slide là benchmark rule/workflow/chatbot trước khi chọn agent loop.",
+      "question": "Trước khi chọn agent loop, nên benchmark các giải pháp rule, workflow hoặc chatbot đơn giản hơn.",
       "correct_answer": true,
       "explanation": "Nguồn nêu luôn benchmark các giải pháp đơn giản trước agent loop.",
       "source_reference": [
@@ -430,12 +435,13 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ]
     },
     {
       "id": "p2-t2-d04-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 2,
@@ -446,7 +452,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Phát biểu nào mô tả đúng FAISS theo slide?",
+      "question": "Phát biểu nào mô tả đúng FAISS?",
       "correct_answer": "a",
       "explanation": "FAISS được mô tả là thư viện C++/Python cho chỉ mục vector, không phải một database server.",
       "source_reference": [
@@ -462,7 +468,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -486,7 +493,7 @@
     },
     {
       "id": "p2-t2-d04-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 2,
@@ -497,7 +504,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những ghép nối index–đặc tính nào đúng theo bảng? (Chọn tất cả đáp án đúng.)",
+      "question": "Những ghép nối giữa loại vector index và đặc tính nào là đúng? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "d",
         "a"
@@ -516,7 +523,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -540,7 +548,7 @@
     },
     {
       "id": "p2-t2-d04-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 2,
@@ -551,7 +559,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "apply",
-      "question": "Theo bảng, lựa chọn nào đáng đánh giá đầu tiên và vì sao?",
+      "question": "Lựa chọn vector index nào đáng đánh giá đầu tiên cho hệ thống này và vì sao?",
       "correct_answer": "d",
       "explanation": "DiskANN được bảng ghép với corpus rất lớn và cost-sensitive; cần benchmark trade-off thực tế.",
       "source_reference": [
@@ -567,7 +575,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -643,7 +652,7 @@
     },
     {
       "id": "p2-t2-d05-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 2,
@@ -654,7 +663,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những mô tả nào đúng theo slide speculative decoding/batching? (Chọn tất cả đáp án đúng.)",
+      "question": "Những mô tả nào đúng về speculative decoding và batching? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "b",
         "a"
@@ -673,7 +682,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -871,7 +881,7 @@
     },
     {
       "id": "p2-t2-d07-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 2,
@@ -882,7 +892,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những thành phần nào nằm trong prompt artifact/context bundle theo slide? (Chọn tất cả đáp án đúng.)",
+      "question": "Những thành phần nào cần quản lý trong prompt artifact và context bundle? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "a",
         "c"
@@ -901,7 +911,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -1059,7 +1070,7 @@
     },
     {
       "id": "p2-t2-d08-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 2,
@@ -1070,7 +1081,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những điều kiện nào phù hợp hướng active-passive trong bảng? (Chọn tất cả đáp án đúng.)",
+      "question": "Những điều kiện nào phù hợp để chọn kiến trúc active-passive? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "c",
         "a"
@@ -1089,7 +1100,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -1164,7 +1176,7 @@
     },
     {
       "id": "p2-t2-d10-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 2,
@@ -1175,7 +1187,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Theo thiết kế proxy trong tài liệu, đưa method/tool name ra header giúp gateway làm gì?",
+      "question": "Một proxy đưa method hoặc tool name vào HTTP header. Thiết kế này giúp gateway thực hiện việc gì?",
       "correct_answer": "a",
       "explanation": "Slide nêu gateway/rate limiter/WAF định tuyến và đo đếm từ header thay vì parse body JSON.",
       "source_reference": [
@@ -1191,7 +1203,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -1215,7 +1228,7 @@
     },
     {
       "id": "p2-t2-d10-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 2,
@@ -1226,7 +1239,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những năng lực vận hành nào được tài liệu nêu cho lớp gateway MCP? (Chọn tất cả đáp án đúng.)",
+      "question": "Lớp gateway MCP có thể cung cấp những năng lực vận hành nào? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "b",
         "d"
@@ -1245,7 +1258,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -1406,7 +1420,7 @@
     },
     {
       "id": "p2-t2-d11-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 2,
@@ -1417,7 +1431,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Theo quy tắc của slide, training nên chuẩn hóa so sánh chi phí theo$/job thay vì chỉ$/GPU-hour.",
+      "question": "Khi so sánh chi phí training giữa các cấu hình, nên dùng chi phí mỗi job thay vì chỉ nhìn chi phí mỗi GPU-hour.",
       "correct_answer": true,
       "explanation": "Nguồn phân biệt inference$/1M token và training$/job.",
       "source_reference": [
@@ -1433,7 +1447,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ]
     },
     {
@@ -1489,7 +1504,7 @@
     },
     {
       "id": "p2-t2-d12-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 2,
@@ -1500,7 +1515,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những ghép nối nào đúng trong bảng Rules vs Anomaly Detection? (Chọn tất cả đáp án đúng.)",
+      "question": "Những ghép nối nào đúng khi so sánh rules với anomaly detection trong kiểm tra chất lượng dữ liệu? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "d",
         "a"
@@ -1519,7 +1534,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {

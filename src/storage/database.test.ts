@@ -174,7 +174,7 @@ describe('legacy exam snapshot compatibility', () => {
     expect(resumed.score).toEqual(attempt.score);
     attempt = resumed;
     for (const item of questions.filter(part => part.question.answer_format === 'rubric')) {
-      const marks = Object.fromEntries((item.question.rubric ?? []).map(criterion => [criterion.id, 1]));
+      const marks = Object.fromEntries((item.question.rubric ?? []).map(criterion => [criterion.id, 1 as const]));
       attempt = await gradeRubric(attempt.id, item.question.id, marks, attempt.revision, 'resume-tab');
     }
     expect(attempt.status).toBe('graded');

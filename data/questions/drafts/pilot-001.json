@@ -4,7 +4,7 @@
   "questions": [
     {
       "id": "p1-d01-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 1,
       "track": null,
@@ -15,7 +15,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Đặc điểm nào phân biệt Agentic AI với Generative AI trong bảng ba nhóm AI?",
+      "question": "Đặc điểm nào phân biệt Agentic AI với Generative AI?",
       "correct_answer": "b",
       "explanation": "Slide mô tả Generative AI sinh nội dung mới; Agentic AI tự lập kế hoạch và hành động để đạt mục tiêu.",
       "source_reference": [
@@ -31,7 +31,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -55,7 +56,7 @@
     },
     {
       "id": "p1-d01-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 1,
       "track": null,
@@ -66,7 +67,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những thành phần nào thuộc agent harness theo slide? (Chọn tất cả đáp án đúng.)",
+      "question": "Những thành phần nào thuộc agent harness? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "a",
         "c"
@@ -85,7 +86,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -192,7 +194,7 @@
     },
     {
       "id": "p1-d11-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 1,
       "track": null,
@@ -203,7 +205,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Cặp kiểm soát nào được slide đặt trong output guardrail pipeline?",
+      "question": "Cặp kiểm soát nào giúp lọc nội dung và kiểm chứng căn cứ của đầu ra trong output guardrail pipeline?",
       "correct_answer": "c",
       "explanation": "Deliverable nêu output pipeline gồm content filter và grounding check.",
       "source_reference": [
@@ -219,7 +221,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -297,7 +300,7 @@
     },
     {
       "id": "p1-d11-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 1,
       "track": null,
@@ -308,7 +311,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Slide đề xuất chọn điểm escalation chỉ từ confidence score của model, không cần xét rủi ro và khả năng hoàn tác.",
+      "question": "Có thể chọn điểm chuyển xử lý cho con người chỉ từ confidence score của model, không cần xét rủi ro và khả năng hoàn tác.",
       "correct_answer": false,
       "explanation": "Mục tiêu bài nêu chọn escalation theo rủi ro × khả năng hoàn tác và cảnh báo confidence score là tín hiệu đáng ngờ.",
       "source_reference": [
@@ -324,7 +327,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ]
     },
     {
@@ -379,7 +383,7 @@
     },
     {
       "id": "p1-d14-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 1,
       "track": null,
@@ -390,7 +394,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Vì sao accuracy đơn lẻ chưa đủ để đánh giá LLM/agent theo slide?",
+      "question": "Vì sao accuracy đơn lẻ chưa đủ để đánh giá LLM hoặc agent?",
       "correct_answer": "a",
       "explanation": "Output mở, có nhiều câu trả lời đúng và chất lượng đa chiều; một metric accuracy không bao phủ đầy đủ.",
       "source_reference": [
@@ -406,7 +410,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -430,7 +435,7 @@
     },
     {
       "id": "p1-d14-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 1,
       "track": null,
@@ -441,7 +446,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Nguyên tắc nào của evaluation được slide nhấn mạnh? (Chọn tất cả đáp án đúng.)",
+      "question": "Những nguyên tắc nào giúp thiết kế evaluation có ích cho hệ thống AI? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "a",
         "b"
@@ -460,7 +465,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {

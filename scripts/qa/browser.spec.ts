@@ -11,6 +11,9 @@ async function rows(page: Page, store = 'attempts'): Promise<any[]> {
 async function startDaily(page: Page, day = 'p1-d01') {
   await page.goto('./#/study');
   await page.getByRole('combobox', { name: 'Ngày học', exact: true }).selectOption(day);
+  const countSelect = page.getByRole('combobox', { name: 'Số câu mục tiêu', exact: true });
+  const largestCount = await countSelect.locator('option').last().getAttribute('value');
+  if (largestCount) await countSelect.selectOption(largestCount);
   await page.getByRole('button', { name: 'Bắt đầu lượt học' }).click();
   await expect(page.locator('.question-card h1')).toBeVisible();
   return (await rows(page))[0];

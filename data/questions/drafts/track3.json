@@ -55,7 +55,7 @@
     },
     {
       "id": "p2-t3-d01-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -66,7 +66,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những nội dung nào nên lưu trong reflection memory theo slide? (Chọn tất cả đáp án đúng.)",
+      "question": "Những nội dung nào nên lưu trong reflection memory? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "b",
         "a"
@@ -85,7 +85,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -141,7 +142,7 @@
     },
     {
       "id": "p2-t3-d02-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -152,7 +153,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Agent cần truy xuất tri thức domain qua embeddings/vector DB. Loại memory nào khớp mô hình trong slide?",
+      "question": "Agent cần truy xuất tri thức domain qua embeddings và vector database. Loại memory nào phù hợp?",
       "correct_answer": "c",
       "explanation": "Semantic memory gắn với embeddings/vector DB và domain knowledge retrieval.",
       "source_reference": [
@@ -168,7 +169,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -192,7 +194,7 @@
     },
     {
       "id": "p2-t3-d02-q02",
-      "revision": 1,
+      "revision": 3,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -203,7 +205,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những bước nào thuộc flow memory management trong tài liệu? (Chọn tất cả đáp án đúng.)",
+      "question": "Một agent quản lý memory với giới hạn token và chỉ ghi dữ liệu dài hạn sau khi task hoàn tất. Những bước nào phù hợp với quy trình này? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "b",
         "c"
@@ -222,7 +224,9 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -246,7 +250,7 @@
     },
     {
       "id": "p2-t3-d02-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -257,7 +261,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Khi long-term fact mâu thuẫn thông tin short-term mới hơn, lưu ý của slide là ưu tiên recency và flag để review.",
+      "question": "Khi thông tin dài hạn mâu thuẫn với thông tin ngắn hạn mới hơn, có thể ưu tiên tính mới và đánh dấu xung đột để review.",
       "correct_answer": true,
       "explanation": "Nguồn ghi recency wins, flag for review trong conflict resolution.",
       "source_reference": [
@@ -273,12 +277,13 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ]
     },
     {
       "id": "p2-t3-d03-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -289,7 +294,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Hierarchical retrieval trong ví dụ xử lý trade-off chunk nhỏ/chunk lớn thế nào?",
+      "question": "Hierarchical retrieval giải quyết sự đánh đổi giữa chunk nhỏ và chunk lớn như thế nào?",
       "correct_answer": "d",
       "explanation": "Index child để match chính xác rồi inject parent để cung cấp đủ context.",
       "source_reference": [
@@ -305,7 +310,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -329,7 +335,7 @@
     },
     {
       "id": "p2-t3-d03-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -340,7 +346,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những mô tả nào đúng về late chunking trong slide? (Chọn tất cả đáp án đúng.)",
+      "question": "Những mô tả nào đúng về late chunking? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "d",
         "b"
@@ -359,7 +365,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -466,7 +473,7 @@
     },
     {
       "id": "p2-t3-d04-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -477,7 +484,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những mô tả nào khớp bảng property graph/RDF? (Chọn tất cả đáp án đúng.)",
+      "question": "Những mô tả nào đúng khi so sánh property graph với RDF? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "d",
         "b"
@@ -496,7 +503,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -552,7 +560,7 @@
     },
     {
       "id": "p2-t3-d05-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -563,7 +571,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Routing có thể tiết kiệm cost nhưng điểm dễ làm giảm chất lượng nào được slide cảnh báo?",
+      "question": "Routing có thể tiết kiệm chi phí, nhưng sai sót nào trong routing dễ làm giảm chất lượng kết quả?",
       "correct_answer": "a",
       "explanation": "Hard query bị phân loại nhầm vào small model có thể cho kết quả kém.",
       "source_reference": [
@@ -579,7 +587,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -657,7 +666,7 @@
     },
     {
       "id": "p2-t3-d05-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -668,7 +677,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Kiến trúc supervisor trên slide cho mỗi worker một node riêng với tools riêng.",
+      "question": "Trong kiến trúc supervisor dạng graph, mỗi worker có thể được tổ chức thành một node với bộ tools riêng.",
       "correct_answer": true,
       "explanation": "Nguồn nêu mỗi worker là node riêng với own tools.",
       "source_reference": [
@@ -684,7 +693,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ]
     },
     {
@@ -740,7 +750,7 @@
     },
     {
       "id": "p2-t3-d06-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -751,7 +761,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những mô tả nào đúng về LoRA theo hình trên slide? (Chọn tất cả đáp án đúng.)",
+      "question": "Những mô tả nào đúng về cơ chế LoRA? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "b",
         "c"
@@ -770,7 +780,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -1151,7 +1162,7 @@
     },
     {
       "id": "p2-t3-d09-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -1162,7 +1173,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những bước nào thuộc cơ chế Faithfulness trên slide? (Chọn tất cả đáp án đúng.)",
+      "question": "Những bước nào dùng để tính Faithfulness dựa trên các factual claim và context? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "c",
         "a"
@@ -1181,7 +1192,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -1205,7 +1217,7 @@
     },
     {
       "id": "p2-t3-d09-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -1216,7 +1228,7 @@
       "answer_format": "rubric",
       "difficulty": "medium",
       "cognitive_level": "apply",
-      "question": "Tính Faithfulness theo cơ chế slide và giải thích giới hạn của kết luận.",
+      "question": "Tính Faithfulness bằng tỷ lệ factual claim được context hỗ trợ và giải thích giới hạn của kết luận.",
       "correct_answer": "Faithfulness = 2/3 ≈ 0,67; đo claims được context hỗ trợ, không tự chứng nhận sự thật ngoài đời. Slide cảnh báo claim extraction có thể bỏ sót sắc thái và score có noise, phù hợp theo dõi xu hướng.",
       "explanation": "Trang 17 nêu công thức, ví dụ 2/3 và hạn chế của LLM khi extract claims.",
       "source_reference": [
@@ -1232,7 +1244,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "context": "Answer có 3 factual claims. Context hỗ trợ 2 claims, claim còn lại không có bằng chứng. Team muốn xem score là chứng nhận tuyệt đối rằng câu trả lời đúng ngoài đời.",
       "rubric": [
@@ -1307,7 +1320,7 @@
     },
     {
       "id": "p2-t3-d10-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -1318,7 +1331,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những kiểm soát nào cần cho semantic response cache theo slide? (Chọn tất cả đáp án đúng.)",
+      "question": "Những kiểm soát nào cần cho semantic response cache? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "a",
         "d"
@@ -1337,7 +1350,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -1498,7 +1512,7 @@
     },
     {
       "id": "p2-t3-d11-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -1509,7 +1523,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Trong bảng primitives, Prompt là template tái sử dụng do user chọn, khác Tool là function mà LLM quyết định gọi.",
+      "question": "Trong MCP, Prompt là template tái sử dụng do người dùng chọn, khác Tool là function mà LLM quyết định gọi.",
       "correct_answer": true,
       "explanation": "Bảng phân biệt vai trò và ai kiểm soát từng primitive.",
       "source_reference": [
@@ -1525,7 +1539,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ]
     },
     {
@@ -1672,7 +1687,7 @@
     },
     {
       "id": "p2-t3-d13-q01",
-      "revision": 2,
+      "revision": 3,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -1683,7 +1698,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những chiều nào thuộc holistic system evaluation của slide? (Chọn tất cả đáp án đúng.)",
+      "question": "Những chiều nào cần xét khi đánh giá toàn diện một hệ thống agent? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "c",
         "a"
@@ -1702,7 +1717,8 @@
       "status": "pending_review",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {

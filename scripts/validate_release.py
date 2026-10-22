@@ -24,7 +24,7 @@ def normalize(text):
     return re.sub(r'\s+', ' ', unicodedata.normalize('NFKC', text).casefold()).strip()
 
 
-def validate(bank_path, catalog_path, verify_sources=False):
+def validate(bank_path, catalog_path, verify_sources=False, min_per_document=0, standalone_stems=False):
     bank, catalog = read(bank_path), read(catalog_path)
     schema = read(ROOT / 'docs/schemas/question-bank.schema.json')
     jsonschema.Draft202012Validator.check_schema(schema)
@@ -54,6 +54,8 @@ def validate(bank_path, catalog_path, verify_sources=False):
             fail('duplicate question ID')
         ids.add(qid)
         fingerprint = normalize(q.get('context', '') + ' ' + q['question'])
+        if standalone_stems and re.search(r'\bslides?\b|theo (?:tài liệu|bài giảng|bảng|phần)|trong bảng|nguồn nêu|khớp bảng|phù hợp nguồn|được minh họa', q['question'], re.I):
+            fail('question must test knowledge directly; source-dependent stem')
         if fingerprint in fingerprints:
             fail('exact normalized duplicate of ' + fingerprints[fingerprint])
         fingerprints[fingerprint] = qid
@@ -90,7 +92,7 @@ def validate(bank_path, catalog_path, verify_sources=False):
                 fail('source hash/page mismatch')
             if source['verification'] != 'verified':
                 fail('unverified source')
-            per_doc[doc['document_id']] += 1
+        per_doc.update({s['document_id'] for s in q['source_reference'] if s['document_id'] in docs})
         kind = 'rubric' if q['answer_format'] == 'rubric' else 'objective'
         counts[(q['phase'], q['track'], kind)] += 1
     required = {(1, None, 'objective'): 34, (1, None, 'rubric'): 2}
@@ -100,6 +102,9 @@ def validate(bank_path, catalog_path, verify_sources=False):
     for bucket, count in required.items():
         if counts[bucket] < count:
             errors.append('Insufficient bucket %s: need %s, have %s' % (bucket, count, counts[bucket]))
+    underfilled = {doc_id: per_doc[doc_id] for doc_id in docs if per_doc[doc_id] < min_per_document}
+    if underfilled:
+        errors.append('Documents below minimum %s questions: %s' % (min_per_document, underfilled))
     if verify_sources:
         for doc in docs.values():
             source = ROOT / doc['relative_path']
@@ -108,6 +113,8 @@ def validate(bank_path, catalog_path, verify_sources=False):
     summary = {'questions': len(bank['questions']), 'documents': len(docs),
                'documents_with_approved_questions': len(per_doc),
                'uncovered_documents': sorted(set(docs) - set(per_doc)),
+               'minimum_questions_per_document': min((per_doc[d] for d in docs), default=0),
+               'questions_per_document': {d: per_doc[d] for d in sorted(docs)},
                'by_bucket': {str(k): v for k, v in sorted(counts.items(), key=str)},
                'schema_version': bank['schema_version']}
     return errors, summary
@@ -118,8 +125,10 @@ def main():
     parser.add_argument('--bank', default=str(ROOT / 'public/data/bank.json'))
     parser.add_argument('--catalog', default=str(ROOT / 'public/data/catalog.json'))
     parser.add_argument('--verify-sources', action='store_true')
+    parser.add_argument('--min-per-document', type=int, default=0)
+    parser.add_argument('--standalone-stems', action='store_true')
     args = parser.parse_args()
-    errors, summary = validate(args.bank, args.catalog, args.verify_sources)
+    errors, summary = validate(args.bank, args.catalog, args.verify_sources, args.min_per_document, args.standalone_stems)
     print(json.dumps({'errors': errors, 'summary': summary}, ensure_ascii=True, indent=2))
     raise SystemExit(1 if errors else 0)
 

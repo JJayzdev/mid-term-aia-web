@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0.0",
-  "bank_version": "2026.10.22-cb4b0a35c49b",
+  "bank_version": "2026.10.22-7b3dd4b2cc37",
   "questions": [
     {
       "id": "p1-d01-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 1,
       "track": null,
@@ -15,7 +15,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Đặc điểm nào phân biệt Agentic AI với Generative AI trong bảng ba nhóm AI?",
+      "question": "Đặc điểm nào phân biệt Agentic AI với Generative AI?",
       "correct_answer": "b",
       "explanation": "Slide mô tả Generative AI sinh nội dung mới; Agentic AI tự lập kế hoạch và hành động để đạt mục tiêu.",
       "source_reference": [
@@ -31,7 +31,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -54,14 +55,14 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T06:50:27.262606+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/pilot-001.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p1-d01-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 1,
       "track": null,
@@ -72,7 +73,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những thành phần nào thuộc agent harness theo slide? (Chọn tất cả đáp án đúng.)",
+      "question": "Những thành phần nào thuộc agent harness? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "a",
         "c"
@@ -91,7 +92,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -114,9 +116,9 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T06:50:27.262606+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/pilot-001.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -216,7 +218,7 @@
     },
     {
       "id": "p1-d02-q01",
-      "revision": 2,
+      "revision": 3,
       "author_id": "a1-question-engineer",
       "phase": 1,
       "track": null,
@@ -227,7 +229,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Trước khi đề xuất một chatbot, câu hỏi nào bám đúng bước chẩn đoán của slide?",
+      "question": "Trước khi đề xuất một chatbot, câu hỏi nào giúp chẩn đoán đúng vấn đề cần giải quyết?",
       "correct_answer": "b",
       "explanation": "Bắt đầu từ khó khăn, người quá tải, quy trình hiện tại và đối tượng phục vụ.",
       "source_reference": [
@@ -243,7 +245,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -266,14 +269,14 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T06:54:40.821668+00:00",
-        "reviewed_revision": 2,
-        "report_id": "reports/content/phase1-remaining.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 3,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p1-d02-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 1,
       "track": null,
@@ -284,7 +287,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Theo slide, chỉ cần thấy một công việc lặp lại là có thể đề xuất giải pháp ngay, dù chưa hiểu điểm đau.",
+      "question": "Chỉ cần thấy một công việc lặp lại là có thể đề xuất giải pháp ngay, dù chưa hiểu điểm đau của người dùng.",
       "correct_answer": false,
       "explanation": "Slide kết luận chưa thấu hiểu điểm đau thì chưa đề xuất giải pháp.",
       "source_reference": [
@@ -300,13 +303,14 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T06:54:40.821668+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/phase1-remaining.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -738,7 +742,7 @@
     },
     {
       "id": "p1-d05-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 1,
       "track": null,
@@ -749,7 +753,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Mong muốn cảm thấy tự tin hơn, ít sợ sai hơn thuộc nhu cầu được slide đưa vào JTBD.",
+      "question": "Mong muốn cảm thấy tự tin hơn và ít sợ sai hơn thuộc nhu cầu cảm xúc trong JTBD.",
       "correct_answer": true,
       "explanation": "Nguồn nêu trực tiếp các nhu cầu cảm xúc này.",
       "source_reference": [
@@ -765,18 +769,19 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T06:54:40.821668+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/phase1-remaining.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p1-d05-q03",
-      "revision": 2,
+      "revision": 3,
       "author_id": "a1-question-engineer",
       "phase": 1,
       "track": null,
@@ -787,7 +792,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những câu hỏi nào thuộc JTBD trên slide? (Chọn tất cả đáp án đúng.)",
+      "question": "Những câu hỏi nào giúp làm rõ Jobs to Be Done? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "a",
         "b"
@@ -806,7 +811,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -829,9 +835,9 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T06:54:40.821668+00:00",
-        "reviewed_revision": 2,
-        "report_id": "reports/content/phase1-remaining.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 3,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -931,7 +937,7 @@
     },
     {
       "id": "p1-d06-q03",
-      "revision": 2,
+      "revision": 3,
       "author_id": "a1-question-engineer",
       "phase": 1,
       "track": null,
@@ -942,7 +948,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những điều kiện nào được dùng trong ví dụ support agent đã done? (Chọn tất cả đáp án đúng.)",
+      "question": "Những điều kiện nào giúp xác định một support agent đã đáp ứng Definition of Done? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "a",
         "b"
@@ -961,7 +967,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -984,14 +991,14 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T06:54:40.821668+00:00",
-        "reviewed_revision": 2,
-        "report_id": "reports/content/phase1-remaining.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 3,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p1-d07-q01",
-      "revision": 2,
+      "revision": 3,
       "author_id": "a1-question-engineer",
       "phase": 1,
       "track": null,
@@ -1002,7 +1009,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Tài liệu có heading và section tốt; cần chunk trọn ý và metadata section rõ. Strategy nào phù hợp nhất trong bảng?",
+      "question": "Một tài liệu có heading và section tốt; cần chia chunk trọn ý và giữ metadata section rõ ràng. Chiến lược chunking nào phù hợp nhất?",
       "correct_answer": "b",
       "explanation": "Heading/structural cắt theo Markdown heading/section, giữ ý và metadata section.",
       "source_reference": [
@@ -1018,7 +1025,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -1041,9 +1049,9 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T06:54:40.821668+00:00",
-        "reviewed_revision": 2,
-        "report_id": "reports/content/phase1-remaining.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 3,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -1086,7 +1094,7 @@
     },
     {
       "id": "p1-d07-q03",
-      "revision": 2,
+      "revision": 3,
       "author_id": "a1-question-engineer",
       "phase": 1,
       "track": null,
@@ -1097,7 +1105,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những nhận định nào đúng về recursive chunking trong bảng? (Chọn tất cả đáp án đúng.)",
+      "question": "Những nhận định nào đúng về recursive chunking? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "a",
         "b"
@@ -1116,7 +1124,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -1139,14 +1148,14 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T06:54:40.821668+00:00",
-        "reviewed_revision": 2,
-        "report_id": "reports/content/phase1-remaining.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 3,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p1-d08-q01",
-      "revision": 2,
+      "revision": 3,
       "author_id": "a1-question-engineer",
       "phase": 1,
       "track": null,
@@ -1157,7 +1166,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Trường hợp nào có lý do rõ để dùng RAG theo slide?",
+      "question": "Trường hợp nào có lý do rõ ràng để dùng RAG?",
       "correct_answer": "b",
       "explanation": "Dữ liệu nội bộ thay đổi và yêu cầu citation là lý do dùng RAG.",
       "source_reference": [
@@ -1173,7 +1182,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -1196,14 +1206,14 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T06:54:40.821668+00:00",
-        "reviewed_revision": 2,
-        "report_id": "reports/content/phase1-remaining.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 3,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p1-d08-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 1,
       "track": null,
@@ -1214,7 +1224,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Slide cho rằng mọi câu hỏi kiến thức chung đều bắt buộc phải dùng RAG.",
+      "question": "Mọi câu hỏi kiến thức chung đều bắt buộc phải dùng RAG.",
       "correct_answer": false,
       "explanation": "Kiến thức chung LLM đã biết được xếp vào nhóm chưa cần RAG.",
       "source_reference": [
@@ -1230,18 +1240,19 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T06:54:40.821668+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/phase1-remaining.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p1-d08-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 1,
       "track": null,
@@ -1252,7 +1263,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những trường hợp nào được slide xếp vào nhóm chưa cần RAG? (Chọn tất cả đáp án đúng.)",
+      "question": "Những trường hợp nào chưa cần dùng RAG? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "a",
         "b"
@@ -1271,7 +1282,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -1294,14 +1306,14 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T06:54:40.821668+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/phase1-remaining.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p1-d09-q01",
-      "revision": 2,
+      "revision": 3,
       "author_id": "a1-question-engineer",
       "phase": 1,
       "track": null,
@@ -1312,7 +1324,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Hai subagent khám phá hai hướng độc lập, còn kết quả cuối là một sản phẩm chung. Cách tổ chức nào phù hợp nguyên tắc slide?",
+      "question": "Hai subagent khám phá hai hướng độc lập, còn kết quả cuối là một sản phẩm chung. Cách tổ chức nào giúp tránh xung đột khi tích hợp?",
       "correct_answer": "b",
       "explanation": "Khám phá độc lập có thể song song; ghi vào sản phẩm chung nên có một luồng.",
       "source_reference": [
@@ -1328,7 +1340,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -1351,14 +1364,14 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T06:54:40.821668+00:00",
-        "reviewed_revision": 2,
-        "report_id": "reports/content/phase1-remaining.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 3,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p1-d09-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 1,
       "track": null,
@@ -1369,7 +1382,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Nguyên tắc trên slide khuyên nhiều subagent đồng thời ghi vào một sản phẩm chung mà không điều phối.",
+      "question": "Để tránh xung đột, nên cho nhiều subagent đồng thời ghi vào một sản phẩm chung mà không điều phối.",
       "correct_answer": false,
       "explanation": "Nguồn nêu tuần tự hóa việc ghi vào sản phẩm chung.",
       "source_reference": [
@@ -1385,13 +1398,14 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T06:54:40.821668+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/phase1-remaining.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -1548,7 +1562,7 @@
     },
     {
       "id": "p1-d10-q03",
-      "revision": 2,
+      "revision": 3,
       "author_id": "a1-question-engineer",
       "phase": 1,
       "track": null,
@@ -1559,7 +1573,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những tín hiệu nào cần xét cho chunk được truy xuất theo slide? (Chọn tất cả đáp án đúng.)",
+      "question": "Những tín hiệu nào cần xét khi đánh giá một chunk được truy xuất? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "a",
         "b"
@@ -1578,7 +1592,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -1601,14 +1616,14 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T06:54:40.821668+00:00",
-        "reviewed_revision": 2,
-        "report_id": "reports/content/phase1-remaining.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 3,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p1-d11-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 1,
       "track": null,
@@ -1619,7 +1634,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Cặp kiểm soát nào được slide đặt trong output guardrail pipeline?",
+      "question": "Cặp kiểm soát nào giúp lọc nội dung và kiểm chứng căn cứ của đầu ra trong output guardrail pipeline?",
       "correct_answer": "c",
       "explanation": "Deliverable nêu output pipeline gồm content filter và grounding check.",
       "source_reference": [
@@ -1635,7 +1650,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -1658,9 +1674,9 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T06:50:27.262606+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/pilot-001.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -1725,7 +1741,7 @@
     },
     {
       "id": "p1-d11-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 1,
       "track": null,
@@ -1736,7 +1752,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Slide đề xuất chọn điểm escalation chỉ từ confidence score của model, không cần xét rủi ro và khả năng hoàn tác.",
+      "question": "Có thể chọn điểm chuyển xử lý cho con người chỉ từ confidence score của model, không cần xét rủi ro và khả năng hoàn tác.",
       "correct_answer": false,
       "explanation": "Mục tiêu bài nêu chọn escalation theo rủi ro × khả năng hoàn tác và cảnh báo confidence score là tín hiệu đáng ngờ.",
       "source_reference": [
@@ -1752,13 +1768,14 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T06:50:27.262606+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/pilot-001.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -1914,7 +1931,7 @@
     },
     {
       "id": "p1-d12-q03",
-      "revision": 2,
+      "revision": 3,
       "author_id": "a1-question-engineer",
       "phase": 1,
       "track": null,
@@ -1925,7 +1942,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những mục nào nằm trong deployment checklist của slide? (Chọn tất cả đáp án đúng.)",
+      "question": "Những mục nào cần kiểm tra trước khi triển khai ứng dụng AI? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "a",
         "b"
@@ -1944,7 +1961,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -1967,9 +1985,9 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T06:54:40.821668+00:00",
-        "reviewed_revision": 2,
-        "report_id": "reports/content/phase1-remaining.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 3,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -2031,7 +2049,7 @@
     },
     {
       "id": "p1-d13-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 1,
       "track": null,
@@ -2042,7 +2060,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Monitoring được slide mô tả là theo dõi các câu hỏi và failure mode đã biết trước.",
+      "question": "Monitoring tập trung theo dõi các câu hỏi và failure mode đã biết trước.",
       "correct_answer": true,
       "explanation": "Monitoring dùng dashboard/alert dựng sẵn cho known-knowns.",
       "source_reference": [
@@ -2058,18 +2076,19 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T06:54:40.821668+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/phase1-remaining.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p1-d13-q03",
-      "revision": 2,
+      "revision": 3,
       "author_id": "a1-question-engineer",
       "phase": 1,
       "track": null,
@@ -2080,7 +2099,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những loại telemetry nào được nêu để hỗ trợ observability? (Chọn tất cả đáp án đúng.)",
+      "question": "Những loại telemetry nào hỗ trợ observability? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "a",
         "b"
@@ -2099,7 +2118,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -2122,14 +2142,14 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T06:54:40.821668+00:00",
-        "reviewed_revision": 2,
-        "report_id": "reports/content/phase1-remaining.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 3,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p1-d14-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 1,
       "track": null,
@@ -2140,7 +2160,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Vì sao accuracy đơn lẻ chưa đủ để đánh giá LLM/agent theo slide?",
+      "question": "Vì sao accuracy đơn lẻ chưa đủ để đánh giá LLM hoặc agent?",
       "correct_answer": "a",
       "explanation": "Output mở, có nhiều câu trả lời đúng và chất lượng đa chiều; một metric accuracy không bao phủ đầy đủ.",
       "source_reference": [
@@ -2156,7 +2176,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -2179,14 +2200,14 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T06:50:27.262606+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/pilot-001.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p1-d14-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 1,
       "track": null,
@@ -2197,7 +2218,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Nguyên tắc nào của evaluation được slide nhấn mạnh? (Chọn tất cả đáp án đúng.)",
+      "question": "Những nguyên tắc nào giúp thiết kế evaluation có ích cho hệ thống AI? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "a",
         "b"
@@ -2216,7 +2237,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -2239,9 +2261,9 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T06:50:27.262606+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/pilot-001.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -2341,7 +2363,7 @@
     },
     {
       "id": "p1-d15-q01",
-      "revision": 2,
+      "revision": 3,
       "author_id": "a1-question-engineer",
       "phase": 1,
       "track": null,
@@ -2352,7 +2374,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Nhóm có GPU server và ưu tiên inference throughput cao. Công cụ nào được slide gợi ý?",
+      "question": "Một nhóm có GPU server và ưu tiên inference throughput cao. Công cụ serving nào phù hợp?",
       "correct_answer": "b",
       "explanation": "vLLM được mô tả production-grade inference, PagedAttention và continuous batching.",
       "source_reference": [
@@ -2368,7 +2390,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -2391,14 +2414,14 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T06:54:40.821668+00:00",
-        "reviewed_revision": 2,
-        "report_id": "reports/content/phase1-remaining.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 3,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p1-d15-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 1,
       "track": null,
@@ -2409,7 +2432,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Slide mô tả Ollama phù hợp cho dev, demo và edge deployment với thiết lập đơn giản.",
+      "question": "Ollama phù hợp cho phát triển, demo và triển khai ở edge nhờ thiết lập đơn giản.",
       "correct_answer": true,
       "explanation": "Đây là các trường hợp dùng Ollama được ghi trên slide.",
       "source_reference": [
@@ -2425,13 +2448,14 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T06:54:40.821668+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/phase1-remaining.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -2496,7 +2520,7 @@
     },
     {
       "id": "p2-t1-d01-q01",
-      "revision": 2,
+      "revision": 3,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 1,
@@ -2507,7 +2531,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Slide so sánh AI PM với ship-and-forget. Sau khi ship sản phẩm AI, chu trình nào cần tiếp tục?",
+      "question": "Sau khi phát hành sản phẩm AI, chu trình nào cần tiếp tục để duy trì chất lượng?",
       "correct_answer": "b",
       "explanation": "Sản phẩm AI có vòng lặp sau ship vì chất lượng biến thiên, drift và failure.",
       "source_reference": [
@@ -2523,7 +2547,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -2546,14 +2571,14 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:01:31.149497+00:00",
-        "reviewed_revision": 2,
-        "report_id": "reports/content/track1.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 3,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p2-t1-d01-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 1,
@@ -2564,7 +2589,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Theo slide, một sản phẩm AI sẽ chạy đúng thiết kế mãi mãi sau lần ship đầu tiên.",
+      "question": "Một sản phẩm AI sẽ chạy đúng thiết kế mãi mãi sau lần phát hành đầu tiên.",
       "correct_answer": false,
       "explanation": "Slide bác bỏ ship-and-forget và nhấn mạnh vòng lặp cải thiện.",
       "source_reference": [
@@ -2580,18 +2605,19 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:01:31.149497+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track1.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p2-t1-d01-q03",
-      "revision": 2,
+      "revision": 3,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 1,
@@ -2602,7 +2628,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những hoạt động nào được nêu trong vòng lặp sau ship? (Chọn tất cả đáp án đúng.)",
+      "question": "Những hoạt động nào cần tiếp tục trong vòng lặp cải tiến sau khi phát hành sản phẩm AI? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "a",
         "b"
@@ -2621,7 +2647,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -2644,14 +2671,14 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:01:31.149497+00:00",
-        "reviewed_revision": 2,
-        "report_id": "reports/content/track1.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 3,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p2-t1-d02-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 1,
@@ -2662,7 +2689,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Trong ví dụ Grab giả định, push notification khi tài xế đến thuộc loại nào?",
+      "question": "Một ứng dụng gọi xe gửi push notification khi tài xế đến điểm đón. Push notification này là output hay outcome của sản phẩm?",
       "correct_answer": "b",
       "explanation": "Notification là output; outcome là nhận biết, phản ứng, tìm nhau nhanh hơn và bắt đầu chuyến sớm hơn.",
       "source_reference": [
@@ -2678,7 +2705,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -2701,14 +2729,14 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:01:31.149497+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track1.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p2-t1-d02-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 1,
@@ -2719,7 +2747,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Theo slide, tạo được push notification đồng nghĩa đã đo được tài xế chờ ít hơn.",
+      "question": "Tạo được push notification đồng nghĩa đã đo được kết quả tài xế chờ ít hơn.",
       "correct_answer": false,
       "explanation": "Output và outcome được tách biệt; phải đánh giá tác động mong muốn.",
       "source_reference": [
@@ -2735,13 +2763,14 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:01:31.149497+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track1.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -2863,7 +2892,7 @@
     },
     {
       "id": "p2-t1-d03-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 1,
@@ -2874,7 +2903,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Slide khuyên đưa cả nhắc AI, thanh tiến độ và huy hiệu vào một thử nghiệm để biết chính xác tác động từng phần.",
+      "question": "Đưa cả nhắc AI, thanh tiến độ và huy hiệu vào cùng một biến thể thử nghiệm sẽ cho biết chính xác tác động riêng của từng thành phần.",
       "correct_answer": false,
       "explanation": "Nguồn đối chiếu ba tính năng lẫn nhau với một tính năng ở một khoảnh khắc.",
       "source_reference": [
@@ -2890,13 +2919,14 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:01:31.149497+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track1.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -2958,7 +2988,7 @@
     },
     {
       "id": "p2-t1-d04-q01",
-      "revision": 2,
+      "revision": 4,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 1,
@@ -2969,7 +2999,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Trong quy trình eval mô tả trên slide, dữ liệu khởi đầu nên lấy từ đâu?",
+      "question": "Một sản phẩm AI đã có lưu lượng sử dụng thực tế và phản hồi của người dùng. Khi bắt đầu evaluation để tìm lỗi, dữ liệu nên lấy từ đâu?",
       "correct_answer": "b",
       "explanation": "PM đọc thumbs-down/usage logs; data specialist tạo targeted dataset từ log thật.",
       "source_reference": [
@@ -2985,7 +3015,9 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -3008,14 +3040,14 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:01:31.149497+00:00",
-        "reviewed_revision": 2,
-        "report_id": "reports/content/track1.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 4,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p2-t1-d04-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 1,
@@ -3026,7 +3058,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Slide ưu tiên quality hơn quantity khi human label failures.",
+      "question": "Khi con người gán nhãn các trường hợp thất bại để cải thiện AI, nên ưu tiên chất lượng nhãn hơn số lượng.",
       "correct_answer": true,
       "explanation": "Quality quan trọng hơn quantity được ghi ở vai trò data specialist.",
       "source_reference": [
@@ -3042,18 +3074,19 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:01:31.149497+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track1.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p2-t1-d04-q03",
-      "revision": 2,
+      "revision": 3,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 1,
@@ -3064,7 +3097,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những việc nào thuộc vòng lặp eval được nêu? (Chọn tất cả đáp án đúng.)",
+      "question": "Những việc nào thuộc vòng lặp evaluation và cải tiến chất lượng AI? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "a",
         "b"
@@ -3083,7 +3116,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -3106,9 +3140,9 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:01:31.149497+00:00",
-        "reviewed_revision": 2,
-        "report_id": "reports/content/track1.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 3,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -3480,7 +3514,7 @@
     },
     {
       "id": "p2-t1-d07-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 1,
@@ -3491,7 +3525,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Mô hình hybrid trong slide gồm phí gói cơ bản và trả thêm khi vượt usage cho phép.",
+      "question": "Một mô hình định giá hybrid có thể gồm phí gói cơ bản và khoản trả thêm khi vượt mức sử dụng cho phép.",
       "correct_answer": true,
       "explanation": "Ví dụ có quota token rồi charge theo usage phần vượt.",
       "source_reference": [
@@ -3507,18 +3541,19 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:01:31.149497+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track1.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p2-t1-d07-q03",
-      "revision": 2,
+      "revision": 3,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 1,
@@ -3529,7 +3564,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những mục tiêu nào của hybrid pricing được slide nêu? (Chọn tất cả đáp án đúng.)",
+      "question": "Định giá hybrid kết hợp phí gói và phí vượt mức sử dụng nhằm những mục tiêu nào? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "a",
         "b"
@@ -3548,7 +3583,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -3571,14 +3607,14 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:01:31.149497+00:00",
-        "reviewed_revision": 2,
-        "report_id": "reports/content/track1.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 3,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p2-t1-d08-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 1,
@@ -3589,7 +3625,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Cost/Job trong slide là gì?",
+      "question": "Chỉ số Cost/Job dùng để đo điều gì?",
       "correct_answer": "b",
       "explanation": "Giá sàn dựa trên cost hoàn thành job, gồm nhiều thành phần.",
       "source_reference": [
@@ -3605,7 +3641,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -3628,9 +3665,9 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:01:31.149497+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track1.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -3673,7 +3710,7 @@
     },
     {
       "id": "p2-t1-d08-q03",
-      "revision": 2,
+      "revision": 3,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 1,
@@ -3684,7 +3721,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những khoản nào được đưa vào Cost/Job trên slide? (Chọn tất cả đáp án đúng.)",
+      "question": "Những khoản nào cần tính khi xác định Cost/Job của ứng dụng AI? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "a",
         "b"
@@ -3703,7 +3740,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -3726,14 +3764,14 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:01:31.149497+00:00",
-        "reviewed_revision": 2,
-        "report_id": "reports/content/track1.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 3,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p2-t1-d09-q01",
-      "revision": 3,
+      "revision": 4,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 1,
@@ -3744,7 +3782,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Luật xử lý chỉ số nào đủ cụ thể theo khuôn của slide?",
+      "question": "Quy tắc phản ứng với chỉ số nào đủ cụ thể để đội vận hành thực thi?",
       "correct_answer": "b",
       "explanation": "Luật cần metric/ngưỡng, thời lượng/cỡ mẫu, hành động và việc cấm làm.",
       "source_reference": [
@@ -3760,7 +3798,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -3783,9 +3822,9 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:01:31.149497+00:00",
-        "reviewed_revision": 3,
-        "report_id": "reports/content/track1.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 4,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -4135,7 +4174,7 @@
     },
     {
       "id": "p2-t1-d11-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 1,
@@ -4146,7 +4185,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những ghép nối nào đúng theo slide ADKAR? (Chọn tất cả đáp án đúng.)",
+      "question": "Những ghép nối nào đúng với mô hình ADKAR? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "a",
         "b"
@@ -4165,7 +4204,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -4188,14 +4228,14 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:01:31.149497+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track1.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p2-t2-d01-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 2,
@@ -4206,7 +4246,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Theo bảng cloud workload, nhóm muốn prototype nhanh bằng pay-per-token và không quản trị hạ tầng nên chọn lớp nào?",
+      "question": "Một nhóm muốn làm prototype nhanh với cách tính phí theo token và không quản trị hạ tầng. Nên chọn lớp dịch vụ cloud nào?",
       "correct_answer": "a",
       "explanation": "AI-aaS cung cấp API model, nhanh để prototype; IaaS cho quyền kiểm soát GPU nhưng cần ops.",
       "source_reference": [
@@ -4222,7 +4262,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -4245,14 +4286,14 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:05:35.198983+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track2.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p2-t2-d01-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 2,
@@ -4263,7 +4304,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Trong shared responsibility của slide, những việc nào thuộc team triển khai? (Chọn tất cả đáp án đúng.)",
+      "question": "Trong mô hình trách nhiệm chia sẻ khi triển khai AI trên cloud, những việc nào thuộc đội triển khai? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "c",
         "a"
@@ -4282,7 +4323,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -4305,14 +4347,14 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:05:35.198983+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track2.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p2-t2-d01-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 2,
@@ -4323,7 +4365,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Training bằng IaaS, serving bằng PaaS và prototype bằng AI-aaS có thể cùng tồn tại trong cách tiếp cận hybrid của slide.",
+      "question": "Một hệ thống có thể kết hợp training bằng IaaS, serving bằng PaaS và làm prototype bằng AI-aaS.",
       "correct_answer": true,
       "explanation": "Nguồn nêu trực tiếp ví dụ hybrid theo từng workload.",
       "source_reference": [
@@ -4339,13 +4381,14 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:05:35.198983+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track2.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -4525,7 +4568,7 @@
     },
     {
       "id": "p2-t2-d03-q01",
-      "revision": 2,
+      "revision": 3,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 2,
@@ -4536,7 +4579,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Một use case được chấm đa số tiêu chí Agentic Fit chỉ ở mức 1–2/5. Theo slide nên bắt đầu thế nào?",
+      "question": "Một use case được chấm đa số tiêu chí Agentic Fit chỉ ở mức 1–2/5. Nên bắt đầu triển khai thế nào?",
       "correct_answer": "d",
       "explanation": "Lưu ý cuối trang 11 khuyên bắt đầu bằng chatbot hoặc workflow đơn giản khi đa số tiêu chí ở mức thấp.",
       "source_reference": [
@@ -4552,7 +4595,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -4575,14 +4619,14 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:05:35.198983+00:00",
-        "reviewed_revision": 2,
-        "report_id": "reports/content/track2.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 3,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p2-t2-d03-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 2,
@@ -4593,7 +4637,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những tình huống nào là dấu hiệu chưa nên mở agent loop theo slide? (Chọn tất cả đáp án đúng.)",
+      "question": "Những tình huống nào là dấu hiệu chưa nên sử dụng agent loop? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "d",
         "b"
@@ -4612,7 +4656,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -4635,14 +4680,14 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:05:35.198983+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track2.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p2-t2-d03-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 2,
@@ -4653,7 +4698,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Nguyên tắc của slide là benchmark rule/workflow/chatbot trước khi chọn agent loop.",
+      "question": "Trước khi chọn agent loop, nên benchmark các giải pháp rule, workflow hoặc chatbot đơn giản hơn.",
       "correct_answer": true,
       "explanation": "Nguồn nêu luôn benchmark các giải pháp đơn giản trước agent loop.",
       "source_reference": [
@@ -4669,18 +4714,19 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:05:35.198983+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track2.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p2-t2-d04-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 2,
@@ -4691,7 +4737,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Phát biểu nào mô tả đúng FAISS theo slide?",
+      "question": "Phát biểu nào mô tả đúng FAISS?",
       "correct_answer": "a",
       "explanation": "FAISS được mô tả là thư viện C++/Python cho chỉ mục vector, không phải một database server.",
       "source_reference": [
@@ -4707,7 +4753,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -4730,14 +4777,14 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:05:35.198983+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track2.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p2-t2-d04-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 2,
@@ -4748,7 +4795,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những ghép nối index–đặc tính nào đúng theo bảng? (Chọn tất cả đáp án đúng.)",
+      "question": "Những ghép nối giữa loại vector index và đặc tính nào là đúng? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "d",
         "a"
@@ -4767,7 +4814,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -4790,14 +4838,14 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:05:35.198983+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track2.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p2-t2-d04-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 2,
@@ -4808,7 +4856,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "apply",
-      "question": "Theo bảng, lựa chọn nào đáng đánh giá đầu tiên và vì sao?",
+      "question": "Lựa chọn vector index nào đáng đánh giá đầu tiên cho hệ thống này và vì sao?",
       "correct_answer": "d",
       "explanation": "DiskANN được bảng ghép với corpus rất lớn và cost-sensitive; cần benchmark trade-off thực tế.",
       "source_reference": [
@@ -4824,7 +4872,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -4848,9 +4897,9 @@
       "context": "Nhóm có hơn 100 triệu vectors, ngân sách RAM hạn chế và chấp nhận trade-off độ trễ. Cần chọn hướng index theo bảng so sánh trong tài liệu.",
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:05:35.198983+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track2.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -4912,7 +4961,7 @@
     },
     {
       "id": "p2-t2-d05-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 2,
@@ -4923,7 +4972,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những mô tả nào đúng theo slide speculative decoding/batching? (Chọn tất cả đáp án đúng.)",
+      "question": "Những mô tả nào đúng về speculative decoding và batching? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "b",
         "a"
@@ -4942,7 +4991,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -4965,9 +5015,9 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:05:35.198983+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track2.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -5170,7 +5220,7 @@
     },
     {
       "id": "p2-t2-d07-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 2,
@@ -5181,7 +5231,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những thành phần nào nằm trong prompt artifact/context bundle theo slide? (Chọn tất cả đáp án đúng.)",
+      "question": "Những thành phần nào cần quản lý trong prompt artifact và context bundle? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "a",
         "c"
@@ -5200,7 +5250,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -5223,9 +5274,9 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:05:35.198983+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track2.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -5382,7 +5433,7 @@
     },
     {
       "id": "p2-t2-d08-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 2,
@@ -5393,7 +5444,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những điều kiện nào phù hợp hướng active-passive trong bảng? (Chọn tất cả đáp án đúng.)",
+      "question": "Những điều kiện nào phù hợp để chọn kiến trúc active-passive? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "c",
         "a"
@@ -5412,7 +5463,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -5435,9 +5487,9 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:05:35.198983+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track2.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -5499,7 +5551,7 @@
     },
     {
       "id": "p2-t2-d10-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 2,
@@ -5510,7 +5562,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Theo thiết kế proxy trong tài liệu, đưa method/tool name ra header giúp gateway làm gì?",
+      "question": "Một proxy đưa method hoặc tool name vào HTTP header. Thiết kế này giúp gateway thực hiện việc gì?",
       "correct_answer": "a",
       "explanation": "Slide nêu gateway/rate limiter/WAF định tuyến và đo đếm từ header thay vì parse body JSON.",
       "source_reference": [
@@ -5526,7 +5578,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -5549,14 +5602,14 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:05:35.198983+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track2.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p2-t2-d10-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 2,
@@ -5567,7 +5620,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những năng lực vận hành nào được tài liệu nêu cho lớp gateway MCP? (Chọn tất cả đáp án đúng.)",
+      "question": "Lớp gateway MCP có thể cung cấp những năng lực vận hành nào? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "b",
         "d"
@@ -5586,7 +5639,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -5609,9 +5663,9 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:05:35.198983+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track2.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -5771,7 +5825,7 @@
     },
     {
       "id": "p2-t2-d11-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 2,
@@ -5782,7 +5836,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Theo quy tắc của slide, training nên chuẩn hóa so sánh chi phí theo$/job thay vì chỉ$/GPU-hour.",
+      "question": "Khi so sánh chi phí training giữa các cấu hình, nên dùng chi phí mỗi job thay vì chỉ nhìn chi phí mỗi GPU-hour.",
       "correct_answer": true,
       "explanation": "Nguồn phân biệt inference$/1M token và training$/job.",
       "source_reference": [
@@ -5798,13 +5852,14 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:05:35.198983+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track2.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -5866,7 +5921,7 @@
     },
     {
       "id": "p2-t2-d12-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 2,
@@ -5877,7 +5932,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những ghép nối nào đúng trong bảng Rules vs Anomaly Detection? (Chọn tất cả đáp án đúng.)",
+      "question": "Những ghép nối nào đúng khi so sánh rules với anomaly detection trong kiểm tra chất lượng dữ liệu? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "d",
         "a"
@@ -5896,7 +5951,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -5919,9 +5975,9 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:05:35.198983+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track2.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -6196,7 +6252,7 @@
     },
     {
       "id": "p2-t3-d01-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -6207,7 +6263,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những nội dung nào nên lưu trong reflection memory theo slide? (Chọn tất cả đáp án đúng.)",
+      "question": "Những nội dung nào nên lưu trong reflection memory? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "b",
         "a"
@@ -6226,7 +6282,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -6249,9 +6306,9 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:24:47.308043+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track3.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -6294,7 +6351,7 @@
     },
     {
       "id": "p2-t3-d02-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -6305,7 +6362,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Agent cần truy xuất tri thức domain qua embeddings/vector DB. Loại memory nào khớp mô hình trong slide?",
+      "question": "Agent cần truy xuất tri thức domain qua embeddings và vector database. Loại memory nào phù hợp?",
       "correct_answer": "c",
       "explanation": "Semantic memory gắn với embeddings/vector DB và domain knowledge retrieval.",
       "source_reference": [
@@ -6321,7 +6378,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -6344,14 +6402,14 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:24:47.308043+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track3.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p2-t3-d02-q02",
-      "revision": 1,
+      "revision": 3,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -6362,7 +6420,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những bước nào thuộc flow memory management trong tài liệu? (Chọn tất cả đáp án đúng.)",
+      "question": "Một agent quản lý memory với giới hạn token và chỉ ghi dữ liệu dài hạn sau khi task hoàn tất. Những bước nào phù hợp với quy trình này? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "b",
         "c"
@@ -6381,7 +6439,9 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -6404,14 +6464,14 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:24:47.308043+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track3.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 3,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p2-t3-d02-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -6422,7 +6482,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Khi long-term fact mâu thuẫn thông tin short-term mới hơn, lưu ý của slide là ưu tiên recency và flag để review.",
+      "question": "Khi thông tin dài hạn mâu thuẫn với thông tin ngắn hạn mới hơn, có thể ưu tiên tính mới và đánh dấu xung đột để review.",
       "correct_answer": true,
       "explanation": "Nguồn ghi recency wins, flag for review trong conflict resolution.",
       "source_reference": [
@@ -6438,18 +6498,19 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:24:47.308043+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track3.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p2-t3-d03-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -6460,7 +6521,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Hierarchical retrieval trong ví dụ xử lý trade-off chunk nhỏ/chunk lớn thế nào?",
+      "question": "Hierarchical retrieval giải quyết sự đánh đổi giữa chunk nhỏ và chunk lớn như thế nào?",
       "correct_answer": "d",
       "explanation": "Index child để match chính xác rồi inject parent để cung cấp đủ context.",
       "source_reference": [
@@ -6476,7 +6537,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -6499,14 +6561,14 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:24:47.308043+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track3.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p2-t3-d03-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -6517,7 +6579,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những mô tả nào đúng về late chunking trong slide? (Chọn tất cả đáp án đúng.)",
+      "question": "Những mô tả nào đúng về late chunking? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "d",
         "b"
@@ -6536,7 +6598,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -6559,9 +6622,9 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:24:47.308043+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track3.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -6661,7 +6724,7 @@
     },
     {
       "id": "p2-t3-d04-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -6672,7 +6735,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những mô tả nào khớp bảng property graph/RDF? (Chọn tất cả đáp án đúng.)",
+      "question": "Những mô tả nào đúng khi so sánh property graph với RDF? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "d",
         "b"
@@ -6691,7 +6754,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -6714,9 +6778,9 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:24:47.308043+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track3.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -6759,7 +6823,7 @@
     },
     {
       "id": "p2-t3-d05-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -6770,7 +6834,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Routing có thể tiết kiệm cost nhưng điểm dễ làm giảm chất lượng nào được slide cảnh báo?",
+      "question": "Routing có thể tiết kiệm chi phí, nhưng sai sót nào trong routing dễ làm giảm chất lượng kết quả?",
       "correct_answer": "a",
       "explanation": "Hard query bị phân loại nhầm vào small model có thể cho kết quả kém.",
       "source_reference": [
@@ -6786,7 +6850,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -6809,9 +6874,9 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:24:47.308043+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track3.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -6876,7 +6941,7 @@
     },
     {
       "id": "p2-t3-d05-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -6887,7 +6952,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Kiến trúc supervisor trên slide cho mỗi worker một node riêng với tools riêng.",
+      "question": "Trong kiến trúc supervisor dạng graph, mỗi worker có thể được tổ chức thành một node với bộ tools riêng.",
       "correct_answer": true,
       "explanation": "Nguồn nêu mỗi worker là node riêng với own tools.",
       "source_reference": [
@@ -6903,13 +6968,14 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:24:47.308043+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track3.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -6971,7 +7037,7 @@
     },
     {
       "id": "p2-t3-d06-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -6982,7 +7048,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những mô tả nào đúng về LoRA theo hình trên slide? (Chọn tất cả đáp án đúng.)",
+      "question": "Những mô tả nào đúng về cơ chế LoRA? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "b",
         "c"
@@ -7001,7 +7067,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -7024,9 +7091,9 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:24:47.308043+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track3.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -7436,7 +7503,7 @@
     },
     {
       "id": "p2-t3-d09-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -7447,7 +7514,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những bước nào thuộc cơ chế Faithfulness trên slide? (Chọn tất cả đáp án đúng.)",
+      "question": "Những bước nào dùng để tính Faithfulness dựa trên các factual claim và context? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "c",
         "a"
@@ -7466,7 +7533,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -7489,14 +7557,14 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:24:47.308043+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track3.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p2-t3-d09-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -7507,7 +7575,7 @@
       "answer_format": "rubric",
       "difficulty": "medium",
       "cognitive_level": "apply",
-      "question": "Tính Faithfulness theo cơ chế slide và giải thích giới hạn của kết luận.",
+      "question": "Tính Faithfulness bằng tỷ lệ factual claim được context hỗ trợ và giải thích giới hạn của kết luận.",
       "correct_answer": "Faithfulness = 2/3 ≈ 0,67; đo claims được context hỗ trợ, không tự chứng nhận sự thật ngoài đời. Slide cảnh báo claim extraction có thể bỏ sót sắc thái và score có noise, phù hợp theo dõi xu hướng.",
       "explanation": "Trang 17 nêu công thức, ví dụ 2/3 và hạn chế của LLM khi extract claims.",
       "source_reference": [
@@ -7523,7 +7591,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "context": "Answer có 3 factual claims. Context hỗ trợ 2 claims, claim còn lại không có bằng chứng. Team muốn xem score là chứng nhận tuyệt đối rằng câu trả lời đúng ngoài đời.",
       "rubric": [
@@ -7546,9 +7615,9 @@
       ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:24:47.308043+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track3.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -7610,7 +7679,7 @@
     },
     {
       "id": "p2-t3-d10-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -7621,7 +7690,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những kiểm soát nào cần cho semantic response cache theo slide? (Chọn tất cả đáp án đúng.)",
+      "question": "Những kiểm soát nào cần cho semantic response cache? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "a",
         "d"
@@ -7640,7 +7709,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -7663,9 +7733,9 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:24:47.308043+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track3.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -7825,7 +7895,7 @@
     },
     {
       "id": "p2-t3-d11-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -7836,7 +7906,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Trong bảng primitives, Prompt là template tái sử dụng do user chọn, khác Tool là function mà LLM quyết định gọi.",
+      "question": "Trong MCP, Prompt là template tái sử dụng do người dùng chọn, khác Tool là function mà LLM quyết định gọi.",
       "correct_answer": true,
       "explanation": "Bảng phân biệt vai trò và ai kiểm soát từng primitive.",
       "source_reference": [
@@ -7852,13 +7922,14 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:24:47.308043+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/track3.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -8023,7 +8094,7 @@
     },
     {
       "id": "p2-t3-d13-q01",
-      "revision": 2,
+      "revision": 3,
       "author_id": "a1-question-engineer",
       "phase": 2,
       "track": 3,
@@ -8034,7 +8105,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những chiều nào thuộc holistic system evaluation của slide? (Chọn tất cả đáp án đúng.)",
+      "question": "Những chiều nào cần xét khi đánh giá toàn diện một hệ thống agent? (Chọn tất cả đáp án đúng.)",
       "correct_answer": [
         "c",
         "a"
@@ -8053,7 +8124,8 @@
       "status": "approved",
       "review_notes": [
         "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
-        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
       ],
       "options": [
         {
@@ -8076,9 +8148,9 @@
       "shuffle_options": true,
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:24:47.308043+00:00",
-        "reviewed_revision": 2,
-        "report_id": "reports/content/track3.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 3,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -8282,7 +8354,7 @@
     },
     {
       "id": "p2-t4-d01-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -8293,7 +8365,7 @@
       "answer_format": "single_choice",
       "difficulty": "easy",
       "cognitive_level": "understand",
-      "question": "Theo slide, kỹ thuật nào phù hợp để xử lý gradient bùng nổ?",
+      "question": "Kỹ thuật nào phù hợp để xử lý gradient bùng nổ?",
       "correct_answer": "a",
       "explanation": "Slide phân biệt gradient biến mất và bùng nổ; gradient clipping được nêu cho trường hợp bùng nổ.",
       "source_reference": [
@@ -8325,16 +8397,19 @@
         }
       ],
       "shuffle_options": true,
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:01:52.217624+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/root-track4.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p2-t4-d01-q04",
-      "revision": 1,
+      "revision": 3,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -8345,7 +8420,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Theo phần tổng kết, AdamW tách weight decay khỏi gradient thay vì gộp L2 trực tiếp vào gradient như Adam(weight_decay) trong ví dụ PyTorch.",
+      "question": "Trong AdamW, weight decay được tách khỏi bước cập nhật theo gradient, thay vì cộng hạng L2 vào gradient.",
       "correct_answer": true,
       "explanation": "Đây là điểm khác biệt được ghi trong tổng kết Chương 4 của tài liệu.",
       "source_reference": [
@@ -8358,11 +8433,15 @@
         }
       ],
       "status": "approved",
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required.",
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:01:52.217624+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/root-track4.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 3,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -8471,7 +8550,7 @@
     },
     {
       "id": "p2-t4-d02-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -8482,7 +8561,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Chọn các mô tả đúng về multi-head attention trong slide.",
+      "question": "Chọn các mô tả đúng về multi-head attention.",
       "correct_answer": [
         "d",
         "a"
@@ -8517,11 +8596,14 @@
         }
       ],
       "shuffle_options": true,
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:01:52.217624+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/root-track4.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -8663,7 +8745,7 @@
     },
     {
       "id": "p2-t4-d03-q03",
-      "revision": 2,
+      "revision": 3,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -8674,7 +8756,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Slide nêu những vai trò nào của IoU? Chọn tất cả đáp án đúng.",
+      "question": "IoU có những vai trò nào trong phát hiện đối tượng? Chọn tất cả đáp án đúng.",
       "correct_answer": [
         "c",
         "d",
@@ -8710,16 +8792,19 @@
         }
       ],
       "shuffle_options": true,
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:01:52.217624+00:00",
-        "reviewed_revision": 2,
-        "report_id": "reports/content/root-track4.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 3,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p2-t4-d03-q04",
-      "revision": 1,
+      "revision": 2,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -8730,7 +8815,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Trong kiến trúc YOLO26 minh họa trên slide, head one-to-one có thể suy luận không cần NMS.",
+      "question": "Trong kiến trúc YOLO26, head one-to-one có thể suy luận không cần NMS.",
       "correct_answer": true,
       "explanation": "Sơ đồ phân biệt head one-to-many đi qua NMS và head one-to-one không NMS. Câu hỏi bám cấu hình minh họa của tài liệu, không khái quát cho mọi detector.",
       "source_reference": [
@@ -8743,11 +8828,14 @@
         }
       ],
       "status": "approved",
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:01:52.217624+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/root-track4.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -9108,7 +9196,7 @@
     },
     {
       "id": "p2-t4-d05-q04",
-      "revision": 1,
+      "revision": 2,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -9119,7 +9207,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Theo slide, khi hàm cong mạnh hoặc độ bất định lớn, xấp xỉ của EKF có thể lệch cả trung bình lẫn độ rộng phân phối.",
+      "question": "Khi hàm cong mạnh hoặc độ bất định lớn, xấp xỉ của EKF có thể lệch cả trung bình lẫn độ rộng phân phối.",
       "correct_answer": true,
       "explanation": "Slide minh họa sự khác biệt của phân phối thật và xấp xỉ EKF, đồng thời nêu các điều kiện làm xấp xỉ kém.",
       "source_reference": [
@@ -9132,11 +9220,14 @@
         }
       ],
       "status": "approved",
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:01:52.217624+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/root-track4.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -9576,7 +9667,7 @@
     },
     {
       "id": "p2-t4-d08-q02",
-      "revision": 2,
+      "revision": 3,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -9587,7 +9678,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Chọn mô tả phù hợp với nhánh top-down/query attention trên slide.",
+      "question": "Chọn mô tả phù hợp với nhánh top-down sử dụng query attention để tạo đặc trưng BEV.",
       "correct_answer": [
         "c",
         "d"
@@ -9622,16 +9713,19 @@
         }
       ],
       "shuffle_options": true,
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:01:52.217624+00:00",
-        "reviewed_revision": 2,
-        "report_id": "reports/content/root-track4.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 3,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p2-t4-d08-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -9642,7 +9736,7 @@
       "answer_format": "single_choice",
       "difficulty": "hard",
       "cognitive_level": "apply",
-      "question": "Với tọa độ ảnh (u,v), depth z và ma trận nội tại K, công thức giải mã tọa độ camera trên slide là gì?",
+      "question": "Với tọa độ ảnh (u,v), depth z và ma trận nội tại K, công thức khôi phục tọa độ camera là gì?",
       "correct_answer": "b",
       "explanation": "Slide nêu phép đi ngược từ pixel cùng depth sang tọa độ 3D bằng nghịch đảo camera intrinsics.",
       "source_reference": [
@@ -9674,16 +9768,19 @@
         }
       ],
       "shuffle_options": true,
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:01:52.217624+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/root-track4.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p2-t4-d08-q04",
-      "revision": 1,
+      "revision": 2,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -9694,7 +9791,7 @@
       "answer_format": "boolean",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Có thể coi biểu đồ NDS camera/LiDAR trên slide là bảng xếp hạng công bằng tuyệt đối giữa mọi model dù backbone và dữ liệu bổ sung khác nhau.",
+      "question": "Có thể coi việc so sánh NDS giữa các model camera và LiDAR là một bảng xếp hạng công bằng tuyệt đối, dù backbone và dữ liệu bổ sung khác nhau.",
       "correct_answer": false,
       "explanation": "Slide yêu cầu đọc như xu hướng vì backbone và dữ liệu bổ sung khác nhau, không coi là xếp hạng công bằng.",
       "source_reference": [
@@ -9707,11 +9804,14 @@
         }
       ],
       "status": "approved",
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:01:52.217624+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/root-track4.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -9904,7 +10004,7 @@
     },
     {
       "id": "p2-t4-d10-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -9915,7 +10015,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Đầu ra đặc trưng của VLA cho robot trong sơ đồ slide là gì?",
+      "question": "Đầu ra đặc trưng của mô hình VLA dành cho robot là gì?",
       "correct_answer": "b",
       "explanation": "VLA được minh họa là VLM đã pretrain được bổ sung đầu ra hành động, phục vụ điều khiển robot.",
       "source_reference": [
@@ -9947,16 +10047,19 @@
         }
       ],
       "shuffle_options": true,
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:01:52.217624+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/root-track4.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p2-t4-d10-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -9967,7 +10070,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Ở giai đoạn alignment Qwen3-VL được minh họa, thành phần nào được cập nhật trong khi ViT và LLM đóng băng?",
+      "question": "Trong giai đoạn alignment của Qwen3-VL khi ViT và LLM được đóng băng, thành phần nào được cập nhật?",
       "correct_answer": "a",
       "explanation": "Câu hỏi chỉ áp dụng ví dụ Qwen3-VL trong slide: giai đoạn đầu chỉ cập nhật projector/merger. Slide cũng chỉ ra mô hình khác có thể cập nhật khác.",
       "source_reference": [
@@ -9999,16 +10102,19 @@
         }
       ],
       "shuffle_options": true,
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:01:52.217624+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/root-track4.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p2-t4-d10-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -10019,7 +10125,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Theo slide, những yếu tố nào quyết định số token ảnh?",
+      "question": "Những yếu tố nào quyết định số token ảnh khi mã hóa đầu vào cho mô hình thị giác–ngôn ngữ?",
       "correct_answer": [
         "d",
         "a",
@@ -10055,16 +10161,19 @@
         }
       ],
       "shuffle_options": true,
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:01:52.217624+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/root-track4.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p2-t4-d10-q04",
-      "revision": 1,
+      "revision": 2,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -10075,7 +10184,7 @@
       "answer_format": "boolean",
       "difficulty": "easy",
       "cognitive_level": "understand",
-      "question": "CLIP được slide mô tả là học tương phản trên cặp ảnh–văn bản.",
+      "question": "CLIP học tương phản trên các cặp ảnh–văn bản.",
       "correct_answer": true,
       "explanation": "Phần lịch sử vision encoder ghi rõ CLIP dùng contrastive learning trên cặp ảnh và văn bản.",
       "source_reference": [
@@ -10088,16 +10197,19 @@
         }
       ],
       "status": "approved",
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:01:52.217624+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/root-track4.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p2-t4-d11-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -10108,7 +10220,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Slide tách sim2real gap thành những nhóm nào?",
+      "question": "Những nhóm sai khác nào có thể gây ra sim2real gap?",
       "correct_answer": [
         "a",
         "b",
@@ -10144,16 +10256,19 @@
         }
       ],
       "shuffle_options": true,
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:01:52.217624+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/root-track4.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
       "id": "p2-t4-d11-q02",
-      "revision": 1,
+      "revision": 2,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -10164,7 +10279,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Nhận xét nào đúng về phạm vi domain randomization theo phần tổng kết?",
+      "question": "Nhận xét nào đúng về phạm vi của domain randomization?",
       "correct_answer": "d",
       "explanation": "Slide nhấn mạnh cân bằng coverage và hiệu quả lấy mẫu, đồng thời ưu tiên randomization có cấu trúc.",
       "source_reference": [
@@ -10196,11 +10311,14 @@
         }
       ],
       "shuffle_options": true,
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:01:52.217624+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/root-track4.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -10290,7 +10408,7 @@
     },
     {
       "id": "p2-t4-d12-q01",
-      "revision": 1,
+      "revision": 2,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -10301,7 +10419,7 @@
       "answer_format": "multiple_choice",
       "difficulty": "medium",
       "cognitive_level": "understand",
-      "question": "Những thông tin nào được nêu trong thẻ lần chạy để tái tạo log replay?",
+      "question": "Cần lưu những thông tin nào để tái tạo một lần chạy log replay?",
       "correct_answer": [
         "d",
         "a",
@@ -10337,11 +10455,14 @@
         }
       ],
       "shuffle_options": true,
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:01:52.217624+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/root-track4.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
@@ -10379,7 +10500,7 @@
     },
     {
       "id": "p2-t4-d12-q03",
-      "revision": 1,
+      "revision": 2,
       "author_id": "root-content",
       "phase": 2,
       "track": 4,
@@ -10390,7 +10511,7 @@
       "answer_format": "single_choice",
       "difficulty": "medium",
       "cognitive_level": "apply",
-      "question": "Theo ví dụ TTC của slide, khoảng cách 12 m và tốc độ tiến gần 5 m/s cho TTC bằng bao nhiêu?",
+      "question": "Khoảng cách tới vật cản là 12 m và tốc độ tiến gần không đổi là 5 m/s. Time to Collision (TTC) bằng bao nhiêu?",
       "correct_answer": "b",
       "explanation": "TTC = khoảng cách / tốc độ tiến gần = 12/5 = 2,4 giây. Đây là độ đo đơn giản trong ví dụ, không đủ một mình để kết luận an toàn của toàn hệ thống.",
       "source_reference": [
@@ -10422,11 +10543,14 @@
         }
       ],
       "shuffle_options": true,
+      "review_notes": [
+        "Root editorial revision: standalone knowledge question; independent re-review required."
+      ],
       "review": {
         "reviewer_id": "reviewer",
-        "reviewed_at": "2026-10-22T07:01:52.217624+00:00",
-        "reviewed_revision": 1,
-        "report_id": "reports/content/root-track4.json"
+        "reviewed_at": "2026-10-22T09:14:33.952252+00:00",
+        "reviewed_revision": 2,
+        "report_id": "reports/content/expand-wording.json"
       }
     },
     {
