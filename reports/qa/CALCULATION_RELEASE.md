@@ -22,4 +22,10 @@ Root ran the final integrated revision:
 - Production preview at127.0.0.1:5176:13/13 Playwright tests PASS in24.9s, no skipped/flaky cases. Includes numerical-only Track4 practice and reload, both exam paths with calculation minimum, exact quotas/points, deadlines, persistence/error recovery, backup and responsive routes. Evidence `tmp/qa/calculation-preview-browser-results.json`.
 - Independent code/metadata reviews passed in `CALCULATION_CODE_REVIEW.md` and `CALCULATION_RELEASE_REVIEW.md`.
 
-Deployment verification is pending and will be appended after the public site updates. Validation used Windows, Node24.14.1, npm11.11 and installed Chrome. Existing historical sessions retain their stored question snapshots.
+Validation used Windows, Node24.14.1, npm11.11 and installed Chrome. Existing historical sessions retain their stored question snapshots.
+
+## Public deployment
+
+Published to https://jjayzdev.github.io/mid-term-aia-web/ . Source commit `75a74a3186db2ec9bdf85a9f6c04eacf9e061b8e`; Pages commit `90f56fd31f044648208e2636d07787a04d5ab1b4`. GitHub Pages reports built with no error. HTML, JS/CSS, favicon and all3 data JSON files return200; remote bank/catalog/coverage exactly match the reviewed release. Evidence `tmp/qa/calculation-live-http-verification.json`.
+
+Root reran all13 Playwright tests on the public URL: **13/13 PASS**, no failures/skips/flaky cases, about1.7minutes. The numerical-only practice/reload test and both exam minimum assertions passed against the deployed bank. Evidence `tmp/qa/calculation-live-browser-results.json`. The later documentation-only commit records these results; it does not alter the tested static build.
