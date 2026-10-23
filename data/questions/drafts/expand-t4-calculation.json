@@ -1,0 +1,1194 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.22.expand-t4-calculation",
+  "questions": [
+    {
+      "id": "p2-t4-d01-c01",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một batch hồi quy có dự đoán (4, 2, 2) và nhãn (2, 5, 1). Dùng MSE=(1/n)Σ(y_hat−y)², không có hệ số 1/2. MSE của batch bằng bao nhiêu? Làm tròn 3 chữ số thập phân.",
+      "correct_answer": "c",
+      "explanation": "Các sai số là 2, −3, 1; tổng bình phương=4+9+1=14. Lấy trung bình trên 3 mẫu: MSE=14/3≈4,667. Giá trị 2,333 xuất hiện nếu thêm nhầm hệ số 1/2.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 51,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 51; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "2,333"
+        },
+        {
+          "id": "b",
+          "text": "2,000"
+        },
+        {
+          "id": "c",
+          "text": "4,667"
+        },
+        {
+          "id": "d",
+          "text": "14,000"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true
+    },
+    {
+      "id": "p2-t4-d01-c02",
+      "revision": 2,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một lớp tính z=Wx+b rồi a=ReLU(z)=max(0,z) theo từng phần tử. Ma trận W có hàng thứ nhất (1; −2), hàng thứ hai (0,5; 1); x=(2; 3), b=(1; −1). Dấu phẩy trong 0,5 là dấu thập phân. Vector a là gì?",
+      "correct_answer": "b",
+      "explanation": "Nơ-ron thứ nhất: z1=1×2−2×3+1=−3. Nơ-ron thứ hai: z2=0,5×2+1×3−1=3. ReLU chặn giá trị âm nên a=(0;3).",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 12,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 15,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 15",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "(0; 2)"
+        },
+        {
+          "id": "b",
+          "text": "(0; 3)"
+        },
+        {
+          "id": "c",
+          "text": "(−3; 3)"
+        },
+        {
+          "id": "d",
+          "text": "(0; 4)"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true
+    },
+    {
+      "id": "p2-t4-d02-c01",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d02",
+      "topic": "p2-t4-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Convolution nhận ảnh 32×32, C_in=4, C_out=8, kernel k=3, stride s=2, padding p=1, dilation d=1. Dùng H_out=floor((H_in+2p−d(k−1)−1)/s)+1 và MAC=H_out×W_out×C_out×C_in×k²; bỏ chi phí bias. Kích thước output và số MAC là bao nhiêu?",
+      "correct_answer": "b",
+      "explanation": "H_out=W_out=floor((32+2−2−1)/2)+1=16. MAC=16×16×8×4×9=73.728. 296 là số tham số có bias, không phải số MAC.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d02",
+          "sha256": "58895651f776ef9fb62c9010d0c0c7b338849ea96e4a5dcbbe46b7afb77110b7",
+          "pdf_page": 7,
+          "title": "Kiến Trúc Mạng Cho Thị Giác Máy Tính",
+          "locator": "Physical PDF page 7; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d02",
+          "sha256": "58895651f776ef9fb62c9010d0c0c7b338849ea96e4a5dcbbe46b7afb77110b7",
+          "pdf_page": 9,
+          "title": "Kiến Trúc Mạng Cho Thị Giác Máy Tính",
+          "locator": "Physical PDF page 9",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "16×16 và 296 MAC"
+        },
+        {
+          "id": "b",
+          "text": "16×16 và 73.728 MAC"
+        },
+        {
+          "id": "c",
+          "text": "17×17 và 83.232 MAC"
+        },
+        {
+          "id": "d",
+          "text": "16×16 và 18.432 MAC"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true
+    },
+    {
+      "id": "p2-t4-d02-c02",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d02",
+      "topic": "p2-t4-d02",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một ô LSTM vô hướng có c_prev=2, forget gate f=0,75, input gate i=0,4, ứng viên c_tilde=−0,5 và output gate o=0,6. Dùng c=f×c_prev+i×c_tilde, h=o×tanh(c). Giá trị (c,h) là gì? Làm tròn h đến 4 chữ số thập phân.",
+      "correct_answer": "c",
+      "explanation": "Ô nhớ mới c=0,75×2+0,4×(−0,5)=1,3. Sau đó h=0,6×tanh(1,3)≈0,5170. Bỏ tanh sẽ cho sai h=0,78; bỏ dấu âm của ứng viên sẽ cho c=1,7.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d02",
+          "sha256": "58895651f776ef9fb62c9010d0c0c7b338849ea96e4a5dcbbe46b7afb77110b7",
+          "pdf_page": 25,
+          "title": "Kiến Trúc Mạng Cho Thị Giác Máy Tính",
+          "locator": "Physical PDF page 25; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "(1,7; 0,5612)"
+        },
+        {
+          "id": "b",
+          "text": "(1,3; 0,7800)"
+        },
+        {
+          "id": "c",
+          "text": "(1,3; 0,5170)"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true
+    },
+    {
+      "id": "p2-t4-d03-c01",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d03",
+      "topic": "p2-t4-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Tại ngưỡng confidence triển khai, detector có TP=72, FP=18 và FN=8. Dùng P=TP/(TP+FP), R=TP/(TP+FN), F1=2PR/(P+R). Bộ (P,R,F1) nào đúng? Làm tròn 4 chữ số thập phân.",
+      "correct_answer": "c",
+      "explanation": "P=72/90=0,8; R=72/80=0,9. F1=2×0,8×0,9/1,7≈0,8471. Trung bình số học (0,8+0,9)/2=0,85 không phải F1.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d03",
+          "sha256": "bbc8de22523a77f295328ce15328e0d811a078152b75e9d6cedd159dc45e739e",
+          "pdf_page": 45,
+          "title": "2D Perception: Detection · Segmentation · Keypoints",
+          "locator": "Physical PDF page 45; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "(0,9000; 0,8000; 0,8471)"
+        },
+        {
+          "id": "b",
+          "text": "(0,8000; 0,9000; 0,8500)"
+        },
+        {
+          "id": "c",
+          "text": "(0,8000; 0,9000; 0,8471)"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true
+    },
+    {
+      "id": "p2-t4-d03-c02",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d03",
+      "topic": "p2-t4-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Ảnh gốc 800×600 được letterbox thành 640×640: scale=0,8, padding trái=0 và padding trên=80 pixel. Box xyxy trên ảnh letterbox là (80,160,400,400). Trừ padding rồi chia scale cho từng tọa độ. Box xyxy trên ảnh gốc là gì?",
+      "correct_answer": "d",
+      "explanation": "x1=80/0,8=100; y1=(160−80)/0,8=100; x2=400/0,8=500; y2=(400−80)/0,8=400. Padding phải được trừ trong hệ tọa độ ảnh letterbox trước khi chia scale.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d03",
+          "sha256": "bbc8de22523a77f295328ce15328e0d811a078152b75e9d6cedd159dc45e739e",
+          "pdf_page": 13,
+          "title": "2D Perception: Detection · Segmentation · Keypoints",
+          "locator": "Physical PDF page 13; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "(100,200,500,500)"
+        },
+        {
+          "id": "b",
+          "text": "(80,80,400,320)"
+        },
+        {
+          "id": "c",
+          "text": "(100,120,500,420)"
+        },
+        {
+          "id": "d",
+          "text": "(100,100,500,400)"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true
+    },
+    {
+      "id": "p2-t4-d04-c01",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d04",
+      "topic": "p2-t4-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Hai camera RGB không nén, mỗi camera 1280×720 pixel, 24 bit/pixel, 30 frame/s, truyền chung một link 1,0 Gbit/s. Bỏ overhead và dùng 1 Gbit=10^9 bit. Với bitrate=N_camera×W×H×bits_per_pixel×FPS, tổng bitrate là bao nhiêu và link có đủ không? Làm tròn 4 chữ số thập phân.",
+      "correct_answer": "b",
+      "explanation": "Mỗi camera cần 1280×720×24×30=663.552.000 bit/s. Hai camera cần 1.327.104.000 bit/s=1,327104 Gbit/s, vượt 1,0 Gbit/s ngay cả khi chưa tính overhead. Chia thêm 8 sẽ nhầm bit với byte.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 8,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "locator": "Physical PDF page 8; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "0,1659 Gbit/s; đủ"
+        },
+        {
+          "id": "b",
+          "text": "1,3271 Gbit/s; không đủ"
+        },
+        {
+          "id": "c",
+          "text": "0,6636 Gbit/s; đủ"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true
+    },
+    {
+      "id": "p2-t4-d04-c02",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d04",
+      "topic": "p2-t4-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một frame 640×480 có 18.432 pixel bão hòa. Health policy cảnh báo khi saturated pixel ratio lớn hơn 5%. Tính ratio=100×số pixel bão hòa/(W×H). Ratio và quyết định nào đúng?",
+      "correct_answer": "a",
+      "explanation": "Tổng pixel=640×480=307.200. Ratio=100×18.432/307.200=6%, lớn hơn ngưỡng 5% nên cảnh báo. 0,06 là tỷ lệ chưa đổi sang phần trăm.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 16,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "locator": "Physical PDF page 16; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "6%; có cảnh báo"
+        },
+        {
+          "id": "b",
+          "text": "0,06%; không cảnh báo"
+        },
+        {
+          "id": "c",
+          "text": "3%; không cảnh báo"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true
+    },
+    {
+      "id": "p2-t4-d05-c01",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d05",
+      "topic": "p2-t4-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Kalman update vô hướng có prediction x_pred=20 m, variance P=9 m², measurement z=26 m và variance R=3 m². Dùng K=P/(P+R), x_new=x_pred+K(z−x_pred). Bộ (K,x_new) là gì?",
+      "correct_answer": "a",
+      "explanation": "K=9/(9+3)=0,75. Innovation=26−20=6 m; x_new=20+0,75×6=24,5 m. Dùng R ở tử số đảo mức tin measurement; dùng z thay innovation tạo 39,5 m.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 17,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 17; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "(0,75; 24,5 m)"
+        },
+        {
+          "id": "b",
+          "text": "(0,25; 21,5 m)"
+        },
+        {
+          "id": "c",
+          "text": "(0,75; 39,5 m)"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true
+    },
+    {
+      "id": "p2-t4-d05-c02",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d05",
+      "topic": "p2-t4-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Ba ước lượng vị trí Gaussian độc lập có variance lần lượt 4, 9 và 36 m². Theo dạng thông tin, I_total=Σ(1/P_i), P_fused=1/I_total, sigma_fused=sqrt(P_fused). Bộ (P_fused,sigma_fused) là gì? Làm tròn 4 chữ số thập phân.",
+      "correct_answer": "c",
+      "explanation": "I_total=1/4+1/9+1/36=14/36=7/18 m^−2. P_fused=18/7≈2,5714 m²; sigma=sqrt(18/7)≈1,6036 m. Lấy trung bình variance hoặc coi information là variance đều sai.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 36,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 36; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "(0,3889 m²; 0,6236 m)"
+        },
+        {
+          "id": "b",
+          "text": "(16,3333 m²; 4,0415 m)"
+        },
+        {
+          "id": "c",
+          "text": "(2,5714 m²; 1,6036 m)"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true
+    },
+    {
+      "id": "p2-t4-d06-c01",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d06",
+      "topic": "p2-t4-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một voxel grid phủ x∈[−20,20) m, y∈[−10,10) m, z∈[−2,2) m, với voxel size (0,2;0,2;0,4) m. Giả sử lưu dense một giá trị float32 4 byte cho mỗi ô, không metadata; 1 MB=10^6 byte. Tổng số ô có thể có và bộ nhớ dense là bao nhiêu?",
+      "correct_answer": "c",
+      "explanation": "Số ô theo x,y,z lần lượt 40/0,2=200, 20/0,2=100, 4/0,4=10. Tổng=200×100×10=200.000; bộ nhớ=200.000×4=800.000 byte=0,8 MB. Đây là grid dense giả định, không phải số voxel không rỗng của sparse convolution.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d06",
+          "sha256": "1c49ea2510761c0798a7b9d139ab9074eba188719a16cec41778714cef54f0d7",
+          "pdf_page": 9,
+          "title": "3D from Point Clouds and Where LiDAR Meets the Camera",
+          "locator": "Physical PDF page 9; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "400.000 ô; 1,6 MB"
+        },
+        {
+          "id": "b",
+          "text": "20.000 ô; 0,08 MB"
+        },
+        {
+          "id": "c",
+          "text": "200.000 ô; 0,8 MB"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true
+    },
+    {
+      "id": "p2-t4-d06-c02",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d06",
+      "topic": "p2-t4-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Điểm LiDAR (1,2,8) m được đưa sang camera bằng x_cam=R×x_lidar+t, với R là identity và t=(1,−1,2) m. Camera pinhole không distortion có fx=400, fy=500, cx=320, cy=240 pixel; u=fx×X/Z+cx, v=fy×Y/Z+cy. Pixel (u,v) là gì?",
+      "correct_answer": "b",
+      "explanation": "Sau extrinsic: (X,Y,Z)=(2,1,10) m. Chiếu pinhole: u=400×2/10+320=400; v=500×1/10+240=290. Bỏ translation cho (370;365); quên chia depth cho (1120;740).",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d06",
+          "sha256": "1c49ea2510761c0798a7b9d139ab9074eba188719a16cec41778714cef54f0d7",
+          "pdf_page": 16,
+          "title": "3D from Point Clouds and Where LiDAR Meets the Camera",
+          "locator": "Physical PDF page 16; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "(1120; 740)"
+        },
+        {
+          "id": "b",
+          "text": "(400; 290)"
+        },
+        {
+          "id": "c",
+          "text": "(370; 365)"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true
+    },
+    {
+      "id": "p2-t4-d07-c01",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d07",
+      "topic": "p2-t4-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Ghép một-một ba tracks A,B,C với ba detections 1,2,3. Ma trận cost có các hàng A=(1;2;9), B=(2;9;9), C=(9;3;1). Không bỏ unmatched và tổng cost là tổng ba cặp. Phương án ghép tối ưu toàn cục cùng tổng cost là gì?",
+      "correct_answer": "b",
+      "explanation": "Ghép A→2,B→1,C→3 có cost 2+2+1=5. Sáu hoán vị có tổng lần lượt 11,13,5,20,14,27; nhỏ nhất là 5. Chọn cặp rẻ nhất A→1 trước có thể ép B vào cặp đắt.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d07",
+          "sha256": "e664d320f682ce0aacfe2649cb5dd07e6d85563dadaef5cf92039bc43b07ee26",
+          "pdf_page": 20,
+          "title": "Tracking",
+          "locator": "Physical PDF page 20; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A→1, B→3, C→2; tổng 13"
+        },
+        {
+          "id": "b",
+          "text": "A→2, B→1, C→3; tổng 5"
+        },
+        {
+          "id": "c",
+          "text": "A→1, B→2, C→3; tổng 11"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true
+    },
+    {
+      "id": "p2-t4-d07-c02",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d07",
+      "topic": "p2-t4-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Sau global identity matching, một tracker có IDTP=120, IDFP=30 và IDFN=50. Dùng IDF1=2×IDTP/(2×IDTP+IDFP+IDFN). IDF1 bằng bao nhiêu? Làm tròn 2 chữ số sau dấu phẩy theo phần trăm.",
+      "correct_answer": "a",
+      "explanation": "Tử số=2×120=240; mẫu số=240+30+50=320. IDF1=240/320=75%. 80% là identity precision, còn 70,59% là identity recall; cả hai không thay IDF1.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d07",
+          "sha256": "e664d320f682ce0aacfe2649cb5dd07e6d85563dadaef5cf92039bc43b07ee26",
+          "pdf_page": 38,
+          "title": "Tracking",
+          "locator": "Physical PDF page 38; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "75,00%"
+        },
+        {
+          "id": "b",
+          "text": "80,00%"
+        },
+        {
+          "id": "c",
+          "text": "70,59%"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true
+    },
+    {
+      "id": "p2-t4-d08-c01",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d08",
+      "topic": "p2-t4-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Camera nhìn ngang trên mặt đường phẳng có độ cao h=1,5 m, focal length f=800 pixel. Chân vật cách đường chân trời Δv=40 pixel; Z=f×h/Δv. Nếu sai số Δv là ±2 pixel và các giả định khác đúng, khoảng Z nhỏ nhất/lớn nhất là gì? Làm tròn 3 chữ số thập phân.",
+      "correct_answer": "a",
+      "explanation": "Z danh định=800×1,5/40=30 m. Vì Z tỉ lệ nghịch Δv, Z_min=1200/42≈28,571 m và Z_max=1200/38≈31,579 m. Hai biên không đối xứng tuyến tính quanh 30 m.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d08",
+          "sha256": "0717147c9cedbe8d638ac82013e9c382ecaf338ccb6f379dd907591722d9cef7",
+          "pdf_page": 7,
+          "title": "3D từ Camera, BEV & Sensor Fusion",
+          "locator": "Physical PDF page 7; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "28,571 m đến 31,579 m"
+        },
+        {
+          "id": "b",
+          "text": "28,500 m đến 31,500 m"
+        },
+        {
+          "id": "c",
+          "text": "31,579 m đến 28,571 m"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true
+    },
+    {
+      "id": "p2-t4-d08-c02",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d08",
+      "topic": "p2-t4-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Dùng NDS=[5×mAP+Σ(1−min(1,e_i))]/10 cho năm TP errors đã được quy về đúng thang của công thức. Cho mAP=0,6 và (e1,e2,e3,e4,e5)=(0,2;0,3;0,1;0,4;0,5). NDS là bao nhiêu? Làm tròn 3 chữ số thập phân.",
+      "correct_answer": "c",
+      "explanation": "Năm quality terms là 0,8;0,7;0,9;0,6;0,5, tổng 3,5. Phần detection=5×0,6=3. NDS=(3+3,5)/10=0,65. Cộng trực tiếp error thay 1−error cho 0,45; trung bình sáu thành phần không trọng số cho khoảng 0,683.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d08",
+          "sha256": "0717147c9cedbe8d638ac82013e9c382ecaf338ccb6f379dd907591722d9cef7",
+          "pdf_page": 12,
+          "title": "3D từ Camera, BEV & Sensor Fusion",
+          "locator": "Physical PDF page 12; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "0,450"
+        },
+        {
+          "id": "b",
+          "text": "0,683"
+        },
+        {
+          "id": "c",
+          "text": "0,650"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true
+    },
+    {
+      "id": "p2-t4-d09-c01",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d09",
+      "topic": "p2-t4-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Video có FPS cố định 30, dài đúng 45 giây, gồm các frame index 0 đến 1349. Pipeline lấy frame 0 rồi mỗi frame thứ 9: 0,9,18,…; embedding batch size=16, batch cuối thiếu vẫn được chạy. Có bao nhiêu frame được chọn và bao nhiêu batch cần chạy?",
+      "correct_answer": "c",
+      "explanation": "Video có 30×45=1.350 frame; chọn các bội của 9 từ 0 đến 1341 được 150 frame. Số batch=ceil(150/16)=10, gồm 9 batch đủ và một batch 6 frame. Không có frame index1350.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d09",
+          "sha256": "b15b6124d171a1174ac98580a2a2515eaaf09840a528dcd85fd37a6d090d4a15",
+          "pdf_page": 24,
+          "title": "Data và annotation pipeline cho Computer Vision và Robotics",
+          "locator": "Physical PDF page 24; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "151 frame; 10 batch"
+        },
+        {
+          "id": "b",
+          "text": "1.350 frame; 85 batch"
+        },
+        {
+          "id": "c",
+          "text": "150 frame; 10 batch"
+        },
+        {
+          "id": "d",
+          "text": "150 frame; 9 batch"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true
+    },
+    {
+      "id": "p2-t4-d09-c02",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d09",
+      "topic": "p2-t4-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một batch 1.000 nhãn máy được route theo policy giả định: 600 nhãn confidence cao chỉ audit 10%, mỗi audit 5 giây; 300 nhãn trung bình đều review 8 giây/nhãn; 100 nhãn thấp đều vẽ lại 30 giây/nhãn. Bỏ overhead. So với vẽ thủ công cả 1.000 nhãn ở 30 giây/nhãn, tổng thời gian mới và phần trăm giảm là bao nhiêu?",
+      "correct_answer": "b",
+      "explanation": "Audit cao:600×10%×5=300 giây; review:300×8=2.400 giây; vẽ lại:100×30=3.000 giây. Tổng=5.700 giây=95 phút. Baseline=30.000 giây=500 phút; giảm=(30.000−5.700)/30.000=81%. Các ngưỡng và thời gian đều là giả định của bài.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d09",
+          "sha256": "b15b6124d171a1174ac98580a2a2515eaaf09840a528dcd85fd37a6d090d4a15",
+          "pdf_page": 54,
+          "title": "Data và annotation pipeline cho Computer Vision và Robotics",
+          "locator": "Physical PDF page 54; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "90 phút; giảm 82%"
+        },
+        {
+          "id": "b",
+          "text": "95 phút; giảm 81%"
+        },
+        {
+          "id": "c",
+          "text": "140 phút; giảm 72%"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true
+    },
+    {
+      "id": "p2-t4-d10-c01",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d10",
+      "topic": "p2-t4-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một VLM trả box xyxy chuẩn hóa theo thang 0–1000: (100;200;300;500), trên ảnh W=1920,H=1080 pixel. Dùng x_px=x_norm×W/1000, y_px=y_norm×H/1000; diện tích=(x2−x1)(y2−y1), không cộng 1. Kích thước box và diện tích pixel là gì?",
+      "correct_answer": "b",
+      "explanation": "x1=192,x2=576 nên width=384; y1=216,y2=540 nên height=324. Diện tích=384×324=124.416 pixel². Trục y phải nhân H thay W; các số chuẩn hóa không phải tọa độ pixel.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d10",
+          "sha256": "763149a983add6ef60fee2fafb6f2caec98576b6afb2e1eca01f5c532cf78e2e",
+          "pdf_page": 14,
+          "title": "Vision–Language Model và VLA",
+          "locator": "Physical PDF page 14; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "200×300 pixel; 60.000 pixel²"
+        },
+        {
+          "id": "b",
+          "text": "384×324 pixel; 124.416 pixel²"
+        },
+        {
+          "id": "c",
+          "text": "384×576 pixel; 221.184 pixel²"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true
+    },
+    {
+      "id": "p2-t4-d10-c02",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d10",
+      "topic": "p2-t4-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một MoE giả định có tổng 24 tỉ tham số nhưng chỉ 3 tỉ active/token. Toàn bộ weights phải resident, mỗi weight 2 byte và shard đều lên 4 GPU. Bỏ KV cache, activations và overhead; 1 GB=10^9 byte. Dung lượng weights tổng và trên mỗi GPU là bao nhiêu?",
+      "correct_answer": "a",
+      "explanation": "Dung lượng weights theo tổng tham số:24×10^9×2=48×10^9 byte=48 GB. Shard đều bốn GPU cho 48/4=12 GB/GPU. Active/token liên quan phần compute, không thay tổng weights cần resident theo giả định.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d10",
+          "sha256": "763149a983add6ef60fee2fafb6f2caec98576b6afb2e1eca01f5c532cf78e2e",
+          "pdf_page": 16,
+          "title": "Vision–Language Model và VLA",
+          "locator": "Physical PDF page 16; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "48 GB tổng; 12 GB/GPU"
+        },
+        {
+          "id": "b",
+          "text": "6 GB tổng; 1,5 GB/GPU"
+        },
+        {
+          "id": "c",
+          "text": "48 GB tổng; 48 GB/GPU"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true
+    },
+    {
+      "id": "p2-t4-d11-c01",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d11",
+      "topic": "p2-t4-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Đo vị trí có nhiễu độc lập ở mỗi thời điểm với độ lệch chuẩn sigma_x=0,04 m. Với sai phân bậc hai, sigma_a=sqrt(6)×sigma_x/(Δt)². Tính sigma_a khi Δt=0,2 s và khi Δt=0,1 s. Làm tròn 3 chữ số thập phân.",
+      "correct_answer": "a",
+      "explanation": "Với Δt=0,2: sqrt(6)×0,04/0,04≈2,449 m/s². Với Δt=0,1: sqrt(6)×0,04/0,01≈9,798 m/s². Giảm một nửa bước thời gian làm nhiễu gia tốc tăng bốn lần, không phải hai lần.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d11",
+          "sha256": "9f2b8b0d84e67d71598eaa2f2a7d0d186567c3ee10171dcf5213e4d62a492b46",
+          "pdf_page": 46,
+          "title": "Synthetic, Simulated & Trajectory Data",
+          "locator": "Physical PDF page 46; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "2,449 và 9,798 m/s²"
+        },
+        {
+          "id": "b",
+          "text": "2,449 và 4,899 m/s²"
+        },
+        {
+          "id": "c",
+          "text": "0,490 và 0,980 m/s²"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true
+    },
+    {
+      "id": "p2-t4-d11-c02",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d11",
+      "topic": "p2-t4-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một trajectory có tốc độ v=12 m/s và độ cong kappa=0,04 m^−1. Dùng gia tốc ngang a_lat=v²×kappa và giới hạn khả thi a_limit=mu×g với mu=0,5, g=9,81 m/s². Theo riêng cổng kiểm này, trajectory đạt không? Làm tròn 3 chữ số thập phân.",
+      "correct_answer": "c",
+      "explanation": "a_lat=12²×0,04=5,76 m/s²; a_limit=0,5×9,81=4,905 m/s². Vì 5,76>4,905 nên không đạt cổng này. Dùng v thay v² hoặc bỏ hệ số ma sát sẽ đánh giá sai.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d11",
+          "sha256": "9f2b8b0d84e67d71598eaa2f2a7d0d186567c3ee10171dcf5213e4d62a492b46",
+          "pdf_page": 49,
+          "title": "Synthetic, Simulated & Trajectory Data",
+          "locator": "Physical PDF page 49; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Đạt: a_lat=0,480 nhỏ hơn giới hạn 4,905 m/s²"
+        },
+        {
+          "id": "b",
+          "text": "Đạt: a_lat=5,760 nhỏ hơn giới hạn 9,810 m/s²"
+        },
+        {
+          "id": "c",
+          "text": "Không đạt: a_lat=5,760 lớn hơn giới hạn 4,905 m/s²"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true
+    },
+    {
+      "id": "p2-t4-d12-c01",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d12",
+      "topic": "p2-t4-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Hai xe có tốc độ tiến gần tương đối 12 m/s, khoảng cách 18 m. Trong mô hình giảm tốc đều được cho bởi a_req=v_close²/(2d), dùng mốc phanh êm 3 m/s² và giới hạn minh họa 8 m/s². a_req và phân loại nào đúng?",
+      "correct_answer": "c",
+      "explanation": "a_req=12²/(2×18)=144/36=4 m/s². Giá trị nằm giữa 3 và 8 m/s². Quên bình phương cho 0,333; quên hệ số 2 ở mẫu cho 8. Đây là mô hình đơn giản và các mốc minh họa đã cho.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 44,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 44; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "0,333 m/s²; nằm dưới mức phanh êm"
+        },
+        {
+          "id": "b",
+          "text": "8 m/s²; đúng bằng giới hạn"
+        },
+        {
+          "id": "c",
+          "text": "4 m/s²; vượt mức êm nhưng chưa vượt giới hạn"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true
+    },
+    {
+      "id": "p2-t4-d12-c02",
+      "revision": 1,
+      "author_id": "question-engineer-b",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d12",
+      "topic": "p2-t4-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một controller dự đoán độ đổi vận tốc tại 0,5 s là y5=−5,5 m/s. Quy tắc điều khiển là a_raw=y5/0,5 s, rồi clip a_raw vào [−9;+3] m/s². Bộ (a_raw,a_command) là gì?",
+      "correct_answer": "b",
+      "explanation": "a_raw=−5,5/0,5=−11 m/s². Vì thấp hơn biên dưới −9, lệnh sau clip là −9 m/s². Nhân 0,5 thay chia cho sai đơn vị; clip vào biên trên +3 làm sai chiều điều khiển.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 68,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 68; local extracted cache available by SHA256",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "Curricular mapping verified by root folder/filename policy; printed cover conflicts remain in catalog.",
+        "OCR en-US text used for authoring; independent reviewer must inspect rendered cited page."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "(−11; +3) m/s²"
+        },
+        {
+          "id": "b",
+          "text": "(−11; −9) m/s²"
+        },
+        {
+          "id": "c",
+          "text": "(−2,75; −2,75) m/s²"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true
+    }
+  ]
+}

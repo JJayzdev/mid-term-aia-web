@@ -111,3 +111,40 @@ describe('90-minute exam blueprint', () => {
     expect(selectExam(bank, testCatalog, [25, 25, 25, 25], 'x').items.map(i => i.question.id)).toEqual(selectExam(bank, testCatalog, [25, 25, 25, 25], 'x').items.map(i => i.question.id));
   });
 });
+
+
+describe('calculator practice and Track 4 exam coverage', () => {
+  it('filters numerical practice while respecting selected track and review IDs', () => {
+    const bank = makeExamBank().questions;
+    const calc = practicePool(bank, 'track', { track: 4, calculationOnly: true });
+    expect(calc.map(q => q.id)).toEqual(['t4-o-0', 't4-o-1']);
+    expect(practicePool(bank, 'track', { track: 3, calculationOnly: true })).toEqual([]);
+    expect(practicePool(bank, 'bookmarked', { calculationOnly: true }, ['t4-o-0', 't4-o-2']).map(q => q.id)).toEqual(['t4-o-0']);
+  });
+  it('requires two approved numerical questions instead of silently replacing them with theory', () => {
+    const bank = makeExamBank().questions;
+    bank.find(q => q.id === 't4-o-1')!.calculation = false;
+    expect(() => selectExam(bank, testCatalog)).toThrow(/tính toán.*Track 4.*cần 2, hiện có 1/);
+    bank.find(q => q.id === 't4-o-1')!.calculation = true;
+    bank.find(q => q.id === 't4-o-1')!.status = 'pending_review';
+    // Fill the ordinary quota; an unapproved calculation still cannot satisfy the minimum.
+    bank.push({ ...bank.find(q => q.id === 't4-o-2')!, id: 't4-extra-theory' });
+    expect(() => selectExam(bank, testCatalog)).toThrow(/tính toán.*Track 4/);
+  });
+  it('samples calculations without duplication across seeds and preserves count and points with surplus pools', () => {
+    const bank = makeExamBank().questions;
+    for (let i = 0; i < 12; i++) bank.push({ ...bank.find(q => q.id === 't4-o-2')!, id: `t4-extra-${i}`, calculation: i < 6 });
+    const combinations = new Set<string>();
+    for (let seed = 0; seed < 100; seed++) {
+      const exam = selectExam(bank, testCatalog, [24.25, 25.25, 25.25, 25.25], `calc-${seed}`);
+      const track4 = exam.items.filter(i => i.question.phase === 2 && i.question.track === 4);
+      expect(track4).toHaveLength(6);
+      expect(track4.filter(i => i.question.calculation).length).toBeGreaterThanOrEqual(2);
+      expect(track4.reduce((sum, i) => sum + i.points, 0)).toBe(1010);
+      expect(new Set(exam.items.map(i => i.question.id)).size).toBe(60);
+      expect(exam.items.reduce((sum, i) => sum + i.points, 0)).toBe(10000);
+      combinations.add(track4.map(i => i.question.id).sort().join(','));
+    }
+    expect(combinations.size).toBeGreaterThan(20);
+  });
+});

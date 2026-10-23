@@ -6,6 +6,8 @@ Các cặp đã được tác giả thay nội dung và reviewer kiểm tra lạ
 
 ## Chín cặp còn lại sau lần quét 1.260 câu
 
+Quét lại sau khi bổ sung 24 bài tính (1.284 câu): vẫn đúng chín cặp dưới đây, không xuất hiện cặp mới ở ngưỡng từ vựng 0,55. Các bài tính đã được kiểm riêng về mục tiêu, dữ kiện và đáp án trong `expand-root-calculation`.
+
 | Cặp ID | Quyết định và lý do |
 |---|---|
 | `p2-t4-d09-x11` / `p2-t2-d12-x14` | Giữ: model lineage truy từ model về dataset/quy trình; column lineage truy nguồn ở cấp cột và phân biệt table/run/ownership lineage. |

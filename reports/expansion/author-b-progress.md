@@ -1,6 +1,6 @@
 # Author B expansion progress
 
-Author: question-engineer-b. All 521 questions are pending independent review. No approvals or reviewer artifacts authored.
+Author: question-engineer-b. The 521 original B expansion drafts retain pending_review status; independent approval decisions are stored separately. This author-side audit does not approve B questions.
 
 Assigned scope completed: Track 2 (12 documents), Track 3 (13 documents), Track 4 Days 1–6 (6 documents). Original bank questions unchanged.
 
@@ -50,7 +50,7 @@ All 13 banks pass the question-bank JSON schema. IDs are unique within B, source
 | p2-t3-d06 | 17 | 17 | 7, 10, 12, 15, 16, 19, 20, 21, 23, 25, 26, 27, 28, 29, 33, 37, 38 |
 | p2-t3-d07 | 17 | 16 | 7, 14, 15, 16, 20, 21, 23, 24, 25, 27, 30, 34, 36, 38, 40, 55 |
 | p2-t3-d08 | 17 | 13 | 11, 14, 16, 17, 18, 20, 21, 22, 24, 25, 26, 27, 29 |
-| p2-t3-d09 | 17 | 17 | 18, 20, 22, 23, 29, 31, 32, 33, 35, 37, 38, 39, 40, 46, 54, 56, 69 |
+| p2-t3-d09 | 17 | 16 | 18, 20, 22, 23, 29, 32, 33, 35, 37, 38, 39, 40, 46, 54, 56, 69 |
 | p2-t3-d10 | 17 | 13 | 9, 10, 12, 13, 14, 15, 17, 18, 19, 20, 22, 24, 28 |
 | p2-t3-d11 | 17 | 13 | 9, 11, 13, 14, 17, 19, 22, 25, 28, 29, 31, 32, 34 |
 | p2-t3-d12 | 17 | 17 | 7, 11, 17, 20, 21, 24, 28, 31, 35, 36, 41, 46, 48, 50, 56, 62, 69 |
@@ -62,12 +62,17 @@ All 13 banks pass the question-bank JSON schema. IDs are unique within B, source
 | p2-t4-d05 | 16 | 14 | 3, 5, 7, 14, 15, 17, 19, 23, 25, 27, 32, 33, 37, 38 |
 | p2-t4-d06 | 16 | 12 | 4, 5, 8, 9, 10, 11, 12, 13, 19, 20, 21, 23 |
 
-Total distinct document/page pairs cited: 471. Full extracted source texts were read before authoring. Clear prose mechanisms were used where OCR formulas were ambiguous; T2d03 code pages 27/34 were rendered and visually checked. Independent reviewers verify the exact question revisions.
+Total distinct document/page pairs cited: 470. Full extracted source texts were read before authoring. Clear prose mechanisms were used where OCR formulas were ambiguous; T2d03 code pages 27/34 were rendered and visually checked. Independent reviewers verify the exact question revisions.
 
 ## Reproduction
 
-Run expand_b01.py–expand_b04.py, then expand_b_revise.py, expand_b_revise02.py, expand_b_revise03.py and expand_b_revise04.py. Run expand_b05.py–expand_b13.py for later batches. Revision maps are part of reproducible author scripts. Run expand_b_audit.py for this structural report.
+Current curated JSON is authoritative. Historical generation scripts must not be rerun over reviewed banks: later source fixes and reviewer edits may supersede their initial output. See scripts/content/README.md. Run only expand_b_audit.py to regenerate this read-only structural report.
 
-## Current revision notes
+## Current revision distribution
 
-B01–04 were fully curated after reviewer feedback. B01 T2d03 x10/x11/x12/x14/x17 are revision3 after replacing cross-author duplicate objectives. B05 has six revision2 fixes; B06 five; B07 six. B12 T4d04 x13 is revision2 after replacing a temporal-calibration duplicate with target-based calibration scalability. Other later questions are revision1. Exact independent-review records govern approval; this report makes no approval claim.
+- Revision 1: 245 questions.
+- Revision 2: 242 questions.
+- Revision 3: 33 questions.
+- Revision 4: 1 questions.
+
+Exact independent-review records govern approval; this report makes no approval claim. The separate 24-question calculator extension is outside these 521 original B drafts.

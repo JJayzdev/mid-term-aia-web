@@ -2,7 +2,7 @@ import { DomainError } from './errors';
 import { decimalProductIsInteger, decimalSumEquals } from './rational';
 import type { AttemptQuestion, BucketNeed, Catalog, ExamWeights, Question, StudyMode } from './types';
 
-export type QuizFilter = { phase?: 1 | 2; track?: 1 | 2 | 3 | 4; tracks?: (1 | 2 | 3 | 4)[]; day?: string; topic?: string; difficulty?: Question['difficulty']; count?: number; seed?: string };
+export type QuizFilter = { phase?: 1 | 2; track?: 1 | 2 | 3 | 4; tracks?: (1 | 2 | 3 | 4)[]; day?: string; topic?: string; difficulty?: Question['difficulty']; calculationOnly?: boolean; count?: number; seed?: string };
 export type CandidateResult = { items: AttemptQuestion[]; seed: string; label: string };
 
 function hashSeed(seed: string): number {
@@ -31,6 +31,7 @@ export function stableSeed(parts: (string | number)[]): string { return parts.jo
 
 export function practicePool(questions: Question[], mode: Exclude<StudyMode, 'exam'>, filter: QuizFilter, reviewIds: string[] = [], today = new Date().toISOString().slice(0, 10)): Question[] {
   let pool = approved(questions);
+  if (filter.calculationOnly) pool = pool.filter(q => q.calculation === true);
   if (mode === 'track') pool = pool.filter(q => q.phase === 2 && q.track === filter.track);
   if (mode === 'phase') pool = pool.filter(q => q.phase === filter.phase);
   if (filter.phase) pool = pool.filter(q => q.phase === filter.phase);
@@ -112,11 +113,19 @@ export function selectExam(questions: Question[], catalog: Catalog, weights: Exa
       throw new DomainError(`Chưa đủ câu đã duyệt ở ${name} (${need.format}): cần ${need.count}, hiện có ${available}. Không tạo đề để tránh lặp câu hoặc bù từ nhóm khác.`, 'insufficient_questions', { ...need, available, missing: need.count - available });
     }
   }
+  const calculationCount = pool.filter(q => q.phase === 2 && q.track === 4 && formatClass(q) === 'objective' && q.calculation).length;
+  if (calculationCount < 2) throw new DomainError(`Chưa đủ câu tính toán đã duyệt ở Track 4: cần 2, hiện có ${calculationCount}. Không tạo đề.`, 'insufficient_questions');
   const random = rng(seed);
   const result: AttemptQuestion[] = [];
   for (const need of needs) {
     const bucket = pool.filter(q => q.phase === need.phase && q.track === need.track && formatClass(q) === need.format).sort((a, b) => a.id.localeCompare(b.id));
-    const chosen = shuffled(bucket, random).slice(0, need.count).sort((a, b) => a.id.localeCompare(b.id));
+    let chosen: Question[];
+    if (need.phase === 2 && need.track === 4 && need.format === 'objective') {
+      const calculations = shuffled(bucket.filter(q => q.calculation), random).slice(0, 2);
+      const selectedIds = new Set(calculations.map(q => q.id));
+      chosen = [...calculations, ...shuffled(bucket.filter(q => !selectedIds.has(q.id)), random).slice(0, need.count - 2)];
+    } else chosen = shuffled(bucket, random).slice(0, need.count);
+    chosen.sort((a, b) => a.id.localeCompare(b.id));
     if (need.slotPoints.length !== chosen.length) throw new DomainError('Số slot điểm không khớp với blueprint.', 'exam_invariant');
     chosen.forEach((question, index) => result.push(makeItem(question, need.slotPoints[index], random)));
   }

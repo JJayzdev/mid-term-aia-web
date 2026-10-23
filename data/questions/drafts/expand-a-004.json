@@ -25,7 +25,7 @@
           "pdf_page": 28,
           "title": "Data Pipeline & Data Observability",
           "locator": "Physical PDF page 28",
-          "verification": "verified"
+          "verification": "needs_review"
         }
       ],
       "status": "pending_review",
@@ -210,7 +210,7 @@
           "pdf_page": 85,
           "title": "Data Pipeline & Data Observability",
           "locator": "Physical PDF page 85",
-          "verification": "verified"
+          "verification": "needs_review"
         }
       ],
       "status": "pending_review",
@@ -632,7 +632,7 @@
           "pdf_page": 115,
           "title": "Data Pipeline & Data Observability",
           "locator": "Physical PDF page 115",
-          "verification": "verified"
+          "verification": "needs_review"
         }
       ],
       "status": "pending_review",
@@ -1239,7 +1239,7 @@
           "pdf_page": 45,
           "title": "Guardrails, HITL & Responsible AI",
           "locator": "Physical PDF page 45",
-          "verification": "verified"
+          "verification": "needs_review"
         }
       ],
       "status": "pending_review",
@@ -2044,7 +2044,7 @@
           "pdf_page": 75,
           "title": "Deployment — Đưa Agent Lên Cloud",
           "locator": "Physical PDF page 75",
-          "verification": "verified"
+          "verification": "needs_review"
         }
       ],
       "status": "pending_review",

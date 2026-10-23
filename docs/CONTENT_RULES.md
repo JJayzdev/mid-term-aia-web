@@ -63,6 +63,12 @@ Mức lỗi: critical = sai đáp án/nguồn bịa/lọt câu chưa duyệt; ma
 
 Script phát hiện trùng ID và trùng nội dung sau chuẩn hóa Unicode/whitespace; near-duplicate dùng similarity để gắn cờ, reviewer xác định hai câu có thật sự kiểm tra cùng ý. Không tự xóa câu bằng ngưỡng similarity. Reviewer khác tác giả, review đúng revision; một agent không tự approve toàn bộ batch mình tạo.
 
+## Bài tính Track 4
+
+Theo yêu cầu ngày 2026-10-23, bổ sung bài tính để luyện bằng máy tính Casio. Câu có `calculation: true` phải yêu cầu thao tác với dữ kiện số, nêu đơn vị/giả định cần thiết, quy tắc làm tròn khi kết quả không nguyên và lời giải thay số từng bước. Phương án nhiễu phản ánh lỗi tính hoặc dùng sai công thức. Công thức/khái niệm phải được đối chiếu PDF; dữ kiện giả định ghi trong đề, không biến thành tuyên bố thực nghiệm của nguồn.
+
+Thuộc tính tùy chọn này giữ tương thích nội dung/lịch sử cũ. Lọc “Chỉ câu tính toán” vẫn tuân theo Phase/Track/ngày/chủ đề đã chọn. Đề mới đảm bảo ít nhất hai câu tính đã duyệt trong năm câu khách quan Track 4; không thêm slot, không đổi tổng 60 câu hoặc tỷ lệ điểm 60/40. Nếu thiếu hai câu tính, báo thiếu ngân hàng. Đây là cấu hình luyện tập của ứng dụng, không khẳng định tỷ lệ chính thức của đề thi.
+
 ## Các điều không được tuyên bố
 
 PDF mở được không có nghĩa text đọc đúng; OCR thành công không có nghĩa công thức đúng; schema pass không có nghĩa đáp án đúng; đủ 63 file không có nghĩa đã đủ chương trình học. Discovery chỉ khảo sát và lập kế hoạch, chưa hoàn tất ingestion hoặc content audit.

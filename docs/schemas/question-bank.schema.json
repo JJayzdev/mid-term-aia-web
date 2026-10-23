@@ -302,6 +302,10 @@
           "items": {
             "$ref": "#/$defs/nonempty"
           }
+        },
+        "calculation": {
+          "type": "boolean",
+          "description": "Quantitative application with numerical work; optional for older questions."
         }
       },
       "allOf": [

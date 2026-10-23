@@ -59,7 +59,7 @@ def validate(bank_path, catalog_path, verify_sources=False, min_per_document=0, 
             fail('duplicate question ID')
         ids.add(qid)
         fingerprint = normalize(q.get('context', '') + ' ' + q['question'])
-        if standalone_stems and re.search(r'\bslides?\b|theo (?:tài liệu|bài giảng|bảng|phần|sơ đồ|cây quyết định)|trong (?:bảng|sơ đồ)|được sơ đồ|của ví dụ|nguồn nêu|khớp bảng|phù hợp nguồn|được minh họa', q['question'], re.I):
+        if standalone_stems and re.search(r'\bslides?\b|theo (?:tài liệu|bài giảng|bảng|phần(?! trăm)|sơ đồ|cây quyết định)|trong (?:bảng|sơ đồ)|được sơ đồ|của ví dụ|nguồn nêu|khớp bảng|phù hợp nguồn|được minh họa', q['question'], re.I):
             fail('question must test knowledge directly; source-dependent stem')
         if fingerprint in fingerprints:
             fail('exact normalized duplicate of ' + fingerprints[fingerprint])
@@ -118,6 +118,9 @@ def validate(bank_path, catalog_path, verify_sources=False, min_per_document=0, 
     for bucket, count in required.items():
         if counts[bucket] < count:
             errors.append('Insufficient bucket %s: need %s, have %s' % (bucket, count, counts[bucket]))
+    calculation_count = sum(q.get('calculation') is True and q['phase'] == 2 and q['track'] == 4 and q['answer_format'] != 'rubric' for q in bank['questions'])
+    if calculation_count < 2:
+        errors.append('Insufficient Track 4 calculation questions: need 2, have %s' % calculation_count)
     underfilled = {doc_id: per_doc[doc_id] for doc_id in docs if per_doc[doc_id] < min_per_document}
     if underfilled:
         errors.append('Documents below minimum %s questions: %s' % (min_per_document, underfilled))
@@ -132,7 +135,7 @@ def validate(bank_path, catalog_path, verify_sources=False, min_per_document=0, 
                'minimum_questions_per_document': min((per_doc[d] for d in docs), default=0),
                'questions_per_document': {d: per_doc[d] for d in sorted(docs)},
                'by_bucket': {str(k): v for k, v in sorted(counts.items(), key=str)},
-               'schema_version': bank['schema_version']}
+               'track4_calculation_questions': calculation_count, 'schema_version': bank['schema_version']}
     return errors, summary
 
 

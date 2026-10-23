@@ -7,6 +7,7 @@
 ## Chức năng
 
 - Ôn theo ngày học, Phase, Track, chủ đề, độ khó; luyện tổng hợp, câu sai/bỏ trống và câu đã lưu.
+- Lọc **Dạng bài → Chỉ câu tính toán** để luyện bài số bằng Casio. Mỗi đề thi thử có ít nhất hai câu tính trong phần Track 4; đây là cấu hình luyện tập, không phải tỷ lệ chính thức của đề thi.
 - Thi thử 90 phút, **60 câu**, 100 điểm: Phase 1 = **36 câu / 60 điểm**; Phase 2 = **24 câu / 40 điểm** (6 câu mỗi Track). Có 54 câu khách quan và 6 câu tự luận; tự luận = 10 điểm. Bốn Track mặc định bằng nhau, có thể chỉnh trọng số điểm với bước 0,25%.
 - Điểm được phân bổ theo nhóm để giữ đúng tỷ lệ; các câu trong một nhóm có thể lệch tối đa 0,01 điểm. Điểm từng câu hiển thị khi làm bài. Thay đổi cấu hình không làm đổi đề hoặc điểm trong lịch sử đã lưu.
 - Đáp án khách quan chấm tự động; chọn nhiều dùng exact-set, không trừ điểm. Tự luận không trống chờ người học tự đánh giá từng tiêu chí 0 / 0,5 / 1; làm tròn half-up một lần ở cuối mỗi câu đến 0,01 điểm.
@@ -40,7 +41,7 @@ npx playwright test --config scripts/qa/playwright.config.ts
 
 Bộ đầu vào gồm **63 PDF / 3.589 trang**. Pipeline xử lý toàn bộ file, giữ hash SHA-256 và số trang vật lý (trang đầu PDF là 1). PDF gốc và cache OCR nằm cục bộ, không đưa lên website/repository. Ba trang không trích được chữ đã được xem ảnh: QR, trang gần trống/logo, và thẻ Q&A; không câu hỏi nào dựa trên ba trang đó.
 
-Ngân hàng câu hỏi hiện có **1.260 câu đã duyệt độc lập**, đảm bảo **tối thiểu 20 câu cho mỗi file PDF** trong 63 tài liệu bài giảng. Cả 63 tài liệu đều được bao phủ đầy đủ; toàn bộ câu hỏi được biên soạn độc lập, hỏi trực tiếp kiến thức/tình huống và không phụ thuộc ngữ cảnh slide. Kiểm tra học thuật theo từng câu/revision nằm trong `reports/content/`; thống kê phát hành trong `public/data/coverage.json`. Mỗi câu có tài liệu nguồn và trang vật lý trong phần giải thích.
+Ngân hàng hiện có **1.284 câu đã duyệt độc lập**: Phase 1 có 300 câu; Track 1/2/3/4 có 220/240/260/264 câu. Mỗi PDF có ít nhất 20 câu; 12 PDF Track 4 có 22 câu/file, gồm **24 bài tính mới** với dữ kiện, đơn vị, quy tắc làm tròn và lời giải từng bước để luyện bằng Casio. Câu hỏi trực tiếp kiểm tra kiến thức/tình huống, không hỏi “trong slide…”. Nguồn trích dẫn gồm 1.079 trang khác nhau; điều này không đồng nghĩa mọi khái niệm trên 3.589 trang đều đã có câu hỏi. Kiểm duyệt theo câu/revision nằm trong `reports/content/`; thống kê trong `public/data/coverage.json`. Mỗi câu có tài liệu nguồn và trang vật lý trong phần giải thích. Độ khó là ước lượng biên soạn, chưa hiệu chuẩn bằng kết quả thi thực tế.
 
 Phase/Track được tổ chức theo thư mục người dùng cung cấp, Day theo tên file với khóa riêng từng Phase/Track. Nhãn trên một số bìa không khớp tên thư mục; xung đột được giữ trong catalog và báo cáo. Không tạo thêm Day 9 của Track 2.
 
@@ -51,7 +52,8 @@ python -m pip install -r requirements-content.txt
 python scripts/content/ingest.py --help
 python scripts/content/validate_drafts.py
 python scripts/release_bank.py
-python scripts/validate_release.py --verify-sources
+python scripts/validate_release.py --verify-sources --min-per-document 20 --standalone-stems
+python -m unittest discover -s scripts/qa -p test_release_gate.py -v
 ```
 
 Ingestion cần thư mục `slide/` đúng bộ gốc và Windows OCR tiếng Anh. Xem `reports/ingestion/README.md` để tái chạy. Release chỉ nhận câu có quyết định duyệt độc lập đúng revision; tác giả không thể tự duyệt. Chạy validation/build/tests lại sau mỗi thay đổi ngân hàng. Không dùng JSON nhập trong UI để tự động nâng câu lên approved.

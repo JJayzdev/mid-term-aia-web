@@ -89,6 +89,7 @@ test('exam exact quotas, deadline autosubmit, reload and single result', async (
   await expect(page.locator('.question-card h1')).toBeVisible();
   const a = (await rows(page))[0];
   expect(a.questions).toHaveLength(60);
+  expect(a.questions.filter((i: any) => i.question.phase === 2 && i.question.track === 4 && i.question.calculation).length).toBeGreaterThanOrEqual(2);
   expect(new Set(a.questions.map((i: any) => i.question.id)).size).toBe(60);
   expect(a.questions.filter((i: any) => i.question.phase === 1)).toHaveLength(36);
   expect(a.questions.filter((i: any) => i.question.phase === 2)).toHaveLength(24);
@@ -152,6 +153,7 @@ test('custom track weights and objective scoring follow stable option IDs', asyn
   const a = (await rows(page))[0];
   for (const track of [1, 2, 3, 4]) expect(a.questions.filter((i: any) => i.question.track === track).reduce((sum: number, i: any) => sum + i.points, 0)).toBe(track * 400);
   expect(a.questions).toHaveLength(60);
+  expect(a.questions.filter((i: any) => i.question.phase === 2 && i.question.track === 4 && i.question.calculation).length).toBeGreaterThanOrEqual(2);
   expect(a.questions.every((i: any) => Number.isInteger(i.points) && i.points > 0)).toBe(true);
   for (const [index, item] of a.questions.entries()) {
     const q = item.question; if (q.answer_format === 'rubric') continue;
@@ -309,4 +311,20 @@ test('quiz navigation and results work at phone widths', async ({ page }) => {
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
   await expect(page.getByText('Theo Phase', { exact: true })).toBeVisible();
   await page.screenshot({ path: 'tmp/qa/result-360.png', fullPage: true });
+});
+
+
+test('Track 4 calculator practice uses only numerical questions and persists on reload', async ({ page }) => {
+  await page.goto('./#/study');
+  await page.getByRole('button', { name: /Theo Track Tập trung/ }).click();
+  await page.getByRole('combobox', { name: 'Track', exact: true }).selectOption('4');
+  await page.getByRole('combobox', { name: 'Dạng bài', exact: true }).selectOption('calculation');
+  await page.getByRole('button', { name: 'Bắt đầu lượt học' }).click();
+  await expect(page.locator('.question-card h1')).toBeVisible();
+  const attempt = (await rows(page))[0];
+  expect(attempt.questions).toHaveLength(10);
+  expect(attempt.questions.every((i: any) => i.question.track === 4 && i.question.calculation === true)).toBe(true);
+  await page.reload();
+  await expect(page.locator('.question-card h1')).toBeVisible();
+  expect((await rows(page))[0].questions).toEqual(attempt.questions);
 });

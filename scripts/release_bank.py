@@ -78,6 +78,7 @@ def main():
                 'mapping_note': 'Phase/Track/Ngày ôn tập theo thư mục và tên file do người học cung cấp; nhãn in trên một số slide có thể khác.'}
     coverage['by_question_type'] = dict(Counter(q['question_type'] for q in approved))
     coverage['by_answer_format'] = dict(Counter(q['answer_format'] for q in approved))
+    coverage['calculation_questions'] = sum(q.get('calculation') is True for q in approved)
     coverage['by_difficulty'] = dict(Counter(q['difficulty'] for q in approved))
     coverage['by_cognitive_level'] = dict(Counter(q['cognitive_level'] for q in approved))
     coverage['physical_pages_total'] = sum(d['page_count'] for d in catalog['documents'])

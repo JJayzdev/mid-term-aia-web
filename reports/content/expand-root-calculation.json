@@ -1,0 +1,399 @@
+{
+  "batch_file": "data/questions/drafts/expand-t4-calculation.json",
+  "reviewer_id": "root-independent-review",
+  "reviewed_at": "2026-10-23T14:35:42.701080+00:00",
+  "results": [
+    {
+      "id": "p2-t4-d01-c01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 51
+        }
+      ],
+      "notes": [
+        "Explicit mean squared convention without half factor: squared residual sum14 over3. Distractors are half loss, mean absolute error and sum.",
+        "Root independently read actual question/options/answer/explanation, visually checked every cited physical source page (26 across12PDFs), and recomputed arithmetic. Source SHA256 hashes match catalog.",
+        "Independent numerical result: 4.666666666666667"
+      ]
+    },
+    {
+      "id": "p2-t4-d01-c02",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 12
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 15
+        }
+      ],
+      "notes": [
+        "Revision2 retested: matrix rows use semicolon separators; affine outputs -3 and3, ReLU gives0 and3. Decimal comma unambiguous.",
+        "Root independently read actual question/options/answer/explanation, visually checked every cited physical source page (26 across12PDFs), and recomputed arithmetic. Source SHA256 hashes match catalog.",
+        "Independent numerical result: [0, 3.0]"
+      ]
+    },
+    {
+      "id": "p2-t4-d02-c01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 7
+        },
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "Floor output formula gives16x16; channel-aware MAC count73728, distinct from parameter count296.",
+        "Root independently read actual question/options/answer/explanation, visually checked every cited physical source page (26 across12PDFs), and recomputed arithmetic. Source SHA256 hashes match catalog.",
+        "Independent numerical result: [16, 16, 73728]"
+      ]
+    },
+    {
+      "id": "p2-t4-d02-c02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 25
+        }
+      ],
+      "notes": [
+        "LSTM signed candidate produces cell1.3, output gate times tanh gives0.5170 at4 decimals.",
+        "Root independently read actual question/options/answer/explanation, visually checked every cited physical source page (26 across12PDFs), and recomputed arithmetic. Source SHA256 hashes match catalog.",
+        "Independent numerical result: [1.3, 0.5170338955879837]"
+      ]
+    },
+    {
+      "id": "p2-t4-d03-c01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d03",
+          "pdf_page": 45
+        }
+      ],
+      "notes": [
+        "Precision0.8, recall0.9; harmonic F1=0.8471, not arithmetic0.85.",
+        "Root independently read actual question/options/answer/explanation, visually checked every cited physical source page (26 across12PDFs), and recomputed arithmetic. Source SHA256 hashes match catalog.",
+        "Independent numerical result: [0.8, 0.9, 0.8470588235294118]"
+      ]
+    },
+    {
+      "id": "p2-t4-d03-c02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d03",
+          "pdf_page": 13
+        }
+      ],
+      "notes": [
+        "Inverse letterbox subtracts padding before division; output xyxy100,100,500,400.",
+        "Root independently read actual question/options/answer/explanation, visually checked every cited physical source page (26 across12PDFs), and recomputed arithmetic. Source SHA256 hashes match catalog.",
+        "Independent numerical result: [100.0, 100.0, 500.0, 400.0]"
+      ]
+    },
+    {
+      "id": "p2-t4-d04-c01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d04",
+          "pdf_page": 8
+        }
+      ],
+      "notes": [
+        "Two uncompressed24bit RGB streams need1.327104 decimalGbit/s; bit/byte and camera multiplicity errors are distractors.",
+        "Root independently read actual question/options/answer/explanation, visually checked every cited physical source page (26 across12PDFs), and recomputed arithmetic. Source SHA256 hashes match catalog.",
+        "Independent numerical result: 1.327104"
+      ]
+    },
+    {
+      "id": "p2-t4-d04-c02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d04",
+          "pdf_page": 16
+        }
+      ],
+      "notes": [
+        "18432/307200=0.06=6%; explicitly hypothetical5%policy triggers alert.",
+        "Root independently read actual question/options/answer/explanation, visually checked every cited physical source page (26 across12PDFs), and recomputed arithmetic. Source SHA256 hashes match catalog.",
+        "Independent numerical result: 6.0"
+      ]
+    },
+    {
+      "id": "p2-t4-d05-c01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d05",
+          "pdf_page": 17
+        }
+      ],
+      "notes": [
+        "Scalar Kalman gain0.75 weights innovation6m; updated mean24.5m.",
+        "Root independently read actual question/options/answer/explanation, visually checked every cited physical source page (26 across12PDFs), and recomputed arithmetic. Source SHA256 hashes match catalog.",
+        "Independent numerical result: [0.75, 24.5]"
+      ]
+    },
+    {
+      "id": "p2-t4-d05-c02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d05",
+          "pdf_page": 36
+        }
+      ],
+      "notes": [
+        "Independent Gaussian precisions sum7/18; variance18/7m2 and std1.6036m. Variance/std units explicit.",
+        "Root independently read actual question/options/answer/explanation, visually checked every cited physical source page (26 across12PDFs), and recomputed arithmetic. Source SHA256 hashes match catalog.",
+        "Independent numerical result: [2.571428571428571, 1.6035674514745462]"
+      ]
+    },
+    {
+      "id": "p2-t4-d06-c01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d06",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "Half-open grid has200x100x10cells; hypothetical dense float32 allocation0.8 decimalMB, not sparse occupied count.",
+        "Root independently read actual question/options/answer/explanation, visually checked every cited physical source page (26 across12PDFs), and recomputed arithmetic. Source SHA256 hashes match catalog.",
+        "Independent numerical result: [200000.0, 0.8]"
+      ]
+    },
+    {
+      "id": "p2-t4-d06-c02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d06",
+          "pdf_page": 16
+        }
+      ],
+      "notes": [
+        "Extrinsic first gives(2,1,10); pinhole projection then gives(400,290)px with distortion excluded.",
+        "Root independently read actual question/options/answer/explanation, visually checked every cited physical source page (26 across12PDFs), and recomputed arithmetic. Source SHA256 hashes match catalog.",
+        "Independent numerical result: [400.0, 290.0]"
+      ]
+    },
+    {
+      "id": "p2-t4-d07-c01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d07",
+          "pdf_page": 20
+        }
+      ],
+      "notes": [
+        "Enumerated all6 assignment permutations:11,13,5,20,14,27. Unique global minimum5 differs from greedy11.",
+        "Root independently read actual question/options/answer/explanation, visually checked every cited physical source page (26 across12PDFs), and recomputed arithmetic. Source SHA256 hashes match catalog.",
+        "Independent numerical result: [11, 13, 5, 20, 14, 27]"
+      ]
+    },
+    {
+      "id": "p2-t4-d07-c02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d07",
+          "pdf_page": 38
+        }
+      ],
+      "notes": [
+        "After supplied identity matching, IDF1=240/320=75%; precision/recall distractors distinct.",
+        "Root independently read actual question/options/answer/explanation, visually checked every cited physical source page (26 across12PDFs), and recomputed arithmetic. Source SHA256 hashes match catalog.",
+        "Independent numerical result: 75.0"
+      ]
+    },
+    {
+      "id": "p2-t4-d08-c01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d08",
+          "pdf_page": 7
+        }
+      ],
+      "notes": [
+        "Ground-plane horizontal camera assumptions explicit; inverse depth interval1200/42 to1200/38 is asymmetric.",
+        "Root independently read actual question/options/answer/explanation, visually checked every cited physical source page (26 across12PDFs), and recomputed arithmetic. Source SHA256 hashes match catalog.",
+        "Independent numerical result: [28.571428571428573, 31.57894736842105]"
+      ]
+    },
+    {
+      "id": "p2-t4-d08-c02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d08",
+          "pdf_page": 12
+        }
+      ],
+      "notes": [
+        "Supplied NDS normalization:5*mAP=3, quality terms3.5, total0.65. No claim raw incompatible errors can be combined.",
+        "Root independently read actual question/options/answer/explanation, visually checked every cited physical source page (26 across12PDFs), and recomputed arithmetic. Source SHA256 hashes match catalog.",
+        "Independent numerical result: 0.65"
+      ]
+    },
+    {
+      "id": "p2-t4-d09-c01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d09",
+          "pdf_page": 24
+        }
+      ],
+      "notes": [
+        "Fixed-FPS indices0..1349, multiples of9 give150frames; ceil batches10, last6. Endpoint clear.",
+        "Root independently read actual question/options/answer/explanation, visually checked every cited physical source page (26 across12PDFs), and recomputed arithmetic. Source SHA256 hashes match catalog.",
+        "Independent numerical result: [150, 10]"
+      ]
+    },
+    {
+      "id": "p2-t4-d09-c02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d09",
+          "pdf_page": 54
+        }
+      ],
+      "notes": [
+        "Hypothetical confidence routing workload5700s=95min versus30000s yields81%reduction; sampled audit included.",
+        "Root independently read actual question/options/answer/explanation, visually checked every cited physical source page (26 across12PDFs), and recomputed arithmetic. Source SHA256 hashes match catalog.",
+        "Independent numerical result: [95.0, 81.0]"
+      ]
+    },
+    {
+      "id": "p2-t4-d10-c01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d10",
+          "pdf_page": 14
+        }
+      ],
+      "notes": [
+        "Normalized xyxy uses width for x and height for y; 384x324=124416px2, no inclusive+1 convention.",
+        "Root independently read actual question/options/answer/explanation, visually checked every cited physical source page (26 across12PDFs), and recomputed arithmetic. Source SHA256 hashes match catalog.",
+        "Independent numerical result: [384.0, 324.0, 124416.0]"
+      ]
+    },
+    {
+      "id": "p2-t4-d10-c02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d10",
+          "pdf_page": 16
+        }
+      ],
+      "notes": [
+        "Resident total24B weights at2bytes requires48GB; equal4way shard12GB. Active3B does not replace resident total.",
+        "Root independently read actual question/options/answer/explanation, visually checked every cited physical source page (26 across12PDFs), and recomputed arithmetic. Source SHA256 hashes match catalog.",
+        "Independent numerical result: [48.0, 12.0]"
+      ]
+    },
+    {
+      "id": "p2-t4-d11-c01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d11",
+          "pdf_page": 46
+        }
+      ],
+      "notes": [
+        "Independent measurement-noise propagation sqrt6*sigma/dt2 gives2.449 and9.798m/s2, fourfold growth.",
+        "Root independently read actual question/options/answer/explanation, visually checked every cited physical source page (26 across12PDFs), and recomputed arithmetic. Source SHA256 hashes match catalog.",
+        "Independent numerical result: [2.4494897427831774, 9.79795897113271]"
+      ]
+    },
+    {
+      "id": "p2-t4-d11-c02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d11",
+          "pdf_page": 49
+        }
+      ],
+      "notes": [
+        "Lateral acceleration5.76 exceeds supplied friction bound4.905; conclusion limited to this feasibility gate.",
+        "Root independently read actual question/options/answer/explanation, visually checked every cited physical source page (26 across12PDFs), and recomputed arithmetic. Source SHA256 hashes match catalog.",
+        "Independent numerical result: [5.76, 4.905]"
+      ]
+    },
+    {
+      "id": "p2-t4-d12-c01",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d12",
+          "pdf_page": 44
+        }
+      ],
+      "notes": [
+        "Supplied constant-deceleration model gives4m/s2 between illustrative3/8thresholds; not a real-world braking guarantee.",
+        "Root independently read actual question/options/answer/explanation, visually checked every cited physical source page (26 across12PDFs), and recomputed arithmetic. Source SHA256 hashes match catalog.",
+        "Independent numerical result: 4.0"
+      ]
+    },
+    {
+      "id": "p2-t4-d12-c02",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d12",
+          "pdf_page": 68
+        }
+      ],
+      "notes": [
+        "Delta-v divided by0.5s gives-11m/s2, clipped to lowerbound-9; sign and units maintained.",
+        "Root independently read actual question/options/answer/explanation, visually checked every cited physical source page (26 across12PDFs), and recomputed arithmetic. Source SHA256 hashes match catalog.",
+        "Independent numerical result: [-11.0, -9]"
+      ]
+    }
+  ]
+}

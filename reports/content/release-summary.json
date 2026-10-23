@@ -1,6 +1,6 @@
 {
-  "bank_version": "2026.10.22-5362a7b72700",
-  "approved_questions": 1260,
+  "bank_version": "2026.10.22-28fda6d871f4",
+  "approved_questions": 1284,
   "documents_total": 63,
   "documents_represented": 63,
   "uncovered_documents": [],
@@ -8,30 +8,31 @@
   "note": "Mỗi tài liệu được đại diện bằng một số câu từ các trang đã kiểm tra; không phải mọi khái niệm trên toàn bộ slide đều đã có câu hỏi.",
   "mapping_note": "Phase/Track/Ngày ôn tập theo thư mục và tên file do người học cung cấp; nhãn in trên một số slide có thể khác.",
   "by_question_type": {
-    "single_choice": 1041,
+    "single_choice": 1065,
     "multiple_choice": 116,
     "true_false": 65,
     "scenario": 35,
     "short_answer": 3
   },
   "by_answer_format": {
-    "single_choice": 1066,
+    "single_choice": 1090,
     "multiple_choice": 116,
     "boolean": 65,
     "rubric": 13
   },
+  "calculation_questions": 24,
   "by_difficulty": {
-    "medium": 1250,
+    "medium": 1274,
     "hard": 4,
     "easy": 6
   },
   "by_cognitive_level": {
     "understand": 1145,
-    "apply": 99,
+    "apply": 123,
     "analyze": 16
   },
   "physical_pages_total": 3589,
-  "distinct_cited_pages": 1073,
+  "distinct_cited_pages": 1079,
   "per_document": [
     {
       "document_id": "p1-d01",
@@ -1247,11 +1248,12 @@
     },
     {
       "document_id": "p2-t4-d01",
-      "questions": 20,
+      "questions": 22,
       "cited_pages": [
         9,
         12,
         13,
+        15,
         17,
         18,
         27,
@@ -1274,8 +1276,9 @@
     },
     {
       "document_id": "p2-t4-d02",
-      "questions": 20,
+      "questions": 22,
       "cited_pages": [
+        7,
         9,
         12,
         14,
@@ -1299,7 +1302,7 @@
     },
     {
       "document_id": "p2-t4-d03",
-      "questions": 20,
+      "questions": 22,
       "cited_pages": [
         7,
         13,
@@ -1325,7 +1328,7 @@
     },
     {
       "document_id": "p2-t4-d04",
-      "questions": 20,
+      "questions": 22,
       "cited_pages": [
         6,
         7,
@@ -1348,7 +1351,7 @@
     },
     {
       "document_id": "p2-t4-d05",
-      "questions": 20,
+      "questions": 22,
       "cited_pages": [
         3,
         5,
@@ -1364,6 +1367,7 @@
         31,
         32,
         33,
+        36,
         37,
         38
       ],
@@ -1371,7 +1375,7 @@
     },
     {
       "document_id": "p2-t4-d06",
-      "questions": 20,
+      "questions": 22,
       "cited_pages": [
         4,
         5,
@@ -1382,6 +1386,7 @@
         11,
         12,
         13,
+        16,
         19,
         20,
         21,
@@ -1391,7 +1396,7 @@
     },
     {
       "document_id": "p2-t4-d07",
-      "questions": 20,
+      "questions": 22,
       "cited_pages": [
         7,
         8,
@@ -1415,7 +1420,7 @@
     },
     {
       "document_id": "p2-t4-d08",
-      "questions": 20,
+      "questions": 22,
       "cited_pages": [
         3,
         5,
@@ -1440,7 +1445,7 @@
     },
     {
       "document_id": "p2-t4-d09",
-      "questions": 20,
+      "questions": 22,
       "cited_pages": [
         15,
         16,
@@ -1467,7 +1472,7 @@
     },
     {
       "document_id": "p2-t4-d10",
-      "questions": 20,
+      "questions": 22,
       "cited_pages": [
         5,
         6,
@@ -1494,7 +1499,7 @@
     },
     {
       "document_id": "p2-t4-d11",
-      "questions": 20,
+      "questions": 22,
       "cited_pages": [
         7,
         10,
@@ -1521,7 +1526,7 @@
     },
     {
       "document_id": "p2-t4-d12",
-      "questions": 20,
+      "questions": 22,
       "cited_pages": [
         11,
         12,
@@ -1542,7 +1547,9 @@
         39,
         41,
         43,
+        44,
         51,
+        68,
         72
       ],
       "total_pages": 85

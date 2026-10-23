@@ -23,3 +23,7 @@ Người dùng yêu cầu đề khoảng 60 câu, tiếp tục Phase 1 60% / Pha
 Mỗi bucket có tổng điểm nguyên theo đơn vị 0,01; chia quotient/remainder cho các slot, chênh tối đa 1 đơn vị trong bucket. Phase 1 khách quan 5.400 đơn vị trên 34 câu, rubric 600 trên 2; mỗi Track khách quan 36×w, rubric 4×w khi w là phần trăm trong Phase 2. Trọng số là bội dương 0,25%, tổng đúng 100%. Lưu điểm theo snapshot nên đề cũ không bị tính lại theo blueprint mới.
 
 Người dùng xác nhận tối thiểu 20 câu mỗi file PDF: 63 file, tối thiểu 1.260 câu. Từ 204 câu hiện tại cần bổ sung 1.056 câu, review độc lập theo batch. Câu hỏi phải hỏi trực tiếp về kiến thức hoặc tình huống trong PDF; không dẫn kiểu “trong slide”, “theo tài liệu”. Tham chiếu file/trang nằm riêng trong metadata nguồn.
+
+## Bài tính Track 4 — 2026-10-23
+
+Người dùng cho biết được mang máy tính Casio vào thi. Bổ sung 24 bài tính, hai bài cho mỗi PDF Track 4, nâng ngân hàng lên 1.284 câu. Trường tùy chọn `calculation` phục vụ lọc luyện riêng và đảm bảo đề mới có ít nhất hai câu tính trong năm câu khách quan Track 4. Đây là lựa chọn cấu hình luyện tập; người dùng chưa cung cấp tỷ lệ bài tính chính thức. Cách lấy mẫu giữ nguyên 60 câu, điểm 60/40 và snapshot lịch sử. Không có backend hoặc dịch vụ tính phí mới.

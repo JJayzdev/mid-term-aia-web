@@ -6,7 +6,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-META_STEM = re.compile(r'\bslides?\b|theo (?:tài liệu|bài giảng|bảng|phần|sơ đồ|cây quyết định)|trong (?:bảng|sơ đồ)|được sơ đồ|của ví dụ|nguồn nêu|khớp bảng|phù hợp nguồn|được minh họa', re.I)
+META_STEM = re.compile(r'\bslides?\b|theo (?:tài liệu|bài giảng|bảng|phần(?! trăm)|sơ đồ|cây quyết định)|trong (?:bảng|sơ đồ)|được sơ đồ|của ví dụ|nguồn nêu|khớp bảng|phù hợp nguồn|được minh họa', re.I)
 
 def normalized(text):
     return re.sub(r'\s+', ' ', unicodedata.normalize('NFKC', text).casefold()).strip()

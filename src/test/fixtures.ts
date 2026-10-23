@@ -38,5 +38,6 @@ export function makeExamBank(): QuestionBank {
     for (let i = 0; i < 5; i++) questions.push(makeQuestion({ id: `t${track}-o-${i}`, phase: 2, track, format: 'single_choice' }));
     questions.push(makeQuestion({ id: `t${track}-r`, phase: 2, track, format: 'rubric' }));
   }
+  for (const q of questions.filter(q => q.id === 't4-o-0' || q.id === 't4-o-1')) q.calculation = true;
   return { schema_version: '1.0.0', bank_version: 'fixture-only-1', questions };
 }

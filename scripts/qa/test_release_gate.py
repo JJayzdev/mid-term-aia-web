@@ -109,6 +109,17 @@ class ReleaseGateTests(unittest.TestCase):
         self.assertEqual(errors, [])
         self.assertEqual(summary['questions_per_document'], baseline['questions_per_document'])
 
+    def test_track4_calculation_minimum_is_enforced(self):
+        for q in self.data['questions']:
+            q.pop('calculation', None)
+        errors, _ = self.validate()
+        self.assertTrue(any('Insufficient Track 4 calculation questions' in e for e in errors), errors)
+
+    def test_percentage_rounding_is_not_source_dependent(self):
+        self.data['questions'][0]['question'] = 'Làm tròn kết quả theo phần trăm.'
+        errors, _ = self.validate(standalone_stems=True)
+        self.assertEqual(errors, [])
+
     def test_source_dependent_stem_is_rejected(self):
         self.data['questions'][0]['question'] = 'Trong slide, khái niệm nào được trình bày?'
         errors, _ = self.validate(standalone_stems=True)

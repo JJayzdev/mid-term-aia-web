@@ -1,8 +1,8 @@
 {
   "note": "Draft counts are not approval. Only exact-revision independent review counts as approved; semantic/source review remains mandatory.",
-  "questions_total": 1260,
-  "new_questions": 1056,
-  "independently_approved_current_revision": 1260,
+  "questions_total": 1284,
+  "new_questions": 1080,
+  "independently_approved_current_revision": 1284,
   "minimum_draft_per_document": 20,
   "minimum_approved_per_document": 20,
   "documents_at_target_draft": 63,
@@ -107,6 +107,10 @@
     {
       "file": "expand-b-13.json",
       "questions": 32
+    },
+    {
+      "file": "expand-t4-calculation.json",
+      "questions": 24
     },
     {
       "file": "phase1-remaining.json",
@@ -442,75 +446,75 @@
     },
     {
       "document_id": "p2-t4-d01",
-      "draft_questions": 20,
-      "approved_current_revision": 20,
-      "distinct_cited_pages": 20
+      "draft_questions": 22,
+      "approved_current_revision": 22,
+      "distinct_cited_pages": 21
     },
     {
       "document_id": "p2-t4-d02",
-      "draft_questions": 20,
-      "approved_current_revision": 20,
-      "distinct_cited_pages": 18
+      "draft_questions": 22,
+      "approved_current_revision": 22,
+      "distinct_cited_pages": 19
     },
     {
       "document_id": "p2-t4-d03",
-      "draft_questions": 20,
-      "approved_current_revision": 20,
+      "draft_questions": 22,
+      "approved_current_revision": 22,
       "distinct_cited_pages": 19
     },
     {
       "document_id": "p2-t4-d04",
-      "draft_questions": 20,
-      "approved_current_revision": 20,
+      "draft_questions": 22,
+      "approved_current_revision": 22,
       "distinct_cited_pages": 16
     },
     {
       "document_id": "p2-t4-d05",
-      "draft_questions": 20,
-      "approved_current_revision": 20,
-      "distinct_cited_pages": 16
+      "draft_questions": 22,
+      "approved_current_revision": 22,
+      "distinct_cited_pages": 17
     },
     {
       "document_id": "p2-t4-d06",
-      "draft_questions": 20,
-      "approved_current_revision": 20,
-      "distinct_cited_pages": 13
+      "draft_questions": 22,
+      "approved_current_revision": 22,
+      "distinct_cited_pages": 14
     },
     {
       "document_id": "p2-t4-d07",
-      "draft_questions": 20,
-      "approved_current_revision": 20,
+      "draft_questions": 22,
+      "approved_current_revision": 22,
       "distinct_cited_pages": 17
     },
     {
       "document_id": "p2-t4-d08",
-      "draft_questions": 20,
-      "approved_current_revision": 20,
+      "draft_questions": 22,
+      "approved_current_revision": 22,
       "distinct_cited_pages": 18
     },
     {
       "document_id": "p2-t4-d09",
-      "draft_questions": 20,
-      "approved_current_revision": 20,
+      "draft_questions": 22,
+      "approved_current_revision": 22,
       "distinct_cited_pages": 20
     },
     {
       "document_id": "p2-t4-d10",
-      "draft_questions": 20,
-      "approved_current_revision": 20,
+      "draft_questions": 22,
+      "approved_current_revision": 22,
       "distinct_cited_pages": 20
     },
     {
       "document_id": "p2-t4-d11",
-      "draft_questions": 20,
-      "approved_current_revision": 20,
+      "draft_questions": 22,
+      "approved_current_revision": 22,
       "distinct_cited_pages": 20
     },
     {
       "document_id": "p2-t4-d12",
-      "draft_questions": 20,
-      "approved_current_revision": 20,
-      "distinct_cited_pages": 21
+      "draft_questions": 22,
+      "approved_current_revision": 22,
+      "distinct_cited_pages": 23
     }
   ]
 }

@@ -5,7 +5,7 @@ export type Question = {
   day: string | null; topic: string; taxonomy_status: 'unresolved' | 'inferred' | 'verified';
   question_type: 'single_choice' | 'multiple_choice' | 'true_false' | 'short_answer' | 'scenario';
   answer_format: AnswerFormat; difficulty: 'easy' | 'medium' | 'hard'; cognitive_level: 'remember' | 'understand' | 'apply' | 'analyze';
-  question: string; context?: string; options?: { id: string; text: string }[]; shuffle_options?: boolean;
+  question: string; calculation?: boolean; context?: string; options?: { id: string; text: string }[]; shuffle_options?: boolean;
   correct_answer: string | string[] | boolean; rubric?: Criterion[]; explanation: string;
   source_reference: SourceReference[]; status: 'draft' | 'pending_review' | 'approved' | 'rejected';
   review?: { reviewer_id: string; reviewed_at: string; reviewed_revision: number; report_id: string };

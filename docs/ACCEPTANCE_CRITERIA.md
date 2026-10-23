@@ -15,6 +15,7 @@ Tài liệu này xác định tiêu chí từ Discovery. Sau chỉ dẫn triển
 | C5 | Mỗi trong 63 PDF có ít nhất 20 câu đã duyệt; câu hỏi tự đủ dữ kiện, hỏi kiến thức/ứng dụng thay vì nhớ nội dung hay vị trí slide | Validator `--verify-sources --min-per-document 20 --standalone-stems`, đếm ID duy nhất mỗi PDF, semantic review từng câu |
 | E1 | Đề mới đúng 60 câu, Phase1=36/Phase2=24 (6 mỗi Track); tổng 100 điểm, Phase1=60/Phase2=40; tự luận=10 (P1=6/P2=4), khách quan=90; mọi slot nguyên theo 0,01 điểm | Unit/invariant tests trên nhiều seed, weights, quotient/remainder; scenario rubric được tính là tự luận; đề cũ giữ snapshot |
 | E2 | Track1–4 mặc định mỗi track 10 điểm; trọng số hợp lệ đổi được, không làm tròn âm thầm | Test equal/unequal weights, zero/negative/NaN/tổng sai/precision không khả thi |
+| E6 | Đề mới có ít nhất 2 câu tính đã duyệt ở Track 4; bộ lọc tính toán kết hợp đúng phạm vi, không ảnh hưởng bài đã lưu | Seeded surplus-pool tests, thiếu/unaudited calculation fixtures, E2E lọc và reload |
 | E3 | Chỉ approved đúng review revision được lấy; không lặp ID | Test trộn tất cả status, revision cũ; lặp seed/bank/config/version cho cùng đề |
 | E4 | Ngân hàng thiếu phải dừng trước tạo phiên, không bù Phase/Track/format khác | Boundary fixture thiếu đúng một bucket, required/available/missing chính xác |
 | E5 | Thứ tự câu/options thay đổi an toàn, đáp án không đổi ý nghĩa | Test ID options, multiple exact-set, câu khóa shuffle |
