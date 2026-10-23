@@ -12,3 +12,15 @@
 .session-alert{display:flex;align-items:center;gap:10px;margin:0 0 12px;padding:12px 14px;border:1px solid #efd5c8;border-radius:11px;background:#fff7f2;color:#8b4936;font-size:12px}.session-alert span{flex:1}.session-alert button{border:0;background:none;color:#8b4936;font-size:11px;font-weight:700}
 .session-page{zoom:1.25}
 @media(max-width:600px){.session-page{zoom:1}}
+
+/* Readable answers and scientific notation, including narrow phone screens. */
+.question-card { min-width: 0; }
+.question-card h1, .question-context, .option-copy, .explanation { overflow-wrap: anywhere; }
+.option-copy { min-width: 0; font-size: 14px; line-height: 1.65; }
+.option-letter { flex-shrink: 0; }
+.explanation p, .question-context { font-size: 14px; line-height: 1.75; }
+.question-text { white-space: pre-wrap; }
+.math-symbol { display: inline; }
+.question-text sub, .question-text sup { font-size: .75em; line-height: 0; position: relative; vertical-align: baseline; }
+.question-text sub { bottom: -.25em; }
+.question-text sup { top: -.5em; }

@@ -8,9 +8,11 @@ async function rows(page: Page, store = 'attempts'): Promise<any[]> {
     open.onsuccess = () => { const db = open.result; const req = db.transaction(name).objectStore(name).getAll(); req.onsuccess = () => { resolve(req.result); db.close(); }; req.onerror = () => reject(req.error); };
   }), store);
 }
-async function startDaily(page: Page, day = 'p1-d01') {
+async function startDaily(page: Page, day = 'p1-d01', calculationOnly = false) {
   await page.goto('./#/study');
+  if (day.startsWith('p2-')) await page.getByRole('combobox', { name: 'Phase', exact: true }).selectOption('2');
   await page.getByRole('combobox', { name: 'Ngày học', exact: true }).selectOption(day);
+  if (calculationOnly) await page.getByRole('combobox', { name: 'Dạng bài', exact: true }).selectOption('calculation');
   const countSelect = page.getByRole('combobox', { name: 'Số câu mục tiêu', exact: true });
   const largestCount = await countSelect.locator('option').last().getAttribute('value');
   if (largestCount) await countSelect.selectOption(largestCount);
@@ -326,5 +328,30 @@ test('Track 4 calculator practice uses only numerical questions and persists on 
   expect(attempt.questions.every((i: any) => i.question.track === 4 && i.question.calculation === true)).toBe(true);
   await page.reload();
   await expect(page.locator('.question-card h1')).toBeVisible();
+  expect((await rows(page))[0].questions).toEqual(attempt.questions);
+});
+
+test('camera calculation renders subscripts and powers with readable answers on desktop and phone', async ({ page }) => {
+  const attempt = await startDaily(page, 'p2-t4-d04', true);
+  const index = attempt.questions.findIndex((item: any) => item.question.id === 'p2-t4-d04-c01');
+  expect(index).toBeGreaterThanOrEqual(0);
+  await page.getByRole('button', { name: `Đi đến câu ${index + 1}`, exact: true }).click();
+  const heading = page.locator('.question-card h1');
+  await expect(heading.locator('sup')).toHaveText('9');
+  await expect(heading.locator('sub')).toHaveText(['camera', 'per pixel']);
+  await expect(heading).not.toContainText('10^9');
+  await expect(heading).not.toContainText('N_camera');
+  for (const width of [1440, 390, 360]) {
+    await page.setViewportSize({ width, height: 1000 });
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
+    expect(await page.locator('.option-copy').first().evaluate(el => parseFloat(getComputedStyle(el).fontSize))).toBeGreaterThanOrEqual(14);
+    await page.screenshot({ path: `tmp/qa/calculation-format-${width}.png`, fullPage: true });
+  }
+  await page.reload();
+  await page.getByRole('button', { name: `Đi đến câu ${index + 1}`, exact: true }).click();
+  await expect(heading.locator('sup')).toHaveText('9');
+  await submit(page, attempt);
+  await page.getByRole('button', { name: `Đi đến câu ${index + 1}`, exact: true }).click();
+  await expect(page.locator('.explanation')).toContainText('1,327104 Gbit/s');
   expect((await rows(page))[0].questions).toEqual(attempt.questions);
 });
