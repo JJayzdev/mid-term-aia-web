@@ -24,5 +24,5 @@
 .question-text sub { bottom: -.25em; }
 .question-text sup { top: -.5em; }
 
-.math-root { display: inline-flex; align-items: baseline; padding-top: .12em; max-width: 100%; }
+.math-root { display: inline-flex; align-items: baseline; line-height: 1.1; padding-top: .12em; max-width: 100%; }
 .math-radicand { border-top: 1px solid currentColor; padding: .08em .12em 0; min-width: 0; }
