@@ -20,7 +20,9 @@
 .option-letter { flex-shrink: 0; }
 .explanation p, .question-context { font-size: 14px; line-height: 1.75; }
 .question-text { white-space: pre-wrap; }
-.math-symbol { display: inline; }
 .question-text sub, .question-text sup { font-size: .75em; line-height: 0; position: relative; vertical-align: baseline; }
 .question-text sub { bottom: -.25em; }
 .question-text sup { top: -.5em; }
+
+.math-root { display: inline-flex; align-items: baseline; padding-top: .12em; max-width: 100%; }
+.math-radicand { border-top: 1px solid currentColor; padding: .08em .12em 0; min-width: 0; }

@@ -18,7 +18,7 @@ async function startDaily(page: Page, day = 'p1-d01', calculationOnly = false) {
   if (largestCount) await countSelect.selectOption(largestCount);
   await page.getByRole('button', { name: 'Bắt đầu lượt học' }).click();
   await expect(page.locator('.question-card h1')).toBeVisible();
-  return (await rows(page))[0];
+  return (await rows(page)).find(a => a.status === 'in_progress');
 }
 async function submit(page: Page, a: any) {
   await page.getByRole('button', { name: `Đi đến câu ${a.questions.length}`, exact: true }).click();
@@ -354,4 +354,35 @@ test('camera calculation renders subscripts and powers with readable answers on 
   await page.getByRole('button', { name: `Đi đến câu ${index + 1}`, exact: true }).click();
   await expect(page.locator('.explanation')).toContainText('1,327104 Gbit/s');
   expect((await rows(page))[0].questions).toEqual(attempt.questions);
+});
+
+test('untagged math and square roots render in practice and submitted explanations', async ({ page }) => {
+  const phase1 = await startDaily(page, 'p1-d14');
+  const index = phase1.questions.findIndex((item: any) => item.question.id === 'p1-d14-x15');
+  expect(index).toBeGreaterThanOrEqual(0);
+  expect(phase1.questions[index].question.calculation).not.toBe(true);
+  await page.getByRole('button', { name: `Đi đến câu ${index + 1}`, exact: true }).click();
+  await expect(page.locator('.question-card h1 sup')).toHaveText('k');
+  await expect(page.locator('.answer-options sup')).toHaveCount(2);
+  await submit(page, phase1);
+  await page.getByRole('button', { name: 'Xem lịch sử', exact: true }).click();
+  const numerical = await startDaily(page, 'p2-t4-d11', true);
+  const rootIndex = numerical.questions.findIndex((item: any) => item.question.id === 'p2-t4-d11-c01');
+  expect(rootIndex).toBeGreaterThanOrEqual(0);
+  await page.getByRole('button', { name: `Đi đến câu ${rootIndex + 1}`, exact: true }).click();
+  await expect(page.locator('.question-card h1 .math-radicand')).toHaveText('6');
+  await expect(page.locator('.question-card h1')).not.toContainText('sigma_');
+  for (const width of [1440, 390, 360]) {
+    await page.setViewportSize({ width, height: 1000 });
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
+    await page.screenshot({ path: `tmp/qa/global-formula-${width}.png`, fullPage: true });
+  }
+  await submit(page, numerical);
+  await page.getByRole('button', { name: `Đi đến câu ${rootIndex + 1}`, exact: true }).click();
+  await expect(page.locator('.explanation .math-radicand')).toHaveCount(2);
+  await page.reload();
+  await page.goto('./#/history');
+  await page.getByRole('button', { name: 'Xem lại', exact: true }).first().click();
+  await page.getByRole('button', { name: `Đi đến câu ${rootIndex + 1}`, exact: true }).click();
+  await expect(page.locator('.explanation .math-radicand')).toHaveCount(2);
 });
