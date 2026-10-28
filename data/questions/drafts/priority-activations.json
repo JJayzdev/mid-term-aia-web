@@ -1,0 +1,590 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.28-priority-activations",
+  "questions": [
+    {
+      "id": "p2-t4-d01-priority-activation-ranges",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "matching",
+      "answer_format": "matching",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Ghép một-một hàm với miền đầu ra và đặc điểm chuẩn hóa.",
+      "correct_answer": {
+        "l1": "a",
+        "l2": "b",
+        "l3": "c",
+        "l4": "d"
+      },
+      "explanation": "Sigmoid và softmax đều có thể biểu diễn xác suất nhưng cấu trúc chuẩn hóa khác nhau. ReLU không bị chặn ở1.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 15,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 15",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 53,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 53",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Mỗi đầu ra nằm trong (0,1), không buộc nhiều đầu ra cộng thành 1"
+        },
+        {
+          "id": "b",
+          "text": "Đầu ra trong (−1,1), đối xứng quanh 0"
+        },
+        {
+          "id": "c",
+          "text": "Đầu ra trong [0,+∞), chặn phần âm"
+        },
+        {
+          "id": "d",
+          "text": "Vector dương có tổng các phần tử bằng1"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "activations"
+      ],
+      "matching_items": [
+        {
+          "id": "l1",
+          "text": "Sigmoid",
+          "explanation": "Sigmoid tác động độc lập lên từng logit."
+        },
+        {
+          "id": "l2",
+          "text": "Tanh",
+          "explanation": "Tanh cho cả giá trị âm và dương hữu hạn."
+        },
+        {
+          "id": "l3",
+          "text": "ReLU",
+          "explanation": "ReLU bằng0 khi đầu vào âm và bằng đầu vào khi dương."
+        },
+        {
+          "id": "l4",
+          "text": "Softmax",
+          "explanation": "Mẫu số dùng tổng exp của mọi logit nên các đầu ra phụ thuộc nhau."
+        }
+      ],
+      "matching_reuse": false
+    },
+    {
+      "id": "p2-t4-d01-priority-activation-formulas",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "matching",
+      "answer_format": "matching",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Ghép một-một hàm kích hoạt với công thức; x là vô hướng và z là vector logit.",
+      "correct_answer": {
+        "l1": "a",
+        "l2": "b",
+        "l3": "c",
+        "l4": "d"
+      },
+      "explanation": "Không thay softmax bằng argmax: argmax chọn chỉ số, còn softmax trả cả vector xác suất.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 15,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 15",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 53,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 53",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "1/(1+exp(−x))"
+        },
+        {
+          "id": "b",
+          "text": "(exp(x)−exp(−x))/(exp(x)+exp(−x))"
+        },
+        {
+          "id": "c",
+          "text": "max(0,x)"
+        },
+        {
+          "id": "d",
+          "text": "exp(z_i)/Σ_j exp(z_j)"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "activations"
+      ],
+      "formula_reference": {
+        "title": "Sigmoid, tanh, ReLU và softmax",
+        "formula": "sigmoid(x)=1/(1+exp(−x)); tanh(x)=(exp(x)−exp(−x))/(exp(x)+exp(−x)); ReLU(x)=max(0,x); softmax(z)_i=exp(z_i)/Σ_j exp(z_j)",
+        "symbols": "x: đầu vào vô hướng; z_i: logit lớp i; tổng j chạy qua mọi lớp.",
+        "conditions": "Các logit hữu hạn; softmax áp trên trục lớp. Trừ max logit trước exp để ổn định số học.",
+        "example": "Với (−1;0;1): sigmoid≈(0,269;0,500;0,731), tanh≈(−0,762;0;0,762), ReLU=(0;0;1), softmax≈(0,090;0,245;0,665).",
+        "common_mistakes": "Nhầm sigmoid riêng từng phần tử với softmax; coi argmax là vector xác suất; tính exp(logit lớn) trực tiếp gây tràn."
+      },
+      "matching_items": [
+        {
+          "id": "l1",
+          "text": "Sigmoid",
+          "explanation": "Mẫu số lớn khi x âm nên sigmoid gần0."
+        },
+        {
+          "id": "l2",
+          "text": "Tanh",
+          "explanation": "Tử đổi dấu khi x đổi dấu, mẫu không đổi."
+        },
+        {
+          "id": "l3",
+          "text": "ReLU",
+          "explanation": "Phép max chặn giá trị âm."
+        },
+        {
+          "id": "l4",
+          "text": "Softmax tại phần tử i",
+          "explanation": "Tổng theo toàn bộ lớp tạo phân phối chuẩn hóa."
+        }
+      ],
+      "matching_reuse": false
+    },
+    {
+      "id": "p2-t4-d01-priority-activation-sigmoid-value",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Với x=(−1;0;1), áp sigmoid độc lập từng phần tử. Vector nào đúng? Làm tròn 3 chữ số thập phân.",
+      "correct_answer": "a",
+      "explanation": "Thay số vào1/(1+exp(−x)): tại−1 là1/(1+e)≈0,269; tại0 là0,5; tại1 là1/(1+e⁻¹)≈0,731. Vector tổng1 thuộc softmax; vector có phần tử âm thuộc tanh.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 15,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 15",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "(0,269;0,500;0,731)"
+        },
+        {
+          "id": "b",
+          "text": "(0,090;0,245;0,665)"
+        },
+        {
+          "id": "c",
+          "text": "(−0,762;0;0,762)"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "activations"
+      ],
+      "calculation": true
+    },
+    {
+      "id": "p2-t4-d01-priority-activation-tanh-value",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Với x=(−1;0;1), áp tanh từng phần tử. Vector nào đúng? Làm tròn 3 chữ số thập phân.",
+      "correct_answer": "a",
+      "explanation": "tanh(1)=(e−e⁻¹)/(e+e⁻¹)≈0,761594; tanh là hàm lẻ nên tanh(−1)≈−0,762; tanh(0)=0. Sigmoid luôn dương; ReLU chặn âm nhưng giữ1.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 15,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 15",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "(−0,762;0;0,762)"
+        },
+        {
+          "id": "b",
+          "text": "(0,269;0,500;0,731)"
+        },
+        {
+          "id": "c",
+          "text": "(0;0;1)"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "activations"
+      ],
+      "calculation": true
+    },
+    {
+      "id": "p2-t4-d01-priority-activation-softmax-value",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một mẫu có logits z=(−1;0;1). Tính softmax trên ba lớp. Vector nào đúng? Làm tròn 3 chữ số thập phân.",
+      "correct_answer": "a",
+      "explanation": "Trừ max=1: z_shift=(−2;−1;0). exp≈(0,135335;0,367879;1), tổng≈1,503214. Chia từng phần tử cho tổng cho (0,090031;0,244728;0,665241). One-hot argmax chỉ chọn lớp cao nhất, không giữ phân phối.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 53,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 53",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "(0,090;0,245;0,665)"
+        },
+        {
+          "id": "b",
+          "text": "(0,269;0,500;0,731)"
+        },
+        {
+          "id": "c",
+          "text": "(0;0;1)"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "activations"
+      ],
+      "calculation": true
+    },
+    {
+      "id": "p2-t4-d01-priority-activation-derivative",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một neuron sigmoid đã có đầu ra s=0,8; upstream gradient dL/ds=2. Gradient dL/dz bằng bao nhiêu?",
+      "correct_answer": "a",
+      "explanation": "Đạo hàm sigmoid theo logit: ds/dz=s(1−s)=0,8×0,2=0,16. Chain rule: dL/dz=2×0,16=0,32. 0,16 bỏ upstream gradient;1,6 bỏ thừa số(1−s).",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 17,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 17",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 26,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 26",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "0,32"
+        },
+        {
+          "id": "b",
+          "text": "1,6"
+        },
+        {
+          "id": "c",
+          "text": "0,16"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "activations"
+      ],
+      "calculation": true,
+      "formula_reference": {
+        "title": "Đạo hàm sigmoid và ReLU",
+        "formula": "sigmoid′(z)=s×(1−s); ReLU′(z)=1 khi z>0, =0 khi z<0",
+        "symbols": "s=sigmoid(z); upstream gradient nhân đạo hàm cục bộ theo chain rule.",
+        "conditions": "ReLU không khả vi tại0; bài tính phải nêu quy ước nếu xét đúng0.",
+        "example": "s=0,8, upstream=2 → gradient logit=2×0,8×0,2=0,32.",
+        "common_mistakes": "Quên upstream gradient; cho ReLU gradient1 ở miền âm; khẳng định đạo hàm toán học duy nhất tại0."
+      }
+    },
+    {
+      "id": "p2-t4-d01-priority-activation-stable",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Softmax với logits (1000;1001;1002) dễ tràn exp. Cách nào giữ nguyên phân phối mà ổn định số học?",
+      "correct_answer": "a",
+      "explanation": "Cộng/trừ cùng một hằng số làm tử và mẫu cùng nhân một hệ số nên triệt tiêu. Chia logits là thay nhiệt độ, thường đổi phân phối; argmax chỉ giữ chỉ số lớn nhất.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 53,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 53",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Trừ1002 khỏi cả ba logits rồi tính softmax"
+        },
+        {
+          "id": "b",
+          "text": "Chia từng logit cho1002 rồi nói phân phối không đổi"
+        },
+        {
+          "id": "c",
+          "text": "Thay softmax bằng argmax vì cả hai luôn cùng vector"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "activations"
+      ],
+      "context": "Bạn triển khai softmax trên vector logit lớn và phát hiện exp trả giá trị vô hạn."
+    },
+    {
+      "id": "p2-t4-d01-priority-activation-dead-relu",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một neuron ReLU nhận z<0 cho mọi mẫu trong nhiều bước. Gradient qua kích hoạt bằng0. Rủi ro nào phù hợp?",
+      "correct_answer": "a",
+      "explanation": "ReLU chặn cả đầu ra và gradient khi z<0, tạo nguy cơ neuron chết nếu duy trì miền âm. Sigmoid bão hòa ở hai đầu theo cơ chế khác; ReLU không chặn trên tại1.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 15,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 15",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 26,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 26",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 45,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 45",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Neuron có thể không nhận được tín hiệu gradient để cập nhật từ nhánh này"
+        },
+        {
+          "id": "b",
+          "text": "Đầu ra bắt buộc bão hòa tại1 như sigmoid"
+        },
+        {
+          "id": "c",
+          "text": "Gradient qua ReLU luôn bằng1 nên không có vấn đề"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "activations"
+      ],
+      "context": "Theo dõi activation cho thấy một kênh luôn bằng0 và pre-activation luôn âm; chưa xét các nhánh cập nhật khác."
+    },
+    {
+      "id": "p2-t4-d01-priority-activation-batch-gradient",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Batch hai mẫu có softmax p1=(0,8;0,2), y1=(1;0); p2=(0,3;0,7), y2=(0;1). Loss là trung bình CE hai mẫu. Gradient theo logits của mẫu thứ nhất là gì?",
+      "correct_answer": "a",
+      "explanation": "Gradient từng mẫu của CE là p−y. Với mẫu1: (−0,2;0,2). Loss lấy trung bình hai mẫu nên chia2, được (−0,1;0,1). Không cộng gradient logits của mẫu khác vào logits mẫu1.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 56,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 56",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 69,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 69",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "(−0,1;0,1)"
+        },
+        {
+          "id": "b",
+          "text": "(−0,2;0,2)"
+        },
+        {
+          "id": "c",
+          "text": "(0,8;0,2)"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "activations"
+      ],
+      "calculation": true,
+      "formula_reference": {
+        "title": "Softmax + cross-entropy",
+        "formula": "L=−ln(p_true); dL/dz=p−y; nếu loss trung bình B mẫu, gradient mỗi mẫu=(p−y)/B",
+        "symbols": "p: vector softmax; y: one-hot; B: số mẫu trong batch; ln: log tự nhiên.",
+        "conditions": "Một nhãn đúng mỗi mẫu; cách reduction phải ghi rõ sum hay mean.",
+        "example": "p=(0,8;0,2),y=(1;0),B=2 → gradient logits=(−0,1;0,1).",
+        "common_mistakes": "Quên chia B; dùng log10; hiểu gradient là p thay p−y."
+      }
+    }
+  ]
+}

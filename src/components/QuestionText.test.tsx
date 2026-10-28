@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { renderToStaticMarkup } from 'react-dom/server';
 import bank from '../../public/data/bank.json';
 import QuestionText from './QuestionText';
+import type { Question } from '../domain/types';
 
 function formatted(text: string) {
   const element = document.createElement('div');
@@ -24,6 +25,11 @@ describe('notation throughout the question bank', () => {
     expect(el.textContent).toBe(text);
     expect(el.querySelector('sup, sub')).toBeNull();
   });
+  it('formats grouped sums, Vietnamese subscripts and complete named exponents', () => {
+    const el = formatted('Σ_{j∈S}p(j); p_lớp_đúng; (1−p)^gamma; softmax(z)_i; HOTA_alpha; beta1; κ_max; bytes_per_feature');
+    expect([...el.querySelectorAll('sub')].map(n => n.textContent)).toEqual(['j∈S', 'lớp đúng', 'i', 'α', '1', 'max', 'per feature']);
+    expect(el.querySelector('sup')?.textContent).toBe('γ');
+  });
   it('escapes imported HTML and preserves malformed expressions', () => {
     const el = formatted('<img src=x onerror=alert(1)> sqrt(P_fused');
     expect(el.querySelector('img')).toBeNull();
@@ -32,16 +38,18 @@ describe('notation throughout the question bank', () => {
   });
   it('renders every published question field without leaving raw mathematical scripts or functions', () => {
     let checked = 0;
-    for (const q of bank.questions) {
+    for (const q of bank.questions as Question[]) {
       const fields = [q.question, q.context, q.explanation, ...q.options?.map(o => o.text) ?? [],
         ...(q.answer_format === 'rubric' ? [String(q.correct_answer)] : []),
-        ...q.rubric?.flatMap(c => [c.description, c.full_credit, c.partial_credit, c.no_credit]) ?? []];
+        ...q.rubric?.flatMap(c => [c.description, c.full_credit, c.partial_credit, c.no_credit]) ?? [],
+        ...q.matching_items?.flatMap(c => [c.text, c.explanation]) ?? [],
+        ...Object.values(q.formula_reference ?? {})];
       for (const field of fields) {
         if (!field) continue;
         const el = formatted(field);
         expect(el.textContent, q.id).not.toMatch(/\^(?:[−+-]?\d|k\b)|\b(?:[A-Za-z]|sigma|bits)_(?:[A-Za-z]|\()|\b(?:sqrt|floor|ceil)\(/);
         for (const identifier of field.match(/\b[A-Za-z][A-Za-z0-9]*(?:_[A-Za-z0-9]+)+\b/g) ?? []) {
-          if (!/^(?:[A-Za-z]|sigma|bits)_/.test(identifier)) expect(el.textContent, q.id).toContain(identifier);
+          if (!/^(?:[A-Za-z]|d[A-Za-z]|sigma|bits|gamma|beta|theta|sum|delta|IoU|TP|FP|FN|HOTA|DetA|AssA|Dice|bytes|features|number|area|pad|range|voxel|count|time|batches|saturation|weight|active)_/.test(identifier)) expect(el.textContent, q.id).toContain(identifier);
         }
         checked++;
       }

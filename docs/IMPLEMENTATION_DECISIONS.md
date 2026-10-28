@@ -27,3 +27,13 @@ Người dùng xác nhận tối thiểu 20 câu mỗi file PDF: 63 file, tối 
 ## Bài tính Track 4 — 2026-10-23
 
 Người dùng cho biết được mang máy tính Casio vào thi. Bổ sung 24 bài tính, hai bài cho mỗi PDF Track 4, nâng ngân hàng lên 1.284 câu. Trường tùy chọn `calculation` phục vụ lọc luyện riêng và đảm bảo đề mới có ít nhất hai câu tính trong năm câu khách quan Track 4. Đây là lựa chọn cấu hình luyện tập; người dùng chưa cung cấp tỷ lệ bài tính chính thức. Cách lấy mẫu giữ nguyên 60 câu, điểm 60/40 và snapshot lịch sử. Không có backend hoặc dịch vụ tính phí mới.
+
+
+## 2026-10-28 — Ôn trọng tâm và dạng tương tác
+
+- Matching/ordering mở rộng schema 1.0.0 bằng các trường tùy chọn/phân nhánh format. Snapshot cũ giữ nguyên; không migrate hay ghi lại lịch sử. Phiên mới lưu thứ tự hai cột và các bước ngay khi tạo.
+- Ghép cặp bằng select có nhãn; sắp xếp bằng nút lên/xuống và xác nhận, dùng được bằng bàn phím. Ghép thiếu được tự lưu nhưng chấm 0; thứ tự ban đầu chưa được ghi nhận cho tới thao tác hoặc xác nhận.
+- Hai dạng mới dùng exact match, không chia điểm từng cặp/vị trí. Ordering hỗ trợ nhiều hoán vị đúng. Reviewer kiểm tra quan hệ trước–sau.
+- Nhóm trọng tâm trực giao với Phase/Track/Day. Mặc định14 câu chọn cân bằng nhóm/dạng, không khẳng định phân bổ đề thi thật. Bộ lọc chủ đề/dạng tiếp tục áp dụng.
+- Mục Công thức đọc metadata đã duyệt của câu hỏi, dùng cùng renderer và nguồn. Nguồn bổ sung ngoài slide luôn có nhãn và liên kết; gate yêu cầu reviewer duyệt URL cùng revision.
+- Đề thi giữ60 câu/90phút/100điểm, Phase1 36câu/60điểm, Phase2 24câu/40điểm; matching/ordering chỉ tham gia ôn tập.

@@ -1,0 +1,538 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.28-priority-sensors",
+  "questions": [
+    {
+      "id": "p2-t4-d04-priority-sensor-strengths",
+      "revision": 3,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d04",
+      "topic": "p2-t4-d04",
+      "taxonomy_status": "verified",
+      "question_type": "matching",
+      "answer_format": "matching",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Ghép một-một cảm biến với loại thông tin và giới hạn điển hình.",
+      "correct_answer": {
+        "l1": "a",
+        "l2": "b",
+        "l3": "c"
+      },
+      "explanation": "Sensor fusion tận dụng tính bổ sung; không cảm biến nào luôn chính xác trong mọi điều kiện. Radar không trực tiếp cung cấp đủ mọi thành phần vận tốc chỉ từ một Doppler.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 7,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "locator": "Physical PDF page 7",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 9,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "locator": "Physical PDF page 9",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 11,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "locator": "Physical PDF page 11",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 17,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "locator": "Physical PDF page 17",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 18,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "locator": "Physical PDF page 18",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Màu sắc/texture/ngữ nghĩa; nhạy với ánh sáng"
+        },
+        {
+          "id": "b",
+          "text": "Khoảng cách và hình học3D; point cloud có thể thưa hoặc suy giảm thời tiết"
+        },
+        {
+          "id": "c",
+          "text": "Range và vận tốc xuyên tâm qua Doppler; có thể có multipath/ghost"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "sensors"
+      ],
+      "matching_items": [
+        {
+          "id": "l1",
+          "text": "Camera",
+          "explanation": "Camera cung cấp hình ảnh giàu ngữ nghĩa nhưng chói/tối có thể giảm chất lượng."
+        },
+        {
+          "id": "l2",
+          "text": "LiDAR",
+          "explanation": "Đo range không bảo đảm point cloud sạch trong mọi điều kiện."
+        },
+        {
+          "id": "l3",
+          "text": "Radar",
+          "explanation": "Vận tốc xuyên tâm không đồng nghĩa toàn bộ vector vận tốc3D."
+        }
+      ],
+      "matching_reuse": false,
+      "supplemental_sources": [
+        {
+          "title": "NOAA JetStream — Radar Images: Velocity",
+          "url": "https://www.noaa.gov/jetstream/velocity",
+          "accessed_at": "2026-10-28",
+          "note": "Bổ sung ngoài slide: phép đo Doppler chỉ cho thành phần vận tốc tương đối theo tia nhìn, không trực tiếp cho toàn bộ vector vận tốc; nguyên lý xuyên tâm từ ví dụ radar khí tượng."
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d04-priority-sensor-calibration",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d04",
+      "topic": "p2-t4-d04",
+      "taxonomy_status": "verified",
+      "question_type": "matching",
+      "answer_format": "matching",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Ghép một-một loại cấu hình với đại lượng nó mô tả.",
+      "correct_answer": {
+        "l1": "a",
+        "l2": "b",
+        "l3": "c"
+      },
+      "explanation": "Ba lớp lỗi khác nhau nên cần chẩn đoán riêng. Không dùng chỉnh extrinsic để che một offset thời gian thay đổi theo chuyển động.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 22,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "locator": "Physical PDF page 22",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 24,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "locator": "Physical PDF page 24",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tiêu cự, tâm ảnh và mô hình distortion"
+        },
+        {
+          "id": "b",
+          "text": "Phép quay/tịnh tiến giữa hai hệ tọa độ"
+        },
+        {
+          "id": "c",
+          "text": "Căn thời điểm ghi nhận giữa các luồng sensor"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "sensors"
+      ],
+      "matching_items": [
+        {
+          "id": "l1",
+          "text": "Intrinsic camera",
+          "explanation": "Đây là tham số bên trong phép chiếu của camera."
+        },
+        {
+          "id": "l2",
+          "text": "Extrinsic giữa camera và LiDAR",
+          "explanation": "Sai extrinsic làm geometry không khớp dù thời gian đã đúng."
+        },
+        {
+          "id": "l3",
+          "text": "Time synchronization",
+          "explanation": "Đúng spatial transform vẫn không sửa được vật thể đã di chuyển giữa hai timestamp."
+        }
+      ],
+      "matching_reuse": false
+    },
+    {
+      "id": "p2-t4-d04-priority-sensor-offset-calc",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d04",
+      "topic": "p2-t4-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Hai sensor lệch timestamp40 ms. Một vật chuyển động ngang đều15 m/s trong hệ chung. Bỏ các nguồn sai số khác. Độ lệch vị trí chỉ do thời gian là bao nhiêu?",
+      "correct_answer": "a",
+      "explanation": "Đổi40 ms=0,040 s. Với vận tốc không đổi, Δx=v×Δt=15×0,040=0,60 m. Dùng40 như giây sai1000lần; đổi ms hai lần cho0,0006 m.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 24,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "locator": "Physical PDF page 24",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "0,60 m"
+        },
+        {
+          "id": "b",
+          "text": "600 m"
+        },
+        {
+          "id": "c",
+          "text": "0,0006 m"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "sensors"
+      ],
+      "calculation": true,
+      "formula_reference": {
+        "title": "Sai lệch do timestamp",
+        "formula": "Δx=v×Δt",
+        "symbols": "v: vận tốc tương đối theo hướng xét; Δt: lệch thời gian tính bằng giây; Δx: sai lệch vị trí.",
+        "conditions": "Xấp xỉ chuyển động đều trong khoảng ngắn, cùng hệ tọa độ; chưa tính quay,gia tốc hoặc rolling shutter.",
+        "example": "15 m/s và40 ms →15×0,040=0,60 m.",
+        "common_mistakes": "Quên đổi ms sang s; dùng công thức1D cho cả quay phức tạp mà không nêu giả định."
+      }
+    },
+    {
+      "id": "p2-t4-d04-priority-sensor-direction-test",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d04",
+      "topic": "p2-t4-d04",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Kết quả kiểm tra nào giúp phân biệt lỗi thời gian với extrinsic cố định trong tình huống này nhất?",
+      "correct_answer": "a",
+      "explanation": "Lệch do thời gian phụ thuộc chuyển động; kiểm đứng yên và đổi hướng kết hợp timestamp giúp tách giả thuyết. Extrinsic cố định thường tạo pattern sai hình học ngay cả khi đứng yên; không kết luận chỉ từ một frame.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 22,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "locator": "Physical PDF page 22",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 24,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "locator": "Physical PDF page 24",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "So sánh overlay lúc đứng yên và lúc chạy hai hướng, đồng thời kiểm timestamp"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ tăng số layer của mạng fusion"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ dùng một frame đẹp rồi kết luận calibration đúng"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "sensors"
+      ],
+      "context": "Overlay LiDAR–camera gần khớp khi xe đứng yên nhưng lệch rõ khi xe chuyển động; muốn chọn kiểm tra để phân biệt nguyên nhân."
+    },
+    {
+      "id": "p2-t4-d06-priority-fusion-levels",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d06",
+      "topic": "p2-t4-d06",
+      "taxonomy_status": "verified",
+      "question_type": "matching",
+      "answer_format": "matching",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Ghép một-một kiến trúc với mức fusion được mô tả.",
+      "correct_answer": {
+        "l1": "a",
+        "l2": "b",
+        "l3": "c"
+      },
+      "explanation": "Phân loại theo vị trí gộp thông tin trong kiến trúc cụ thể, không theo tên sensor. Một hệ thống có thể kết hợp nhiều mức.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d06",
+          "sha256": "1c49ea2510761c0798a7b9d139ab9074eba188719a16cec41778714cef54f0d7",
+          "pdf_page": 19,
+          "title": "3D from Point Clouds and Where LiDAR Meets the Camera",
+          "locator": "Physical PDF page 19",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Early/data fusion"
+        },
+        {
+          "id": "b",
+          "text": "Intermediate/feature fusion"
+        },
+        {
+          "id": "c",
+          "text": "Late/decision fusion"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "sensors"
+      ],
+      "matching_items": [
+        {
+          "id": "l1",
+          "text": "Đưa dữ liệu các sensor đã căn chỉnh vào chung đầu vào",
+          "explanation": "Thông tin được gộp trước backbone đặc trưng chính."
+        },
+        {
+          "id": "l2",
+          "text": "Mỗi sensor có encoder, sau đó kết hợp feature maps",
+          "explanation": "Sự kết hợp diễn ra ở biểu diễn đặc trưng."
+        },
+        {
+          "id": "l3",
+          "text": "Mỗi sensor tạo detections rồi mới kết hợp quyết định",
+          "explanation": "Các dự đoán đã được tạo riêng trước khi ghép."
+        }
+      ],
+      "matching_reuse": false
+    },
+    {
+      "id": "p2-t4-d06-priority-fusion-pipeline",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d06",
+      "topic": "p2-t4-d06",
+      "taxonomy_status": "verified",
+      "question_type": "ordering",
+      "answer_format": "ordering",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một kiến trúc feature fusion được quy định: căn thời gian/hệ tọa độ trước, hai encoder độc lập, fusion feature rồi detection head. Sắp xếp pipeline.",
+      "correct_answer": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "explanation": "Đề chỉ mô tả một kiến trúc cụ thể. Hai encoder độc lập được gộp thành một bước để không ép thứ tự; late fusion lại tạo detections riêng trước khi gộp.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d06",
+          "sha256": "1c49ea2510761c0798a7b9d139ab9074eba188719a16cec41778714cef54f0d7",
+          "pdf_page": 19,
+          "title": "3D from Point Clouds and Where LiDAR Meets the Camera",
+          "locator": "Physical PDF page 19",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d06",
+          "sha256": "1c49ea2510761c0798a7b9d139ab9074eba188719a16cec41778714cef54f0d7",
+          "pdf_page": 20,
+          "title": "3D from Point Clouds and Where LiDAR Meets the Camera",
+          "locator": "Physical PDF page 20",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d06",
+          "sha256": "1c49ea2510761c0798a7b9d139ab9074eba188719a16cec41778714cef54f0d7",
+          "pdf_page": 21,
+          "title": "3D from Point Clouds and Where LiDAR Meets the Camera",
+          "locator": "Physical PDF page 21",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Kiểm tra và căn thời gian/hệ tọa độ dữ liệu đầu vào"
+        },
+        {
+          "id": "b",
+          "text": "Chạy encoder camera và encoder LiDAR độc lập"
+        },
+        {
+          "id": "c",
+          "text": "Đưa feature về biểu diễn tương thích rồi gộp"
+        },
+        {
+          "id": "d",
+          "text": "Chạy detection head trên feature đã gộp"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "sensors"
+      ]
+    },
+    {
+      "id": "p2-t4-d04-priority-sensor-weather-checks",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d04",
+      "topic": "p2-t4-d04",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Khi quality LiDAR giảm trong mưa và radar có ghost, những hành động nào cần thiết trước khi tin output fusion? Chọn tất cả đáp án đúng.",
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation": "Cần quan sát quality từng sensor và đánh giá theo slice điều kiện thực. Fusion không tự làm input sai thành đúng, cũng không cho phép coi radar bất biến với môi trường.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 15,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "locator": "Physical PDF page 15",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 17,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "locator": "Physical PDF page 17",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 18,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "locator": "Physical PDF page 18",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 19,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "locator": "Physical PDF page 19",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Theo dõi health metrics riêng và dấu hiệu bất thường của từng sensor"
+        },
+        {
+          "id": "b",
+          "text": "Đánh giá lại output theo slice thời tiết và nguyên nhân ghost/multipath"
+        },
+        {
+          "id": "c",
+          "text": "Mặc định fusion luôn tốt hơn từng sensor nên bỏ theo dõi health"
+        },
+        {
+          "id": "d",
+          "text": "Coi radar đo chính xác toàn bộ vector vận tốc trong mọi điều kiện"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "sensors"
+      ],
+      "context": "Hệ thống camera–LiDAR–radar được đưa từ thời tiết khô sang mưa; các luồng có dấu hiệu suy giảm khác nhau."
+    }
+  ]
+}

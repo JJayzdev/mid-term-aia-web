@@ -1,8 +1,25 @@
-import type { Attempt, AttemptQuestion, GradeSummary, RubricMarks } from './types';
+import type { AnswerValue, Attempt, AttemptQuestion, GradeSummary, RubricMarks } from './types';
 import { weightedDecimalRoundHalfUp } from './rational';
+
+export function isBlankAnswer(answer: AnswerValue | undefined): boolean {
+  if (answer === undefined) return true;
+  if (typeof answer === 'string') return !answer.trim();
+  if (Array.isArray(answer)) return answer.length === 0;
+  if (typeof answer === 'object') return Object.keys(answer).length === 0;
+  return false;
+}
 
 export function isCorrect(item: AttemptQuestion, answer: unknown): boolean {
   const expected = item.question.correct_answer;
+  if (item.question.answer_format === 'matching') {
+    if (!answer || typeof answer !== 'object' || Array.isArray(answer) || !expected || typeof expected !== 'object' || Array.isArray(expected)) return false;
+    const pairs = Object.entries(expected);
+    return Object.keys(answer).length === pairs.length && pairs.every(([left, right]) => Object.hasOwn(answer, left) && (answer as Record<string, unknown>)[left] === right);
+  }
+  if (item.question.answer_format === 'ordering') {
+    if (!Array.isArray(answer)) return false;
+    return [expected, ...(item.question.accepted_orders ?? [])].some(order => Array.isArray(order) && answer.length === order.length && order.every((id, i) => answer[i] === id));
+  }
   if (item.question.answer_format === 'multiple_choice') {
     if (!Array.isArray(answer) || !Array.isArray(expected)) return false;
     return answer.length === expected.length && new Set(answer).size === expected.length && [...answer].every(id => expected.includes(id));

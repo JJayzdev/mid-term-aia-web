@@ -1,0 +1,442 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.28-priority-normalization",
+  "questions": [
+    {
+      "id": "p2-t4-d01-priority-norm-symbols",
+      "revision": 2,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "matching",
+      "answer_format": "matching",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Ghép một-một ký hiệu trong x_hat=(x−mu)/sqrt(variance+epsilon), y=gamma×x_hat+beta.",
+      "correct_answer": {
+        "l1": "a",
+        "l2": "b",
+        "l3": "c",
+        "l4": "d"
+      },
+      "explanation": "Chuẩn hóa và affine là hai bước khác nhau. Sau gamma,beta, đầu ra không bắt buộc có mean0 và variance1.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 77,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 77",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d02",
+          "sha256": "58895651f776ef9fb62c9010d0c0c7b338849ea96e4a5dcbbe46b7afb77110b7",
+          "pdf_page": 17,
+          "title": "Kiến Trúc Mạng Cho Thị Giác Máy Tính",
+          "locator": "Physical PDF page 17",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Mean/variance dùng để chuẩn hóa, từ nhóm hiện tại hoặc running statistics tùy chế độ"
+        },
+        {
+          "id": "b",
+          "text": "Số dương nhỏ giúp tránh chia cho0"
+        },
+        {
+          "id": "c",
+          "text": "Hệ số co giãn học được"
+        },
+        {
+          "id": "d",
+          "text": "Hệ số dịch học được"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "normalization"
+      ],
+      "formula_reference": {
+        "title": "BatchNorm / LayerNorm — chuẩn hóa và affine",
+        "formula": "x_hat=(x−mu)/sqrt(variance+epsilon); y=gamma×x_hat+beta",
+        "symbols": "mu: trung bình; variance: phương sai dùng để chuẩn hóa; epsilon: ổn định số; gamma,beta: tham số học được.",
+        "conditions": "Phải xác định trục, chế độ train/inference và quy ước variance. Trong các ví dụ B×D dùng thống kê hiện tại ở đây, BN theo cột qua B; LN theo hàng qua D. BatchNorm thông thường dùng running statistics khi inference.",
+        "example": "X=[[1,3],[5,7]],gamma=1,beta=0,epsilon=0,variance chia n: BN=[[-1,-1],[1,1]],LN=[[-1,1],[-1,1]].",
+        "common_mistakes": "Nhầm trục; chia n−1 thay n khi đề quy định n; nhầm variance với sigma; bỏ affine."
+      },
+      "matching_items": [
+        {
+          "id": "l1",
+          "text": "mu và variance",
+          "explanation": "Trục quyết định nhóm; BatchNorm thông thường dùng running statistics khi inference."
+        },
+        {
+          "id": "l2",
+          "text": "epsilon",
+          "explanation": "Epsilon nằm trong căn cùng variance, không phải hệ số học."
+        },
+        {
+          "id": "l3",
+          "text": "gamma",
+          "explanation": "Gamma nhân giá trị đã chuẩn hóa."
+        },
+        {
+          "id": "l4",
+          "text": "beta",
+          "explanation": "Beta cộng sau phép co giãn."
+        }
+      ],
+      "matching_reuse": false
+    },
+    {
+      "id": "p2-t4-d02-priority-norm-axes",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d02",
+      "topic": "p2-t4-d02",
+      "taxonomy_status": "verified",
+      "question_type": "matching",
+      "answer_format": "matching",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Ghép một-một trường hợp với nhóm phần tử dùng tính mean và variance. Các trục chuẩn hóa được chỉ rõ theo cấu hình trong đề.",
+      "correct_answer": {
+        "l1": "a",
+        "l2": "b",
+        "l3": "c",
+        "l4": "d"
+      },
+      "explanation": "Tên phương pháp phải đi cùng hình dạng tensor và trục. Không lấy chung toàn bộ B,T,D nếu cấu hình LayerNorm chỉ chuẩn hóaD.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d02",
+          "sha256": "58895651f776ef9fb62c9010d0c0c7b338849ea96e4a5dcbbe46b7afb77110b7",
+          "pdf_page": 17,
+          "title": "Kiến Trúc Mạng Cho Thị Giác Máy Tính",
+          "locator": "Physical PDF page 17",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d02",
+          "sha256": "58895651f776ef9fb62c9010d0c0c7b338849ea96e4a5dcbbe46b7afb77110b7",
+          "pdf_page": 34,
+          "title": "Kiến Trúc Mạng Cho Thị Giác Máy Tính",
+          "locator": "Physical PDF page 34",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Cố định d; lấy các mẫu trong B"
+        },
+        {
+          "id": "b",
+          "text": "Cố định b; lấy các đặc trưng trong D"
+        },
+        {
+          "id": "c",
+          "text": "Cố định c; lấy các phần tử trên N,H,W"
+        },
+        {
+          "id": "d",
+          "text": "Cố định b,t; lấy các phần tử trên D"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "normalization"
+      ],
+      "matching_items": [
+        {
+          "id": "l1",
+          "text": "BatchNorm trên B×D, chuẩn hóa mỗi đặc trưng",
+          "explanation": "Mỗi đặc trưng dùng thống kê qua batch."
+        },
+        {
+          "id": "l2",
+          "text": "LayerNorm trên B×D, normalized_shape=D",
+          "explanation": "Mỗi mẫu được chuẩn hóa riêng."
+        },
+        {
+          "id": "l3",
+          "text": "BatchNorm2d trên N×C×H×W",
+          "explanation": "Thống kê cùng kênh bao phủ batch và các vị trí không gian."
+        },
+        {
+          "id": "l4",
+          "text": "LayerNorm trên B×T×D, normalized_shape=D",
+          "explanation": "Đề quy định trụcD nên mỗi token được chuẩn hóa riêng."
+        }
+      ],
+      "matching_reuse": false
+    },
+    {
+      "id": "p2-t4-d01-priority-norm-bn-value",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "X=[[1,3],[5,7]] có hai mẫu (hàng), hai đặc trưng (cột). BatchNorm theo từng cột; gamma=1,beta=0,epsilon=0; variance chia số phần tử n. Output là gì?",
+      "correct_answer": "a",
+      "explanation": "Mean hai cột=(3;5). Variance mỗi cột=((−2)²+2²)/2=4; sigma=2. Trừ mean rồi chia2 cho [[−1,−1],[1,1]]. Chuẩn hóa theo hàng là LayerNorm trong bài này, không phải BN.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 77,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 77",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "[[-1,-1],[1,1]]"
+        },
+        {
+          "id": "b",
+          "text": "[[-1,1],[-1,1]]"
+        },
+        {
+          "id": "c",
+          "text": "[[-2,-2],[2,2]]"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "normalization"
+      ],
+      "calculation": true
+    },
+    {
+      "id": "p2-t4-d01-priority-norm-ln-value",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "X=[[1,3],[5,7]] có hai mẫu. LayerNorm riêng từng hàng trên hai đặc trưng; gamma=1,beta=0,epsilon=0; variance chia n. Output là gì?",
+      "correct_answer": "a",
+      "explanation": "Mean mỗi hàng lần lượt2 và6. Sai lệch mỗi hàng=(−1;1); variance=1; sigma=1. Vì vậy cả hai hàng chuẩn hóa thành(−1;1). Dịch offset chung của hàng không làm đổi kết quả này.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 77,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 77",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "[[-1,1],[-1,1]]"
+        },
+        {
+          "id": "b",
+          "text": "[[-1,-1],[1,1]]"
+        },
+        {
+          "id": "c",
+          "text": "[[0,1],[0,1]]"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "normalization"
+      ],
+      "calculation": true
+    },
+    {
+      "id": "p2-t4-d01-priority-norm-affine",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một nhóm có x_hat=(−1;1), mean0 và variance1. Dùng gamma=2,beta=3 cho cả nhóm. Output và mean/variance sau affine là gì?",
+      "correct_answer": "a",
+      "explanation": "y=2×x_hat+3=(1;5). Mean=(1+5)/2=3; variance=((1−3)²+(5−3)²)/2=4. Affine cho phép thay mean/scale; beta không được bỏ qua.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 77,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 77",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "y=(1;5), mean=3, variance=4"
+        },
+        {
+          "id": "b",
+          "text": "y=(1;5), mean=0, variance=1"
+        },
+        {
+          "id": "c",
+          "text": "y=(−2;2), mean=0, variance=4"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "normalization"
+      ],
+      "calculation": true
+    },
+    {
+      "id": "p2-t4-d01-priority-norm-epsilon",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một nhóm chuẩn hóa có x=(2;2), gamma=1,beta=0,epsilon=0,01; variance chia n. Output là gì?",
+      "correct_answer": "a",
+      "explanation": "Mean=2,variance=0. x−mu=(0;0); mẫu sqrt(0+0,01)=0,1. Output=(0;0). Epsilon làm mẫu khác0; quên trừ mean mới tạo20.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 77,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 77",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "(0;0)"
+        },
+        {
+          "id": "b",
+          "text": "Không xác định vì variance=0 dù epsilon dương"
+        },
+        {
+          "id": "c",
+          "text": "(20;20)"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "normalization"
+      ],
+      "calculation": true
+    },
+    {
+      "id": "p2-t4-d02-priority-norm-inference",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d02",
+      "topic": "p2-t4-d02",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Cần kiểm tra điều gì đầu tiên khi đầu ra CNN dùng BatchNorm thay đổi theo các ảnh khác cùng batch lúc suy luận?",
+      "correct_answer": "a",
+      "explanation": "BatchNorm thông thường dùng running statistics khi inference, nên một ảnh không còn phụ thuộc batch hiện tại. Quên eval có thể khiến dùng batch statistics. Gamma=0 phá biểu diễn thay vì sửa chế độ.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d02",
+          "sha256": "58895651f776ef9fb62c9010d0c0c7b338849ea96e4a5dcbbe46b7afb77110b7",
+          "pdf_page": 17,
+          "title": "Kiến Trúc Mạng Cho Thị Giác Máy Tính",
+          "locator": "Physical PDF page 17",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Model đã chuyển sang eval và dùng running statistics hay chưa"
+        },
+        {
+          "id": "b",
+          "text": "Tăng temperature của softmax vì BatchNorm không dùng thống kê"
+        },
+        {
+          "id": "c",
+          "text": "Đổi mọi gamma thành0 để luôn nhận cùng đầu ra"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "normalization"
+      ],
+      "context": "Cùng một ảnh và weights, kết quả thay đổi khi bạn ghép ảnh đó với các ảnh khác trong batch; chưa bật dropout hay tăng cường dữ liệu."
+    }
+  ]
+}

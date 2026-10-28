@@ -1,0 +1,536 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.28-priority-pipelines",
+  "questions": [
+    {
+      "id": "p2-t4-d01-priority-training-pipeline",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "ordering",
+      "answer_format": "ordering",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một bước SGD cơ bản đã lấy batch và đã xóa gradient cũ. Sắp xếp các thao tác sau.",
+      "correct_answer": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "explanation": "Backward cần loss đã tính từ forward. Optimizer chỉ cập nhật sau khi gradient sẵn sàng; ở vòng tiếp theo cần quản lý/xóa gradient theo cấu hình, tránh cộng dồn ngoài ý muốn.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 5,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 5",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 80,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 80",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Forward: tính dự đoán từ batch và weights hiện tại"
+        },
+        {
+          "id": "b",
+          "text": "Tính loss từ dự đoán và nhãn"
+        },
+        {
+          "id": "c",
+          "text": "Backward: tính gradient của loss theo weights"
+        },
+        {
+          "id": "d",
+          "text": "Optimizer update: cập nhật weights bằng gradient"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d07-priority-rag-index",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d07",
+      "topic": "p1-d07",
+      "taxonomy_status": "verified",
+      "question_type": "ordering",
+      "answer_format": "ordering",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Trong pipeline dense RAG đơn giản đã chọn, sắp xếp quá trình tạo chỉ mục từ tài liệu chưa xử lý.",
+      "correct_answer": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "explanation": "Embedding được tính cho đơn vị chunk đã chọn; chỉ mục cần giữ liên kết vector với nội dung/nguồn. Đây là pipeline được mô tả, không áp cho mọi hệ thống tìm kiếm.",
+      "source_reference": [
+        {
+          "document_id": "p1-d07",
+          "sha256": "ad1669dd5385de460caa68a4b378120c8de3105b1e6c8c7bee296bd5398f7bc5",
+          "pdf_page": 43,
+          "title": "Data Foundations",
+          "locator": "Physical PDF page 43",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p1-d07",
+          "sha256": "ad1669dd5385de460caa68a4b378120c8de3105b1e6c8c7bee296bd5398f7bc5",
+          "pdf_page": 50,
+          "title": "Data Foundations",
+          "locator": "Physical PDF page 50",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Nạp và xử lý văn bản tài liệu"
+        },
+        {
+          "id": "b",
+          "text": "Chia văn bản thành chunks cùng metadata nguồn"
+        },
+        {
+          "id": "c",
+          "text": "Tính embedding cho từng chunk"
+        },
+        {
+          "id": "d",
+          "text": "Lưu embeddings, chunks và metadata vào chỉ mục"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p1-d08-priority-rag-answer",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d08",
+      "topic": "p1-d08",
+      "taxonomy_status": "verified",
+      "question_type": "ordering",
+      "answer_format": "ordering",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Hệ thống RAG này có reranker. Sắp xếp đường trả lời từ lúc nhận câu hỏi.",
+      "correct_answer": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "explanation": "Reranker cần tập ứng viên trước; generation cần context đã đóng gói. Rerank được nêu là thành phần của hệ thống này, không phải bước bắt buộc trong mọi RAG.",
+      "source_reference": [
+        {
+          "document_id": "p1-d08",
+          "sha256": "dad417681be6c8505f3029334b74c364c1c5345fef9a106cbdbf9ac95daba665",
+          "pdf_page": 7,
+          "title": "RAG Pipeline",
+          "locator": "Physical PDF page 7",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p1-d08",
+          "sha256": "dad417681be6c8505f3029334b74c364c1c5345fef9a106cbdbf9ac95daba665",
+          "pdf_page": 12,
+          "title": "RAG Pipeline",
+          "locator": "Physical PDF page 12",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p1-d08",
+          "sha256": "dad417681be6c8505f3029334b74c364c1c5345fef9a106cbdbf9ac95daba665",
+          "pdf_page": 30,
+          "title": "RAG Pipeline",
+          "locator": "Physical PDF page 30",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p1-d08",
+          "sha256": "dad417681be6c8505f3029334b74c364c1c5345fef9a106cbdbf9ac95daba665",
+          "pdf_page": 33,
+          "title": "RAG Pipeline",
+          "locator": "Physical PDF page 33",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Nhận và chuẩn bị query"
+        },
+        {
+          "id": "b",
+          "text": "Retrieval lấy các ứng viên phù hợp từ chỉ mục"
+        },
+        {
+          "id": "c",
+          "text": "Rerank các ứng viên đã truy xuất"
+        },
+        {
+          "id": "d",
+          "text": "Ghép context được chọn vào prompt cùng câu hỏi"
+        },
+        {
+          "id": "e",
+          "text": "Generation tạo câu trả lời từ context"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d03-priority-nms-pipeline",
+      "revision": 2,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d03",
+      "topic": "p2-t4-d03",
+      "taxonomy_status": "verified",
+      "question_type": "ordering",
+      "answer_format": "ordering",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Sắp xếp greedy NMS cho các box cùng lớp. Giữ các box có confidence đạt ngưỡng; suppress khi IoU lớn hơn ngưỡng đã chọn.",
+      "correct_answer": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "explanation": "NMS dùng box được giữ ở mỗi vòng để suppress các ứng viên còn lại. Confidence filtering xảy ra trước vòng; IoU đúng bằng ngưỡng không bị loại trong quy ước đề này. Có thể lọc confidence rồi sắp điểm, hoặc sắp điểm rồi lọc; cả hai giữ cùng thứ tự tương đối của các box còn lại và đều được chấp nhận.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d03",
+          "sha256": "bbc8de22523a77f295328ce15328e0d811a078152b75e9d6cedd159dc45e739e",
+          "pdf_page": 28,
+          "title": "2D Perception: Detection · Segmentation · Keypoints",
+          "locator": "Physical PDF page 28",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Lọc box theo confidence"
+        },
+        {
+          "id": "b",
+          "text": "Sắp box còn lại theo confidence giảm dần"
+        },
+        {
+          "id": "c",
+          "text": "Giữ box có confidence lớn nhất còn lại"
+        },
+        {
+          "id": "d",
+          "text": "Loại các box còn lại có IoU với box vừa giữ lớn hơn ngưỡng"
+        },
+        {
+          "id": "e",
+          "text": "Lặp chọn–loại đến khi không còn ứng viên"
+        }
+      ],
+      "shuffle_options": true,
+      "accepted_orders": [
+        [
+          "b",
+          "a",
+          "c",
+          "d",
+          "e"
+        ]
+      ]
+    },
+    {
+      "id": "p2-t4-d07-priority-tracking-pipeline",
+      "revision": 2,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d07",
+      "topic": "p2-t4-d07",
+      "taxonomy_status": "verified",
+      "question_type": "ordering",
+      "answer_format": "ordering",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Trong tracking-by-detection, detection và predict track cũ có thể chạy độc lập. Sắp xếp các nhóm thao tác; update và quản lý vòng đời cùng thuộc bước cuối.",
+      "correct_answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": "Association cần detections và track dự đoán. Sau association, cập nhật track có match và xử lý track không match/detection thừa theo policy. Các thao tác độc lập trong cùng nhóm không bị ép thứ tự.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d07",
+          "sha256": "e664d320f682ce0aacfe2649cb5dd07e6d85563dadaef5cf92039bc43b07ee26",
+          "pdf_page": 10,
+          "title": "Tracking",
+          "locator": "Physical PDF page 10",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d07",
+          "sha256": "e664d320f682ce0aacfe2649cb5dd07e6d85563dadaef5cf92039bc43b07ee26",
+          "pdf_page": 11,
+          "title": "Tracking",
+          "locator": "Physical PDF page 11",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d07",
+          "sha256": "e664d320f682ce0aacfe2649cb5dd07e6d85563dadaef5cf92039bc43b07ee26",
+          "pdf_page": 14,
+          "title": "Tracking",
+          "locator": "Physical PDF page 14",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d07",
+          "sha256": "e664d320f682ce0aacfe2649cb5dd07e6d85563dadaef5cf92039bc43b07ee26",
+          "pdf_page": 12,
+          "title": "Tracking",
+          "locator": "Physical PDF page 12",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tạo detections của frame mới và predict các track cũ"
+        },
+        {
+          "id": "b",
+          "text": "Tính cost/gating rồi association giữa track và detection"
+        },
+        {
+          "id": "c",
+          "text": "Update track ghép được và quản lý vòng đời: tạo, giữ hoặc xóa track theo policy"
+        }
+      ],
+      "shuffle_options": true
+    },
+    {
+      "id": "p2-t4-d01-priority-activation-heads",
+      "revision": 2,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "matching",
+      "answer_format": "matching",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Ghép một-một bài toán với dạng đầu ra/loss điển hình.",
+      "correct_answer": {
+        "l1": "a",
+        "l2": "b",
+        "l3": "c"
+      },
+      "explanation": "Cần khớp giả định nhãn với head/loss. Một ảnh có cả chó và xe không phải bài toán chỉ được chọn một lớp nếu cả hai nhãn đều cần dự đoán.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 50,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 50",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 52,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 52",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 55,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 55",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 57,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 57",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Một sigmoid với binary cross-entropy"
+        },
+        {
+          "id": "b",
+          "text": "Sigmoid độc lập mỗi nhãn với tổng hoặc trung bình BCE theo nhãn"
+        },
+        {
+          "id": "c",
+          "text": "Softmax trên C logits với cross-entropy một nhãn"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "activations"
+      ],
+      "matching_items": [
+        {
+          "id": "l1",
+          "text": "Một nhãn nhị phân",
+          "explanation": "Sigmoid biểu diễn xác suất nhãn1, BCE xét nhãn0/1."
+        },
+        {
+          "id": "l2",
+          "text": "Nhiều nhãn có thể đồng thời đúng",
+          "explanation": "Không buộc xác suất các nhãn cộng thành1."
+        },
+        {
+          "id": "l3",
+          "text": "Một lớp đúng trong C lớp loại trừ nhau",
+          "explanation": "Chuẩn hóa tổng1 phù hợp giả định chọn một lớp."
+        }
+      ],
+      "matching_reuse": false,
+      "supplemental_sources": [
+        {
+          "title": "PyTorch BCEWithLogitsLoss",
+          "url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.BCEWithLogitsLoss.html",
+          "accessed_at": "2026-10-28",
+          "note": "Bổ sung ngoài slide: sigmoid riêng từng nhãn và binary cross-entropy cho multi-label; không buộc tổng xác suất các nhãn bằng 1."
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d01-priority-activation-tanh-gradient",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một neuron có a=tanh(x)=0,6 và upstream dL/da=3. Dùng da/dx=1−a². Gradient dL/dx bằng bao nhiêu?",
+      "correct_answer": "a",
+      "explanation": "Từ công thức tanh, đạo hàm là1−tanh²(x). Thay a=0,6:1−0,36=0,64. Chain rule nhân upstream3 cho1,92. Dùng a(1−a) là đạo hàm sigmoid, cho sai0,72.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 15,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 15",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 16,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 16",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 26,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 26",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "1,92"
+        },
+        {
+          "id": "b",
+          "text": "0,72"
+        },
+        {
+          "id": "c",
+          "text": "0,64"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "activations"
+      ],
+      "calculation": true,
+      "formula_reference": {
+        "title": "Đạo hàm tanh và chain rule",
+        "formula": "a=tanh(x); da/dx=1−a²; dL/dx=(dL/da)×(1−a²)",
+        "symbols": "a: đầu ra tanh; dL/da: gradient truyền từ lớp sau.",
+        "conditions": "Đạo hàm được suy ra từ công thức tanh bằng quy tắc đạo hàm thương; không dùng đạo hàm sigmoid thay thế.",
+        "example": "a=0,6,upstream=3 →3×(1−0,36)=1,92.",
+        "common_mistakes": "Nhầm với a(1−a); bỏ gradient từ lớp sau."
+      }
+    }
+  ]
+}

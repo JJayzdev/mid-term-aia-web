@@ -1,8 +1,8 @@
 import { DomainError } from './errors';
 import { decimalProductIsInteger, decimalSumEquals } from './rational';
-import type { AttemptQuestion, BucketNeed, Catalog, ExamWeights, Question, StudyMode } from './types';
+import type { AttemptQuestion, BucketNeed, Catalog, ExamWeights, FocusTopic, PracticeKind, Question, StudyMode } from './types';
 
-export type QuizFilter = { phase?: 1 | 2; track?: 1 | 2 | 3 | 4; tracks?: (1 | 2 | 3 | 4)[]; day?: string; topic?: string; difficulty?: Question['difficulty']; calculationOnly?: boolean; count?: number; seed?: string };
+export type QuizFilter = { phase?: 1 | 2; track?: 1 | 2 | 3 | 4; tracks?: (1 | 2 | 3 | 4)[]; day?: string; topic?: string; difficulty?: Question['difficulty']; calculationOnly?: boolean; practiceKind?: PracticeKind; focusTopic?: FocusTopic; focusOnly?: boolean; count?: number; seed?: string };
 export type CandidateResult = { items: AttemptQuestion[]; seed: string; label: string };
 
 function hashSeed(seed: string): number {
@@ -25,13 +25,23 @@ function approved(questions: Question[]): Question[] {
 const formatClass = (q: Question) => q.answer_format === 'rubric' ? 'rubric' : 'objective';
 function makeItem(question: Question, points: number, random: () => number): AttemptQuestion {
   const ids = question.options?.map(o => o.id) ?? [];
-  return { question, points, optionOrder: question.shuffle_options ? shuffled(ids, random) : ids };
+  return { question, points, optionOrder: question.shuffle_options ? shuffled(ids, random) : ids,
+    ...(question.answer_format === 'matching' ? { matchingOrder: shuffled(question.matching_items?.map(o => o.id) ?? [], random) } : {}) };
 }
 export function stableSeed(parts: (string | number)[]): string { return parts.join('|'); }
+
+export function practiceKind(question: Question): PracticeKind {
+  if (question.answer_format === 'matching' || question.answer_format === 'ordering') return question.answer_format;
+  if (question.calculation) return 'calculation';
+  return question.question_type === 'scenario' ? 'scenario' : 'concept';
+}
 
 export function practicePool(questions: Question[], mode: Exclude<StudyMode, 'exam'>, filter: QuizFilter, reviewIds: string[] = [], today = new Date().toISOString().slice(0, 10)): Question[] {
   let pool = approved(questions);
   if (filter.calculationOnly) pool = pool.filter(q => q.calculation === true);
+  if (filter.practiceKind) pool = pool.filter(q => practiceKind(q) === filter.practiceKind);
+  if (mode === 'focus' || filter.focusOnly) pool = pool.filter(q => Boolean(q.focus_topics?.length));
+  if (filter.focusTopic) pool = pool.filter(q => q.focus_topics?.includes(filter.focusTopic!));
   if (mode === 'track') pool = pool.filter(q => q.phase === 2 && q.track === filter.track);
   if (mode === 'phase') pool = pool.filter(q => q.phase === filter.phase);
   if (filter.phase) pool = pool.filter(q => q.phase === filter.phase);
@@ -60,14 +70,37 @@ export function selectPractice(questions: Question[], mode: Exclude<StudyMode, '
   const pool = practicePool(questions, mode, filter, reviewIds, today);
   const count = Math.max(1, filter.count ?? (mode === 'wrong' || mode === 'bookmarked' ? pool.length : 10));
   if (pool.length < count) throw new DomainError(`Không đủ câu đã duyệt cho phiên này: cần ${count}, hiện có ${pool.length}. Không lặp câu hoặc chuyển sang nhóm khác.`, 'insufficient_practice', { required: count, available: pool.length, missing: count - pool.length, mode });
-  const picked = shuffled(pool, random).slice(0, count);
+  const picked = mode === 'focus' ? balancedFocus(pool, count, random) : shuffled(pool, random).slice(0, count);
   if (!picked.length) throw new DomainError('Chưa có câu hỏi đã duyệt phù hợp với lựa chọn này.', 'empty_pool', { mode, filter });
   return { seed, label: modeLabel(mode, filter), items: picked.map(q => makeItem(q, 100, random)) };
 }
 
 function modeLabel(mode: StudyMode, filter: QuizFilter): string {
-  const names: Record<StudyMode, string> = { daily: 'Ôn tập hôm nay', track: `Track ${filter.track ?? '—'}`, phase: `Phase ${filter.phase ?? '—'}`, mixed: 'Luyện tập tổng hợp', wrong: 'Ôn câu cần xem lại', bookmarked: 'Câu đã lưu', exam: 'Thi thử 90 phút' };
+  const names: Record<StudyMode, string> = { daily: 'Ôn tập hôm nay', track: `Track ${filter.track ?? '—'}`, phase: `Phase ${filter.phase ?? '—'}`, mixed: 'Luyện tập tổng hợp', wrong: 'Ôn câu cần xem lại', bookmarked: 'Câu đã lưu', focus: 'Ôn trọng tâm', exam: 'Thi thử 90 phút' };
   return names[mode];
+}
+
+/** Round-robin topic coverage, then the least-used available kind within that topic. */
+function balancedFocus(pool: Question[], count: number, random: () => number): Question[] {
+  const remaining = shuffled(pool, random);
+  const picked: Question[] = [];
+  const topicCounts = new Map<string, number>();
+  const kindCounts = new Map<PracticeKind, number>();
+  const topicOrder = shuffled([...new Set(pool.flatMap(q => q.focus_topics ?? []))], random);
+  while (picked.length < count && remaining.length) {
+    const available = topicOrder.filter(topic => remaining.some(q => q.focus_topics?.includes(topic)));
+    const topic = available.sort((a, b) => (topicCounts.get(a) ?? 0) - (topicCounts.get(b) ?? 0))[0];
+    const candidates = remaining.filter(q => q.focus_topics?.includes(topic));
+    candidates.sort((a, b) => (kindCounts.get(practiceKind(a)) ?? 0) - (kindCounts.get(practiceKind(b)) ?? 0));
+    const question = candidates[0];
+    if (!question) break;
+    remaining.splice(remaining.indexOf(question), 1);
+    picked.push(question);
+    topicCounts.set(topic, (topicCounts.get(topic) ?? 0) + 1);
+    const kind = practiceKind(question);
+    kindCounts.set(kind, (kindCounts.get(kind) ?? 0) + 1);
+  }
+  return shuffled(picked, random);
 }
 
 export function validateTrackWeights(weights: ExamWeights): void {
@@ -102,9 +135,17 @@ export function examNeeds(weights: ExamWeights = [25, 25, 25, 25]): BucketNeed[]
 export function selectExam(questions: Question[], catalog: Catalog, weights: ExamWeights = [25, 25, 25, 25], seed = 'aia-exam-v1'): CandidateResult {
   const needs = examNeeds(weights);
   const validTopics = new Map(catalog.topics.map(topic => [topic.id, topic]));
+  const documents = new Map(catalog.documents.map(document => [document.document_id, document]));
   const pool = approved(questions).filter(q => {
+    if (q.answer_format === 'matching' || q.answer_format === 'ordering') return false;
     const t = validTopics.get(q.topic);
-    return t && t.phase === q.phase && t.track === q.track && t.day === q.day && t.document_ids.length > 0 && q.source_reference.every(s => t.document_ids.includes(s.document_id));
+    return t && t.phase === q.phase && t.track === q.track && t.day === q.day && t.document_ids.length > 0
+      && q.source_reference.some(s => t.document_ids.includes(s.document_id))
+      && q.source_reference.every(source => {
+        const document = documents.get(source.document_id);
+        return document && source.sha256 === document.sha256 && Number.isInteger(source.pdf_page)
+          && source.pdf_page >= 1 && source.pdf_page <= document.page_count;
+      });
   });
   for (const need of needs) {
     const available = pool.filter(q => q.phase === need.phase && q.track === need.track && formatClass(q) === need.format).length;

@@ -1,12 +1,20 @@
-export type AnswerFormat = 'single_choice' | 'multiple_choice' | 'boolean' | 'rubric';
+export type AnswerFormat = 'single_choice' | 'multiple_choice' | 'boolean' | 'rubric' | 'matching' | 'ordering';
+export const focusTopics = ['react', 'generation', 'kalman', 'sensors', 'closed-loop', 'activations', 'normalization'] as const;
+export type FocusTopic = typeof focusTopics[number];
+export type PracticeKind = 'matching' | 'ordering' | 'calculation' | 'concept' | 'scenario';
+export type AnswerValue = string | string[] | boolean | Record<string, string>;
+export type SupplementalSource = { title: string; url: string; accessed_at: string; note: string };
+export type FormulaReference = { title: string; formula: string; symbols: string; conditions: string; example: string; common_mistakes: string };
 export type Phase = 1 | 2;
 export type Question = {
   id: string; revision: number; author_id: string; phase: Phase | null; track: 1 | 2 | 3 | 4 | null;
   day: string | null; topic: string; taxonomy_status: 'unresolved' | 'inferred' | 'verified';
-  question_type: 'single_choice' | 'multiple_choice' | 'true_false' | 'short_answer' | 'scenario';
+  question_type: 'single_choice' | 'multiple_choice' | 'true_false' | 'short_answer' | 'scenario' | 'matching' | 'ordering';
   answer_format: AnswerFormat; difficulty: 'easy' | 'medium' | 'hard'; cognitive_level: 'remember' | 'understand' | 'apply' | 'analyze';
   question: string; calculation?: boolean; context?: string; options?: { id: string; text: string }[]; shuffle_options?: boolean;
-  correct_answer: string | string[] | boolean; rubric?: Criterion[]; explanation: string;
+  matching_items?: { id: string; text: string; explanation?: string; graph?: 'sigmoid' | 'tanh' | 'relu' }[]; matching_reuse?: boolean; accepted_orders?: string[][];
+  focus_topics?: FocusTopic[]; formula_reference?: FormulaReference; supplemental_sources?: SupplementalSource[];
+  correct_answer: AnswerValue; rubric?: Criterion[]; explanation: string;
   source_reference: SourceReference[]; status: 'draft' | 'pending_review' | 'approved' | 'rejected';
   review?: { reviewer_id: string; reviewed_at: string; reviewed_revision: number; report_id: string };
   review_notes?: string[];
@@ -19,15 +27,15 @@ export type Catalog = {
   documents: { document_id: string; title: string; relative_path: string; page_count: number; sha256: string }[];
   topics: { id: string; label: string; phase: Phase; track: 1 | 2 | 3 | 4 | null; day: string | null; document_ids: string[]; question_count: number }[];
 };
-export type StudyMode = 'daily' | 'track' | 'phase' | 'mixed' | 'wrong' | 'bookmarked' | 'exam';
+export type StudyMode = 'daily' | 'track' | 'phase' | 'mixed' | 'wrong' | 'bookmarked' | 'focus' | 'exam';
 export type AttemptStatus = 'in_progress' | 'submitted_pending_grading' | 'graded';
 export type RubricMarks = Record<string, 0 | 0.5 | 1>;
-export type AttemptQuestion = { question: Question; points: number; optionOrder: string[] };
+export type AttemptQuestion = { question: Question; points: number; optionOrder: string[]; matchingOrder?: string[] };
 export type Attempt = {
   id: string; mode: StudyMode; status: AttemptStatus; label: string;
   startedAt: number; deadlineAt: number | null; submittedAt: number | null; finalizedAt: number | null;
   revision: number; writerToken: string; bankVersion: string; seed: string; questions: AttemptQuestion[];
-  answers: Record<string, string | string[] | boolean>; rubricMarks: Record<string, RubricMarks>;
+  answers: Record<string, AnswerValue>; rubricMarks: Record<string, RubricMarks>;
   flags: string[]; score: GradeSummary | null;
 };
 export type GradeSummary = {

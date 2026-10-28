@@ -1,0 +1,171 @@
+{
+  "batch_file": "data/questions/drafts/priority-d-neural.json",
+  "reviewer_id": "priority-independent-review",
+  "reviewed_at": "2026-10-28T14:03:51.173752+00:00",
+  "results": [
+    {
+      "id": "p2-t4-d01-priority-d-forward-gradient",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 12
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 35
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 40
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 51
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 52
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 55
+        }
+      ],
+      "notes": [
+        "Simultaneous SGD application distinct from existing forward/MSE exercises; recomputed gradients2,1 and update.8,−.1. Dense parameter/MSE/BCE/CE/gradient card checked against original p12/35/40/51/52/55 including half-loss convention and natural log.",
+        "All23unique cited pages visually checked; source hashes previously verified. Checked full formula_reference including conditions/examples, units, distractors and existing-bank objectives. Independent calculations:tmp/priority-review/d-neural-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d01-priority-d-robust-loss",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 58
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 60
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 63
+        }
+      ],
+      "notes": [
+        "Smooth-L1 total increases1 when large residual2→3, initial1.625 final2.625. Formula card focal=.001053605 and L2penalty2.5 independently recomputed. Original piecewise threshold, focal p_true/no alpha, L2lambda/2 and gradient verified.",
+        "All23unique cited pages visually checked; source hashes previously verified. Checked full formula_reference including conditions/examples, units, distractors and existing-bank objectives. Independent calculations:tmp/priority-review/d-neural-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d01-priority-d-clipped-momentum",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 71
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 73
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 74
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 79
+        }
+      ],
+      "notes": [
+        "Norm10, clipfactor.5, clipped(3,4), newbuffer(3.9,3.1). Original p71/73/74/79 checked for momentum convention, Adam per-element moments/epsilon, decoupled AdamW and norm clipping. Bias-corrected moments named, not raw moments; zero-gradient convention explicit.",
+        "All23unique cited pages visually checked; source hashes previously verified. Checked full formula_reference including conditions/examples, units, distractors and existing-bank objectives. Independent calculations:tmp/priority-review/d-neural-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d02-priority-d-cnn-receptive",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 7
+        },
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 9
+        },
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 13
+        }
+      ],
+      "notes": [
+        "r1=3,j1=2,r2=7,j2=2. Original p7/9/13 checked for floor output/dilation, groups1 bias parameter count and MAC bias exclusion. Receptive formula explicitly d1; examples correct.",
+        "All23unique cited pages visually checked; source hashes previously verified. Checked full formula_reference including conditions/examples, units, distractors and existing-bank objectives. Independent calculations:tmp/priority-review/d-neural-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d02-priority-d-rnn-shared",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 15
+        },
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 21
+        },
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 25
+        }
+      ],
+      "notes": [
+        "4*(4+3)+4=32 independent of sequence length. Original p15residual,p21tiedweights/onebias,p25LSTM gates visually checked. LSTMexample .5*2+0=1; residual dimension compatibility stated; distinct shared-parameter numerical inference.",
+        "All23unique cited pages visually checked; source hashes previously verified. Checked full formula_reference including conditions/examples, units, distractors and existing-bank objectives. Independent calculations:tmp/priority-review/d-neural-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d02-priority-d-attention-memory",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 31
+        },
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 32
+        },
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 36
+        },
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 37
+        }
+      ],
+      "notes": [
+        "Npatch256,N257 includingCLS, elements66049, bytes264196. Card scaled dot product, heads, token extras and quadratic matrix storage verified in original p31/32/36/37. Explicit materialization restriction avoids claiming totalmodel or FlashAttention memory.",
+        "All23unique cited pages visually checked; source hashes previously verified. Checked full formula_reference including conditions/examples, units, distractors and existing-bank objectives. Independent calculations:tmp/priority-review/d-neural-arithmetic.json."
+      ],
+      "findings": []
+    }
+  ]
+}

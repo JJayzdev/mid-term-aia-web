@@ -1,0 +1,487 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.28-priority-d-dynamics",
+  "questions": [
+    {
+      "id": "p2-t4-d11-priority-dynamics-offset",
+      "revision": 1,
+      "author_id": "priority-dynamics-author",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d11",
+      "topic": "p2-t4-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Ba vị trí một chiều đo cách đều 0,1 s là 0 m; 1,01 m; 2,04 m. Dùng a=(x_next−2x_now+x_prev)/(Δt)². Gia tốc tại mẫu giữa bằng bao nhiêu, và có đổi nếu cộng cùng sai lệch hiệu chuẩn +0,5 m vào cả ba vị trí không?",
+      "correct_answer": "a",
+      "explanation": "Tử số 2,04−2×1,01+0=0,02 m; chia 0,01 s² được 2 m/s². Offset chung triệt tiêu vì 1−2+1=0. Điều này khác nhiễu độc lập từng mẫu: phương sai của tổ hợp là (1²+2²+1²)×sigma_x².",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d11",
+          "sha256": "9f2b8b0d84e67d71598eaa2f2a7d0d186567c3ee10171dcf5213e4d62a492b46",
+          "pdf_page": 46,
+          "title": "Synthetic, Simulated & Trajectory Data",
+          "locator": "Physical PDF page 46",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release.",
+        "Gap objective beyond existing T4 calculation items; source formulas visually checked where cited. Supplemental definitions explicitly labeled."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "2 m/s²; không đổi"
+        },
+        {
+          "id": "b",
+          "text": "2 m/s²; tăng thêm 50 m/s²"
+        },
+        {
+          "id": "c",
+          "text": "0,2 m/s²; không đổi"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true,
+      "formula_reference": {
+        "title": "Sai phân gia tốc và khuếch đại nhiễu",
+        "formula": "a=(x_next−2x_now+x_prev)/(Δt)²; Var(a_noise)=6×sigma_x²/(Δt)^4; sigma_a=sqrt(6)×sigma_x/(Δt)²",
+        "symbols": "x: vị trí (m); Δt: bước thời gian (s); sigma_x: độ lệch chuẩn nhiễu vị trí; sigma_a: độ lệch chuẩn nhiễu gia tốc (m/s²).",
+        "conditions": "Các mẫu cách đều. Công thức phương sai cần nhiễu độc lập, cùng phương sai; không áp trực tiếp cho nhiễu tương quan. Làm mượt phải cân nhắc độ trễ và sai lệch.",
+        "example": "x=(0;1,01;2,04) m, Δt=0,1 s → a=2 m/s². Nếu sigma_x=0,01 m và nhiễu độc lập thì sigma_a≈2,449 m/s².",
+        "common_mistakes": "Chia Δt thay vì (Δt)²; nhầm phương sai với độ lệch chuẩn; coi offset chung là nhiễu độc lập."
+      }
+    },
+    {
+      "id": "p2-t4-d11-priority-dynamics-gates",
+      "revision": 1,
+      "author_id": "priority-dynamics-author",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d11",
+      "topic": "p2-t4-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Sau làm mượt, gia tốc tăng từ 1,0 lên 2,2 m/s² trong 0,2 s. Một đoạn cua có v=10 m/s và độ cong κ=0,03 m⁻¹. Cổng chấp nhận |j|≤5 m/s³, κ≤0,04 m⁻¹, |a_lat|≤2,5 m/s², với j≈Δa/Δt và a_lat=v²κ. Những cổng nào bị vi phạm?",
+      "correct_answer": "a",
+      "explanation": "j=(2,2−1,0)/0,2=6 m/s³ >5. Độ cong 0,03≤0,04 nên đạt riêng cổng độ cong, nhưng a_lat=10²×0,03=3 m/s² >2,5. Đạt giới hạn hình học không đồng nghĩa đi qua cua được ở mọi tốc độ.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d11",
+          "sha256": "9f2b8b0d84e67d71598eaa2f2a7d0d186567c3ee10171dcf5213e4d62a492b46",
+          "pdf_page": 49,
+          "title": "Synthetic, Simulated & Trajectory Data",
+          "locator": "Physical PDF page 49",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release.",
+        "Gap objective beyond existing T4 calculation items; source formulas visually checked where cited. Supplemental definitions explicitly labeled."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Jerk và gia tốc ngang; độ cong đạt"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ độ cong; hai cổng còn lại đạt"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ jerk; độ cong và gia tốc ngang đạt"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true,
+      "formula_reference": {
+        "title": "Jerk, độ cong và gia tốc ngang",
+        "formula": "j=da/dt≈Δa/Δt; |κ|≤κ_max; |a_lat|=v²|κ|; v_max=sqrt(a_limit/|κ|)",
+        "symbols": "j: jerk (m/s³); κ: độ cong (m⁻¹); v: tốc độ (m/s); a_limit: giới hạn gia tốc ngang dương (m/s²).",
+        "conditions": "Quỹ đạo phẳng trơn, κ≠0 khi tính v_max; dùng độ lớn cho cổng hai chiều. Ngưỡng là giả định của bài, không thay cho mô hình đầy đủ của xe.",
+        "example": "v=10 m/s, κ=0,03 m⁻¹ → a_lat=3 m/s². Với a_limit=2,5 m/s², v_max≈9,129 m/s; j=1,2/0,2=6 m/s³.",
+        "common_mistakes": "Nhầm jerk với gia tốc; bỏ bình phương tốc độ; coi cổng độ cong đạt là mọi cổng động học đều đạt."
+      }
+    },
+    {
+      "id": "p2-t4-d11-priority-scaling-floor",
+      "revision": 1,
+      "author_id": "priority-dynamics-author",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d11",
+      "topic": "p2-t4-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Mô hình pilot giả định err(D)=4D^(−0,5)+0,10 với D là số giờ dữ liệu dương. Cần bao nhiêu giờ để err≤0,30? Có D hữu hạn nào đạt err≤0,10 theo chính mô hình này không?",
+      "correct_answer": "a",
+      "explanation": "4/sqrt(D)≤0,20 nên sqrt(D)≥20 và D≥400. Với mọi D hữu hạn dương, 4/sqrt(D)>0 nên err>0,10. Sàn 0,10 là giới hạn của mô hình giả định, không phải một mục tiêu đạt bằng cách thêm hữu hạn dữ liệu.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d11",
+          "sha256": "9f2b8b0d84e67d71598eaa2f2a7d0d186567c3ee10171dcf5213e4d62a492b46",
+          "pdf_page": 71,
+          "title": "Synthetic, Simulated & Trajectory Data",
+          "locator": "Physical PDF page 71",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release.",
+        "Gap objective beyond existing T4 calculation items; source formulas visually checked where cited. Supplemental definitions explicitly labeled."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Ít nhất 400 giờ; không có D hữu hạn"
+        },
+        {
+          "id": "b",
+          "text": "Ít nhất 400 giờ; 1.600 giờ đạt err≤0,10"
+        },
+        {
+          "id": "c",
+          "text": "Ít nhất 200 giờ; không có D hữu hạn"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true,
+      "formula_reference": {
+        "title": "Scaling dữ liệu có sàn lỗi",
+        "formula": "err(D)=a×D^(−alpha)+c; D_target=(a/(epsilon−c))^(1/alpha); (err(2D)−c)/(err(D)−c)=2^(−alpha)",
+        "symbols": "D: lượng dữ liệu; a>0: hệ số; alpha>0: số mũ; c: sàn lỗi; epsilon: lỗi mục tiêu.",
+        "conditions": "Cần epsilon>c để tính lượng dữ liệu hữu hạn. Tham số phải được ước lượng từ pilot phù hợp; không tự ngoại suy qua thay đổi phân phối.",
+        "example": "a=4, alpha=0,5, c=0,10, epsilon=0,30 → D_target=(4/0,20)²=400 giờ. Nhân đôi D chỉ nhân phần lỗi trên sàn với 1/sqrt(2)≈0,7071.",
+        "common_mistakes": "Bỏ sàn c; nghĩ nhân đôi dữ liệu chia đôi toàn bộ lỗi; thay epsilon≤c vào công thức như một nghiệm hữu hạn."
+      }
+    },
+    {
+      "id": "p2-t4-d11-priority-importance-weight",
+      "revision": 1,
+      "author_id": "priority-dynamics-author",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d11",
+      "topic": "p2-t4-d11",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Lấy 4 kịch bản độc lập từ phân phối đề xuất q. Chỉ báo lỗi là (1;0;1;0), trọng số p(x)/q(x) tương ứng (0,1;1,9;0,1;1,9). Dùng ước lượng IS thường r_hat=(1/n)Σ w_i I_i. Ước lượng tỷ lệ lỗi của phân phối mục tiêu p là bao nhiêu?",
+      "correct_answer": "a",
+      "explanation": "Tổng đóng góp có trọng số là 0,1+0+0,1+0=0,2; chia cho n=4 được 0,05. Đếm 2/4 chỉ mô tả mẫu đã được làm giàu theo q.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d11",
+          "sha256": "9f2b8b0d84e67d71598eaa2f2a7d0d186567c3ee10171dcf5213e4d62a492b46",
+          "pdf_page": 89,
+          "title": "Synthetic, Simulated & Trajectory Data",
+          "locator": "Physical PDF page 89",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release.",
+        "Gap objective beyond existing T4 calculation items; source formulas visually checked where cited. Supplemental definitions explicitly labeled."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "0,05 (5%)"
+        },
+        {
+          "id": "b",
+          "text": "0,50 (50%)"
+        },
+        {
+          "id": "c",
+          "text": "0,10 (10%)"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true,
+      "formula_reference": {
+        "title": "Importance sampling: hiệu chỉnh phân phối lấy mẫu",
+        "formula": "w_i=p(x_i)/q(x_i); r_hat=(1/n)×Σ_i(w_i×I_i)",
+        "symbols": "p: phân phối mục tiêu; q: phân phối lấy mẫu; I_i: chỉ báo lỗi 0/1; n: số mẫu.",
+        "conditions": "Mẫu độc lập từ q; biết tỷ số p/q; q dương trên vùng lỗi có xác suất dưới p. Đây là IS thường với mật độ chuẩn hóa.",
+        "example": "I=(1;0;1;0), w=(0,1;1,9;0,1;1,9) → r_hat=0,2/4=0,05.",
+        "common_mistakes": "Dùng tỷ lệ lỗi thô dưới q; đảo p/q; bỏ vùng lỗi khỏi support của q."
+      },
+      "supplemental_sources": [
+        {
+          "title": "Owen, Maximov & Chertkov — Importance sampling, Eq. (4)",
+          "url": "https://arxiv.org/html/1710.06965",
+          "accessed_at": "2026-10-28",
+          "note": "Bổ sung ngoài slide: estimator dùng tỷ số mật độ và chỉ báo sự kiện; D11 chỉ nêu IS trong mục tiêu lab. Bài tập dùng dạng IS thường."
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d12-priority-zero-events-bound",
+      "revision": 1,
+      "author_id": "priority-dynamics-author",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d12",
+      "topic": "p2-t4-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Không có lỗi trong 3.000 lượt thử Bernoulli độc lập, cùng xác suất lỗi của phân phối mục tiêu đã xác định. Theo quy tắc 3/n, cận trên một phía xấp xỉ 95% là bao nhiêu, và có thể thay n bằng 3.000 frame tương quan của một lượt chạy không?",
+      "correct_answer": "a",
+      "explanation": "3/3000=0,001=0,1%. Đây là cận trên xấp xỉ, không phải xác suất lỗi bằng 0. Frame tương quan không phải 3.000 phép thử độc lập.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 38,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 38",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release.",
+        "Gap objective beyond existing T4 calculation items; source formulas visually checked where cited. Supplemental definitions explicitly labeled."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Khoảng 0,1%; không thể thay như vậy"
+        },
+        {
+          "id": "b",
+          "text": "Bằng 0%; có thể thay vì mọi frame đều không lỗi"
+        },
+        {
+          "id": "c",
+          "text": "Khoảng 1%; không thể thay như vậy"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true,
+      "formula_reference": {
+        "title": "Không quan sát lỗi: điều kiện của quy tắc 3/n",
+        "formula": "(1−p_upper)^n=0,05; p_upper=1−0,05^(1/n)≈3/n",
+        "symbols": "n: số phép thử; p_upper: cận trên một phía 95% của xác suất lỗi.",
+        "conditions": "Không quan sát lỗi; phép thử Bernoulli độc lập, cùng xác suất, đại diện đúng phân phối cần suy luận. 3/n là xấp xỉ cho n đủ lớn; không dùng n frame tương quan hoặc mẫu IS như n phép thử này.",
+        "example": "n=3000 → 3/n=0,001=0,1%; nghiệm chính xác≈0,0009981.",
+        "common_mistakes": "Kết luận rủi ro bằng 0; nhầm 0,001 với 1%; mở rộng kết luận sang phân phối khác."
+      },
+      "supplemental_sources": [
+        {
+          "title": "Hanley & Lippman-Hand (1983) — Interpreting Zero Numerators",
+          "url": "https://jhanley.biostat.mcgill.ca/c607/ch08/zero_numerator.pdf",
+          "accessed_at": "2026-10-28",
+          "note": "Bổ sung ngoài slide: PDF trang 2 dẫn xuất cận 95% và xấp xỉ 3/n; D12 trang 38 là nền về quy mô bằng chứng an toàn."
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d12-priority-ttc-comparison",
+      "revision": 1,
+      "author_id": "priority-dynamics-author",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d12",
+      "topic": "p2-t4-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Hai ca tiến gần thẳng có (d,v_close): A=(10 m,5 m/s), B=(20 m,10 m/s). Dùng TTC=d/v_close và độ lớn giảm tốc tương đối đều cần thiết b=v_close²/(2d), bỏ qua độ trễ. Kết luận nào đúng?",
+      "correct_answer": "a",
+      "explanation": "TTC_A=10/5=2 s và TTC_B=20/10=2 s. Nhưng b_A=25/20=1,25 m/s², b_B=100/40=2,5 m/s². Cùng TTC không quyết định cùng nhu cầu phanh; hai độ đo trả lời hai câu khác nhau.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 43,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 43",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 44,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 44",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release.",
+        "Gap objective beyond existing T4 calculation items; source formulas visually checked where cited. Supplemental definitions explicitly labeled."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Cùng TTC=2 s; B cần giảm tốc gấp đôi A"
+        },
+        {
+          "id": "b",
+          "text": "Cùng TTC=2 s nên cùng mức giảm tốc cần thiết"
+        },
+        {
+          "id": "c",
+          "text": "TTC của B gấp đôi A; giảm tốc cần thiết bằng nhau"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "closed-loop"
+      ],
+      "calculation": true,
+      "formula_reference": {
+        "title": "TTC và giảm tốc tương đối cần thiết",
+        "formula": "TTC=d/v_close; b_req=v_close²/(2d)",
+        "symbols": "d>0: khoảng cách (m); v_close>0: tốc độ tiến gần (m/s); b_req: độ lớn giảm tốc tương đối (m/s²).",
+        "conditions": "TTC giả định tốc độ tiến gần giữ nguyên. b_req giả định giảm tốc tương đối đều đến khi hết tiến gần, không có trễ hay khoảng đệm. Không dùng TTC âm để kết luận va chạm; không coi mô hình là bảo đảm an toàn thực tế.",
+        "example": "A: d=10,v_close=5 → TTC=2 s,b_req=1,25 m/s². B: d=20,v_close=10 → TTC=2 s,b_req=2,5 m/s².",
+        "common_mistakes": "Dùng tốc độ xe thay tốc độ tương đối; quên bình phương; suy cùng TTC thì cùng nhu cầu phanh."
+      }
+    },
+    {
+      "id": "p2-t4-d12-priority-clip-inverse",
+      "revision": 1,
+      "author_id": "priority-dynamics-author",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d12",
+      "topic": "p2-t4-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Bộ điều khiển dùng a_raw=y5/0,5 s rồi clip vào [−9;+3] m/s². Log chỉ lưu a_command=+3 m/s². Có thể suy ra điều gì về dự đoán y5 trước clipping?",
+      "correct_answer": "a",
+      "explanation": "a_command=3 khi a_raw≥3. Vì 0,5 s dương nên y5≥1,5 m/s. Nhiều đầu vào bão hòa cho cùng đầu ra; log lệnh đã clip không giữ đầy đủ dự đoán thô.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 68,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 68",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release.",
+        "Gap objective beyond existing T4 calculation items; source formulas visually checked where cited. Supplemental definitions explicitly labeled."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Chỉ suy ra y5≥1,5 m/s; không khôi phục duy nhất y5"
+        },
+        {
+          "id": "b",
+          "text": "Chắc chắn y5=1,5 m/s"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ suy ra y5≥6 m/s; không khôi phục duy nhất y5"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "closed-loop"
+      ],
+      "calculation": true,
+      "formula_reference": {
+        "title": "Từ dự đoán vận tốc đến lệnh gia tốc bão hòa",
+        "formula": "a_raw=y_5/0,5; a_command=min(3,max(−9,a_raw))",
+        "symbols": "y_5: độ đổi vận tốc sau 0,5 s (m/s); a_raw và a_command: gia tốc (m/s²).",
+        "conditions": "Quy tắc controller trong bài; giới hạn [−9;+3] là cấu hình cho trước, không phải giới hạn phổ quát. y_5 là độ đổi, không phải vận tốc tuyệt đối.",
+        "example": "y_5=2 m/s → a_raw=4 m/s² → a_command=3 m/s². y_5=3 cũng cho lệnh3 nên không đảo ngược duy nhất.",
+        "common_mistakes": "Nhân với0,5 thay vì chia; clip trước khi đổi sang gia tốc; cho rằng clipping có phép nghịch đảo duy nhất."
+      }
+    },
+    {
+      "id": "p2-t4-d12-priority-completion-aggregation",
+      "revision": 1,
+      "author_id": "priority-dynamics-author",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d12",
+      "topic": "p2-t4-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Chấm từng route bằng S=R×P, R là phần trăm hoàn thành và P là hệ số còn lại sau phạt. Lấy trung bình đều điểm hai route: A có R=100%,P=0,5; B có R=50%,P=1. Điểm tổng là bao nhiêu?",
+      "correct_answer": "a",
+      "explanation": "S_A=100×0,5=50 và S_B=50×1=50, trung bình50. Nhân trung bình R với trung bình P cho75×0,75=56,25, là phép tổng hợp khác với quy tắc đã cho.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 35,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 35",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release.",
+        "Gap objective beyond existing T4 calculation items; source formulas visually checked where cited. Supplemental definitions explicitly labeled."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "50 điểm trên thang100"
+        },
+        {
+          "id": "b",
+          "text": "56,25 điểm trên thang100"
+        },
+        {
+          "id": "c",
+          "text": "75 điểm trên thang100"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "closed-loop"
+      ],
+      "calculation": true,
+      "formula_reference": {
+        "title": "Điểm hoàn thành có phạt: nhân trước, tổng hợp sau",
+        "formula": "S_i=R_i×P_i; S_mean=(Σ_i S_i)/N",
+        "symbols": "R_i: phần trăm hoàn thành route; P_i∈[0,1]: hệ số còn lại sau phạt; S_i: điểm route trên thang100; N: số route.",
+        "conditions": "Dùng trung bình đều route như đề quy định. Công thức từng route theo nguyên tắc hoàn thành nhân hệ số phạt; không ngầm thay bằng tích hai trung bình.",
+        "example": "Hai route (100;0,5) và (50;1) → điểm(50;50), trung bình50; tích hai trung bình là56,25 và không đúng quy tắc này.",
+        "common_mistakes": "Cộng hệ số phạt vào hoàn thành; dùng P là phần bị trừ; nhầm trung bình tích với tích trung bình."
+      }
+    }
+  ]
+}

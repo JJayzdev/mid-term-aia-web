@@ -1,0 +1,240 @@
+{
+  "batch_file": "data/questions/drafts/priority-pipelines.json",
+  "reviewer_id": "priority-independent-review",
+  "results": [
+    {
+      "id": "p2-t4-d01-priority-training-pipeline",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 5
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 80
+        }
+      ],
+      "notes": [
+        "p5 flowchart and p80 actual loop visually checked; given batch and cleared gradients fixes starting context. Forward→loss→backward→update dependencies unique; no invented order for zero_grad.",
+        "Independent exact-content review including source images, distractors, order/matching constraints and existing-bank objectives."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p1-d07-priority-rag-index",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d07",
+          "pdf_page": 43
+        },
+        {
+          "document_id": "p1-d07",
+          "pdf_page": 50
+        }
+      ],
+      "notes": [
+        "p43/p50 ingestion diagrams visually checked; text/chunk/embed/store dependency correct for explicitly specified dense-RAG setup. Metadata maintained; distinct ordering objective.",
+        "Independent exact-content review including source images, distractors, order/matching constraints and existing-bank objectives."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p1-d08-priority-rag-answer",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d08",
+          "pdf_page": 7
+        },
+        {
+          "document_id": "p1-d08",
+          "pdf_page": 12
+        },
+        {
+          "document_id": "p1-d08",
+          "pdf_page": 30
+        },
+        {
+          "document_id": "p1-d08",
+          "pdf_page": 33
+        }
+      ],
+      "notes": [
+        "p7/12/30/33 visual arrows and reranker description checked; explicit reranker presence avoids claiming universal mandatory step. Query→retrieve→rerank→context→generate dependencies correct.",
+        "Independent exact-content review including source images, distractors, order/matching constraints and existing-bank objectives."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d03-priority-nms-pipeline",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d03",
+          "pdf_page": 28
+        }
+      ],
+      "notes": [
+        "r2 retest: accepts filter-sort and sort-filter, correctly recognizing commuting preprocessing; both precede select/suppress loop. p28 visually checked, same-class and strict IoU threshold stated. Broader full-loop sequencing than old q02 single-next-step.",
+        "Independent exact-content review including source images, distractors, order/matching constraints and existing-bank objectives."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d07-priority-tracking-pipeline",
+      "revision": 1,
+      "decision": "rejected",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d07",
+          "pdf_page": 10
+        },
+        {
+          "document_id": "p2-t4-d07",
+          "pdf_page": 11
+        },
+        {
+          "document_id": "p2-t4-d07",
+          "pdf_page": 14
+        },
+        {
+          "document_id": "p2-t4-d07",
+          "pdf_page": 21
+        }
+      ],
+      "notes": [
+        "Original p10 groups update matched tracks and initialize/delete tracks in same stage. Current unqualified total order update→lifecycle needlessly constrains independent work; group them or state policy dependency. p21 is unrelated Re-ID source; replace/remove.",
+        "Independent exact-content review including source images, distractors, order/matching constraints and existing-bank objectives."
+      ],
+      "findings": [
+        {
+          "severity": "major",
+          "finding": "Original p10 groups update matched tracks and initialize/delete tracks in same stage. Current unqualified total order update→lifecycle needlessly constrains independent work; group them or state policy dependency. p21 is unrelated Re-ID source; replace/remove.",
+          "action": "Revise and increment revision; independent retest needed."
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d01-priority-activation-heads",
+      "revision": 1,
+      "decision": "rejected",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 50
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 52
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 55
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 57
+        }
+      ],
+      "notes": [
+        "Binary and single-label supported by original p50/52/55/57. Multi-label independent sigmoid/BCE not directly present on cited pages; add explicit curriculum or primary supplemental source and increment revision.",
+        "Independent exact-content review including source images, distractors, order/matching constraints and existing-bank objectives."
+      ],
+      "findings": [
+        {
+          "severity": "major",
+          "finding": "Binary and single-label supported by original p50/52/55/57. Multi-label independent sigmoid/BCE not directly present on cited pages; add explicit curriculum or primary supplemental source and increment revision.",
+          "action": "Revise and increment revision; independent retest needed."
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d01-priority-activation-tanh-gradient",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 15
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 16
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 26
+        }
+      ],
+      "notes": [
+        "Independently differentiated tanh exponential quotient and applied chain rule:3*(1−.6²)=1.92. Distractors .72 uses sigmoid derivative, .64 omits upstream. Formula card consistent with source activation formula/derivative plot; distinct tanh backprop objective.",
+        "Independent exact-content review including source images, distractors, order/matching constraints and existing-bank objectives."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d07-priority-tracking-pipeline",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d07",
+          "pdf_page": 10
+        },
+        {
+          "document_id": "p2-t4-d07",
+          "pdf_page": 11
+        },
+        {
+          "document_id": "p2-t4-d07",
+          "pdf_page": 14
+        },
+        {
+          "document_id": "p2-t4-d07",
+          "pdf_page": 12
+        }
+      ],
+      "notes": [
+        "r2 retest: independent detection/predict and final update/lifecycle operations grouped, avoiding false total orders. Added actual lifecycle physical p12 visually inspected; Re-ID citation removed. a→b→c dependencies valid."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d01-priority-activation-heads",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 50
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 52
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 55
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 57
+        }
+      ],
+      "notes": [
+        "r2 retest: independently opened exact stable PyTorch BCEWithLogitsLoss URL and followed official redirect to2.14. Lines558–583 explicitly give sigmoid BCE, sum/mean reduction and independent class-index multi-label formula. Slide binary/multiclass anchors remain accurate; unique matching supported."
+      ],
+      "findings": [],
+      "supplemental_urls": [
+        "https://docs.pytorch.org/docs/stable/generated/torch.nn.BCEWithLogitsLoss.html"
+      ]
+    }
+  ],
+  "reviewed_at": "2026-10-28T13:59:06.664114+00:00"
+}

@@ -1,12 +1,14 @@
 {
-  "questions": 1284,
+  "questions": 1373,
   "documents_represented": 63,
   "question_types": {
-    "single_choice": 1065,
-    "scenario": 35,
+    "single_choice": 1114,
+    "scenario": 46,
     "multiple_choice": 116,
     "true_false": 65,
-    "short_answer": 3
+    "short_answer": 5,
+    "matching": 17,
+    "ordering": 10
   },
   "banks": [
     {
@@ -118,6 +120,58 @@
       "questions": 12
     },
     {
+      "path": "data/questions/drafts/priority-activations.json",
+      "questions": 9
+    },
+    {
+      "path": "data/questions/drafts/priority-closed-loop.json",
+      "questions": 5
+    },
+    {
+      "path": "data/questions/drafts/priority-d-dynamics.json",
+      "questions": 8
+    },
+    {
+      "path": "data/questions/drafts/priority-d-geometry.json",
+      "questions": 6
+    },
+    {
+      "path": "data/questions/drafts/priority-d-metrics.json",
+      "questions": 5
+    },
+    {
+      "path": "data/questions/drafts/priority-d-neural.json",
+      "questions": 6
+    },
+    {
+      "path": "data/questions/drafts/priority-extra.json",
+      "questions": 3
+    },
+    {
+      "path": "data/questions/drafts/priority-generation.json",
+      "questions": 8
+    },
+    {
+      "path": "data/questions/drafts/priority-kalman.json",
+      "questions": 10
+    },
+    {
+      "path": "data/questions/drafts/priority-normalization.json",
+      "questions": 7
+    },
+    {
+      "path": "data/questions/drafts/priority-pipelines.json",
+      "questions": 7
+    },
+    {
+      "path": "data/questions/drafts/priority-react.json",
+      "questions": 8
+    },
+    {
+      "path": "data/questions/drafts/priority-sensors.json",
+      "questions": 7
+    },
+    {
       "path": "data/questions/drafts/root-track4.json",
       "questions": 48
     },
@@ -137,7 +191,7 @@
   "documents": [
     {
       "document_id": "p1-d01",
-      "draft_question_count": 20,
+      "draft_question_count": 28,
       "referenced_physical_pages": [
         6,
         7,
@@ -153,8 +207,10 @@
         25,
         26,
         27,
+        33,
         36,
-        39
+        39,
+        40
       ],
       "coverage_meaning": "Selected-page questions represent this document; not comprehensive concept coverage",
       "approved_count": "Determined independently by reviewer/promote workflow; drafts never imply approval"
@@ -363,16 +419,20 @@
     },
     {
       "document_id": "p1-d03",
-      "draft_question_count": 20,
+      "draft_question_count": 27,
       "referenced_physical_pages": [
         14,
         26,
         30,
         34,
         37,
+        38,
+        39,
+        40,
         41,
         42,
         45,
+        46,
         47,
         48,
         56,
@@ -437,7 +497,7 @@
     },
     {
       "document_id": "p1-d07",
-      "draft_question_count": 20,
+      "draft_question_count": 21,
       "referenced_physical_pages": [
         6,
         8,
@@ -454,16 +514,20 @@
         29,
         33,
         36,
-        40
+        40,
+        43,
+        50,
+        51
       ],
       "coverage_meaning": "Selected-page questions represent this document; not comprehensive concept coverage",
       "approved_count": "Determined independently by reviewer/promote workflow; drafts never imply approval"
     },
     {
       "document_id": "p1-d08",
-      "draft_question_count": 20,
+      "draft_question_count": 21,
       "referenced_physical_pages": [
         7,
+        12,
         13,
         14,
         18,
@@ -472,6 +536,8 @@
         24,
         26,
         28,
+        30,
+        33,
         35,
         36,
         37,
@@ -1227,7 +1293,7 @@
     },
     {
       "document_id": "p2-t3-d01",
-      "draft_question_count": 20,
+      "draft_question_count": 21,
       "referenced_physical_pages": [
         6,
         11,
@@ -1240,6 +1306,7 @@
         28,
         31,
         32,
+        34,
         35,
         37,
         43,
@@ -1400,28 +1467,44 @@
     },
     {
       "document_id": "p2-t4-d01",
-      "draft_question_count": 22,
+      "draft_question_count": 43,
       "referenced_physical_pages": [
+        5,
         9,
         12,
         13,
         15,
+        16,
         17,
         18,
+        26,
         27,
         30,
         33,
+        35,
         36,
+        40,
         45,
         46,
+        50,
         51,
         52,
+        53,
+        55,
         56,
+        57,
         58,
+        60,
+        63,
         66,
         69,
         71,
+        73,
+        74,
+        77,
         78,
+        79,
+        80,
         81
       ],
       "coverage_meaning": "Selected-page questions represent this document; not comprehensive concept coverage",
@@ -1429,11 +1512,12 @@
     },
     {
       "document_id": "p2-t4-d02",
-      "draft_question_count": 22,
+      "draft_question_count": 28,
       "referenced_physical_pages": [
         7,
         9,
         12,
+        13,
         14,
         15,
         17,
@@ -1442,21 +1526,25 @@
         25,
         28,
         30,
+        31,
         32,
         33,
+        34,
         35,
         36,
+        37,
         44,
         57,
         58,
-        70
+        70,
+        77
       ],
       "coverage_meaning": "Selected-page questions represent this document; not comprehensive concept coverage",
       "approved_count": "Determined independently by reviewer/promote workflow; drafts never imply approval"
     },
     {
       "document_id": "p2-t4-d03",
-      "draft_question_count": 22,
+      "draft_question_count": 27,
       "referenced_physical_pages": [
         7,
         13,
@@ -1469,6 +1557,7 @@
         31,
         35,
         42,
+        43,
         44,
         45,
         51,
@@ -1476,6 +1565,7 @@
         57,
         67,
         70,
+        74,
         75
       ],
       "coverage_meaning": "Selected-page questions represent this document; not comprehensive concept coverage",
@@ -1483,7 +1573,7 @@
     },
     {
       "document_id": "p2-t4-d04",
-      "draft_question_count": 22,
+      "draft_question_count": 28,
       "referenced_physical_pages": [
         6,
         7,
@@ -1492,9 +1582,11 @@
         10,
         11,
         12,
+        15,
         16,
         17,
         18,
+        19,
         20,
         22,
         23,
@@ -1507,19 +1599,23 @@
     },
     {
       "document_id": "p2-t4-d05",
-      "draft_question_count": 22,
+      "draft_question_count": 33,
       "referenced_physical_pages": [
         3,
         5,
         7,
         14,
         15,
+        16,
         17,
         18,
         19,
+        21,
         23,
         25,
         27,
+        28,
+        30,
         31,
         32,
         33,
@@ -1532,7 +1628,7 @@
     },
     {
       "document_id": "p2-t4-d06",
-      "draft_question_count": 22,
+      "draft_question_count": 25,
       "referenced_physical_pages": [
         4,
         5,
@@ -1554,12 +1650,14 @@
     },
     {
       "document_id": "p2-t4-d07",
-      "draft_question_count": 22,
+      "draft_question_count": 24,
       "referenced_physical_pages": [
         7,
         8,
         10,
+        11,
         12,
+        14,
         15,
         16,
         18,
@@ -1572,14 +1670,15 @@
         29,
         35,
         37,
-        38
+        38,
+        39
       ],
       "coverage_meaning": "Selected-page questions represent this document; not comprehensive concept coverage",
       "approved_count": "Determined independently by reviewer/promote workflow; drafts never imply approval"
     },
     {
       "document_id": "p2-t4-d08",
-      "draft_question_count": 22,
+      "draft_question_count": 24,
       "referenced_physical_pages": [
         3,
         5,
@@ -1605,7 +1704,7 @@
     },
     {
       "document_id": "p2-t4-d09",
-      "draft_question_count": 22,
+      "draft_question_count": 23,
       "referenced_physical_pages": [
         15,
         16,
@@ -1633,7 +1732,7 @@
     },
     {
       "document_id": "p2-t4-d10",
-      "draft_question_count": 22,
+      "draft_question_count": 23,
       "referenced_physical_pages": [
         5,
         6,
@@ -1661,7 +1760,7 @@
     },
     {
       "document_id": "p2-t4-d11",
-      "draft_question_count": 22,
+      "draft_question_count": 26,
       "referenced_physical_pages": [
         7,
         10,
@@ -1682,14 +1781,16 @@
         45,
         46,
         49,
-        66
+        66,
+        71,
+        89
       ],
       "coverage_meaning": "Selected-page questions represent this document; not comprehensive concept coverage",
       "approved_count": "Determined independently by reviewer/promote workflow; drafts never imply approval"
     },
     {
       "document_id": "p2-t4-d12",
-      "draft_question_count": 22,
+      "draft_question_count": 31,
       "referenced_physical_pages": [
         11,
         12,
@@ -1702,11 +1803,14 @@
         24,
         26,
         27,
+        28,
         29,
         31,
         32,
+        33,
         34,
         35,
+        38,
         39,
         41,
         43,

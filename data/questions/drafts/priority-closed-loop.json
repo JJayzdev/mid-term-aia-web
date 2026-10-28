@@ -1,0 +1,371 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.28-priority-closed-loop",
+  "questions": [
+    {
+      "id": "p2-t4-d12-priority-loop-modes",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d12",
+      "topic": "p2-t4-d12",
+      "taxonomy_status": "verified",
+      "question_type": "matching",
+      "answer_format": "matching",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Ghép một-một chế độ đánh giá với việc hành động có thay đổi đầu vào tiếp theo hay không.",
+      "correct_answer": {
+        "l1": "a",
+        "l2": "b",
+        "l3": "c"
+      },
+      "explanation": "Trong ngữ cảnh xe/robot, khác biệt chính là phản hồi hành động vào môi trường. Một video dài phát lại vẫn có thể là open-loop.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 24,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 24",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 26,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 26",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 27,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 27",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Dữ liệu tương lai vẫn theo log dù model đưa hành động khác"
+        },
+        {
+          "id": "b",
+          "text": "Hành động thay trạng thái môi trường và quan sát tiếp theo"
+        },
+        {
+          "id": "c",
+          "text": "Đo chất lượng nhận thức nhưng chưa trực tiếp đo hệ quả hành động"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "closed-loop"
+      ],
+      "matching_items": [
+        {
+          "id": "l1",
+          "text": "Open-loop trên log cố định",
+          "explanation": "Hành động mới không thay diễn tiến đã ghi."
+        },
+        {
+          "id": "l2",
+          "text": "Closed-loop trong môi trường tương tác",
+          "explanation": "Vòng phản hồi giữ hệ quả các quyết định của model."
+        },
+        {
+          "id": "l3",
+          "text": "So chỉ số perception trên từng frame",
+          "explanation": "mAP không tự là xác suất va chạm của toàn hệ thống."
+        }
+      ],
+      "matching_reuse": false
+    },
+    {
+      "id": "p2-t4-d12-priority-robot-feedback",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d12",
+      "topic": "p2-t4-d12",
+      "taxonomy_status": "verified",
+      "question_type": "ordering",
+      "answer_format": "ordering",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Bắt đầu tại thời điểm robot nhận quan sát mới. Sắp xếp một chu kỳ closed-loop theo kiến trúc Sense–Perceive–Plan–Act đã cho.",
+      "correct_answer": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "explanation": "Plan cần thông tin nhận thức, Act thực thi kế hoạch. Chu kỳ cuối tạo đầu vào cho chu kỳ mới; trong log open-loop cố định, nhánh phản hồi do hành động mới không tồn tại.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 26,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 26",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 27,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 27",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Nhận quan sát từ sensor"
+        },
+        {
+          "id": "b",
+          "text": "Nhận thức/ước lượng trạng thái môi trường"
+        },
+        {
+          "id": "c",
+          "text": "Lập kế hoạch dựa trên trạng thái ước lượng"
+        },
+        {
+          "id": "d",
+          "text": "Phát lệnh điều khiển và hành động"
+        },
+        {
+          "id": "e",
+          "text": "Môi trường thay đổi; sensor tạo quan sát cho chu kỳ kế tiếp"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "closed-loop"
+      ]
+    },
+    {
+      "id": "p2-t4-d12-priority-loop-evidence",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d12",
+      "topic": "p2-t4-d12",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "multiple_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Những kết quả nào vẫn cần kiểm tra trước khi kết luận bản perception mới làm hệ thống lái tốt hơn? Chọn tất cả đáp án đúng.",
+      "correct_answer": [
+        "a",
+        "b"
+      ],
+      "explanation": "mAP chỉ đo một khâu. Cần quan sát hệ quả ở closed-loop và lặp nhiều lượt vì sai lệch tích lũy/nhiễu có thể thay kết quả. Một log đẹp hoặc một seed không đủ chứng minh.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 27,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 27",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 28,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 28",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 31,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 31",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 34,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 34",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Kết quả toàn hệ thống ở closed-loop, như va chạm hoặc hoàn thành nhiệm vụ"
+        },
+        {
+          "id": "b",
+          "text": "Độ ổn định qua nhiều lượt và các tình huống có sai lệch tích lũy"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ số mAP tăng là đủ, không cần thử hệ thống"
+        },
+        {
+          "id": "d",
+          "text": "Chỉ chọn lượt mô phỏng có kết quả tốt nhất rồi báo cáo"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "closed-loop"
+      ],
+      "context": "Bản nhận thức B có mAP cao hơn A trên tập log; đội phát triển muốn thay A trong robot."
+    },
+    {
+      "id": "p2-t4-d12-priority-loop-reset",
+      "revision": 2,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d12",
+      "topic": "p2-t4-d12",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Mô hình minh họa có bias vị trí +0,05 m sau mỗi bước, không phản hồi sửa sai. Sau 20 bước, sai lệch cộng dồn ở closed-loop là bao nhiêu; nếu reset về log trước từng bước thì mỗi lần chấm thấy sai lệch bao nhiêu?",
+      "correct_answer": "a",
+      "explanation": "Đề giả định bias cố định cộng tuyến tính:20×0,05=1,00 m ở closed-loop. Khi reset trước từng bước, lịch sử bias bị xóa nên mỗi lần chỉ thấy0,05 m. Đây là mô hình minh họa đã cho, không khẳng định mọi lỗi thực tăng tuyến tính.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 27,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 27",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 28,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 28",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Cộng dồn1,00 m; reset mỗi bước thấy0,05 m"
+        },
+        {
+          "id": "b",
+          "text": "Cả hai đều1,00 m ở từng lần chấm"
+        },
+        {
+          "id": "c",
+          "text": "Cộng dồn0,05 m; reset mỗi bước thấy0 m"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "closed-loop"
+      ],
+      "calculation": true
+    },
+    {
+      "id": "p2-t4-d12-priority-loop-explain",
+      "revision": 2,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d12",
+      "topic": "p2-t4-d12",
+      "taxonomy_status": "verified",
+      "question_type": "short_answer",
+      "answer_format": "rubric",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Hai planner A/B chạy trong cùng bộ kịch bản mô phỏng. Một lượt cho A thành công,B thất bại; các lượt khác có thể đổi kết quả do nhiễu. Đề xuất cách đánh giá để tránh chọn nhầm chỉ từ lượt này và nêu cách báo cáo.",
+      "correct_answer": "Chạy lặp cả A và B trên cùng bộ kịch bản/điều kiện đánh giá đã cố định, không chọn riêng lượt tốt. Ghi kết quả toàn hệ thống như hoàn thành,va chạm trên tất cả lượt; báo số lượt và tỷ lệ/phân bố kết quả theo kịch bản. Nếu biến động lớn hoặc dữ liệu ít, nêu chưa đủ bằng chứng thay vì kết luận thắng chắc.",
+      "explanation": "Closed-loop có biến động nên một lượt không đủ. Thiết kế so sánh cần cùng phạm vi kiểm tra và báo toàn bộ các lượt; không được lấy mAP thay thế hoàn toàn kết quả hệ thống, hoặc chỉ giữ seed thuận lợi.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 31,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 31",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 33,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 33",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d12",
+          "sha256": "2a3d82581cc375a57783b2842deb2b084a3d86a268a1cc8ece67955ed001b9e2",
+          "pdf_page": 34,
+          "title": "Phát lại nhật ký và kiểm thử vòng kín",
+          "locator": "Physical PDF page 34",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "focus_topics": [
+        "closed-loop"
+      ],
+      "rubric": [
+        {
+          "id": "c1",
+          "description": "Lặp đánh giá có thể so sánh",
+          "weight": 0.5,
+          "full_credit": "Đề xuất lặp cả hai planner với cùng bộ kịch bản/điều kiện được cố định, không chọn lượt thuận lợi",
+          "partial_credit": "Có đề xuất lặp nhưng không nêu kiểm soát phạm vi so sánh",
+          "no_credit": "Chọn planner chỉ từ một lượt hoặc chỉ chạy lại bản mình muốn thắng"
+        },
+        {
+          "id": "c2",
+          "description": "Báo cáo kết quả và giới hạn",
+          "weight": 0.5,
+          "full_credit": "Báo số lượt và kết quả hệ thống trên tất cả lượt, nêu bất định khi dữ liệu ít/biến động lớn",
+          "partial_credit": "Có báo kết quả nhưng thiếu số lượt hoặc giới hạn",
+          "no_credit": "Chỉ báo lượt tốt nhất hoặc khẳng định bảo đảm thắng từ một kết quả"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "batch_file": "data/questions/drafts/priority-extra.json",
+  "reviewer_id": "priority-independent-review",
+  "reviewed_at": "2026-10-28T14:00:56.904461+00:00",
+  "results": [
+    {
+      "id": "p2-t4-d01-priority-activation-graphs",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 15
+        }
+      ],
+      "notes": [
+        "One-to-one graph/label mapping correct. Read original activation formulas p15 and previously inspected derivative/graph p16. Evaluated sigmoid(0)=.5,tanh(0)=0, ReLU negative0/positive identity; asymptotes and shape descriptions correct. Inspected ActivationPlot fixed axes and scalar function implementation; accessible equivalent descriptions carry complete shape information. Browser presentation remains root UI verification responsibility."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d02-priority-norm-ln-eval",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 17
+        },
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 34
+        }
+      ],
+      "notes": [
+        "Explicit normalized_shape=D, unchanged token/gamma/beta, no dropout or other layers isolates LN. Independently opened exact PyTorch stable URL and official2.14 redirect: last-dimension statistics and train/eval input statistics lines571,584 support invariance. Distinct dependency/inference scenario vs BN running-statistics item."
+      ],
+      "findings": [],
+      "supplemental_urls": [
+        "https://docs.pytorch.org/docs/stable/generated/torch.nn.LayerNorm.html"
+      ]
+    },
+    {
+      "id": "p2-t4-d05-priority-kalman-control",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d05",
+          "pdf_page": 28
+        }
+      ],
+      "notes": [
+        "Independent multiply: F x=(5,3), B u=(1,2), sum=(6m,5m/s). Dimensions implied by specified one-second kinematic model; incorrect distractors omit control or ignore B. Full formula card checked against original p28 and official FilterPy exact URL: B control transition matrix, u multiplied by B, process/measurement covariance roles. Deterministic control/noise caveat correct."
+      ],
+      "findings": [],
+      "supplemental_urls": [
+        "https://filterpy.readthedocs.io/en/latest/kalman/KalmanFilter.html"
+      ]
+    }
+  ]
+}

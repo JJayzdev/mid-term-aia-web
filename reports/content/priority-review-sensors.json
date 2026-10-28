@@ -1,0 +1,245 @@
+{
+  "batch_file": "data/questions/drafts/priority-sensors.json",
+  "reviewer_id": "priority-independent-review",
+  "reviewed_at": "2026-10-28T13:59:06.674681+00:00",
+  "results": [
+    {
+      "id": "p2-t4-d04-priority-sensor-strengths",
+      "revision": 1,
+      "decision": "rejected",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d04",
+          "pdf_page": 7
+        },
+        {
+          "document_id": "p2-t4-d04",
+          "pdf_page": 9
+        },
+        {
+          "document_id": "p2-t4-d04",
+          "pdf_page": 11
+        },
+        {
+          "document_id": "p2-t4-d04",
+          "pdf_page": 17
+        },
+        {
+          "document_id": "p2-t4-d04",
+          "pdf_page": 18
+        }
+      ],
+      "notes": [
+        "Three-sensor matching otherwise correct, but radial-vs-full-vector Doppler explanation needs direct support beyond cited p11; author notified to add source or narrow claim.",
+        "Original cited source pages visually inspected and source hashes verified; checked mappings/order/distractors/metadata and existing-bank context."
+      ],
+      "findings": [
+        {
+          "severity": "major",
+          "finding": "Three-sensor matching otherwise correct, but radial-vs-full-vector Doppler explanation needs direct support beyond cited p11; author notified to add source or narrow claim.",
+          "action": "Author revise and increment revision; reviewer retest required."
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d04-priority-sensor-calibration",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d04",
+          "pdf_page": 22
+        },
+        {
+          "document_id": "p2-t4-d04",
+          "pdf_page": 24
+        }
+      ],
+      "notes": [
+        "Unique matching of intrinsic/extrinsic/time roles. Original p22 image shows all three; p24 supports moving-object offset. Broader taxonomy than existing intrinsics selection.",
+        "Original cited source pages visually inspected and source hashes verified; checked mappings/order/distractors/metadata and existing-bank context."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d04-priority-sensor-offset-calc",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d04",
+          "pdf_page": 24
+        }
+      ],
+      "notes": [
+        "Independent calculation: 40 ms=.040 s, 15*.040=.600 m. Distractors reflect wrong unit conversion; common-frame constant-speed assumptions explicit. Formula card correct under stated hypothetical conditions.",
+        "Original cited source pages visually inspected and source hashes verified; checked mappings/order/distractors/metadata and existing-bank context."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d04-priority-sensor-direction-test",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d04",
+          "pdf_page": 22
+        },
+        {
+          "document_id": "p2-t4-d04",
+          "pdf_page": 24
+        }
+      ],
+      "notes": [
+        "Scenario tests diagnostic experiment selection rather than existing q02 cause identification. Stationary/opposite-motion comparison plus timestamps supported by p22/p24; does not claim one-frame proof.",
+        "Original cited source pages visually inspected and source hashes verified; checked mappings/order/distractors/metadata and existing-bank context."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d06-priority-fusion-levels",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d06",
+          "pdf_page": 19
+        }
+      ],
+      "notes": [
+        "Visually inspected p19 three architecture diagrams. Unique early/input, intermediate/features, late/detections mapping; adds late-fusion distinction to existing pair comparison.",
+        "Original cited source pages visually inspected and source hashes verified; checked mappings/order/distractors/metadata and existing-bank context."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d06-priority-fusion-pipeline",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d06",
+          "pdf_page": 19
+        },
+        {
+          "document_id": "p2-t4-d06",
+          "pdf_page": 20
+        },
+        {
+          "document_id": "p2-t4-d06",
+          "pdf_page": 21
+        }
+      ],
+      "notes": [
+        "Original p19–21 diagrams and calibration/time checks read visually. Specified architecture has dependency order; independent encoders deliberately grouped. No spurious total order between them.",
+        "Original cited source pages visually inspected and source hashes verified; checked mappings/order/distractors/metadata and existing-bank context."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d04-priority-sensor-weather-checks",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d04",
+          "pdf_page": 15
+        },
+        {
+          "document_id": "p2-t4-d04",
+          "pdf_page": 17
+        },
+        {
+          "document_id": "p2-t4-d04",
+          "pdf_page": 18
+        },
+        {
+          "document_id": "p2-t4-d04",
+          "pdf_page": 19
+        }
+      ],
+      "notes": [
+        "p15/17/18/19 support sensor-specific quality monitoring and adverse-weather evaluation. Correct exact set a/b; cross-sensor degraded-input evaluation broader than existing single-modality health recognition.",
+        "Original cited source pages visually inspected and source hashes verified; checked mappings/order/distractors/metadata and existing-bank context."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d04-priority-sensor-strengths",
+      "revision": 2,
+      "decision": "rejected",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d04",
+          "pdf_page": 7
+        },
+        {
+          "document_id": "p2-t4-d04",
+          "pdf_page": 9
+        },
+        {
+          "document_id": "p2-t4-d04",
+          "pdf_page": 11
+        },
+        {
+          "document_id": "p2-t4-d04",
+          "pdf_page": 17
+        },
+        {
+          "document_id": "p2-t4-d04",
+          "pdf_page": 18
+        },
+        {
+          "document_id": "p2-t4-d05",
+          "pdf_page": 35
+        }
+      ],
+      "notes": [
+        "r2 added p35 is position uncertainty along line-of-sight; it does not establish Doppler radial velocity. Read original diagram and caption. Require primary direct radial-speed source or appropriate PDF page; author notified.",
+        "Independent exact-content review including source images, distractors, order/matching constraints and existing-bank objectives."
+      ],
+      "findings": [
+        {
+          "severity": "major",
+          "finding": "r2 added p35 is position uncertainty along line-of-sight; it does not establish Doppler radial velocity. Read original diagram and caption. Require primary direct radial-speed source or appropriate PDF page; author notified.",
+          "action": "Revise and increment revision; independent retest needed."
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d04-priority-sensor-strengths",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d04",
+          "pdf_page": 7
+        },
+        {
+          "document_id": "p2-t4-d04",
+          "pdf_page": 9
+        },
+        {
+          "document_id": "p2-t4-d04",
+          "pdf_page": 11
+        },
+        {
+          "document_id": "p2-t4-d04",
+          "pdf_page": 17
+        },
+        {
+          "document_id": "p2-t4-d04",
+          "pdf_page": 18
+        }
+      ],
+      "notes": [
+        "r3 retest: independently opened exact NOAA JetStream velocity URL. Lines35,40–46,53 explicitly describe Doppler radial component and zero when perpendicular; direct measurement not full velocity vector. This general physical principle supports carefully limited caveat; weather-radar context explicitly labeled supplemental. Misleading position-ellipse anchor removed."
+      ],
+      "findings": [],
+      "supplemental_urls": [
+        "https://www.noaa.gov/jetstream/velocity"
+      ]
+    }
+  ]
+}

@@ -3,12 +3,62 @@ import { makeExamBank, makeQuestion } from '../test/fixtures';
 import { DomainError } from '../domain/errors';
 import { claimAttempt, createAttempt, createBackup, DB_NAME, getAttempt, gradeRubric, listAttempts, openDatabase, resetDatabaseForTests, restoreBackup, saveAnswer, stageImport, submitAttempt, validateBackup } from './database';
 import type { AttemptQuestion } from '../domain/types';
+import { selectPractice } from '../domain/quiz';
 
 beforeEach(async () => {
   resetDatabaseForTests();
   await new Promise<void>((resolve, reject) => { const req = indexedDB.deleteDatabase(DB_NAME); req.onsuccess = () => resolve(); req.onerror = () => reject(req.error); req.onblocked = () => reject(new Error('delete blocked')); });
 });
 const snapshot = (id = 'storage-q', format: 'single_choice' | 'rubric' = 'single_choice'): AttemptQuestion => ({ question: makeQuestion({ id, format }), points: 100, optionOrder: ['a', 'b'] });
+
+describe('interactive practice persistence and backups', () => {
+  it('retains partial matching, cleared answers and both column orders across connections', async () => {
+    const q = makeQuestion({ id: 'persistent-pair' });
+    q.question_type = q.answer_format = 'matching';
+    q.matching_items = [{ id: 'left1', text: 'First term' }, { id: 'left2', text: 'Second term' }];
+    q.correct_answer = { left1: 'b', left2: 'a' }; q.focus_topics = ['react'];
+    const candidate = selectPractice([q], 'focus', { count: 1, seed: 'saved-columns' });
+    const created = await createAttempt({ mode: 'focus', label: candidate.label, seed: candidate.seed, bankVersion: 'test', questions: candidate.items, now: 1000 });
+    const partial = await saveAnswer(created.id, q.id, { left1: 'b' }, created.revision, 1100);
+    resetDatabaseForTests();
+    expect((await getAttempt(created.id))?.questions).toEqual(candidate.items);
+    expect((await getAttempt(created.id))?.answers[q.id]).toEqual({ left1: 'b' });
+    await expect(saveAnswer(created.id, q.id, { left1: 'b', left2: 'b' }, partial.revision, 1200)).rejects.toMatchObject({ code: 'answer_shape' });
+    const clear = await saveAnswer(created.id, q.id, {}, partial.revision, 1200);
+    expect(clear.answers[q.id]).toEqual({});
+    const saved = await saveAnswer(created.id, q.id, { left2: 'a', left1: 'b' }, clear.revision, 1300);
+    await submitAttempt(saved.id, saved.revision, 1400);
+    const backup = await createBackup();
+    expect(validateBackup(backup).attempts[0].score?.totalPoints).toBe(100);
+    await restoreBackup(backup);
+    expect((await listAttempts())).toHaveLength(1);
+    const corrupted = structuredClone(backup);
+    corrupted.attempts[0].questions[0].matchingOrder = ['left1', 'left1'];
+    expect(() => validateBackup(corrupted)).toThrow(/thứ tự cột ghép/);
+    const unknown = structuredClone(backup);
+    unknown.attempts[0].answers[q.id] = { left1: 'b', extra: 'a' };
+    expect(() => validateBackup(unknown)).toThrow(/đáp án sai định dạng/);
+  });
+  it('restores accepted alternative orders and rejects duplicate or unknown saved steps', async () => {
+    const q = makeQuestion({ id: 'persistent-order' });
+    q.question_type = q.answer_format = 'ordering';
+    q.options!.push({ id: 'c', text: 'After first two' });
+    q.correct_answer = ['a', 'b', 'c']; q.accepted_orders = [['b', 'a', 'c']];
+    const candidate = selectPractice([q], 'mixed', { count: 1, seed: 'ordered' });
+    const created = await createAttempt({ mode: 'mixed', label: candidate.label, seed: candidate.seed, bankVersion: 'test', questions: candidate.items, now: 1000 });
+    const cleared = await saveAnswer(created.id, q.id, [], created.revision, 1100);
+    const saved = await saveAnswer(created.id, q.id, ['b', 'a', 'c'], cleared.revision, 1200);
+    await submitAttempt(saved.id, saved.revision, 1300);
+    const backup = await createBackup();
+    expect(validateBackup(backup).attempts[0].score?.totalPoints).toBe(100);
+    for (const answer of [['a', 'a', 'c'], ['a', 'b', 'unknown']]) {
+      const bad = structuredClone(backup); bad.attempts[0].answers[q.id] = answer;
+      expect(() => validateBackup(bad)).toThrow(/đáp án sai định dạng/);
+    }
+    const partial = structuredClone(backup); partial.attempts[0].answers[q.id] = ['b', 'a'];
+    expect(() => validateBackup(partial)).toThrow(/Điểm trong sao lưu/);
+  });
+});
 
 describe('IndexedDB attempt persistence and concurrency', () => {
   it('persists each answer and restores it from a fresh database connection', async () => {

@@ -1,0 +1,243 @@
+{
+  "batch_file": "data/questions/drafts/priority-kalman.json",
+  "reviewer_id": "priority-independent-review",
+  "reviewed_at": "2026-10-28T06:41:02.561642+00:00",
+  "results": [
+    {
+      "id": "p2-t4-d05-priority-kalman-symbols",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d05",
+          "pdf_page": 21
+        }
+      ],
+      "notes": [
+        "Unique mappings of x/P/Q/R/K; scalar direct-observation convention explicit; variance vs standard deviation consistent with p14/p21.",
+        "Independently read all cited pages including visual math/diagram check; source hash matches catalog. Numerical evidence in tmp/priority-review/kalman-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d05-priority-kalman-matrix",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d05",
+          "pdf_page": 28
+        }
+      ],
+      "notes": [
+        "F/H/S/K mappings and formula_reference match p28; no invented control input; dimensions/invertibility and matrix inverse caution appropriate. Example (2,3)→(5,3) independently multiplied.",
+        "Independently read all cited pages including visual math/diagram check; source hash matches catalog. Numerical evidence in tmp/priority-review/kalman-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d05-priority-kalman-pipeline",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d05",
+          "pdf_page": 18
+        },
+        {
+          "document_id": "p2-t4-d05",
+          "pdf_page": 21
+        }
+      ],
+      "notes": [
+        "Predict and update dependencies correct. Independent gain/innovation and mean/covariance calculations grouped rather than artificially ordered. Repetition termination explicit per next cycle.",
+        "Independently read all cited pages including visual math/diagram check; source hash matches catalog. Numerical evidence in tmp/priority-review/kalman-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d05-priority-kalman-full-predict",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d05",
+          "pdf_page": 21
+        }
+      ],
+      "notes": [
+        "Independent arithmetic: prediction (7,5), gain0.5, innovation2, posterior (8,2.5). Extends existing update-only question with necessary prediction.",
+        "Independently read all cited pages including visual math/diagram check; source hash matches catalog. Numerical evidence in tmp/priority-review/kalman-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d05-priority-kalman-std",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d05",
+          "pdf_page": 14
+        },
+        {
+          "document_id": "p2-t4-d05",
+          "pdf_page": 21
+        }
+      ],
+      "notes": [
+        "p14 visibly defines variance=σ². Independent arithmetic: P9,R1,K0.9,mean13.6,Pnew0.9,sigma0.9486833→0.949. Unit and rounding clear.",
+        "Independently read all cited pages including visual math/diagram check; source hash matches catalog. Numerical evidence in tmp/priority-review/kalman-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d05-priority-kalman-innovation",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d05",
+          "pdf_page": 21
+        }
+      ],
+      "notes": [
+        "Same given data as existing c01 intentionally extend output to innovation/posterior variance/std, not a mere number variant. Independently r6,Pnew2.25,sigma1.5; gain0.75 and mean24.5 checked.",
+        "Independently read all cited pages including visual math/diagram check; source hash matches catalog. Numerical evidence in tmp/priority-review/kalman-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d05-priority-kalman-sensitivity",
+      "revision": 1,
+      "decision": "rejected",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d05",
+          "pdf_page": 17
+        },
+        {
+          "document_id": "p2-t4-d05",
+          "pdf_page": 21
+        }
+      ],
+      "notes": [
+        "Major redundancy: decreases R mirrors existing x09 increases R. Requested joint-change scenario to test limits of monotonic reasoning.",
+        "Independently read all cited pages including visual math/diagram check; source hash matches catalog. Numerical evidence in tmp/priority-review/kalman-arithmetic.json."
+      ],
+      "findings": [
+        {
+          "severity": "major",
+          "action": "Revise duplicate learning objective, increment revision",
+          "status": "open"
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d05-priority-kalman-gaussian-mean",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d05",
+          "pdf_page": 16
+        },
+        {
+          "document_id": "p2-t4-d05",
+          "pdf_page": 36
+        }
+      ],
+      "notes": [
+        "Independent weighted mean=12.8 and posterior variance0.8, correct information weights. Formula card includes same-variable/independence restrictions; adds mean calculation absent in old c02.",
+        "Independently read all cited pages including visual math/diagram check; source hash matches catalog. Numerical evidence in tmp/priority-review/kalman-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d05-priority-kalman-ekf",
+      "revision": 1,
+      "decision": "rejected",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d05",
+          "pdf_page": 31
+        }
+      ],
+      "notes": [
+        "Major redundancy: same Jacobian recognition target as existing q03, despite atan2 wrapper. Requested discriminative matching or new applied reasoning.",
+        "Independently read all cited pages including visual math/diagram check; source hash matches catalog. Numerical evidence in tmp/priority-review/kalman-arithmetic.json."
+      ],
+      "findings": [
+        {
+          "severity": "major",
+          "action": "Revise duplicate learning objective, increment revision",
+          "status": "open"
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d05-priority-kalman-matrix-predict",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d05",
+          "pdf_page": 28
+        }
+      ],
+      "notes": [
+        "Independent F*x=(8,3); FPFᵀ=[[8,2],[2,1]], plus Q gives[[9,2],[2,1]]. Off-diagonal propagation tests new matrix reasoning.",
+        "Independently read all cited pages including visual math/diagram check; source hash matches catalog. Numerical evidence in tmp/priority-review/kalman-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d05-priority-kalman-sensitivity",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d05",
+          "pdf_page": 17
+        },
+        {
+          "document_id": "p2-t4-d05",
+          "pdf_page": 21
+        }
+      ],
+      "notes": [
+        "Retest r2: distinct joint-scaling objective replaces duplicate. Recomputed K=9/(9+3)=3/(3+1)=0.75; posterior variances 2.25 and 0.75 m². All distractors false; scalar H=1 assumption explicit.",
+        "Independently read original cited PDF pages, visually inspected formulas/diagrams, checked exact revision, options, metadata and existing-bank overlap."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d05-priority-kalman-ekf",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d05",
+          "pdf_page": 30
+        },
+        {
+          "document_id": "p2-t4-d05",
+          "pdf_page": 31
+        },
+        {
+          "document_id": "p2-t4-d05",
+          "pdf_page": 32
+        },
+        {
+          "document_id": "p2-t4-d05",
+          "pdf_page": 33
+        }
+      ],
+      "notes": [
+        "Retest r2: four-family matching replaces duplicate EKF recognition. Visually checked original physical pages 30–33, including family table, Jacobian, sigma-point diagrams and weighted particle loop. Unique one-to-one mappings and explanations supported.",
+        "Independently read original cited PDF pages, visually inspected formulas/diagrams, checked exact revision, options, metadata and existing-bank overlap."
+      ],
+      "findings": []
+    }
+  ]
+}

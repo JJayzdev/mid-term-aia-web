@@ -1,0 +1,384 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.28-priority-d-geometry",
+  "questions": [
+    {
+      "id": "p2-t4-d04-priority-d-video-budget",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d04",
+      "topic": "p2-t4-d04",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Camera không nén ghi 640×480 pixel, 24 bit/pixel, 25 frame/s trong 60 s. Ngân sách lưu là 1,00 GB (10^9 byte), bỏ overhead. Để vừa ngân sách trong cùng thời lượng, hệ số giảm dung lượng tối thiểu V_raw/V_saved là bao nhiêu?",
+      "correct_answer": "a",
+      "explanation": "Mỗi frame=640×480×24/8=921.600 byte. Có 25×60=1.500 frame, tổng 1.382.400.000 byte=1,3824 GB. Tỷ số raw/budget=1,3824/1=1,3824 lần. Đây là yêu cầu dung lượng; không khẳng định codec thực tế đạt tỷ số này với chất lượng chấp nhận được.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 8,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "locator": "Physical PDF page 8",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 16,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "locator": "Physical PDF page 16",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d04",
+          "sha256": "7f72463578acb2f5e05bdb718ed1902f6da7d5ea88643e4f358d2c68b710a216",
+          "pdf_page": 24,
+          "title": "Ngày 4 · Cảm biến và chuỗi khung hình - thời gian",
+          "locator": "Physical PDF page 24",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "1,3824 lần"
+        },
+        {
+          "id": "b",
+          "text": "11,0592 lần"
+        },
+        {
+          "id": "c",
+          "text": "0,7234 lần"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true,
+      "formula_reference": {
+        "title": "Camera: bandwidth, lưu video và health/time sync",
+        "formula": "bitrate=N_camera×W×H×bits_per_pixel×FPS; bytes=bitrate×seconds/8; saturation_ratio=100×N_saturated/(W×H); displacement=v×delta_t",
+        "symbols": "W,H: pixel; FPS: frame/s; bitrate: bit/s; v: vận tốc tương đối; delta_t: lệch timestamp tính bằng giây.",
+        "conditions": "Ảnh thô không nén, bit depth đã tính đủ kênh, bỏ overhead. 1 byte=8 bit; GB=10^9 byte nếu đề quy định. Dịch chuyển v×delta_t giả định vận tốc không đổi; saturation threshold là policy riêng.",
+        "example": "640×480×24 bit×25 FPS×60 s/8=1,3824 GB; v=15 m/s,delta_t=0,04 s →0,6 m.",
+        "common_mistakes": "Nhầm bit/byte; quên số camera/kênh; dùng mili giây như giây; coi tỷ lệ nén dự kiến là kết quả chất lượng đã kiểm chứng."
+      }
+    },
+    {
+      "id": "p2-t4-d06-priority-d-voxel-resolution",
+      "revision": 2,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d06",
+      "topic": "p2-t4-d06",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Grid dense giữ nguyên range, mỗi chiều range chia hết cho voxel size ban đầu, không có ô biên một phần. Cấu hình mới giảm voxel size một nửa theo x,y, giữ nguyên z, đồng thời tăng feature từ 8 lên 16 float32 mỗi ô. Không metadata. Bộ nhớ mới gấp mấy lần cũ?",
+      "correct_answer": "a",
+      "explanation": "Số ô theo x tăng 2 lần, y tăng 2 lần, z không đổi nên số ô tổng tăng 4 lần. Feature/ô tăng 16/8=2 lần. Bộ nhớ dense tăng 4×2=8 lần. Không nhân thêm 2 cho z vì z giữ nguyên.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d06",
+          "sha256": "1c49ea2510761c0798a7b9d139ab9074eba188719a16cec41778714cef54f0d7",
+          "pdf_page": 9,
+          "title": "3D from Point Clouds and Where LiDAR Meets the Camera",
+          "locator": "Physical PDF page 9",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "8 lần"
+        },
+        {
+          "id": "b",
+          "text": "4 lần"
+        },
+        {
+          "id": "c",
+          "text": "16 lần"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true,
+      "formula_reference": {
+        "title": "Voxel grid và bộ nhớ dense",
+        "formula": "N_x=range_x/voxel_x; N_y=range_y/voxel_y; N_z=range_z/voxel_z; N_cells=N_x×N_y×N_z; bytes=N_cells×features_per_cell×bytes_per_feature",
+        "symbols": "range: chiều dài miền mỗi trục; voxel: độ dài cạnh; features_per_cell: số giá trị mỗi ô.",
+        "conditions": "Range chia hết cho voxel; miền nửa kín tránh đếm biên hai lần. Đây là dense; sparse phụ thuộc ô có dữ liệu và overhead chỉ mục, không suy trực tiếp bằng công thức dense.",
+        "example": "Giảm một nửa voxel x,y và nhân đôi số feature →2×2×1×2=8 lần bộ nhớ.",
+        "common_mistakes": "Nhầm giảm một nửa cạnh với giảm một nửa số ô; quên kênh feature; áp số ô đầy đủ cho sparse mà không xét occupancy."
+      }
+    },
+    {
+      "id": "p2-t4-d08-priority-d-backproject-depth",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d08",
+      "topic": "p2-t4-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Camera pinhole không distortion có fx=fy=400,cx=320,cy=240 pixel. Pixel (u,v)=(400,240), depth dọc trục camera Z=10 m. Điểm 3D (X,Y,Z) và khoảng cách Euclid từ tâm camera là gì? Làm tròn khoảng cách 3 chữ số thập phân.",
+      "correct_answer": "a",
+      "explanation": "Back-projection: X=(400−320)×10/400=2 m; Y=(240−240)×10/400=0; Z=10. Khoảng cách tâm=sqrt(2²+0²+10²)=sqrt(104)≈10,198 m. Depth dọc Z khác range Euclid khi điểm nằm ngoài trục quang.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d08",
+          "sha256": "0717147c9cedbe8d638ac82013e9c382ecaf338ccb6f379dd907591722d9cef7",
+          "pdf_page": 9,
+          "title": "3D từ Camera, BEV & Sensor Fusion",
+          "locator": "Physical PDF page 9",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d06",
+          "sha256": "1c49ea2510761c0798a7b9d139ab9074eba188719a16cec41778714cef54f0d7",
+          "pdf_page": 16,
+          "title": "3D from Point Clouds and Where LiDAR Meets the Camera",
+          "locator": "Physical PDF page 16",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "(2;0;10) m; khoảng cách 10,198 m"
+        },
+        {
+          "id": "b",
+          "text": "(2;0;10) m; khoảng cách 10,000 m"
+        },
+        {
+          "id": "c",
+          "text": "(0,2;0;10) m; khoảng cách 10,002 m"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true,
+      "formula_reference": {
+        "title": "Đổi hệ tọa độ, chiếu và back-projection",
+        "formula": "x_camera=R×x_lidar+t; u=f_x×X/Z+c_x; v=f_y×Y/Z+c_y; X=(u−c_x)×Z/f_x; Y=(v−c_y)×Z/f_y; x_camera=Z×K⁻¹×[u;v;1]",
+        "symbols": "R,t: extrinsic LiDAR sang camera; K: intrinsic; X,Y,Z: tọa độ camera; u,v: pixel; Z: depth theo trục quang.",
+        "conditions": "Pinhole không distortion hoặc ảnh đã undistort; Z>0; nguồn đã căn thời gian. Back-projection cần depth, pixel đơn lẻ không xác định duy nhất điểm 3D.",
+        "example": "u=400,v=240,Z=10,fx=fy=400,cx=320,cy=240 →(X,Y,Z)=(2;0;10), range≈10,198 m.",
+        "common_mistakes": "Dùng sai chiều extrinsic; bỏ t; chia cho Z của hệ LiDAR; nhầm depth Z với range Euclid."
+      }
+    },
+    {
+      "id": "p2-t4-d08-priority-d-nds-saturation",
+      "revision": 2,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d08",
+      "topic": "p2-t4-d08",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Trong NDS=[5×mAP+Σ(1−min(1,e_i))]/10, mAP và bốn error khác giữ nguyên. Error còn lại giảm từ 1,4 xuống 1,1, rồi xuống 0,8. NDS tăng bao nhiêu ở từng lần?",
+      "correct_answer": "a",
+      "explanation": "Error 1,4 và 1,1 đều bị min(1,e) chặn thành 1, nên đóng góp đều 0. Khi error=0,8, đóng góp thành 0,2. Chia cho 10 làm NDS tăng 0,02. Đây là error đã quy về đúng thang công thức, không cộng trực tiếp các đơn vị chưa chuẩn hóa.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d08",
+          "sha256": "0717147c9cedbe8d638ac82013e9c382ecaf338ccb6f379dd907591722d9cef7",
+          "pdf_page": 7,
+          "title": "3D từ Camera, BEV & Sensor Fusion",
+          "locator": "Physical PDF page 7",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d08",
+          "sha256": "0717147c9cedbe8d638ac82013e9c382ecaf338ccb6f379dd907591722d9cef7",
+          "pdf_page": 12,
+          "title": "3D từ Camera, BEV & Sensor Fusion",
+          "locator": "Physical PDF page 12",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Lần 1 tăng 0; lần 2 tăng 0,02"
+        },
+        {
+          "id": "b",
+          "text": "Lần 1 tăng 0,03; lần 2 tăng 0,03"
+        },
+        {
+          "id": "c",
+          "text": "Lần 1 tăng 0; lần 2 tăng 0,2"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true,
+      "formula_reference": {
+        "title": "Depth mặt đường phẳng và NDS",
+        "formula": "Z=f×h/delta_v; NDS=[5×mAP+Σ(1−min(1,e_i))]/10",
+        "symbols": "h: độ cao camera; f: focal pixel; delta_v: độ lệch chân vật so với đường chân trời; e_i: năm TP errors theo định nghĩa NDS.",
+        "conditions": "Depth giả định camera có trục quang song song mặt đường phẳng (hoặc ảnh đã rectified về mô hình đó), độ cao và đường chân trời đã biết, chân vật nằm trên đường; delta_v>0. NDS dùng đúng giao thức nuScenes, không tự gộp các error khác đơn vị ngoài quy ước.",
+        "example": "f=800,h=1,5,delta_v=40 →Z=30 m. Một error giảm 1,1→0,8 làm NDS tăng (0,2−0)/10=0,02.",
+        "common_mistakes": "Áp mặt đường phẳng trên dốc mà không hiệu chỉnh; gần chân trời sai số pixel rất nhạy; quên chặn error ở 1 hoặc quên chia 10."
+      }
+    },
+    {
+      "id": "p2-t4-d09-priority-d-batch-drop",
+      "revision": 2,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d09",
+      "topic": "p2-t4-d09",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Video có 101 frame index 0…100. Chọn frame 0 rồi mỗi frame thứ 10. Batch size=4. So sánh giữ batch cuối thiếu với drop_last=true (bỏ toàn bộ batch cuối nếu thiếu phần tử): mỗi cách chạy bao nhiêu batch và xử lý bao nhiêu frame?",
+      "correct_answer": "a",
+      "explanation": "Danh sách 0,10,…,100 gồm floor(100/10)+1=11 frame. Giữ batch thiếu: ceil(11/4)=3 batch, vẫn chỉ 11 frame thật. Drop_last: floor(11/4)=2 batch, xử lý 2×4=8 và bỏ 3 frame; không tự đệm thành 12 frame.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d09",
+          "sha256": "b15b6124d171a1174ac98580a2a2515eaaf09840a528dcd85fd37a6d090d4a15",
+          "pdf_page": 24,
+          "title": "Data và annotation pipeline cho Computer Vision và Robotics",
+          "locator": "Physical PDF page 24",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d09",
+          "sha256": "b15b6124d171a1174ac98580a2a2515eaaf09840a528dcd85fd37a6d090d4a15",
+          "pdf_page": 54,
+          "title": "Data và annotation pipeline cho Computer Vision và Robotics",
+          "locator": "Physical PDF page 54",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Giữ: 3 batch,11 frame; bỏ: 2 batch,8 frame"
+        },
+        {
+          "id": "b",
+          "text": "Giữ: 3 batch,12 frame; bỏ: 2 batch,8 frame"
+        },
+        {
+          "id": "c",
+          "text": "Giữ: 2 batch,8 frame; bỏ: 2 batch,8 frame"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true,
+      "formula_reference": {
+        "title": "Frame sampling, batch và công gán nhãn",
+        "formula": "N_frames=FPS×seconds; N_selected=floor((N_frames−1)/step)+1; batches_keep=ceil(N_selected/B); batches_drop=floor(N_selected/B); time=Σ(count_i×time_i); saving=100×(time_old−time_new)/time_old",
+        "symbols": "step: bước chỉ số; B: batch size; count_i: số nhãn thực sự audit/review/vẽ lại; time_i: thời gian một thao tác.",
+        "conditions": "Video FPS cố định và N_frames nguyên đã biết, bắt đầu index0, không vượt N_frames−1. Nếu count audit theo tỷ lệ cần nêu làm tròn. Thời gian cộng theo giả định không overhead/song song.",
+        "example": "101 frame,step10 →11 chọn; B4 giữ3 batch hoặc drop2 batch. 100 nhãn×30s so với 1.500s mới →tiết kiệm50%.",
+        "common_mistakes": "Nhầm số khoảng với số frame; tính frame đệm là dữ liệu thật; áp FPS cố định cho video VFR; quên chỉ audit một phần nhãn confidence cao."
+      }
+    },
+    {
+      "id": "p2-t4-d10-priority-d-box-scale-mismatch",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d10",
+      "topic": "p2-t4-d10",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một box xyxy thực tế đã ở đơn vị pixel: (100,50,300,150) trên ảnh 2000×1000. Parser hiểu nhầm là thang 0–1000 và áp x_px=x_norm×W/1000,y_px=y_norm×H/1000. Diện tích sau parse sai gấp mấy lần diện tích đúng?",
+      "correct_answer": "a",
+      "explanation": "Box đúng rộng 200,cao100 nên diện tích20.000 pixel². Parser sai nhân x với2000/1000=2,y với1000/1000=1: rộng400,cao100,diện tích40.000. Tỷ số2. Parser phải dựa đúng schema tọa độ của model, không đoán mọi box đều chuẩn hóa.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d10",
+          "sha256": "763149a983add6ef60fee2fafb6f2caec98576b6afb2e1eca01f5c532cf78e2e",
+          "pdf_page": 14,
+          "title": "Vision–Language Model và VLA",
+          "locator": "Physical PDF page 14",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d10",
+          "sha256": "763149a983add6ef60fee2fafb6f2caec98576b6afb2e1eca01f5c532cf78e2e",
+          "pdf_page": 16,
+          "title": "Vision–Language Model và VLA",
+          "locator": "Physical PDF page 16",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "2 lần"
+        },
+        {
+          "id": "b",
+          "text": "4 lần"
+        },
+        {
+          "id": "c",
+          "text": "1 lần"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true,
+      "formula_reference": {
+        "title": "Box chuẩn hóa và bộ nhớ weights MoE",
+        "formula": "x_pixel=x_norm×W/S; y_pixel=y_norm×H/S; area=(x2−x1)×(y2−y1); weight_bytes=N_total_parameters×bytes_per_weight; bytes_per_GPU=weight_bytes/number_of_shards",
+        "symbols": "S: thang chuẩn hóa, ví dụ1000; N_total_parameters: tổng weights resident; active_parameters: phần tham số được dùng cho token.",
+        "conditions": "Box xyxy liên tục, không +1; không scale lại tọa độ đã ở pixel. Bộ nhớ weights giả định shard đều,bỏ activations/KV cache/overhead; MoE compute theo active nhưng resident weights theo tổng nếu nạp toàn bộ.",
+        "example": "Ảnh2000×1000 mà scale nhầm box pixel theo S1000 →diện tích nhân2. MoE24 tỉ weights×2byte=48GB, shard4→12GB/GPU.",
+        "common_mistakes": "Tráo W/H; dùng thang0–1 cho box0–1000; chỉ đếm active weights khi tất cả experts phải resident; coi weights là toàn bộ VRAM."
+      }
+    }
+  ]
+}

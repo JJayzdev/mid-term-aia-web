@@ -1,0 +1,198 @@
+{
+  "batch_file": "data/questions/drafts/priority-d-geometry.json",
+  "reviewer_id": "priority-independent-review",
+  "reviewed_at": "2026-10-28T14:10:21.219141+00:00",
+  "results": [
+    {
+      "id": "p2-t4-d04-priority-d-video-budget",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d04",
+          "pdf_page": 8
+        },
+        {
+          "document_id": "p2-t4-d04",
+          "pdf_page": 16
+        },
+        {
+          "document_id": "p2-t4-d04",
+          "pdf_page": 24
+        }
+      ],
+      "notes": [
+        "Recomputed921600bytes/frame*1500frames=1382400000bytes→minimum raw/saved1.3824. Correct distinction requirements vs achieved codec quality. Sensorcard bitdepth includes channels, /8byte, SI GB, saturationratio, timestampconstantvelocity verified from p8/16/24 and elementary unit arithmetic.",
+        "Original12unique citedpages visually reviewed; formula_reference and examples included. Independent arithmetic evidence:tmp/priority-review/d-geometry-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d06-priority-d-voxel-resolution",
+      "revision": 1,
+      "decision": "rejected",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d06",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "8×memory correct only with divisible/aligned grid dimensions or specifiedno partialcellrounding. Assumption in post-answer formula card must also appear in question stem for standalone answer. Source p9dense/sparse and dimensional arithmetic otherwise correct.",
+        "Original12unique citedpages visually reviewed; formula_reference and examples included. Independent arithmetic evidence:tmp/priority-review/d-geometry-arithmetic.json."
+      ],
+      "findings": [
+        {
+          "severity": "minor",
+          "finding": "8×memory correct only with divisible/aligned grid dimensions or specifiedno partialcellrounding. Assumption in post-answer formula card must also appear in question stem for standalone answer. Source p9dense/sparse and dimensional arithmetic otherwise correct.",
+          "action": "Clarify assumption/policy, increment revision; reviewer retest."
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d08-priority-d-backproject-depth",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d08",
+          "pdf_page": 9
+        },
+        {
+          "document_id": "p2-t4-d06",
+          "pdf_page": 16
+        }
+      ],
+      "notes": [
+        "Backprojection(2,0,10),range sqrt104=10.198039→10.198. Distinct depth-vs-Euclideanrange objective; fullcard extrinsic/projection inverse verified in d06p16/d08p9. Camera frame, positiveZ, distortion/time caveats correct.",
+        "Original12unique citedpages visually reviewed; formula_reference and examples included. Independent arithmetic evidence:tmp/priority-review/d-geometry-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d08-priority-d-nds-saturation",
+      "revision": 1,
+      "decision": "rejected",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d08",
+          "pdf_page": 7
+        },
+        {
+          "document_id": "p2-t4-d08",
+          "pdf_page": 12
+        }
+      ],
+      "notes": [
+        "NDS0 then.02 math correct, sourcep12verified. Groundplane lookupcard Z=f*h/delta_v needs level optical axis parallelroad (or rectified to this idealmodel), not merely knownhorizon; p7assumesthis and warns slope/pitch. Add this condition before release.",
+        "Original12unique citedpages visually reviewed; formula_reference and examples included. Independent arithmetic evidence:tmp/priority-review/d-geometry-arithmetic.json."
+      ],
+      "findings": [
+        {
+          "severity": "minor",
+          "finding": "NDS0 then.02 math correct, sourcep12verified. Groundplane lookupcard Z=f*h/delta_v needs level optical axis parallelroad (or rectified to this idealmodel), not merely knownhorizon; p7assumesthis and warns slope/pitch. Add this condition before release.",
+          "action": "Clarify assumption/policy, increment revision; reviewer retest."
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d09-priority-d-batch-drop",
+      "revision": 1,
+      "decision": "rejected",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d09",
+          "pdf_page": 24
+        },
+        {
+          "document_id": "p2-t4-d09",
+          "pdf_page": 54
+        }
+      ],
+      "notes": [
+        "11selected,keep3/11processed,drop2/8processed correct. Define drop_last=true directly as discarding incomplete finalbatch in stem; citedp24coverssampling notAPIterm. Self-contained statedpolicy permits arithmetic withoutunsupported APIassumption.",
+        "Original12unique citedpages visually reviewed; formula_reference and examples included. Independent arithmetic evidence:tmp/priority-review/d-geometry-arithmetic.json."
+      ],
+      "findings": [
+        {
+          "severity": "minor",
+          "finding": "11selected,keep3/11processed,drop2/8processed correct. Define drop_last=true directly as discarding incomplete finalbatch in stem; citedp24coverssampling notAPIterm. Self-contained statedpolicy permits arithmetic withoutunsupported APIassumption.",
+          "action": "Clarify assumption/policy, increment revision; reviewer retest."
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d10-priority-d-box-scale-mismatch",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d10",
+          "pdf_page": 14
+        },
+        {
+          "document_id": "p2-t4-d10",
+          "pdf_page": 16
+        }
+      ],
+      "notes": [
+        "Correctactualarea20000,schemaerrorarea40000,ratio2. Originalp14normalizationcode/p16totalvsactiveMoE read visually. Card24billion*2bytes=48decimalGB,shard4=12GB; exclusionsandresidentall-expertsassumption explicit. Newparsermisinterpretation analysis distinct from oldforwardconversionexercise.",
+        "Original12unique citedpages visually reviewed; formula_reference and examples included. Independent arithmetic evidence:tmp/priority-review/d-geometry-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d06-priority-d-voxel-resolution",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d06",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "r2 retest: stem now explicitly states divisible initial grid dimensions/no partialboundarycells, resolving rounding ambiguity. Each x/y count doubles and channelcount doubles→8×densememory; card conditions consistent."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d08-priority-d-nds-saturation",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d08",
+          "pdf_page": 7
+        },
+        {
+          "document_id": "p2-t4-d08",
+          "pdf_page": 12
+        }
+      ],
+      "notes": [
+        "r2 retest: groundplane card explicitly requires camera optical axis parallel flatroad or rectification to that model. Formula Z=fh/delta_v valid under this condition; NDS clamp arithmetic unchanged0/.02."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d09-priority-d-batch-drop",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d09",
+          "pdf_page": 24
+        },
+        {
+          "document_id": "p2-t4-d09",
+          "pdf_page": 54
+        }
+      ],
+      "notes": [
+        "r2 retest: stem now defines dropping incompletefinalbatch explicitly. Sampling11frames→keep3batches/11frames or drop2batches/8frames follows statedpolicy; no unexplained API assumption."
+      ],
+      "findings": []
+    }
+  ]
+}

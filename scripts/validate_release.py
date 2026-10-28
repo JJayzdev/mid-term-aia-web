@@ -80,12 +80,20 @@ def validate(bank_path, catalog_path, verify_sources=False, min_per_document=0, 
             referenced_pages = {(s['document_id'], s['pdf_page']) for s in q['source_reference']}
             if not referenced_pages <= reviewed_pages:
                 fail('approval does not cover all referenced source pages')
+            supplemental_urls = {source['url'] for source in q.get('supplemental_sources', [])}
+            if not supplemental_urls <= set(decision.get('supplemental_urls', [])):
+                fail('approval does not cover all supplemental source URLs')
         latest = latest_decisions.get((qid, q['revision']))
         if latest and (latest[1]['decision'] != 'approved' or latest[3] != review.get('report_id')):
             fail('release does not use the latest exact-revision approval')
         topic = topics.get(q['topic'])
         if not topic or any(q[k] != topic[k] for k in ('phase', 'track', 'day')):
             fail('unknown topic or taxonomy differs from catalog')
+        if topic and not any(source['document_id'] in topic['document_ids'] for source in q['source_reference']):
+            fail('no source from assigned topic (curricular anchor)')
+        supplemental_urls = [source['url'] for source in q.get('supplemental_sources', [])]
+        if len(set(supplemental_urls)) != len(supplemental_urls):
+            fail('duplicate supplemental source URL')
         options = [o['id'] for o in q.get('options', [])]
         if len(options) != len(set(options)):
             fail('duplicate option IDs')
@@ -94,6 +102,21 @@ def validate(bank_path, catalog_path, verify_sources=False, min_per_document=0, 
         if q['answer_format'] == 'multiple_choice':
             if not set(q['correct_answer']) < set(options):
                 fail('multiple-choice answer must be proper subset of options')
+        if q['answer_format'] == 'matching':
+            left = [item['id'] for item in q['matching_items']]
+            mapping = q['correct_answer']
+            if len(left) != len(set(left)) or set(mapping) != set(left):
+                fail('matching answer must cover unique left IDs exactly')
+            if not set(mapping.values()) <= set(options):
+                fail('matching answer references unknown right IDs')
+            if not q.get('matching_reuse', False) and (len(left) != len(options) or len(set(mapping.values())) != len(mapping)):
+                fail('one-to-one matching must use each right ID once')
+        if q['answer_format'] == 'ordering':
+            orders = [q['correct_answer']] + q.get('accepted_orders', [])
+            if any(len(order) != len(options) or set(order) != set(options) for order in orders):
+                fail('ordering answers must be complete permutations of step IDs')
+            if len({tuple(order) for order in orders}) != len(orders):
+                fail('duplicate accepted ordering')
         if q['answer_format'] == 'rubric':
             if sum(Decimal(str(c['weight'])) for c in q['rubric']) != 1:
                 fail('rubric weights must sum exactly to 1')
@@ -110,7 +133,8 @@ def validate(bank_path, catalog_path, verify_sources=False, min_per_document=0, 
                 fail('unverified source')
         per_doc.update({s['document_id'] for s in q['source_reference'] if s['document_id'] in docs})
         kind = 'rubric' if q['answer_format'] == 'rubric' else 'objective'
-        counts[(q['phase'], q['track'], kind)] += 1
+        if q['answer_format'] not in {'matching', 'ordering'}:
+            counts[(q['phase'], q['track'], kind)] += 1
     required = {(1, None, 'objective'): 34, (1, None, 'rubric'): 2}
     for track in (1, 2, 3, 4):
         required[(2, track, 'objective')] = 5
@@ -118,7 +142,7 @@ def validate(bank_path, catalog_path, verify_sources=False, min_per_document=0, 
     for bucket, count in required.items():
         if counts[bucket] < count:
             errors.append('Insufficient bucket %s: need %s, have %s' % (bucket, count, counts[bucket]))
-    calculation_count = sum(q.get('calculation') is True and q['phase'] == 2 and q['track'] == 4 and q['answer_format'] != 'rubric' for q in bank['questions'])
+    calculation_count = sum(q.get('calculation') is True and q['phase'] == 2 and q['track'] == 4 and q['answer_format'] in {'single_choice', 'multiple_choice', 'boolean'} for q in bank['questions'])
     if calculation_count < 2:
         errors.append('Insufficient Track 4 calculation questions: need 2, have %s' % calculation_count)
     underfilled = {doc_id: per_doc[doc_id] for doc_id in docs if per_doc[doc_id] < min_per_document}

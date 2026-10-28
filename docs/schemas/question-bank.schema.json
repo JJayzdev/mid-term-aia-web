@@ -225,7 +225,9 @@
             "multiple_choice",
             "true_false",
             "short_answer",
-            "scenario"
+            "scenario",
+            "matching",
+            "ordering"
           ]
         },
         "answer_format": {
@@ -233,7 +235,9 @@
             "single_choice",
             "multiple_choice",
             "boolean",
-            "rubric"
+            "rubric",
+            "matching",
+            "ordering"
           ]
         },
         "difficulty": {
@@ -306,6 +310,87 @@
         "calculation": {
           "type": "boolean",
           "description": "Quantitative application with numerical work; optional for older questions."
+        },
+        "matching_items": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "$ref": "#/$defs/matching_item"
+          }
+        },
+        "matching_reuse": {
+          "type": "boolean",
+          "default": false
+        },
+        "accepted_orders": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "array",
+            "minItems": 2,
+            "uniqueItems": true,
+            "items": {
+              "$ref": "#/$defs/identifier"
+            }
+          }
+        },
+        "focus_topics": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "react",
+              "generation",
+              "kalman",
+              "sensors",
+              "closed-loop",
+              "activations",
+              "normalization"
+            ]
+          }
+        },
+        "formula_reference": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "title",
+            "formula",
+            "symbols",
+            "conditions",
+            "example",
+            "common_mistakes"
+          ],
+          "properties": {
+            "title": {
+              "$ref": "#/$defs/nonempty"
+            },
+            "formula": {
+              "$ref": "#/$defs/nonempty"
+            },
+            "symbols": {
+              "$ref": "#/$defs/nonempty"
+            },
+            "conditions": {
+              "$ref": "#/$defs/nonempty"
+            },
+            "example": {
+              "$ref": "#/$defs/nonempty"
+            },
+            "common_mistakes": {
+              "$ref": "#/$defs/nonempty"
+            }
+          }
+        },
+        "supplemental_sources": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 10,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/supplemental_source"
+          }
         }
       },
       "allOf": [
@@ -584,8 +669,208 @@
               }
             }
           }
+        },
+        {
+          "if": {
+            "properties": {
+              "question_type": {
+                "const": "matching"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "answer_format": {
+                "const": "matching"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "answer_format": {
+                "const": "matching"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "options",
+              "shuffle_options",
+              "matching_items"
+            ],
+            "properties": {
+              "question_type": {
+                "const": "matching"
+              },
+              "shuffle_options": {
+                "const": true
+              },
+              "correct_answer": {
+                "type": "object",
+                "minProperties": 2,
+                "propertyNames": {
+                  "$ref": "#/$defs/identifier"
+                },
+                "additionalProperties": {
+                  "$ref": "#/$defs/identifier"
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "question_type": {
+                "const": "ordering"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "answer_format": {
+                "const": "ordering"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "answer_format": {
+                "const": "ordering"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "options",
+              "shuffle_options"
+            ],
+            "properties": {
+              "question_type": {
+                "const": "ordering"
+              },
+              "shuffle_options": {
+                "const": true
+              },
+              "correct_answer": {
+                "type": "array",
+                "minItems": 2,
+                "uniqueItems": true,
+                "items": {
+                  "$ref": "#/$defs/identifier"
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "answer_format": {
+                "not": {
+                  "const": "matching"
+                }
+              }
+            }
+          },
+          "then": {
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "matching_items"
+                  ]
+                },
+                {
+                  "required": [
+                    "matching_reuse"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "answer_format": {
+                "not": {
+                  "const": "ordering"
+                }
+              }
+            }
+          },
+          "then": {
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "accepted_orders"
+                  ]
+                }
+              ]
+            }
+          }
         }
       ]
+    },
+    "matching_item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "text"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "text": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "explanation": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "graph": {
+          "type": "string",
+          "enum": [
+            "sigmoid",
+            "tanh",
+            "relu"
+          ]
+        }
+      }
+    },
+    "supplemental_source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "url",
+        "accessed_at",
+        "note"
+      ],
+      "properties": {
+        "title": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://[^\\s/?#]+(?:[/?#]|$)"
+        },
+        "accessed_at": {
+          "type": "string",
+          "format": "date"
+        },
+        "note": {
+          "$ref": "#/$defs/nonempty"
+        }
+      }
     }
   }
 }

@@ -1,65 +1,135 @@
 {
   "note": "Lexical screening only. Reviewer must determine whether learning objectives are unnecessarily duplicated; absence does not prove semantic uniqueness.",
-  "questions_checked": 1284,
+  "questions_checked": 1373,
   "candidates": [
     {
-      "similarity": 0.79,
+      "similarity": 0.833,
+      "first": "p2-t4-d01-priority-activation-sigmoid-value",
+      "second": "p2-t4-d01-priority-activation-tanh-value",
+      "first_stem": "Với x=(−1;0;1), áp sigmoid độc lập từng phần tử. Vector nào đúng? Làm tròn 3 chữ số thập phân.",
+      "second_stem": "Với x=(−1;0;1), áp tanh từng phần tử. Vector nào đúng? Làm tròn 3 chữ số thập phân."
+    },
+    {
+      "similarity": 0.815,
+      "first": "p2-t4-d01-priority-norm-bn-value",
+      "second": "p2-t4-d01-priority-norm-ln-value",
+      "first_stem": "X=[[1,3],[5,7]] có hai mẫu (hàng), hai đặc trưng (cột). BatchNorm theo từng cột; gamma=1,beta=0,epsilon=0; variance chia số phần tử n. Output là gì?",
+      "second_stem": "X=[[1,3],[5,7]] có hai mẫu. LayerNorm riêng từng hàng trên hai đặc trưng; gamma=1,beta=0,epsilon=0; variance chia n. Output là gì?"
+    },
+    {
+      "similarity": 0.788,
       "first": "p2-t4-d09-x11",
       "second": "p2-t2-d12-x14",
       "first_stem": "Lineage cho model cần trả lời câu hỏi nào?",
       "second_stem": "Column lineage trả lời câu hỏi nào?"
     },
     {
-      "similarity": 0.718,
+      "similarity": 0.765,
+      "first": "p1-d01-priority-generation-topk",
+      "second": "p1-d01-priority-generation-topp",
+      "first_stem": "Phân phối token A=0,40; B=0,30; C=0,15; D=0,10; E=0,05. Chỉ áp top-k=2, rồi chuẩn hóa lại. Xác suất mới của A và B là gì? Làm tròn 3 chữ số thập phân.",
+      "second_stem": "Phân phối A=0,40; B=0,30; C=0,15; D=0,10; E=0,05. Chỉ áp top-p=0,80 theo tập đầu nhỏ nhất có tổng đạt ít nhất p. Tập giữ và xác suất mới của C là gì? Làm tròn 3 chữ số thập phân."
+    },
+    {
+      "similarity": 0.717,
       "first": "p1-d13-x03",
       "second": "p2-t2-d05-q03",
       "first_stem": "TTFT đo khoảng thời gian nào?",
       "second_stem": "TTFT và TPOT đo cùng một khoảng thời gian nên chỉ cần báo cáo một trong hai."
     },
     {
-      "similarity": 0.695,
+      "similarity": 0.713,
+      "first": "p2-t4-d12-c02",
+      "second": "p2-t4-d12-priority-clip-inverse",
+      "first_stem": "Một controller dự đoán độ đổi vận tốc tại 0,5 s là y5=−5,5 m/s. Quy tắc điều khiển là a_raw=y5/0,5 s, rồi clip a_raw vào [−9;+3] m/s². Bộ (a_raw,a_command) là gì?",
+      "second_stem": "Bộ điều khiển dùng a_raw=y5/0,5 s rồi clip vào [−9;+3] m/s². Log chỉ lưu a_command=+3 m/s². Có thể suy ra điều gì về dự đoán y5 trước clipping?"
+    },
+    {
+      "similarity": 0.682,
       "first": "p1-d13-x03",
       "second": "p2-t2-d08-x03",
       "first_stem": "TTFT đo khoảng thời gian nào?",
       "second_stem": "RTO đo khoảng thời gian nào?"
     },
     {
-      "similarity": 0.633,
+      "similarity": 0.638,
       "first": "p2-t1-d07-q02",
       "second": "p2-t1-d07-q03",
       "first_stem": "Một mô hình định giá hybrid có thể gồm phí gói cơ bản và khoản trả thêm khi vượt mức sử dụng cho phép.",
       "second_stem": "Định giá hybrid kết hợp phí gói và phí vượt mức sử dụng nhằm những mục tiêu nào? (Chọn tất cả đáp án đúng.)"
     },
     {
-      "similarity": 0.626,
+      "similarity": 0.63,
       "first": "p2-t2-d05-x11",
       "second": "p2-t2-d11-x03",
       "first_stem": "Tách prefill/decode thành hai pool đặc biệt đáng cân nhắc cho workload nào?",
       "second_stem": "Vì sao tách pool prefill/decode có thể giảm chi phí cho workload phù hợp?"
     },
     {
-      "similarity": 0.587,
-      "first": "p2-t1-d06-x02",
-      "second": "p2-t2-d08-x03",
-      "first_stem": "Time to Value đo khoảng thời gian nào?",
-      "second_stem": "RTO đo khoảng thời gian nào?"
+      "similarity": 0.605,
+      "first": "p2-t4-d06-c02",
+      "second": "p2-t4-d08-priority-d-backproject-depth",
+      "first_stem": "Điểm LiDAR (1,2,8) m được đưa sang camera bằng x_cam=R×x_lidar+t, với R là identity và t=(1,−1,2) m. Camera pinhole không distortion có fx=400, fy=500, cx=320, cy=240 pixel; u=fx×X/Z+cx, v=fy×Y/Z+cy. Pixel (u,v) là gì?",
+      "second_stem": "Camera pinhole không distortion có fx=fy=400,cx=320,cy=240 pixel. Pixel (u,v)=(400,240), depth dọc trục camera Z=10 m. Điểm 3D (X,Y,Z) và khoảng cách Euclid từ tâm camera là gì? Làm tròn khoảng cách 3 chữ số thập phân."
     },
     {
-      "similarity": 0.587,
-      "first": "p1-d13-x03",
-      "second": "p2-t1-d06-x02",
-      "first_stem": "TTFT đo khoảng thời gian nào?",
-      "second_stem": "Time to Value đo khoảng thời gian nào?"
+      "similarity": 0.59,
+      "first": "p1-d01-priority-generation-topp",
+      "second": "p1-d01-priority-generation-boundary",
+      "first_stem": "Phân phối A=0,40; B=0,30; C=0,15; D=0,10; E=0,05. Chỉ áp top-p=0,80 theo tập đầu nhỏ nhất có tổng đạt ít nhất p. Tập giữ và xác suất mới của C là gì? Làm tròn 3 chữ số thập phân.",
+      "second_stem": "Phân phối A=0,50; B=0,30; C=0,20. Với top-p=0,80, tập đầu nhỏ nhất được giữ là gì?"
     },
     {
-      "similarity": 0.58,
+      "similarity": 0.588,
+      "first": "p2-t4-d05-c01",
+      "second": "p2-t4-d05-priority-kalman-innovation",
+      "first_stem": "Kalman update vô hướng có prediction x_pred=20 m, variance P=9 m², measurement z=26 m và variance R=3 m². Dùng K=P/(P+R), x_new=x_pred+K(z−x_pred). Bộ (K,x_new) là gì?",
+      "second_stem": "Prediction x_pred=20 m, P_pred=9 m²; phép đo z=26 m có R=3 m². Sau update, bộ (innovation,P_new,sigma_new) là gì?"
+    },
+    {
+      "similarity": 0.575,
       "first": "p1-d08-q01",
       "second": "p1-d08-q03",
       "first_stem": "Trường hợp nào có lý do rõ ràng để dùng RAG?",
       "second_stem": "Những trường hợp nào chưa cần dùng RAG? (Chọn tất cả đáp án đúng.)"
     },
     {
-      "similarity": 0.551,
+      "similarity": 0.572,
+      "first": "p1-d13-x03",
+      "second": "p2-t1-d06-x02",
+      "first_stem": "TTFT đo khoảng thời gian nào?",
+      "second_stem": "Time to Value đo khoảng thời gian nào?"
+    },
+    {
+      "similarity": 0.572,
+      "first": "p2-t1-d06-x02",
+      "second": "p2-t2-d08-x03",
+      "first_stem": "Time to Value đo khoảng thời gian nào?",
+      "second_stem": "RTO đo khoảng thời gian nào?"
+    },
+    {
+      "similarity": 0.561,
+      "first": "p2-t4-d01-priority-norm-ln-value",
+      "second": "p2-t4-d01-priority-norm-epsilon",
+      "first_stem": "X=[[1,3],[5,7]] có hai mẫu. LayerNorm riêng từng hàng trên hai đặc trưng; gamma=1,beta=0,epsilon=0; variance chia n. Output là gì?",
+      "second_stem": "Một nhóm chuẩn hóa có x=(2;2), gamma=1,beta=0,epsilon=0,01; variance chia n. Output là gì?"
+    },
+    {
+      "similarity": 0.556,
+      "first": "p1-d03-q01",
+      "second": "p1-d03-q03",
+      "first_stem": "Trong Agentic Fit, tiêu chí nào hỏi bước tiếp theo có phụ thuộc kết quả vừa quan sát không?",
+      "second_stem": "Những tiêu chí nào thuộc bộ bốn Agentic Fit? (Chọn tất cả đáp án đúng.)"
+    },
+    {
+      "similarity": 0.555,
+      "first": "p2-t4-d01-priority-activation-softmax-value",
+      "second": "p1-d01-priority-generation-softmax-temperature",
+      "first_stem": "Một mẫu có logits z=(−1;0;1). Tính softmax trên ba lớp. Vector nào đúng? Làm tròn 3 chữ số thập phân.",
+      "second_stem": "Logits z=(0;ln3), nhiệt độ T=2>0. Dùng softmax(z/T). Xác suất lớp thứ hai bằng bao nhiêu? Làm tròn 3 chữ số thập phân."
+    },
+    {
+      "similarity": 0.553,
       "first": "p2-t1-d06-x11",
       "second": "p2-t1-d09-x03",
       "first_stem": "Định nghĩa active user nên xuất phát từ đâu?",

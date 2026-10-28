@@ -1,0 +1,361 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.28-priority-d-metrics",
+  "questions": [
+    {
+      "id": "p2-t4-d03-priority-d-giou-disjoint",
+      "revision": 3,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d03",
+      "topic": "p2-t4-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Hai box xyxy A=(0,0,2,2), B=(3,0,5,2), tọa độ liên tục không cộng 1. C là box nhỏ nhất bao cả hai. Với GIoU=IoU−(|C|−|A∪B|)/|C|, GIoU bằng bao nhiêu?",
+      "correct_answer": "a",
+      "explanation": "Hai box không giao: intersection=0. Mỗi box diện tích 4 nên union=8. C rộng 5,cao 2 nên diện tích 10. IoU=0/8=0; GIoU=0−(10−8)/10=−0,2. GIoU có thể âm, không phải xác suất.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d03",
+          "sha256": "bbc8de22523a77f295328ce15328e0d811a078152b75e9d6cedd159dc45e739e",
+          "pdf_page": 13,
+          "title": "2D Perception: Detection · Segmentation · Keypoints",
+          "locator": "Physical PDF page 13",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d03",
+          "sha256": "bbc8de22523a77f295328ce15328e0d811a078152b75e9d6cedd159dc45e739e",
+          "pdf_page": 14,
+          "title": "2D Perception: Detection · Segmentation · Keypoints",
+          "locator": "Physical PDF page 14",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d03",
+          "sha256": "bbc8de22523a77f295328ce15328e0d811a078152b75e9d6cedd159dc45e739e",
+          "pdf_page": 45,
+          "title": "2D Perception: Detection · Segmentation · Keypoints",
+          "locator": "Physical PDF page 45",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d03",
+          "sha256": "bbc8de22523a77f295328ce15328e0d811a078152b75e9d6cedd159dc45e739e",
+          "pdf_page": 42,
+          "title": "2D Perception: Detection · Segmentation · Keypoints",
+          "locator": "Physical PDF page 42",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "−0,2"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "0,2"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true,
+      "formula_reference": {
+        "title": "Box overlap, Precision/Recall/F1 và letterbox",
+        "formula": "IoU=intersection/union; GIoU=IoU−(area_C−union)/area_C; P=TP/(TP+FP); R=TP/(TP+FN); F1=2×P×R/(P+R); x_original=(x_letterbox−pad_x)/scale; y_original=(y_letterbox−pad_y)/scale",
+        "symbols": "C: box bao nhỏ nhất; TP/FP/FN: đếm theo giao thức matching; pad_x,pad_y: padding trái/trên.",
+        "conditions": "Box xyxy liên tục: diện tích=(x2−x1)×(y2−y1), không +1. Mẫu số phải khác 0; nêu quy ước metric nếu tập rỗng. Letterbox có cùng scale hai chiều.",
+        "example": "A=(0,0,2,2),B=(3,0,5,2): union=8,C=10 → GIoU=−0,2.",
+        "common_mistakes": "Ép GIoU về [0,1]; chia scale trước khi trừ padding; dùng ngưỡng confidence khác nhau rồi so P/R như cùng giao thức."
+      },
+      "supplemental_sources": [
+        {
+          "title": "scikit-learn f1_score",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html",
+          "accessed_at": "2026-10-28",
+          "note": "Bổ sung ngoài slide: định nghĩa F1 là trung bình điều hòa Precision và Recall, F1=2PR/(P+R)."
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d03-priority-d-ap-unreached",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d03",
+      "topic": "p2-t4-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Precision envelope bằng 0,8 tại mọi mức recall từ 0 đến 0,50; recall lớn hơn 0,50 không đạt được nên precision bằng 0. AP dùng đúng 101 điểm 0;0,01;…;1. AP là bao nhiêu, làm tròn 4 chữ số thập phân?",
+      "correct_answer": "a",
+      "explanation": "Các điểm 0;0,01;…;0,50 gồm 51 điểm, không phải 50. Tổng precision=51×0,8=40,8. Chia đủ 101 mức cho AP=40,8/101≈0,4040. Không chỉ lấy trung bình các mức recall đã đạt.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d03",
+          "sha256": "bbc8de22523a77f295328ce15328e0d811a078152b75e9d6cedd159dc45e739e",
+          "pdf_page": 43,
+          "title": "2D Perception: Detection · Segmentation · Keypoints",
+          "locator": "Physical PDF page 43",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d03",
+          "sha256": "bbc8de22523a77f295328ce15328e0d811a078152b75e9d6cedd159dc45e739e",
+          "pdf_page": 44,
+          "title": "2D Perception: Detection · Segmentation · Keypoints",
+          "locator": "Physical PDF page 44",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "0,4040"
+        },
+        {
+          "id": "b",
+          "text": "0,8000"
+        },
+        {
+          "id": "c",
+          "text": "0,4000"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true,
+      "formula_reference": {
+        "title": "AP nội suy 101 điểm và mAP",
+        "formula": "p_interp(r)=max precision(r′) với r′≥r; AP=(1/101)×Σ p_interp(r), r∈{0;0,01;…;1}; mAP=trung bình AP theo class và các ngưỡng đã quy định",
+        "symbols": "r: recall; precision envelope lấy giá trị lớn nhất ở bên phải; class/ngưỡng là các trục lấy trung bình.",
+        "conditions": "Đây là quy ước 101 mức; recall không đạt cho precision 0. COCO box AP trung bình các ngưỡng IoU 0,50:0,05:0,95; không tráo với tích phân PR hoặc AP50.",
+        "example": "Envelope 0,8 đến recall0,50 và 0 sau đó → AP=51×0,8/101≈0,4040.",
+        "common_mistakes": "Nhầm 101 điểm với 100 khoảng; chỉ tính vùng recall đạt được; gọi một ngưỡng IoU là AP@[.5:.95]."
+      }
+    },
+    {
+      "id": "p2-t4-d03-priority-d-seg-aggregate",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d03",
+      "topic": "p2-t4-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Một lớp foreground có (TP,FP,FN) ở ảnh A=(1,0,0), ảnh B=(9,10,0). IoU dataset được tính sau khi cộng các đếm; khác trung bình IoU từng ảnh. IoU dataset và trung bình từng ảnh là bao nhiêu, làm tròn 4 chữ số thập phân?",
+      "correct_answer": "a",
+      "explanation": "Cộng đếm: TP=10,FP=10,FN=0 → IoU dataset=10/20=0,5. IoU ảnh A=1, ảnh B=9/19≈0,4737; trung bình=(1+9/19)/2≈0,7368. Ảnh nhỏ được trọng số ngang ảnh lớn trong cách trung bình từng ảnh.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d03",
+          "sha256": "bbc8de22523a77f295328ce15328e0d811a078152b75e9d6cedd159dc45e739e",
+          "pdf_page": 54,
+          "title": "2D Perception: Detection · Segmentation · Keypoints",
+          "locator": "Physical PDF page 54",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "0,5000 và 0,7368"
+        },
+        {
+          "id": "b",
+          "text": "0,7368 và 0,5000"
+        },
+        {
+          "id": "c",
+          "text": "0,5000 và 0,5000"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true,
+      "formula_reference": {
+        "title": "Dice và mIoU segmentation",
+        "formula": "IoU_c=TP_c/(TP_c+FP_c+FN_c); mIoU=(1/C)×Σ IoU_c; Dice=2×TP/(2×TP+FP+FN); Dice_loss=1−Dice",
+        "symbols": "C: số lớp được chấm; TP,FP,FN cộng trên toàn dataset theo từng lớp.",
+        "conditions": "Mask nhị phân rời rạc, không smoothing trong công thức này. Quy định cách xử lý lớp vắng/tập rỗng; không thay dataset IoU bằng trung bình IoU từng ảnh.",
+        "example": "TP=10,FP=10,FN=0 → IoU=0,5; Dice=20/30≈0,6667.",
+        "common_mistakes": "Nhầm Dice với IoU; dùng pixel accuracy thay mIoU; trộn macro-average theo lớp với average theo ảnh."
+      }
+    },
+    {
+      "id": "p2-t4-d03-priority-d-pose-boundary",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d03",
+      "topic": "p2-t4-d03",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Bốn keypoint đều được chấm có sai số pixel (2;5;6;10), kích thước tham chiếu h=10 pixel. PCK quy định đúng khi d/h<0,5 (bất đẳng thức nghiêm). PCK bằng bao nhiêu?",
+      "correct_answer": "a",
+      "explanation": "Ngưỡng pixel=0,5×10=5. Chỉ d=2 thỏa d<5; d=5 nằm trên biên nên không đúng theo quy ước đề. PCK=1/4=25%. Nếu dùng ≤ sẽ ra 50%, là giao thức khác.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d03",
+          "sha256": "bbc8de22523a77f295328ce15328e0d811a078152b75e9d6cedd159dc45e739e",
+          "pdf_page": 74,
+          "title": "2D Perception: Detection · Segmentation · Keypoints",
+          "locator": "Physical PDF page 74",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d03",
+          "sha256": "bbc8de22523a77f295328ce15328e0d811a078152b75e9d6cedd159dc45e739e",
+          "pdf_page": 75,
+          "title": "2D Perception: Detection · Segmentation · Keypoints",
+          "locator": "Physical PDF page 75",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "25%"
+        },
+        {
+          "id": "b",
+          "text": "50%"
+        },
+        {
+          "id": "c",
+          "text": "75%"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true,
+      "formula_reference": {
+        "title": "OKS và PCK cho keypoints",
+        "formula": "OKS=Σ[exp(−d_i²/(2×s²×k_i²))×I(v_i>0)]/ΣI(v_i>0); k_i=2×sigma_i; PCK=100×số điểm có d/h<alpha / số điểm được chấm",
+        "symbols": "d_i: sai số pixel; s²: diện tích object; k_i: tolerance từng keypoint; v_i: trạng thái được gán nhãn; h: chiều dài tham chiếu PCK.",
+        "conditions": "Chỉ chấm keypoint hợp lệ; mẫu số >0. PCK phải nêu h và dấu < hay ≤. OKS-AP còn bao gồm detection/matching, không bằng PCK.",
+        "example": "d=(2;5;6;10),h=10,alpha=0,5 và dấu < → PCK=25%. Một điểm d=0 hợp lệ có thành phần OKS=1.",
+        "common_mistakes": "Dùng diện tích s² như chiều dài s; nhầm k với sigma; tính điểm không được chấm vào mẫu số; đổi quy tắc biên."
+      }
+    },
+    {
+      "id": "p2-t4-d07-priority-d-tracking-gate",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d07",
+      "topic": "p2-t4-d07",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Innovation r=(3;2), covariance S=diag(9;1). Gating dùng d²=rᵀ×S⁻¹×r, chấp nhận d²≤4. Điểm này được ghép tiếp hay bị loại?",
+      "correct_answer": "a",
+      "explanation": "S⁻¹=diag(1/9;1). d²=3²/9+2²/1=1+4=5. Vì 5>4 nên cặp bị loại trước association. Đây là ngưỡng giả định của đề; không dùng khoảng cách Euclid bình phương=13.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d07",
+          "sha256": "e664d320f682ce0aacfe2649cb5dd07e6d85563dadaef5cf92039bc43b07ee26",
+          "pdf_page": 18,
+          "title": "Tracking",
+          "locator": "Physical PDF page 18",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d07",
+          "sha256": "e664d320f682ce0aacfe2649cb5dd07e6d85563dadaef5cf92039bc43b07ee26",
+          "pdf_page": 20,
+          "title": "Tracking",
+          "locator": "Physical PDF page 20",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d07",
+          "sha256": "e664d320f682ce0aacfe2649cb5dd07e6d85563dadaef5cf92039bc43b07ee26",
+          "pdf_page": 37,
+          "title": "Tracking",
+          "locator": "Physical PDF page 37",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d07",
+          "sha256": "e664d320f682ce0aacfe2649cb5dd07e6d85563dadaef5cf92039bc43b07ee26",
+          "pdf_page": 38,
+          "title": "Tracking",
+          "locator": "Physical PDF page 38",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d07",
+          "sha256": "e664d320f682ce0aacfe2649cb5dd07e6d85563dadaef5cf92039bc43b07ee26",
+          "pdf_page": 39,
+          "title": "Tracking",
+          "locator": "Physical PDF page 39",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "d²=5 nên bị loại"
+        },
+        {
+          "id": "b",
+          "text": "d²=13 nên được ghép tiếp"
+        },
+        {
+          "id": "c",
+          "text": "d²=1 nên được ghép tiếp"
+        }
+      ],
+      "shuffle_options": true,
+      "calculation": true,
+      "formula_reference": {
+        "title": "Assignment, Mahalanobis và metrics tracking",
+        "formula": "assignment: tối thiểu Σ cost(track,detection) với ràng buộc một–một; d²=rᵀ×S⁻¹×r; MOTA=1−(FN+FP+IDSW)/GT; IDF1=2×IDTP/(2×IDTP+IDFP+IDFN); HOTA_alpha=sqrt(DetA_alpha×AssA_alpha)",
+        "symbols": "S: covariance innovation; IDSW: đổi ID; IDTP/IDFP/IDFN: đếm sau identity matching toàn cục; alpha: ngưỡng localization.",
+        "conditions": "Gating threshold phải phù hợp số chiều và policy. HOTA toàn bộ là trung bình HOTA_alpha qua các ngưỡng quy định; AssA lấy từ giao thức matching, không tự suy từ số ID switch.",
+        "example": "r=(3;2),S=diag(9;1) → d²=5. DetA=0,8,AssA=0,45 → HOTA tại một ngưỡng=0,6.",
+        "common_mistakes": "Chọn greedy từng hàng thay assignment toàn cục; nhầm d với d²; ép MOTA không âm; lấy trung bình cộng DetA/AssA."
+      }
+    }
+  ]
+}

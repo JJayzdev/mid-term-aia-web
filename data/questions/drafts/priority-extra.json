@@ -1,0 +1,212 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.28-priority-extra",
+  "questions": [
+    {
+      "id": "p2-t4-d01-priority-activation-graphs",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d01",
+      "topic": "p2-t4-d01",
+      "taxonomy_status": "verified",
+      "question_type": "matching",
+      "answer_format": "matching",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Ghép một-một mỗi đồ thị với hàm kích hoạt tương ứng. Mô tả hình dạng cũng được cung cấp để đọc không cần hình.",
+      "correct_answer": {
+        "l1": "a",
+        "l2": "b",
+        "l3": "c"
+      },
+      "explanation": "Đồ thị I và II đều bão hòa nhưng khác miền đầu ra và giá trị tại gốc. Đồ thị III có góc gãy tại 0; đoạn dương không bão hòa.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 15,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 15",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Sigmoid"
+        },
+        {
+          "id": "b",
+          "text": "Tanh"
+        },
+        {
+          "id": "c",
+          "text": "ReLU"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "activations"
+      ],
+      "matching_items": [
+        {
+          "id": "l1",
+          "text": "Đồ thị I: đường cong chữ S, qua (0;0,5), tiệm cận 0 và 1",
+          "explanation": "Sigmoid có giá trị 0,5 tại x=0 và nằm trong (0,1).",
+          "graph": "sigmoid"
+        },
+        {
+          "id": "l2",
+          "text": "Đồ thị II: đường cong chữ S qua gốc tọa độ, tiệm cận −1 và 1",
+          "explanation": "Tanh là hàm lẻ, bằng 0 tại gốc và bị chặn giữa −1 và 1.",
+          "graph": "tanh"
+        },
+        {
+          "id": "l3",
+          "text": "Đồ thị III: bằng 0 khi x âm, là đường y=x khi x dương",
+          "explanation": "ReLU cắt phần âm về 0 và giữ nguyên phần dương.",
+          "graph": "relu"
+        }
+      ],
+      "matching_reuse": false
+    },
+    {
+      "id": "p2-t4-d02-priority-norm-ln-eval",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d02",
+      "topic": "p2-t4-d02",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "LayerNorm trên chiều D của từng token có gamma,beta cố định. Cùng một token đầu vào, chỉ thay các token khác trong batch và chuyển train sang eval. Bỏ mọi lớp khác. Đầu ra của token này thế nào?",
+      "correct_answer": "a",
+      "explanation": "LayerNorm với normalized_shape=D tính thống kê từ D phần tử hiện tại của từng token ở cả train và eval. Gamma,beta và token đang xét không đổi nên kết quả không đổi; running statistics là cách hoạt động thông thường của BatchNorm, không phải LayerNorm.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d02",
+          "sha256": "58895651f776ef9fb62c9010d0c0c7b338849ea96e4a5dcbbe46b7afb77110b7",
+          "pdf_page": 17,
+          "title": "Kiến Trúc Mạng Cho Thị Giác Máy Tính",
+          "locator": "Physical PDF page 17",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d02",
+          "sha256": "58895651f776ef9fb62c9010d0c0c7b338849ea96e4a5dcbbe46b7afb77110b7",
+          "pdf_page": 34,
+          "title": "Kiến Trúc Mạng Cho Thị Giác Máy Tính",
+          "locator": "Physical PDF page 34",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Không đổi: vẫn dùng thống kê D phần tử của chính token đó"
+        },
+        {
+          "id": "b",
+          "text": "Đổi vì eval dùng running statistics tích lũy từ batch trước"
+        },
+        {
+          "id": "c",
+          "text": "Đổi vì luôn gộp tất cả token trong batch để tính mean"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "normalization"
+      ],
+      "context": "So sánh riêng lớp LayerNorm, không có dropout hoặc cập nhật tham số.",
+      "supplemental_sources": [
+        {
+          "title": "PyTorch LayerNorm",
+          "url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.LayerNorm.html",
+          "accessed_at": "2026-10-28",
+          "note": "Bổ sung ngoài slide: thống kê đầu vào hiện tại được dùng trong cả training và evaluation; normalized_shape xác định các chiều cuối."
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d05-priority-kalman-control",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d05",
+      "topic": "p2-t4-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Trạng thái x=(vị trí;vận tốc)=(2 m;3 m/s), bước thời gian 1 s. Dùng F=[[1,1],[0,1]], B=(0,5;1), điều khiển gia tốc u=2 m/s². Với x_pred=F×x+B×u, prediction là gì?",
+      "correct_answer": "a",
+      "explanation": "F×x=(2+3;3)=(5;3). B×u=(1;2). Cộng hai vector được (6;5). Bỏ B×u là bỏ điều khiển; cộng trực tiếp u vào cả hai trạng thái sai vì B biểu diễn tác động theo đơn vị của từng thành phần.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 28,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 28",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "(6 m;5 m/s)"
+        },
+        {
+          "id": "b",
+          "text": "(5 m;3 m/s)"
+        },
+        {
+          "id": "c",
+          "text": "(7 m;5 m/s)"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "kalman"
+      ],
+      "calculation": true,
+      "formula_reference": {
+        "title": "Kalman tuyến tính có điều khiển",
+        "formula": "x_pred=F×x+B×u; P_pred=F×P×Fᵀ+Q; S=H×P_pred×Hᵀ+R; K=P_pred×Hᵀ×S⁻¹; x_new=x_pred+K×(z−H×x_pred)",
+        "symbols": "F: chuyển trạng thái; B: ánh xạ điều khiển u; H: ánh xạ đo; P,Q,R: covariance; S: covariance innovation.",
+        "conditions": "Mô hình tuyến tính; nhiễu quá trình và đo độc lập, S khả nghịch. B×u là điều khiển biết trước; nếu điều khiển có nhiễu phải mô hình hóa covariance phù hợp.",
+        "example": "F×(2;3)=(5;3), B×2=(1;2) → x_pred=(6;5).",
+        "common_mistakes": "Bỏ điều khiển; cộng u vào mọi thành phần; đảo thứ tự nhân ma trận; lấy nghịch đảo từng phần tử."
+      },
+      "supplemental_sources": [
+        {
+          "title": "FilterPy KalmanFilter",
+          "url": "https://filterpy.readthedocs.io/en/latest/kalman/KalmanFilter.html",
+          "accessed_at": "2026-10-28",
+          "note": "Bổ sung ngoài slide: control transition matrix B và predict có B×u; slide p28 là neo chương trình cho hệ phương trình Kalman ma trận."
+        }
+      ]
+    }
+  ]
+}

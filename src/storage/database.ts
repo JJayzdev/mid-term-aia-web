@@ -1,7 +1,7 @@
 import { attemptResult } from '../domain/grading';
-import { validateBank } from '../domain/validation';
+import { validAnswer, validateBank } from '../domain/validation';
 import { DomainError } from '../domain/errors';
-import type { Attempt, AttemptQuestion, RubricMarks, StudyMode } from '../domain/types';
+import type { AnswerValue, Attempt, AttemptQuestion, RubricMarks, StudyMode } from '../domain/types';
 
 export const DB_NAME = 'aia-study-local';
 export const DB_VERSION = 1;
@@ -77,7 +77,7 @@ async function finishInside(tx: IDBTransaction, attempt: Attempt, now: number, a
   return next;
 }
 
-export async function saveAnswer(id: string, questionId: string, answer: string | string[] | boolean, expectedRevision: number, now = Date.now(), writerToken?: string): Promise<Attempt> {
+export async function saveAnswer(id: string, questionId: string, answer: AnswerValue, expectedRevision: number, now = Date.now(), writerToken?: string): Promise<Attempt> {
   const db = await openDatabase(); const tx = db.transaction('attempts', 'readwrite'); const store = tx.objectStore('attempts');
   const current = await requestValue<Attempt | undefined>(store.get(id));
   if (!current) { tx.abort(); throw new DomainError('Phiên học không còn tồn tại.', 'missing_attempt'); }
@@ -87,11 +87,7 @@ export async function saveAnswer(id: string, questionId: string, answer: string 
   const item = current.questions.find(q => q.question.id === questionId);
   if (!item) { tx.abort(); throw new DomainError('Câu hỏi không thuộc phiên này.', 'unknown_attempt_question'); }
   const q = item.question;
-  const validAnswer = q.answer_format === 'rubric' ? typeof answer === 'string' && answer.length <= 100_000
-    : q.answer_format === 'boolean' ? typeof answer === 'boolean'
-    : q.answer_format === 'single_choice' ? typeof answer === 'string' && (q.options ?? []).some(o => o.id === answer)
-    : Array.isArray(answer) && answer.length <= (q.options?.length ?? 0) && new Set(answer).size === answer.length && answer.every(id => typeof id === 'string' && (q.options ?? []).some(o => o.id === id));
-  if (!validAnswer) { tx.abort(); throw new DomainError('Đáp án không hợp lệ cho câu hỏi này.', 'answer_shape'); }
+  if (!validAnswer(q, answer)) { tx.abort(); throw new DomainError('Đáp án không hợp lệ cho câu hỏi này.', 'answer_shape'); }
   if (current.deadlineAt !== null && now >= current.deadlineAt) {
     const next = await finishInside(tx, current, now, true); await txDone(tx); announce(id); return next;
   }
@@ -170,7 +166,7 @@ export function validateBackup(value: unknown): AppBackup {
   if (typeof b.exportedAt !== 'string' || !Number.isFinite(Date.parse(b.exportedAt)) || b.attempts.length > 10_000 || b.bookmarks.length > 50_000) throw new DomainError('Sao lưu vượt giới hạn hoặc có thời điểm xuất không hợp lệ.', 'backup_size');
   const attemptIds = new Set<string>(); let questionTotal = 0;
   for (const a of b.attempts) {
-    if (!a || typeof a.id !== 'string' || !a.id || attemptIds.has(a.id) || !['graded', 'submitted_pending_grading'].includes(a.status) || !Array.isArray(a.questions) || !a.questions.length || a.questions.length > 500 || !a.answers || typeof a.answers !== 'object' || !a.rubricMarks || typeof a.rubricMarks !== 'object' || !Array.isArray(a.flags) || typeof a.label !== 'string' || !a.label || !['daily', 'track', 'phase', 'mixed', 'wrong', 'bookmarked', 'exam'].includes(a.mode) || typeof a.bankVersion !== 'string' || typeof a.seed !== 'string' || !Number.isFinite(a.startedAt) || !Number.isFinite(a.submittedAt) || !Number.isFinite(a.finalizedAt) || a.finalizedAt! < a.startedAt || a.submittedAt! < a.startedAt || !Number.isInteger(a.revision) || a.revision < 0) throw new DomainError('Sao lưu chứa phiên sai định dạng hoặc trùng ID.', 'backup_attempt');
+    if (!a || typeof a.id !== 'string' || !a.id || attemptIds.has(a.id) || !['graded', 'submitted_pending_grading'].includes(a.status) || !Array.isArray(a.questions) || !a.questions.length || a.questions.length > 500 || !a.answers || typeof a.answers !== 'object' || !a.rubricMarks || typeof a.rubricMarks !== 'object' || !Array.isArray(a.flags) || typeof a.label !== 'string' || !a.label || !['daily', 'track', 'phase', 'mixed', 'wrong', 'bookmarked', 'focus', 'exam'].includes(a.mode) || typeof a.bankVersion !== 'string' || typeof a.seed !== 'string' || !Number.isFinite(a.startedAt) || !Number.isFinite(a.submittedAt) || !Number.isFinite(a.finalizedAt) || a.finalizedAt! < a.startedAt || a.submittedAt! < a.startedAt || !Number.isInteger(a.revision) || a.revision < 0) throw new DomainError('Sao lưu chứa phiên sai định dạng hoặc trùng ID.', 'backup_attempt');
     attemptIds.add(a.id); questionTotal += a.questions.length;
     if (questionTotal > 500_000 || a.questions.some(i => !i || !Number.isFinite(i.points) || i.points <= 0 || !Array.isArray(i.optionOrder))) throw new DomainError('Sao lưu vượt giới hạn hoặc có snapshot câu hỏi sai.', 'backup_size');
     const qids = a.questions.map(i => i.question?.id);
@@ -194,13 +190,15 @@ export function validateBackup(value: unknown): AppBackup {
     try { validateBank({ schema_version: '1.0.0', bank_version: a.bankVersion, questions: a.questions.map(i => i.question) }, { schema_version: '1.0.0', catalog_version: 'backup', documents: [...docs.values()], topics: [...topics.values()] }, false); }
     catch (e) { throw new DomainError(`Snapshot sao lưu không hợp lệ: ${e instanceof Error ? e.message : 'dữ liệu sai'}`, 'backup_snapshot'); }
     if (a.questions.some(i => i.optionOrder.length !== (i.question.options?.length ?? 0) || new Set(i.optionOrder).size !== i.optionOrder.length || i.optionOrder.some(id => !i.question.options?.some(o => o.id === id)))) throw new DomainError('Snapshot thứ tự lựa chọn không khớp options.', 'backup_snapshot');
+    if (a.questions.some(i => i.question.answer_format === 'matching'
+      ? !Array.isArray(i.matchingOrder) || i.matchingOrder.length !== i.question.matching_items?.length || new Set(i.matchingOrder).size !== i.matchingOrder.length || i.matchingOrder.some(id => !i.question.matching_items?.some(o => o.id === id))
+      : i.matchingOrder !== undefined)) throw new DomainError('Snapshot thứ tự cột ghép không khớp nội dung.', 'backup_snapshot');
     const allowed = new Set(qids);
     for (const item of a.questions) {
       const answer = a.answers[item.question.id];
       if (answer !== undefined) {
         const q = item.question;
-        const valid = q.answer_format === 'rubric' ? typeof answer === 'string' && answer.length <= 100_000 : q.answer_format === 'boolean' ? typeof answer === 'boolean' : q.answer_format === 'single_choice' ? typeof answer === 'string' && q.options?.some(o => o.id === answer) : Array.isArray(answer) && new Set(answer).size === answer.length && answer.every(id => typeof id === 'string' && q.options?.some(o => o.id === id));
-        if (!valid) throw new DomainError('Snapshot sao lưu chứa đáp án sai định dạng.', 'backup_answer');
+        if (!validAnswer(q, answer)) throw new DomainError('Snapshot sao lưu chứa đáp án sai định dạng.', 'backup_answer');
       }
       const marks = a.rubricMarks[item.question.id];
       if (marks) { const ids = item.question.rubric?.map(c => c.id) ?? []; if (Object.keys(marks).length !== ids.length || Object.entries(marks).some(([id, mark]) => !ids.includes(id) || ![0, 0.5, 1].includes(mark))) throw new DomainError('Sao lưu chứa mức tự chấm sai.', 'backup_marks'); }

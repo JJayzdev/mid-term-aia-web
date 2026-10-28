@@ -1,0 +1,596 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.28-priority-generation",
+  "questions": [
+    {
+      "id": "p1-d01-priority-generation-parameters",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d01",
+      "topic": "p1-d01",
+      "taxonomy_status": "verified",
+      "question_type": "matching",
+      "answer_format": "matching",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Ghép một-một tham số/giới hạn với vai trò. Cách đặt tên và hỗ trợ cụ thể tùy API/model.",
+      "correct_answer": {
+        "l1": "a",
+        "l2": "b",
+        "l3": "c",
+        "l4": "d",
+        "l5": "e"
+      },
+      "explanation": "Các khái niệm điều khiển các khía cạnh khác nhau. Không suy rằng mọi model đều hỗ trợ cùng tên tham số, cùng khoảng giá trị hoặc cùng giới hạn.",
+      "source_reference": [
+        {
+          "document_id": "p1-d01",
+          "sha256": "7623057fe66b2a3ef217ace5962109059d94e3d65ae58d4bb4a8d5c7e8c983a8",
+          "pdf_page": 33,
+          "title": "AI & LLM Foundation",
+          "locator": "Physical PDF page 33",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p1-d01",
+          "sha256": "7623057fe66b2a3ef217ace5962109059d94e3d65ae58d4bb4a8d5c7e8c983a8",
+          "pdf_page": 39,
+          "title": "AI & LLM Foundation",
+          "locator": "Physical PDF page 39",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p1-d01",
+          "sha256": "7623057fe66b2a3ef217ace5962109059d94e3d65ae58d4bb4a8d5c7e8c983a8",
+          "pdf_page": 40,
+          "title": "AI & LLM Foundation",
+          "locator": "Physical PDF page 40",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Điều chỉnh độ tập trung của phân phối token"
+        },
+        {
+          "id": "b",
+          "text": "Giữ k token có xác suất cao nhất"
+        },
+        {
+          "id": "c",
+          "text": "Giữ tập đầu nhỏ nhất có xác suất tích lũy đạt ít nhất p"
+        },
+        {
+          "id": "d",
+          "text": "Giới hạn ngân sách token đầu ra theo API"
+        },
+        {
+          "id": "e",
+          "text": "Dung lượng ngữ cảnh model có thể xử lý"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "generation"
+      ],
+      "matching_items": [
+        {
+          "id": "l1",
+          "text": "Temperature",
+          "explanation": "Temperature thay hình dạng phân phối, không phải bộ kiểm chứng sự thật."
+        },
+        {
+          "id": "l2",
+          "text": "Top-k sampling",
+          "explanation": "k là số ứng viên token ở bước sinh tiếp theo."
+        },
+        {
+          "id": "l3",
+          "text": "Top-p sampling",
+          "explanation": "Số token được giữ có thể thay đổi theo phân phối."
+        },
+        {
+          "id": "l4",
+          "text": "Max output tokens",
+          "explanation": "Token không đồng nghĩa với từ; không phải kích thước toàn bộ ngữ cảnh."
+        },
+        {
+          "id": "l5",
+          "text": "Context window",
+          "explanation": "Ngữ cảnh có thể chứa prompt, lịch sử và phần sinh; quy tắc cụ thể tùy model/API."
+        }
+      ],
+      "matching_reuse": false,
+      "supplemental_sources": [
+        {
+          "title": "Hugging Face Transformers v4.50.0 — GenerationConfig",
+          "url": "https://huggingface.co/docs/transformers/v4.50.0/main_classes/text_generation#transformers.GenerationConfig",
+          "accessed_at": "2026-10-28",
+          "note": "Bổ sung ngoài slide: định nghĩa top-k sampling, tập nucleus nhỏ nhất và phân biệt ngân sách token đầu ra. Slide được dẫn để xác định chủ đề học."
+        }
+      ]
+    },
+    {
+      "id": "p1-d01-priority-generation-topk",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d01",
+      "topic": "p1-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Phân phối token A=0,40; B=0,30; C=0,15; D=0,10; E=0,05. Chỉ áp top-k=2, rồi chuẩn hóa lại. Xác suất mới của A và B là gì? Làm tròn 3 chữ số thập phân.",
+      "correct_answer": "a",
+      "explanation": "Top-k=2 giữ A,B có tổng0,70. Chuẩn hóa: A=0,40/0,70≈0,571; B=0,30/0,70≈0,429. Không giữ nguyên xác suất cũ vì tổng phải là1; cũng không đổi thành phân phối đều.",
+      "source_reference": [
+        {
+          "document_id": "p1-d01",
+          "sha256": "7623057fe66b2a3ef217ace5962109059d94e3d65ae58d4bb4a8d5c7e8c983a8",
+          "pdf_page": 40,
+          "title": "AI & LLM Foundation",
+          "locator": "Physical PDF page 40",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "(0,571;0,429)"
+        },
+        {
+          "id": "b",
+          "text": "(0,400;0,300)"
+        },
+        {
+          "id": "c",
+          "text": "(0,500;0,500)"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "generation"
+      ],
+      "calculation": true,
+      "formula_reference": {
+        "title": "Lọc top-k/top-p và chuẩn hóa",
+        "formula": "p_new(i)=p(i)/Σ_{j∈S}p(j) nếu i∈S; ngoài S là0",
+        "symbols": "S: tập token được giữ; top-k chọn k xác suất lớn nhất; top-p chọn tập đầu nhỏ nhất có tổng≥p.",
+        "conditions": "Bài này chỉ dùng một bộ lọc tại một thời điểm; nêu quy tắc xử lý hòa nếu xác suất bằng nhau.",
+        "example": "A=0,40,B=0,30,C=0,15,D=0,10,E=0,05: top-k2 giữA,B; top-p0,80 giữA,B,C với tổng0,85.",
+        "common_mistakes": "Nhầm top-p0,80 là giữ80% số token; bỏ token vừa làm tổng vượt ngưỡng; quên chuẩn hóa lại."
+      },
+      "supplemental_sources": [
+        {
+          "title": "Hugging Face Transformers v4.50.0 — GenerationConfig",
+          "url": "https://huggingface.co/docs/transformers/v4.50.0/main_classes/text_generation#transformers.GenerationConfig",
+          "accessed_at": "2026-10-28",
+          "note": "Bổ sung ngoài slide: định nghĩa top-k sampling, tập nucleus nhỏ nhất và phân biệt ngân sách token đầu ra. Slide được dẫn để xác định chủ đề học."
+        }
+      ]
+    },
+    {
+      "id": "p1-d01-priority-generation-topp",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d01",
+      "topic": "p1-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Phân phối A=0,40; B=0,30; C=0,15; D=0,10; E=0,05. Chỉ áp top-p=0,80 theo tập đầu nhỏ nhất có tổng đạt ít nhất p. Tập giữ và xác suất mới của C là gì? Làm tròn 3 chữ số thập phân.",
+      "correct_answer": "a",
+      "explanation": "Tổng tích lũy:0,40;0,70;0,85. Mốc đầu tiên đạt0,80 là sau C nên giữ A,B,C. Sau chuẩn hóa p_new(C)=0,15/0,85≈0,176. Không bỏ C chỉ vì nó làm tổng vượt0,80.",
+      "source_reference": [
+        {
+          "document_id": "p1-d01",
+          "sha256": "7623057fe66b2a3ef217ace5962109059d94e3d65ae58d4bb4a8d5c7e8c983a8",
+          "pdf_page": 40,
+          "title": "AI & LLM Foundation",
+          "locator": "Physical PDF page 40",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Giữ A,B,C; p_new(C)=0,176"
+        },
+        {
+          "id": "b",
+          "text": "Giữ A,B; p_new(C)=0"
+        },
+        {
+          "id": "c",
+          "text": "Giữ A,B,C,D; p_new(C)=0,158"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "generation"
+      ],
+      "calculation": true,
+      "supplemental_sources": [
+        {
+          "title": "Hugging Face Transformers v4.50.0 — GenerationConfig",
+          "url": "https://huggingface.co/docs/transformers/v4.50.0/main_classes/text_generation#transformers.GenerationConfig",
+          "accessed_at": "2026-10-28",
+          "note": "Bổ sung ngoài slide: định nghĩa top-k sampling, tập nucleus nhỏ nhất và phân biệt ngân sách token đầu ra. Slide được dẫn để xác định chủ đề học."
+        }
+      ]
+    },
+    {
+      "id": "p1-d01-priority-generation-boundary",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d01",
+      "topic": "p1-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Phân phối A=0,50; B=0,30; C=0,20. Với top-p=0,80, tập đầu nhỏ nhất được giữ là gì?",
+      "correct_answer": "a",
+      "explanation": "Quy tắc là đạt ít nhất p, bao gồm bằng. A chưa đủ; A+B=0,80 vừa đủ. Thêm C không còn là tập đầu nhỏ nhất.",
+      "source_reference": [
+        {
+          "document_id": "p1-d01",
+          "sha256": "7623057fe66b2a3ef217ace5962109059d94e3d65ae58d4bb4a8d5c7e8c983a8",
+          "pdf_page": 40,
+          "title": "AI & LLM Foundation",
+          "locator": "Physical PDF page 40",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A,B vì tổng đúng bằng0,80"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ A vì thêm B chạm ngưỡng"
+        },
+        {
+          "id": "c",
+          "text": "A,B,C vì phải lớn hơn0,80"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "generation"
+      ],
+      "calculation": true,
+      "supplemental_sources": [
+        {
+          "title": "Hugging Face Transformers v4.50.0 — GenerationConfig",
+          "url": "https://huggingface.co/docs/transformers/v4.50.0/main_classes/text_generation#transformers.GenerationConfig",
+          "accessed_at": "2026-10-28",
+          "note": "Bổ sung ngoài slide: định nghĩa top-k sampling, tập nucleus nhỏ nhất và phân biệt ngân sách token đầu ra. Slide được dẫn để xác định chủ đề học."
+        }
+      ]
+    },
+    {
+      "id": "p1-d01-priority-generation-softmax-temperature",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d01",
+      "topic": "p1-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Logits z=(0;ln3), nhiệt độ T=2>0. Dùng softmax(z/T). Xác suất lớp thứ hai bằng bao nhiêu? Làm tròn 3 chữ số thập phân.",
+      "correct_answer": "a",
+      "explanation": "z/T=(0;ln3/2), exp=(1;sqrt(3)). Xác suất thứ hai=sqrt(3)/(1+sqrt(3))≈0,634. T=1 mới cho3/4=0,750. Không thay T=0 vào phép chia.",
+      "source_reference": [
+        {
+          "document_id": "p1-d01",
+          "sha256": "7623057fe66b2a3ef217ace5962109059d94e3d65ae58d4bb4a8d5c7e8c983a8",
+          "pdf_page": 40,
+          "title": "AI & LLM Foundation",
+          "locator": "Physical PDF page 40",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "sha256": "f8a24d389521dcc6d81dcb5fe57b300c7dcd67ef2282efb689e08deedbcd5f15",
+          "pdf_page": 53,
+          "title": "Mạng Nơ-ron và Huấn Luyện",
+          "locator": "Physical PDF page 53",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d02",
+          "sha256": "58895651f776ef9fb62c9010d0c0c7b338849ea96e4a5dcbbe46b7afb77110b7",
+          "pdf_page": 77,
+          "title": "Kiến Trúc Mạng Cho Thị Giác Máy Tính",
+          "locator": "Physical PDF page 77",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "0,634"
+        },
+        {
+          "id": "b",
+          "text": "0,750"
+        },
+        {
+          "id": "c",
+          "text": "0,900"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "generation"
+      ],
+      "calculation": true,
+      "formula_reference": {
+        "title": "Softmax có nhiệt độ dương",
+        "formula": "p_i=exp(z_i/T)/Σ_j exp(z_j/T), T>0",
+        "symbols": "z_i: logit; T: nhiệt độ dương; p_i: xác suất sau chuẩn hóa.",
+        "conditions": "T>0; thứ tự logit không đổi. T thấp tập trung hơn nhưng không chứng minh thông tin đúng.",
+        "example": "z=(0;ln3),T=2 → p≈(0,366;0,634).",
+        "common_mistakes": "Thế trực tiếp T=0; cho rằng temperature thấp chữa hallucination; nhầm sampling với retrieval."
+      },
+      "supplemental_sources": [
+        {
+          "title": "Hugging Face Transformers v4.50.0 — GenerationConfig",
+          "url": "https://huggingface.co/docs/transformers/v4.50.0/main_classes/text_generation#transformers.GenerationConfig",
+          "accessed_at": "2026-10-28",
+          "note": "Bổ sung ngoài slide: định nghĩa top-k sampling, tập nucleus nhỏ nhất và phân biệt ngân sách token đầu ra. Slide được dẫn để xác định chủ đề học."
+        }
+      ]
+    },
+    {
+      "id": "p1-d01-priority-generation-vs-retrieval",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d01",
+      "topic": "p1-d01",
+      "taxonomy_status": "verified",
+      "question_type": "matching",
+      "answer_format": "matching",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Ghép một-một cách dùng k hoặc token với đơn vị mà nó kiểm soát.",
+      "correct_answer": {
+        "l1": "a",
+        "l2": "b",
+        "l3": "c"
+      },
+      "explanation": "Cùng ký hiệu k nhưng sampling và retrieval tác động lên hai tập khác nhau. Thay k của retriever không trực tiếp biến thành thay top-k của generator.",
+      "source_reference": [
+        {
+          "document_id": "p1-d01",
+          "sha256": "7623057fe66b2a3ef217ace5962109059d94e3d65ae58d4bb4a8d5c7e8c983a8",
+          "pdf_page": 40,
+          "title": "AI & LLM Foundation",
+          "locator": "Physical PDF page 40",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p1-d07",
+          "sha256": "ad1669dd5385de460caa68a4b378120c8de3105b1e6c8c7bee296bd5398f7bc5",
+          "pdf_page": 51,
+          "title": "Data Foundations",
+          "locator": "Physical PDF page 51",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Các token ứng viên cho token tiếp theo"
+        },
+        {
+          "id": "b",
+          "text": "Các đoạn/tài liệu truy xuất được trả về"
+        },
+        {
+          "id": "c",
+          "text": "Ngân sách token model được phép sinh"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "generation"
+      ],
+      "matching_items": [
+        {
+          "id": "l1",
+          "text": "Top-k sampling ở bước sinh",
+          "explanation": "Lọc phân phối từ vựng trước khi chọn token."
+        },
+        {
+          "id": "l2",
+          "text": "Top-k retrieval trong RAG",
+          "explanation": "Đây là số kết quả tìm kiếm, không phải số ứng viên từ vựng."
+        },
+        {
+          "id": "l3",
+          "text": "Max tokens đầu ra",
+          "explanation": "Giới hạn độ dài đầu ra, không phải số đoạn tài liệu được lấy."
+        }
+      ],
+      "matching_reuse": false,
+      "supplemental_sources": [
+        {
+          "title": "Hugging Face Transformers v4.50.0 — GenerationConfig",
+          "url": "https://huggingface.co/docs/transformers/v4.50.0/main_classes/text_generation#transformers.GenerationConfig",
+          "accessed_at": "2026-10-28",
+          "note": "Bổ sung ngoài slide: định nghĩa top-k sampling, tập nucleus nhỏ nhất và phân biệt ngân sách token đầu ra. Slide được dẫn để xác định chủ đề học."
+        }
+      ]
+    },
+    {
+      "id": "p1-d01-priority-generation-budget",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d01",
+      "topic": "p1-d01",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "API giả định có context window4096 token và giới hạn output1024 token; quy tắc là input+output≤4096. Input đã dùng3500 token. Output tối đa theo cả hai giới hạn là bao nhiêu?",
+      "correct_answer": "a",
+      "explanation": "Phần ngữ cảnh còn lại=4096−3500=596. Output không vượt min(1024,596)=596 token. Đây là quy tắc API giả định đã nêu, không khẳng định mọi dịch vụ tính context giống nhau.",
+      "source_reference": [
+        {
+          "document_id": "p1-d01",
+          "sha256": "7623057fe66b2a3ef217ace5962109059d94e3d65ae58d4bb4a8d5c7e8c983a8",
+          "pdf_page": 33,
+          "title": "AI & LLM Foundation",
+          "locator": "Physical PDF page 33",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p1-d01",
+          "sha256": "7623057fe66b2a3ef217ace5962109059d94e3d65ae58d4bb4a8d5c7e8c983a8",
+          "pdf_page": 39,
+          "title": "AI & LLM Foundation",
+          "locator": "Physical PDF page 39",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "596 token"
+        },
+        {
+          "id": "b",
+          "text": "1024 token"
+        },
+        {
+          "id": "c",
+          "text": "4096 token"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "generation"
+      ],
+      "calculation": true
+    },
+    {
+      "id": "p1-d01-priority-generation-truth",
+      "revision": 2,
+      "author_id": "priority-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d01",
+      "topic": "p1-d01",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Muốn tăng độ tin cậy của câu trả lời, lựa chọn nào hợp lý khi đã giảm temperature?",
+      "correct_answer": "a",
+      "explanation": "Temperature điều chỉnh phân phối token, không xác minh sự thật. Tái lập còn phụ thuộc model, runtime và hệ thống; hỗ trợ tham số tùy API/model. Cần đánh giá hành vi trên tác vụ thật.",
+      "source_reference": [
+        {
+          "document_id": "p1-d01",
+          "sha256": "7623057fe66b2a3ef217ace5962109059d94e3d65ae58d4bb4a8d5c7e8c983a8",
+          "pdf_page": 25,
+          "title": "AI & LLM Foundation",
+          "locator": "Physical PDF page 25",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p1-d01",
+          "sha256": "7623057fe66b2a3ef217ace5962109059d94e3d65ae58d4bb4a8d5c7e8c983a8",
+          "pdf_page": 40,
+          "title": "AI & LLM Foundation",
+          "locator": "Physical PDF page 40",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t2-d07",
+          "sha256": "4cef91986bf420b28ac78af115a4d474dd649ab7e2b2823b02189f21aca374e5",
+          "pdf_page": 9,
+          "title": "LLMOps & Prompt Versioning",
+          "locator": "Physical PDF page 9",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Vẫn kiểm chứng bằng nguồn/đánh giá; không coi sampling thấp là bảo đảm đúng hay tái lập tuyệt đối"
+        },
+        {
+          "id": "b",
+          "text": "Bỏ kiểm chứng vì temperature thấp khiến model chỉ phát biểu sự thật"
+        },
+        {
+          "id": "c",
+          "text": "Yêu cầu mọi API hỗ trợ top-k và cho rằng cùng prompt luôn ra cùng chuỗi"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "generation"
+      ],
+      "context": "Một ứng dụng trả lời câu hỏi dựa trên tài liệu vẫn có câu sai dù cấu hình sinh ít ngẫu nhiên."
+    }
+  ]
+}

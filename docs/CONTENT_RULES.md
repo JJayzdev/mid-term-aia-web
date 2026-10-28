@@ -72,3 +72,11 @@ Thuộc tính tùy chọn này giữ tương thích nội dung/lịch sử cũ. 
 ## Các điều không được tuyên bố
 
 PDF mở được không có nghĩa text đọc đúng; OCR thành công không có nghĩa công thức đúng; schema pass không có nghĩa đáp án đúng; đủ 63 file không có nghĩa đã đủ chương trình học. Discovery chỉ khảo sát và lập kế hoạch, chưa hoàn tất ingestion hoặc content audit.
+
+## Mở rộng ôn trọng tâm — 2026-10-28
+
+Yêu cầu mới cho phép kiến thức bổ sung ngoài slide nếu ghi rõ và dùng nguồn đáng tin cậy; phần này thay thế giới hạn chỉ dùng slide đối với nội dung mở rộng. Slide gốc vẫn được ưu tiên và xác định Phase/Track/Day. `supplemental_sources` ghi tiêu đề, HTTPS URL, ngày truy cập và phạm vi bổ sung. Reviewer độc lập phải đọc nguồn chính thống và ghi `supplemental_urls` trong quyết định đúng revision. Release chặn URL chưa được duyệt. Lời kể sau thi chỉ quyết định ưu tiên, không làm nguồn xác minh hoặc cơ sở quảng bá đề thật.
+
+Hai dạng mới dùng ID ổn định. `matching` có `matching_items` và `options`, đáp án là ánh xạ ID trái → ID phải; mặc định một–một, `matching_reuse: true` cho phép dùng lại. Mỗi mục có thể kèm giải thích riêng. `ordering` có các bước trong `options`, đáp án là danh sách ID, `accepted_orders` chứa các thứ tự hợp lệ bổ sung. Không tạo thứ tự giả giữa các bước độc lập: gộp bước hoặc liệt kê các thứ tự hợp lệ. Cả hai dạng chấm đúng toàn bộ = đủ điểm, sai/thiếu/bỏ trống = 0, không trừ điểm. Không tự coi thứ tự xáo trộn ban đầu là câu trả lời.
+
+`focus_topics` là nhóm ôn tập bổ sung, không thay taxonomy của tài liệu. Preset Ôn trọng tâm chọn cân bằng theo nhóm và dạng còn khả dụng; không thay cấu hình thi 60 câu hiện hành. Đề thi hiện hành không lấy hai dạng tương tác mới. `formula_reference` được duyệt cùng câu hỏi và revision, gồm công thức, ký hiệu, điều kiện, ví dụ và lỗi thường gặp. Không xuất bản công thức chưa được kiểm tra chỉ vì renderer hoặc schema chấp nhận.

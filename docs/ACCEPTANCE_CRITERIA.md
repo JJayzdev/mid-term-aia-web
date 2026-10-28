@@ -44,3 +44,15 @@ Unit/integration dùng fixture riêng, tuyệt đối không lẫn vào release 
 ## Báo cáo QA bắt buộc
 
 Mỗi lần chạy ghi run ID, commit hoặc hash artifact khi chưa có Git, môi trường, command, actual result/pass/fail/not-run, log/screenshot path. Mỗi lỗi có severity, steps to reproduce, expected/actual, module owner, fix revision và retest. `not-run` không tương đương pass. Root mở artifact/test output trên bản tích hợp cuối; chỉ gate được đáp ứng mới chuyển milestone.
+
+## Bổ sung ngày 2026-10-28
+
+| ID | Điều kiện | Bằng chứng |
+|---|---|---|
+| N1 | Ghép cặp lưu ID và hai cột xáo trộn; cho phép ghép thiếu, dùng lại chỉ khi đề cho phép; hiển thị từng cặp và giải thích sau nộp | Unit/storage/UI + browser reload, partial, retry, backup |
+| N2 | Sắp xếp dùng lên/xuống và xác nhận; ban đầu chưa trả lời; chấp nhận các hoán vị đúng được duyệt | Exact scoring, blank, keyboard, multiple orders, reload |
+| N3 | Ghép cặp/sắp xếp đúng toàn bộ nhận đủ điểm, sai/thiếu nhận 0; đề 60 câu giữ blueprint cũ | Domain invariant và luồng thi thử thực |
+| N4 | Ôn trọng tâm lọc đúng bảy nhóm và dạng, cân bằng theo nội dung khả dụng; taxonomy gốc được bảo toàn | Seeded selection và browser focus14 |
+| N5 | Công thức có ký hiệu, điều kiện, ví dụ, lỗi thường gặp và nguồn; supplementary URL được reviewer duyệt và gắn nhãn | Exact-revision gate, corpus renderer test, formula browser search/filter |
+| N6 | Đồ thị kích hoạt cùng hệ trục, có mô tả văn bản tương đương; không lộ tên đáp án trước nộp | Đối chiếu hàm/điểm và kiểm tra giao diện |
+| N7 | Câu có nhiều nguồn vẫn thuộc một taxonomy chính; phải có ít nhất một nguồn ở topic chính và mọi nguồn đều xác minh được | Runtime/Python cross-document anchor fixtures |

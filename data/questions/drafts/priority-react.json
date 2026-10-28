@@ -1,0 +1,572 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.28-priority-react",
+  "questions": [
+    {
+      "id": "p1-d03-priority-react-stages",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d03",
+      "topic": "p1-d03",
+      "taxonomy_status": "verified",
+      "question_type": "matching",
+      "answer_format": "matching",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Ghép một-một thành phần ReAct với vai trò của nó.",
+      "correct_answer": {
+        "l1": "a",
+        "l2": "b",
+        "l3": "c",
+        "l4": "d"
+      },
+      "explanation": "ReAct là Reasoning + Acting. Các thành phần liên kết thành vòng lặp; đây là pattern agent, khác React là thư viện giao diện.",
+      "source_reference": [
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 34,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 34",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 37,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 37",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Xác định còn thiếu gì và bước tiếp theo"
+        },
+        {
+          "id": "b",
+          "text": "Yêu cầu thực hiện công cụ cùng tham số"
+        },
+        {
+          "id": "c",
+          "text": "Kết quả do công cụ hoặc môi trường trả về"
+        },
+        {
+          "id": "d",
+          "text": "Câu trả lời khi đã đủ thông tin hoặc kết thúc có giải thích"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "react"
+      ],
+      "matching_items": [
+        {
+          "id": "l1",
+          "text": "Thought",
+          "explanation": "Thought chọn bước tiếp theo từ mục tiêu và quan sát hiện có."
+        },
+        {
+          "id": "l2",
+          "text": "Action",
+          "explanation": "Action mô tả công cụ và dữ liệu đầu vào; ứng dụng thực thi lời gọi."
+        },
+        {
+          "id": "l3",
+          "text": "Observation",
+          "explanation": "Observation bổ sung bằng chứng để vòng tiếp theo quyết định."
+        },
+        {
+          "id": "l4",
+          "text": "Final Answer",
+          "explanation": "Final Answer phải phản ánh bằng chứng đã thu được, không tự giả kết quả tool."
+        }
+      ],
+      "matching_reuse": false
+    },
+    {
+      "id": "p1-d03-priority-react-loop",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d03",
+      "topic": "p1-d03",
+      "taxonomy_status": "verified",
+      "question_type": "ordering",
+      "answer_format": "ordering",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Agent đang thiếu một dữ kiện cần tra cứu. Sắp xếp một vòng ReAct rồi kiểm tra có thể kết thúc hay phải lặp lại.",
+      "correct_answer": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "explanation": "Action phải dựa trên quyết định ở Thought; Observation chỉ có sau thực thi. Kiểm tra kết quả quyết định lặp lại hay Final Answer, không luôn gọi tool vô hạn.",
+      "source_reference": [
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 34,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 34",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 37,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 37",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Thought: xác định dữ kiện cần tìm và công cụ phù hợp"
+        },
+        {
+          "id": "b",
+          "text": "Action: gửi yêu cầu công cụ với tham số"
+        },
+        {
+          "id": "c",
+          "text": "Observation: nhận kết quả thực thi"
+        },
+        {
+          "id": "d",
+          "text": "Đánh giá đủ thông tin để trả lời; nếu chưa đủ thì quay lại Thought"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "react"
+      ]
+    },
+    {
+      "id": "p1-d03-priority-react-tool-error",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d03",
+      "topic": "p1-d03",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Sau observation báo không tìm thấy chuyến bay, bước tiếp theo nào phù hợp nhất?",
+      "correct_answer": "a",
+      "explanation": "Observation là bằng chứng thực thi. Kết quả rỗng yêu cầu xem lại giả định hoặc báo giới hạn; Action mới chỉ là yêu cầu, không phải xác nhận giao dịch.",
+      "source_reference": [
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 34,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 34",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 37,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 37",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 38,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 38",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Phân tích kết quả, điều chỉnh truy vấn nếu hợp lý hoặc trả lời rằng chưa tìm thấy"
+        },
+        {
+          "id": "b",
+          "text": "Tự tạo một chuyến bay rồi trình bày như kết quả công cụ"
+        },
+        {
+          "id": "c",
+          "text": "Coi lời gọi search_flights là bằng chứng đặt vé thành công"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "react"
+      ],
+      "context": "Agent đã gọi search_flights với ngày và điểm đi/đến, công cụ trả về danh sách rỗng."
+    },
+    {
+      "id": "p1-d03-priority-react-native",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d03",
+      "topic": "p1-d03",
+      "taxonomy_status": "verified",
+      "question_type": "matching",
+      "answer_format": "matching",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Ghép một-một cách tổ chức/cơ chế với mô tả chính xác.",
+      "correct_answer": {
+        "l1": "a",
+        "l2": "b",
+        "l3": "c"
+      },
+      "explanation": "Không đồng nhất pattern ReAct với kiểu output JSON. Ứng dụng vẫn phải thực thi tool và trả kết quả cho agent.",
+      "source_reference": [
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 34,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 34",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 46,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 46",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 47,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 47",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 48,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 48",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Xen kẽ suy luận, hành động và quan sát"
+        },
+        {
+          "id": "b",
+          "text": "Model tạo yêu cầu gọi hàm có cấu trúc"
+        },
+        {
+          "id": "c",
+          "text": "Giữ vòng suy luận–quan sát và dùng lời gọi hàm có cấu trúc"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "react"
+      ],
+      "matching_items": [
+        {
+          "id": "l1",
+          "text": "ReAct",
+          "explanation": "ReAct quy định vòng giải quyết nhiệm vụ dựa vào quan sát."
+        },
+        {
+          "id": "l2",
+          "text": "Function Calling",
+          "explanation": "Function Calling là cơ chế biểu diễn lời gọi, có thể nằm trong vòng ReAct."
+        },
+        {
+          "id": "l3",
+          "text": "Hybrid ReAct + native Function Calling",
+          "explanation": "Hybrid kết hợp pattern điều khiển với cơ chế giao tiếp tool, không phải hai lựa chọn loại trừ."
+        }
+      ],
+      "matching_reuse": false
+    },
+    {
+      "id": "p1-d03-priority-react-dependent-tools",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d03",
+      "topic": "p1-d03",
+      "taxonomy_status": "verified",
+      "question_type": "ordering",
+      "answer_format": "ordering",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Trong quy trình đã quy định: xác nhận hàng và giá trước, kiểm mã giảm giá sau, rồi mới tính tổng có phí giao hàng. Sắp xếp các bước.",
+      "correct_answer": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "explanation": "Đề đã chỉ rõ phụ thuộc của quy trình. Không suy ra rằng mọi tool trong mọi agent đều phải chạy nối tiếp; các yêu cầu độc lập có thể chạy song song.",
+      "source_reference": [
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 40,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 40",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Kiểm tra tồn kho và đơn giá"
+        },
+        {
+          "id": "b",
+          "text": "Nhận kết quả tồn kho, sau đó kiểm mã giảm giá"
+        },
+        {
+          "id": "c",
+          "text": "Dùng giá và mức giảm đã xác minh để tính tiền hàng, lấy phí giao hàng"
+        },
+        {
+          "id": "d",
+          "text": "Tổng hợp tổng thanh toán từ các kết quả đã nhận"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "react"
+      ]
+    },
+    {
+      "id": "p1-d03-priority-react-stop",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d03",
+      "topic": "p1-d03",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Điều kiện nào cho phép agent tạo Final Answer có căn cứ?",
+      "correct_answer": "a",
+      "explanation": "Vòng ReAct dùng observation để đánh giá đủ thông tin; dừng do giới hạn không cho phép che giấu phần chưa hoàn thành. Số tool call và độ dài không chứng minh nhiệm vụ đã xong.",
+      "source_reference": [
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 34,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 34",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 39,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 39",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Đã có đủ kết quả liên quan để đáp ứng yêu cầu, hoặc phải dừng và nói rõ phần chưa giải quyết"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ cần đã gọi ít nhất một tool, dù kết quả không liên quan"
+        },
+        {
+          "id": "c",
+          "text": "Chỉ cần model sinh câu trả lời dài hơn observation"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "react"
+      ],
+      "context": "Người dùng yêu cầu gợi ý chuyến bay và trang phục theo thời tiết. Agent đã nhận cả kết quả tìm chuyến và dự báo liên quan."
+    },
+    {
+      "id": "p1-d03-priority-react-explain",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 1,
+      "track": null,
+      "day": "p1-d03",
+      "topic": "p1-d03",
+      "taxonomy_status": "verified",
+      "question_type": "short_answer",
+      "answer_format": "rubric",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Giải thích ngắn vì sao một agent dùng native Function Calling vẫn có thể là ReAct.",
+      "correct_answer": "ReAct mô tả vòng suy luận → hành động → quan sát. Native Function Calling biểu diễn hành động dưới dạng tên hàm/tham số có cấu trúc; ứng dụng chạy hàm và đưa kết quả trở lại vòng, nên hai khái niệm kết hợp được.",
+      "explanation": "Một khái niệm là pattern điều khiển, khái niệm kia là cơ chế gọi công cụ. Chỉ có JSON tool call chưa chứng minh agent đã dùng observation để quyết định vòng tiếp theo.",
+      "source_reference": [
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 34,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 34",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 37,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 37",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 46,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 46",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p1-d03",
+          "sha256": "3fbddf49129cca35d066fc1a6de132d4a9793a9355dd0dfc80b8cdc237551bc1",
+          "pdf_page": 48,
+          "title": "Từ Chatbot Đến Agentic Agent",
+          "locator": "Physical PDF page 48",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "focus_topics": [
+        "react"
+      ],
+      "rubric": [
+        {
+          "id": "c1",
+          "description": "Phân biệt pattern với cơ chế",
+          "weight": 0.5,
+          "full_credit": "Nêu ReAct là vòng điều khiển và Function Calling là cơ chế gọi hàm",
+          "partial_credit": "Chỉ mô tả đúng một trong hai",
+          "no_credit": "Đồng nhất hai khái niệm hoặc coi chúng loại trừ nhau"
+        },
+        {
+          "id": "c2",
+          "description": "Nối kết quả tool vào vòng",
+          "weight": 0.5,
+          "full_credit": "Nêu ứng dụng thực thi và kết quả quay lại thành observation",
+          "partial_credit": "Có nhắc kết quả tool nhưng thiếu vòng quyết định tiếp theo",
+          "no_credit": "Cho rằng model tự thực thi hàm hoặc không cần kết quả"
+        }
+      ]
+    },
+    {
+      "id": "p2-t3-d01-priority-plan-react",
+      "revision": 2,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 3,
+      "day": "p2-t3-d01",
+      "topic": "p2-t3-d01",
+      "taxonomy_status": "verified",
+      "question_type": "scenario",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "analyze",
+      "question": "Nhánh xử lý nào sửa đúng nguyên nhân của thất bại này?",
+      "correct_answer": "a",
+      "explanation": "Verify đã chỉ ra lỗi mục tiêu của kế hoạch, nên phải quay lại Plan để sửa trước khi Act tiếp. Lặp lại nguyên hành động chỉ tái tạo kết quả sai; bỏ Verify che giấu lỗi thay vì sửa.",
+      "source_reference": [
+        {
+          "document_id": "p2-t3-d01",
+          "sha256": "1352af02371ea4f5e189e00b925ba94b55c176646e671eb5a6bcf81dc9955542",
+          "pdf_page": 34,
+          "title": "Advanced Agent Architectures",
+          "locator": "Physical PDF page 34",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t3-d01",
+          "sha256": "1352af02371ea4f5e189e00b925ba94b55c176646e671eb5a6bcf81dc9955542",
+          "pdf_page": 35,
+          "title": "Advanced Agent Architectures",
+          "locator": "Physical PDF page 35",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Quay lại Plan để sửa kế hoạch theo mục tiêu, rồi Act và Verify lại"
+        },
+        {
+          "id": "b",
+          "text": "Lặp lại Act với cùng kế hoạch và coi đủ số lần thử là thành công"
+        },
+        {
+          "id": "c",
+          "text": "Tắt Verify rồi trả kết quả vì Act đã chạy hết các bước"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "react"
+      ],
+      "context": "Trong quy trình Plan–Act–Verify, Act đã làm đúng các bước kế hoạch nhưng Verify phát hiện kế hoạch đang giải quyết sai mục tiêu của người dùng."
+    }
+  ]
+}

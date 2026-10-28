@@ -1,0 +1,191 @@
+{
+  "batch_file": "data/questions/drafts/priority-generation.json",
+  "reviewer_id": "priority-independent-review",
+  "results": [
+    {
+      "id": "p1-d01-priority-generation-parameters",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d01",
+          "pdf_page": 33
+        },
+        {
+          "document_id": "p1-d01",
+          "pdf_page": 39
+        },
+        {
+          "document_id": "p1-d01",
+          "pdf_page": 40
+        }
+      ],
+      "notes": [
+        "Five distinct parameter/limit roles map uniquely. Versioned primary HF supplement supplies top-k and exact nucleus definition absent from curriculum slides. Context/API qualifications avoid universal service claims.",
+        "Independently read original cited PDF pages, visually inspected formulas/diagrams, checked exact revision, options, metadata and existing-bank overlap.",
+        "Independently opened exact Hugging Face v4.50.0 GenerationConfig URL; checked output length lines 109–118, top-k/top-p/temperature lines139–142 and renormalization155. Supplement is explicitly identified as outside-slide material."
+      ],
+      "findings": [],
+      "supplemental_urls": [
+        "https://huggingface.co/docs/transformers/v4.50.0/main_classes/text_generation#transformers.GenerationConfig"
+      ]
+    },
+    {
+      "id": "p1-d01-priority-generation-topk",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d01",
+          "pdf_page": 40
+        }
+      ],
+      "notes": [
+        "Recomputed retained mass 0.7; normalized A=0.5714285714, B=0.4285714286. Three-decimal answer/distractors and formula card correct; conditional distribution formula and top-p example independently checked.",
+        "Independently read original cited PDF pages, visually inspected formulas/diagrams, checked exact revision, options, metadata and existing-bank overlap.",
+        "Independently opened exact Hugging Face v4.50.0 GenerationConfig URL; checked output length lines 109–118, top-k/top-p/temperature lines139–142 and renormalization155. Supplement is explicitly identified as outside-slide material."
+      ],
+      "findings": [],
+      "supplemental_urls": [
+        "https://huggingface.co/docs/transformers/v4.50.0/main_classes/text_generation#transformers.GenerationConfig"
+      ]
+    },
+    {
+      "id": "p1-d01-priority-generation-topp",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d01",
+          "pdf_page": 40
+        }
+      ],
+      "notes": [
+        "Recomputed cumulative masses .4,.7,.85; smallest set A/B/C, C=.15/.85=.1764705882, rounds .176. Distinct filter selection and renormalization objective.",
+        "Independently read original cited PDF pages, visually inspected formulas/diagrams, checked exact revision, options, metadata and existing-bank overlap.",
+        "Independently opened exact Hugging Face v4.50.0 GenerationConfig URL; checked output length lines 109–118, top-k/top-p/temperature lines139–142 and renormalization155. Supplement is explicitly identified as outside-slide material."
+      ],
+      "findings": [],
+      "supplemental_urls": [
+        "https://huggingface.co/docs/transformers/v4.50.0/main_classes/text_generation#transformers.GenerationConfig"
+      ]
+    },
+    {
+      "id": "p1-d01-priority-generation-boundary",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d01",
+          "pdf_page": 40
+        }
+      ],
+      "notes": [
+        "Equality boundary is explicitly tested rather than generic nucleus selection: .5+.3=.8, so A/B. Exact stated mathematical convention avoids implementation floating-point ambiguity.",
+        "Independently read original cited PDF pages, visually inspected formulas/diagrams, checked exact revision, options, metadata and existing-bank overlap.",
+        "Independently opened exact Hugging Face v4.50.0 GenerationConfig URL; checked output length lines 109–118, top-k/top-p/temperature lines139–142 and renormalization155. Supplement is explicitly identified as outside-slide material."
+      ],
+      "findings": [],
+      "supplemental_urls": [
+        "https://huggingface.co/docs/transformers/v4.50.0/main_classes/text_generation#transformers.GenerationConfig"
+      ]
+    },
+    {
+      "id": "p1-d01-priority-generation-softmax-temperature",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d01",
+          "pdf_page": 40
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 53
+        },
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 77
+        }
+      ],
+      "notes": [
+        "Recomputed sqrt(3)/(1+sqrt(3))=.6339745962, rounds .634; complement .366. Formula T>0 and logit-order caveat match visually inspected d01p53/d02p77. No T=0 division.",
+        "Independently read original cited PDF pages, visually inspected formulas/diagrams, checked exact revision, options, metadata and existing-bank overlap.",
+        "Independently opened exact Hugging Face v4.50.0 GenerationConfig URL; checked output length lines 109–118, top-k/top-p/temperature lines139–142 and renormalization155. Supplement is explicitly identified as outside-slide material."
+      ],
+      "findings": [],
+      "supplemental_urls": [
+        "https://huggingface.co/docs/transformers/v4.50.0/main_classes/text_generation#transformers.GenerationConfig"
+      ]
+    },
+    {
+      "id": "p1-d01-priority-generation-vs-retrieval",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d01",
+          "pdf_page": 40
+        },
+        {
+          "document_id": "p1-d07",
+          "pdf_page": 51
+        }
+      ],
+      "notes": [
+        "Unique matching of vocabulary token candidates, retrieval chunks and generated-token budget; d07p51 visually confirms retriever k. Broader comparison differs from existing retrieval-only item.",
+        "Independently read original cited PDF pages, visually inspected formulas/diagrams, checked exact revision, options, metadata and existing-bank overlap.",
+        "Independently opened exact Hugging Face v4.50.0 GenerationConfig URL; checked output length lines 109–118, top-k/top-p/temperature lines139–142 and renormalization155. Supplement is explicitly identified as outside-slide material."
+      ],
+      "findings": [],
+      "supplemental_urls": [
+        "https://huggingface.co/docs/transformers/v4.50.0/main_classes/text_generation#transformers.GenerationConfig"
+      ]
+    },
+    {
+      "id": "p1-d01-priority-generation-budget",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d01",
+          "pdf_page": 33
+        },
+        {
+          "document_id": "p1-d01",
+          "pdf_page": 39
+        }
+      ],
+      "notes": [
+        "Explicit hypothetical API convention. Recomputed min(1024,4096−3500)=596 tokens. No assertion about current real-model limits.",
+        "Independently read original cited PDF pages, visually inspected formulas/diagrams, checked exact revision, options, metadata and existing-bank overlap."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p1-d01-priority-generation-truth",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p1-d01",
+          "pdf_page": 25
+        },
+        {
+          "document_id": "p1-d01",
+          "pdf_page": 40
+        },
+        {
+          "document_id": "p2-t2-d07",
+          "pdf_page": 9
+        }
+      ],
+      "notes": [
+        "r2 scenario combines low-randomness factual verification and reproducibility caveat; d01p25 hallucination warning and d02t2d07p9 explicitly support both. Distinct practical evaluation decision vs existing isolated true/false and string-test items.",
+        "Independently read original cited PDF pages, visually inspected formulas/diagrams, checked exact revision, options, metadata and existing-bank overlap."
+      ],
+      "findings": []
+    }
+  ],
+  "reviewed_at": "2026-10-28T06:41:02.564660+00:00"
+}

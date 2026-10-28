@@ -1,0 +1,149 @@
+{
+  "batch_file": "data/questions/drafts/priority-normalization.json",
+  "reviewer_id": "priority-independent-review",
+  "reviewed_at": "2026-10-28T06:41:02.563662+00:00",
+  "results": [
+    {
+      "id": "p2-t4-d01-priority-norm-symbols",
+      "revision": 1,
+      "decision": "rejected",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 77
+        }
+      ],
+      "notes": [
+        "Minor clarity request: distinguish current-group stats from BN running stats at inference; revise stem to explicitly current-group normalization or qualify option/conditions.",
+        "Independently read exact question/options/explanation/card, visually inspected all cited physical pages, verified source SHA256. Numeric evidence: tmp/priority-review/nn-arithmetic.json."
+      ],
+      "findings": [
+        {
+          "severity": "minor",
+          "action": "Clarify current-group vs inference running statistics, bump revision",
+          "status": "open"
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d02-priority-norm-axes",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 17
+        },
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 34
+        }
+      ],
+      "notes": [
+        "Tensor axes and normalized_shape specified in prompt, unique four mappings; d02p17 covers batch/channel/spatial vs sample, p34 Transformer usage. Does not generalize LN over all B,T,D.",
+        "Independently read exact question/options/explanation/card, visually inspected all cited physical pages, verified source SHA256. Numeric evidence: tmp/priority-review/nn-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d01-priority-norm-bn-value",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 77
+        }
+      ],
+      "notes": [
+        "Independent column means[3,5], variances[4,4] with denominator n; outputs[[-1,-1],[1,1]]. Assumptions gamma1,beta0,epsilon0 unambiguous.",
+        "Independently read exact question/options/explanation/card, visually inspected all cited physical pages, verified source SHA256. Numeric evidence: tmp/priority-review/nn-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d01-priority-norm-ln-value",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 77
+        }
+      ],
+      "notes": [
+        "Independent row means[2,6], variances[1,1], outputs[[-1,1],[-1,1]]. Contrasts BN axis not just changed numbers.",
+        "Independently read exact question/options/explanation/card, visually inspected all cited physical pages, verified source SHA256. Numeric evidence: tmp/priority-review/nn-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d01-priority-norm-affine",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 77
+        }
+      ],
+      "notes": [
+        "Independent affine outputs1,5; population mean3,variance4. Explicit starting variance1 implies same convention; demonstrates learned affine changes moments.",
+        "Independently read exact question/options/explanation/card, visually inspected all cited physical pages, verified source SHA256. Numeric evidence: tmp/priority-review/nn-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d01-priority-norm-epsilon",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 77
+        }
+      ],
+      "notes": [
+        "Zero numerator, positive sqrt0.01 denominator0.1 gives[0,0]. Tests stabilizer at zero variance; no division-by-zero claim.",
+        "Independently read exact question/options/explanation/card, visually inspected all cited physical pages, verified source SHA256. Numeric evidence: tmp/priority-review/nn-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d02-priority-norm-inference",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 17
+        }
+      ],
+      "notes": [
+        "Concrete current-batch sensitivity diagnoses train/eval error; p17 explicitly states inference running mean removes other-image dependence. Standard BN qualification avoids unsupported all-config claim.",
+        "Independently read exact question/options/explanation/card, visually inspected all cited physical pages, verified source SHA256. Numeric evidence: tmp/priority-review/nn-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d01-priority-norm-symbols",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 77
+        },
+        {
+          "document_id": "p2-t4-d02",
+          "pdf_page": 17
+        }
+      ],
+      "notes": [
+        "Retest r2: options, row explanation and formula conditions now distinguish current statistics and ordinary BN inference running statistics; added d02p17 supports caveat. Unique mapping; formula/examples independently recalculated previously; no outstanding finding.",
+        "Independently read original cited PDF pages, visually inspected formulas/diagrams, checked exact revision, options, metadata and existing-bank overlap."
+      ],
+      "findings": []
+    }
+  ]
+}

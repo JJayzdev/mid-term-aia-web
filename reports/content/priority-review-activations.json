@@ -1,0 +1,175 @@
+{
+  "batch_file": "data/questions/drafts/priority-activations.json",
+  "reviewer_id": "priority-independent-review",
+  "reviewed_at": "2026-10-28T06:36:49.471551+00:00",
+  "results": [
+    {
+      "id": "p2-t4-d01-priority-activation-ranges",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 15
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 53
+        }
+      ],
+      "notes": [
+        "All four ranges distinct under finite inputs; independent sigmoid outputs need not sum1, softmax jointly normalizes; p15/p53 directly support mappings.",
+        "Independently read exact question/options/explanation/card, visually inspected all cited physical pages, verified source SHA256. Numeric evidence: tmp/priority-review/nn-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d01-priority-activation-formulas",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 15
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 53
+        }
+      ],
+      "notes": [
+        "Four formulas mathematically correct; softmax stable shift p53; independently recomputed all four vector examples. New relation matching distinguishes formulas rather than duplicating scalar recognition.",
+        "Independently read exact question/options/explanation/card, visually inspected all cited physical pages, verified source SHA256. Numeric evidence: tmp/priority-review/nn-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d01-priority-activation-sigmoid-value",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 15
+        }
+      ],
+      "notes": [
+        "Independent output [0.2689414214,0.5,0.7310585786], rounded as answer. Distractors are softmax/tanh for same vector, supporting concept distinction.",
+        "Independently read exact question/options/explanation/card, visually inspected all cited physical pages, verified source SHA256. Numeric evidence: tmp/priority-review/nn-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d01-priority-activation-tanh-value",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 15
+        }
+      ],
+      "notes": [
+        "Independent output [-0.761594156,0,0.761594156], correct odd symmetry and 3dp rounding. Distinct nonlinear function from sigmoid question.",
+        "Independently read exact question/options/explanation/card, visually inspected all cited physical pages, verified source SHA256. Numeric evidence: tmp/priority-review/nn-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d01-priority-activation-softmax-value",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 53
+        }
+      ],
+      "notes": [
+        "Independent exp normalization gives[0.090030573,0.244728471,0.665240956]; subtract-max example correct. One-hot distractor differs from probabilistic output.",
+        "Independently read exact question/options/explanation/card, visually inspected all cited physical pages, verified source SHA256. Numeric evidence: tmp/priority-review/nn-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d01-priority-activation-derivative",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 17
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 26
+        }
+      ],
+      "notes": [
+        "Independent chain rule2×0.8×0.2=0.32. Formula card excludes ReLU0 undefined derivative; p26 convention does not justify asserting mathematical differentiability at0.",
+        "Independently read exact question/options/explanation/card, visually inspected all cited physical pages, verified source SHA256. Numeric evidence: tmp/priority-review/nn-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d01-priority-activation-stable",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 53
+        }
+      ],
+      "notes": [
+        "Common subtraction leaves normalized probabilities invariant; division changes temperature; argmax loses distribution. p53 explicitly recommends max shift.",
+        "Independently read exact question/options/explanation/card, visually inspected all cited physical pages, verified source SHA256. Numeric evidence: tmp/priority-review/nn-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d01-priority-activation-dead-relu",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 15
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 26
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 45
+        }
+      ],
+      "notes": [
+        "Scenario carefully limits to the activation branch; z<0 derivative0 prevents its gradient signal, without asserting all optimization paths cease. p15/26 support branch derivative.",
+        "Independently read exact question/options/explanation/card, visually inspected all cited physical pages, verified source SHA256. Numeric evidence: tmp/priority-review/nn-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d01-priority-activation-batch-gradient",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 56
+        },
+        {
+          "document_id": "p2-t4-d01",
+          "pdf_page": 69
+        }
+      ],
+      "notes": [
+        "Mean reduction B=2 correctly halves per-sample p−y; result[-0.1,0.1]. The formula card explicitly one-hot/natural log/reduction conditions. New reduction reasoning beyond existing one-sample q01.",
+        "Independently read exact question/options/explanation/card, visually inspected all cited physical pages, verified source SHA256. Numeric evidence: tmp/priority-review/nn-arithmetic.json."
+      ],
+      "findings": []
+    }
+  ]
+}

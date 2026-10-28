@@ -53,6 +53,9 @@ def main():
             refs = {(s['document_id'], s['pdf_page']) for s in draft['source_reference']}
             if not refs <= reviewed_pages:
                 raise ValueError('Review did not cover all referenced pages: ' + draft['id'])
+            supplemental_urls = {source['url'] for source in draft.get('supplemental_sources', [])}
+            if not supplemental_urls <= set(decision.get('supplemental_urls', [])):
+                raise ValueError('Review did not cover supplemental URLs: ' + draft['id'])
             q = copy.deepcopy(draft)
             q['status'] = 'approved'
             q['review'] = {'reviewer_id': report['reviewer_id'], 'reviewed_at': report['reviewed_at'],
@@ -62,7 +65,8 @@ def main():
             approved.append(q)
     approved.sort(key=lambda q: q['id'])
     digest = hashlib.sha256(json.dumps(approved, ensure_ascii=False, sort_keys=True).encode()).hexdigest()[:12]
-    bank = {'schema_version': '1.0.0', 'bank_version': '2026.10.22-' + digest, 'questions': approved}
+    review_date = max((q['review']['reviewed_at'][:10] for q in approved), default='2026-10-22').replace('-', '.')
+    bank = {'schema_version': '1.0.0', 'bank_version': review_date + '-' + digest, 'questions': approved}
     validator.validate(bank)
     counts = Counter(q['topic'] for q in approved)
     public_catalog = {
@@ -78,6 +82,8 @@ def main():
                 'mapping_note': 'Phase/Track/Ngày ôn tập theo thư mục và tên file do người học cung cấp; nhãn in trên một số slide có thể khác.'}
     coverage['by_question_type'] = dict(Counter(q['question_type'] for q in approved))
     coverage['by_answer_format'] = dict(Counter(q['answer_format'] for q in approved))
+    coverage['by_focus_topic'] = dict(Counter(tag for q in approved for tag in q.get('focus_topics', [])))
+    coverage['formula_references'] = sum(bool(q.get('formula_reference')) for q in approved)
     coverage['calculation_questions'] = sum(q.get('calculation') is True for q in approved)
     coverage['by_difficulty'] = dict(Counter(q['difficulty'] for q in approved))
     coverage['by_cognitive_level'] = dict(Counter(q['cognitive_level'] for q in approved))

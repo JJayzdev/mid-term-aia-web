@@ -1,0 +1,183 @@
+{
+  "batch_file": "data/questions/drafts/priority-closed-loop.json",
+  "reviewer_id": "priority-independent-review",
+  "reviewed_at": "2026-10-28T13:57:17.531768+00:00",
+  "results": [
+    {
+      "id": "p2-t4-d12-priority-loop-modes",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d12",
+          "pdf_page": 24
+        },
+        {
+          "document_id": "p2-t4-d12",
+          "pdf_page": 26
+        },
+        {
+          "document_id": "p2-t4-d12",
+          "pdf_page": 27
+        }
+      ],
+      "notes": [
+        "Unique mapping of fixed log, interactive feedback and frame perception metric. Original p24/26/27 diagrams support statements; lengthy video alone not closed-loop.",
+        "Original cited source pages visually inspected and source hashes verified; checked mappings/order/distractors/metadata and existing-bank context."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d12-priority-robot-feedback",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d12",
+          "pdf_page": 26
+        },
+        {
+          "document_id": "p2-t4-d12",
+          "pdf_page": 27
+        }
+      ],
+      "notes": [
+        "p26 feedback arrows visually checked. Fixed start point and explicitly specified Sense–Perceive–Plan–Act remove cyclic rotation ambiguity; five causal steps ordered correctly.",
+        "Original cited source pages visually inspected and source hashes verified; checked mappings/order/distractors/metadata and existing-bank context."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d12-priority-loop-evidence",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d12",
+          "pdf_page": 27
+        },
+        {
+          "document_id": "p2-t4-d12",
+          "pdf_page": 28
+        },
+        {
+          "document_id": "p2-t4-d12",
+          "pdf_page": 31
+        },
+        {
+          "document_id": "p2-t4-d12",
+          "pdf_page": 34
+        }
+      ],
+      "notes": [
+        "p27/28/31/34 original diagrams/plots support cumulative errors, system metrics and repeated-noise evaluation. Exact-set a/b; combined evidence-selection decision goes beyond individual existing metric/noise recognition.",
+        "Original cited source pages visually inspected and source hashes verified; checked mappings/order/distractors/metadata and existing-bank context."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d12-priority-loop-reset",
+      "revision": 1,
+      "decision": "rejected",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d12",
+          "pdf_page": 27
+        },
+        {
+          "document_id": "p2-t4-d12",
+          "pdf_page": 28
+        }
+      ],
+      "notes": [
+        "Learning objective and answer duplicate existing p2-t4-d12-q04 causal explanation (reset removes accumulation). Requested distinct quantitative accumulation/reset comparison under explicit assumptions.",
+        "Original cited source pages visually inspected and source hashes verified; checked mappings/order/distractors/metadata and existing-bank context."
+      ],
+      "findings": [
+        {
+          "severity": "major",
+          "finding": "Learning objective and answer duplicate existing p2-t4-d12-q04 causal explanation (reset removes accumulation). Requested distinct quantitative accumulation/reset comparison under explicit assumptions.",
+          "action": "Author revise and increment revision; reviewer retest required."
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d12-priority-loop-explain",
+      "revision": 1,
+      "decision": "rejected",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d12",
+          "pdf_page": 26
+        },
+        {
+          "document_id": "p2-t4-d12",
+          "pdf_page": 27
+        },
+        {
+          "document_id": "p2-t4-d12",
+          "pdf_page": 28
+        },
+        {
+          "document_id": "p2-t4-d12",
+          "pdf_page": 31
+        }
+      ],
+      "notes": [
+        "Rubric duplicates existing p2-t4-d12-q04 almost verbatim in both objective and causal answer. Requested different application/design rubric, not paraphrase.",
+        "Original cited source pages visually inspected and source hashes verified; checked mappings/order/distractors/metadata and existing-bank context."
+      ],
+      "findings": [
+        {
+          "severity": "major",
+          "finding": "Rubric duplicates existing p2-t4-d12-q04 almost verbatim in both objective and causal answer. Requested different application/design rubric, not paraphrase.",
+          "action": "Author revise and increment revision; reviewer retest required."
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d12-priority-loop-reset",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d12",
+          "pdf_page": 27
+        },
+        {
+          "document_id": "p2-t4-d12",
+          "pdf_page": 28
+        }
+      ],
+      "notes": [
+        "r2 distinct quantitative objective replaces causal duplicate. Recomputed20*.05=1m vs .05m per reset step; constant additive bias and no correction explicit; not a claim that actual errors grow linearly.",
+        "Independent exact-content review including source images, distractors, order/matching constraints and existing-bank objectives."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d12-priority-loop-explain",
+      "revision": 2,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d12",
+          "pdf_page": 31
+        },
+        {
+          "document_id": "p2-t4-d12",
+          "pdf_page": 33
+        },
+        {
+          "document_id": "p2-t4-d12",
+          "pdf_page": 34
+        }
+      ],
+      "notes": [
+        "r2 distinct test-design/reporting rubric replaces existing causal explanation. Visually checked added p33 ranking reversal and p31/p34. Two equal criteria specify full/partial/no credit, comparable repeated runs and reporting all results plus uncertainty; equivalent reasoning accepted.",
+        "Independent exact-content review including source images, distractors, order/matching constraints and existing-bank objectives."
+      ],
+      "findings": []
+    }
+  ]
+}

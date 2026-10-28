@@ -1,0 +1,697 @@
+{
+  "schema_version": "1.0.0",
+  "bank_version": "2026.10.28-priority-kalman",
+  "questions": [
+    {
+      "id": "p2-t4-d05-priority-kalman-symbols",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d05",
+      "topic": "p2-t4-d05",
+      "taxonomy_status": "verified",
+      "question_type": "matching",
+      "answer_format": "matching",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Ghép một-một ký hiệu của bộ lọc Kalman vô hướng với ý nghĩa.",
+      "correct_answer": {
+        "l1": "a",
+        "l2": "b",
+        "l3": "c",
+        "l4": "d",
+        "l5": "e"
+      },
+      "explanation": "Trong mô hình một chiều đo trực tiếp, K=P_pred/(P_pred+R). Nếu đầu vào là độ lệch chuẩn thì phải bình phương trước khi dùng vào P,Q,R.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 21,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 21",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Ước lượng trạng thái"
+        },
+        {
+          "id": "b",
+          "text": "Phương sai của ước lượng trạng thái"
+        },
+        {
+          "id": "c",
+          "text": "Phương sai nhiễu quá trình"
+        },
+        {
+          "id": "d",
+          "text": "Phương sai nhiễu đo"
+        },
+        {
+          "id": "e",
+          "text": "Hệ số điều chỉnh theo innovation"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "kalman"
+      ],
+      "matching_items": [
+        {
+          "id": "l1",
+          "text": "x",
+          "explanation": "x là đại lượng cần ước lượng, không phải độ bất định."
+        },
+        {
+          "id": "l2",
+          "text": "P",
+          "explanation": "P có đơn vị bình phương đơn vị của x."
+        },
+        {
+          "id": "l3",
+          "text": "Q",
+          "explanation": "Q làm tăng bất định khi dự đoán qua một bước."
+        },
+        {
+          "id": "l4",
+          "text": "R",
+          "explanation": "R mô tả mức bất định của phép đo."
+        },
+        {
+          "id": "l5",
+          "text": "K",
+          "explanation": "K quyết định mức kéo ước lượng về phía phép đo."
+        }
+      ],
+      "matching_reuse": false
+    },
+    {
+      "id": "p2-t4-d05-priority-kalman-matrix",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d05",
+      "topic": "p2-t4-d05",
+      "taxonomy_status": "verified",
+      "question_type": "matching",
+      "answer_format": "matching",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question": "Ghép một-một các thành phần của Kalman tuyến tính đa chiều.",
+      "correct_answer": {
+        "l1": "a",
+        "l2": "b",
+        "l3": "c",
+        "l4": "d"
+      },
+      "explanation": "F không phải H: chuyển theo thời gian khác chuyển sang không gian cảm biến. Công thức ma trận giữ thứ tự tích; không thay S⁻¹ bằng nghịch đảo từng phần tử.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 28,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 28",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Ma trận chuyển trạng thái giữa hai thời điểm"
+        },
+        {
+          "id": "b",
+          "text": "Ma trận ánh xạ trạng thái sang không gian đo"
+        },
+        {
+          "id": "c",
+          "text": "Hiệp phương sai của innovation"
+        },
+        {
+          "id": "d",
+          "text": "Ma trận gain biến innovation thành hiệu chỉnh trạng thái"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "kalman"
+      ],
+      "formula_reference": {
+        "title": "Kalman tuyến tính — mô hình không có đầu vào điều khiển",
+        "formula": "x_pred=F×x; P_pred=F×P×Fᵀ+Q; S=H×P_pred×Hᵀ+R; K=P_pred×Hᵀ×S⁻¹; x_new=x_pred+K×(z−H×x_pred)",
+        "symbols": "x: trạng thái; F: chuyển trạng thái; H: ánh xạ đo; P,Q,R: hiệp phương sai; S: hiệp phương sai innovation; z: phép đo.",
+        "conditions": "Mô hình tuyến tính, nhiễu được mô hình hóa bằng hiệp phương sai; S khả nghịch. Thẻ này không bao gồm đầu vào điều khiển.",
+        "example": "Trạng thái (vị trí,vận tốc), Δt=1: F=[[1,1],[0,1]], H=[1,0]; x=(2,3) cho x_pred=(5,3).",
+        "common_mistakes": "Đổi thứ tự nhân; dùng P cũ thay P_pred; coi nghịch đảo ma trận là nghịch đảo từng phần tử."
+      },
+      "matching_items": [
+        {
+          "id": "l1",
+          "text": "F",
+          "explanation": "F ánh xạ trạng thái cũ thành dự đoán mới."
+        },
+        {
+          "id": "l2",
+          "text": "H",
+          "explanation": "H cho biết cảm biến quan sát thành phần hoặc tổ hợp nào của trạng thái."
+        },
+        {
+          "id": "l3",
+          "text": "S",
+          "explanation": "S=H×P_pred×Hᵀ+R đo mức bất ngờ dự kiến của residual."
+        },
+        {
+          "id": "l4",
+          "text": "K",
+          "explanation": "K=P_pred×Hᵀ×S⁻¹; phép nhân phải đúng thứ tự và kích thước."
+        }
+      ],
+      "matching_reuse": false
+    },
+    {
+      "id": "p2-t4-d05-priority-kalman-pipeline",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d05",
+      "topic": "p2-t4-d05",
+      "taxonomy_status": "verified",
+      "question_type": "ordering",
+      "answer_format": "ordering",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Với mô hình vô hướng x_pred=x+u, sắp xếp một chu kỳ Kalman. Đề gộp các phép tính độc lập trong cùng bước.",
+      "correct_answer": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "explanation": "Phải có P_pred mới tính gain, rồi mới update. Gain và innovation không phụ thuộc lẫn nhau nên được gộp; x_new và P_new cũng được gộp để không ép thứ tự giả.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 18,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 18",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 21,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 21",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Predict: tính x_pred=x+u và P_pred=P+Q"
+        },
+        {
+          "id": "b",
+          "text": "Từ prediction và phép đo z: tính gain K và innovation r=z−x_pred"
+        },
+        {
+          "id": "c",
+          "text": "Update: tính x_new=x_pred+K×r và P_new=(1−K)×P_pred"
+        },
+        {
+          "id": "d",
+          "text": "Dùng trạng thái và phương sai mới làm đầu vào chu kỳ tiếp theo"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "kalman"
+      ]
+    },
+    {
+      "id": "p2-t4-d05-priority-kalman-full-predict",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d05",
+      "topic": "p2-t4-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Mô hình vô hướng đo trực tiếp có x=4 m, u=3 m, P=4 m², Q=1 m², z=9 m, R=5 m². Sau cả predict và update, bộ (K,x_new,P_new) là gì?",
+      "correct_answer": "a",
+      "explanation": "Dữ kiện: Q,R là phương sai. Predict: x_pred=4+3=7 m; P_pred=4+1=5 m². Gain K=5/(5+5)=0,5; r=9−7=2 m. Update: x_new=7+0,5×2=8 m; P_new=(1−0,5)×5=2,5 m². Dùng P=4 trước predict tạo kết quả nhiễu.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 21,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 21",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "(0,5; 8 m; 2,5 m²)"
+        },
+        {
+          "id": "b",
+          "text": "(0,4444; 7,8889 m; 2,2222 m²)"
+        },
+        {
+          "id": "c",
+          "text": "(0,5; 6,5 m; 2 m²)"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "kalman"
+      ],
+      "calculation": true,
+      "formula_reference": {
+        "title": "Kalman vô hướng — predict rồi update",
+        "formula": "x_pred=x+u; P_pred=P+Q; K=P_pred/(P_pred+R); r=z−x_pred; x_new=x_pred+K×r; P_new=(1−K)×P_pred; sigma_new=sqrt(P_new)",
+        "symbols": "P,Q,R là phương sai; u là dịch chuyển đã biết; r là innovation; sigma_new là độ lệch chuẩn.",
+        "conditions": "Đo trực tiếp trạng thái H=1; nhiễu quá trình và nhiễu đo độc lập; P_pred+R>0.",
+        "example": "x=4,u=3,P=4,Q=1,z=9,R=5 → x_pred=7,P_pred=5,K=0,5,x_new=8,P_new=2,5.",
+        "common_mistakes": "Bỏ bước predict; dùng độ lệch chuẩn trực tiếp như phương sai; dùng z thay z−x_pred."
+      }
+    },
+    {
+      "id": "p2-t4-d05-priority-kalman-std",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d05",
+      "topic": "p2-t4-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Prediction vị trí có x_pred=10 m và độ lệch chuẩn 3 m. Cảm biến đo z=14 m với độ lệch chuẩn 1 m. Đo trực tiếp trạng thái, hai nhiễu độc lập. Bộ (K,x_new,sigma_new) là gì? Làm tròn sigma_new đến 3 chữ số thập phân.",
+      "correct_answer": "a",
+      "explanation": "Bình phương độ lệch chuẩn: P_pred=9 m², R=1 m². K=9/10=0,9; r=4 m; x_new=10+0,9×4=13,6 m. P_new=0,1×9=0,9 m²; sigma_new=sqrt(0,9)≈0,949 m. 0,900 là phương sai, không phải độ lệch chuẩn.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 14,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 14",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 21,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 21",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "(0,9; 13,6 m; 0,949 m)"
+        },
+        {
+          "id": "b",
+          "text": "(0,75; 13 m; 0,866 m)"
+        },
+        {
+          "id": "c",
+          "text": "(0,9; 13,6 m; 0,900 m)"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "kalman"
+      ],
+      "calculation": true
+    },
+    {
+      "id": "p2-t4-d05-priority-kalman-innovation",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d05",
+      "topic": "p2-t4-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Prediction x_pred=20 m, P_pred=9 m²; phép đo z=26 m có R=3 m². Sau update, bộ (innovation,P_new,sigma_new) là gì?",
+      "correct_answer": "a",
+      "explanation": "Innovation r=26−20=6 m. K=9/(9+3)=0,75; P_new=(1−0,75)×9=2,25 m²; sigma_new=sqrt(2,25)=1,5 m. Trạng thái kiểm chứng là x_new=20+0,75×6=24,5 m. Gain không phải phương sai mới.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 21,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 21",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "(6 m; 2,25 m²; 1,5 m)"
+        },
+        {
+          "id": "b",
+          "text": "(26 m; 2,25 m²; 1,5 m)"
+        },
+        {
+          "id": "c",
+          "text": "(6 m; 0,75 m²; 0,866 m)"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "kalman"
+      ],
+      "calculation": true
+    },
+    {
+      "id": "p2-t4-d05-priority-kalman-sensitivity",
+      "revision": 2,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d05",
+      "topic": "p2-t4-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Hai cấu hình vô hướng H=1 có (P_pred,R)=(9,3) và (3,1), đều đơn vị m². Gain và variance sau update thay đổi thế nào?",
+      "correct_answer": "a",
+      "explanation": "Cấu hình đầu K=9/12=0,75,P_new=0,25×9=2,25 m². Cấu hình sau K=3/4=0,75,P_new=0,25×3=0,75 m². Cả P_pred và R cùng giảm 3 lần nên tỷ số gain không đổi; không thể xét riêng việc R giảm khi P_pred cũng đổi.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 17,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 17",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 21,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 21",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "K cùng bằng 0,75; P_new giảm từ 2,25 xuống 0,75 m²"
+        },
+        {
+          "id": "b",
+          "text": "K tăng vì R giảm; P_new không đổi"
+        },
+        {
+          "id": "c",
+          "text": "K giảm 3 lần; P_new tăng 3 lần"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "kalman"
+      ],
+      "calculation": true
+    },
+    {
+      "id": "p2-t4-d05-priority-kalman-gaussian-mean",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d05",
+      "topic": "p2-t4-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Hai ước lượng Gaussian độc lập của cùng vị trí: 8 m với variance 4 m² và 14 m với variance 1 m². Hợp nhất theo trọng số nghịch đảo variance. Bộ (mean,variance) là gì?",
+      "correct_answer": "a",
+      "explanation": "Information I1=1/4=0,25 và I2=1. Mean=(0,25×8+1×14)/1,25=12,8 m. Variance=1/1,25=0,8 m². Trung bình số học bỏ qua độ tin cậy; đảo trọng số kéo về cảm biến nhiễu hơn.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 16,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 16",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 36,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 36",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "(12,8 m; 0,8 m²)"
+        },
+        {
+          "id": "b",
+          "text": "(11 m; 2,5 m²)"
+        },
+        {
+          "id": "c",
+          "text": "(9,2 m; 0,8 m²)"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "kalman"
+      ],
+      "calculation": true,
+      "formula_reference": {
+        "title": "Hợp nhất Gaussian độc lập",
+        "formula": "I_i=1/P_i; P_fused=1/Σ I_i; x_fused=Σ(I_i×x_i)/Σ I_i",
+        "symbols": "x_i: ước lượng cùng đại lượng; P_i>0: variance; I_i: information.",
+        "conditions": "Các ước lượng độc lập và cùng hệ tọa độ/đại lượng; không đếm hai lần nguồn tương quan.",
+        "example": "(8 m,4 m²) và (14 m,1 m²) → mean 12,8 m, variance 0,8 m².",
+        "common_mistakes": "Lấy trung bình đều; lấy nghịch đảo sigma thay variance; áp độc lập cho các nguồn tương quan."
+      }
+    },
+    {
+      "id": "p2-t4-d05-priority-kalman-ekf",
+      "revision": 2,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d05",
+      "topic": "p2-t4-d05",
+      "taxonomy_status": "verified",
+      "question_type": "matching",
+      "answer_format": "matching",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Ghép một-một họ bộ lọc với cách xử lý mô hình hoặc biểu diễn bất định.",
+      "correct_answer": {
+        "l1": "a",
+        "l2": "b",
+        "l3": "c",
+        "l4": "d"
+      },
+      "explanation": "Kalman tuyến tính dùng mô hình tuyến tính và Gaussian; EKF tuyến tính hóa cục bộ; UKF truyền sigma points; particle filter dùng tập hạt. Các phương pháp khác nhau về giả định và cách xấp xỉ, không phải chỉ khác tên.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 30,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 30",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 31,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 31",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 32,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 32",
+          "verification": "needs_review"
+        },
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 33,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 33",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Mô hình tuyến tính, bất định Gaussian qua mean/covariance"
+        },
+        {
+          "id": "b",
+          "text": "Tuyến tính hóa cục bộ bằng Jacobian"
+        },
+        {
+          "id": "c",
+          "text": "Truyền các sigma points qua hàm phi tuyến"
+        },
+        {
+          "id": "d",
+          "text": "Biểu diễn phân phối bằng tập hạt có trọng số"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "kalman"
+      ],
+      "matching_reuse": false,
+      "matching_items": [
+        {
+          "id": "l1",
+          "text": "Kalman tuyến tính",
+          "explanation": "Bộ lọc chuẩn dùng các phép biến đổi tuyến tính."
+        },
+        {
+          "id": "l2",
+          "text": "EKF",
+          "explanation": "EKF dùng đạo hàm tại ước lượng đang xét."
+        },
+        {
+          "id": "l3",
+          "text": "UKF",
+          "explanation": "UKF tránh phải tính Jacobian bằng cách chọn các điểm đại diện."
+        },
+        {
+          "id": "l4",
+          "text": "Particle filter",
+          "explanation": "Tập hạt có thể mô tả phân phối phức tạp hơn một Gaussian."
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d05-priority-kalman-matrix-predict",
+      "revision": 1,
+      "author_id": "priority-question-engineer",
+      "phase": 2,
+      "track": 4,
+      "day": "p2-t4-d05",
+      "topic": "p2-t4-d05",
+      "taxonomy_status": "verified",
+      "question_type": "single_choice",
+      "answer_format": "single_choice",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question": "Trạng thái x=(2 m;3 m/s), Δt=2 s, F=[[1,2],[0,1]], P=[[4,0],[0,1]], Q=[[1,0],[0,0]]. Với x_pred=F×x và P_pred=F×P×Fᵀ+Q, kết quả là gì?",
+      "correct_answer": "a",
+      "explanation": "Predict trạng thái: vị trí=2+2×3=8 m, vận tốc=3 m/s. F×P=[[4,2],[0,1]]; nhân Fᵀ cho [[8,2],[2,1]], cộng Q cho [[9,2],[2,1]]. Bỏ phép lan truyền FPFᵀ làm mất tương quan và đánh giá thấp bất định.",
+      "source_reference": [
+        {
+          "document_id": "p2-t4-d05",
+          "sha256": "e9efd3033eb585072020a0586241b3017a95f2f53cba36582f555b6ca13f8994",
+          "pdf_page": 28,
+          "title": "Bộ lọc Kalman & Hợp nhất xác suất",
+          "locator": "Physical PDF page 28",
+          "verification": "needs_review"
+        }
+      ],
+      "status": "pending_review",
+      "review_notes": [
+        "New priority practice; independently verify exact revision and source pages before release."
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "x_pred=(8;3), P_pred=[[9,2],[2,1]]"
+        },
+        {
+          "id": "b",
+          "text": "x_pred=(5;3), P_pred=[[5,0],[0,1]]"
+        },
+        {
+          "id": "c",
+          "text": "x_pred=(8;3), P_pred=[[5,0],[0,1]]"
+        }
+      ],
+      "shuffle_options": true,
+      "focus_topics": [
+        "kalman"
+      ],
+      "calculation": true
+    }
+  ]
+}

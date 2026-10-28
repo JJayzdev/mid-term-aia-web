@@ -1,0 +1,155 @@
+{
+  "batch_file": "data/questions/drafts/priority-d-metrics.json",
+  "reviewer_id": "priority-independent-review",
+  "reviewed_at": "2026-10-28T14:10:21.176472+00:00",
+  "results": [
+    {
+      "id": "p2-t4-d03-priority-d-giou-disjoint",
+      "revision": 1,
+      "decision": "rejected",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d03",
+          "pdf_page": 13
+        },
+        {
+          "document_id": "p2-t4-d03",
+          "pdf_page": 14
+        },
+        {
+          "document_id": "p2-t4-d03",
+          "pdf_page": 45
+        }
+      ],
+      "notes": [
+        "Numerical question/box/GIoU/letterbox content correct:intersection0,union8,C10,GIoU−.2. Formula_reference adds P/R/F1 definitions not explicit on cited p45; add original formula page (likely p42) for direct evidence. Other cited pages visually verified.",
+        "Full formula_reference, assumptions, examples, distractors, units and distinct existing-bank objectives reviewed. Arithmetic evidence:tmp/priority-review/d-metrics-arithmetic.json."
+      ],
+      "findings": [
+        {
+          "severity": "major",
+          "finding": "Numerical question/box/GIoU/letterbox content correct:intersection0,union8,C10,GIoU−.2. Formula_reference adds P/R/F1 definitions not explicit on cited p45; add original formula page (likely p42) for direct evidence. Other cited pages visually verified.",
+          "action": "Author add direct source and increment revision."
+        }
+      ]
+    },
+    {
+      "id": "p2-t4-d03-priority-d-ap-unreached",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d03",
+          "pdf_page": 43
+        },
+        {
+          "document_id": "p2-t4-d03",
+          "pdf_page": 44
+        }
+      ],
+      "notes": [
+        "Physical p43/44 diagrams/formulas verify right-envelope,101samples and unreachable recall0; 51inclusive points*.8/101=.403960396→.4040. Separate AP50 and COCOmulti-threshold convention retained.",
+        "Full formula_reference, assumptions, examples, distractors, units and distinct existing-bank objectives reviewed. Arithmetic evidence:tmp/priority-review/d-metrics-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d03-priority-d-seg-aggregate",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d03",
+          "pdf_page": 54
+        }
+      ],
+      "notes": [
+        "p54 explicitly states dataset TP/FP/FN aggregation before division. Recomputed datasetIoU.5 vs image-average.736842105→.7368. Dice2/3≈.6667; no smoothing, class-average and empty-set policy caveats correct.",
+        "Full formula_reference, assumptions, examples, distractors, units and distinct existing-bank objectives reviewed. Arithmetic evidence:tmp/priority-review/d-metrics-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d03-priority-d-pose-boundary",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d03",
+          "pdf_page": 74
+        },
+        {
+          "document_id": "p2-t4-d03",
+          "pdf_page": 75
+        }
+      ],
+      "notes": [
+        "Original p74OKS equation matches factor2s²k²,k=2sigma,visibilitymask; p75PCK uses strict d/h<alpha. Givenerrors2,5,6,10 only2qualifies→25%; valid-count denominator and pixel/reference units correct.",
+        "Full formula_reference, assumptions, examples, distractors, units and distinct existing-bank objectives reviewed. Arithmetic evidence:tmp/priority-review/d-metrics-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d07-priority-d-tracking-gate",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d07",
+          "pdf_page": 18
+        },
+        {
+          "document_id": "p2-t4-d07",
+          "pdf_page": 20
+        },
+        {
+          "document_id": "p2-t4-d07",
+          "pdf_page": 37
+        },
+        {
+          "document_id": "p2-t4-d07",
+          "pdf_page": 38
+        },
+        {
+          "document_id": "p2-t4-d07",
+          "pdf_page": 39
+        }
+      ],
+      "notes": [
+        "Original p18/20/37/38/39 verified visually. Recomputed d²=9/9+4=5>4 rejection; covariance-weighted not Euclidean. Fullcard assignment/MOTA/IDF1/HOTAalpha formulas match; HOTAexample sqrt(.8*.45)=.6, fullaverageacrossthresholds distinguished; does not inferAssAfromIDSW.",
+        "Full formula_reference, assumptions, examples, distractors, units and distinct existing-bank objectives reviewed. Arithmetic evidence:tmp/priority-review/d-metrics-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d03-priority-d-giou-disjoint",
+      "revision": 3,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d03",
+          "pdf_page": 13
+        },
+        {
+          "document_id": "p2-t4-d03",
+          "pdf_page": 14
+        },
+        {
+          "document_id": "p2-t4-d03",
+          "pdf_page": 45
+        },
+        {
+          "document_id": "p2-t4-d03",
+          "pdf_page": 42
+        }
+      ],
+      "notes": [
+        "r3 retest: original d03p42 visual P/R equations and GTmatching definition now cited; official exact sklearn f1_score URL independently opened, lines638–642 show harmonicmean/countformula algebraically equivalent to2PR/(P+R). GIoU−.2 and fullcard unchanged correct. All source issues resolved."
+      ],
+      "findings": [],
+      "supplemental_urls": [
+        "https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html"
+      ]
+    }
+  ]
+}

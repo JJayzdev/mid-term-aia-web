@@ -26,3 +26,53 @@
 
 .math-root { display: inline-flex; align-items: baseline; line-height: 1.1; padding-top: .12em; max-width: 100%; }
 .math-radicand { border-top: 1px solid currentColor; padding: .08em .12em 0; min-width: 0; }
+.activation-plot { display: block; width: 100%; max-width: 320px; height: auto; margin: 12px auto; background: #fbfdfb; border-radius: 8px; }
+.activation-plot text { font: 12px sans-serif; fill: #4b6157; }
+
+/* Focus practice, keyboard-friendly structured answers and formula reference. */
+.focus-note,.structured-policy { padding: 12px 14px; border-radius: 10px; background: #edf5f0; color: #365e51; font-size: 13px; line-height: 1.65; }
+.matching-layout { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.15fr); gap: 16px; align-items: start; }
+.matching-layout h2 { font-size: 14px; margin: 0 0 12px; }
+.matching-key,.matching-questions { min-width: 0; }
+.matching-key { padding: 14px; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
+.matching-key-row { display: flex; gap: 10px; padding: 12px 0; border-top: 1px solid var(--line); font-size: 13px; line-height: 1.65; overflow-wrap: anywhere; }
+.matching-key-row>b { flex: 0 0 20px; color: var(--teal); }
+.matching-row { margin: 0 0 10px; padding: 14px; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
+.matching-row label { display: block; font-size: 14px; line-height: 1.7; overflow-wrap: anywhere; }
+.matching-row select { display: block; margin-top: 10px; width: 100%; min-height: 44px; border: 1px solid #a9bcb4; background: #fff; border-radius: 7px; padding: 8px; color: var(--ink); font-size: 14px; }
+.pair-correct { border-color: #73ad96; }
+.pair-wrong { border-color: #ca9d89; }
+.pair-feedback { border-top: 1px solid var(--line); margin-top: 12px; padding-top: 10px; font-size: 13px; line-height: 1.7; }
+.pair-feedback p { margin: 5px 0; }
+.pair-correct .pair-feedback>b { color: #276c4e; }
+.pair-wrong .pair-feedback>b { color: #96462d; }
+.structured-progress { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; font-size: 13px; }
+.ordering-list { padding: 0; list-style: none; display: grid; gap: 10px; }
+.ordering-list>li { display: flex; align-items: center; gap: 12px; padding: 12px; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
+.step-number { flex: 0 0 25px; font-weight: 700; color: var(--teal); }
+.ordering-list>li>div:first-of-type { flex: 1; min-width: 0; font-size: 14px; line-height: 1.65; overflow-wrap: anywhere; }
+.step-actions { display: flex; gap: 6px; }
+.step-actions button { display: flex; align-items: center; justify-content: center; gap: 4px; min-height: 44px; min-width: 44px; border: 1px solid #b9ccc2; border-radius: 7px; background: #f4f8f5; color: #315a4b; font-size: 12px; }
+.step-actions button:disabled { opacity: .45; }
+.ordering-confirm { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; font-size: 13px; }
+.ordering-confirm p { flex-basis: 100%; margin: 4px 0; }
+.order-feedback { background: #edf5f0; padding: 15px; border-radius: 10px; font-size: 14px; line-height: 1.7; }
+.order-feedback h3 { font-size: 14px; }
+.question-sources { font-size: 12px; line-height: 1.65; color: #51665f; overflow-wrap: anywhere; margin-top: 16px; }
+.question-sources a { color: #166c59; text-decoration: underline; }
+.explanation .question-sources p { font-size: 12px; background: transparent; padding: 0; }
+.formula-filters { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 16px; }
+.formula-filters input { min-width: 0; width: 100%; height: 42px; border: 1px solid var(--line); border-radius: 8px; padding: 10px; font-size: 14px; }
+.formula-filters .field-label { font-size: 12px; }
+.formula-filters select { font-size: 13px; }
+.formula-count { font-size: 13px; color: var(--muted); margin: 20px 0; }
+.formula-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 18px; }
+.formula-card { min-width: 0; margin: 0; }
+.formula-card h2 { font-size: 20px; margin: 16px 0; }
+.formula-expression { padding: 16px; border-radius: 10px; background: #edf5f0; font-size: 17px; line-height: 1.8; overflow-wrap: anywhere; }
+.formula-card dl { font-size: 14px; line-height: 1.75; }
+.formula-card dt { font-weight: 700; margin-top: 16px; color: var(--ink); }
+.formula-card dd { margin: 4px 0 0; color: #4d635c; overflow-wrap: anywhere; }
+.matching-row select:focus-visible,.step-actions button:focus-visible { outline: 3px solid #64b49c; outline-offset: 3px; }
+@media(max-width:900px) { .formula-grid { grid-template-columns: 1fr; } }
+@media(max-width:600px) { .matching-layout,.formula-filters { grid-template-columns: 1fr; } .matching-key { padding: 12px; } .ordering-list>li { flex-wrap: wrap; gap: 8px; } .step-actions { flex-basis: 100%; justify-content: flex-end; } .formula-expression { font-size: 16px; padding: 12px; } .focus-note { font-size: 12px; } }

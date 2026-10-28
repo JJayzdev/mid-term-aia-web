@@ -69,7 +69,7 @@ test('rapid essay input survives navigation and pending-grade reload', async ({ 
   const answer = 'Mục tiêu rõ ràng, kiểm chứng nguồn và đánh giá kết quả theo rubric.';
   await page.getByLabel('Câu trả lời tự luận').pressSequentially(answer, { delay: 1 });
   await page.getByRole('button', { name: `Đi đến câu ${n === 0 ? 2 : 1}`, exact: true }).click();
-  await expect(page.locator('.question-card h1')).toHaveText(a.questions[n === 0 ? 1 : 0].question.question);
+  await expect(page.locator('.question-card')).toHaveAttribute('data-question-id', a.questions[n === 0 ? 1 : 0].question.id);
   expect((await rows(page))[0].answers[a.questions[n].question.id]).toBe(answer);
   await submit(page, a);
   expect((await rows(page))[0].status).toBe('submitted_pending_grading');
@@ -106,7 +106,7 @@ test('exam exact quotas, deadline autosubmit, reload and single result', async (
   await page.clock.fastForward(5401000);
   await expect(page.locator('.result-summary')).toBeVisible();
   await page.getByRole('button', { name: 'Đi đến câu 2', exact: true }).click();
-  await expect(page.locator('.question-card h1')).toHaveText(a.questions[1].question.question);
+  await expect(page.locator('.question-card')).toHaveAttribute('data-question-id', a.questions[1].question.id);
   await page.reload();
   const all = await rows(page);
   expect(all).toHaveLength(1); expect(all[0].status).toBe('graded');
@@ -237,7 +237,7 @@ test('failed answer write is visible and does not overwrite persisted data', asy
   await page.locator('.answer-option').first().click();
   await expect.poll(async () => Object.keys((await rows(page))[0].answers).length).toBe(1);
   await page.getByRole('button', { name: `Đi đến câu ${n === 0 ? 2 : 1}`, exact: true }).click();
-  await expect(page.locator('.question-card h1')).toHaveText(a.questions[n === 0 ? 1 : 0].question.question);
+  await expect(page.locator('.question-card')).toHaveAttribute('data-question-id', a.questions[n === 0 ? 1 : 0].question.id);
 });
 
 test('failed essay stays visible until retry succeeds; navigation and manual submit cannot discard it', async ({ page }) => {
@@ -278,7 +278,7 @@ test('failed essay stays visible until retry succeeds; navigation and manual sub
   await page.getByRole('button', { name: 'Thử lưu lại', exact: true }).click();
   await expect.poll(async () => (await rows(page))[0].answers[q.id]).toBe(draft);
   await next.click();
-  await expect(page.locator('.question-card h1')).toHaveText(a.questions[n === 0 ? 1 : 0].question.question);
+  await expect(page.locator('.question-card')).toHaveAttribute('data-question-id', a.questions[n === 0 ? 1 : 0].question.id);
   page.once('dialog', dialog => dialog.accept()); await manual.click();
   await expect(page.locator('.result-summary')).toBeVisible();
   expect((await rows(page))[0].answers[q.id]).toBe(draft);

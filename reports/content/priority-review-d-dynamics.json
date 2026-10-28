@@ -1,0 +1,145 @@
+{
+  "batch_file": "data/questions/drafts/priority-d-dynamics.json",
+  "reviewer_id": "priority-independent-review",
+  "reviewed_at": "2026-10-28T14:16:35.876927+00:00",
+  "results": [
+    {
+      "id": "p2-t4-d11-priority-dynamics-offset",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d11",
+          "pdf_page": 46
+        }
+      ],
+      "notes": [
+        "Finite difference gives 2 m/s² both before and after common offset. Coefficients sum to zero; independent noise sd 2.449 follows original physical page46. Distinct from old c01 noise time-step scaling and x14 risk identification.",
+        "All nine original cited PDF pages visually inspected; original file and reference hashes verified against catalog. Full formula cards, assumptions, units, distractors and existing D11/D12 bank reviewed. Independent arithmetic: tmp/priority-review/d-dynamics-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d11-priority-dynamics-gates",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d11",
+          "pdf_page": 49
+        }
+      ],
+      "notes": [
+        "Jerk6 exceeds5, curvature.03 meets.04, lateral acceleration3 exceeds2.5; speed limit9.129. Original page49 lists all three checks. Tests simultaneous independent gates, beyond old c02 single lateral gate and x15 naming checks.",
+        "All nine original cited PDF pages visually inspected; original file and reference hashes verified against catalog. Full formula cards, assumptions, units, distractors and existing D11/D12 bank reviewed. Independent arithmetic: tmp/priority-review/d-dynamics-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d11-priority-scaling-floor",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d11",
+          "pdf_page": 71
+        }
+      ],
+      "notes": [
+        "Solving 4/sqrt(D)<=.2 requires D>=400; finite positive D cannot attain floor.1. Original page71 inverse scaling and floor visually verified. Card distinguishes excess error ratio .7071 from total error.",
+        "All nine original cited PDF pages visually inspected; original file and reference hashes verified against catalog. Full formula cards, assumptions, units, distractors and existing D11/D12 bank reviewed. Independent arithmetic: tmp/priority-review/d-dynamics-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d11-priority-importance-weight",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d11",
+          "pdf_page": 89
+        }
+      ],
+      "notes": [
+        "Ordinary IS weighted sum .2 divided by4=.05. Exact cited arXiv URL independently opened: equation4, lines81–88 uses p times event indicator over proposal density, then sample mean. Physical page89 is explicitly curricular anchor only; supplement labels estimator outside slides. Normalized densities and support assumptions explicit; no claim of exact population risk from four samples.",
+        "All nine original cited PDF pages visually inspected; original file and reference hashes verified against catalog. Full formula cards, assumptions, units, distractors and existing D11/D12 bank reviewed. Independent arithmetic: tmp/priority-review/d-dynamics-arithmetic.json."
+      ],
+      "findings": [],
+      "supplemental_urls": [
+        "https://arxiv.org/html/1710.06965"
+      ]
+    },
+    {
+      "id": "p2-t4-d12-priority-zero-events-bound",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d12",
+          "pdf_page": 38
+        }
+      ],
+      "notes": [
+        "Approximate upper one-sided95% limit .001=.1%; exact binomial zero-count bound .000998079. Independent common-probability Bernoulli trials explicit; correlated frames and IS sample counts excluded. Exact Hanley author-hosted PDF opened, physical page2 derivation inspected; original d12p38 is only safety-evidence curricular anchor, correctly labeled supplement.",
+        "All nine original cited PDF pages visually inspected; original file and reference hashes verified against catalog. Full formula cards, assumptions, units, distractors and existing D11/D12 bank reviewed. Independent arithmetic: tmp/priority-review/d-dynamics-arithmetic.json."
+      ],
+      "findings": [],
+      "supplemental_urls": [
+        "https://jhanley.biostat.mcgill.ca/c607/ch08/zero_numerator.pdf"
+      ]
+    },
+    {
+      "id": "p2-t4-d12-priority-ttc-comparison",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d12",
+          "pdf_page": 43
+        },
+        {
+          "document_id": "p2-t4-d12",
+          "pdf_page": 44
+        }
+      ],
+      "notes": [
+        "Both TTC2s but relative constant decelerations1.25/2.5m/s². Original physical pages43/44 formulas visually verified. Distinct comparison objective from old q03 single TTC and c01 braking classification. Conditions separate constant closing speed TTC from constant relative deceleration model.",
+        "All nine original cited PDF pages visually inspected; original file and reference hashes verified against catalog. Full formula cards, assumptions, units, distractors and existing D11/D12 bank reviewed. Independent arithmetic: tmp/priority-review/d-dynamics-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d12-priority-clip-inverse",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d12",
+          "pdf_page": 68
+        }
+      ],
+      "notes": [
+        "Command3 has preimage raw>=3 and delta velocity>=1.5; cannot invert uniquely. Original physical page68 confirms fifth output is velocity change at.5s and clipping[-9,3]. Different inverse/information-loss objective from old c02 forward negative clipping.",
+        "All nine original cited PDF pages visually inspected; original file and reference hashes verified against catalog. Full formula cards, assumptions, units, distractors and existing D11/D12 bank reviewed. Independent arithmetic: tmp/priority-review/d-dynamics-arithmetic.json."
+      ],
+      "findings": []
+    },
+    {
+      "id": "p2-t4-d12-priority-completion-aggregation",
+      "revision": 1,
+      "decision": "approved",
+      "source_pages": [
+        {
+          "document_id": "p2-t4-d12",
+          "pdf_page": 35
+        }
+      ],
+      "notes": [
+        "Each route50, mean50; product of separate means56.25 is distinct incorrect operation. Original physical page35 verifies completion times remaining penalty factor. Equal-route averaging is expressly supplied as exercise rule, not attributed as unspecified official leaderboard aggregate. Distinct from old x12 penalty concept.",
+        "All nine original cited PDF pages visually inspected; original file and reference hashes verified against catalog. Full formula cards, assumptions, units, distractors and existing D11/D12 bank reviewed. Independent arithmetic: tmp/priority-review/d-dynamics-arithmetic.json."
+      ],
+      "findings": []
+    }
+  ]
+}
