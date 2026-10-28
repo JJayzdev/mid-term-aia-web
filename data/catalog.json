@@ -836,7 +836,7 @@
       "document_ids": [
         "p1-d01"
       ],
-      "question_count": 20
+      "question_count": 28
     },
     {
       "id": "p1-d11",
@@ -935,7 +935,7 @@
       "document_ids": [
         "p1-d03"
       ],
-      "question_count": 20
+      "question_count": 27
     },
     {
       "id": "p1-d05",
@@ -968,7 +968,7 @@
       "document_ids": [
         "p1-d07"
       ],
-      "question_count": 20
+      "question_count": 21
     },
     {
       "id": "p1-d08",
@@ -979,7 +979,7 @@
       "document_ids": [
         "p1-d08"
       ],
-      "question_count": 20
+      "question_count": 21
     },
     {
       "id": "p1-d09",
@@ -1320,7 +1320,7 @@
       "document_ids": [
         "p2-t3-d01"
       ],
-      "question_count": 20
+      "question_count": 21
     },
     {
       "id": "p2-t3-d11",
@@ -1397,7 +1397,7 @@
       "document_ids": [
         "p2-t4-d01"
       ],
-      "question_count": 22
+      "question_count": 43
     },
     {
       "id": "p2-t4-d02",
@@ -1408,7 +1408,7 @@
       "document_ids": [
         "p2-t4-d02"
       ],
-      "question_count": 22
+      "question_count": 28
     },
     {
       "id": "p2-t4-d03",
@@ -1419,7 +1419,7 @@
       "document_ids": [
         "p2-t4-d03"
       ],
-      "question_count": 22
+      "question_count": 27
     },
     {
       "id": "p2-t4-d04",
@@ -1430,7 +1430,7 @@
       "document_ids": [
         "p2-t4-d04"
       ],
-      "question_count": 22
+      "question_count": 28
     },
     {
       "id": "p2-t4-d05",
@@ -1441,7 +1441,7 @@
       "document_ids": [
         "p2-t4-d05"
       ],
-      "question_count": 22
+      "question_count": 33
     },
     {
       "id": "p2-t4-d06",
@@ -1452,7 +1452,7 @@
       "document_ids": [
         "p2-t4-d06"
       ],
-      "question_count": 22
+      "question_count": 25
     },
     {
       "id": "p2-t4-d07",
@@ -1463,7 +1463,7 @@
       "document_ids": [
         "p2-t4-d07"
       ],
-      "question_count": 22
+      "question_count": 24
     },
     {
       "id": "p2-t4-d08",
@@ -1474,7 +1474,7 @@
       "document_ids": [
         "p2-t4-d08"
       ],
-      "question_count": 22
+      "question_count": 24
     },
     {
       "id": "p2-t4-d09",
@@ -1485,7 +1485,7 @@
       "document_ids": [
         "p2-t4-d09"
       ],
-      "question_count": 22
+      "question_count": 23
     },
     {
       "id": "p2-t4-d10",
@@ -1496,7 +1496,7 @@
       "document_ids": [
         "p2-t4-d10"
       ],
-      "question_count": 22
+      "question_count": 23
     },
     {
       "id": "p2-t4-d11",
@@ -1507,7 +1507,7 @@
       "document_ids": [
         "p2-t4-d11"
       ],
-      "question_count": 22
+      "question_count": 26
     },
     {
       "id": "p2-t4-d12",
@@ -1518,7 +1518,7 @@
       "document_ids": [
         "p2-t4-d12"
       ],
-      "question_count": 22
+      "question_count": 31
     }
   ]
 }
