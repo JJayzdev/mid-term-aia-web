@@ -31,7 +31,11 @@ See `reports/content/PRIORITY_AUTHOR_COVERAGE.md`, `priority-review-summary.md`,
 
 ## Deployment
 
-The validated static build is ready for the existing authorized GitHub Pages publish process. Production verification is performed after publishing; the result is reported to the user separately.
+Published through the existing authorized free GitHub Pages process. Source commit `cc1fcbb2306f2efc63008139943e44d24586c4ad`; Pages commit `8842957c07e607f9bdcab9c658a9d9949feabde8`. GitHub reports `built`, no deployment error.
+
+Production: https://jjayzdev.github.io/mid-term-aia-web/
+
+The public bank was fetched and compared with the tested local JSON: exact equality, 1,373 questions, version `2026.10.28-04176e865b81`. The public HTML references the tested JS asset. All **21/21 browser cases also passed on the public URL** (1.3 minutes), including the strengthened check of every formula at 360 px. Live evidence: `tmp/qa/priority-live-browser.json`. This final documentation update does not change the deployed application.
 
 ## Limits
 
